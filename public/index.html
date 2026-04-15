@@ -77,17 +77,21 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 /* Playbook CTA */
 .lh-pb{background:var(--ac);color:#0a0a0f;border:none;padding:8px 22px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;margin-top:10px;transition:.15s;letter-spacing:.3px}
 .lh-pb:hover{background:var(--ac2);transform:scale(1.05)}
-/* Follow-up timing */
-.fu-pill{font-size:8px;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px;margin-top:4px;display:inline-block}
-.fu-waiting{background:#0a1a2e;color:var(--bl)}
-.fu-due{background:#1f1800;color:var(--am);animation:fupulse 1.5s infinite}
-.fu-overdue{background:#1c0a0a;color:var(--rd);animation:fupulse 1s infinite}
-@keyframes fupulse{0%,100%{opacity:1}50%{opacity:.6}}
+/* Follow-up timing — card borders */
+.lead.fu-green{border-color:var(--gn);box-shadow:0 0 8px rgba(34,197,94,.15)}
+.lead.fu-yellow{border-color:var(--am);box-shadow:0 0 10px rgba(245,158,11,.2)}
+.lead.fu-red{border-color:var(--rd);box-shadow:0 0 12px rgba(239,68,68,.25)}
+.fu-tag{font-size:8px;font-weight:700;padding:3px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px;margin-top:4px;display:inline-block}
+.fu-tag.green{background:#052e16;color:var(--gn2)}
+.fu-tag.yellow{background:#1f1800;color:var(--am)}
+.fu-tag.red{background:#1c0a0a;color:#f87171;animation:fupulse 1.2s infinite}
+@keyframes fupulse{0%,100%{opacity:1}50%{opacity:.5}}
+/* Playbook follow-up box */
 .fu-box{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:10px 14px;margin-top:10px}
 .fu-box-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--dm);margin-bottom:4px}
 .fu-box-step{font-size:13px;font-weight:600;color:var(--tx)}
 .fu-box-time{font-size:11px;margin-top:2px}
-.fu-box-time.waiting{color:var(--bl)}.fu-box-time.due{color:var(--am)}.fu-box-time.overdue{color:var(--rd)}
+.fu-box-time.green{color:var(--gn2)}.fu-box-time.yellow{color:var(--am)}.fu-box-time.red{color:#f87171}
 
 /* Priority label */
 .pri-tag{position:absolute;top:8px;right:8px;font-size:7px;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.5px;background:rgba(212,160,23,.12);padding:2px 6px;border-radius:4px}
@@ -435,57 +439,80 @@ function cSt(rec){if(['replied','meeting','closed','skip'].includes(rec.st))retu
 function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);if(l.emailCercana)s.push({id:'email',label:'Email a '+first,msg:l.emailCercana,ch:'email'});if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))s.push({id:'wa',label:'WhatsApp',msg:l.whatsappMessage,ch:'wa'});if(l.instagramDM&&ig)s.push({id:'ig',label:'DM @'+ig,msg:l.instagramDM,ch:'ig'});if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))s.push({id:'li',label:'LinkedIn',msg:l.linkedinPlaybook.connectionNote||'',ch:'li'});return s}
 
 // ═══ FOLLOW-UP TIMING LAYER ═══
-// Fixed sequence: email → DM (48h) → follow-up (4d) → final bump (7d)
+// Cycle = 7 days: Day 0 email → Day 2 alt DM → Day 7 main follow-up → cycle resets
+// Alt channel DM only on odd cycles (1, 3, 5...) to avoid being annoying
 // Stops if status = replied/meeting/closed/skip
 const SEQ_STOPS=['replied','meeting','closed','skip'];
-const SEQ_STEPS=[
-  {id:'initial',label:'Enviar outreach inicial',delay:0},
-  {id:'alt_touch',label:'DM en canal alternativo',delay:48*3600000},        // 48h
-  {id:'follow_up',label:'Follow-up canal principal',delay:4*24*3600000},    // 4 days
-  {id:'final_bump',label:'Bump final',delay:7*24*3600000}                   // 7 days
-];
+const CYCLE_LEN=7*24*3600000; // 7 days in ms
+const ALT_DELAY=2*24*3600000; // 2 days after cycle start
 
 function getFollowUp(rec,lead){
   const st=rec.st||'none';
-  if(SEQ_STOPS.includes(st))return{active:false,reason:st};
+  if(SEQ_STOPS.includes(st))return{active:false,reason:st,color:'none'};
   const acts=rec.acts||[];const msgs=rec.msgs||[];
-  if(!acts.length&&!msgs.length)return{active:false,reason:'no_outreach'};
+  if(!acts.length&&!msgs.length)return{active:false,reason:'no_outreach',color:'none'};
 
-  // Find all action timestamps (from msgs which have .ts)
   const allTs=msgs.map(m=>new Date(m.ts).getTime()).filter(t=>!isNaN(t)).sort((a,b)=>a-b);
-  if(!allTs.length)return{active:true,step:SEQ_STEPS[1],due:null,state:'unknown'};
-
-  const firstTs=allTs[0]; // first outreach timestamp
-  const lastTs=allTs[allTs.length-1]; // most recent action
-  const actionCount=allTs.length;
-  const nowMs=Date.now();
-
-  // Determine which step we're on based on action count
-  let stepIdx;
-  if(actionCount>=3)stepIdx=3; // after 3 actions → final bump
-  else if(actionCount>=2)stepIdx=2; // after 2 → follow-up
-  else stepIdx=1; // after 1 → alt touch
-
-  if(stepIdx>=SEQ_STEPS.length)return{active:false,reason:'sequence_complete'};
-
-  const step=SEQ_STEPS[stepIdx];
-  const dueMs=firstTs+step.delay;
-  const diff=dueMs-nowMs;
-
-  let state,timeStr;
-  if(diff>3600000){
-    state='waiting';
-    const h=Math.floor(diff/3600000);
-    timeStr=h>=24?Math.floor(h/24)+'d':h+'h';
-  }else if(diff>-86400000){
-    state='due';timeStr='ahora';
-  }else{
-    state='overdue';
-    const overH=Math.floor(-diff/3600000);
-    timeStr=overH>=24?Math.floor(overH/24)+'d atrás':overH+'h atrás';
+  if(!allTs.length){
+    // Has acts checked but no messages saved — treat as active, unknown timing
+    return{active:true,step:{label:'Guardar mensaje enviado'},state:'due',timeStr:'ahora',color:'yellow'};
   }
 
-  return{active:true,step,stepIdx,due:new Date(dueMs).toISOString(),state,timeStr,firstTs,lastTs};
+  const firstTs=allTs[0];
+  const lastTs=allTs[allTs.length-1];
+  const nowMs=Date.now();
+  const elapsed=lastTs-firstTs;
+
+  // Figure out which cycle we're in (each cycle = 7 days from last main channel touch)
+  // Count main channel touches = number of messages on 'email' channel
+  const mainTouches=msgs.filter(m=>m.ch==='email').length;
+  const altTouches=msgs.filter(m=>m.ch!=='email').length;
+  const cycle=Math.max(0,mainTouches-1); // cycle 0 = first outreach done
+  const isOddCycle=cycle%2===0; // cycles 0,2,4 = odd cycles (1st,3rd,5th) → include alt touch
+  const cycleStart=lastTs; // last action is the cycle anchor
+
+  // What's next?
+  let nextStep,dueMs;
+  const daysSinceLast=Math.floor((nowMs-lastTs)/(24*3600000));
+
+  if(mainTouches>=1&&altTouches===0&&isOddCycle){
+    // First outreach done, no alt touch yet, odd cycle → alt DM due
+    nextStep='DM canal alternativo';
+    dueMs=firstTs+ALT_DELAY;
+  }else{
+    // Alt done or even cycle → main channel follow-up
+    nextStep='Follow-up canal principal';
+    // Due 7 days after the LAST main channel email, or 5 days after alt touch
+    const lastMain=msgs.filter(m=>m.ch==='email').sort((a,b)=>new Date(b.ts)-new Date(a.ts))[0];
+    const lastMainTs=lastMain?new Date(lastMain.ts).getTime():firstTs;
+    dueMs=lastMainTs+CYCLE_LEN;
+  }
+
+  const diff=dueMs-nowMs;
+  let state,timeStr,color;
+
+  if(diff>24*3600000){
+    // More than 1 day away
+    state='waiting';color='green';
+    const d=Math.floor(diff/(24*3600000));
+    timeStr='en '+d+'d';
+  }else if(diff>0){
+    // Less than 1 day away
+    state='due_soon';color='yellow';
+    const h=Math.max(1,Math.floor(diff/3600000));
+    timeStr='en '+h+'h';
+  }else if(diff>-24*3600000){
+    // Due now (within last 24h)
+    state='due';color='yellow';
+    timeStr='ahora';
+  }else{
+    // Overdue
+    state='overdue';color='red';
+    const overD=Math.floor(-diff/(24*3600000));
+    timeStr=overD+'d atrás';
+  }
+
+  return{active:true,step:{label:nextStep},state,timeStr,color,dueMs,cycle};
 }
 
 let PL=[];// past leads
@@ -547,7 +574,10 @@ function renderDay(){
     const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
     const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
     const isPri=d===priId;
-    return`<div class="lead${si>=2?' dn':''}${isPri?' priority':''}" onclick="openPB('${d}')">
+    const fu=getFollowUp(rec,l);
+    const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
+    const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${fu.timeStr}</div>`:'';
+    return`<div class="lead${si>=2?' dn':''}${isPri?' priority':''} ${fuCls}" onclick="openPB('${d}')">
       ${isPri?'<div class="pri-tag">Siguiente</div>':''}
       <div class="lh">
         <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
@@ -555,7 +585,7 @@ function renderDay(){
         <div class="lh-sub"><strong>${esc(first)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
         <div class="lh-score ${scCls}">${done} / ${total}</div>
         <div class="ls s${si}">${SL[si]}</div>
-        ${(()=>{const fu=getFollowUp(rec,l);if(!fu.active||!fu.state)return'';const cls={waiting:'fu-waiting',due:'fu-due',overdue:'fu-overdue'}[fu.state]||'';const txt={waiting:'⏳ '+fu.step.label+' en '+fu.timeStr,due:'⚡ '+fu.step.label+' — ahora',overdue:'🔴 '+fu.step.label+' — '+fu.timeStr}[fu.state]||'';return`<div class="fu-pill ${cls}">${txt}</div>`;})()}
+        ${fuTag}
         <button class="lh-pb" onclick="event.stopPropagation();openPB('${d}')">Playbook</button>
       </div>
     </div>`;
@@ -597,7 +627,7 @@ function openPB(d){
     <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${tags?`<div class="tags">${tags}</div>`:''}</div>
     ${l.keyInsight?`<div class="insight">${esc(l.keyInsight)}</div>`:''}
     ${l.companyBrief?`<div class="sec"><div class="sl">Contexto</div><div class="ctx">${esc(l.companyBrief)}</div></div>`:''}
-    ${(()=>{const fu=getFollowUp(rec,l);if(!fu.active||!fu.state)return'';const cls={waiting:'waiting',due:'due',overdue:'overdue'}[fu.state];const icon={waiting:'⏳',due:'⚡',overdue:'🔴'}[fu.state];const timeLabel={waiting:'en '+fu.timeStr,due:'AHORA',overdue:'hace '+fu.timeStr}[fu.state];return`<div class="fu-box"><div class="fu-box-label">Siguiente Paso</div><div class="fu-box-step">${icon} ${fu.step.label}</div><div class="fu-box-time ${cls}">${timeLabel}</div></div>`;})()}
+    ${(()=>{const fu=getFollowUp(rec,l);if(!fu.active||!fu.state)return'';const icon={green:'✓',yellow:'⚡',red:'🔴'}[fu.color]||'';return`<div class="fu-box"><div class="fu-box-label">Siguiente Paso</div><div class="fu-box-step">${icon} ${fu.step.label}</div><div class="fu-box-time ${fu.color}">${fu.timeStr}</div></div>`;})()}
     <div class="sec"><div class="sl">Acciones</div>${stH}</div>
     <div class="stbar">${stBtns}</div>
     ${msH}
@@ -692,7 +722,10 @@ function renderPast(){
     const steps=getSteps(l);const total=steps.length;const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
     const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
     const hasMsgs=(rec.msgs||[]).length>0;
-    return`<div class="lead" onclick="openPB('${d}')">
+    const fu=getFollowUp(rec,l);
+    const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
+    const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${fu.timeStr}</div>`:'';
+    return`<div class="lead ${fuCls}" onclick="openPB('${d}')">
       ${hasMsgs?'<div class="pri-tag" style="color:var(--gn);background:rgba(34,197,94,.12)">Enviado</div>':'<div class="pri-tag" style="color:var(--am);background:rgba(245,158,11,.12)">Pendiente</div>'}
       <div class="lh">
         <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
@@ -700,6 +733,7 @@ function renderPast(){
         <div class="lh-sub"><strong>${esc(first)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
         <div class="lh-score ${scCls}">${done} / ${total}</div>
         <div class="ls s${si}">${SL[si]}</div>
+        ${fuTag}
         <button class="lh-pb" onclick="event.stopPropagation();openPB('${d}')">Abrir Playbook</button>
       </div>
     </div>`;
