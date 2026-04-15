@@ -93,6 +93,15 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .fu-box-step{font-size:13px;font-weight:600;color:var(--tx)}
 .fu-box-time{font-size:11px;margin-top:2px}
 .fu-box-time.green{color:var(--gn2)}.fu-box-time.yellow{color:var(--am)}.fu-box-time.red{color:#f87171}
+/* Past leads — compact cards */
+.lead.compact{min-height:auto;padding:12px 14px;border-radius:10px}
+.lead.compact .lc{font-size:13px;line-height:1.2}
+.lead.compact .lh-sub{font-size:9px}
+.lead.compact .fu-tag{font-size:7px;margin-top:3px}
+/* Date separator */
+.past-sep{text-align:center;margin:18px 0 8px;position:relative;grid-column:1/-1}
+.past-sep::before{content:'';position:absolute;top:50%;left:0;right:0;height:1px;background:var(--bd2)}
+.past-sep span{background:var(--bg);padding:0 14px;font-size:10px;font-weight:700;color:var(--dm);text-transform:uppercase;letter-spacing:1px;position:relative}
 
 /* Priority label */
 .pri-tag{position:absolute;top:8px;right:8px;font-size:7px;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.5px;background:rgba(212,160,23,.12);padding:2px 6px;border-radius:4px}
@@ -713,41 +722,49 @@ function toast(m){const t=document.getElementById('toast');t.textContent=m;t.cla
 let pastLoaded=false;
 async function loadPast(){
   if(pastLoaded)return;
-  // Try leads-past.json first (created by activate-batch.js rotation)
-  try{const r=await fetch('./leads-past.json');if(r.ok){const past=await r.json();if(past.length){PL=past;merge(PL);pastLoaded=true;return}}}catch{}
-  // Fallback: SEED_PAST for unabase_default workspace
-  if(CLIENT_ID==='unabase_default'&&typeof SEED_PAST!=='undefined'&&SEED_PAST&&SEED_PAST.length){PL=SEED_PAST;merge(PL)}
+  PL=[];
+  // Load leads-past.json (most recent archived batch)
+  try{const r=await fetch('./leads-past.json');if(r.ok){const past=await r.json();past.forEach(l=>{l._batchDate=l.source_date||'2026-04-14'});PL.push(...past)}}catch{}
+  // Load SEED_PAST (first report) — dedup against leads-past.json
+  if(CLIENT_ID==='unabase_default'&&typeof SEED_PAST!=='undefined'&&SEED_PAST&&SEED_PAST.length){
+    SEED_PAST.forEach(l=>{l._batchDate=l.source_date||'2026-04-13'});
+    const existing=new Set(PL.map(l=>dom(l.website)));
+    SEED_PAST.filter(l=>!existing.has(dom(l.website))).forEach(l=>PL.push(l));
+  }
+  merge(PL);
   pastLoaded=true;
 }
 function renderPast(){
   if(!PL.length){document.getElementById('pastL').innerHTML='<div style="color:var(--dm);padding:20px;text-align:center;grid-column:1/-1">Sin leads anteriores cargados.</div>';return}
-  document.getElementById('pastL').innerHTML=PL.sort((a,b)=>(b.unabaseScore||0)-(a.unabaseScore||0)).map(l=>{
-    const d=dom(l.website);const rec=gr(d);const st=cSt(rec);const si=ST.indexOf(st);
-    const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
-    const steps=getSteps(l);const total=steps.length;const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
-    const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
-    const hasMsgs=(rec.msgs||[]).length>0;
-    const hasActs=(rec.acts||[]).length>0;
-    let fu=getFollowUp(rec,l,'past');
-    // Past leads that were contacted but have no computed follow-up → default yellow
-    if(!fu.active&&(hasMsgs||hasActs)&&!SEQ_STOPS.includes(st)){
-      fu={active:true,step:{label:'Follow-up pendiente'},state:'due',timeStr:'acción requerida',color:'yellow'};
-    }
-    const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
-    const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${fu.timeStr}</div>`:'';
-    return`<div class="lead ${fuCls}" onclick="openPB('${d}')">
-      ${hasMsgs?'<div class="pri-tag" style="color:var(--gn);background:rgba(34,197,94,.12)">Enviado</div>':'<div class="pri-tag" style="color:var(--am);background:rgba(245,158,11,.12)">Pendiente</div>'}
-      <div class="lh">
-        <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
-        <div class="lc">${esc(l.companyName)}</div>
-        <div class="lh-sub"><strong>${esc(first)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
-        <div class="lh-score ${scCls}">${done} / ${total}</div>
-        <div class="ls s${si}">${SL[si]}</div>
-        ${fuTag}
-        <button class="lh-pb" onclick="event.stopPropagation();openPB('${d}')">Abrir Playbook</button>
-      </div>
-    </div>`;
-  }).join('');
+  // Group by batch date
+  const groups={};
+  PL.forEach(l=>{const bd=l._batchDate||l.source_date||'unknown';if(!groups[bd])groups[bd]=[];groups[bd].push(l)});
+  const dates=Object.keys(groups).sort((a,b)=>b.localeCompare(a));
+
+  let html='';
+  dates.forEach(date=>{
+    const leads=groups[date].sort((a,b)=>(b.unabaseScore||0)-(a.unabaseScore||0));
+    // Date separator
+    html+=`<div class="past-sep"><span>${date}</span></div>`;
+    // Compact cards
+    leads.forEach(l=>{
+      const d=dom(l.website);const rec=gr(d);const st=cSt(rec);
+      const hasMsgs=(rec.msgs||[]).length>0;const hasActs=(rec.acts||[]).length>0;
+      let fu=getFollowUp(rec,l,'past');
+      if(!fu.active&&(hasMsgs||hasActs)&&!SEQ_STOPS.includes(st)){
+        fu={active:true,step:{label:'Follow-up pendiente'},state:'due',timeStr:'acción requerida',color:'yellow'};
+      }
+      const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
+      const fuLabel=fu.active?fu.step.label+' · '+fu.timeStr:'';
+      const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
+      html+=`<div class="lead compact ${fuCls}" onclick="openPB('${d}')">
+        <div class="lc" style="font-size:13px">${esc(l.companyName)}</div>
+        <div class="lh-sub">${esc(first)} · ${esc(l.country)}</div>
+        ${fuLabel?`<div class="fu-tag ${fu.color||''}">${fuLabel}</div>`:''}
+      </div>`;
+    });
+  });
+  document.getElementById('pastL').innerHTML=html;
 }
 
 document.getElementById('cN').textContent=CLIENT.name;
