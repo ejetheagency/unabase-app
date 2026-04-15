@@ -472,7 +472,7 @@ function renderDay(){
       <div class="lh">
         <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
         <div class="lc">${esc(l.companyName)}</div>
-        <div class="lh-sub"><strong>${esc(first)}</strong> · ${esc(l.country)}</div>
+        <div class="lh-sub"><strong>${esc(first)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
         <div class="lh-score ${scCls}">${done} / ${total}</div>
         <div class="ls s${si}">${SL[si]}</div>
         <button class="lh-pb" onclick="event.stopPropagation();openPB('${d}')">Playbook</button>
@@ -513,7 +513,7 @@ function openPB(d){
   document.getElementById('pbT').textContent=l.companyName;
   document.getElementById('pbSc').innerHTML=`<span class="${scCls}">${done}/${total}</span>`;
   document.getElementById('pbB').innerHTML=`
-    <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong> · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${tags?`<div class="tags">${tags}</div>`:''}</div>
+    <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${tags?`<div class="tags">${tags}</div>`:''}</div>
     ${l.keyInsight?`<div class="insight">${esc(l.keyInsight)}</div>`:''}
     ${l.companyBrief?`<div class="sec"><div class="sl">Contexto</div><div class="ctx">${esc(l.companyBrief)}</div></div>`:''}
     <div class="sec"><div class="sl">Acciones</div>${stH}</div>
@@ -609,7 +609,7 @@ function renderPast(){
       <div class="lh">
         <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
         <div class="lc">${esc(l.companyName)}</div>
-        <div class="lh-sub"><strong>${esc(first)}</strong> · ${esc(l.country)}</div>
+        <div class="lh-sub"><strong>${esc(first)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
         <div class="lh-score ${scCls}">${done} / ${total}</div>
         <div class="ls s${si}">${SL[si]}</div>
         <button class="lh-pb" onclick="event.stopPropagation();openPB('${d}')">Abrir Playbook</button>
