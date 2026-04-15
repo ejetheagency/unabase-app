@@ -492,16 +492,16 @@ function getFollowUp(rec,lead){
   const diff=dueMs-nowMs;
   let state,timeStr,color;
 
-  if(diff>24*3600000){
-    // More than 1 day away
+  if(diff>36*3600000){
+    // More than 36h away — comfortable
     state='waiting';color='green';
     const d=Math.floor(diff/(24*3600000));
     timeStr='en '+d+'d';
   }else if(diff>0){
-    // Less than 1 day away
+    // Under 36h — action due soon
     state='due_soon';color='yellow';
     const h=Math.max(1,Math.floor(diff/3600000));
-    timeStr='en '+h+'h';
+    timeStr=h>=24?'mañana':'en '+h+'h';
   }else if(diff>-24*3600000){
     // Due now (within last 24h)
     state='due';color='yellow';
