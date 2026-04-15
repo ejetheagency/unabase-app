@@ -1,0 +1,1789 @@
+[
+  {
+    "companyName": "Cinematres",
+    "website": "https://cinematres.com.ar",
+    "country": "Argentina",
+    "industry": "film",
+    "summary": "Cinematres es una compañía cinematografica fundada por Pablo José Meza y Natacha Rébora en el año 2002. Se dedica a desarrollar y producir proyectos cinematograficos nacionales o en coproduccion y dar servicios de producción.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [
+      "Las Ineses",
+      "Algunos Días Sin Música Largometraje La V",
+      "Buenos Aires 100 KM Largometraje El Paso",
+      "La De Messi Cortometraje Proyectos Estos"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 8,
+    "companyBrief": "Cinematres es una productora argentina fundada en 2002 que desarrolla largometrajes y cortometrajes nacionales y coproducciones, además de dar servicios de producción. Han trabajado con clientes como Facebook y tienen un portfolio de proyectos que incluye Las Ineses, La De Messi y Buenos Aires 100 KM.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Pablo — vi que manejan varios largometrajes como Las Ineses y Buenos Aires 100 KM.\n\ncómo hacen para que no se mezcle todo entre proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": "Pablo Meza",
+    "contactTitle": null,
+    "contactEmail": "pablomeza@cinematres.com.ar",
+    "contactLinkedIn": null,
+    "contactConfidence": "name_from_email",
+    "contactSource": "ddg_email",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/cinematres_argentina/",
+    "instagramHandle": "cinematres_argentina",
+    "instagramBio": "See Instagram photos and videos from Cinematres (@cinematres_argentina) Log into Instagram",
+    "instagramFollowers": "1,965",
+    "facebookUrl": "https://www.facebook.com/CinematresArgentina",
+    "twitterUrl": "https://twitter.com/cinematres",
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "11 6812 2274",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 1
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 11,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@cinematres.com.ar"
+        ],
+        "phones": [
+          "11 6812 2274"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/cinematres_argentina/",
+          "facebook": "https://www.facebook.com/CinematresArgentina",
+          "twitter": "https://twitter.com/cinematres",
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": [
+          "pablomeza@cinematres.com.ar"
+        ]
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": [
+          "pablomeza@cinematres.com.ar"
+        ]
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/cinematres_argentina/",
+        "igHandle": "cinematres_argentina",
+        "igFollowers": "1,965",
+        "socialEmail": "info@cinematres.com.ar",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": "011 4687-5450",
+        "gmbOwner": null
+      },
+      {
+        "step": "name_derive",
+        "email": "pablomeza@cinematres.com.ar"
+      },
+      {
+        "step": "name_derive",
+        "result": "high_confidence",
+        "name": "Pablo Meza"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "cinematres_argentina",
+        "followers": "1,965",
+        "email": null,
+        "phone": null,
+        "triedHandles": 7
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "11 6812 2274",
+          "011 4687-5450",
+          "+5411 3528-7192"
+        ]
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "manualNote": "Nombre derivado del email (pablomeza@cinematres.com.ar) — verificar antes de enviar si es posible",
+    "contactVenues": 3,
+    "instagramDM": "vi que manejan varios largometrajes como Las Ineses y Buenos Aires 100 KM. cómo hacen para que no se mezcle todo entre proyectos?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Pablo es co-fundador de Cinematres, por lo que tiene poder total de decisión sobre herramientas y presupuestos de producción.",
+    "whyThisLead": [
+      "Manejan múltiples proyectos simultaneos (largometrajes, cortometrajes, servicios) que requieren presupuestación separada",
+      "20+ años en el mercado con clientes como Facebook indica volumen y complejidad financiera",
+      "Productora establecida que maneja coproducciones necesita herramientas profesionales de budgeting"
+    ],
+    "actionBlock": [
+      "Abrir con: Vi que Cinematres manejó la campaña de Facebook para 'Las Ineses'",
+      "Enfatizar: Complejidad de coordinar múltiples largometrajes simultáneamente",
+      "Evitar: Mencionar competencia o comparar con otras productoras",
+      "Canal backup: WhatsApp al 11 6812 2274 con mensaje directo sobre gestión de proyectos"
+    ],
+    "conversationAngle": "Con proyectos como Las Ineses y La De Messi, y servicios para Facebook, deben estar manejando presupuestos complejos en Excel - les muestro cómo 300+ productoras ya optimizaron este proceso.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "WhatsApp",
+      "opcional": "Instagram DM"
+    },
+    "emailCercana": "hola Pablo — vi que manejan varios largometrajes como Las Ineses y Buenos Aires 100 KM.\n\ncómo hacen para que no se mezcle todo entre proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola Pablo,\n\nVi que manejan varios largometrajes como Las Ineses y Buenos Aires 100 KM.\n\nCómo hacen para que no se mezcle todo entre proyectos?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @cinematres_argentina",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo especifico en un post reciente (1 linea de ejemplo)",
+      "dm": "Hola! Vi los proyectos de Cinematres y me encantó La De Messi. Soy Scarlett de UnaBase - ayudamos a productoras como ustedes con presupuestación. ¿Charlamos 10 min?"
+    },
+    "whatsappMessage": "Pablo — vi que manejan varios largometrajes como Las Ineses y Buenos Aires 100 KM. cómo hacen para que no se mezcle todo entre proyectos?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Enviar email cercana a pablomeza@cinematres.com.ar",
+      "Dia 2: Seguir y dar engagement en Instagram @cinematres_argentina",
+      "Dia 4: WhatsApp follow-up al 11 6812 2274",
+      "Dia 7: Email final mencionando caso específico de productora argentina similar"
+    ],
+    "keyInsight": "Productora en crecimiento con múltiples largometrajes necesita profesionalizar operaciones manteniendo agilidad creativa.",
+    "replyTrigger": [
+      "Múltiples largometrajes en simultáneo generan cuellos de botella operativos",
+      "Productoras mid-size buscan profesionalizar procesos sin perder agilidad",
+      "Experiencia con clientes como Facebook indica necesidad de sistemas más robustos"
+    ]
+  },
+  {
+    "companyName": "Haddock Films",
+    "website": "https://haddockfilms.com",
+    "country": "Argentina",
+    "industry": "film",
+    "summary": "Somos una empresa argentina de produccción y realización cinematográfica, de televisión y publicidad. Fundada en Buenos Aires en el año 2006.",
+    "notableClients": [
+      "Netflix",
+      "Facebook"
+    ],
+    "recentProjects": [
+      "El secreto de sus ojos",
+      "by Haddock Films",
+      "the company profile See 2 updates Adverti",
+      "Netflix Producido por Harlan Coben",
+      "Extranjera en 2010 con nuestro film",
+      "de TV",
+      "Extranjera en 2010 con el film"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 6,
+    "companyBrief": "Haddock Films es una productora argentina fundada en 2006 que realiza contenido cinematográfico, TV y publicidad. Trabajan con clientes premium como Netflix y Facebook, incluyendo proyectos de alto perfil como 'El secreto de sus ojos'.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Vanessa — vi que Haddock produce para Netflix con un equipo de 23 personas.\n\ncómo están manejando tantos proyectos con ese equipo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": "Vanessa Ragone",
+    "contactTitle": null,
+    "contactEmail": "vanessa.ragone@haddockfilms.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "hunter_domain",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/haddockfilms/",
+    "twitterUrl": "https://twitter.com/HaddockFilms",
+    "youtubeUrl": "https://www.youtube.com/channel/UCnmqMxFHaOCjPPK82UqItYw",
+    "vimeoUrl": "https://vimeo.com/haddockfilms",
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "named_contact",
+        "name": "Vanessa Ragone",
+        "email": "vanessa.ragone@haddockfilms.com"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 10,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@haddockfilms.com"
+        ],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/haddockfilms/",
+          "facebook": "https://www.facebook.com/haddockfilms/",
+          "twitter": "https://twitter.com/HaddockFilms",
+          "youtube": "https://www.youtube.com/channel/UCnmqMxFHaOCjPPK82UqItYw",
+          "vimeo": "https://vimeo.com/haddockfilms"
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/haddock-films-s-r-l",
+    "apolloCompanyPhone": "54 9 11 4776-1876",
+    "apolloEmployeeCount": 23,
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Medio",
+    "contactWhyThisPerson": "Como contacto principal de una productora de 23 empleados, probablemente maneja operaciones y decisiones de herramientas de producción.",
+    "whyThisLead": [
+      "Productora activa con múltiples líneas de negocio (cine, TV, publicidad) requiere gestión compleja de presupuestos",
+      "Clientes premium como Netflix y Facebook indican proyectos de alto volumen y presupuestos sofisticados",
+      "17 años en el mercado con 23 empleados es el tamaño ideal para herramientas de presupuestación profesional"
+    ],
+    "actionBlock": [
+      "Abrir con: Veo que Haddock Films maneja proyectos de alto calibre como 'El secreto de sus ojos' para clientes como Netflix",
+      "Enfatizar: Coordinación de equipos de 23 personas en múltiples proyectos simultáneos",
+      "Evitar: Mencionar competencia o criticar sus procesos actuales",
+      "Canal backup: Mensaje por LinkedIn mencionando su perfil profesional y la conexión con la industria audiovisual"
+    ],
+    "conversationAngle": "Con clientes como Netflix y el historial de 'El secreto de sus ojos', manejar presupuestos complejos entre cine, TV y publicidad debe ser un desafío diario.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "WhatsApp",
+      "opcional": "LinkedIn"
+    },
+    "emailCercana": "hola Vanessa — vi que Haddock produce para Netflix con un equipo de 23 personas.\n\ncómo están manejando tantos proyectos con ese equipo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola Vanessa,\n\nVi que Haddock produce para Netflix con un equipo de 23 personas.\n\nCómo están manejando tantos proyectos con ese equipo?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Vanessa — vi que Haddock produce para Netflix con un equipo de 23 personas. cómo están manejando tantos proyectos con ese equipo?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "linkedinPlaybook": {
+      "connectionNote": "Admiro el trabajo de Haddock Films con Netflix - me encantaría conectar y compartir insights sobre gestión de equipos en producción audiovisual.",
+      "followUp": "Vanessa, después de revisar el portfolio de Haddock Films, creo que UnaBase podría ser muy útil para optimizar la coordinación de sus 23 colaboradores en proyectos múltiples. ¿Te interesaría una breve llamada esta semana?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email cercana + conectar LinkedIn",
+      "Dia 2: Llamada telefónica de seguimiento",
+      "Dia 4: WhatsApp con enfoque en Netflix",
+      "Dia 7: Email final mencionando competidores que ya usan UnaBase"
+    ],
+    "keyInsight": "Productoras mid-size como Haddock necesitan urgentemente optimizar coordinación interna para cumplir con las exigencias de clientes premium como Netflix.",
+    "replyTrigger": [
+      "Gestión de 23 empleados en proyectos simultáneos genera complejidad operativa diaria",
+      "Productoras audiovisuales están bajo presión constante por deadlines de Netflix y plataformas",
+      "Necesidad de centralizar coordinación entre departamentos creativos y administrativos"
+    ]
+  },
+  {
+    "companyName": "Magma Cine",
+    "website": "https://magmacine.com.ar",
+    "country": "Argentina",
+    "industry": "film",
+    "summary": "MAGMA CINE Casa productora de contenidos audiovisuales fundada en el 2005 por Nathalia Videla Peña y Juan Pablo Gugliotta con más de 30 largos y series de ficción, documentales y cortometrajes. Ganadora de premio platino mejor ópera prima 2023 Disponible en Filmin España. Nos especializamos en la búsqueda de financiación en el mercado internacional y hemos coproducido con los países más relevantes del mapa audiovisual mundial: España, Francia, Alemania, México, Brasil, Chile, Uruguay, Colombia, Panamá y Estados Unidos.",
+    "notableClients": [
+      "Netflix",
+      "Amazon",
+      "Fox",
+      "Movistar",
+      "Facebook",
+      "Mercedes"
+    ],
+    "recentProjects": [
+      "Araña",
+      "more than 38 films",
+      "with companies such as Participant Media",
+      "by Magma Cine",
+      "Manual de supervivencia"
+    ],
+    "estimatedSize": "large",
+    "unabaseScore": 8,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 9,
+    "companyBrief": "Magma Cine es una casa productora argentina con más de 30 largos y series, especializada en coproducciones internacionales y búsqueda de financiación. Trabajan con clientes premium como Netflix, Amazon, Fox y han coproducido con países clave del mercado audiovisual mundial.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Juan — vi que Magma lleva más de 38 films con Netflix y Amazon.\n\ncómo hacen para no perderse con tantos proyectos a la vez?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": "Juan Martin Arauz",
+    "contactTitle": "Co-founder",
+    "contactEmail": "nat@magmacine.com.ar",
+    "contactLinkedIn": "http://www.linkedin.com/in/juan-martin-arauz-9b8198177",
+    "contactConfidence": "confirmed",
+    "contactSource": "hunter_domain",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "9 (11) 3782 6354",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name_only",
+        "name": "Juan Martin Arauz"
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "named_contact",
+        "name": "Nathalia Videla",
+        "email": "nat@magmacine.com.ar"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 13,
+        "personalEmails": [
+          "juanpablo@magmacine.com.ar",
+          "nat@magmacine.com.ar"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "9 (11) 3782 6354"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/magma.cine/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/magma-tv-y-cine-sl",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 1,
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Co-founder con poder de decisión directo sobre herramientas operativas y presupuestos de producción.",
+    "whyThisLead": [
+      "Manejan múltiples coproducciones internacionales que requieren presupuestación compleja con diferentes monedas y socios",
+      "Casa productora establecida con clientes premium y más de 30 producciones que indica volumen operativo alto",
+      "Especialización en financiación internacional requiere presentaciones de presupuesto profesionales para inversores"
+    ],
+    "actionBlock": [
+      "Abrir con: Vi que Magma Cine maneja más de 38 films con clientes como Netflix",
+      "Enfatizar: Caos operacional de coordinar entregas internacionales",
+      "Evitar: Mencionar el tamaño pequeño del equipo directamente",
+      "Canal backup: WhatsApp al número argentino en 48h con mensaje directo"
+    ],
+    "conversationAngle": "Con tantas coproducciones internacionales y la complejidad de presupuestar con múltiples países y monedas, UnaBase puede simplificar dramáticamente su proceso de budgeting y presentaciones a inversores.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "LinkedIn",
+      "opcional": "WhatsApp"
+    },
+    "emailCercana": "hola Juan — vi que Magma lleva más de 38 films con Netflix y Amazon.\n\ncómo hacen para no perderse con tantos proyectos a la vez?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola Juan,\n\nVi que Magma lleva más de 38 films con Netflix y Amazon.\n\nCómo hacen para no perderse con tantos proyectos a la vez?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Juan — vi que Magma lleva más de 38 films con Netflix y Amazon. cómo hacen para no perderse con tantos proyectos a la vez?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "linkedinPlaybook": {
+      "connectionNote": "Increíble el portfolio de Magma Cine con Netflix y Amazon.",
+      "followUp": "Juan, imagino que coordinar tantas producciones simultáneas genera desafíos operacionales diarios. UnaBase ayuda a productoras como Magma a centralizar todo sin perder agilidad creativa. ¿Sentido una llamada breve?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email personalizado mencionando coproducciones + email",
+      "Dia 2: Solicitud de conexión en LinkedIn + LinkedIn",
+      "Dia 4: Follow-up email con caso de éxito de productora similar + email",
+      "Dia 7: Mensaje final vía WhatsApp con enfoque directo en ROI + WhatsApp"
+    ],
+    "keyInsight": "Productora en crecimiento con clientes premium necesita urgentemente mejor coordinación operacional.",
+    "replyTrigger": [
+      "Múltiples entregas simultáneas a Netflix/Amazon creando bottlenecks",
+      "Crecimiento acelerado requiere mejor coordinación interna",
+      "UnaBase elimina el ping-pong de emails entre stakeholders internacionales"
+    ]
+  },
+  {
+    "companyName": "Cine",
+    "website": "https://chimpancefilms.com.ar",
+    "country": "Argentina",
+    "industry": "film",
+    "summary": "Saltar al contenido Chimpancé presentaciones corporativo publicidad cine familiares y sociales bandas desfiles y modelaje CONTACTO Chimpancé Films Somos una productora audiovisual que vive y respira arte. Nuestro compromiso es transformar cada proyecto en una obra única, donde la calidad y la creatividad sean las protagonistas. Nos define la pasión por contar historias que conectan, inspiran y perduran en el tiempo.",
+    "notableClients": [],
+    "recentProjects": [
+      "Cine",
+      "en una obra única",
+      "es una oportunidad para hacer algo extrao"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 8,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 7,
+    "companyBrief": "Chimpancé Films es una productora audiovisual argentina que se especializa en cine, publicidad, contenido corporativo y eventos familiares/sociales. Con 1700 empleados, manejan múltiples líneas de producción desde largometrajes hasta campañas publicitarias.",
+    "approachAngle": null,
+    "pitchEmailES": "hola equipo de Chimpancé Films — vi el trabajo de cine experimental que hacen.\n\ncómo están organizando toda la producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "chimpancefilms@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/cinefilms/",
+    "instagramHandle": "cinefilms",
+    "instagramBio": "See Instagram photos and videos from Cinefilms (@cinefilms)",
+    "instagramFollowers": "1,879",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "9 11 2290-9883",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 0
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 10,
+        "personalEmails": [
+          "chimpancefilms@gmail.com"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "9 11 2290-9883"
+        ],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/cinefilms/",
+        "igHandle": "cinefilms",
+        "igFollowers": "1,879",
+        "socialEmail": null,
+        "socialPhone": null
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/cine-colombia",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 1700,
+    "instagramDM": "vi el trabajo de cine experimental que hacen. cómo están organizando toda la producción?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Email general de la empresa - necesitamos identificar al productor ejecutivo o director de operaciones para decisiones de software.",
+    "whyThisLead": [
+      "Productora mid-size con múltiples líneas de negocio (cine, publicidad, corporativo) requiere gestión compleja de presupuestos",
+      "1700 empleados indica operación robusta con necesidad de centralizar control financiero de proyectos",
+      "Productoras audiovisuales argentinas necesitan herramientas especializadas para cotizar proyectos variados"
+    ],
+    "actionBlock": [
+      "Abrir con: Vi que están trabajando en obras únicas y proyectos cinematográficos experimentales",
+      "Enfatizar: Gestión de equipos creativos sin perder flexibilidad artística",
+      "Evitar: Mencionar automatización o procesos rígidos",
+      "Canal backup: WhatsApp directo al 9 11 2290-9883 con mensaje sobre timing de presupuestos"
+    ],
+    "conversationAngle": "Productoras como Chimpancé con múltiples líneas (cine + publicidad + corporativo) pierden rentabilidad por presupuestación manual - mostrarles cómo centralizar y agilizar cotizaciones.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram",
+      "opcional": "WhatsApp"
+    },
+    "emailCercana": "hola equipo de Chimpancé Films — vi el trabajo de cine experimental que hacen.\n\ncómo están organizando toda la producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola equipo de Chimpancé Films,\n\nVi el trabajo de cine experimental que hacen.\n\nCómo están organizando toda la producción?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @cinefilms",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Increíble la calidad visual que logran en cada proyecto 🎬'",
+      "dm": "Hola! Vimos el trabajo que hacen en Chimpancé - súper sólido. Trabajamos con productoras ayudándolas a optimizar presupuestación. Les interesaría conocer la plataforma?"
+    },
+    "whatsappMessage": "equipo de Chimpancé Films — vi el trabajo de cine experimental que hacen. cómo están organizando toda la producción?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "linkedinPlaybook": {
+      "connectionNote": "Interesada en su enfoque de cine experimental y gestión de equipos creativos.",
+      "followUp": "Hola! Conecté porque su trabajo en producciones únicas me parece fascinante. Con 1700 personas, imagino que coordinar talento creativo es todo un desafío. UnaBase ayuda a productoras como ustedes a mantener la organización sin matar la creatividad."
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email formal + seguir en Instagram",
+      "Dia 2: Dar likes y comentar posts recientes en IG",
+      "Dia 4: Enviar DM por Instagram mencionando email anterior",
+      "Dia 7: WhatsApp directo con propuesta de demo de 10 minutos"
+    ],
+    "keyInsight": "Están en temporada de planificación de producciones 2024 y necesitan estructura operacional que no limite su visión artística.",
+    "replyTrigger": [
+      "Coordinación de equipos en múltiples locaciones de filmación",
+      "Fin de año y planificación de producciones 2024",
+      "Necesidad de estructura que mantenga libertad creativa"
+    ]
+  },
+  {
+    "companyName": "Misil Producciones",
+    "website": "https://misilproducciones.com",
+    "country": "Argentina",
+    "industry": "film",
+    "summary": "Agendá tu diagnóstico gratuito 🚀 powered by Calendly Ir al contenido 🥳 ¡Ganadores del festival 7Siff2025! 🎉 Somos una productora audiovisual de cine independiente radicada en Buenos Aires, Argentina. Especialistas en Reels Actorales, Cortometrajes para enviar a festivales por el mundo, branded content para marcas y ficción original para artistas.",
+    "notableClients": [
+      "A24",
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 6,
+    "companyBrief": "Productora audiovisual independiente de Buenos Aires especializada en reels actorales, cortometrajes para festivales y branded content. Trabajan con clientes como A24 y Facebook, recién ganaron el festival 7Siff2025.",
+    "approachAngle": null,
+    "pitchEmailES": "hola equipo de Misil Producciones — vi que trabajan con A24 y Facebook.\n\ncómo están manejando eso entre proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "misilprod@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "name_from_email",
+    "contactSource": "ddg_email",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/misilproducciones/?hl=es",
+    "instagramHandle": "misilproducciones",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/MisilProducciones/?locale=es_LA",
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/live/KekLTrtT9aE?si=4o53u-1uwzjd8W9U",
+    "vimeoUrl": null,
+    "contactPhone": "+1140644356",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 0
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 13,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/misilproducciones/?hl=es",
+          "facebook": "https://www.facebook.com/MisilProducciones/?locale=es_LA",
+          "twitter": null,
+          "youtube": "https://www.youtube.com/live/KekLTrtT9aE?si=4o53u-1uwzjd8W9U",
+          "vimeo": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": [
+          "misilprod@gmail.com"
+        ]
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": [
+          "misilprod@gmail.com"
+        ]
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/misilproducciones/?hl=es",
+        "igHandle": "misilproducciones",
+        "igFollowers": null,
+        "socialEmail": "misilproducciones@gmail.com",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": "+1140644356",
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "name_derive",
+        "email": "misilprod@gmail.com"
+      },
+      {
+        "step": "name_confirm",
+        "confirmed": "Misil Producciones",
+        "via": "prefix_match"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "misilproducciones",
+        "followers": null,
+        "email": null,
+        "phone": null,
+        "triedHandles": 14
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+1140644356",
+          "+56962340934",
+          "+56981925126",
+          "+56948686547"
+        ]
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "manualNote": "Nombre derivado del email (misilprod@gmail.com) — verificar antes de enviar si es posible",
+    "contactVenues": 3,
+    "instagramDM": "vi que trabajan con A24 y Facebook. cómo están manejando eso entre proyectos?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Email general de la empresa - probablemente llegue a founder/producer que toma decisiones de herramientas.",
+    "whyThisLead": [
+      "Manejan múltiples formatos (reels, cortometrajes, branded content) = múltiples presupuestos complejos",
+      "Clientes nivel A24 + crecimiento post-premio festival = expansión operativa",
+      "Productora independiente pequeña necesita eficiencia en budgeting para competir"
+    ],
+    "actionBlock": [
+      "Abrir con: Veo que trabajan con A24 y Facebook",
+      "Enfatizar: Gestión de assets y workflow para clientes premium",
+      "Evitar: Mencionar tamaño de la empresa o comparar con otros estudios",
+      "Canal backup: WhatsApp al +1140644356 en 48h con mensaje sobre eficiencia en producción"
+    ],
+    "conversationAngle": "Con clientes como A24 y el éxito en festivales, seguro están manejando presupuestos cada vez más complejos entre reels, cortos y branded content.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram DM",
+      "opcional": "WhatsApp"
+    },
+    "emailCercana": "hola equipo de Misil Producciones — vi que trabajan con A24 y Facebook.\n\ncómo están manejando eso entre proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola equipo de Misil Producciones,\n\nVi que trabajan con A24 y Facebook.\n\nCómo están manejando eso entre proyectos?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @misilproducciones",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Felicitaciones por 7Siff2025! 🚀 Increíble trabajo'",
+      "dm": "Hola! Scarlett de UnaBase acá 👋 Vi que ganaron 7Siff2025, que genial! Les escribí por mail sobre nuestra plataforma de budgeting para productoras. ¿Lo vieron?"
+    },
+    "whatsappMessage": "equipo de Misil Producciones — vi que trabajan con A24 y Facebook. cómo están manejando eso entre proyectos?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Enviar email celebrando premio 7Siff2025",
+      "Dia 2: Follow en Instagram + like posts recientes",
+      "Dia 4: WhatsApp casual mencionando A24",
+      "Dia 7: Email final enfocado en eficiencia para productora independiente"
+    ],
+    "keyInsight": "Maneja clientes premium que requieren procesos impecables y puede estar buscando herramientas para escalar sin perder calidad.",
+    "replyTrigger": [
+      "Coordinación compleja con clientes internacionales como Facebook",
+      "Necesidad de mostrar profesionalismo en entregables para A24",
+      "Optimización de tiempo en procesos creativos"
+    ]
+  },
+  {
+    "companyName": "Video deportivo",
+    "website": "https://1813estudio.com",
+    "country": "Mexico",
+    "industry": "tv",
+    "summary": "Producción audiovisual de alta calidad y narrativas visuales únicas que conectan con tu audiencia. Creamos contenido impactante, creativo y memorable para marcas, eventos y campañas.",
+    "notableClients": [],
+    "recentProjects": [
+      "cuente una historia única y memorable",
+      "audiovisual NUESTROS SERVICIOS VIDEO DEPO"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 7,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 6,
+    "companyBrief": "Video deportivo es una productora audiovisual mexicana que crea contenido narrativo de alta calidad para marcas, eventos y campañas. Se especializan en narrativas visuales únicas y contenido memorable para clientes corporativos.",
+    "approachAngle": null,
+    "pitchEmailES": "hola equipo de Nacho Gimeno — vi el trabajo audiovisual deportivo que hacen.\n\ncómo están organizando todo eso?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "info@nachogimeno.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "social_only",
+    "contactSource": "social",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/nachophooto/?hl=es",
+    "instagramHandle": "nachophooto",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/FotografiaNachoGimeno",
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/channel/UCZkvRGR6CLz4KIM0oRknrAg",
+    "vimeoUrl": "https://vimeo.com/1813estudio",
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 1
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 10,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@1813estudio.com"
+        ],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/nachophooto/?hl=es",
+          "facebook": "https://www.facebook.com/FotografiaNachoGimeno",
+          "twitter": null,
+          "youtube": "https://www.youtube.com/channel/UCZkvRGR6CLz4KIM0oRknrAg",
+          "vimeo": "https://vimeo.com/1813estudio"
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/nachophooto/?hl=es",
+        "igHandle": "nachophooto",
+        "igFollowers": null,
+        "socialEmail": "info@nachogimeno.com",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "nachophooto",
+        "followers": null,
+        "email": null,
+        "phone": null,
+        "triedHandles": 14
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": []
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 2,
+    "manualNote": "Email generico (info@nachogimeno.com) — contactar tambien por Instagram @nachophooto",
+    "instagramDM": "vi el trabajo audiovisual deportivo que hacen. cómo están organizando todo eso?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Email genérico sugiere contacto administrativo, pero en productoras mid-size suelen tener acceso directo a decisores creativos y financieros.",
+    "whyThisLead": [
+      "Productora activa creando contenido para marcas múltiples requiere presupuestación constante de proyectos",
+      "Empresa mid-size en crecimiento con servicios diversificados indica volumen de proyectos simultáneos",
+      "Productora audiovisual mexicana encaja perfectamente con base de clientes de UnaBase en entretenimiento"
+    ],
+    "actionBlock": [
+      "Abrir con: Hola equipo de Video deportivo,",
+      "Enfatizar: Problemas de gestión de información dispersa en producción deportiva",
+      "Evitar: Mencionar competencia o comparaciones con otras productoras",
+      "Canal backup: Seguimiento por Instagram mencionando un proyecto específico de @nachophooto en 48h"
+    ],
+    "conversationAngle": "Sabemos lo complejo que es manejar presupuestos de múltiples proyectos audiovisuales simultáneamente - especialmente cuando cada cliente y campaña tiene requerimientos únicos.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram",
+      "opcional": "none"
+    },
+    "emailCercana": "hola equipo de Nacho Gimeno — vi el trabajo audiovisual deportivo que hacen.\n\ncómo están organizando todo eso?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola equipo de Nacho Gimeno,\n\nVi el trabajo audiovisual deportivo que hacen.\n\nCómo están organizando todo eso?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @nachophooto",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo especifico en un post reciente (1 linea de ejemplo)",
+      "dm": "Hola! Soy Scarlett de UnaBase - ayudamos a productoras como Video deportivo con software de presupuestación. ¿Podrías conectarme con quien maneja la parte financiera de proyectos? 🎬"
+    },
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Enviar email cercana + seguir en Instagram",
+      "Dia 2: Dar engagement en Instagram y enviar DM",
+      "Dia 4: Follow-up email preguntando por mejor momento para hablar",
+      "Dia 7: Email final ofreciendo caso de estudio de productora similar"
+    ],
+    "keyInsight": "Están en fase de crecimiento donde la desorganización de contactos deportivos empieza a impactar la eficiencia de producción.",
+    "replyTrigger": [
+      "Frustración por perder tiempo buscando contactos de atletas/equipos entre proyectos",
+      "Momento de crecimiento donde necesitan sistematizar procesos",
+      "Fit perfecto porque manejan múltiples contactos deportivos que requieren seguimiento continuo"
+    ]
+  },
+  {
+    "companyName": "Bienvenido a Anchoita Films",
+    "website": "https://aquafilms.com.ar",
+    "country": "Argentina",
+    "industry": "film",
+    "summary": "Anchoíta Films es una productora de cine y teatro con base en Buenos Aires. Enfoca sus recursos en el desarrollo, producción y post producción de largometrajes.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 7,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "companyBrief": "Anchoíta Films es una productora de cine y teatro de Buenos Aires especializada en desarrollo, producción y post producción de largometrajes. Han trabajado con clientes como Facebook, indicando capacidad para proyectos de mediano presupuesto.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Silvina — vi que Anchoita Films trabaja con Facebook.\n\ncómo están manejando todo eso?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": "Silvina Argentine",
+    "contactTitle": null,
+    "contactEmail": "silvina@aquafilms.com.ar",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "hunter_domain",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/AquafilmsARG/",
+    "twitterUrl": "https://twitter.com/aquafilms",
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "named_contact",
+        "name": "Silvina Argentine",
+        "email": "silvina@aquafilms.com.ar"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [
+          "produccion@anchoitafilms.com.ar"
+        ],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/volareshumano/",
+          "facebook": "https://www.facebook.com/AquafilmsARG/",
+          "twitter": "https://twitter.com/aquafilms",
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": "produccion@anchoitafilms.com.ar",
+        "socialPhone": null
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Como contacto directo de la productora, probablemente maneja operaciones diarias y puede conectar con decision makers.",
+    "whyThisLead": [
+      "Se enfocan en largometrajes que requieren presupuestación compleja across desarrollo, producción y post",
+      "Trabajan con clientes corporativos como Facebook que demandan reporting detallado",
+      "Productora mid-size que necesita herramientas profesionales sin complejidad enterprise"
+    ],
+    "actionBlock": [
+      "Abrir con: Vi que Anchoita Films está trabajando con Facebook",
+      "Enfatizar: Pérdida de oportunidades por datos dispersos",
+      "Evitar: Mencionar que no tienen proyectos visibles",
+      "Canal backup: Buscar en LinkedIn a Silvina Argentine y enviar mensaje directo"
+    ],
+    "conversationAngle": "Productoras como ustedes que manejan largometrajes para clientes corporativos necesitan presupuestación que no se rompa entre pre-producción y post.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "llamada telefonica",
+      "opcional": "investigar LinkedIn personal"
+    },
+    "emailCercana": "hola Silvina — vi que Anchoita Films trabaja con Facebook.\n\ncómo están manejando todo eso?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola Silvina,\n\nVi que Anchoita Films trabaja con Facebook.\n\nCómo están manejando todo eso?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Enviar email cercana",
+      "Dia 3: Follow up email mencionando caso específico de largometrajes",
+      "Dia 6: Email final con case study de productora argentina similar",
+      "Dia 10: Llamar directamente si tienen teléfono o buscar LinkedIn personal"
+    ],
+    "keyInsight": "Productora con cliente grande necesita sistemas más robustos de gestión de contactos.",
+    "replyTrigger": [
+      "Gestión compleja de contactos en proyectos audiovisuales",
+      "Necesidad de centralización cuando trabajas con clientes grandes como Facebook",
+      "Timing perfecto para optimizar procesos antes de nuevos proyectos"
+    ]
+  },
+  {
+    "companyName": "NOSOTROS",
+    "website": "https://pampafilms.com.ar",
+    "country": "Argentina",
+    "industry": "film",
+    "summary": "EN PAMPA FILMS ESTAMOS COMPROMETIDOS CON EL ARTE DE CONTAR HISTORIAS A TRAVÉS DE LA PANTALLA, Y POR ESO PONEMOS TODO NUESTRO ESFUERZO EN PRODUCIR OBRAS QUE CAUTIVEN AL PÚBLICO Y DEJEN UNA HUELLA EN SU MEMORIA.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [
+      "DE LA GENTE EL ENCARGADO 2 FREEKS ENTRELA",
+      "is a production company based in Bilbao",
+      "and where you can watch them"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 6,
+    "companyBrief": "Pampa Films es una productora argentina especializada en entretenimiento que trabaja con clientes como Facebook en proyectos audiovisuales. Con 120 empleados, se enfocan en producir contenido que cautive audiencias y deje huella memorable.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Agustin — vi que Pampa Films tiene 120 personas y produce para Facebook.\n\ncómo hacen para no perderse con tanta gente y tantos proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": "Agustin Bossi",
+    "contactTitle": "Co-CEO",
+    "contactEmail": "cabe.bossi@pampafilms.com.ar",
+    "contactLinkedIn": "http://www.linkedin.com/in/agust%c3%adn-bossi-434133196",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/PampaFilms/",
+    "twitterUrl": "https://twitter.com/pampafilms?lang=es",
+    "youtubeUrl": "https://www.youtube.com/@PampaFilms",
+    "vimeoUrl": "https://vimeo.com/user27255955",
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Agustin Bossi",
+        "title": "Co-CEO",
+        "email": "cabe.bossi@pampafilms.com.ar",
+        "linkedin": "http://www.linkedin.com/in/agust%c3%adn-bossi-434133196"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@pampafilms.com.ar"
+        ],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/pampafilms/",
+          "facebook": "https://www.facebook.com/PampaFilms/",
+          "twitter": "https://twitter.com/pampafilms?lang=es",
+          "youtube": "https://www.youtube.com/@PampaFilms",
+          "vimeo": "https://vimeo.com/user27255955"
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": "info@pampafilms.com.ar",
+        "socialPhone": null
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/hechopornosotros",
+    "apolloCompanyPhone": "54 9 11 4957-1809",
+    "apolloEmployeeCount": 120,
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como Co-CEO, Agustin tiene poder de decision directo sobre herramientas y procesos que impacten la operacion de la productora.",
+    "whyThisLead": [
+      "Productora activa con multiples proyectos simultaneos que requiere gestion de presupuestos complejos",
+      "120 empleados trabajando con clientes premium como Facebook indica volumen y sofisticacion operacional",
+      "Empresa de entretenimiento argentina que encaja perfectamente con el nicho de UnaBase para productoras"
+    ],
+    "actionBlock": [
+      "Abrir con: Veo que Pampa Films maneja producciones de gran escala como las de Facebook",
+      "Enfatizar: Fricción operacional específica de productoras con 120+ empleados",
+      "Evitar: Mencionar competidores o generalizar sobre la industria",
+      "Canal backup: WhatsApp al 54 9 11 4957-1809 con mensaje directo sobre eficiencia operacional"
+    ],
+    "conversationAngle": "Mostrarle como otras productoras argentinas estan optimizando sus presupuestos para proyectos con clientes internacionales como Facebook, especialmente cuando manejan multiples producciones simultaneas.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "WhatsApp",
+      "opcional": "LinkedIn"
+    },
+    "emailCercana": "hola Agustin — vi que Pampa Films tiene 120 personas y produce para Facebook.\n\ncómo hacen para no perderse con tanta gente y tantos proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola Agustin,\n\nVi que Pampa Films tiene 120 personas y produce para Facebook.\n\nCómo hacen para no perderse con tanta gente y tantos proyectos?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Agustin — vi que Pampa Films tiene 120 personas y produce para Facebook. cómo hacen para no perderse con tanta gente y tantos proyectos?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "linkedinPlaybook": {
+      "connectionNote": "Soluciones operacionales para productoras argentinas de gran escala como Pampa Films",
+      "followUp": "Hola Agustin, gestionar 120 empleados en múltiples producciones como las que hacen para Facebook debe generar muchísima fricción operacional. UnaBase elimina exactamente ese caos. ¿Una llamada rápida esta semana?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email cercana + solicitud LinkedIn",
+      "Dia 2: Seguimiento por WhatsApp con tono casual",
+      "Dia 4: Email formal de seguimiento",
+      "Dia 7: Ultimo follow-up por LinkedIn mencionando beneficio especifico"
+    ],
+    "keyInsight": "Co-CEO de productora con 120 empleados necesita urgentemente optimizar operaciones para mantener rentabilidad en proyectos de gran escala.",
+    "replyTrigger": [
+      "120 empleados generan complejidad operacional diaria que impacta costos",
+      "Productoras argentinas de su escala necesitan optimización urgente",
+      "UnaBase resuelve específicamente el caos de coordinación en equipos grandes de producción"
+    ]
+  },
+  {
+    "companyName": "Productora Audiovisual en Buenos Aires",
+    "website": "https://sunfactoryfilms.com",
+    "country": "Argentina",
+    "industry": "film",
+    "summary": "Productora audiovisual en Buenos Aires. Videos institucionales, campañas, eventos, estudio, equipo propio y producción integral para marcas, empresas y proyectos documentales.",
+    "notableClients": [
+      "Sony"
+    ],
+    "recentProjects": [
+      "lo requiere",
+      "terminada",
+      "audiovisual en minutos Respondé unas preg"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "companyBrief": "Sun Factory Films es una productora audiovisual de Buenos Aires especializada en videos institucionales, campañas y eventos con equipo propio. Trabajan con clientes como Sony y ofrecen producción integral para marcas, empresas y documentales.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Julián — vi que Sun Factory trabaja con Sony.\n\ncómo están organizando toda la operación?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": "Julián Di Nanno",
+    "contactTitle": "CEO",
+    "contactEmail": "hola@sunfactory.com.ar",
+    "contactLinkedIn": null,
+    "contactConfidence": "generic",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/sunfactoryfilms",
+    "instagramHandle": "sunfactoryfilms",
+    "instagramBio": "See Instagram photos and videos from Sun Factory Films (@sunfactoryfilms)",
+    "instagramFollowers": "614",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/sunfactoryfilms",
+    "vimeoUrl": "https://vimeo.com/sunfactory",
+    "contactPhone": "+54 11 3651 1204",
+    "emailPatterns": [
+      "julian@sunfactoryfilms.com",
+      "julian.dinanno@sunfactoryfilms.com",
+      "j.dinanno@sunfactoryfilms.com"
+    ],
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 0
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 12,
+        "personalEmails": [],
+        "genericEmails": [
+          "hola@sunfactory.com.ar"
+        ],
+        "phones": [
+          "+54 11 3651 1204"
+        ],
+        "name": "Julián Di Nanno",
+        "social": {
+          "instagram": "https://www.instagram.com/sunfactoryfilms",
+          "facebook": null,
+          "twitter": null,
+          "youtube": "https://www.youtube.com/sunfactoryfilms",
+          "vimeo": "https://vimeo.com/sunfactory"
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/sunfactoryfilms",
+        "igHandle": "sunfactoryfilms",
+        "igFollowers": "614",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": "+54 11 6112-4854",
+        "gmbOwner": null
+      },
+      {
+        "step": "D",
+        "name": "Name→Email",
+        "started": true
+      },
+      {
+        "step": "D",
+        "patterns": [
+          "julian@sunfactoryfilms.com",
+          "julian.dinanno@sunfactoryfilms.com",
+          "j.dinanno@sunfactoryfilms.com"
+        ],
+        "via": "pattern"
+      },
+      {
+        "step": 9,
+        "name": "Hunter Find",
+        "started": true
+      },
+      {
+        "step": 9,
+        "found": "nothing"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "sunfactoryfilms",
+        "followers": "614",
+        "email": null,
+        "phone": null,
+        "triedHandles": 15
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+54 11 3651 1204",
+          "+54 11 6112-4854"
+        ]
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "instagramDM": "vi que Sun Factory trabaja con Sony. cómo están organizando toda la operación?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como CEO y fundador, Julián toma todas las decisiones de inversión en herramientas y tecnología para la productora.",
+    "whyThisLead": [
+      "Maneja múltiples tipos de proyectos (institucionales, campañas, eventos, documentales) que requieren presupuestación diferenciada",
+      "Cliente de Sony indica capacidad de manejar proyectos de gran escala con presupuestos complejos",
+      "Productora con equipo propio necesita trackear costos de equipamiento y recursos internos eficientemente"
+    ],
+    "actionBlock": [
+      "Abrir con: Vi que Sun Factory maneja clientes como Sony",
+      "Enfatizar: Tiempo perdido en coordinación vs creatividad",
+      "Evitar: Mencionar competidores o procesos técnicos complejos",
+      "Canal backup: WhatsApp al +54 11 3651 1204 con mensaje directo sobre automatización"
+    ],
+    "conversationAngle": "Como manejan presupuestos tan diversos - desde videos institucionales hasta producciones para Sony - sin una plataforma especializada para audiovisuales.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram DM",
+      "opcional": "WhatsApp"
+    },
+    "emailCercana": "hola Julián — vi que Sun Factory trabaja con Sony.\n\ncómo están organizando toda la operación?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola Julián,\n\nVi que Sun Factory trabaja con Sony.\n\nCómo están organizando toda la operación?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @sunfactoryfilms",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Increíble la calidad de producción que manejan!' en su post más reciente",
+      "dm": "Hola Julián! Vi el trabajo increíble que hacen en Sun Factory. Somos UnaBase, ayudamos a productoras como la tuya con software de presupuestación. ¿Te interesa saber más?"
+    },
+    "whatsappMessage": "Julián — vi que Sun Factory trabaja con Sony. cómo están organizando toda la operación?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Enviar email cercano + seguir en Instagram",
+      "Dia 2: Dar engagement en Instagram (likes + comentario)",
+      "Dia 4: Instagram DM si no hay respuesta al email",
+      "Dia 7: WhatsApp como último contacto directo"
+    ],
+    "keyInsight": "CEO de productora pequeña con cliente grande necesita eficiencia operativa para escalar sin perder agilidad.",
+    "replyTrigger": [
+      "Coordinación manual de múltiples proveedores consume tiempo de producción",
+      "Clientes como Sony requieren procesos más eficientes para escalar",
+      "Productoras pequeñas necesitan automatización para competir con grandes estudios"
+    ]
+  },
+  {
+    "companyName": "LaGallera",
+    "website": "https://lagallera.ec",
+    "country": "Ecuador",
+    "industry": "film",
+    "summary": "Casa de producción audiovisual enfocada en encontrar lo hermoso en las imperfecciones, lo vendedor en lo cotidiano. En LaGallera somos gente real, historias de verdad.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [
+      "Gente real, historias de verdad 🎬"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 9,
+    "companyBrief": "LaGallera es una casa de producción audiovisual ecuatoriana que se especializa en historias auténticas y cotidianas, trabajando con clientes como Facebook. Su enfoque en 'gente real, historias de verdad' sugiere manejo de múltiples proyectos narrativos.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Blanca — vi el trabajo de LaGallera con historias reales para Facebook.\n\ncómo están manejando todo eso con el equipo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "contactName": "Blanca Chimborazo",
+    "contactTitle": "Content Manager",
+    "contactEmail": "blanca@lagallera.ec",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "hunter_domain",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/AxiomThemes",
+    "twitterUrl": "https://twitter.com/axiom_themes",
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/lagalleraec",
+    "contactPhone": "+593 95 946 4272",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "named_contact",
+        "name": "Blanca Chimborazo",
+        "email": "blanca@lagallera.ec"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 10,
+        "personalEmails": [
+          "valeria@lagallera.ec",
+          "produccion@lagallera.ec"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "+593 95 946 4272",
+          "+1.847.954.8411"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/axiom_themes/",
+          "facebook": "https://www.facebook.com/AxiomThemes",
+          "twitter": "https://twitter.com/axiom_themes",
+          "youtube": null,
+          "vimeo": "https://vimeo.com/lagalleraec"
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": "themerex123@gmail.com",
+        "socialPhone": null
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/lagalleraec",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 20,
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Medio",
+    "contactWhyThisPerson": "Como Content Manager maneja la planificación y presupuestación de contenido audiovisual, siendo clave en decisiones operativas.",
+    "whyThisLead": [
+      "Producción audiovisual requiere presupuestación detallada de crew, equipos y post-producción por proyecto",
+      "Cliente Facebook indica nivel profesional y capacidad de inversión en herramientas",
+      "Casa productora pequeña necesita eficiencia en gestión de múltiples presupuestos simultáneos"
+    ],
+    "actionBlock": [
+      "Abrir con: Vi que LaGallera maneja contenido para Facebook con enfoque en 'gente real, historias de verdad'",
+      "Enfatizar: El desafío de organizar y acceder rápidamente a assets de contenido auténtico",
+      "Evitar: Mencionar competencia directa o criticar sus procesos actuales",
+      "Canal backup: Mensaje por WhatsApp mencionando la propuesta de llamada si no hay respuesta en 48h"
+    ],
+    "conversationAngle": "Productoras como LaGallera que manejan clientes grandes como Facebook necesitan presupuestación más ágil para competir con casas productoras más grandes sin perder su esencia creativa.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "WhatsApp",
+      "opcional": "LinkedIn"
+    },
+    "emailCercana": "hola Blanca — vi el trabajo de LaGallera con historias reales para Facebook.\n\ncómo están manejando todo eso con el equipo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Hola Blanca,\n\nVi el trabajo de LaGallera con historias reales para Facebook.\n\nCómo están manejando todo eso con el equipo?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Blanca — vi el trabajo de LaGallera con historias reales para Facebook. cómo están manejando todo eso con el equipo?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Blanca, me impresionó el enfoque de LaGallera en historias auténticas para Facebook.",
+      "followUp": "Ayudamos a agencies como LaGallera a organizar mejor sus assets de contenido y acelerar la entrega de proyectos.\n¿Te interesa conocer cómo podríamos optimizar sus flujos de trabajo de contenido?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email cercana + enviar conexión LinkedIn",
+      "Dia 2: Seguimiento WhatsApp si no abre email",
+      "Dia 4: Email de seguimiento con caso específico de productora ecuatoriana",
+      "Dia 7: Último contacto LinkedIn ofreciendo recursos gratuitos de budgeting"
+    ],
+    "keyInsight": "Agency pequeña con cliente grande necesita urgentemente optimizar procesos para mantener calidad del contenido auténtico.",
+    "replyTrigger": [
+      "Presión por entregar contenido auténtico de calidad con recursos limitados de 20 personas",
+      "Timing perfecto para optimizar procesos antes de proyectos grandes con Facebook",
+      "Fit exacto: UnaBase resuelve caos de assets para agencies pequeñas con grandes clientes"
+    ]
+  }
+]

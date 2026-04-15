@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejecución</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#06060b;--card:#0e0e18;--sf:#131322;--bd:#1a1a30;--bd2:#252540;--tx:#e8eaf0;--t2:#b0b4c0;--mt:#6b7280;--dm:#40445a;--ac:#d4a017;--ac2:#f5d060;--gn:#22c55e;--gn2:#4ade80;--bl:#3b82f6;--pp:#818cf8;--rd:#ef4444;--am:#f59e0b;--teal:#14b8a6}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--tx);line-height:1.5;-webkit-font-smoothing:antialiased;font-size:13px;overflow-x:hidden}
+button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decoration:none}
+
+/* ── Nav ── */
+.nav{background:var(--sf);border-bottom:1px solid var(--bd);padding:0 24px;height:48px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:100}
+.n-brand{font-size:15px;font-weight:800;color:#fff}.n-brand span{color:var(--ac)}
+.n-sep{width:1px;height:16px;background:var(--bd)}
+.n-date{color:var(--dm);font-size:11px;font-weight:500}
+.n-tabs{margin-left:auto;display:flex;gap:2px}
+.n-tab{background:none;border:1px solid transparent;color:var(--dm);padding:4px 14px;border-radius:5px;font-size:11px;font-weight:600;cursor:pointer}
+.n-tab:hover{color:var(--t2)}
+.n-tab.on{background:var(--ac);color:#0a0a0f;border-color:var(--ac)}
+.n-user{position:relative;margin-left:8px}
+.n-ubtn{background:var(--bd);border:none;color:var(--t2);padding:4px 12px;border-radius:5px;font-size:11px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:4px}
+.n-udd{display:none;position:absolute;top:calc(100% + 4px);right:0;background:var(--sf);border:1px solid var(--bd);border-radius:6px;min-width:160px;z-index:200;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.n-udd.open{display:block}
+.n-udd a{display:block;padding:8px 14px;font-size:12px;color:var(--t2);text-decoration:none}
+.n-udd a:hover{background:var(--bd)}
+.n-upload{background:none;border:1px solid var(--bd);color:var(--dm);padding:3px 10px;border-radius:4px;font-size:10px;cursor:pointer;margin-left:4px}
+
+/* ── Global Progress ── */
+.gprog{background:var(--sf);border-bottom:1px solid var(--bd);padding:14px 24px;display:flex;align-items:center;gap:14px}
+.gp-info{display:flex;align-items:baseline;gap:6px}
+.gp-num{font-size:28px;font-weight:900;color:var(--ac);line-height:1}
+.gp-of{font-size:14px;font-weight:600;color:var(--dm)}
+.gp-label{font-size:11px;color:var(--mt);margin-left:4px}
+.gp-bar{flex:1;height:10px;background:var(--bd);border-radius:5px;overflow:hidden}
+.gp-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,var(--ac),var(--gn));transition:.5s ease}
+.gp-pct{font-size:15px;font-weight:800;color:var(--gn);min-width:44px;text-align:right}
+
+/* ── Metrics ── */
+.metrics{display:grid;grid-template-columns:repeat(6,1fr);border-bottom:1px solid var(--bd)}
+.m{background:var(--sf);padding:10px 6px;text-align:center;border-right:1px solid var(--bd)}.m:last-child{border:none}
+.m-v{font-size:18px;font-weight:800;line-height:1}
+.m-l{font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--dm);margin-top:2px}
+.mc0{color:var(--dm)}.mc1{color:var(--am)}.mc2{color:var(--pp)}.mc3{color:var(--gn)}.mc4{color:var(--ac)}.mc5{color:var(--teal)}
+
+/* ── FULL WIDTH container ── */
+.wrap{width:100%;padding:20px 24px}
+.view{display:none}.view.on{display:block}
+
+/* ── Flashcard Grid: 4-6 per row ── */
+#leadL{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+@media(min-width:1200px){#leadL{grid-template-columns:repeat(6,1fr)}}
+@media(min-width:900px) and (max-width:1199px){#leadL{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:600px){#leadL{grid-template-columns:repeat(2,1fr)}}
+
+/* ── Lead Flashcard ── */
+.lead{background:var(--card);border:1px solid var(--bd2);border-radius:14px;overflow:hidden;transition:.25s;cursor:pointer;display:flex;flex-direction:column;position:relative;box-shadow:0 0 8px rgba(212,160,23,.06),0 2px 8px rgba(0,0,0,.3)}
+.lead:hover{border-color:var(--ac);box-shadow:0 0 20px rgba(212,160,23,.25),0 8px 28px rgba(0,0,0,.5);transform:translateY(-4px)}
+.lead:active{transform:translateY(-1px);box-shadow:0 0 28px rgba(212,160,23,.4),0 4px 16px rgba(0,0,0,.5);border-color:var(--ac2)}
+.lead.dn{opacity:.35}.lead.dn:hover{opacity:.5}
+.lead.priority{border-color:var(--ac);box-shadow:0 0 12px rgba(212,160,23,.2)}
+
+.lh{padding:18px 16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:180px;flex:1;gap:4px}
+.lc{font-weight:800;font-size:17px;color:#fff;letter-spacing:-.3px;line-height:1.2;word-break:break-word}
+.lh-sub{font-size:10px;color:var(--mt);font-weight:500;margin-top:2px}
+.lh-sub strong{color:var(--t2);font-weight:600}
+
+/* Task score */
+.lh-score{font-size:16px;font-weight:900;margin-top:8px;letter-spacing:1px}
+.sc-done{color:var(--gn)}.sc-part{color:var(--am)}.sc-none{color:var(--dm)}
+
+/* Status pill */
+.ls{font-size:7px;font-weight:700;padding:3px 10px;border-radius:6px;text-transform:uppercase;letter-spacing:.5px;margin-top:6px}
+.s0{background:#1a1a2a;color:var(--dm)}.s1{background:#1f1800;color:var(--am)}.s2{background:#1a1a3e;color:var(--pp)}.s3{background:#052e16;color:var(--gn2)}.s4{background:#1f1800;color:var(--ac)}.s5{background:#022c22;color:var(--teal)}.s6{background:#1c0a0a;color:#f87171}
+
+/* Playbook CTA */
+.lh-pb{background:var(--ac);color:#0a0a0f;border:none;padding:8px 22px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;margin-top:10px;transition:.15s;letter-spacing:.3px}
+.lh-pb:hover{background:var(--ac2);transform:scale(1.05)}
+
+/* Priority label */
+.pri-tag{position:absolute;top:8px;right:8px;font-size:7px;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.5px;background:rgba(212,160,23,.12);padding:2px 6px;border-radius:4px}
+/* Score badge — centered above company name, not overlapping */
+.lh-scorebadge{font-size:11px;font-weight:900;color:var(--ac);background:rgba(212,160,23,.1);padding:3px 10px;border-radius:6px;border:1px solid rgba(212,160,23,.25);margin-bottom:6px;display:inline-block}
+
+/* ── Playbook Overlay (Focus Mode) ── */
+.pb-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(4,4,8,.92);z-index:300;overflow-y:auto;-webkit-overflow-scrolling:touch;backdrop-filter:blur(4px)}
+.pb-overlay.open{display:flex;align-items:flex-start;justify-content:center;padding:24px}
+.pb-box{width:100%;max-width:620px;background:var(--card);border-radius:16px;border:1px solid var(--bd);box-shadow:0 12px 48px rgba(0,0,0,.6);overflow:hidden}
+.pb-head{padding:16px 20px;border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:10px;background:var(--sf)}
+.pb-close{background:var(--bd);border:none;color:var(--tx);width:30px;height:30px;border-radius:8px;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.pb-close:hover{background:var(--bd2)}
+.pb-title{font-size:16px;font-weight:800;color:#fff;flex:1}
+.pb-sc{font-size:14px;font-weight:900}
+.pb-body{padding:18px 20px}
+
+.sec{margin-bottom:12px}
+.sl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--dm);margin-bottom:4px}
+.chs{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px}
+.ch{font-size:10px;padding:3px 10px;border-radius:10px;font-weight:600}
+.ce{background:#0a1f12;color:var(--gn2);border:1px solid #166534}
+.ci{background:#150a28;color:#d8b4fe;border:1px solid #6d28d9}
+.cw{background:#0a1f12;color:var(--teal);border:1px solid #0d9488}
+.cl{background:#0a142e;color:#93c5fd;border:1px solid #1d4ed8}
+.cph{background:var(--bd);color:var(--mt)}
+.tags{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:6px}
+.tag{font-size:8px;padding:2px 7px;border-radius:5px;background:var(--bd);color:var(--mt);font-weight:500}
+.insight{background:linear-gradient(135deg,#12110a,#161410);border-left:3px solid var(--ac);padding:8px 12px;font-size:11px;color:var(--ac2);border-radius:0 6px 6px 0;margin-bottom:10px}
+.ctx{font-size:11px;color:var(--t2);line-height:1.5}
+
+/* Actions */
+.act{display:flex;gap:10px;padding:10px 12px;margin:0 -12px;border-radius:8px;transition:.15s}
+.act+.act{border-top:1px solid rgba(255,255,255,.03)}
+.act.nxt{background:rgba(212,160,23,.05);border:1px solid rgba(212,160,23,.12)}
+.ac{width:24px;height:24px;border-radius:50%;border:2.5px solid var(--bd2);cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:.2s}
+.ac:hover{border-color:var(--ac);transform:scale(1.12);box-shadow:0 0 8px rgba(212,160,23,.3)}
+.ac.ck{background:var(--gn);border-color:var(--gn);animation:pop .3s;box-shadow:0 0 10px rgba(34,197,94,.3)}
+.ac.ck::after{content:'\2713';color:#fff;font-size:12px;font-weight:800}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.25)}100%{transform:scale(1)}}
+.ab{flex:1;min-width:0}
+.al{font-weight:700;font-size:12px;margin-bottom:3px;color:#fff}
+.msg{background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:10px 12px;margin:4px 0;position:relative}
+.msg pre{font-family:inherit;font-size:11px;color:var(--t2);white-space:pre-wrap;line-height:1.4;margin:0}
+.mcpy{position:absolute;top:7px;right:7px;background:var(--ac);color:#0a0a0f;border:none;padding:3px 12px;border-radius:4px;font-size:9px;font-weight:700;cursor:pointer}
+.mcpy:hover{background:var(--ac2)}
+.mcpy.ok{background:var(--gn);color:#fff}
+.sa{width:100%;background:var(--bg);border:1px solid var(--bd);color:var(--tx);padding:7px 10px;border-radius:5px;font-size:11px;resize:vertical;min-height:34px;margin-top:4px}
+.sa:focus{border-color:var(--ac);outline:none;box-shadow:0 0 0 2px rgba(212,160,23,.15)}
+.sa::placeholder{color:#25253a}
+.svb{background:var(--bd);color:var(--mt);border:none;padding:4px 12px;border-radius:4px;font-size:10px;font-weight:600;cursor:pointer;margin-top:3px}
+.svb:hover{background:var(--ac);color:#0a0a0f}
+.saved{background:linear-gradient(135deg,#0a1a0f,#0c1a12);border:1px solid #16653480;border-radius:6px;padding:8px 12px;margin-top:6px}
+.sv-head{display:flex;gap:6px;align-items:center;margin-bottom:3px}
+.sv-icon{color:var(--gn);font-size:12px}
+.sv-ch{font-size:9px;font-weight:700;color:var(--gn);text-transform:uppercase}
+.sv-time{font-size:9px;color:var(--dm);margin-left:auto}
+.sv-text{color:var(--t2);font-size:11px;white-space:pre-wrap;line-height:1.3}
+.stbar{display:flex;gap:3px;flex-wrap:wrap;padding-top:10px;margin-top:8px;border-top:1px solid var(--bd)}
+.stb{background:var(--bg);border:1px solid var(--bd);color:var(--dm);padding:4px 12px;border-radius:5px;font-size:10px;font-weight:600;cursor:pointer;transition:.12s}
+.stb:hover{border-color:var(--ac);color:var(--tx)}
+.stb.on{background:var(--ac);color:#0a0a0f;border-color:var(--ac)}
+.ml-i{background:var(--sf);border:1px solid var(--bd);border-radius:6px;padding:10px 12px;margin-bottom:6px}
+.ml-h{display:flex;gap:6px;align-items:center;margin-bottom:3px}
+.ml-ch{font-size:8px;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:3px}
+.ml-email{background:#0a1f12;color:var(--gn2)}.ml-wa{background:#0a1f12;color:var(--teal)}.ml-ig{background:#150a28;color:#d8b4fe}.ml-li{background:#0a142e;color:#93c5fd}
+.ml-t{font-size:9px;color:var(--dm);margin-left:auto}
+.ml-tx{font-size:11px;color:var(--t2);white-space:pre-wrap;line-height:1.3}
+.notes{width:100%;background:var(--bg);border:1px solid var(--bd);color:var(--tx);padding:10px;border-radius:6px;font-size:12px;resize:vertical;min-height:80px}
+.notes:focus{border-color:var(--ac);outline:none}
+.notes::placeholder{color:#20203a}
+.notes-sv{background:var(--ac);color:#0a0a0f;border:none;padding:5px 14px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;margin-top:5px}
+
+/* History */
+.hs{width:100%;background:var(--card);border:1px solid var(--bd);color:var(--tx);padding:8px 14px;border-radius:6px;font-size:12px;margin-bottom:12px}
+.hs:focus{border-color:var(--ac);outline:none}
+.hs::placeholder{color:#30304a}
+.hg{margin-bottom:16px}
+.hg-t{font-size:10px;font-weight:700;color:var(--mt);text-transform:uppercase;letter-spacing:.4px;margin-bottom:5px;display:flex;align-items:center;gap:5px}
+.hg-c{background:var(--bd);color:var(--ac);padding:1px 7px;border-radius:6px;font-size:9px}
+.hi{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:8px 12px;margin-bottom:3px;cursor:pointer;display:flex;align-items:center;gap:6px}
+.hi:hover{background:var(--sf)}
+.hi-n{font-weight:600;font-size:11px;flex:1;color:#fff}
+.hi-a{color:var(--mt);font-size:9px}
+.hi-d{color:var(--dm);font-size:9px}
+
+.empty{text-align:center;padding:50px 20px}
+.empty-i{font-size:32px;margin-bottom:8px;opacity:.25}
+.empty-t{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
+.empty-d{font-size:11px;color:var(--dm);max-width:280px;margin:0 auto 12px}
+.empty-b{background:var(--ac);color:#0a0a0f;border:none;padding:7px 18px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer}
+
+.toast{position:fixed;bottom:14px;right:14px;background:var(--gn);color:#fff;padding:8px 16px;border-radius:6px;font-size:12px;font-weight:600;opacity:0;transition:.3s;pointer-events:none;z-index:400;box-shadow:0 4px 12px rgba(34,197,94,.3)}
+.toast.show{opacity:1;transform:translateY(-3px)}
+</style>
+</head>
+<body>
+<!-- ═══ CONFIG ═══ -->
+<script>const SEED_PAST=[{"companyName":"HUAU","website":"https://huau.cl","country":"Chile","industry":"commercial","contactEmail":"arturo@huau.cl","unabaseScore":8,"estimatedSize":"small","apolloEmployeeCount":3,"companyBrief":"Productora boutique de Santiago. Comerciales y animación para Netflix, Santander y Pepsi.","notableClients":["Netflix","Pepsi","Modelo","Santander"],"emailCercana":"hola equipo de HUAU — vi que manejan comerciales para Netflix y Santander. cómo hacen con tantos presupuestos a la vez?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"Brodaju","website":"https://brodaju.com.co","country":"Colombia","industry":"commercial","contactName":"Rene Martinez","contactTitle":"Owner","contactEmail":"rene@brodaju.com","unabaseScore":8,"companyBrief":"Agencia audiovisual boutique en Colombia.","emailCercana":"hola Rene — vi el trabajo que vienen haciendo en Brodaju. cómo están manejando los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"Grappi Multimedia","website":"https://grappi.cl","country":"Chile","industry":"commercial","contactEmail":"info@grappi.cl","unabaseScore":8,"companyBrief":"Videos corporativos y animación para Sony.","notableClients":["Sony"],"emailCercana":"hola equipo de Grappi — vi el trabajo que hicieron con Sony. cómo hacen con tantos proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"Intelygente","website":"https://intelygente.net","country":"Colombia","industry":"commercial","contactEmail":"info@intelygente.net","contactPhone":"312 380 8677","instagramUrl":"https://www.instagram.com/intelygente/","instagramHandle":"intelygente","unabaseScore":6,"apolloEmployeeCount":7,"companyBrief":"Producción audiovisual y branding para Google y Facebook.","notableClients":["Google","Facebook"],"emailCercana":"hola equipo de Intelygente — vi que manejan campañas para Google y Facebook. cómo coordinan los presupuestos con 7 personas?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"CBRA Films","website":"https://cbrafilms.com","country":"Chile","industry":"tv","contactName":"Cristobal Braun Mesples","contactTitle":"Owner","contactEmail":"cristobal@cbrafilms.com","contactPhone":"+56 9 7478 5069","unabaseScore":7,"companyBrief":"Productora audiovisual chilena. Contenido y estudio en Santiago.","emailCercana":"hola Cristobal — vi que CBRA combina producción con arriendo de estudio. cómo presupuestan ambos lados?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"Doin Media","website":"https://doinmedia.com","country":"Colombia","industry":"commercial","contactEmail":"carolina.guerrero@doinmedia.com","contactPhone":"+573183272138","unabaseScore":6,"companyBrief":"Producción audiovisual en Bogotá para Amazon y Facebook.","notableClients":["Amazon","Facebook"],"emailCercana":"hola equipo de Doin Media — vi que manejan proyectos para Amazon y Facebook. cómo coordinan los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"PRAGA 555","website":"https://praga555.cl","country":"Chile","industry":"tv","contactEmail":"marcelo.germani@praga555.cl","unabaseScore":6,"apolloEmployeeCount":6,"companyBrief":"Productora de TV chilena. 6 profesionales.","notableClients":["Facebook"],"emailCercana":"hola equipo de PRAGA 555 — vi que producen para TV y Facebook con 6 personas. cómo manejan los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"ChileRayo","website":"https://chilerayo.com","country":"Chile","industry":"commercial","contactEmail":"contacto@chilerayo.com","contactPhone":"+569 5759 4998","instagramUrl":"https://www.instagram.com/morfina.cl/","instagramHandle":"morfina.cl","unabaseScore":6,"companyBrief":"Productora boutique chilena. 8K seguidores como @morfina.cl.","emailCercana":"hola equipo de ChileRayo — vi que están creciendo fuerte con 8K seguidores. cómo manejan los presupuestos conforme crecen?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"}];</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+const CLIENT={name:'unabase',leadsPath:'./leads-today.json',accent:'#d4a017'};
+const SB_URL='https://ogdsuztzhmnnjolilsuo.supabase.co';
+const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9nZHN1enR6aG1ubmpvbGlsc3VvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYyMDI0MDMsImV4cCI6MjA5MTc3ODQwM30.9iKhJJWd_zg6WfdxTR9ojK4DVLR3e-bLdPXY-0uDp7Q';
+const sb=window.supabase.createClient(SB_URL,SB_KEY);
+</script>
+
+<div class="nav">
+  <div class="n-brand"><span id="cN"></span></div>
+  <div class="n-sep"></div>
+  <div class="n-date" id="nD"></div>
+  <div class="n-tabs">
+    <button class="n-tab on" onclick="showV('today')">Hoy</button>
+    <button class="n-tab" onclick="showV('past')">Leads Anteriores</button>
+    <button class="n-tab" onclick="showV('hist')">Historial</button>
+  </div>
+  <div class="n-user">
+    <button class="n-ubtn" onclick="this.nextElementSibling.classList.toggle('open')">Scarlett &#9662;</button>
+    <div class="n-udd"><a href="#" onclick="showV('today');this.parentElement.classList.remove('open');return false">Mi ejecución</a><a href="#" onclick="showV('hist');this.parentElement.classList.remove('open');return false">Historial</a><a href="#" onclick="if(confirm('¿Borrar datos?')){localStorage.clear();location.reload()}return false" style="color:var(--rd)">Reset</a></div>
+  </div>
+  <label class="n-upload" style="cursor:pointer">Importar<input type="file" accept=".json" onchange="loadFile(event)" style="display:none"></label>
+</div>
+<div class="gprog"><div class="gp-info"><span class="gp-num" id="gpDone">0</span><span class="gp-of">/ <span id="gpTotal">0</span></span><span class="gp-label">leads completados</span></div><div class="gp-bar"><div class="gp-fill" id="gpFill"></div></div><span class="gp-pct" id="gpPct">0%</span></div>
+<div class="metrics" id="mB"></div>
+<div class="pb-overlay" id="pbO"><div class="pb-box"><div class="pb-head"><button class="pb-close" onclick="closePB()">&#10005;</button><div class="pb-title" id="pbT"></div><div class="pb-sc" id="pbSc"></div></div><div class="pb-body" id="pbB"></div></div></div>
+<div class="wrap">
+  <div class="view on" id="v-today"><div id="leadL"></div>
+    <div class="empty" id="emptyS" style="display:none"><div class="empty-i">&#9993;</div><div class="empty-t">Listo para ejecutar</div><div class="empty-d">Importa el informe diario.</div><label class="empty-b" style="cursor:pointer">Importar<input type="file" accept=".json" onchange="loadFile(event)" style="display:none"></label></div>
+  </div>
+  <div class="view" id="v-past"><div style="margin-bottom:12px;font-size:12px;color:var(--mt)">Leads del informe anterior — abre cada uno para registrar el mensaje que enviaste.</div><div id="pastL" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px"></div></div>
+  <div class="view" id="v-hist"><input class="hs" placeholder="Buscar empresa..." oninput="rHist(this.value)"><div id="histL"></div></div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const USER='scarlett';const DBK='unabase_'+USER;let TL=[];
+const ST=['none','partial','contacted','replied','meeting','closed','skip'];
+const SL=['Sin contactar','Parcial','Contactado','Respondió','Reunión','Cerrado','Omitir'];
+
+// ═══ DUAL PERSISTENCE: localStorage (instant) + Supabase (shared) ═══
+// localStorage = instant UI, survives offline
+// Supabase = shared across devices, survives deploys
+function db(){try{return JSON.parse(localStorage.getItem(DBK))||{}}catch{return{}}}
+function sdb(d){localStorage.setItem(DBK,JSON.stringify(d))}
+function gr(id){const D=db();return D[id]||{id,co:'',cn:'',st:'none',acts:[],msgs:[],tl:[],notes:'',lead:null,up:null}}
+
+function ur(id,u){
+  // Write to localStorage (instant)
+  const D=db();const r={...gr(id),...u,up:new Date().toISOString()};D[id]=r;sdb(D);
+  // Write to Supabase (async, shared)
+  sbSync(id,r);
+  return r;
+}
+
+function allR(){return Object.values(db()).filter(r=>r.co)}
+
+function merge(leads){
+  const D=db();
+  leads.forEach(l=>{
+    const id=dom(l.website);if(!id)return;
+    if(!D[id]){
+      D[id]={id,co:l.companyName,cn:l.contactName||'',st:'none',acts:[],msgs:[],tl:[],notes:'',lead:l,up:new Date().toISOString()};
+      // Upsert lead to Supabase
+      sbUpsertLead(id,l,false);
+    } else {
+      D[id].lead=l;D[id].co=l.companyName;if(l.contactName)D[id].cn=l.contactName;
+    }
+  });
+  sdb(D);
+}
+
+// ═══ SUPABASE WRITE FUNCTIONS (fire-and-forget, non-blocking) ═══
+async function sbUpsertLead(id,l,isHist){
+  try{await sb.from('leads').upsert({
+    id,company:l.companyName||'',contact_name:l.contactName||null,contact_email:l.contactEmail||null,
+    contact_phone:l.contactPhone||null,country:l.country||null,industry:l.industry||null,
+    score:l.unabaseScore||0,status:'none',source_date:new Date().toISOString().slice(0,10),
+    is_historical:!!isHist,lead_data:l,updated_at:new Date().toISOString()
+  },{onConflict:'id'})}catch(e){console.warn('sb upsert lead:',e.message)}
+}
+
+async function sbSync(id,rec){
+  try{
+    // Update lead status
+    await sb.from('leads').update({status:rec.st,updated_at:new Date().toISOString()}).eq('id',id);
+  }catch(e){console.warn('sb sync:',e.message)}
+}
+
+async function sbLogAction(leadId,channel,completed){
+  try{await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed})}catch(e){console.warn('sb action:',e.message)}
+}
+
+async function sbLogMessage(leadId,channel,text){
+  try{await sb.from('messages_sent').insert({lead_id:leadId,user_name:USER,channel,message_text:text})}catch(e){console.warn('sb msg:',e.message)}
+}
+
+async function sbSaveNote(leadId,text){
+  try{await sb.from('notes').upsert({lead_id:leadId,user_name:USER,note_text:text,updated_at:new Date().toISOString()},{onConflict:'lead_id,user_name'})}catch(e){console.warn('sb note:',e.message)}
+}
+
+async function sbLogStatus(leadId,status){
+  try{await sb.from('status_history').insert({lead_id:leadId,user_name:USER,status})}catch(e){console.warn('sb status:',e.message)}
+}
+
+// ═══ SUPABASE LOAD (on startup, hydrate from shared DB) ═══
+async function sbLoadAll(){
+  try{
+    const{data:leads}=await sb.from('leads').select('*');
+    if(!leads||!leads.length)return;
+    const D=db();
+    leads.forEach(l=>{
+      if(!D[l.id]){D[l.id]={id:l.id,co:l.company,cn:l.contact_name||'',st:l.status||'none',acts:[],msgs:[],tl:[],notes:'',lead:l.lead_data,up:l.updated_at}}
+      else{D[l.id].st=l.status||D[l.id].st} // Supabase status wins
+    });
+    // Load actions
+    const{data:acts}=await sb.from('actions').select('*');
+    if(acts)acts.forEach(a=>{if(D[a.lead_id]&&!D[a.lead_id].acts.includes(a.channel))D[a.lead_id].acts.push(a.channel)});
+    // Load messages
+    const{data:msgs}=await sb.from('messages_sent').select('*');
+    if(msgs)msgs.forEach(m=>{if(D[m.lead_id]){const existing=D[m.lead_id].msgs||[];if(!existing.find(x=>x.ts===m.sent_at))existing.push({ch:m.channel,tx:m.message_text,ts:m.sent_at});D[m.lead_id].msgs=existing}});
+    // Load notes
+    const{data:nts}=await sb.from('notes').select('*');
+    if(nts)nts.forEach(n=>{if(D[n.lead_id])D[n.lead_id].notes=n.note_text||''});
+    sdb(D);
+    console.log('Loaded '+leads.length+' leads from Supabase');
+  }catch(e){console.warn('sb load:',e.message)}
+}
+function dom(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch{return''}}
+function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
+function now(){return new Date().toISOString()}
+function ago(t){if(!t)return'';const d=Date.now()-new Date(t).getTime();if(d<60000)return'ahora';if(d<3600000)return Math.floor(d/60000)+'m';if(d<86400000)return Math.floor(d/3600000)+'h';return Math.floor(d/86400000)+'d'}
+function cSt(rec){if(['replied','meeting','closed','skip'].includes(rec.st))return rec.st;const a=rec.acts||[];if(!a.length)return'none';const l=rec.lead;if(!l)return'partial';const av=[];if(l.emailCercana)av.push('email');if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))av.push('wa');if(l.instagramDM&&(l.instagramHandle||l.instagramUrl))av.push('ig');if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))av.push('li');return av.length&&av.every(x=>a.includes(x))?'contacted':'partial'}
+function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);if(l.emailCercana)s.push({id:'email',label:'Email a '+first,msg:l.emailCercana,ch:'email'});if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))s.push({id:'wa',label:'WhatsApp',msg:l.whatsappMessage,ch:'wa'});if(l.instagramDM&&ig)s.push({id:'ig',label:'DM @'+ig,msg:l.instagramDM,ch:'ig'});if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))s.push({id:'li',label:'LinkedIn',msg:l.linkedinPlaybook.connectionNote||'',ch:'li'});return s}
+
+let PL=[];// past leads
+function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')rHist('');if(v==='past')renderPast()}
+function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{TL=JSON.parse(ev.target.result);merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
+async function autoLoad(){
+  if(typeof EMBEDDED_LEADS!=='undefined'&&EMBEDDED_LEADS&&EMBEDDED_LEADS.length){TL=EMBEDDED_LEADS;merge(TL);renderDay();return}
+  try{const r=await fetch(CLIENT.leadsPath);if(r.ok){TL=await r.json();merge(TL);renderDay();return}}catch{}
+  const t=new Date();for(let o=0;o<3;o++){const d=new Date(t);d.setDate(d.getDate()-o);try{const r=await fetch('../output/leads-'+d.toISOString().slice(0,10)+'.json');if(r.ok){TL=await r.json();merge(TL);renderDay();return}}catch{}}
+  if(typeof SEED_HISTORY!=='undefined'&&SEED_HISTORY)merge(SEED_HISTORY);
+  const a=allR();if(a.length){TL=a.filter(r=>r.lead).map(r=>r.lead);renderDay();toast('Desde memoria');return}
+  document.getElementById('emptyS').style.display='block';
+}
+
+function renderDay(){
+  document.getElementById('emptyS').style.display='none';
+  // Sort by score (highest first), then by status (pending first)
+  const ord={none:0,partial:1,contacted:2,replied:3,meeting:4,closed:5,skip:6};
+  const sorted=[...TL].sort((a,b)=>{
+    const sa=cSt(gr(dom(a.website))),sb=cSt(gr(dom(b.website)));
+    // Pending leads first, then by score descending
+    if(ord[sa]!==ord[sb])return(ord[sa]||0)-(ord[sb]||0);
+    return(b.unabaseScore||0)-(a.unabaseScore||0);
+  });
+  // Find first priority lead (first 'none' status)
+  const priDom=sorted.find(l=>cSt(gr(dom(l.website)))==='none');
+  const priId=priDom?dom(priDom.website):null;
+
+  document.getElementById('leadL').innerHTML=sorted.map((l,i)=>{
+    const d=dom(l.website);const rec=gr(d);const st=cSt(rec);const si=ST.indexOf(st);
+    const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
+    const steps=getSteps(l);const total=steps.length;
+    const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
+    const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
+    const isPri=d===priId;
+    return`<div class="lead${si>=2?' dn':''}${isPri?' priority':''}" onclick="openPB('${d}')">
+      ${isPri?'<div class="pri-tag">Siguiente</div>':''}
+      <div class="lh">
+        <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
+        <div class="lc">${esc(l.companyName)}</div>
+        <div class="lh-sub"><strong>${esc(first)}</strong> · ${esc(l.country)}</div>
+        <div class="lh-score ${scCls}">${done} / ${total}</div>
+        <div class="ls s${si}">${SL[si]}</div>
+        <button class="lh-pb" onclick="event.stopPropagation();openPB('${d}')">Playbook</button>
+      </div>
+    </div>`;
+  }).join('');
+  rM();
+}
+
+// ═══ PLAYBOOK OVERLAY ═══
+function openPB(d){
+  let l=TL.find(x=>dom(x.website)===d)||PL.find(x=>dom(x.website)===d);
+  if(!l){const rec=gr(d);if(rec.lead){l=rec.lead;TL.push(l)}else return}
+  const rec=gr(d);const steps=getSteps(l);const fu=steps.findIndex(s=>!(rec.acts||[]).includes(s.id));
+  const total=steps.length;const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
+  const name=l.contactName||'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);
+  const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
+
+  let chs='';
+  if(l.contactEmail)chs+=`<a href="mailto:${esc(l.contactEmail)}" class="ch ce">${esc(l.contactEmail)}</a>`;
+  if(ig)chs+=`<a href="${esc(l.instagramUrl||'')}" target="_blank" class="ch ci">@${esc(ig)}</a>`;
+  if(l.contactPhone||l.apolloCompanyPhone)chs+=`<span class="ch cph">${esc(l.contactPhone||l.apolloCompanyPhone)}</span>`;
+  if(l.contactLinkedIn||l.apolloCompanyLinkedIn)chs+=`<a href="${esc(l.contactLinkedIn||l.apolloCompanyLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`;
+  const tags=[...(l.notableClients||[]).slice(0,3),l.industry?.toUpperCase()].filter(Boolean).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+
+  const stH=steps.map((s,si)=>{
+    const ck=(rec.acts||[]).includes(s.id);const isN=si===fu;
+    const saved=(rec.msgs||[]).filter(m=>m.ch===s.ch);
+    const svH=saved.map(m=>`<div class="saved"><div class="sv-head"><span class="sv-icon">&#10003;</span><span class="sv-ch">${esc(s.ch)}</span><span class="sv-time">${ago(m.ts)}</span></div><div class="sv-text">${esc(m.tx)}</div></div>`).join('');
+    return`<div class="act${isN?' nxt':''}"><div class="ac${ck?' ck':''}" onclick="tA('${d}','${s.id}','${s.ch}');openPB('${d}')"></div><div class="ab"><div class="al">${esc(s.label)}</div>${s.msg?`<div class="msg"><pre>${esc(s.msg)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">copiar</button></div>`:''}<textarea class="sa" id="sa-${d}-${s.id}" placeholder="Pega lo que enviaste..." onclick="event.stopPropagation()"></textarea><button class="svb" onclick="event.stopPropagation();sM('${d}','${s.id}','${s.ch}');openPB('${d}')">Guardar</button>${svH}</div></div>`;
+  }).join('');
+
+  const allMsgs=(rec.msgs||[]).sort((a,b)=>new Date(b.ts)-new Date(a.ts));
+  const msH=allMsgs.length?'<div class="sec" style="margin-top:12px"><div class="sl">Mensajes Enviados</div>'+allMsgs.map(m=>`<div class="ml-i"><div class="ml-h"><span class="ml-ch ml-${m.ch}">${m.ch}</span><span class="ml-t">${new Date(m.ts).toLocaleString('es')}</span></div><div class="ml-tx">${esc(m.tx)}</div></div>`).join('')+'</div>':'';
+
+  const stBtns=ST.slice(2).map(s=>`<button class="stb${rec.st===s?' on':''}" onclick="event.stopPropagation();sS('${d}','${s}');openPB('${d}')">${SL[ST.indexOf(s)]}</button>`).join('');
+
+  document.getElementById('pbT').textContent=l.companyName;
+  document.getElementById('pbSc').innerHTML=`<span class="${scCls}">${done}/${total}</span>`;
+  document.getElementById('pbB').innerHTML=`
+    <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong> · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${tags?`<div class="tags">${tags}</div>`:''}</div>
+    ${l.keyInsight?`<div class="insight">${esc(l.keyInsight)}</div>`:''}
+    ${l.companyBrief?`<div class="sec"><div class="sl">Contexto</div><div class="ctx">${esc(l.companyBrief)}</div></div>`:''}
+    <div class="sec"><div class="sl">Acciones</div>${stH}</div>
+    <div class="stbar">${stBtns}</div>
+    ${msH}
+    <div class="sec" style="margin-top:10px"><div class="sl">Notas</div><textarea class="notes" placeholder="Notas..." id="nt-${d}" onclick="event.stopPropagation()">${esc(rec.notes||'')}</textarea><button class="notes-sv" onclick="event.stopPropagation();sN('${d}')">Guardar</button></div>
+  `;
+  document.getElementById('pbO').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePB(){document.getElementById('pbO').classList.remove('open');document.body.style.overflow='';renderDay()}
+
+// ═══ ACTIONS ═══
+function tA(d,aid,ch){
+  const rec=gr(d);const acts=[...(rec.acts||[])];const tl=[...(rec.tl||[])];
+  const idx=acts.indexOf(aid);
+  if(idx>=0){acts.splice(idx,1);tl.push({tp:'act',desc:'Desmarcó: '+ch,ts:now()});sbLogAction(d,ch,false)}
+  else{acts.push(aid);tl.push({tp:'act',desc:'Completó: '+ch,ts:now()});sbLogAction(d,ch,true)}
+  const ns=cSt({...rec,acts});
+  if(ns!==cSt(rec))tl.push({tp:'st',desc:'Estado → '+SL[ST.indexOf(ns)],ts:now()});
+  ur(d,{acts,st:ns,tl});
+  toast(idx>=0?'Desmarcado':'+1 acción completada');
+  renderDay();
+}
+function sM(d,aid,ch){
+  const ta=document.getElementById('sa-'+d+'-'+aid);if(!ta||!ta.value.trim())return;
+  const rec=gr(d);const msgs=[...(rec.msgs||[])];const tl=[...(rec.tl||[])];
+  const msgText=ta.value.trim();
+  msgs.push({ch,tx:msgText,ts:now()});
+  tl.push({tp:'msg',desc:'Mensaje por '+ch,ts:now()});
+  ur(d,{msgs,tl});ta.value='';
+  sbLogMessage(d,ch,msgText);
+  toast('Mensaje guardado ✓');renderDay();
+}
+function sS(d,status){
+  const rec=gr(d);const tl=[...(rec.tl||[])];
+  tl.push({tp:'st',desc:'Estado → '+SL[ST.indexOf(status)],ts:now()});
+  ur(d,{st:status,tl});sbLogStatus(d,status);toast(SL[ST.indexOf(status)]);renderDay();
+}
+function sN(d){const ta=document.getElementById('nt-'+d);if(!ta)return;ur(d,{notes:ta.value});sbSaveNote(d,ta.value);toast('Notas guardadas')}
+function cpM(btn){const t=btn.previousElementSibling.textContent;navigator.clipboard.writeText(t).then(()=>{btn.textContent='copiado';btn.classList.add('ok');setTimeout(()=>{btn.textContent='copiar';btn.classList.remove('ok')},1500)})}
+
+// ═══ METRICS + GLOBAL PROGRESS ═══
+function rM(){
+  const c={};ST.forEach(s=>c[s]=0);let totalActs=0,doneActs=0,completedLeads=0;
+  TL.forEach(l=>{const d=dom(l.website);const rec=gr(d);const s=cSt(rec);c[s]=(c[s]||0)+1;
+    const steps=getSteps(l);totalActs+=steps.length;
+    const dn=steps.filter(s=>(rec.acts||[]).includes(s.id)).length;doneActs+=dn;
+    if(s!=='none')completedLeads++;
+  });
+  const show=[['none',0],['partial',1],['contacted',2],['replied',3],['meeting',4],['closed',5]];
+  document.getElementById('mB').innerHTML=show.map(([k,mi])=>`<div class="m"><div class="m-v mc${mi}">${c[k]||0}</div><div class="m-l">${SL[ST.indexOf(k)]}</div></div>`).join('');
+  const pct=TL.length?Math.round(completedLeads/TL.length*100):0;
+  document.getElementById('gpDone').textContent=completedLeads;
+  document.getElementById('gpTotal').textContent=TL.length;
+  document.getElementById('gpFill').style.width=pct+'%';
+  document.getElementById('gpPct').textContent=pct+'%';
+}
+
+// ═══ HISTORY ═══
+function rHist(q){
+  const all=allR();const f=q?all.filter(r=>r.co.toLowerCase().includes(q.toLowerCase())):all;
+  const groups={contacted:[],replied:[],meeting:[],closed:[],partial:[]};
+  f.forEach(r=>{const s=cSt(r);if(groups[s])groups[s].push(r)});
+  let h='';
+  [['contacted','Contactados'],['replied','Respondieron'],['meeting','Reunión'],['closed','Cerrados'],['partial','En progreso']].forEach(([k,label])=>{
+    const items=groups[k]||[];if(!items.length)return;
+    h+=`<div class="hg"><div class="hg-t">${label}<span class="hg-c">${items.length}</span></div>`;
+    items.forEach(r=>{const a=(r.acts||[]).length;const m=(r.msgs||[]).length;
+      h+=`<div class="hi" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`});
+    h+='</div>';
+  });
+  if(!h)h='<div style="text-align:center;color:var(--dm);padding:40px;font-size:12px">Ejecuta acciones para ver leads aquí.</div>';
+  document.getElementById('histL').innerHTML=h;
+}
+function oH(id){const rec=gr(id);if(!rec.lead)return;showV('today');if(!TL.find(l=>dom(l.website)===id)){TL.push(rec.lead);renderDay()}setTimeout(()=>openPB(id),100)}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
+
+// ═══ PAST LEADS ═══
+function loadPast(){
+  if(typeof SEED_PAST!=='undefined'&&SEED_PAST&&SEED_PAST.length){PL=SEED_PAST;merge(PL)}
+}
+function renderPast(){
+  if(!PL.length){document.getElementById('pastL').innerHTML='<div style="color:var(--dm);padding:20px;text-align:center;grid-column:1/-1">Sin leads anteriores cargados.</div>';return}
+  document.getElementById('pastL').innerHTML=PL.sort((a,b)=>(b.unabaseScore||0)-(a.unabaseScore||0)).map(l=>{
+    const d=dom(l.website);const rec=gr(d);const st=cSt(rec);const si=ST.indexOf(st);
+    const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
+    const steps=getSteps(l);const total=steps.length;const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
+    const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
+    const hasMsgs=(rec.msgs||[]).length>0;
+    return`<div class="lead" onclick="openPB('${d}')">
+      ${hasMsgs?'<div class="pri-tag" style="color:var(--gn);background:rgba(34,197,94,.12)">Enviado</div>':'<div class="pri-tag" style="color:var(--am);background:rgba(245,158,11,.12)">Pendiente</div>'}
+      <div class="lh">
+        <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
+        <div class="lc">${esc(l.companyName)}</div>
+        <div class="lh-sub"><strong>${esc(first)}</strong> · ${esc(l.country)}</div>
+        <div class="lh-score ${scCls}">${done} / ${total}</div>
+        <div class="ls s${si}">${SL[si]}</div>
+        <button class="lh-pb" onclick="event.stopPropagation();openPB('${d}')">Abrir Playbook</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+document.getElementById('cN').textContent=CLIENT.name;
+document.getElementById('nD').textContent=new Date().toISOString().slice(0,10);
+document.documentElement.style.setProperty('--accent',CLIENT.accent);
+document.addEventListener('click',e=>{if(!e.target.closest('.n-user'))document.querySelector('.n-udd')?.classList.remove('open')});
+document.getElementById('pbO').addEventListener('click',e=>{if(e.target===document.getElementById('pbO'))closePB()});
+// Load from Supabase first (shared state), then load today's leads
+sbLoadAll().then(()=>{loadPast();autoLoad()});
+</script>
+</body>
+</html>
