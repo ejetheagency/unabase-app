@@ -502,11 +502,9 @@ function getFollowUp(rec,lead,context){
   const diff=dueMs-nowMs;
   let state,timeStr,color;
 
-  // Past leads use tighter threshold: under 48h = yellow (they're older, action is closer)
-  // Hoy leads use relaxed threshold: under 12h = yellow (just contacted, relax)
-  const yellowThreshold=context==='past'?48*3600000:12*3600000;
-
-  if(diff>yellowThreshold){
+  // Universal threshold: green if 12h+ away, yellow if under 12h, red if overdue
+  // Same for all contexts — time is time, the math doesn't change by tab
+  if(diff>12*3600000){
     state='waiting';color='green';
     const d=Math.floor(diff/(24*3600000));
     const h=Math.floor(diff/3600000);
@@ -514,7 +512,7 @@ function getFollowUp(rec,lead,context){
   }else if(diff>0){
     state='due_soon';color='yellow';
     const h=Math.max(1,Math.floor(diff/3600000));
-    timeStr=h>=24?'mañana':'en '+h+'h';
+    timeStr='en '+h+'h';
   }else if(diff>-24*3600000){
     // Due now (within last 24h)
     state='due';color='yellow';
