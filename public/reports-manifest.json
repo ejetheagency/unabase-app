@@ -1,0 +1,16 @@
+{
+  "batches": [
+    {
+      "batch_id": "batch-2026-04-14",
+      "source_date": "2026-04-14",
+      "file": "leads-today.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-04-14T12:00:00Z",
+      "status": "active",
+      "supply_metrics": null
+    }
+  ],
+  "active_batch_id": "batch-2026-04-14",
+  "timezone": "America/New_York"
+}

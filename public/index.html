@@ -424,15 +424,16 @@ function cSt(rec){if(['replied','meeting','closed','skip'].includes(rec.st))retu
 function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);if(l.emailCercana)s.push({id:'email',label:'Email a '+first,msg:l.emailCercana,ch:'email'});if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))s.push({id:'wa',label:'WhatsApp',msg:l.whatsappMessage,ch:'wa'});if(l.instagramDM&&ig)s.push({id:'ig',label:'DM @'+ig,msg:l.instagramDM,ch:'ig'});if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))s.push({id:'li',label:'LinkedIn',msg:l.linkedinPlaybook.connectionNote||'',ch:'li'});return s}
 
 let PL=[];// past leads
-function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')rHist('');if(v==='past')renderPast()}
+function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')rHist('');if(v==='past')loadPast().then(()=>renderPast())}
 function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
-// ═══ DATE-GATING: Only show approved leads for today or earlier ═══
+// ═══ DATE-GATING: Timezone-aware activation (America/New_York) ═══
 function gateLeads(leads){
-  const today=new Date().toISOString().slice(0,10);
+  const nowET=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'}));
+  const todayET=nowET.toISOString().slice(0,10);
+  const hourET=nowET.getHours();
   return leads.filter(l=>{
-    // If lead has source_date, reject if it's in the future
-    if(l.source_date&&l.source_date>today){console.warn('[GATE] Blocked future lead:',l.companyName,l.source_date);return false}
-    // If lead has approved field, reject if not approved
+    if(l.source_date&&l.source_date>todayET){console.warn('[GATE] Blocked future lead:',l.companyName,l.source_date);return false}
+    if(l.source_date===todayET&&hourET<8){console.warn('[GATE] Blocked pre-8AM-ET lead:',l.companyName);return false}
     if(l.approved===false){console.warn('[GATE] Blocked unapproved lead:',l.companyName);return false}
     return true;
   });
@@ -440,6 +441,19 @@ function gateLeads(leads){
 
 async function autoLoad(){
   if(typeof EMBEDDED_LEADS!=='undefined'&&EMBEDDED_LEADS&&EMBEDDED_LEADS.length){TL=gateLeads(EMBEDDED_LEADS);merge(TL);renderDay();return}
+  // Try manifest-driven load first
+  try{
+    const mr=await fetch('./reports-manifest.json');
+    if(mr.ok){
+      const manifest=await mr.json();
+      const active=manifest.batches.find(b=>b.batch_id===manifest.active_batch_id);
+      if(active&&active.file){
+        const lr=await fetch('./'+active.file);
+        if(lr.ok){TL=gateLeads(await lr.json());if(TL.length){merge(TL);renderDay();return}}
+      }
+    }
+  }catch{}
+  // Fallback: existing behavior
   try{const r=await fetch(CLIENT.leadsPath);if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}
   const t=new Date();for(let o=0;o<3;o++){const d=new Date(t);d.setDate(d.getDate()-o);try{const r=await fetch('../output/leads-'+d.toISOString().slice(0,10)+'.json');if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}}
   if(typeof SEED_HISTORY!=='undefined'&&SEED_HISTORY)merge(SEED_HISTORY);
@@ -594,9 +608,14 @@ function oH(id){const rec=gr(id);if(!rec.lead)return;showV('today');if(!TL.find(
 function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 
 // ═══ PAST LEADS ═══
-function loadPast(){
-  // SEED_PAST only loads for unabase_default workspace — never leak client data to other workspaces
+let pastLoaded=false;
+async function loadPast(){
+  if(pastLoaded)return;
+  // Try leads-past.json first (created by activate-batch.js rotation)
+  try{const r=await fetch('./leads-past.json');if(r.ok){const past=await r.json();if(past.length){PL=past;merge(PL);pastLoaded=true;return}}}catch{}
+  // Fallback: SEED_PAST for unabase_default workspace
   if(CLIENT_ID==='unabase_default'&&typeof SEED_PAST!=='undefined'&&SEED_PAST&&SEED_PAST.length){PL=SEED_PAST;merge(PL)}
+  pastLoaded=true;
 }
 function renderPast(){
   if(!PL.length){document.getElementById('pastL').innerHTML='<div style="color:var(--dm);padding:20px;text-align:center;grid-column:1/-1">Sin leads anteriores cargados.</div>';return}
