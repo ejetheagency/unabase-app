@@ -32,7 +32,7 @@
     "instagramUrl": "https://www.instagram.com/cinematres_argentina/",
     "instagramHandle": "cinematres_argentina",
     "instagramBio": "See Instagram photos and videos from Cinematres (@cinematres_argentina) Log into Instagram",
-    "instagramFollowers": "1,965",
+    "instagramFollowers": "1,964",
     "facebookUrl": "https://www.facebook.com/CinematresArgentina",
     "twitterUrl": "https://twitter.com/cinematres",
     "youtubeUrl": null,
@@ -67,7 +67,7 @@
       },
       {
         "step": 3,
-        "pagesScanned": 11,
+        "pagesScanned": 15,
         "personalEmails": [],
         "genericEmails": [
           "info@cinematres.com.ar"
@@ -143,9 +143,9 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/cinematres_argentina/",
-        "igHandle": "cinematres_argentina",
-        "igFollowers": "1,965",
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
         "socialEmail": "info@cinematres.com.ar",
         "socialPhone": null
       },
@@ -173,7 +173,7 @@
       {
         "step": "ig_exhaustive",
         "handle": "cinematres_argentina",
-        "followers": "1,965",
+        "followers": "1,964",
         "email": null,
         "phone": null,
         "triedHandles": 7
@@ -183,7 +183,8 @@
         "found": [
           "11 6812 2274",
           "011 4687-5450",
-          "+5411 3528-7192"
+          "+5411 3528-7192",
+          "30710102348"
         ]
       }
     ],
@@ -312,7 +313,7 @@
       },
       {
         "step": 3,
-        "pagesScanned": 10,
+        "pagesScanned": 14,
         "personalEmails": [],
         "genericEmails": [
           "info@haddockfilms.com"
@@ -464,7 +465,7 @@
       },
       {
         "step": 3,
-        "pagesScanned": 13,
+        "pagesScanned": 16,
         "personalEmails": [
           "juanpablo@magmacine.com.ar",
           "nat@magmacine.com.ar"
@@ -545,7 +546,7 @@
     "batch_id": "batch-2026-04-14"
   },
   {
-    "companyName": "Cine",
+    "companyName": "Chimpancé Films",
     "website": "https://chimpancefilms.com.ar",
     "country": "Argentina",
     "industry": "film",
@@ -564,17 +565,17 @@
     "approachAngle": null,
     "pitchEmailES": "hola equipo de Chimpancé Films — vi el trabajo de cine experimental que hacen.\n\ncómo están organizando toda la producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
-    "contactName": null,
-    "contactTitle": null,
+    "contactName": "Rodrigo Agustín Giménez",
+    "contactTitle": "Fundador de Chimpancé Films",
     "contactEmail": "chimpancefilms@gmail.com",
     "contactLinkedIn": null,
     "contactConfidence": "website_direct",
     "contactSource": "website",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/cinefilms/",
-    "instagramHandle": "cinefilms",
-    "instagramBio": "See Instagram photos and videos from Cinefilms (@cinefilms)",
-    "instagramFollowers": "1,879",
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
     "facebookUrl": null,
     "twitterUrl": null,
     "youtubeUrl": null,
@@ -609,7 +610,7 @@
       },
       {
         "step": 3,
-        "pagesScanned": 10,
+        "pagesScanned": 14,
         "personalEmails": [
           "chimpancefilms@gmail.com"
         ],
@@ -617,7 +618,7 @@
         "phones": [
           "9 11 2290-9883"
         ],
-        "name": null,
+        "name": "Rodrigo Agustín Giménez",
         "social": {
           "instagram": null,
           "facebook": null,
@@ -633,9 +634,9 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/cinefilms/",
-        "igHandle": "cinefilms",
-        "igFollowers": "1,879",
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
         "socialEmail": null,
         "socialPhone": null
       }
@@ -717,7 +718,7 @@
     "contactEmail": "misilprod@gmail.com",
     "contactLinkedIn": null,
     "contactConfidence": "name_from_email",
-    "contactSource": "ddg_email",
+    "contactSource": "press",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/misilproducciones/?hl=es",
     "instagramHandle": "misilproducciones",
@@ -757,7 +758,7 @@
       },
       {
         "step": 3,
-        "pagesScanned": 13,
+        "pagesScanned": 16,
         "personalEmails": [],
         "genericEmails": [],
         "phones": [],
@@ -927,7 +928,7 @@
     "batch_id": "batch-2026-04-14"
   },
   {
-    "companyName": "Video deportivo",
+    "companyName": "1813 Estudio",
     "website": "https://1813estudio.com",
     "country": "Mexico",
     "industry": "tv",
@@ -945,12 +946,12 @@
     "approachAngle": null,
     "pitchEmailES": "hola equipo de Nacho Gimeno — vi el trabajo audiovisual deportivo que hacen.\n\ncómo están organizando todo eso?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "info@nachogimeno.com",
+    "contactName": "Nacho Gimeno",
+    "contactTitle": "fundador",
+    "contactEmail": null,
     "contactLinkedIn": null,
-    "contactConfidence": "social_only",
-    "contactSource": "social",
+    "contactConfidence": "not_found",
+    "contactSource": null,
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/nachophooto/?hl=es",
     "instagramHandle": "nachophooto",
@@ -990,13 +991,13 @@
       },
       {
         "step": 3,
-        "pagesScanned": 10,
+        "pagesScanned": 14,
         "personalEmails": [],
         "genericEmails": [
           "info@1813estudio.com"
         ],
         "phones": [],
-        "name": null,
+        "name": "Nacho Gimeno",
         "social": {
           "instagram": "https://www.instagram.com/nachophooto/?hl=es",
           "facebook": "https://www.facebook.com/FotografiaNachoGimeno",
@@ -1004,6 +1005,16 @@
           "youtube": "https://www.youtube.com/channel/UCZkvRGR6CLz4KIM0oRknrAg",
           "vimeo": "https://vimeo.com/1813estudio"
         }
+      },
+      {
+        "step": "reverse",
+        "name": "Reverse Lookup",
+        "started": true,
+        "targetName": "Nacho Gimeno"
+      },
+      {
+        "step": "reverse",
+        "found": "nothing"
       },
       {
         "step": 4,
@@ -1144,7 +1155,7 @@
     "batch_id": "batch-2026-04-14"
   },
   {
-    "companyName": "Bienvenido a Anchoita Films",
+    "companyName": "Aqua Films",
     "website": "https://aquafilms.com.ar",
     "country": "Argentina",
     "industry": "film",
@@ -1207,7 +1218,7 @@
       },
       {
         "step": 3,
-        "pagesScanned": 14,
+        "pagesScanned": 16,
         "personalEmails": [
           "produccion@anchoitafilms.com.ar"
         ],
@@ -1282,7 +1293,7 @@
     "batch_id": "batch-2026-04-14"
   },
   {
-    "companyName": "NOSOTROS",
+    "companyName": "Pampa Films",
     "website": "https://pampafilms.com.ar",
     "country": "Argentina",
     "industry": "film",
@@ -1419,7 +1430,7 @@
     "batch_id": "batch-2026-04-14"
   },
   {
-    "companyName": "Productora Audiovisual en Buenos Aires",
+    "companyName": "Sun Factory Films",
     "website": "https://sunfactoryfilms.com",
     "country": "Argentina",
     "industry": "film",
@@ -1444,23 +1455,19 @@
     "contactTitle": "CEO",
     "contactEmail": "hola@sunfactory.com.ar",
     "contactLinkedIn": null,
-    "contactConfidence": "generic",
+    "contactConfidence": "website_direct",
     "contactSource": "website",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/sunfactoryfilms",
-    "instagramHandle": "sunfactoryfilms",
-    "instagramBio": "See Instagram photos and videos from Sun Factory Films (@sunfactoryfilms)",
-    "instagramFollowers": "614",
+    "instagramUrl": "https://www.instagram.com/fullhouseav/",
+    "instagramHandle": "fullhouseav",
+    "instagramBio": "See Instagram photos and videos from FullHouse Audiovisual (@fullhouseav) Log into Instagram",
+    "instagramFollowers": "183",
     "facebookUrl": null,
     "twitterUrl": null,
     "youtubeUrl": "https://www.youtube.com/sunfactoryfilms",
     "vimeoUrl": "https://vimeo.com/sunfactory",
     "contactPhone": "+54 11 3651 1204",
-    "emailPatterns": [
-      "julian@sunfactoryfilms.com",
-      "julian.dinanno@sunfactoryfilms.com",
-      "j.dinanno@sunfactoryfilms.com"
-    ],
+    "emailPatterns": null,
     "scoutLog": [
       {
         "step": 1,
@@ -1489,7 +1496,7 @@
       },
       {
         "step": 3,
-        "pagesScanned": 12,
+        "pagesScanned": 16,
         "personalEmails": [],
         "genericEmails": [
           "hola@sunfactory.com.ar"
@@ -1497,7 +1504,7 @@
         "phones": [
           "+54 11 3651 1204"
         ],
-        "name": "Julián Di Nanno",
+        "name": null,
         "social": {
           "instagram": "https://www.instagram.com/sunfactoryfilms",
           "facebook": null,
@@ -1561,9 +1568,9 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/sunfactoryfilms",
-        "igHandle": "sunfactoryfilms",
-        "igFollowers": "614",
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
         "socialEmail": null,
         "socialPhone": null
       },
@@ -1576,36 +1583,13 @@
         "step": "C",
         "tiktokEmail": null,
         "waPhone": null,
-        "gmbPhone": "+54 11 6112-4854",
+        "gmbPhone": null,
         "gmbOwner": null
       },
       {
-        "step": "D",
-        "name": "Name→Email",
-        "started": true
-      },
-      {
-        "step": "D",
-        "patterns": [
-          "julian@sunfactoryfilms.com",
-          "julian.dinanno@sunfactoryfilms.com",
-          "j.dinanno@sunfactoryfilms.com"
-        ],
-        "via": "pattern"
-      },
-      {
-        "step": 9,
-        "name": "Hunter Find",
-        "started": true
-      },
-      {
-        "step": 9,
-        "found": "nothing"
-      },
-      {
         "step": "ig_exhaustive",
-        "handle": "sunfactoryfilms",
-        "followers": "614",
+        "handle": "fullhouseav",
+        "followers": "183",
         "email": null,
         "phone": null,
         "triedHandles": 15
@@ -1613,8 +1597,7 @@
       {
         "step": "phone_exhaustive",
         "found": [
-          "+54 11 3651 1204",
-          "+54 11 6112-4854"
+          "+54 11 3651 1204"
         ]
       }
     ],
@@ -1667,7 +1650,8 @@
     ],
     "source_date": "2026-04-14",
     "approved": true,
-    "batch_id": "batch-2026-04-14"
+    "batch_id": "batch-2026-04-14",
+    "manualNote": "Email generico (hola@sunfactory.com.ar) — contactar tambien por Instagram @fullhouseav"
   },
   {
     "companyName": "LaGallera",
@@ -1735,7 +1719,7 @@
       },
       {
         "step": 3,
-        "pagesScanned": 10,
+        "pagesScanned": 6,
         "personalEmails": [
           "valeria@lagallera.ec",
           "produccion@lagallera.ec"
@@ -1745,7 +1729,7 @@
           "+593 95 946 4272",
           "+1.847.954.8411"
         ],
-        "name": null,
+        "name": "Ben Morris",
         "social": {
           "instagram": "https://www.instagram.com/axiom_themes/",
           "facebook": "https://www.facebook.com/AxiomThemes",

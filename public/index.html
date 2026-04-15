@@ -144,6 +144,7 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .ml-ch{font-size:8px;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:3px}
 .ml-email{background:#0a1f12;color:var(--gn2)}.ml-wa{background:#0a1f12;color:var(--teal)}.ml-ig{background:#150a28;color:#d8b4fe}.ml-li{background:#0a142e;color:#93c5fd}
 .ml-t{font-size:9px;color:var(--dm);margin-left:auto}
+.ml-del{background:none;border:1px solid var(--rd);color:var(--rd);font-size:10px;padding:1px 6px;border-radius:4px;cursor:pointer;margin-left:8px;opacity:.5;transition:.2s}.ml-del:hover{opacity:1;background:var(--rd);color:#fff}
 .ml-tx{font-size:11px;color:var(--t2);white-space:pre-wrap;line-height:1.3}
 .notes{width:100%;background:var(--bg);border:1px solid var(--bd);color:var(--tx);padding:10px;border-radius:6px;font-size:12px;resize:vertical;min-height:80px}
 .notes:focus{border-color:var(--ac);outline:none}
@@ -351,6 +352,30 @@ async function sbLogMessage(leadId,channel,text){
   try{await sb.from('messages_sent').insert({lead_id:leadId,user_name:USER,channel,message_text:text})}catch(e){console.warn('sb msg:',e.message)}
 }
 
+async function sbDeleteMessage(leadId,sentAt){
+  try{
+    await sb.from('messages_sent').delete().match({lead_id:leadId,user_name:USER,sent_at:sentAt});
+  }catch(e){console.warn('sb del msg:',e.message)}
+}
+
+function delMsg(domId,ts){
+  if(!confirm('Borrar este mensaje enviado?'))return;
+  // Remove from localStorage
+  const D=db();const rec=D[domId];
+  if(rec&&rec.msgs){rec.msgs=rec.msgs.filter(m=>m.ts!==ts);D[domId]=rec;sdb(D)}
+  // Remove from Supabase
+  sbDeleteMessage(domId,ts);
+  // Also uncheck the action if no messages remain for that channel
+  if(rec){
+    const deleted=rec.msgs?rec.msgs:[];
+    // Recalculate status
+    rec.st=cSt(rec);D[domId]=rec;sdb(D);
+  }
+  // Refresh playbook
+  openPB(domId);
+  toast('Mensaje borrado');
+}
+
 async function sbSaveNote(leadId,text){
   try{await sb.from('notes').upsert({lead_id:leadId,user_name:USER,note_text:text,updated_at:new Date().toISOString()},{onConflict:'lead_id,user_name'})}catch(e){console.warn('sb note:',e.message)}
 }
@@ -481,7 +506,7 @@ function openPB(d){
   }).join('');
 
   const allMsgs=(rec.msgs||[]).sort((a,b)=>new Date(b.ts)-new Date(a.ts));
-  const msH=allMsgs.length?'<div class="sec" style="margin-top:12px"><div class="sl">Mensajes Enviados</div>'+allMsgs.map(m=>`<div class="ml-i"><div class="ml-h"><span class="ml-ch ml-${m.ch}">${m.ch}</span><span class="ml-t">${new Date(m.ts).toLocaleString('es')}</span></div><div class="ml-tx">${esc(m.tx)}</div></div>`).join('')+'</div>':'';
+  const msH=allMsgs.length?'<div class="sec" style="margin-top:12px"><div class="sl">Mensajes Enviados</div>'+allMsgs.map(m=>`<div class="ml-i"><div class="ml-h"><span class="ml-ch ml-${m.ch}">${m.ch}</span><span class="ml-t">${new Date(m.ts).toLocaleString('es')}</span><button class="ml-del" onclick="event.stopPropagation();delMsg('${d}','${m.ts}')">&#10005;</button></div><div class="ml-tx">${esc(m.tx)}</div></div>`).join('')+'</div>':'';
 
   const stBtns=ST.slice(2).map(s=>`<button class="stb${rec.st===s?' on':''}" onclick="event.stopPropagation();sS('${d}','${s}');openPB('${d}')">${SL[ST.indexOf(s)]}</button>`).join('');
 
