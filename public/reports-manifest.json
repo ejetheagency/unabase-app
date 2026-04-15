@@ -1,16 +1,26 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-04-15",
+      "source_date": "2026-04-15",
+      "file": "leads-2026-04-15.json",
+      "lead_count": 8,
+      "approved": true,
+      "approved_at": "2026-04-15T23:35:17.110Z",
+      "status": "active",
+      "supply_metrics": null
+    },
+    {
       "batch_id": "batch-2026-04-14",
       "source_date": "2026-04-14",
       "file": "leads-today.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-04-14T12:00:00Z",
-      "status": "active",
+      "status": "archived",
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-04-14",
+  "active_batch_id": "batch-2026-04-15",
   "timezone": "America/New_York"
 }
