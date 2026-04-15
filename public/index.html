@@ -250,16 +250,20 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 <script>const SEED_PAST=[{"companyName":"HUAU","website":"https://huau.cl","country":"Chile","industry":"commercial","contactEmail":"arturo@huau.cl","unabaseScore":8,"estimatedSize":"small","apolloEmployeeCount":3,"companyBrief":"Productora boutique de Santiago. Comerciales y animación para Netflix, Santander y Pepsi.","notableClients":["Netflix","Pepsi","Modelo","Santander"],"emailCercana":"hola equipo de HUAU — vi que manejan comerciales para Netflix y Santander. cómo hacen con tantos presupuestos a la vez?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"Brodaju","website":"https://brodaju.com.co","country":"Colombia","industry":"commercial","contactName":"Rene Martinez","contactTitle":"Owner","contactEmail":"rene@brodaju.com","unabaseScore":8,"companyBrief":"Agencia audiovisual boutique en Colombia.","emailCercana":"hola Rene — vi el trabajo que vienen haciendo en Brodaju. cómo están manejando los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"Grappi Multimedia","website":"https://grappi.cl","country":"Chile","industry":"commercial","contactEmail":"contacto@grappi.cl","instagramUrl":"https://www.instagram.com/grappifilming/","instagramHandle":"grappifilming","unabaseScore":8,"companyBrief":"Videos corporativos y animación para Sony.","notableClients":["Sony"],"emailCercana":"hola equipo de Grappi — vi el trabajo que hicieron con Sony. cómo hacen con tantos proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"Intelygente","website":"https://intelygente.net","country":"Colombia","industry":"commercial","contactEmail":"info@intelygente.net","contactPhone":"312 380 8677","instagramUrl":"https://www.instagram.com/intelygente/","instagramHandle":"intelygente","unabaseScore":6,"apolloEmployeeCount":7,"companyBrief":"Producción audiovisual y branding para Google y Facebook.","notableClients":["Google","Facebook"],"emailCercana":"hola equipo de Intelygente — vi que manejan campañas para Google y Facebook. cómo coordinan los presupuestos con 7 personas?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"CBRA Films","website":"https://cbrafilms.com","country":"Chile","industry":"tv","contactName":"Cristobal Braun Mesples","contactTitle":"Owner","contactEmail":"cristobal@cbrafilms.com","contactPhone":"+56 9 7478 5069","unabaseScore":7,"companyBrief":"Productora audiovisual chilena. Contenido y estudio en Santiago.","emailCercana":"hola Cristobal — vi que CBRA combina producción con arriendo de estudio. cómo presupuestan ambos lados?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"Doin Media","website":"https://doinmedia.com","country":"Colombia","industry":"commercial","contactEmail":"carolina.guerrero@doinmedia.com","contactPhone":"+573183272138","unabaseScore":6,"companyBrief":"Producción audiovisual en Bogotá para Amazon y Facebook.","notableClients":["Amazon","Facebook"],"emailCercana":"hola equipo de Doin Media — vi que manejan proyectos para Amazon y Facebook. cómo coordinan los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"PRAGA 555","website":"https://praga555.cl","country":"Chile","industry":"tv","contactEmail":"marcelo.germani@praga555.cl","unabaseScore":6,"apolloEmployeeCount":6,"companyBrief":"Productora de TV chilena. 6 profesionales.","notableClients":["Facebook"],"emailCercana":"hola equipo de PRAGA 555 — vi que producen para TV y Facebook con 6 personas. cómo manejan los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"},{"companyName":"ChileRayo","website":"https://chilerayo.com","country":"Chile","industry":"commercial","contactEmail":"contacto@chilerayo.com","contactPhone":"+569 5759 4998","instagramUrl":"https://www.instagram.com/morfina.cl/","instagramHandle":"morfina.cl","unabaseScore":6,"companyBrief":"Productora boutique chilena. 8K seguidores como @morfina.cl.","emailCercana":"hola equipo de ChileRayo — vi que están creciendo fuerte con 8K seguidores. cómo manejan los presupuestos conforme crecen?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"}];</script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script>
-const CLIENT={name:'unabase',leadsPath:'./leads-today.json',accent:'#d4a017'};
+// ═══ WORKSPACE: Read ?client= from URL, default to unabase_default ═══
+const CLIENT_ID=(new URLSearchParams(window.location.search).get('client')||'unabase_default').replace(/[^a-zA-Z0-9_-]/g,'');
+const CLIENT={name:'unabase',leadsPath:CLIENT_ID==='unabase_default'?'./leads-today.json':'./leads-'+CLIENT_ID+'.json',accent:'#d4a017'};
 const SB_URL='https://ogdsuztzhmnnjolilsuo.supabase.co';
 const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9nZHN1enR6aG1ubmpvbGlsc3VvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYyMDI0MDMsImV4cCI6MjA5MTc3ODQwM30.9iKhJJWd_zg6WfdxTR9ojK4DVLR3e-bLdPXY-0uDp7Q';
 const sb=window.supabase.createClient(SB_URL,SB_KEY);
+console.log('[workspace] client_id='+CLIENT_ID+' | leads='+CLIENT.leadsPath);
 </script>
 
 <div class="nav">
   <div class="n-brand"><span id="cN"></span></div>
   <div class="n-sep"></div>
   <div class="n-date" id="nD"></div>
+  <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 8px;border-radius:3px" id="wsTag"></div>
   <div class="n-tabs">
     <button class="n-tab on" onclick="showV('today')">Hoy</button>
     <button class="n-tab" onclick="showV('past')">Leads Anteriores</button>
@@ -283,7 +287,7 @@ const sb=window.supabase.createClient(SB_URL,SB_KEY);
 </div>
 <div class="toast" id="toast"></div>
 <script>
-const USER='scarlett';const DBK='unabase_'+USER;let TL=[];
+const USER='scarlett';const DBK='unabase_'+CLIENT_ID+'_'+USER;let TL=[];
 const ST=['none','partial','contacted','replied','meeting','closed','skip'];
 const SL=['Sin contactar','Parcial','Contactado','Respondió','Reunión','Cerrado','Omitir'];
 
@@ -325,36 +329,34 @@ async function sbUpsertLead(id,l,isHist){
     id,company:l.companyName||'',contact_name:l.contactName||null,contact_email:l.contactEmail||null,
     contact_phone:l.contactPhone||null,country:l.country||null,industry:l.industry||null,
     score:l.unabaseScore||0,status:'none',source_date:new Date().toISOString().slice(0,10),
-    is_historical:!!isHist,lead_data:l,updated_at:new Date().toISOString()
+    is_historical:!!isHist,lead_data:l,updated_at:new Date().toISOString(),
+    client_id:CLIENT_ID
   },{onConflict:'id'})}catch(e){console.warn('sb upsert lead:',e.message)}
 }
 
 async function sbSync(id,rec){
   try{
-    // Update lead status
-    await sb.from('leads').update({status:rec.st,updated_at:new Date().toISOString()}).eq('id',id);
+    await sb.from('leads').update({status:rec.st,updated_at:new Date().toISOString()}).eq('id',id).eq('client_id',CLIENT_ID);
   }catch(e){console.warn('sb sync:',e.message)}
 }
 
 async function sbLogAction(leadId,channel,completed){
   try{
     if(completed){
-      // Add action
-      await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed:true});
+      await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed:true,client_id:CLIENT_ID});
     } else {
-      // Remove all action rows for this lead+channel (uncheck = delete)
-      await sb.from('actions').delete().match({lead_id:leadId,channel,user_name:USER});
+      await sb.from('actions').delete().match({lead_id:leadId,channel,user_name:USER,client_id:CLIENT_ID});
     }
   }catch(e){console.warn('sb action:',e.message)}
 }
 
 async function sbLogMessage(leadId,channel,text){
-  try{await sb.from('messages_sent').insert({lead_id:leadId,user_name:USER,channel,message_text:text})}catch(e){console.warn('sb msg:',e.message)}
+  try{await sb.from('messages_sent').insert({lead_id:leadId,user_name:USER,channel,message_text:text,client_id:CLIENT_ID})}catch(e){console.warn('sb msg:',e.message)}
 }
 
 async function sbDeleteMessage(leadId,sentAt){
   try{
-    await sb.from('messages_sent').delete().match({lead_id:leadId,user_name:USER,sent_at:sentAt});
+    await sb.from('messages_sent').delete().match({lead_id:leadId,user_name:USER,sent_at:sentAt,client_id:CLIENT_ID});
   }catch(e){console.warn('sb del msg:',e.message)}
 }
 
@@ -377,33 +379,32 @@ function delMsg(domId,ts){
 }
 
 async function sbSaveNote(leadId,text){
-  try{await sb.from('notes').upsert({lead_id:leadId,user_name:USER,note_text:text,updated_at:new Date().toISOString()},{onConflict:'lead_id,user_name'})}catch(e){console.warn('sb note:',e.message)}
+  try{await sb.from('notes').upsert({lead_id:leadId,user_name:USER,note_text:text,updated_at:new Date().toISOString(),client_id:CLIENT_ID},{onConflict:'lead_id,user_name'})}catch(e){console.warn('sb note:',e.message)}
 }
 
 async function sbLogStatus(leadId,status){
-  try{await sb.from('status_history').insert({lead_id:leadId,user_name:USER,status})}catch(e){console.warn('sb status:',e.message)}
+  try{await sb.from('status_history').insert({lead_id:leadId,user_name:USER,status,client_id:CLIENT_ID})}catch(e){console.warn('sb status:',e.message)}
 }
 
-// ═══ SUPABASE LOAD (on startup, hydrate from shared DB) ═══
+// ═══ SUPABASE LOAD (on startup, hydrate from shared DB — filtered by client_id) ═══
 async function sbLoadAll(){
   try{
-    const{data:leads}=await sb.from('leads').select('*');
+    const{data:leads}=await sb.from('leads').select('*').eq('client_id',CLIENT_ID);
     if(!leads||!leads.length)return;
     const D=db();
     leads.forEach(l=>{
       if(!D[l.id]){D[l.id]={id:l.id,co:l.company,cn:l.contact_name||'',st:l.status||'none',acts:[],msgs:[],tl:[],notes:'',lead:l.lead_data,up:l.updated_at}}
       else{D[l.id].st=l.status||D[l.id].st} // Supabase status wins
     });
-    // Load actions — only completed=true, and reset acts array from Supabase truth
-    const{data:acts}=await sb.from('actions').select('*').eq('completed',true);
-    // Clear all acts first so Supabase is source of truth for actions
+    // Load actions — filtered by client_id
+    const{data:acts}=await sb.from('actions').select('*').eq('completed',true).eq('client_id',CLIENT_ID);
     Object.values(D).forEach(r=>{if(r.acts)r.acts=[]});
     if(acts)acts.forEach(a=>{if(D[a.lead_id]&&!D[a.lead_id].acts.includes(a.channel))D[a.lead_id].acts.push(a.channel)});
-    // Load messages
-    const{data:msgs}=await sb.from('messages_sent').select('*');
+    // Load messages — filtered by client_id
+    const{data:msgs}=await sb.from('messages_sent').select('*').eq('client_id',CLIENT_ID);
     if(msgs)msgs.forEach(m=>{if(D[m.lead_id]){const existing=D[m.lead_id].msgs||[];if(!existing.find(x=>x.ts===m.sent_at))existing.push({ch:m.channel,tx:m.message_text,ts:m.sent_at});D[m.lead_id].msgs=existing}});
-    // Load notes
-    const{data:nts}=await sb.from('notes').select('*');
+    // Load notes — filtered by client_id
+    const{data:nts}=await sb.from('notes').select('*').eq('client_id',CLIENT_ID);
     if(nts)nts.forEach(n=>{if(D[n.lead_id])D[n.lead_id].notes=n.note_text||''});
     // Recalculate status from actions for leads without manual override
     Object.values(D).forEach(r=>{
@@ -594,7 +595,8 @@ function toast(m){const t=document.getElementById('toast');t.textContent=m;t.cla
 
 // ═══ PAST LEADS ═══
 function loadPast(){
-  if(typeof SEED_PAST!=='undefined'&&SEED_PAST&&SEED_PAST.length){PL=SEED_PAST;merge(PL)}
+  // SEED_PAST only loads for unabase_default workspace — never leak client data to other workspaces
+  if(CLIENT_ID==='unabase_default'&&typeof SEED_PAST!=='undefined'&&SEED_PAST&&SEED_PAST.length){PL=SEED_PAST;merge(PL)}
 }
 function renderPast(){
   if(!PL.length){document.getElementById('pastL').innerHTML='<div style="color:var(--dm);padding:20px;text-align:center;grid-column:1/-1">Sin leads anteriores cargados.</div>';return}
@@ -620,6 +622,12 @@ function renderPast(){
 
 document.getElementById('cN').textContent=CLIENT.name;
 document.getElementById('nD').textContent=new Date().toISOString().slice(0,10);
+// Workspace tag
+const wsEl=document.getElementById('wsTag');
+wsEl.textContent=CLIENT_ID==='unabase_default'?'':CLIENT_ID;
+if(CLIENT_ID==='operator'){wsEl.style.background='var(--rd)';wsEl.style.color='#fff';}
+else if(CLIENT_ID!=='unabase_default'){wsEl.style.background='var(--pp)';wsEl.style.color='#fff';}
+else{wsEl.style.display='none';}
 document.documentElement.style.setProperty('--accent',CLIENT.accent);
 document.addEventListener('click',e=>{if(!e.target.closest('.n-user'))document.querySelector('.n-udd')?.classList.remove('open')});
 document.getElementById('pbO').addEventListener('click',e=>{if(e.target===document.getElementById('pbO'))closePB()});
