@@ -734,23 +734,31 @@ async function loadPast(){
 }
 function renderPast(){
   if(!PL.length){document.getElementById('pastL').innerHTML='<div style="color:var(--dm);padding:20px;text-align:center;grid-column:1/-1">Sin leads anteriores cargados.</div>';return}
+  // Dedup by domain — only render each company once
+  const seen=new Set();
+  const deduped=PL.filter(l=>{const d=dom(l.website);if(!d||seen.has(d))return false;seen.add(d);return true});
   // Group by batch date
   const groups={};
-  PL.forEach(l=>{const bd=l._batchDate||l.source_date||'unknown';if(!groups[bd])groups[bd]=[];groups[bd].push(l)});
+  deduped.forEach(l=>{const bd=l._batchDate||l.source_date||'unknown';if(!groups[bd])groups[bd]=[];groups[bd].push(l)});
   const dates=Object.keys(groups).sort((a,b)=>b.localeCompare(a));
 
   let html='';
   dates.forEach(date=>{
     const leads=groups[date].sort((a,b)=>(b.unabaseScore||0)-(a.unabaseScore||0));
-    // Date separator
     html+=`<div class="past-sep"><span>${date}</span></div>`;
-    // Compact cards
     leads.forEach(l=>{
       const d=dom(l.website);const rec=gr(d);const st=cSt(rec);
       const hasMsgs=(rec.msgs||[]).length>0;const hasActs=(rec.acts||[]).length>0;
       let fu=getFollowUp(rec,l,'past');
-      if(!fu.active&&(hasMsgs||hasActs)&&!SEQ_STOPS.includes(st)){
-        fu={active:true,step:{label:'Follow-up pendiente'},state:'due',timeStr:'acción requerida',color:'yellow'};
+      // Past leads that were contacted → use computed timing
+      // Past leads with NO outreach data → default yellow (they're old, action needed)
+      if(!fu.active&&!SEQ_STOPS.includes(st)){
+        if(hasMsgs||hasActs){
+          fu={active:true,step:{label:'Follow-up pendiente'},state:'due',timeStr:'acción requerida',color:'yellow'};
+        } else {
+          // No outreach recorded at all — still needs first contact → yellow
+          fu={active:true,step:{label:'Contactar'},state:'due',timeStr:'pendiente',color:'yellow'};
+        }
       }
       const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
       const fuLabel=fu.active?fu.step.label+' · '+fu.timeStr:'';
