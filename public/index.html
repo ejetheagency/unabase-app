@@ -447,7 +447,8 @@ const SEQ_STOPS=['replied','meeting','closed','skip'];
 const CYCLE_LEN=7*24*3600000; // 7 days in ms
 const ALT_DELAY=2*24*3600000; // 2 days after cycle start
 
-function getFollowUp(rec,lead){
+// context: 'hoy' (default) or 'past' — past leads use tighter yellow threshold
+function getFollowUp(rec,lead,context){
   const st=rec.st||'none';
   if(SEQ_STOPS.includes(st))return{active:false,reason:st,color:'none'};
   const acts=rec.acts||[];const msgs=rec.msgs||[];
@@ -492,13 +493,16 @@ function getFollowUp(rec,lead){
   const diff=dueMs-nowMs;
   let state,timeStr,color;
 
-  if(diff>36*3600000){
-    // More than 36h away — comfortable
+  // Past leads use tighter threshold: under 48h = yellow (they're older, action is closer)
+  // Hoy leads use relaxed threshold: under 12h = yellow (just contacted, relax)
+  const yellowThreshold=context==='past'?48*3600000:12*3600000;
+
+  if(diff>yellowThreshold){
     state='waiting';color='green';
     const d=Math.floor(diff/(24*3600000));
-    timeStr='en '+d+'d';
+    const h=Math.floor(diff/3600000);
+    timeStr=d>=1?'en '+d+'d':'en '+h+'h';
   }else if(diff>0){
-    // Under 36h — action due soon
     state='due_soon';color='yellow';
     const h=Math.max(1,Math.floor(diff/3600000));
     timeStr=h>=24?'mañana':'en '+h+'h';
@@ -575,7 +579,7 @@ function renderDay(){
     const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
     const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
     const isPri=d===priId;
-    const fu=getFollowUp(rec,l);
+    const fu=getFollowUp(rec,l,'hoy');
     const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
     const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${fu.timeStr}</div>`:'';
     return`<div class="lead${si>=2?' dn':''}${isPri?' priority':''} ${fuCls}" onclick="openPB('${d}')">
@@ -724,7 +728,7 @@ function renderPast(){
     const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
     const hasMsgs=(rec.msgs||[]).length>0;
     const hasActs=(rec.acts||[]).length>0;
-    let fu=getFollowUp(rec,l);
+    let fu=getFollowUp(rec,l,'past');
     // Past leads that were contacted but have no computed follow-up → default yellow
     if(!fu.active&&(hasMsgs||hasActs)&&!SEQ_STOPS.includes(st)){
       fu={active:true,step:{label:'Follow-up pendiente'},state:'due',timeStr:'acción requerida',color:'yellow'};
