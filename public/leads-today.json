@@ -948,10 +948,10 @@
     "pitchEmailEN": null,
     "contactName": "Nacho Gimeno",
     "contactTitle": "Fundador",
-    "contactEmail": null,
+    "contactEmail": "info@1813estudio.com",
     "contactLinkedIn": null,
-    "contactConfidence": "not_found",
-    "contactSource": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/nachophooto/?hl=es",
     "instagramHandle": "nachophooto",
@@ -961,7 +961,7 @@
     "twitterUrl": null,
     "youtubeUrl": "https://www.youtube.com/channel/UCZkvRGR6CLz4KIM0oRknrAg",
     "vimeoUrl": "https://vimeo.com/1813estudio",
-    "contactPhone": null,
+    "contactPhone": "+34 629 28 75 21",
     "emailPatterns": null,
     "scoutLog": [
       {
