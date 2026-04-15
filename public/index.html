@@ -77,6 +77,17 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 /* Playbook CTA */
 .lh-pb{background:var(--ac);color:#0a0a0f;border:none;padding:8px 22px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;margin-top:10px;transition:.15s;letter-spacing:.3px}
 .lh-pb:hover{background:var(--ac2);transform:scale(1.05)}
+/* Follow-up timing */
+.fu-pill{font-size:8px;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.3px;margin-top:4px;display:inline-block}
+.fu-waiting{background:#0a1a2e;color:var(--bl)}
+.fu-due{background:#1f1800;color:var(--am);animation:fupulse 1.5s infinite}
+.fu-overdue{background:#1c0a0a;color:var(--rd);animation:fupulse 1s infinite}
+@keyframes fupulse{0%,100%{opacity:1}50%{opacity:.6}}
+.fu-box{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:10px 14px;margin-top:10px}
+.fu-box-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--dm);margin-bottom:4px}
+.fu-box-step{font-size:13px;font-weight:600;color:var(--tx)}
+.fu-box-time{font-size:11px;margin-top:2px}
+.fu-box-time.waiting{color:var(--bl)}.fu-box-time.due{color:var(--am)}.fu-box-time.overdue{color:var(--rd)}
 
 /* Priority label */
 .pri-tag{position:absolute;top:8px;right:8px;font-size:7px;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.5px;background:rgba(212,160,23,.12);padding:2px 6px;border-radius:4px}
@@ -423,6 +434,60 @@ function ago(t){if(!t)return'';const d=Date.now()-new Date(t).getTime();if(d<600
 function cSt(rec){if(['replied','meeting','closed','skip'].includes(rec.st))return rec.st;const a=rec.acts||[];if(!a.length)return'none';const l=rec.lead;if(!l)return'partial';const av=[];if(l.emailCercana)av.push('email');if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))av.push('wa');if(l.instagramDM&&(l.instagramHandle||l.instagramUrl))av.push('ig');if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))av.push('li');return av.length&&av.every(x=>a.includes(x))?'contacted':'partial'}
 function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);if(l.emailCercana)s.push({id:'email',label:'Email a '+first,msg:l.emailCercana,ch:'email'});if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))s.push({id:'wa',label:'WhatsApp',msg:l.whatsappMessage,ch:'wa'});if(l.instagramDM&&ig)s.push({id:'ig',label:'DM @'+ig,msg:l.instagramDM,ch:'ig'});if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))s.push({id:'li',label:'LinkedIn',msg:l.linkedinPlaybook.connectionNote||'',ch:'li'});return s}
 
+// ═══ FOLLOW-UP TIMING LAYER ═══
+// Fixed sequence: email → DM (48h) → follow-up (4d) → final bump (7d)
+// Stops if status = replied/meeting/closed/skip
+const SEQ_STOPS=['replied','meeting','closed','skip'];
+const SEQ_STEPS=[
+  {id:'initial',label:'Enviar outreach inicial',delay:0},
+  {id:'alt_touch',label:'DM en canal alternativo',delay:48*3600000},        // 48h
+  {id:'follow_up',label:'Follow-up canal principal',delay:4*24*3600000},    // 4 days
+  {id:'final_bump',label:'Bump final',delay:7*24*3600000}                   // 7 days
+];
+
+function getFollowUp(rec,lead){
+  const st=rec.st||'none';
+  if(SEQ_STOPS.includes(st))return{active:false,reason:st};
+  const acts=rec.acts||[];const msgs=rec.msgs||[];
+  if(!acts.length&&!msgs.length)return{active:false,reason:'no_outreach'};
+
+  // Find all action timestamps (from msgs which have .ts)
+  const allTs=msgs.map(m=>new Date(m.ts).getTime()).filter(t=>!isNaN(t)).sort((a,b)=>a-b);
+  if(!allTs.length)return{active:true,step:SEQ_STEPS[1],due:null,state:'unknown'};
+
+  const firstTs=allTs[0]; // first outreach timestamp
+  const lastTs=allTs[allTs.length-1]; // most recent action
+  const actionCount=allTs.length;
+  const nowMs=Date.now();
+
+  // Determine which step we're on based on action count
+  let stepIdx;
+  if(actionCount>=3)stepIdx=3; // after 3 actions → final bump
+  else if(actionCount>=2)stepIdx=2; // after 2 → follow-up
+  else stepIdx=1; // after 1 → alt touch
+
+  if(stepIdx>=SEQ_STEPS.length)return{active:false,reason:'sequence_complete'};
+
+  const step=SEQ_STEPS[stepIdx];
+  const dueMs=firstTs+step.delay;
+  const diff=dueMs-nowMs;
+
+  let state,timeStr;
+  if(diff>3600000){
+    state='waiting';
+    const h=Math.floor(diff/3600000);
+    timeStr=h>=24?Math.floor(h/24)+'d':h+'h';
+  }else if(diff>-86400000){
+    state='due';timeStr='ahora';
+  }else{
+    state='overdue';
+    const overH=Math.floor(-diff/3600000);
+    timeStr=overH>=24?Math.floor(overH/24)+'d atrás':overH+'h atrás';
+  }
+
+  return{active:true,step,stepIdx,due:new Date(dueMs).toISOString(),state,timeStr,firstTs,lastTs};
+}
+
 let PL=[];// past leads
 function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')rHist('');if(v==='past')loadPast().then(()=>renderPast())}
 function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
@@ -490,6 +555,7 @@ function renderDay(){
         <div class="lh-sub"><strong>${esc(first)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
         <div class="lh-score ${scCls}">${done} / ${total}</div>
         <div class="ls s${si}">${SL[si]}</div>
+        ${(()=>{const fu=getFollowUp(rec,l);if(!fu.active||!fu.state)return'';const cls={waiting:'fu-waiting',due:'fu-due',overdue:'fu-overdue'}[fu.state]||'';const txt={waiting:'⏳ '+fu.step.label+' en '+fu.timeStr,due:'⚡ '+fu.step.label+' — ahora',overdue:'🔴 '+fu.step.label+' — '+fu.timeStr}[fu.state]||'';return`<div class="fu-pill ${cls}">${txt}</div>`;})()}
         <button class="lh-pb" onclick="event.stopPropagation();openPB('${d}')">Playbook</button>
       </div>
     </div>`;
@@ -531,6 +597,7 @@ function openPB(d){
     <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${tags?`<div class="tags">${tags}</div>`:''}</div>
     ${l.keyInsight?`<div class="insight">${esc(l.keyInsight)}</div>`:''}
     ${l.companyBrief?`<div class="sec"><div class="sl">Contexto</div><div class="ctx">${esc(l.companyBrief)}</div></div>`:''}
+    ${(()=>{const fu=getFollowUp(rec,l);if(!fu.active||!fu.state)return'';const cls={waiting:'waiting',due:'due',overdue:'overdue'}[fu.state];const icon={waiting:'⏳',due:'⚡',overdue:'🔴'}[fu.state];const timeLabel={waiting:'en '+fu.timeStr,due:'AHORA',overdue:'hace '+fu.timeStr}[fu.state];return`<div class="fu-box"><div class="fu-box-label">Siguiente Paso</div><div class="fu-box-step">${icon} ${fu.step.label}</div><div class="fu-box-time ${cls}">${timeLabel}</div></div>`;})()}
     <div class="sec"><div class="sl">Acciones</div>${stH}</div>
     <div class="stbar">${stBtns}</div>
     ${msH}
