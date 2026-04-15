@@ -336,7 +336,15 @@ async function sbSync(id,rec){
 }
 
 async function sbLogAction(leadId,channel,completed){
-  try{await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed})}catch(e){console.warn('sb action:',e.message)}
+  try{
+    if(completed){
+      // Add action
+      await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed:true});
+    } else {
+      // Remove all action rows for this lead+channel (uncheck = delete)
+      await sb.from('actions').delete().match({lead_id:leadId,channel,user_name:USER});
+    }
+  }catch(e){console.warn('sb action:',e.message)}
 }
 
 async function sbLogMessage(leadId,channel,text){
@@ -361,8 +369,10 @@ async function sbLoadAll(){
       if(!D[l.id]){D[l.id]={id:l.id,co:l.company,cn:l.contact_name||'',st:l.status||'none',acts:[],msgs:[],tl:[],notes:'',lead:l.lead_data,up:l.updated_at}}
       else{D[l.id].st=l.status||D[l.id].st} // Supabase status wins
     });
-    // Load actions
-    const{data:acts}=await sb.from('actions').select('*');
+    // Load actions — only completed=true, and reset acts array from Supabase truth
+    const{data:acts}=await sb.from('actions').select('*').eq('completed',true);
+    // Clear all acts first so Supabase is source of truth for actions
+    Object.values(D).forEach(r=>{if(r.acts)r.acts=[]});
     if(acts)acts.forEach(a=>{if(D[a.lead_id]&&!D[a.lead_id].acts.includes(a.channel))D[a.lead_id].acts.push(a.channel)});
     // Load messages
     const{data:msgs}=await sb.from('messages_sent').select('*');
@@ -370,6 +380,12 @@ async function sbLoadAll(){
     // Load notes
     const{data:nts}=await sb.from('notes').select('*');
     if(nts)nts.forEach(n=>{if(D[n.lead_id])D[n.lead_id].notes=n.note_text||''});
+    // Recalculate status from actions for leads without manual override
+    Object.values(D).forEach(r=>{
+      if(!['replied','meeting','closed','skip'].includes(r.st)){
+        r.st=cSt(r);
+      }
+    });
     sdb(D);
     console.log('Loaded '+leads.length+' leads from Supabase');
   }catch(e){console.warn('sb load:',e.message)}
