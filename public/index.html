@@ -399,11 +399,23 @@ function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\
 
 let PL=[];// past leads
 function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')rHist('');if(v==='past')renderPast()}
-function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{TL=JSON.parse(ev.target.result);merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
+function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
+// ═══ DATE-GATING: Only show approved leads for today or earlier ═══
+function gateLeads(leads){
+  const today=new Date().toISOString().slice(0,10);
+  return leads.filter(l=>{
+    // If lead has source_date, reject if it's in the future
+    if(l.source_date&&l.source_date>today){console.warn('[GATE] Blocked future lead:',l.companyName,l.source_date);return false}
+    // If lead has approved field, reject if not approved
+    if(l.approved===false){console.warn('[GATE] Blocked unapproved lead:',l.companyName);return false}
+    return true;
+  });
+}
+
 async function autoLoad(){
-  if(typeof EMBEDDED_LEADS!=='undefined'&&EMBEDDED_LEADS&&EMBEDDED_LEADS.length){TL=EMBEDDED_LEADS;merge(TL);renderDay();return}
-  try{const r=await fetch(CLIENT.leadsPath);if(r.ok){TL=await r.json();merge(TL);renderDay();return}}catch{}
-  const t=new Date();for(let o=0;o<3;o++){const d=new Date(t);d.setDate(d.getDate()-o);try{const r=await fetch('../output/leads-'+d.toISOString().slice(0,10)+'.json');if(r.ok){TL=await r.json();merge(TL);renderDay();return}}catch{}}
+  if(typeof EMBEDDED_LEADS!=='undefined'&&EMBEDDED_LEADS&&EMBEDDED_LEADS.length){TL=gateLeads(EMBEDDED_LEADS);merge(TL);renderDay();return}
+  try{const r=await fetch(CLIENT.leadsPath);if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}
+  const t=new Date();for(let o=0;o<3;o++){const d=new Date(t);d.setDate(d.getDate()-o);try{const r=await fetch('../output/leads-'+d.toISOString().slice(0,10)+'.json');if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}}
   if(typeof SEED_HISTORY!=='undefined'&&SEED_HISTORY)merge(SEED_HISTORY);
   const a=allR();if(a.length){TL=a.filter(r=>r.lead).map(r=>r.lead);renderDay();toast('Desde memoria');return}
   document.getElementById('emptyS').style.display='block';
