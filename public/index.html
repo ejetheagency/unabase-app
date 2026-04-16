@@ -487,6 +487,27 @@ const CYCLE_LEN=7*24*3600000;   // 168h main follow-up
 const ALT_DELAY=2*24*3600000;   // 48h alt channel
 const MONTHLY_LEN=30*24*3600000; // 30 days after cycle 4
 
+// ═══ TIME WINDOW CONTROL ═══
+// Outbound actions only suggested between 10:00 AM - 6:00 PM in lead's local timezone.
+// Outside window → show "programado para hoy/mañana 10:00 AM" instead of "ahora".
+// Does NOT block the action, only adjusts display recommendation.
+const COUNTRY_TZ={'Argentina':'America/Argentina/Buenos_Aires','Mexico':'America/Mexico_City','Colombia':'America/Bogota','Chile':'America/Santiago','Peru':'America/Lima','Spain':'Europe/Madrid','Ecuador':'America/Guayaquil','Costa Rica':'America/Costa_Rica','Uruguay':'America/Montevideo','Paraguay':'America/Asuncion','Bolivia':'America/La_Paz','Venezuela':'America/Caracas','Panama':'America/Panama','Guatemala':'America/Guatemala','Honduras':'America/Tegucigalpa','El Salvador':'America/El_Salvador','Nicaragua':'America/Managua','Dominican Republic':'America/Santo_Domingo','Cuba':'America/Havana','Puerto Rico':'America/Puerto_Rico','LATAM':'America/Mexico_City'};
+function windowStatus(country){
+  const tz=COUNTRY_TZ[country]||'America/New_York';
+  const hourStr=new Date().toLocaleString('en-US',{timeZone:tz,hour:'numeric',hour12:false});
+  const hour=parseInt(hourStr,10);
+  if(hour>=10&&hour<18)return{inWindow:true,hour};
+  if(hour<10)return{inWindow:false,hour,label:'programado para hoy 10:00 AM'};
+  return{inWindow:false,hour,label:'programado para mañana 10:00 AM'};
+}
+// Adjusts a fu.timeStr based on send window. Only changes RED state (due/overdue).
+// Future actions (green/yellow) keep their natural countdown — window only matters when sending now.
+function adjustTimeStr(fu,country){
+  if(!fu||!fu.color||fu.color!=='red')return fu?fu.timeStr:'';
+  const w=windowStatus(country);
+  return w.inWindow?fu.timeStr:w.label;
+}
+
 function getFollowUp(rec,lead,context){
   const st=rec.st||'none';
   if(SEQ_STOPS.includes(st))return{active:false,reason:st,color:'none'};
@@ -649,7 +670,8 @@ function renderDay(){
     // Hoy leads with no outreach yet = on time = green
     if(!fu.active&&fu.reason==='no_outreach'){fu={active:true,color:'green',step:{label:'Listo para contactar'},state:'waiting',timeStr:'hoy'};}
     const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
-    const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${fu.timeStr}</div>`:'';
+    const adjTime=adjustTimeStr(fu,l.country);
+    const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${adjTime}</div>`:'';
     return`<div class="lead${si>=2?' dn':''}${isPri?' priority':''} ${fuCls}" onclick="openPB('${d}')">
       ${isPri?'<div class="pri-tag">Siguiente</div>':''}
       <div class="lh">
@@ -721,9 +743,11 @@ function openPB(d){
     }
     const colorIcon=action.color==='red'?'🔴':action.color==='yellow'?'⚡':'✓';
     const playbookHTML=playbook.map(s=>`<li>${esc(s)}</li>`).join('');
+    // Window-aware time: replace "ahora" / "hace Xh" with "programado para..." when outside 10AM-6PM lead-local
+    const adjustedTime=adjustTimeStr({color:action.color,timeStr:action.timeStr},l.country);
     actionSection=`<div class="next-action">
       <div class="sl">Siguiente Acción</div>
-      <div class="na-title">${colorIcon} ${esc(title)}<span class="na-time ${action.color}">${esc(action.timeStr)}</span></div>
+      <div class="na-title">${colorIcon} ${esc(title)}<span class="na-time ${action.color}">${esc(adjustedTime)}</span></div>
       <div class="msg"><pre>${esc(actMsg)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">copiar</button></div>
       <div class="na-playbook">
         <div class="na-pb-label">Playbook</div>
@@ -869,7 +893,8 @@ function renderPast(){
     const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
     const urgency=fu.color==='red'?'<div class="fu-urgency red">VENCIDO</div>'
                  :fu.color==='yellow'?'<div class="fu-urgency yellow">PRONTO</div>':'';
-    const fuLabel=fu.active?fu.step.label+' · '+fu.timeStr:'';
+    const adjT=adjustTimeStr(fu,l.country);
+    const fuLabel=fu.active?fu.step.label+' · '+adjT:'';
     const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
     const batch=l._batchDate||l.source_date||'';
     html+=`<div class="lead compact ${fuCls}" onclick="openPB('${d}')">
