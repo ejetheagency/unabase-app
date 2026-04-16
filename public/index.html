@@ -880,17 +880,21 @@ function rM(){
 // ═══ HISTORY ═══
 function rHist(q){
   const all=allR();const f=q?all.filter(r=>r.co.toLowerCase().includes(q.toLowerCase())):all;
-  const groups={contacted:[],replied:[],meeting:[],closed:[],partial:[]};
-  f.forEach(r=>{const s=cSt(r);if(groups[s])groups[s].push(r)});
+  // Include ALL leads — even uncontacted ones (status='none'). They just haven't
+  // started the cycle yet. Only "skip" (omitir/descartar) is actually hidden.
+  const groups={none:[],partial:[],contacted:[],replied:[],meeting:[],closed:[]};
+  f.forEach(r=>{const s=cSt(r);if(s==='skip')return;if(groups[s])groups[s].push(r)});
   let h='';
-  [['contacted','Contactados'],['replied','Respondieron'],['meeting','Reunión'],['closed','Cerrados'],['partial','En progreso']].forEach(([k,label])=>{
+  [['none','Sin contactar'],['partial','En progreso'],['contacted','Contactados'],['replied','Respondieron'],['meeting','Reunión'],['closed','Cerrados']].forEach(([k,label])=>{
     const items=groups[k]||[];if(!items.length)return;
+    // Sort by most recent activity (up timestamp) desc
+    items.sort((a,b)=>new Date(b.up||0)-new Date(a.up||0));
     h+=`<div class="hg"><div class="hg-t">${label}<span class="hg-c">${items.length}</span></div>`;
     items.forEach(r=>{const a=(r.acts||[]).length;const m=(r.msgs||[]).length;
       h+=`<div class="hi" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`});
     h+='</div>';
   });
-  if(!h)h='<div style="text-align:center;color:var(--dm);padding:40px;font-size:12px">Ejecuta acciones para ver leads aquí.</div>';
+  if(!h)h='<div style="text-align:center;color:var(--dm);padding:40px;font-size:12px">No hay leads en memoria todavía.</div>';
   document.getElementById('histL').innerHTML=h;
 }
 function oH(id){const rec=gr(id);if(!rec.lead)return;showV('today');if(!TL.find(l=>dom(l.website)===id)){TL.push(rec.lead);renderDay()}setTimeout(()=>openPB(id),100)}
