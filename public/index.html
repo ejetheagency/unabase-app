@@ -484,14 +484,9 @@ function getFollowUp(rec,lead,context){
 
   const nowMs=Date.now();
 
-  // Cycle 1 anchor = batch date @ noon ET (16:00 UTC), so old batches progress through cycle
-  // even if messages were logged late. Falls back to first message ts.
-  let anchorTs=allTs[0];
-  const batchDate=lead?._batchDate||lead?.source_date;
-  if(batchDate){
-    const bdTs=new Date(batchDate+'T16:00:00Z').getTime();
-    if(!isNaN(bdTs))anchorTs=Math.min(allTs[0],bdTs);
-  }
+  // Anchor = ACTUAL first message timestamp. Never use batch/source date.
+  // Timing must be based only on saved action timestamps per spec.
+  const anchorTs=allTs[0];
 
   // Separate messages by channel (email = main, everything else = alt)
   const mainMsgs=msgs.filter(m=>m.ch==='email').sort((a,b)=>new Date(a.ts)-new Date(b.ts));
