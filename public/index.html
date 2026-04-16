@@ -469,33 +469,34 @@ function getFollowUp(rec,lead,context){
     return{active:true,step:{label:'Guardar mensaje enviado'},state:'due',timeStr:'ahora',color:'yellow'};
   }
 
-  const firstTs=allTs[0];
+  const msgFirstTs=allTs[0];
   const lastTs=allTs[allTs.length-1];
   const nowMs=Date.now();
-  const elapsed=lastTs-firstTs;
 
-  // Figure out which cycle we're in (each cycle = 7 days from last main channel touch)
-  // Count main channel touches = number of messages on 'email' channel
+  // Cycle anchor = batch date at noon ET (when outreach SHOULD have happened)
+  // Falls back to actual message timestamp if no batch date
+  // This makes older batches progress through the cycle correctly even if messages were logged late
+  let anchorTs=msgFirstTs;
+  const batchDate=lead?._batchDate||lead?.source_date;
+  if(batchDate){
+    const bdTs=new Date(batchDate+'T16:00:00Z').getTime(); // noon ET = 16:00 UTC
+    if(!isNaN(bdTs))anchorTs=bdTs;
+  }
+
   const mainTouches=msgs.filter(m=>m.ch==='email').length;
   const altTouches=msgs.filter(m=>m.ch!=='email').length;
-  const cycle=Math.max(0,mainTouches-1); // cycle 0 = first outreach done
-  const isOddCycle=cycle%2===0; // cycles 0,2,4 = odd cycles (1st,3rd,5th) → include alt touch
-  const cycleStart=lastTs; // last action is the cycle anchor
+  const cycle=Math.max(0,mainTouches-1);
+  const isOddCycle=cycle%2===0;
 
-  // What's next?
   let nextStep,dueMs;
-  const daysSinceLast=Math.floor((nowMs-lastTs)/(24*3600000));
 
   if(mainTouches>=1&&altTouches===0&&isOddCycle){
-    // First outreach done, no alt touch yet, odd cycle → alt DM due
     nextStep='DM canal alternativo';
-    dueMs=firstTs+ALT_DELAY;
+    dueMs=anchorTs+ALT_DELAY;
   }else{
-    // Alt done or even cycle → main channel follow-up
     nextStep='Follow-up canal principal';
-    // Due 7 days after the LAST main channel email, or 5 days after alt touch
     const lastMain=msgs.filter(m=>m.ch==='email').sort((a,b)=>new Date(b.ts)-new Date(a.ts))[0];
-    const lastMainTs=lastMain?new Date(lastMain.ts).getTime():firstTs;
+    const lastMainTs=lastMain?new Date(lastMain.ts).getTime():anchorTs;
     dueMs=lastMainTs+CYCLE_LEN;
   }
 
