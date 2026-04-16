@@ -1290,7 +1290,10 @@
     ],
     "source_date": "2026-04-14",
     "approved": true,
-    "batch_id": "batch-2026-04-14"
+    "batch_id": "batch-2026-04-14",
+    "contact_flags": [
+      "no_phone"
+    ]
   },
   {
     "companyName": "Pampa Films",
