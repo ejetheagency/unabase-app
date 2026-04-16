@@ -713,9 +713,9 @@
     "approachAngle": null,
     "pitchEmailES": "hola equipo de Misil Producciones — vi el trabajo que hacen en Misil Producciones con contenido audiovisual desde Buenos Aires.\n\ncómo están manejando los presupuestos de las producciones que tienen en marcha?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "misilprod@gmail.com",
+    "contactName": "Facundo Salomón",
+    "contactTitle": "Fundador & Director de Casting",
+    "contactEmail": null,
     "contactLinkedIn": null,
     "contactConfidence": "name_from_email",
     "contactSource": "press",
@@ -728,7 +728,7 @@
     "twitterUrl": null,
     "youtubeUrl": "https://www.youtube.com/live/KekLTrtT9aE?si=4o53u-1uwzjd8W9U",
     "vimeoUrl": null,
-    "contactPhone": "+1140644356",
+    "contactPhone": "+54 11 4064 4356",
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -925,7 +925,10 @@
     ],
     "source_date": "2026-04-14",
     "approved": true,
-    "batch_id": "batch-2026-04-14"
+    "batch_id": "batch-2026-04-14",
+    "contact_flags": [
+      "no_email"
+    ]
   },
   {
     "companyName": "1813 Estudio",
