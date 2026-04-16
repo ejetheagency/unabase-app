@@ -715,7 +715,7 @@
     "pitchEmailEN": null,
     "contactName": "Facundo Salomón",
     "contactTitle": "Fundador & Director de Casting",
-    "contactEmail": null,
+    "contactEmail": "misilproducciones@gmail.com",
     "contactLinkedIn": null,
     "contactConfidence": "name_from_email",
     "contactSource": "press",
@@ -925,10 +925,7 @@
     ],
     "source_date": "2026-04-14",
     "approved": true,
-    "batch_id": "batch-2026-04-14",
-    "contact_flags": [
-      "no_email"
-    ]
+    "batch_id": "batch-2026-04-14"
   },
   {
     "companyName": "1813 Estudio",
