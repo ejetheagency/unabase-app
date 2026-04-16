@@ -500,12 +500,17 @@ function windowStatus(country){
   if(hour<10)return{inWindow:false,hour,label:'programado para hoy 10:00 AM'};
   return{inWindow:false,hour,label:'programado para mañana 10:00 AM'};
 }
-// Adjusts a fu.timeStr based on send window. Only changes RED state (due/overdue).
-// Future actions (green/yellow) keep their natural countdown — window only matters when sending now.
+// Execution-clarity label. Tells the user WHEN TO ACT, never history.
+// - RED state → 'ahora' (if in window) or 'programado para hoy/mañana 10:00 AM'
+//   The "hace 1d" history info is removed — that belongs in message log, not action.
+// - GREEN/YELLOW → keep countdown ('en 12h', 'en 36h') — countdown IS execution timing.
 function adjustTimeStr(fu,country){
-  if(!fu||!fu.color||fu.color!=='red')return fu?fu.timeStr:'';
-  const w=windowStatus(country);
-  return w.inWindow?fu.timeStr:w.label;
+  if(!fu||!fu.color)return fu?fu.timeStr:'';
+  if(fu.color==='red'){
+    const w=windowStatus(country);
+    return w.inWindow?'ahora':w.label;
+  }
+  return fu.timeStr;
 }
 
 function getFollowUp(rec,lead,context){
