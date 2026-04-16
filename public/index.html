@@ -484,9 +484,16 @@ function getFollowUp(rec,lead,context){
 
   const nowMs=Date.now();
 
-  // Anchor = ACTUAL first message timestamp. Never use batch/source date.
-  // Timing must be based only on saved action timestamps per spec.
-  const anchorTs=allTs[0];
+  // Anchor logic:
+  //   Hoy leads (no _batchDate): use actual message timestamp only.
+  //   Anteriores leads (_batchDate set by loadPast): use min(actual, batch@noonET)
+  //     so old batches progress from when outreach SHOULD have happened, even if
+  //     the message was logged late. Hoy stays pure because same-day timing is real.
+  let anchorTs=allTs[0];
+  if(lead&&lead._batchDate){
+    const bdTs=new Date(lead._batchDate+'T16:00:00Z').getTime();
+    if(!isNaN(bdTs))anchorTs=Math.min(allTs[0],bdTs);
+  }
 
   // Separate messages by channel (email = main, everything else = alt)
   const mainMsgs=msgs.filter(m=>m.ch==='email').sort((a,b)=>new Date(a.ts)-new Date(b.ts));
