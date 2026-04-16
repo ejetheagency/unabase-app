@@ -1,13 +1,34 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-04-16",
+      "source_date": "2026-04-16",
+      "file": "leads-2026-04-16.json",
+      "lead_count": 8,
+      "approved": true,
+      "approved_at": "2026-04-16T21:50:43.883Z",
+      "status": "active",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "named_decision_makers": 6,
+        "fallback_contacts": 2,
+        "countries": [
+          "Spain",
+          "Argentina",
+          "Colombia",
+          "Chile"
+        ],
+        "note": "Stage 3 contact hunt + deep DM research. 6 named (Co-founder/CEO/Fundador/Director), 2 fallback with full triple contact."
+      }
+    },
+    {
       "batch_id": "batch-2026-04-15",
       "source_date": "2026-04-15",
       "file": "leads-2026-04-15.json",
       "lead_count": 8,
       "approved": true,
       "approved_at": "2026-04-15T23:35:17.110Z",
-      "status": "active",
+      "status": "archived",
       "supply_metrics": null
     },
     {
@@ -21,6 +42,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-04-15",
+  "active_batch_id": "batch-2026-04-16",
   "timezone": "America/New_York"
 }
