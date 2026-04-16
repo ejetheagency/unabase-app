@@ -587,7 +587,9 @@ function renderDay(){
     const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
     const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
     const isPri=d===priId;
-    const fu=getFollowUp(rec,l,'hoy');
+    let fu=getFollowUp(rec,l,'hoy');
+    // Hoy leads with no outreach yet = on time = green
+    if(!fu.active&&fu.reason==='no_outreach'){fu={active:true,color:'green',step:{label:'Listo para contactar'},state:'waiting',timeStr:'hoy'};}
     const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
     const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${fu.timeStr}</div>`:'';
     return`<div class="lead${si>=2?' dn':''}${isPri?' priority':''} ${fuCls}" onclick="openPB('${d}')">
