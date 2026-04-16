@@ -93,6 +93,10 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .fu-box-step{font-size:13px;font-weight:600;color:var(--tx)}
 .fu-box-time{font-size:11px;margin-top:2px}
 .fu-box-time.green{color:var(--gn2)}.fu-box-time.yellow{color:var(--am)}.fu-box-time.red{color:#f87171}
+/* Urgency corner badge (Anteriores only) */
+.fu-urgency{position:absolute;top:8px;right:8px;font-size:8px;font-weight:900;padding:3px 8px;border-radius:4px;letter-spacing:1px;z-index:2}
+.fu-urgency.red{background:var(--rd);color:#fff;animation:fupulse 1s infinite}
+.fu-urgency.yellow{background:var(--am);color:#0a0a0f}
 /* Past leads — compact cards */
 .lead.compact{min-height:auto;padding:12px 14px;border-radius:10px}
 .lead.compact .lc{font-size:13px;line-height:1.2}
@@ -448,15 +452,24 @@ function ago(t){if(!t)return'';const d=Date.now()-new Date(t).getTime();if(d<600
 function cSt(rec){if(['replied','meeting','closed','skip'].includes(rec.st))return rec.st;const a=rec.acts||[];if(!a.length)return'none';const l=rec.lead;if(!l)return'partial';const av=[];if(l.emailCercana)av.push('email');if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))av.push('wa');if(l.instagramDM&&(l.instagramHandle||l.instagramUrl))av.push('ig');if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))av.push('li');return av.length&&av.every(x=>a.includes(x))?'contacted':'partial'}
 function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);if(l.emailCercana)s.push({id:'email',label:'Email a '+first,msg:l.emailCercana,ch:'email'});if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))s.push({id:'wa',label:'WhatsApp',msg:l.whatsappMessage,ch:'wa'});if(l.instagramDM&&ig)s.push({id:'ig',label:'DM @'+ig,msg:l.instagramDM,ch:'ig'});if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))s.push({id:'li',label:'LinkedIn',msg:l.linkedinPlaybook.connectionNote||'',ch:'li'});return s}
 
-// ═══ FOLLOW-UP TIMING LAYER ═══
-// Cycle = 7 days: Day 0 email → Day 2 alt DM → Day 7 main follow-up → cycle resets
-// Alt channel DM only on odd cycles (1, 3, 5...) to avoid being annoying
-// Stops if status = replied/meeting/closed/skip
+// ═══ FOLLOW-UP ENGINE — STRICT TIME-BASED STATE MACHINE ═══
+// Color (time vs due_at):
+//   GREEN:  diff > 24h    (not due soon)
+//   YELLOW: 0 < diff <= 24h   (due soon)
+//   RED:    diff <= 0    (DUE NOW or OVERDUE — immediate)
+//
+// Cycles (main = email channel):
+//   Cycle 1: IG at anchor+48h, then main at anchor+168h
+//   Cycle 2: WhatsApp at main2+48h, then main at main2+168h
+//   Cycle 3-4: only main every 168h, NO alt
+//   After cycle 4: monthly (720h = 30 days), NO alt
+//
+// Stops (no active follow-up): replied / meeting / closed / skip
 const SEQ_STOPS=['replied','meeting','closed','skip'];
-const CYCLE_LEN=7*24*3600000; // 7 days in ms
-const ALT_DELAY=2*24*3600000; // 2 days after cycle start
+const CYCLE_LEN=7*24*3600000;   // 168h main follow-up
+const ALT_DELAY=2*24*3600000;   // 48h alt channel
+const MONTHLY_LEN=30*24*3600000; // 30 days after cycle 4
 
-// context: 'hoy' (default) or 'past' — past leads use tighter yellow threshold
 function getFollowUp(rec,lead,context){
   const st=rec.st||'none';
   if(SEQ_STOPS.includes(st))return{active:false,reason:st,color:'none'};
@@ -466,66 +479,69 @@ function getFollowUp(rec,lead,context){
   const allTs=msgs.map(m=>new Date(m.ts).getTime()).filter(t=>!isNaN(t)).sort((a,b)=>a-b);
   if(!allTs.length){
     // Has acts checked but no messages saved — treat as active, unknown timing
-    return{active:true,step:{label:'Guardar mensaje enviado'},state:'due',timeStr:'ahora',color:'yellow'};
+    return{active:true,step:{label:'Guardar mensaje enviado',channel:'email'},state:'due',timeStr:'ahora',color:'red',cycle:0};
   }
 
-  const msgFirstTs=allTs[0];
-  const lastTs=allTs[allTs.length-1];
   const nowMs=Date.now();
 
-  // Cycle anchor = batch date at noon ET (when outreach SHOULD have happened)
-  // Falls back to actual message timestamp if no batch date
-  // This makes older batches progress through the cycle correctly even if messages were logged late
-  let anchorTs=msgFirstTs;
+  // Cycle 1 anchor = batch date @ noon ET (16:00 UTC), so old batches progress through cycle
+  // even if messages were logged late. Falls back to first message ts.
+  let anchorTs=allTs[0];
   const batchDate=lead?._batchDate||lead?.source_date;
   if(batchDate){
-    const bdTs=new Date(batchDate+'T16:00:00Z').getTime(); // noon ET = 16:00 UTC
-    if(!isNaN(bdTs))anchorTs=bdTs;
+    const bdTs=new Date(batchDate+'T16:00:00Z').getTime();
+    if(!isNaN(bdTs))anchorTs=Math.min(allTs[0],bdTs);
   }
 
-  const mainTouches=msgs.filter(m=>m.ch==='email').length;
-  const altTouches=msgs.filter(m=>m.ch!=='email').length;
-  const cycle=Math.max(0,mainTouches-1);
-  const isOddCycle=cycle%2===0;
+  // Separate messages by channel (email = main, everything else = alt)
+  const mainMsgs=msgs.filter(m=>m.ch==='email').sort((a,b)=>new Date(a.ts)-new Date(b.ts));
+  const cycleNum=mainMsgs.length; // 1 after first main, 2 after second, etc.
+  const lastMainTs=cycleNum?new Date(mainMsgs[cycleNum-1].ts).getTime():anchorTs;
 
-  let nextStep,dueMs;
+  let nextStep,channel,dueMs;
 
-  if(mainTouches>=1&&altTouches===0&&isOddCycle){
-    nextStep='DM canal alternativo';
-    dueMs=anchorTs+ALT_DELAY;
+  if(cycleNum===1){
+    // Cycle 1: IG first at +48h, then main at +168h
+    const igDone=msgs.some(m=>m.ch==='ig'||m.ch==='instagram');
+    if(!igDone){nextStep='DM Instagram';channel='ig';dueMs=anchorTs+ALT_DELAY;}
+    else{nextStep='Follow-up email (ciclo 2)';channel='email';dueMs=anchorTs+CYCLE_LEN;}
+  }else if(cycleNum===2){
+    // Cycle 2: WhatsApp at main2+48h, then main at main2+168h
+    const waDone=msgs.some(m=>(m.ch==='wa'||m.ch==='whatsapp')&&new Date(m.ts).getTime()>=lastMainTs);
+    if(!waDone){nextStep='WhatsApp';channel='wa';dueMs=lastMainTs+ALT_DELAY;}
+    else{nextStep='Follow-up email (ciclo 3)';channel='email';dueMs=lastMainTs+CYCLE_LEN;}
+  }else if(cycleNum<=4){
+    // Cycles 3-4: only main every 7 days
+    nextStep='Follow-up email (ciclo '+(cycleNum+1)+')';channel='email';dueMs=lastMainTs+CYCLE_LEN;
   }else{
-    nextStep='Follow-up canal principal';
-    const lastMain=msgs.filter(m=>m.ch==='email').sort((a,b)=>new Date(b.ts)-new Date(a.ts))[0];
-    const lastMainTs=lastMain?new Date(lastMain.ts).getTime():anchorTs;
-    dueMs=lastMainTs+CYCLE_LEN;
+    // After 4 cycles: monthly
+    nextStep='Follow-up mensual';channel='email';dueMs=lastMainTs+MONTHLY_LEN;
   }
 
   const diff=dueMs-nowMs;
   let state,timeStr,color;
 
-  // Universal threshold: green if 12h+ away, yellow if under 12h, red if overdue
-  // Same for all contexts — time is time, the math doesn't change by tab
-  if(diff>12*3600000){
+  if(diff>24*3600000){
+    // GREEN: more than 24h away
     state='waiting';color='green';
     const d=Math.floor(diff/(24*3600000));
     const h=Math.floor(diff/3600000);
     timeStr=d>=1?'en '+d+'d':'en '+h+'h';
   }else if(diff>0){
+    // YELLOW: within 24h of due
     state='due_soon';color='yellow';
     const h=Math.max(1,Math.floor(diff/3600000));
     timeStr='en '+h+'h';
-  }else if(diff>-24*3600000){
-    // Due now (within last 24h)
-    state='due';color='yellow';
-    timeStr='ahora';
   }else{
-    // Overdue
+    // RED: due now or overdue (immediate — no 24h yellow grace period)
     state='overdue';color='red';
-    const overD=Math.floor(-diff/(24*3600000));
-    timeStr=overD+'d atrás';
+    const over=-diff;
+    if(over<3600000)timeStr='ahora';
+    else if(over<86400000)timeStr='hace '+Math.floor(over/3600000)+'h';
+    else timeStr='hace '+Math.floor(over/(24*3600000))+'d';
   }
 
-  return{active:true,step:{label:nextStep},state,timeStr,color,dueMs,cycle};
+  return{active:true,step:{label:nextStep,channel},state,timeStr,color,dueMs,cycle:cycleNum};
 }
 
 let PL=[];// past leads
@@ -737,41 +753,43 @@ async function loadPast(){
 }
 function renderPast(){
   if(!PL.length){document.getElementById('pastL').innerHTML='<div style="color:var(--dm);padding:20px;text-align:center;grid-column:1/-1">Sin leads anteriores cargados.</div>';return}
-  // Dedup by domain — only render each company once
+  // Dedup by domain
   const seen=new Set();
   const deduped=PL.filter(l=>{const d=dom(l.website);if(!d||seen.has(d))return false;seen.add(d);return true});
-  // Group by batch date
-  const groups={};
-  deduped.forEach(l=>{const bd=l._batchDate||l.source_date||'unknown';if(!groups[bd])groups[bd]=[];groups[bd].push(l)});
-  const dates=Object.keys(groups).sort((a,b)=>b.localeCompare(a));
+
+  // Compute follow-up state for each lead (past leads w/ no timing data default yellow)
+  const COLOR_PRI={red:0,yellow:1,green:2,none:3};
+  const rows=deduped.map(l=>{
+    const d=dom(l.website);const rec=gr(d);const st=cSt(rec);
+    const hasMsgs=(rec.msgs||[]).length>0;const hasActs=(rec.acts||[]).length>0;
+    let fu=getFollowUp(rec,l,'past');
+    if(!fu.active&&!SEQ_STOPS.includes(st)){
+      fu={active:true,color:'yellow',step:{label:hasMsgs||hasActs?'Follow-up pendiente':'Contactar'},state:'due_soon',timeStr:hasMsgs||hasActs?'acción requerida':'pendiente'};
+    }
+    return{lead:l,rec,d,fu};
+  });
+
+  // Flat urgency sort: RED → YELLOW → GREEN, then score desc
+  rows.sort((a,b)=>{
+    const ca=COLOR_PRI[a.fu.color]??3;const cb=COLOR_PRI[b.fu.color]??3;
+    if(ca!==cb)return ca-cb;
+    return(b.lead.unabaseScore||0)-(a.lead.unabaseScore||0);
+  });
 
   let html='';
-  dates.forEach(date=>{
-    const leads=groups[date].sort((a,b)=>(b.unabaseScore||0)-(a.unabaseScore||0));
-    html+=`<div class="past-sep"><span>${date}</span></div>`;
-    leads.forEach(l=>{
-      const d=dom(l.website);const rec=gr(d);const st=cSt(rec);
-      const hasMsgs=(rec.msgs||[]).length>0;const hasActs=(rec.acts||[]).length>0;
-      let fu=getFollowUp(rec,l,'past');
-      // Past leads that were contacted → use computed timing
-      // Past leads with NO outreach data → default yellow (they're old, action needed)
-      if(!fu.active&&!SEQ_STOPS.includes(st)){
-        if(hasMsgs||hasActs){
-          fu={active:true,step:{label:'Follow-up pendiente'},state:'due',timeStr:'acción requerida',color:'yellow'};
-        } else {
-          // No outreach recorded at all — still needs first contact → yellow
-          fu={active:true,step:{label:'Contactar'},state:'due',timeStr:'pendiente',color:'yellow'};
-        }
-      }
-      const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
-      const fuLabel=fu.active?fu.step.label+' · '+fu.timeStr:'';
-      const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
-      html+=`<div class="lead compact ${fuCls}" onclick="openPB('${d}')">
-        <div class="lc" style="font-size:13px">${esc(l.companyName)}</div>
-        <div class="lh-sub">${esc(first)} · ${esc(l.country)}</div>
-        ${fuLabel?`<div class="fu-tag ${fu.color||''}">${fuLabel}</div>`:''}
-      </div>`;
-    });
+  rows.forEach(({lead:l,rec,d,fu})=>{
+    const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
+    const urgency=fu.color==='red'?'<div class="fu-urgency red">VENCIDO</div>'
+                 :fu.color==='yellow'?'<div class="fu-urgency yellow">PRONTO</div>':'';
+    const fuLabel=fu.active?fu.step.label+' · '+fu.timeStr:'';
+    const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
+    const batch=l._batchDate||l.source_date||'';
+    html+=`<div class="lead compact ${fuCls}" onclick="openPB('${d}')">
+      ${urgency}
+      <div class="lc" style="font-size:13px">${esc(l.companyName)}</div>
+      <div class="lh-sub">${esc(first)} · ${esc(l.country)}${batch?' · '+batch:''}</div>
+      ${fuLabel?`<div class="fu-tag ${fu.color||''}">${fuLabel}</div>`:''}
+    </div>`;
   });
   document.getElementById('pastL').innerHTML=html;
 }
