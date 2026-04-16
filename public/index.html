@@ -543,7 +543,10 @@ function getFollowUp(rec,lead,context){
   const st=rec.st||'none';
   if(SEQ_STOPS.includes(st))return{active:false,reason:st,color:'none'};
   const acts=rec.acts||[];const msgs=rec.msgs||[];
-  if(!acts.length&&!msgs.length)return{active:false,reason:'no_outreach',color:'none'};
+  // No messages yet → first action is ALWAYS email, ready now. Never return inactive for open leads.
+  if(!acts.length&&!msgs.length){
+    return{active:true,step:{label:'Email inicial',channel:'email'},state:'waiting',timeStr:'ahora',color:'green',cycle:0,dueMs:Date.now()};
+  }
 
   const allTs=msgs.map(m=>new Date(m.ts).getTime()).filter(t=>!isNaN(t)).sort((a,b)=>a-b);
   if(!allTs.length){
@@ -647,6 +650,8 @@ function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileRead
 function gateLeads(leads){
   const nowET=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'}));
   const todayET=nowET.toISOString().slice(0,10);
+  // Safety: ensure every lead has source_date. Missing → default to today ET.
+  leads.forEach(l=>{if(!l.source_date)l.source_date=todayET;});
   const hourET=nowET.getHours();
   return leads.filter(l=>{
     if(l.source_date&&l.source_date>todayET){console.warn('[GATE] Blocked future lead:',l.companyName,l.source_date);return false}
@@ -713,8 +718,8 @@ function renderDay(){
     const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
     const isPri=d===priId;
     let fu=getFollowUp(rec,l,'hoy');
-    // Hoy leads with no outreach yet = on time = green
-    if(!fu.active&&fu.reason==='no_outreach'){fu={active:true,color:'green',step:{label:'Listo para contactar'},state:'waiting',timeStr:'hoy'};}
+    // Safety net (no-op now since getFollowUp always returns active for non-stopped leads)
+    if(!fu.active&&fu.reason==='no_outreach'){fu={active:true,color:'green',step:{label:'Email inicial'},state:'waiting',timeStr:'ahora'};}
     const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
     const adjTime=adjustTimeStr(fu,l.country);
     const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${adjTime}</div>`:'';
@@ -759,8 +764,6 @@ function openPB(d){
   let action=null;
   if(fuPB.active&&fuPB.step&&fuPB.step.channel){
     action={channel:fuPB.step.channel,isFollowUp:fuPB.cycle>=2,color:fuPB.color,timeStr:fuPB.timeStr};
-  }else if(!(rec.msgs||[]).length&&l.emailCercana){
-    action={channel:'email',isFollowUp:false,color:'green',timeStr:'ahora'};
   }
   let actionSection='';
   if(action){
