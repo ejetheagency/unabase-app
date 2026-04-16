@@ -391,18 +391,26 @@ async function sbDeleteMessage(leadId,sentAt){
 
 function delMsg(domId,ts){
   if(!confirm('Borrar este mensaje enviado?'))return;
-  // Remove from localStorage
   const D=db();const rec=D[domId];
-  if(rec&&rec.msgs){rec.msgs=rec.msgs.filter(m=>m.ts!==ts);D[domId]=rec;sdb(D)}
-  // Remove from Supabase
+  if(!rec||!rec.msgs)return;
+  // Find the message we're deleting (to know its channel for rollback)
+  const deleted=rec.msgs.find(m=>m.ts===ts);
+  const delCh=deleted?deleted.ch:null;
+  // Remove message from localStorage + Supabase
+  rec.msgs=rec.msgs.filter(m=>m.ts!==ts);
   sbDeleteMessage(domId,ts);
-  // Also uncheck the action if no messages remain for that channel
-  if(rec){
-    const deleted=rec.msgs?rec.msgs:[];
-    // Recalculate status
-    rec.st=cSt(rec);D[domId]=rec;sdb(D);
+  // Roll back action state: if no other messages exist for this channel, uncheck that action
+  if(delCh){
+    const stillHasChMsg=rec.msgs.some(m=>m.ch===delCh);
+    if(!stillHasChMsg&&(rec.acts||[]).includes(delCh)){
+      rec.acts=rec.acts.filter(a=>a!==delCh);
+      sbLogAction(domId,delCh,false); // delete action row in Supabase
+    }
   }
-  // Refresh playbook
+  // Recalculate status (may flip from contacted → partial/none based on remaining data)
+  rec.st=cSt(rec);
+  D[domId]=rec;sdb(D);
+  // Refresh playbook — follow-up engine will recompute next_action_due_at from remaining msgs
   openPB(domId);
   toast('Mensaje borrado');
 }
@@ -660,9 +668,9 @@ function openPB(d){
 
   const stH=steps.map((s,si)=>{
     const ck=(rec.acts||[]).includes(s.id);const isN=si===fu;
-    const saved=(rec.msgs||[]).filter(m=>m.ch===s.ch);
-    const svH=saved.map(m=>`<div class="saved"><div class="sv-head"><span class="sv-icon">&#10003;</span><span class="sv-ch">${esc(s.ch)}</span><span class="sv-time">${ago(m.ts)}</span></div><div class="sv-text">${esc(m.tx)}</div></div>`).join('');
-    return`<div class="act${isN?' nxt':''}"><div class="ac${ck?' ck':''}" onclick="tA('${d}','${s.id}','${s.ch}');openPB('${d}')"></div><div class="ab"><div class="al">${esc(s.label)}</div>${s.msg?`<div class="msg"><pre>${esc(s.msg)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">copiar</button></div>`:''}<textarea class="sa" id="sa-${d}-${s.id}" placeholder="Pega lo que enviaste..." onclick="event.stopPropagation()"></textarea><button class="svb" onclick="event.stopPropagation();sM('${d}','${s.id}','${s.ch}');openPB('${d}')">Guardar</button>${svH}</div></div>`;
+    // Saved messages are shown ONLY in the "Mensajes Enviados" section below with delete buttons.
+    // No duplicate locked block here — source of truth is the deletable list.
+    return`<div class="act${isN?' nxt':''}"><div class="ac${ck?' ck':''}" onclick="tA('${d}','${s.id}','${s.ch}');openPB('${d}')"></div><div class="ab"><div class="al">${esc(s.label)}</div>${s.msg?`<div class="msg"><pre>${esc(s.msg)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">copiar</button></div>`:''}<textarea class="sa" id="sa-${d}-${s.id}" placeholder="Pega lo que enviaste..." onclick="event.stopPropagation()"></textarea><button class="svb" onclick="event.stopPropagation();sM('${d}','${s.id}','${s.ch}');openPB('${d}')">Guardar</button></div></div>`;
   }).join('');
 
   const allMsgs=(rec.msgs||[]).sort((a,b)=>new Date(b.ts)-new Date(a.ts));
