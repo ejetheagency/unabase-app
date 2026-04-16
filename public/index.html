@@ -550,9 +550,14 @@ function getFollowUp(rec,lead,context){
   if(diff>24*3600000){
     // GREEN: more than 24h away
     state='waiting';color='green';
-    const d=Math.floor(diff/(24*3600000));
-    const h=Math.floor(diff/3600000);
-    timeStr=d>=1?'en '+d+'d':'en '+h+'h';
+    // Display rule: hours up to 48h, days only beyond. Avoids rounding 36h to "1d".
+    if(diff>48*3600000){
+      const d=Math.floor(diff/(24*3600000));
+      timeStr='en '+d+'d';
+    }else{
+      const h=Math.floor(diff/3600000);
+      timeStr='en '+h+'h';
+    }
   }else if(diff>0){
     // YELLOW: within 24h of due
     state='due_soon';color='yellow';
