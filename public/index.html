@@ -686,13 +686,13 @@ function openPB(d){
     if(action.channel==='ig'||action.channel==='instagram'){
       if(ig){
         actLabel='DM Instagram a @'+ig;
-        actMsg='Hola! Soy Scarlett de UnaBase. Les escribí por email hace un par de días, queria ver si vieron mi mensaje. Trabajamos con productoras como '+l.companyName+' para que la presupuestación deje de ser un dolor. Podemos hablar 10 min?';
+        actMsg='Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde UnaBase y queríamos asegurarnos de que no se perdiera 🙌\nSi quieren, se los contamos por acá.';
         actCh='ig';
       }else{canSend=false;actCh='ig';actLabel='DM Instagram';reason='Instagram no disponible para este lead. Saltar al siguiente paso.';}
     }else if(action.channel==='wa'||action.channel==='whatsapp'){
       if(phonePB){
         actLabel='WhatsApp a '+phonePB;
-        actMsg='Hola! Soy Scarlett de UnaBase. Les escribí por email hace unos días, sigo el hilo por aca. Vi el trabajo que hacen en '+l.companyName+' y trabajamos con varias productoras parecidas. Podemos hablar 10 min esta semana?';
+        actMsg='Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde UnaBase y queríamos asegurarnos de que no se perdiera 🙌\nSi quieren, se los contamos por acá.';
         actCh='wa';
       }else{canSend=false;actCh='wa';actLabel='WhatsApp';reason='WhatsApp no disponible para este lead. Saltar al siguiente paso.';}
     }else{
