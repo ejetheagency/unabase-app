@@ -93,6 +93,25 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .fu-urgency{position:absolute;top:8px;right:8px;font-size:8px;font-weight:900;padding:3px 8px;border-radius:4px;letter-spacing:1px;z-index:2}
 .fu-urgency.red{background:var(--rd);color:#fff;animation:fupulse 1s infinite}
 .fu-urgency.yellow{background:var(--am);color:#0a0a0f}
+/* ═══ ACCIÓN AHORA — focused execution queue ═══ */
+.aa-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:980px;margin:24px auto 0}
+@media(max-width:600px){.aa-grid{grid-template-columns:1fr;gap:14px;margin:12px auto 0}}
+.aa-card{background:var(--card);border:2px solid var(--bd2);border-radius:14px;padding:24px 22px 20px;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-height:200px;position:relative;transition:.2s;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.aa-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.5)}
+.aa-card.fu-red{border-color:var(--rd);background:#120808;box-shadow:0 0 18px rgba(239,68,68,.18)}
+.aa-card.fu-yellow{border-color:var(--am);background:#12100a;box-shadow:0 0 14px rgba(245,158,11,.15)}
+.aa-urgency{position:absolute;top:14px;right:14px;font-size:9px;font-weight:900;padding:4px 10px;border-radius:5px;letter-spacing:1.5px}
+.aa-urgency.red{background:var(--rd);color:#fff;animation:fupulse 1s infinite}
+.aa-urgency.yellow{background:var(--am);color:#0a0a0f}
+.aa-company{font-size:22px;font-weight:800;color:#fff;margin-top:24px;letter-spacing:-.3px;line-height:1.2}
+.aa-action{font-size:13px;color:var(--t2);font-weight:600;margin-top:4px}
+.aa-time{font-size:15px;font-weight:800;letter-spacing:.3px;margin-top:2px}
+.aa-time.red{color:#f87171}.aa-time.yellow{color:var(--am)}
+.aa-cta{margin-top:14px;background:var(--ac);color:#0a0a0f;border:none;padding:11px 22px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;align-self:flex-start;letter-spacing:.3px}
+.aa-cta:hover{background:var(--ac2);transform:scale(1.03)}
+.aa-empty{text-align:center;padding:80px 20px;color:var(--dm);font-size:16px;font-weight:600;letter-spacing:.3px}
+.aa-empty .aa-empty-icon{font-size:42px;margin-bottom:14px;opacity:.5}
+.aa-queue-info{text-align:center;color:var(--dm);font-size:11px;margin-top:24px;letter-spacing:.5px;text-transform:uppercase}
 /* NEXT ACTION block — single source of truth in playbook */
 .next-action{background:linear-gradient(135deg,rgba(212,160,23,.04),rgba(255,255,255,.01));border:1px solid var(--bd2);border-radius:10px;padding:14px;margin-top:10px}
 .na-title{font-size:14px;font-weight:700;color:var(--tx);margin:4px 0 10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
@@ -303,7 +322,8 @@ console.log('[workspace] client_id='+CLIENT_ID+' | leads='+CLIENT.leadsPath);
   <div class="n-date" id="nD"></div>
   <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 8px;border-radius:3px" id="wsTag"></div>
   <div class="n-tabs">
-    <button class="n-tab on" onclick="showV('today')">Hoy</button>
+    <button class="n-tab on" onclick="showV('now')">Acción Ahora</button>
+    <button class="n-tab" onclick="showV('today')">Hoy</button>
     <button class="n-tab" onclick="showV('past')">Leads Anteriores</button>
     <button class="n-tab" onclick="showV('hist')">Historial</button>
   </div>
@@ -317,7 +337,8 @@ console.log('[workspace] client_id='+CLIENT_ID+' | leads='+CLIENT.leadsPath);
 <div class="metrics" id="mB"></div>
 <div class="pb-overlay" id="pbO"><div class="pb-box"><div class="pb-head"><button class="pb-close" onclick="closePB()">&#10005;</button><div class="pb-title" id="pbT"></div><div class="pb-sc" id="pbSc"></div></div><div class="pb-body" id="pbB"></div></div></div>
 <div class="wrap">
-  <div class="view on" id="v-today"><div id="leadL"></div>
+  <div class="view on" id="v-now"><div id="nowL"></div></div>
+  <div class="view" id="v-today"><div id="leadL"></div>
     <div class="empty" id="emptyS" style="display:none"><div class="empty-i">&#9993;</div><div class="empty-t">Listo para ejecutar</div><div class="empty-d">Importa el informe diario.</div><label class="empty-b" style="cursor:pointer">Importar<input type="file" accept=".json" onchange="loadFile(event)" style="display:none"></label></div>
   </div>
   <div class="view" id="v-past"><div style="margin-bottom:12px;font-size:12px;color:var(--mt)">Leads del informe anterior — abre cada uno para registrar el mensaje que enviaste.</div><div id="pastL" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px"></div></div>
@@ -613,7 +634,9 @@ function getFollowUp(rec,lead,context){
 }
 
 let PL=[];// past leads
-function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')rHist('');if(v==='past')loadPast().then(()=>renderPast())}
+function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')rHist('');if(v==='past')loadPast().then(()=>renderPast());if(v==='now')loadPast().then(()=>renderAccionAhora())}
+// Centralized re-render after any state change. Updates all visible action surfaces.
+function refresh(){renderDay();if(typeof renderAccionAhora==='function')renderAccionAhora();}
 function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
 // ═══ DATE-GATING: Timezone-aware activation (America/New_York) ═══
 function gateLeads(leads){
@@ -784,7 +807,7 @@ function openPB(d){
   document.getElementById('pbO').classList.add('open');
   document.body.style.overflow='hidden';
 }
-function closePB(){document.getElementById('pbO').classList.remove('open');document.body.style.overflow='';renderDay()}
+function closePB(){document.getElementById('pbO').classList.remove('open');document.body.style.overflow='';refresh()}
 
 // ═══ ACTIONS ═══
 function tA(d,aid,ch){
@@ -796,7 +819,7 @@ function tA(d,aid,ch){
   if(ns!==cSt(rec))tl.push({tp:'st',desc:'Estado → '+SL[ST.indexOf(ns)],ts:now()});
   ur(d,{acts,st:ns,tl});
   toast(idx>=0?'Desmarcado':'+1 acción completada');
-  renderDay();
+  refresh();
 }
 function sM(d,aid,ch){
   const ta=document.getElementById('sa-'+d+'-'+aid);if(!ta||!ta.value.trim())return;
@@ -806,12 +829,12 @@ function sM(d,aid,ch){
   tl.push({tp:'msg',desc:'Mensaje por '+ch,ts:now()});
   ur(d,{msgs,tl});ta.value='';
   sbLogMessage(d,ch,msgText);
-  toast('Mensaje guardado ✓');renderDay();
+  toast('Mensaje guardado ✓');refresh();
 }
 function sS(d,status){
   const rec=gr(d);const tl=[...(rec.tl||[])];
   tl.push({tp:'st',desc:'Estado → '+SL[ST.indexOf(status)],ts:now()});
-  ur(d,{st:status,tl});sbLogStatus(d,status);toast(SL[ST.indexOf(status)]);renderDay();
+  ur(d,{st:status,tl});sbLogStatus(d,status);toast(SL[ST.indexOf(status)]);refresh();
 }
 function sN(d){const ta=document.getElementById('nt-'+d);if(!ta)return;ur(d,{notes:ta.value});sbSaveNote(d,ta.value);toast('Notas guardadas')}
 function cpM(btn){const t=btn.previousElementSibling.textContent;navigator.clipboard.writeText(t).then(()=>{btn.textContent='copiado';btn.classList.add('ok');setTimeout(()=>{btn.textContent='copiar';btn.classList.remove('ok')},1500)})}
@@ -868,6 +891,72 @@ async function loadPast(){
   merge(PL);
   pastLoaded=true;
 }
+// ═══ ACCIÓN AHORA — focused execution queue ═══
+// Pulls actionable leads from BOTH today's batch (TL) and past batches (PL).
+// Filters: only RED + YELLOW (urgent now). Hides green, replied, meeting, closed, skip.
+// Caps at 4. Sort: RED → YELLOW, then by dueMs ascending (most urgent first).
+function actionTypeLabel(fu){
+  if(!fu||!fu.step)return '';
+  const ch=fu.step.channel;
+  if(ch==='ig'||ch==='instagram')return 'DM Instagram';
+  if(ch==='wa'||ch==='whatsapp')return 'WhatsApp';
+  if(ch==='email')return fu.cycle>=2?'Follow-up Email':'Email';
+  return fu.step.label||'';
+}
+function renderAccionAhora(){
+  const el=document.getElementById('nowL');
+  if(!el)return;
+  // Combine today + past, dedupe by domain
+  const pool=[...TL,...PL];
+  const seen=new Set();
+  const deduped=pool.filter(l=>{const dd=dom(l.website);if(!dd||seen.has(dd))return false;seen.add(dd);return true});
+  // Compute fu for each, filter to actionable only
+  const COLOR_PRI={red:0,yellow:1};
+  const items=deduped.map(l=>{
+    const dd=dom(l.website);const rec=gr(dd);const st=cSt(rec);
+    if(SEQ_STOPS.includes(st))return null;
+    let fu=getFollowUp(rec,l,l._batchDate?'past':'hoy');
+    // Past leads with no outreach data → default yellow (action needed)
+    if(!fu.active&&!SEQ_STOPS.includes(st)&&l._batchDate){
+      const hasData=(rec.msgs||[]).length>0||(rec.acts||[]).length>0;
+      fu={active:true,color:'yellow',step:{label:'Contactar',channel:'email'},state:'due_soon',timeStr:'pendiente',dueMs:Date.now()};
+    }
+    if(!fu.active||!fu.color)return null;
+    if(fu.color!=='red'&&fu.color!=='yellow')return null;
+    return {lead:l,rec,d:dd,fu};
+  }).filter(Boolean);
+  // Sort: RED first, YELLOW second, earliest due within group
+  items.sort((a,b)=>{
+    const ca=COLOR_PRI[a.fu.color]??2,cb=COLOR_PRI[b.fu.color]??2;
+    if(ca!==cb)return ca-cb;
+    return (a.fu.dueMs||0)-(b.fu.dueMs||0);
+  });
+  // Cap at 4 visible, count rest as queued
+  const visible=items.slice(0,4);
+  const queued=items.length-visible.length;
+  if(!visible.length){
+    el.innerHTML='<div class="aa-empty"><div class="aa-empty-icon">✓</div>No hay acciones pendientes</div>';
+    return;
+  }
+  let html='<div class="aa-grid">';
+  visible.forEach(({lead:l,d,fu})=>{
+    const urgency=fu.color==='red'?'<div class="aa-urgency red">VENCIDO</div>'
+                 :fu.color==='yellow'?'<div class="aa-urgency yellow">PRONTO</div>':'';
+    const actType=actionTypeLabel(fu);
+    const adjT=adjustTimeStr(fu,l.country);
+    html+=`<div class="aa-card fu-${fu.color}" onclick="openPB('${d}')">
+      ${urgency}
+      <div class="aa-company">${esc(l.companyName)}</div>
+      <div class="aa-action">${esc(actType)}</div>
+      <div class="aa-time ${fu.color}">${esc(adjT.toUpperCase())}</div>
+      <button class="aa-cta" onclick="event.stopPropagation();openPB('${d}')">Abrir</button>
+    </div>`;
+  });
+  html+='</div>';
+  if(queued>0)html+=`<div class="aa-queue-info">+${queued} en cola</div>`;
+  el.innerHTML=html;
+}
+
 function renderPast(){
   if(!PL.length){document.getElementById('pastL').innerHTML='<div style="color:var(--dm);padding:20px;text-align:center;grid-column:1/-1">Sin leads anteriores cargados.</div>';return}
   // Dedup by domain
@@ -923,8 +1012,8 @@ else{wsEl.style.display='none';}
 document.documentElement.style.setProperty('--accent',CLIENT.accent);
 document.addEventListener('click',e=>{if(!e.target.closest('.n-user'))document.querySelector('.n-udd')?.classList.remove('open')});
 document.getElementById('pbO').addEventListener('click',e=>{if(e.target===document.getElementById('pbO'))closePB()});
-// Load from Supabase first (shared state), then load today's leads
-sbLoadAll().then(()=>{loadPast();autoLoad()});
+// Load from Supabase first (shared state), then load today's + past, then render Acción Ahora
+sbLoadAll().then(()=>{loadPast().then(()=>{autoLoad().then(()=>renderAccionAhora())})});
 </script>
 </body>
 </html>
