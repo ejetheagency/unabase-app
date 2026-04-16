@@ -685,16 +685,14 @@ async function autoLoad(){
 
 function renderDay(){
   document.getElementById('emptyS').style.display='none';
-  // Awareness indicator: count actionable leads (RED + YELLOW) across today + past
+  // Awareness indicator — uses shared isActionable() so counter matches Acción Ahora exactly
   const indEl=document.getElementById('hoyIndicator');
   if(indEl){
     const seen=new Set();const pool=[...TL,...PL];
     let pending=0;
-    pool.forEach(l=>{const dd=dom(l.website);if(!dd||seen.has(dd))return;seen.add(dd);
-      const rec=gr(dd);const st=cSt(rec);if(SEQ_STOPS.includes(st))return;
-      let fu=getFollowUp(rec,l,l._batchDate?'past':'hoy');
-      if(!fu.active&&l._batchDate&&!SEQ_STOPS.includes(st))fu={active:true,color:'yellow'};
-      if(fu.active&&(fu.color==='red'||fu.color==='yellow'))pending++;
+    pool.forEach(l=>{
+      const dd=dom(l.website);if(!dd||seen.has(dd))return;seen.add(dd);
+      if(isActionable(gr(dd),l).ok)pending++;
     });
     indEl.innerHTML=pending>0?`<div class="hoy-pending" onclick="showV('now')"><span>⚠️</span><strong>${pending}</strong> ${pending===1?'acción pendiente':'acciones pendientes'} en Acción Ahora</div>`:'';
   }
@@ -914,9 +912,35 @@ async function loadPast(){
   merge(PL);
   pastLoaded=true;
 }
+// Single source of truth for "is this lead actionable right now?"
+// Used by both the Hoy awareness counter AND Acción Ahora queue so they stay in sync.
+// A lead is actionable only if ALL are true:
+//   1. Status is not stopped (replied/meeting/closed/skip)
+//   2. Last message was NOT within 24h (grace period — just-contacted leads aren't due yet)
+//   3. Follow-up color is RED or YELLOW
+function isActionable(rec, lead) {
+  const st = rec.st || 'none';
+  if (SEQ_STOPS.includes(st)) return { ok: false };
+  // Grace period: if most recent message is within 24h, not actionable yet
+  const msgTs = (rec.msgs || []).map(m => new Date(m.ts).getTime()).filter(t => !isNaN(t));
+  if (msgTs.length) {
+    const lastMs = Math.max.apply(null, msgTs);
+    if (Date.now() - lastMs < 24 * 3600000) return { ok: false, reason: 'grace_24h' };
+  }
+  // Compute fu (apply past-lead default yellow if needed)
+  let fu = getFollowUp(rec, lead, lead && lead._batchDate ? 'past' : 'hoy');
+  if (!fu.active && lead && lead._batchDate && !SEQ_STOPS.includes(st)) {
+    fu = { active: true, color: 'yellow', step: { label: 'Contactar', channel: 'email' }, state: 'due_soon', timeStr: 'pendiente', dueMs: Date.now() };
+  }
+  if (!fu.active || !fu.color) return { ok: false };
+  if (fu.color !== 'red' && fu.color !== 'yellow') return { ok: false };
+  return { ok: true, fu };
+}
+
 // ═══ ACCIÓN AHORA — focused execution queue ═══
 // Pulls actionable leads from BOTH today's batch (TL) and past batches (PL).
-// Filters: only RED + YELLOW (urgent now). Hides green, replied, meeting, closed, skip.
+// Filters: only RED + YELLOW (urgent now). Hides green, replied, meeting, closed, skip,
+// and leads contacted within 24h (grace period).
 // Caps at 4. Sort: RED → YELLOW, then by dueMs ascending (most urgent first).
 function actionTypeLabel(fu){
   if(!fu||!fu.step)return '';
@@ -933,20 +957,13 @@ function renderAccionAhora(){
   const pool=[...TL,...PL];
   const seen=new Set();
   const deduped=pool.filter(l=>{const dd=dom(l.website);if(!dd||seen.has(dd))return false;seen.add(dd);return true});
-  // Compute fu for each, filter to actionable only
+  // Filter via shared isActionable() — enforces grace period + color rules consistently
   const COLOR_PRI={red:0,yellow:1};
   const items=deduped.map(l=>{
-    const dd=dom(l.website);const rec=gr(dd);const st=cSt(rec);
-    if(SEQ_STOPS.includes(st))return null;
-    let fu=getFollowUp(rec,l,l._batchDate?'past':'hoy');
-    // Past leads with no outreach data → default yellow (action needed)
-    if(!fu.active&&!SEQ_STOPS.includes(st)&&l._batchDate){
-      const hasData=(rec.msgs||[]).length>0||(rec.acts||[]).length>0;
-      fu={active:true,color:'yellow',step:{label:'Contactar',channel:'email'},state:'due_soon',timeStr:'pendiente',dueMs:Date.now()};
-    }
-    if(!fu.active||!fu.color)return null;
-    if(fu.color!=='red'&&fu.color!=='yellow')return null;
-    return {lead:l,rec,d:dd,fu};
+    const dd=dom(l.website);const rec=gr(dd);
+    const check=isActionable(rec,l);
+    if(!check.ok)return null;
+    return {lead:l,rec,d:dd,fu:check.fu};
   }).filter(Boolean);
   // Sort: RED first, YELLOW second, earliest due within group
   items.sort((a,b)=>{
