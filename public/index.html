@@ -484,15 +484,31 @@ function getFollowUp(rec,lead,context){
 
   const nowMs=Date.now();
 
-  // Anchor logic:
-  //   Hoy leads (no _batchDate): use actual message timestamp only.
-  //   Anteriores leads (_batchDate set by loadPast): use min(actual, batch@noonET)
-  //     so old batches progress from when outreach SHOULD have happened, even if
-  //     the message was logged late. Hoy stays pure because same-day timing is real.
+  // ═══ TIMESTAMP INTEGRITY — locked rules ═══
+  // last_main_sent_at must reflect real outreach moment, NEVER import/created_at.
+  // Rules:
+  //   1. Past leads (_batchDate set): always use min(actual, batch@noonET).
+  //      Preserves timeline for archived batches regardless of when data was logged.
+  //   2. Normal leads (actual msg within 48h of source_date): use actual.
+  //      Trust the saved timestamp — this is real same-day/next-day outreach.
+  //   3. SAFEGUARD: any lead where msg_ts is >48h after source_date → snap to
+  //      source_date@noonET. Catches late-logged imports/backfills that would
+  //      otherwise fake a "fresh" cycle from an old lead.
   let anchorTs=allTs[0];
-  if(lead&&lead._batchDate){
-    const bdTs=new Date(lead._batchDate+'T16:00:00Z').getTime();
-    if(!isNaN(bdTs))anchorTs=Math.min(allTs[0],bdTs);
+  const batchSrc=lead?._batchDate||lead?.source_date;
+  if(batchSrc){
+    const bdTs=new Date(batchSrc+'T16:00:00Z').getTime(); // noon ET (16:00 UTC in DST)
+    if(!isNaN(bdTs)){
+      if(lead._batchDate){
+        // Rule 1: Anteriores leads always use batch floor
+        anchorTs=Math.min(allTs[0],bdTs);
+      }else if(allTs[0]-bdTs>48*3600000){
+        // Rule 3 SAFEGUARD: msg logged >48h after source_date → looks like backfill/import
+        anchorTs=bdTs;
+        console.warn('[timestamp-safeguard]',lead.companyName||'?','msg is '+Math.round((allTs[0]-bdTs)/3600000)+'h after source_date. Using source_date as anchor.');
+      }
+      // else Rule 2: normal case, keep actual
+    }
   }
 
   // Separate messages by channel (email = main, everything else = alt)
