@@ -88,15 +88,24 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .fu-tag.red{background:#1c0a0a;color:#f87171;animation:fupulse 1.2s infinite}
 @keyframes fupulse{0%,100%{opacity:1}50%{opacity:.5}}
 /* Playbook follow-up box */
-.fu-box{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:10px 14px;margin-top:10px}
-.fu-box-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--dm);margin-bottom:4px}
-.fu-box-step{font-size:13px;font-weight:600;color:var(--tx)}
-.fu-box-time{font-size:11px;margin-top:2px}
-.fu-box-time.green{color:var(--gn2)}.fu-box-time.yellow{color:var(--am)}.fu-box-time.red{color:#f87171}
+/* fu-box removed — replaced by .next-action consolidated section */
 /* Urgency corner badge (Anteriores only) */
 .fu-urgency{position:absolute;top:8px;right:8px;font-size:8px;font-weight:900;padding:3px 8px;border-radius:4px;letter-spacing:1px;z-index:2}
 .fu-urgency.red{background:var(--rd);color:#fff;animation:fupulse 1s infinite}
 .fu-urgency.yellow{background:var(--am);color:#0a0a0f}
+/* NEXT ACTION block — single source of truth in playbook */
+.next-action{background:linear-gradient(135deg,rgba(212,160,23,.04),rgba(255,255,255,.01));border:1px solid var(--bd2);border-radius:10px;padding:14px;margin-top:10px}
+.na-title{font-size:14px;font-weight:700;color:var(--tx);margin:4px 0 10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.na-time{font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;letter-spacing:.5px;text-transform:uppercase}
+.na-time.green{background:rgba(34,197,94,.15);color:var(--gn2)}
+.na-time.yellow{background:rgba(245,158,11,.15);color:var(--am)}
+.na-time.red{background:rgba(239,68,68,.18);color:#f87171;animation:fupulse 1s infinite}
+.na-playbook{margin-top:12px;background:var(--sf);border:1px solid var(--bd);border-radius:6px;padding:10px 14px}
+.na-pb-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--dm);margin-bottom:6px}
+.na-playbook ol{padding-left:20px;margin:0}
+.na-playbook li{font-size:12px;color:var(--t2);line-height:1.7}
+.na-save{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.na-save .sa{margin:0}
 /* Past leads — compact cards */
 .lead.compact{min-height:auto;padding:12px 14px;border-radius:10px}
 .lead.compact .lc{font-size:13px;line-height:1.2}
@@ -527,14 +536,16 @@ function getFollowUp(rec,lead,context){
   let nextStep,channel,dueMs;
 
   if(cycleNum===1){
-    // Cycle 1: IG first at +48h, then main at +168h
+    // Cycle 1: IG at +48h (only if handle exists), then main email at +168h
     const igDone=msgs.some(m=>m.ch==='ig'||m.ch==='instagram');
-    if(!igDone){nextStep='DM Instagram';channel='ig';dueMs=anchorTs+ALT_DELAY;}
+    const hasIg=!!(lead&&(lead.instagramHandle||lead.instagramUrl));
+    if(!igDone&&hasIg){nextStep='DM Instagram';channel='ig';dueMs=anchorTs+ALT_DELAY;}
     else{nextStep='Follow-up email (ciclo 2)';channel='email';dueMs=anchorTs+CYCLE_LEN;}
   }else if(cycleNum===2){
-    // Cycle 2: WhatsApp at main2+48h, then main at main2+168h
+    // Cycle 2: WhatsApp at +48h (only if phone exists), then main email at +168h
     const waDone=msgs.some(m=>(m.ch==='wa'||m.ch==='whatsapp')&&new Date(m.ts).getTime()>=lastMainTs);
-    if(!waDone){nextStep='WhatsApp';channel='wa';dueMs=lastMainTs+ALT_DELAY;}
+    const hasPhone=!!(lead&&(lead.contactPhone||lead.apolloCompanyPhone));
+    if(!waDone&&hasPhone){nextStep='WhatsApp';channel='wa';dueMs=lastMainTs+ALT_DELAY;}
     else{nextStep='Follow-up email (ciclo 3)';channel='email';dueMs=lastMainTs+CYCLE_LEN;}
   }else if(cycleNum<=4){
     // Cycles 3-4: only main every 7 days
@@ -671,52 +682,58 @@ function openPB(d){
   if(l.contactLinkedIn||l.apolloCompanyLinkedIn)chs+=`<a href="${esc(l.contactLinkedIn||l.apolloCompanyLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`;
   const tags=[...(l.notableClients||[]).slice(0,3),l.industry?.toUpperCase()].filter(Boolean).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
 
-  // ═══ CHANNEL-DRIVEN ACTION RENDERING ═══
-  // Playbook shows ONLY the current next action from the follow-up engine.
-  // Channel determines: label, contact display, message template.
-  // Never mixes channels. Never defaults to email when DM is due.
+  // ═══ NEXT ACTION SYSTEM ═══
+  // ONE action at a time. Channel-driven. Includes message + playbook steps.
+  // No multi-channel display, no fallback options, no decisions for the user.
   const fuPB=getFollowUp(rec,l);
   const phonePB=l.contactPhone||l.apolloCompanyPhone;
   const firstPB=l.contactName?l.contactName.split(/\s+/)[0]:null;
   let action=null;
   if(fuPB.active&&fuPB.step&&fuPB.step.channel){
-    action={channel:fuPB.step.channel,isFollowUp:fuPB.cycle>=2,label:fuPB.step.label};
+    action={channel:fuPB.step.channel,isFollowUp:fuPB.cycle>=2,color:fuPB.color,timeStr:fuPB.timeStr};
   }else if(!(rec.msgs||[]).length&&l.emailCercana){
-    // No outreach yet → initial email is the next action
-    action={channel:'email',isFollowUp:false,label:'Email inicial'};
+    action={channel:'email',isFollowUp:false,color:'green',timeStr:'ahora'};
   }
-  let stH='';
+  let actionSection='';
   if(action){
-    let actLabel,actMsg,actCh,canSend=true,reason='';
+    let title,actMsg,playbook,actCh;
     if(action.channel==='ig'||action.channel==='instagram'){
-      if(ig){
-        actLabel='DM Instagram a @'+ig;
-        actMsg='Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde UnaBase y queríamos asegurarnos de que no se perdiera 🙌\nSi quieren, se los contamos por acá.';
-        actCh='ig';
-      }else{canSend=false;actCh='ig';actLabel='DM Instagram';reason='Instagram no disponible para este lead. Saltar al siguiente paso.';}
+      title='DM Instagram a @'+ig;
+      actMsg='Hola, ¿cómo están? Soy Scarlett de UnaBase.\nLes escribimos por Instagram porque les enviamos un mail hace un par de días desde UnaBase y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.';
+      playbook=['Ver 2–3 posts recientes','Dar like + follow','Esperar 30–60 segundos','Enviar el DM'];
+      actCh='ig';
     }else if(action.channel==='wa'||action.channel==='whatsapp'){
-      if(phonePB){
-        actLabel='WhatsApp a '+phonePB;
-        actMsg='Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde UnaBase y queríamos asegurarnos de que no se perdiera 🙌\nSi quieren, se los contamos por acá.';
-        actCh='wa';
-      }else{canSend=false;actCh='wa';actLabel='WhatsApp';reason='WhatsApp no disponible para este lead. Saltar al siguiente paso.';}
+      title='WhatsApp a '+phonePB;
+      actMsg='Hola, ¿cómo están? Soy Scarlett de UnaBase.\nLes escribimos por WhatsApp porque les enviamos un mail hace un par de días desde UnaBase y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.';
+      playbook=['Revisar contexto rápido del lead','Enviar mensaje directo'];
+      actCh='wa';
     }else{
-      // email channel
       actCh='email';
-      actLabel=action.isFollowUp?(firstPB?'Email follow-up a '+firstPB:'Email follow-up al equipo'):(l.contactName?'Email inicial a '+firstPB:'Email inicial al equipo');
+      title=action.isFollowUp?'Email follow-up'+(firstPB?' a '+firstPB:' al equipo'):'Email inicial'+(firstPB?' a '+firstPB:' al equipo');
       if(action.isFollowUp){
         const greeting=firstPB?'Hola '+firstPB+',':'Hola,';
-        actMsg=greeting+'\n\nTe escribí hace unos días sobre UnaBase. Queria ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rapida de 10 min para que te muestre como otras productoras estan manejando su presupuestacion.\n\nScarlett';
+        actMsg=greeting+'\n\nTe escribí hace unos días sobre UnaBase. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min para que te muestre cómo otras productoras están manejando su presupuestación.\n\nScarlett';
+        playbook=['Revisar último email enviado','Ajustar si es necesario','Enviar follow-up corto'];
       }else{
         actMsg=l.emailCercana||l.pitchEmailES||'';
+        playbook=['Revisar el contexto del lead','Personalizar si es necesario','Enviar el email'];
       }
     }
-    const ck=(rec.acts||[]).includes(actCh);
-    if(canSend){
-      stH=`<div class="act nxt"><div class="ac${ck?' ck':''}" onclick="tA('${d}','${actCh}','${actCh}');openPB('${d}')"></div><div class="ab"><div class="al">${esc(actLabel)}</div><div class="msg"><pre>${esc(actMsg)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">copiar</button></div><textarea class="sa" id="sa-${d}-${actCh}" placeholder="Pega lo que enviaste..." onclick="event.stopPropagation()"></textarea><button class="svb" onclick="event.stopPropagation();sM('${d}','${actCh}','${actCh}');openPB('${d}')">Guardar</button></div></div>`;
-    }else{
-      stH=`<div class="act"><div class="ab"><div class="al">${esc(actLabel)}</div><div class="msg" style="background:#1c0a0a;border-color:#7f1d1d"><pre style="color:#f87171">${esc(reason)}</pre></div></div></div>`;
-    }
+    const colorIcon=action.color==='red'?'🔴':action.color==='yellow'?'⚡':'✓';
+    const playbookHTML=playbook.map(s=>`<li>${esc(s)}</li>`).join('');
+    actionSection=`<div class="next-action">
+      <div class="sl">Siguiente Acción</div>
+      <div class="na-title">${colorIcon} ${esc(title)}<span class="na-time ${action.color}">${esc(action.timeStr)}</span></div>
+      <div class="msg"><pre>${esc(actMsg)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">copiar</button></div>
+      <div class="na-playbook">
+        <div class="na-pb-label">Playbook</div>
+        <ol>${playbookHTML}</ol>
+      </div>
+      <div class="na-save">
+        <textarea class="sa" id="sa-${d}-${actCh}" placeholder="Pega lo que enviaste..." onclick="event.stopPropagation()"></textarea>
+        <button class="svb" onclick="event.stopPropagation();sM('${d}','${actCh}','${actCh}');openPB('${d}')">Marcar como enviado</button>
+      </div>
+    </div>`;
   }
 
   const allMsgs=(rec.msgs||[]).sort((a,b)=>new Date(b.ts)-new Date(a.ts));
@@ -730,8 +747,7 @@ function openPB(d){
     <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${tags?`<div class="tags">${tags}</div>`:''}</div>
     ${l.keyInsight?`<div class="insight">${esc(l.keyInsight)}</div>`:''}
     ${l.companyBrief?`<div class="sec"><div class="sl">Contexto</div><div class="ctx">${esc(l.companyBrief)}</div></div>`:''}
-    ${(()=>{const fu=getFollowUp(rec,l);if(!fu.active||!fu.state)return'';const icon={green:'✓',yellow:'⚡',red:'🔴'}[fu.color]||'';return`<div class="fu-box"><div class="fu-box-label">Siguiente Paso</div><div class="fu-box-step">${icon} ${fu.step.label}</div><div class="fu-box-time ${fu.color}">${fu.timeStr}</div></div>`;})()}
-    <div class="sec"><div class="sl">Acciones</div>${stH}</div>
+    ${actionSection}
     <div class="stbar">${stBtns}</div>
     ${msH}
     <div class="sec" style="margin-top:10px"><div class="sl">Notas</div><textarea class="notes" placeholder="Notas..." id="nt-${d}" onclick="event.stopPropagation()">${esc(rec.notes||'')}</textarea><button class="notes-sv" onclick="event.stopPropagation();sN('${d}')">Guardar</button></div>
