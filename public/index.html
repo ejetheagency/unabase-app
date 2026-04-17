@@ -169,6 +169,9 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .tag{font-size:8px;padding:2px 7px;border-radius:5px;background:var(--bd);color:var(--mt);font-weight:500}
 .insight{background:linear-gradient(135deg,#12110a,#161410);border-left:3px solid var(--ac);padding:8px 12px;font-size:11px;color:var(--ac2);border-radius:0 6px 6px 0;margin-bottom:10px}
 .ctx{font-size:11px;color:var(--t2);line-height:1.5}
+.dm-card{padding:8px 10px;background:var(--pn);border:1px solid var(--bd);border-radius:6px;margin-top:6px}
+.dm-card:first-child{margin-top:0}
+.dm-flag{font-size:10px;color:var(--am);margin-top:4px;font-weight:500}
 
 /* Actions */
 .act{display:flex;gap:10px;padding:10px 12px;margin:0 -12px;border-radius:8px;transition:.15s}
@@ -837,10 +840,17 @@ function openPB(d){
       actCh='wa';
     }else{
       actCh='email';
-      // Detect generic/shared mailboxes — person's name would land in the wrong inbox
+      // Detect generic/shared mailboxes — person's name would land in the wrong inbox.
+      // IMPORTANT: a free-provider address (yahoo/gmail/hotmail/etc) is PERSONAL when
+      // the local part contains the contact's name (e.g. juliopachongonzalez@yahoo.com
+      // for contactName "Julio Pachon" → direct personal inbox, NOT generic).
       const GENERIC_RE=/^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos)@/i;
-      const emailPrefix=(l.contactEmail||'').toLowerCase();
-      const isGenericEmail=!emailPrefix||GENERIC_RE.test(emailPrefix)||/^[a-z0-9._-]*@(gmail|hotmail|yahoo|outlook|icloud|live)\./i.test(emailPrefix);
+      const fullEmail=(l.contactEmail||'').toLowerCase();
+      const localPart=fullEmail.split('@')[0]||'';
+      const isFreeProviderEmail=/@(gmail|hotmail|yahoo|outlook|icloud|live)\./i.test(fullEmail);
+      const nameParts=(l.contactName||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').split(/\s+/).filter(p=>p.length>2);
+      const nameInLocal=nameParts.length>0&&nameParts.some(p=>localPart.includes(p));
+      const isGenericEmail=!fullEmail||GENERIC_RE.test(fullEmail)||(isFreeProviderEmail&&!nameInLocal);
       const hasName=!!l.contactName;
       title=action.isFollowUp?'Email follow-up'+(hasName&&!isGenericEmail?' a '+firstPB:' al equipo'):'Email inicial'+(hasName&&!isGenericEmail?' a '+firstPB:' al equipo');
       // Build greeting based on email type:
@@ -890,8 +900,24 @@ function openPB(d){
 
   document.getElementById('pbT').textContent=l.companyName;
   document.getElementById('pbSc').innerHTML=`<span class="${scCls}">${done}/${total}</span>`;
+  // Additional decision makers (multi-CEO companies like La Villa).
+  // Rendered right after the primary contact so the operator sees the whole
+  // leadership surface at a glance, not buried in metadata.
+  const addHtml=(l.additionalContacts||[]).length?`<div class="sec" style="margin-top:10px"><div class="sl">Otros decisores</div>${l.additionalContacts.map(dm=>{
+    let dmChs='';
+    if(dm.contactEmail)dmChs+=`<a href="mailto:${esc(dm.contactEmail)}" class="ch ce">${esc(dm.contactEmail)}</a>`;
+    const dmIgUrl=dm.instagramUrl||(dm.instagramHandle?`https://www.instagram.com/${dm.instagramHandle}/`:'');
+    if(dmIgUrl&&dm.instagramHandle)dmChs+=`<a href="${esc(dmIgUrl)}" target="_blank" class="ch ci">@${esc(dm.instagramHandle)}</a>`;
+    if(dm.contactPhone)dmChs+=`<span class="ch cph">${esc(dm.contactPhone)}</span>`;
+    if(dm.contactLinkedIn)dmChs+=`<a href="${esc(dm.contactLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`;
+    if(dm.websiteBio)dmChs+=`<a href="${esc(dm.websiteBio)}" target="_blank" class="ch cl">Bio web</a>`;
+    const manualFlag=dm.needsManualContactButtonCheck?'<div class="dm-flag">⚠️ Revisar botón Contact en IG móvil para email/tel directo</div>':'';
+    return `<div class="dm-card"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(dm.contactName||'?')}</strong>${dm.contactTitle?` · <span style="color:var(--pp)">${esc(dm.contactTitle)}</span>`:''}</div><div class="chs" style="margin-top:4px">${dmChs}</div>${manualFlag}</div>`;
+  }).join('')}</div>`:'';
+
   document.getElementById('pbB').innerHTML=`
     <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${tags?`<div class="tags">${tags}</div>`:''}</div>
+    ${addHtml}
     ${l.keyInsight?`<div class="insight">${esc(l.keyInsight)}</div>`:''}
     ${l.companyBrief?`<div class="sec"><div class="sl">Contexto</div><div class="ctx">${esc(l.companyBrief)}</div></div>`:''}
     ${actionSection}

@@ -614,7 +614,8 @@
         "instagramUrl": "https://www.instagram.com/edwin2005co/",
         "websiteBio": "https://lavillaproducciones.com/edwin-diaz",
         "contactSource": "company_ig_bio_tag",
-        "note": "Film Director / Director y productor. Co-CEO with Julio Pachón. Personal Contact-button email/phone not yet captured — check IG Contact button manually."
+        "note": "Film Director / Director y productor. Co-CEO with Julio Pachón. Personal Contact-button email/phone not yet captured — check IG Contact button manually.",
+        "needsManualContactButtonCheck": true
       }
     ]
   },
