@@ -392,10 +392,20 @@ function merge(leads){
 
 // ═══ SUPABASE WRITE FUNCTIONS (fire-and-forget, non-blocking) ═══
 async function sbUpsertLead(id,l,isHist){
+  // IMPORTANT: do NOT include `status` in this upsert payload.
+  // sbUpsertLead is fire-and-forget and runs (often late) from merge() after
+  // page load. If `status:'none'` is in the payload, Postgres `ON CONFLICT (id)
+  // DO UPDATE SET status='none', …` will STOMP any terminal state the user
+  // just set (replied/meeting/closed/skip) via sS(). That's how your 2nd
+  // RESPONDIÓ got silently reverted.
+  //
+  // The `leads.status` column defaults to 'none' at the DB level, so new rows
+  // still get the right initial value without us sending it here. Status
+  // updates flow through sbSync() and sbLogStatus() only.
   try{await sb.from('leads').upsert({
     id,company:l.companyName||'',contact_name:l.contactName||null,contact_email:l.contactEmail||null,
     contact_phone:l.contactPhone||null,country:l.country||null,industry:l.industry||null,
-    score:l.unabaseScore||0,status:'none',source_date:new Date().toISOString().slice(0,10),
+    score:l.unabaseScore||0,source_date:new Date().toISOString().slice(0,10),
     is_historical:!!isHist,lead_data:l,updated_at:new Date().toISOString(),
     client_id:CLIENT_ID
   },{onConflict:'id'})}catch(e){console.warn('sb upsert lead:',e.message)}
@@ -484,7 +494,17 @@ async function sbLoadAll(){
     const D=db();
     leads.forEach(l=>{
       if(!D[l.id]){D[l.id]={id:l.id,co:l.company,cn:l.contact_name||'',st:l.status||'none',acts:[],msgs:[],tl:[],notes:'',lead:l.lead_data,up:l.updated_at}}
-      else{D[l.id].st=l.status||D[l.id].st} // Supabase status wins
+      else{
+        // Supabase status usually wins (cross-device sync). BUT never downgrade
+        // a terminal state (replied/meeting/closed/skip) already set locally —
+        // those are explicit user actions and must not be silently reverted by
+        // a stale Supabase row (e.g. from a pre-fix race that left status='none').
+        if(SEQ_STOPS.includes(D[l.id].st)&&!SEQ_STOPS.includes(l.status)){
+          console.warn('[sb] refusing to downgrade terminal local state',D[l.id].st,'for',l.id,'(Supabase had:',l.status,')');
+        } else {
+          D[l.id].st=l.status||D[l.id].st;
+        }
+      }
     });
     // Load actions — filtered by client_id
     const{data:acts}=await sb.from('actions').select('*').eq('completed',true).eq('client_id',CLIENT_ID);
