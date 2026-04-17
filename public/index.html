@@ -493,6 +493,21 @@ async function sbLoadAll(){
     // Load notes — filtered by client_id
     const{data:nts}=await sb.from('notes').select('*').eq('client_id',CLIENT_ID);
     if(nts)nts.forEach(n=>{if(D[n.lead_id])D[n.lead_id].notes=n.note_text||''});
+    // SELF-HEAL: if a lead has a message for channel X but no matching action row, repair it.
+    // Protects against any future sM() bug that could cause msg/act drift.
+    const healed=[];
+    Object.entries(D).forEach(([id,r])=>{
+      (r.msgs||[]).forEach(m=>{
+        if(!r.acts)r.acts=[];
+        if(!r.acts.includes(m.ch)){
+          r.acts.push(m.ch);
+          healed.push({id,ch:m.ch});
+          // Fire-and-forget Supabase backfill for the missing action
+          sb.from('actions').insert({lead_id:id,user_name:USER,channel:m.ch,completed:true,completed_at:m.ts,client_id:CLIENT_ID}).then(()=>{}).catch(()=>{});
+        }
+      });
+    });
+    if(healed.length)console.warn('[self-heal] repaired '+healed.length+' missing action(s):',healed);
     // Recalculate status from actions for leads without manual override
     Object.values(D).forEach(r=>{
       if(!['replied','meeting','closed','skip'].includes(r.st)){
@@ -507,7 +522,22 @@ function dom(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch{return
 function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML}
 function now(){return new Date().toISOString()}
 function ago(t){if(!t)return'';const d=Date.now()-new Date(t).getTime();if(d<60000)return'ahora';if(d<3600000)return Math.floor(d/60000)+'m';if(d<86400000)return Math.floor(d/3600000)+'h';return Math.floor(d/86400000)+'d'}
-function cSt(rec){if(['replied','meeting','closed','skip'].includes(rec.st))return rec.st;const a=rec.acts||[];if(!a.length)return'none';const l=rec.lead;if(!l)return'partial';const av=[];if(l.emailCercana)av.push('email');if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))av.push('wa');if(l.instagramDM&&(l.instagramHandle||l.instagramUrl))av.push('ig');if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))av.push('li');return av.length&&av.every(x=>a.includes(x))?'contacted':'partial'}
+function cSt(rec){
+  if(['replied','meeting','closed','skip'].includes(rec.st))return rec.st;
+  const a=rec.acts||[];
+  if(!a.length)return'none';
+  const l=rec.lead;
+  // No lead data OR new runtime-template leads (no pre-generated playbook fields) → any action = contacted
+  if(!l)return'contacted';
+  const av=[];
+  if(l.emailCercana)av.push('email');
+  if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))av.push('wa');
+  if(l.instagramDM&&(l.instagramHandle||l.instagramUrl))av.push('ig');
+  if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))av.push('li');
+  // If no pre-generated playbook (new runtime-template system), any action = contacted
+  if(!av.length)return'contacted';
+  return av.every(x=>a.includes(x))?'contacted':'partial';
+}
 function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);if(l.emailCercana)s.push({id:'email',label:'Email a '+first,msg:l.emailCercana,ch:'email'});if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))s.push({id:'wa',label:'WhatsApp',msg:l.whatsappMessage,ch:'wa'});if(l.instagramDM&&ig)s.push({id:'ig',label:'DM @'+ig,msg:l.instagramDM,ch:'ig'});if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))s.push({id:'li',label:'LinkedIn',msg:l.linkedinPlaybook.connectionNote||'',ch:'li'});return s}
 
 // ═══ FOLLOW-UP ENGINE — STRICT TIME-BASED STATE MACHINE ═══
@@ -801,13 +831,13 @@ function openPB(d){
       title=action.isFollowUp?'Email follow-up'+(hasName&&!isGenericEmail?' a '+firstPB:' al equipo'):'Email inicial'+(hasName&&!isGenericEmail?' a '+firstPB:' al equipo');
       // Build greeting based on email type:
       //   Personal + name       → "Hola [Name], ¿cómo estás?"
-      //   Generic + name        → "Hola equipo de [Company],\n¿Es esta la mejor manera de contactar a [Full Name]?"
+      //   Generic + name        → "¿Es esta la mejor manera de contactar a [Full Name]?"  (no team line — direct route-finding)
       //   Generic/unknown + no  → "Hola equipo de [Company],"
       let greeting;
       if(hasName&&!isGenericEmail){
         greeting=action.isFollowUp?'Hola '+firstPB+',':'Hola '+firstPB+', ¿cómo estás?';
       }else if(hasName&&isGenericEmail){
-        greeting='Hola equipo de '+l.companyName+',\n¿Es esta la mejor manera de contactar a '+l.contactName+'?';
+        greeting='¿Es esta la mejor manera de contactar a '+l.contactName+'?';
       }else{
         greeting='Hola equipo de '+l.companyName+',';
       }
