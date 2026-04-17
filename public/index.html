@@ -811,8 +811,12 @@ function openPB(d){
   let chs='';
   if(l.contactEmail)chs+=`<a href="mailto:${esc(l.contactEmail)}" class="ch ce">${esc(l.contactEmail)}</a>`;
   if(ig)chs+=`<a href="${esc(l.instagramUrl||'')}" target="_blank" class="ch ci">@${esc(ig)}</a>`;
+  if(l.founderInstagramHandle&&l.founderInstagramHandle!==ig)chs+=`<a href="${esc(l.founderInstagramUrl||('https://www.instagram.com/'+l.founderInstagramHandle+'/'))}" target="_blank" class="ch ci">@${esc(l.founderInstagramHandle)}</a>`;
   if(l.contactPhone||l.apolloCompanyPhone)chs+=`<span class="ch cph">${esc(l.contactPhone||l.apolloCompanyPhone)}</span>`;
   if(l.contactLinkedIn||l.apolloCompanyLinkedIn)chs+=`<a href="${esc(l.contactLinkedIn||l.apolloCompanyLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`;
+  // If primary needs a manual Contact-button check (no personal email/phone surfaced yet),
+  // flag it inline so the operator finishes the last mile before sending.
+  const primaryManualFlag=l.primaryNeedsManualContactButtonCheck?'<div class="dm-flag">⚠️ Revisar botón Contact en IG móvil del fundador para email/tel directo</div>':'';
   const tags=[...(l.notableClients||[]).slice(0,3),l.industry?.toUpperCase()].filter(Boolean).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
 
   // ═══ NEXT ACTION SYSTEM ═══
@@ -908,6 +912,11 @@ function openPB(d){
     if(dm.contactEmail)dmChs+=`<a href="mailto:${esc(dm.contactEmail)}" class="ch ce">${esc(dm.contactEmail)}</a>`;
     const dmIgUrl=dm.instagramUrl||(dm.instagramHandle?`https://www.instagram.com/${dm.instagramHandle}/`:'');
     if(dmIgUrl&&dm.instagramHandle)dmChs+=`<a href="${esc(dmIgUrl)}" target="_blank" class="ch ci">@${esc(dm.instagramHandle)}</a>`;
+    // Show candidate IG handles as tentative chips when no confirmed handle exists.
+    // Operator verifies them on mobile before treating as valid.
+    if(!dm.instagramHandle&&Array.isArray(dm.candidateInstagramHandles)){
+      dm.candidateInstagramHandles.forEach(ch=>{dmChs+=`<a href="https://www.instagram.com/${esc(ch)}/" target="_blank" class="ch ci" style="opacity:0.7" title="Candidato — verificar">@${esc(ch)}?</a>`});
+    }
     if(dm.contactPhone)dmChs+=`<span class="ch cph">${esc(dm.contactPhone)}</span>`;
     if(dm.contactLinkedIn)dmChs+=`<a href="${esc(dm.contactLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`;
     if(dm.websiteBio)dmChs+=`<a href="${esc(dm.websiteBio)}" target="_blank" class="ch cl">Bio web</a>`;
@@ -916,7 +925,7 @@ function openPB(d){
   }).join('')}</div>`:'';
 
   document.getElementById('pbB').innerHTML=`
-    <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${tags?`<div class="tags">${tags}</div>`:''}</div>
+    <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${primaryManualFlag}${tags?`<div class="tags">${tags}</div>`:''}</div>
     ${addHtml}
     ${l.keyInsight?`<div class="insight">${esc(l.keyInsight)}</div>`:''}
     ${l.companyBrief?`<div class="sec"><div class="sl">Contexto</div><div class="ctx">${esc(l.companyBrief)}</div></div>`:''}

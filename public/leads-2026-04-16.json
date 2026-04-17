@@ -977,7 +977,7 @@
       "high_ent_signals"
     ],
     "contactName": "Alberto García Prieto",
-    "contactTitle": "Founder & Director",
+    "contactTitle": "Co-Founder & Film Producer",
     "contactEmail": "info@rednoisefilms.com",
     "contactLinkedIn": "https://www.linkedin.com/in/albertogarciaprieto/",
     "contactConfidence": "confirmed",
@@ -1140,7 +1140,25 @@
     "source_date": "2026-04-16",
     "approved": true,
     "batch_id": "batch-2026-04-16",
-    "recoveryNote": "Recovered named founder (Alberto García Prieto, Founder & Director) via LinkedIn company page → personal LinkedIn. Personal email not publicly listed; info@ retained as primary channel."
+    "recoveryNote": "Red Noise IG bio does not @-tag the founders (unlike La Villa). Both co-founders identified via separate \"MEET THE TEAM\" carousel posts on @rednoisefilms. Operator must tap each post on mobile to see tagged personal accounts, then Contact button on each for direct email/phone.",
+    "founderInstagramHandle": null,
+    "founderInstagramUrl": null,
+    "additionalContacts": [
+      {
+        "contactName": "Javier García",
+        "contactTitle": "Co-Founder & Film Producer",
+        "role": "co_founder",
+        "instagramHandle": null,
+        "instagramUrl": null,
+        "candidateInstagramHandles": [
+          "javigarcia871"
+        ],
+        "contactSource": "company_ig_meet_the_team_post",
+        "needsManualContactButtonCheck": true,
+        "note": "Co-founder identified via @rednoisefilms \"MEET THE TEAM\" posts. Personal IG @javigarcia871 is a candidate (surfaced in rednoisefilms context) but not confirmed. Verify on @rednoisefilms IG → tap \"MEET THE TEAM\" post with Javier → check tagged accounts → confirm handle → tap Contact button for direct email/phone."
+      }
+    ],
+    "primaryNeedsManualContactButtonCheck": true
   },
   {
     "companyName": "Estudio Diverge",
