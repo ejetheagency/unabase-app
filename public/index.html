@@ -406,56 +406,71 @@ async function sbSync(id,rec){
 
 async function sbLogAction(leadId,channel,completed){
   try{
-    if(completed){
-      await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed:true,client_id:CLIENT_ID});
-    } else {
-      await sb.from('actions').delete().match({lead_id:leadId,channel,user_name:USER,client_id:CLIENT_ID});
-    }
-  }catch(e){console.warn('sb action:',e.message)}
+    const r=completed
+      ?await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed:true,client_id:CLIENT_ID})
+      :await sb.from('actions').delete().match({lead_id:leadId,channel,user_name:USER,client_id:CLIENT_ID});
+    if(r&&r.error){console.error('[sb] action FAILED:',r.error.message);return false}
+    return true;
+  }catch(e){console.error('[sb] action EXCEPTION:',e.message);return false}
 }
 
 async function sbLogMessage(leadId,channel,text){
-  try{await sb.from('messages_sent').insert({lead_id:leadId,user_name:USER,channel,message_text:text,client_id:CLIENT_ID})}catch(e){console.warn('sb msg:',e.message)}
+  try{
+    const r=await sb.from('messages_sent').insert({lead_id:leadId,user_name:USER,channel,message_text:text,client_id:CLIENT_ID});
+    if(r&&r.error){console.error('[sb] msg FAILED:',r.error.message);return false}
+    return true;
+  }catch(e){console.error('[sb] msg EXCEPTION:',e.message);return false}
 }
 
 async function sbDeleteMessage(leadId,sentAt){
   try{
-    await sb.from('messages_sent').delete().match({lead_id:leadId,user_name:USER,sent_at:sentAt,client_id:CLIENT_ID});
-  }catch(e){console.warn('sb del msg:',e.message)}
+    const r=await sb.from('messages_sent').delete().match({lead_id:leadId,user_name:USER,sent_at:sentAt,client_id:CLIENT_ID});
+    if(r&&r.error){console.error('[sb] del msg FAILED:',r.error.message);return false}
+    return true;
+  }catch(e){console.error('[sb] del msg EXCEPTION:',e.message);return false}
 }
 
-function delMsg(domId,ts){
+async function delMsg(domId,ts){
   if(!confirm('Borrar este mensaje enviado?'))return;
+  console.log('[delMsg] click',{domId,ts});
   const D=db();const rec=D[domId];
   if(!rec||!rec.msgs)return;
-  // Find the message we're deleting (to know its channel for rollback)
   const deleted=rec.msgs.find(m=>m.ts===ts);
   const delCh=deleted?deleted.ch:null;
-  // Remove message from localStorage + Supabase
   rec.msgs=rec.msgs.filter(m=>m.ts!==ts);
-  sbDeleteMessage(domId,ts);
-  // Roll back action state: if no other messages exist for this channel, uncheck that action
+  const msgOk=await sbDeleteMessage(domId,ts);
+  let actOk=true;
   if(delCh){
     const stillHasChMsg=rec.msgs.some(m=>m.ch===delCh);
     if(!stillHasChMsg&&(rec.acts||[]).includes(delCh)){
       rec.acts=rec.acts.filter(a=>a!==delCh);
-      sbLogAction(domId,delCh,false); // delete action row in Supabase
+      actOk=await sbLogAction(domId,delCh,false);
     }
   }
-  // Recalculate status (may flip from contacted → partial/none based on remaining data)
   rec.st=cSt(rec);
   D[domId]=rec;sdb(D);
-  // Refresh playbook — follow-up engine will recompute next_action_due_at from remaining msgs
+  console.log('[delMsg] write',{domId,delCh,msgOk,actOk});
   openPB(domId);
-  toast('Mensaje borrado');
+  refresh(); // Update Hoy indicator + Acción Ahora queue
+  toast((msgOk&&actOk)?'Mensaje borrado':'⚠️ Borrado local, falló sync — revisa consola');
 }
 
 async function sbSaveNote(leadId,text){
-  try{await sb.from('notes').upsert({lead_id:leadId,user_name:USER,note_text:text,updated_at:new Date().toISOString(),client_id:CLIENT_ID},{onConflict:'lead_id,user_name'})}catch(e){console.warn('sb note:',e.message)}
+  try{
+    const r=await sb.from('notes').upsert({lead_id:leadId,user_name:USER,note_text:text,updated_at:new Date().toISOString(),client_id:CLIENT_ID},{onConflict:'lead_id,user_name'});
+    if(r&&r.error){console.error('[sb] note FAILED:',r.error.message);return false}
+    return true;
+  }catch(e){console.error('[sb] note EXCEPTION:',e.message);return false}
 }
 
 async function sbLogStatus(leadId,status){
-  try{await sb.from('status_history').insert({lead_id:leadId,user_name:USER,status,client_id:CLIENT_ID})}catch(e){console.warn('sb status:',e.message)}
+  try{
+    const r=await sb.from('status_history').insert({lead_id:leadId,user_name:USER,status,client_id:CLIENT_ID});
+    if(r&&r.error){console.error('[sb] status FAILED:',r.error.message);return false}
+    // Also update the leads table status column for consistency
+    await sb.from('leads').update({status,updated_at:new Date().toISOString()}).eq('id',leadId).eq('client_id',CLIENT_ID);
+    return true;
+  }catch(e){console.error('[sb] status EXCEPTION:',e.message);return false}
 }
 
 // ═══ SUPABASE LOAD (on startup, hydrate from shared DB — filtered by client_id) ═══
@@ -778,14 +793,29 @@ function openPB(d){
       actCh='wa';
     }else{
       actCh='email';
-      title=action.isFollowUp?'Email follow-up'+(firstPB?' a '+firstPB:' al equipo'):'Email inicial'+(firstPB?' a '+firstPB:' al equipo');
+      // Detect generic/shared mailboxes — person's name would land in the wrong inbox
+      const GENERIC_RE=/^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos)@/i;
+      const emailPrefix=(l.contactEmail||'').toLowerCase();
+      const isGenericEmail=!emailPrefix||GENERIC_RE.test(emailPrefix)||/^[a-z0-9._-]*@(gmail|hotmail|yahoo|outlook|icloud|live)\./i.test(emailPrefix);
+      const hasName=!!l.contactName;
+      title=action.isFollowUp?'Email follow-up'+(hasName&&!isGenericEmail?' a '+firstPB:' al equipo'):'Email inicial'+(hasName&&!isGenericEmail?' a '+firstPB:' al equipo');
+      // Build greeting based on email type:
+      //   Personal + name       → "Hola [Name], ¿cómo estás?"
+      //   Generic + name        → "Hola equipo de [Company],\n¿Es esta la mejor manera de contactar a [Full Name]?"
+      //   Generic/unknown + no  → "Hola equipo de [Company],"
+      let greeting;
+      if(hasName&&!isGenericEmail){
+        greeting=action.isFollowUp?'Hola '+firstPB+',':'Hola '+firstPB+', ¿cómo estás?';
+      }else if(hasName&&isGenericEmail){
+        greeting='Hola equipo de '+l.companyName+',\n¿Es esta la mejor manera de contactar a '+l.contactName+'?';
+      }else{
+        greeting='Hola equipo de '+l.companyName+',';
+      }
       if(action.isFollowUp){
-        const greeting=firstPB?'Hola '+firstPB+',':'Hola,';
         actMsg=greeting+'\n\nTe escribí hace unos días sobre UnaBase. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min para que te muestre cómo otras productoras están manejando su presupuestación.\n\nScarlett';
         playbook=['Revisar último email enviado','Ajustar si es necesario','Enviar follow-up corto'];
       }else{
         // Initial email template (LOCKED). No dashes, no variations, no improvisation.
-        const greeting=firstPB?'Hola '+firstPB+', ¿cómo estás?':'Hola equipo de '+l.companyName+',';
         actMsg="Asunto: Una pregunta rápida sobre cómo manejan presupuestos\n\n"+greeting+"\n\nEstuve viendo "+l.companyName+" y el tipo de proyectos que manejan.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nEn UnaBase armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.";
         playbook=['Revisar el contexto del lead','Personalizar si es necesario','Enviar el email'];
       }
@@ -831,31 +861,52 @@ function openPB(d){
 function closePB(){document.getElementById('pbO').classList.remove('open');document.body.style.overflow='';refresh()}
 
 // ═══ ACTIONS ═══
-function tA(d,aid,ch){
+async function tA(d,aid,ch){
+  console.log('[tA] click',{d,aid,ch});
   const rec=gr(d);const acts=[...(rec.acts||[])];const tl=[...(rec.tl||[])];
   const idx=acts.indexOf(aid);
-  if(idx>=0){acts.splice(idx,1);tl.push({tp:'act',desc:'Desmarcó: '+ch,ts:now()});sbLogAction(d,ch,false)}
-  else{acts.push(aid);tl.push({tp:'act',desc:'Completó: '+ch,ts:now()});sbLogAction(d,ch,true)}
+  const completed=idx<0;
+  if(idx>=0){acts.splice(idx,1);tl.push({tp:'act',desc:'Desmarcó: '+ch,ts:now()});}
+  else{acts.push(aid);tl.push({tp:'act',desc:'Completó: '+ch,ts:now()});}
   const ns=cSt({...rec,acts});
   if(ns!==cSt(rec))tl.push({tp:'st',desc:'Estado → '+SL[ST.indexOf(ns)],ts:now()});
   ur(d,{acts,st:ns,tl});
-  toast(idx>=0?'Desmarcado':'+1 acción completada');
+  // Await Supabase so we know if it actually persisted
+  const ok=await sbLogAction(d,ch,completed);
+  console.log('[tA] write',{d,ch,completed,sbOk:ok});
+  toast(ok?(completed?'+1 acción completada':'Desmarcado'):'⚠️ No se pudo sincronizar — intenta de nuevo');
   refresh();
 }
-function sM(d,aid,ch){
-  const ta=document.getElementById('sa-'+d+'-'+aid);if(!ta||!ta.value.trim())return;
-  const rec=gr(d);const msgs=[...(rec.msgs||[])];const tl=[...(rec.tl||[])];
+async function sM(d,aid,ch){
+  const ta=document.getElementById('sa-'+d+'-'+aid);
+  if(!ta||!ta.value.trim()){console.log('[sM] empty, abort',{d,aid,ch});return}
+  console.log('[sM] click',{d,aid,ch});
+  const rec=gr(d);const msgs=[...(rec.msgs||[])];const tl=[...(rec.tl||[])];const acts=[...(rec.acts||[])];
   const msgText=ta.value.trim();
-  msgs.push({ch,tx:msgText,ts:now()});
-  tl.push({tp:'msg',desc:'Mensaje por '+ch,ts:now()});
-  ur(d,{msgs,tl});ta.value='';
-  sbLogMessage(d,ch,msgText);
-  toast('Mensaje guardado ✓');refresh();
+  const ts=now();
+  msgs.push({ch,tx:msgText,ts});
+  tl.push({tp:'msg',desc:'Mensaje por '+ch,ts});
+  // CRITICAL: saving a message IS completing the action for that channel
+  let actAdded=false;
+  if(!acts.includes(ch)){acts.push(ch);actAdded=true;tl.push({tp:'act',desc:'Completó: '+ch,ts});}
+  const newSt=cSt({...rec,acts,msgs});
+  ur(d,{msgs,tl,acts,st:newSt});ta.value='';
+  // Persist to Supabase with error visibility
+  const msgOk=await sbLogMessage(d,ch,msgText);
+  let actOk=true;if(actAdded)actOk=await sbLogAction(d,ch,true);
+  console.log('[sM] write',{d,ch,msgOk,actOk,actAdded});
+  toast((msgOk&&actOk)?'Mensaje guardado ✓':'⚠️ Guardado local OK, error en Supabase — revisa consola');
+  refresh();
 }
-function sS(d,status){
+async function sS(d,status){
+  console.log('[sS] click',{d,status});
   const rec=gr(d);const tl=[...(rec.tl||[])];
   tl.push({tp:'st',desc:'Estado → '+SL[ST.indexOf(status)],ts:now()});
-  ur(d,{st:status,tl});sbLogStatus(d,status);toast(SL[ST.indexOf(status)]);refresh();
+  ur(d,{st:status,tl});
+  const ok=await sbLogStatus(d,status);
+  console.log('[sS] write',{d,status,ok});
+  toast(ok?SL[ST.indexOf(status)]:'⚠️ Estado guardado local, falló sync — revisa consola');
+  refresh();
 }
 function sN(d){const ta=document.getElementById('nt-'+d);if(!ta)return;ur(d,{notes:ta.value});sbSaveNote(d,ta.value);toast('Notas guardadas')}
 function cpM(btn){const t=btn.previousElementSibling.textContent;navigator.clipboard.writeText(t).then(()=>{btn.textContent='copiado';btn.classList.add('ok');setTimeout(()=>{btn.textContent='copiar';btn.classList.remove('ok')},1500)})}
