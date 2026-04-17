@@ -141,8 +141,8 @@
     "contactName": "Pablo Muñiz",
     "contactTitle": "CEO",
     "contactEmail": "contacto@martillomedia.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
+    "contactLinkedIn": "https://www.linkedin.com/in/pablom10/",
+    "contactConfidence": "confirmed",
     "contactSource": "website",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/martillo.media/",
@@ -295,7 +295,8 @@
     "manualNote": "Email generico (contacto@martillomedia.com) — contactar tambien por Instagram @martillo.media",
     "source_date": "2026-04-16",
     "approved": true,
-    "batch_id": "batch-2026-04-16"
+    "batch_id": "batch-2026-04-16",
+    "recoveryNote": "Added Pablo Muñiz personal LinkedIn (pablom10) via LinkedIn name-search. No direct personal email found publicly; contacto@ retained as primary."
   },
   {
     "companyName": "Caudiovisual",
@@ -325,8 +326,8 @@
     "contactName": "Carlos Llorca Garcia",
     "contactTitle": "Fundador",
     "contactEmail": "contacto@caudiovisual.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
+    "contactLinkedIn": "https://www.linkedin.com/in/carlos-llorca/",
+    "contactConfidence": "confirmed",
     "contactSource": "website",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/caudiovisualcom/",
@@ -477,7 +478,8 @@
     "manualNote": "Email generico (contacto@caudiovisual.com) — contactar tambien por Instagram @",
     "source_date": "2026-04-16",
     "approved": true,
-    "batch_id": "batch-2026-04-16"
+    "batch_id": "batch-2026-04-16",
+    "recoveryNote": "Added Carlos Llorca personal LinkedIn via name-search. Personal email not publicly listed; contacto@ retained as primary."
   },
   {
     "companyName": "La Villa Producciones",
@@ -518,10 +520,10 @@
     ],
     "contactName": "Julio Pachon",
     "contactTitle": "CEO",
-    "contactEmail": "lavillaproduccionescolombia@gmail.com",
+    "contactEmail": "juliopachongonzalez@yahoo.com",
     "contactLinkedIn": "http://www.linkedin.com/in/julio-pach%c3%b3n-65b563240",
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
+    "contactConfidence": "confirmed",
+    "contactSource": "founder_ig_contact_button",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/lavillaproducciones",
     "instagramHandle": "lavillaproducciones",
@@ -531,7 +533,7 @@
     "twitterUrl": null,
     "youtubeUrl": null,
     "vimeoUrl": null,
-    "contactPhone": "+57 3204016295",
+    "contactPhone": "+57 312 4684498",
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -597,7 +599,24 @@
     "apolloEmployeeCount": null,
     "source_date": "2026-04-16",
     "approved": true,
-    "batch_id": "batch-2026-04-16"
+    "batch_id": "batch-2026-04-16",
+    "previousContactEmail": "contacto@lavillaproducciones.com",
+    "founderInstagramHandle": "juliopachongonzalez",
+    "founderInstagramUrl": "https://www.instagram.com/juliopachongonzalez/",
+    "recoveryNote": "FULL 7-STEP PATH: website /julio-pachon + /edwin-diaz → company IG @lavillaproducciones → bio lists TWO tagged CEOs (@juliopachongonzalez + @edwin2005co) → visit each personal IG → Contact button on Julio revealed direct yahoo email + phone. Edwin Contact button pending manual check.",
+    "companyPhone": "+57 3204016295",
+    "additionalContacts": [
+      {
+        "contactName": "Edwin Daniel Díaz",
+        "contactTitle": "CEO",
+        "role": "co_founder",
+        "instagramHandle": "edwin2005co",
+        "instagramUrl": "https://www.instagram.com/edwin2005co/",
+        "websiteBio": "https://lavillaproducciones.com/edwin-diaz",
+        "contactSource": "company_ig_bio_tag",
+        "note": "Film Director / Director y productor. Co-CEO with Julio Pachón. Personal Contact-button email/phone not yet captured — check IG Contact button manually."
+      }
+    ]
   },
   {
     "companyName": "Voilà Estudios",
@@ -956,11 +975,11 @@
       "mid_size_team",
       "high_ent_signals"
     ],
-    "contactName": null,
-    "contactTitle": null,
+    "contactName": "Alberto García Prieto",
+    "contactTitle": "Founder & Director",
     "contactEmail": "info@rednoisefilms.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
+    "contactLinkedIn": "https://www.linkedin.com/in/albertogarciaprieto/",
+    "contactConfidence": "confirmed",
     "contactSource": "website",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/rednoisefilms/",
@@ -1119,7 +1138,8 @@
     "manualNote": "Email generico (info@rednoisefilms.com) — contactar tambien por Instagram @rednoisefilms",
     "source_date": "2026-04-16",
     "approved": true,
-    "batch_id": "batch-2026-04-16"
+    "batch_id": "batch-2026-04-16",
+    "recoveryNote": "Recovered named founder (Alberto García Prieto, Founder & Director) via LinkedIn company page → personal LinkedIn. Personal email not publicly listed; info@ retained as primary channel."
   },
   {
     "companyName": "Estudio Diverge",
@@ -1146,11 +1166,11 @@
       "multiple_projects",
       "mid_size_team"
     ],
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "estudiodiverge@gmail.com",
+    "contactName": "Francisca Arellano",
+    "contactTitle": "Director",
+    "contactEmail": "contacto@estudiodiverge.com",
     "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
+    "contactConfidence": "confirmed",
     "contactSource": "website",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/estudiodiverge/",
@@ -1247,6 +1267,8 @@
     "apolloEmployeeCount": null,
     "source_date": "2026-04-16",
     "approved": true,
-    "batch_id": "batch-2026-04-16"
+    "batch_id": "batch-2026-04-16",
+    "previousContactEmail": "estudiodiverge@gmail.com",
+    "recoveryNote": "Recovered named decision-maker (Francisca Arellano) from website /nosotros; upgraded from generic gmail to company domain email."
   }
 ]

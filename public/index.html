@@ -708,21 +708,25 @@ function gateLeads(leads){
 
 async function autoLoad(){
   if(typeof EMBEDDED_LEADS!=='undefined'&&EMBEDDED_LEADS&&EMBEDDED_LEADS.length){TL=gateLeads(EMBEDDED_LEADS);merge(TL);renderDay();return}
+  // Cache-buster: JSON lead files are small and get overwritten every batch
+  // activation. If the browser serves a cached copy, the card shows stale
+  // contacts. Append ?v=<timestamp> so each page load pulls fresh data.
+  const cb='?v='+Date.now();
   // Try manifest-driven load first
   try{
-    const mr=await fetch('./reports-manifest.json');
+    const mr=await fetch('./reports-manifest.json'+cb);
     if(mr.ok){
       const manifest=await mr.json();
       const active=manifest.batches.find(b=>b.batch_id===manifest.active_batch_id);
       if(active&&active.file){
-        const lr=await fetch('./'+active.file);
+        const lr=await fetch('./'+active.file+cb);
         if(lr.ok){TL=gateLeads(await lr.json());if(TL.length){merge(TL);renderDay();return}}
       }
     }
   }catch{}
   // Fallback: existing behavior
-  try{const r=await fetch(CLIENT.leadsPath);if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}
-  const t=new Date();for(let o=0;o<3;o++){const d=new Date(t);d.setDate(d.getDate()-o);try{const r=await fetch('../output/leads-'+d.toISOString().slice(0,10)+'.json');if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}}
+  try{const r=await fetch(CLIENT.leadsPath+cb);if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}
+  const t=new Date();for(let o=0;o<3;o++){const d=new Date(t);d.setDate(d.getDate()-o);try{const r=await fetch('../output/leads-'+d.toISOString().slice(0,10)+'.json'+cb);if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}}
   if(typeof SEED_HISTORY!=='undefined'&&SEED_HISTORY)merge(SEED_HISTORY);
   const a=allR();if(a.length){TL=a.filter(r=>r.lead).map(r=>r.lead);renderDay();toast('Desde memoria');return}
   document.getElementById('emptyS').style.display='block';
@@ -1005,7 +1009,7 @@ async function loadPast(){
   if(pastLoaded)return;
   PL=[];
   // Load leads-past.json (most recent archived batch)
-  try{const r=await fetch('./leads-past.json');if(r.ok){const past=await r.json();past.forEach(l=>{l._batchDate=l.source_date||'2026-04-14'});PL.push(...past)}}catch{}
+  try{const r=await fetch('./leads-past.json?v='+Date.now());if(r.ok){const past=await r.json();past.forEach(l=>{l._batchDate=l.source_date||'2026-04-14'});PL.push(...past)}}catch{}
   // Load SEED_PAST (first report) — dedup against leads-past.json
   if(CLIENT_ID==='unabase_default'&&typeof SEED_PAST!=='undefined'&&SEED_PAST&&SEED_PAST.length){
     SEED_PAST.forEach(l=>{l._batchDate=l.source_date||'2026-04-13'});
