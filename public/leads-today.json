@@ -1140,7 +1140,7 @@
     "source_date": "2026-04-16",
     "approved": true,
     "batch_id": "batch-2026-04-16",
-    "recoveryNote": "Red Noise IG bio does not @-tag the founders (unlike La Villa). Both co-founders identified via separate \"MEET THE TEAM\" carousel posts on @rednoisefilms. Operator must tap each post on mobile to see tagged personal accounts, then Contact button on each for direct email/phone.",
+    "recoveryNote": "Red Noise IG bio does not @-tag founders. Both co-founders surface via \"MEET THE TEAM\" carousel posts, BUT their personal IG profiles are PRIVATE — Contact button path is dead. Actionable paths: LinkedIn (Alberto confirmed), Hunter/Apollo for domain-pattern emails, warm intro via shared network.",
     "founderInstagramHandle": null,
     "founderInstagramUrl": null,
     "additionalContacts": [
@@ -1154,11 +1154,12 @@
           "javigarcia871"
         ],
         "contactSource": "company_ig_meet_the_team_post",
-        "needsManualContactButtonCheck": true,
-        "note": "Co-founder identified via @rednoisefilms \"MEET THE TEAM\" posts. Personal IG @javigarcia871 is a candidate (surfaced in rednoisefilms context) but not confirmed. Verify on @rednoisefilms IG → tap \"MEET THE TEAM\" post with Javier → check tagged accounts → confirm handle → tap Contact button for direct email/phone."
+        "note": "Co-founder identified via @rednoisefilms \"MEET THE TEAM\" posts. Personal IG @javigarcia871 is a candidate (surfaced in rednoisefilms context) but not confirmed. Verify on @rednoisefilms IG → tap \"MEET THE TEAM\" post with Javier → check tagged accounts → confirm handle → tap Contact button for direct email/phone.",
+        "igIsPrivate": true,
+        "actionablePath": "LinkedIn + press + Hunter"
       }
     ],
-    "primaryNeedsManualContactButtonCheck": true
+    "igIsPrivate": true
   },
   {
     "companyName": "Estudio Diverge",

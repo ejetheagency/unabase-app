@@ -815,8 +815,9 @@ function openPB(d){
   if(l.contactPhone||l.apolloCompanyPhone)chs+=`<span class="ch cph">${esc(l.contactPhone||l.apolloCompanyPhone)}</span>`;
   if(l.contactLinkedIn||l.apolloCompanyLinkedIn)chs+=`<a href="${esc(l.contactLinkedIn||l.apolloCompanyLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`;
   // If primary needs a manual Contact-button check (no personal email/phone surfaced yet),
-  // flag it inline so the operator finishes the last mile before sending.
-  const primaryManualFlag=l.primaryNeedsManualContactButtonCheck?'<div class="dm-flag">⚠️ Revisar botón Contact en IG móvil del fundador para email/tel directo</div>':'';
+  // flag it inline. BUT if the IG profile is private (igIsPrivate), the Contact
+  // button path is unreachable — suppress the warning and point to LinkedIn/press.
+  const primaryManualFlag=(l.primaryNeedsManualContactButtonCheck&&!l.igIsPrivate)?'<div class="dm-flag">⚠️ Revisar botón Contact en IG móvil del fundador para email/tel directo</div>':(l.igIsPrivate?'<div class="dm-flag" style="color:var(--mt)">IG privado — usar LinkedIn / press / Hunter para contacto directo</div>':'');
   const tags=[...(l.notableClients||[]).slice(0,3),l.industry?.toUpperCase()].filter(Boolean).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
 
   // ═══ NEXT ACTION SYSTEM ═══
@@ -920,7 +921,9 @@ function openPB(d){
     if(dm.contactPhone)dmChs+=`<span class="ch cph">${esc(dm.contactPhone)}</span>`;
     if(dm.contactLinkedIn)dmChs+=`<a href="${esc(dm.contactLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`;
     if(dm.websiteBio)dmChs+=`<a href="${esc(dm.websiteBio)}" target="_blank" class="ch cl">Bio web</a>`;
-    const manualFlag=dm.needsManualContactButtonCheck?'<div class="dm-flag">⚠️ Revisar botón Contact en IG móvil para email/tel directo</div>':'';
+    // Suppress the IG Contact-button warning when the profile is private —
+    // point to the actionable alternate path instead.
+    const manualFlag=(dm.needsManualContactButtonCheck&&!dm.igIsPrivate)?'<div class="dm-flag">⚠️ Revisar botón Contact en IG móvil para email/tel directo</div>':(dm.igIsPrivate?`<div class="dm-flag" style="color:var(--mt)">IG privado${dm.actionablePath?' — '+esc(dm.actionablePath):''}</div>`:'');
     return `<div class="dm-card"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(dm.contactName||'?')}</strong>${dm.contactTitle?` · <span style="color:var(--pp)">${esc(dm.contactTitle)}</span>`:''}</div><div class="chs" style="margin-top:4px">${dmChs}</div>${manualFlag}</div>`;
   }).join('')}</div>`:'';
 
