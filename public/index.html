@@ -687,7 +687,7 @@ function getFollowUp(rec,lead,context){
 }
 
 let PL=[];// past leads
-function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')rHist('');if(v==='now')loadPast().then(()=>renderAccionAhora())}
+function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')loadPast().then(()=>rHist(''));if(v==='now')loadPast().then(()=>renderAccionAhora())}
 // Centralized re-render after any state change. Updates all visible action surfaces.
 function refresh(){renderDay();if(typeof renderAccionAhora==='function')renderAccionAhora();}
 function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
@@ -756,9 +756,16 @@ function renderDay(){
   document.getElementById('leadL').innerHTML=sorted.map((l,i)=>{
     const d=dom(l.website);const rec=gr(d);const st=cSt(rec);const si=ST.indexOf(st);
     const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
-    const steps=getSteps(l);const total=steps.length;
-    const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
-    const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
+    // Counter reflects the CURRENT single due task (not legacy multi-step).
+    // - Stopped (replied/meeting/closed/skip): 1/1
+    // - No outreach yet: 0/1
+    // - Just contacted (grace period, no new task due): 1/1
+    // - Next cycle task due: 0/1
+    const _hasAnyAct=((rec.acts||[]).length>0)||((rec.msgs||[]).length>0);
+    const _stopped=SEQ_STOPS.includes(rec.st||'none');
+    const total=1;
+    const done=_stopped?1:(!_hasAnyAct?0:(isActionable(rec,l).ok?0:1));
+    const scCls=done===total?'sc-done':'sc-none';
     const isPri=d===priId;
     let fu=getFollowUp(rec,l,'hoy');
     // Safety net (no-op now since getFollowUp always returns active for non-stopped leads)
@@ -787,9 +794,12 @@ function openPB(d){
   let l=TL.find(x=>dom(x.website)===d)||PL.find(x=>dom(x.website)===d);
   if(!l){const rec=gr(d);if(rec.lead){l=rec.lead;TL.push(l)}else return}
   const rec=gr(d);const steps=getSteps(l);const fu=steps.findIndex(s=>!(rec.acts||[]).includes(s.id));
-  const total=steps.length;const done=(rec.acts||[]).filter(a=>steps.some(s=>s.id===a)).length;
+  // Counter: single current task. Same rule as Hoy card — grace period = done.
+  const _hasAnyActPB=((rec.acts||[]).length>0)||((rec.msgs||[]).length>0);
+  const _stoppedPB=SEQ_STOPS.includes(rec.st||'none');
+  const total=1;const done=_stoppedPB?1:(!_hasAnyActPB?0:(isActionable(rec,l).ok?0:1));
   const name=l.contactName||'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);
-  const scCls=done===total&&total?'sc-done':done?'sc-part':'sc-none';
+  const scCls=done===total?'sc-done':'sc-none';
 
   let chs='';
   if(l.contactEmail)chs+=`<a href="mailto:${esc(l.contactEmail)}" class="ch ce">${esc(l.contactEmail)}</a>`;
@@ -960,9 +970,17 @@ function rM(){
 
 // ═══ HISTORY ═══
 function rHist(q){
-  const all=allR();const f=q?all.filter(r=>r.co.toLowerCase().includes(q.toLowerCase())):all;
-  // Include ALL leads — even uncontacted ones (status='none'). They just haven't
-  // started the cycle yet. Only "skip" (omitir/descartar) is actually hidden.
+  // APPROVED-ONLY GATE: Historial must only show leads that entered "the system"
+  // via an approved batch (current Hoy batch, any archived batch in leads-past.json,
+  // or the first-run SEED_PAST). Raw Supabase records from discovery/enrichment runs
+  // stay in the memory pool (Supabase) and are invisible here until approved.
+  const approved=new Set();
+  TL.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
+  PL.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
+  if(typeof SEED_PAST!=='undefined'&&SEED_PAST)SEED_PAST.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
+  const all=allR().filter(r=>approved.has(r.id));
+  const f=q?all.filter(r=>r.co.toLowerCase().includes(q.toLowerCase())):all;
+  // Show all status groups (including uncontacted) — except "skip" (omitir/descartar).
   const groups={none:[],partial:[],contacted:[],replied:[],meeting:[],closed:[]};
   f.forEach(r=>{const s=cSt(r);if(s==='skip')return;if(groups[s])groups[s].push(r)});
   let h='';
