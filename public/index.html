@@ -217,6 +217,13 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .step-check:hover{background:rgba(0,0,0,0.35);border-color:var(--ac)}
 .step-check input[type=checkbox]{width:18px;height:18px;cursor:pointer;accent-color:var(--ac)}
 .step-check.is-done{background:rgba(0,200,80,0.08);border-color:var(--gr);color:var(--gr)}
+/* Completed step — softer, lower-contrast so attention moves to the next action */
+.step-primary.step-done{border-color:rgba(0,200,80,0.45);box-shadow:0 0 0 1px rgba(0,200,80,0.12);background:linear-gradient(180deg,rgba(0,200,80,0.04),rgba(0,200,80,0.01))}
+.step-primary.step-done .step-num{background:rgba(0,200,80,0.2);color:var(--gr)}
+.step-primary.step-done .step-title{color:var(--t2)}
+.step-primary.step-done .msg pre{opacity:0.55}
+.step-refuerzo.step-done{border-style:solid;border-color:rgba(0,200,80,0.35);background:rgba(0,200,80,0.025)}
+.step-refuerzo.step-done .msg pre{opacity:0.55}
 .step-check-small{margin-top:8px;padding:7px 10px;font-size:11px}
 .step-check-small input[type=checkbox]{width:14px;height:14px}
 .step-adv{margin-top:10px;font-size:11px}
@@ -883,6 +890,136 @@ function renderDay(){
 }
 
 // ═══ PLAYBOOK OVERLAY ═══
+// ═══════════════════════════════════════════════════════════════════════════
+// LOCKED EXECUTION CYCLE  — do NOT bend these rules from the render layer.
+// ───────────────────────────────────────────────────────────────────────────
+// This function is the single source of truth for what Paso 1, Refuerzo, and
+// Paso 2 are for a given lead. The UI is a thin consumer of its output.
+// Future UI changes must never reach into this function to redefine the cycle.
+//
+//   R1. Email is Paso 1 whenever contactEmail is usable.
+//   R2. If email is NOT usable (masked / empty) but Instagram IS, Paso 1
+//       pivots to IG DM. (Canonical case: Zeta Positivo.)
+//   R3. LinkedIn is the ONLY valid same-day refuerzo. It renders when:
+//         (a) Paso 1 is email, AND
+//         (b) A personal LinkedIn URL exists on the primary contact OR in any
+//             additionalContacts entry (company LinkedIn is NEVER accepted), AND
+//         (c) A pre-authored linkedinMessage is present.
+//   R4. Instagram / WhatsApp / phone call are NEVER refuerzos. They live
+//       exclusively in Paso 2 (the 48h cycle) when they are the primary path.
+//   R5. Paso 2 is CONDITIONAL — only fires if no response arrived.
+//   R6. isDone on each step derives from rec.acts. The checkbox in the UI
+//       toggles rec.acts via tA(); the UI never sets visual state directly.
+//   R7. When the lead is in a stopped status (replied / meeting / closed /
+//       skip) this function returns null cycle — no Paso 1, Refuerzo, Paso 2.
+// ═══════════════════════════════════════════════════════════════════════════
+function computeExecutionCycle(rec, lead) {
+  const fu = getFollowUp(rec, lead);
+  if (!fu.active || !fu.step || !fu.step.channel) {
+    return { paso1: null, refuerzo: null, paso2: null };
+  }
+  let channel = fu.step.channel;
+  const emailUsable = !!(lead.contactEmail && String(lead.contactEmail).trim());
+  const hasIg = !!(lead.instagramUrl || lead.instagramHandle);
+  // R2 — pivot
+  if (channel === 'email' && !emailUsable && hasIg) channel = 'ig';
+  const isFollowUp = fu.cycle >= 2;
+  const ig = lead.instagramHandle || (lead.instagramUrl ? (lead.instagramUrl.match(/instagram\.com\/([^/]+)/) || [])[1] : null);
+  const phone = lead.contactPhone || lead.apolloCompanyPhone;
+  const first = lead.contactName ? lead.contactName.split(/\s+/)[0] : null;
+  const hasPriorMsg = (rec.msgs || []).length > 0;
+
+  // ─── Paso 1 ─────────────────────────────────────────────────────────
+  const paso1 = { channel, isFollowUp, color: fu.color, time: fu.timeStr };
+
+  if (channel === 'ig' || channel === 'instagram') {
+    const handle = ig || lead.founderInstagramHandle || '';
+    paso1.channelKey = 'ig';
+    paso1.title = 'Enviar DM ahora';
+    paso1.actionLabel = 'Ya envié el DM';
+    paso1.doneLabel = 'DM enviado';
+    paso1.targetKind = 'Instagram DM';
+    paso1.targetLabel = '@' + handle;
+    paso1.targetLineHTML = `Instagram DM → <strong>@${esc(handle)}</strong>`;
+    paso1.message = (lead.emailCercana && !hasPriorMsg)
+      ? lead.emailCercana
+      : 'Hola, ¿cómo están? Soy Scarlett de UnaBase.\nLes escribimos por Instagram porque les enviamos un mail hace un par de días desde UnaBase y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.';
+  } else if (channel === 'wa' || channel === 'whatsapp') {
+    paso1.channelKey = 'wa';
+    paso1.title = 'Enviar WhatsApp ahora';
+    paso1.actionLabel = 'Ya envié el WhatsApp';
+    paso1.doneLabel = 'WhatsApp enviado';
+    paso1.targetKind = 'WhatsApp';
+    paso1.targetLabel = phone || '';
+    paso1.targetLineHTML = `WhatsApp → <strong>${esc(phone || '')}</strong>`;
+    paso1.message = 'Hola, ¿cómo están? Soy Scarlett de UnaBase.\nLes escribimos por WhatsApp porque les enviamos un mail hace un par de días desde UnaBase y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.';
+  } else {
+    paso1.channelKey = 'email';
+    paso1.title = 'Enviar email ahora';
+    paso1.actionLabel = 'Ya envié el email';
+    paso1.doneLabel = 'Email enviado';
+    paso1.targetKind = 'Email';
+    paso1.targetLabel = lead.contactEmail || '';
+    const GENERIC_RE = /^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos)@/i;
+    const fullEmail = (lead.contactEmail || '').toLowerCase();
+    const localPart = fullEmail.split('@')[0] || '';
+    const isFreeProvider = /@(gmail|hotmail|yahoo|outlook|icloud|live)\./i.test(fullEmail);
+    const nameParts = (lead.contactName || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/\s+/).filter(p => p.length > 2);
+    const nameInLocal = nameParts.length > 0 && nameParts.some(p => localPart.includes(p));
+    const isGeneric = !fullEmail || GENERIC_RE.test(fullEmail) || (isFreeProvider && !nameInLocal);
+    const hasName = !!lead.contactName;
+    const who = (hasName && !isGeneric) ? first : 'equipo';
+    paso1.targetLineHTML = `Email → <strong>${esc(lead.contactEmail || '')}</strong> <span class="step-who">(${esc(who)})</span>`;
+    let greeting;
+    if (hasName && !isGeneric) greeting = isFollowUp ? 'Hola ' + first + ',' : 'Hola ' + first + ', ¿cómo estás?';
+    else if (hasName && isGeneric) greeting = '¿Es esta la mejor manera de contactar a ' + lead.contactName + '?';
+    else greeting = 'Hola equipo de ' + lead.companyName + ',';
+    if (isFollowUp) {
+      paso1.message = greeting + '\n\nTe escribí hace unos días sobre UnaBase. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min para que te muestre cómo otras productoras están manejando su presupuestación.\n\nScarlett';
+    } else if (lead.emailCercana) {
+      paso1.message = lead.emailCercana;
+    } else {
+      paso1.message = 'Asunto: Una pregunta rápida sobre cómo manejan presupuestos\n\n' + greeting + '\n\nEstuve viendo ' + lead.companyName + ' y el tipo de proyectos que manejan.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nEn UnaBase armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.';
+    }
+  }
+  paso1.isDone = (rec.acts || []).includes(paso1.channelKey);
+
+  // ─── Refuerzo (R3 + R4) ────────────────────────────────────────────
+  let refuerzo = null;
+  if (paso1.channelKey === 'email' && lead.linkedinMessage) {
+    const liUrl = lead.contactLinkedIn
+      || ((lead.additionalContacts || []).find(c => c.contactLinkedIn) || {}).contactLinkedIn
+      || null;
+    const liName = lead.contactLinkedIn
+      ? lead.contactName
+      : (((lead.additionalContacts || []).find(c => c.contactLinkedIn) || {}).contactName || lead.contactName || '');
+    if (liUrl && /linkedin\.com/i.test(liUrl)) {
+      refuerzo = {
+        channelKey: 'li',
+        target: liUrl,
+        targetName: liName,
+        message: lead.linkedinMessage,
+        isDone: (rec.acts || []).includes('li'),
+        actionLabel: 'Ya envié el LinkedIn',
+        doneLabel: 'LinkedIn enviado',
+      };
+    } else if (liUrl) {
+      console.error('[cycle] R3 violation: refuerzo URL is not LinkedIn:', liUrl);
+    }
+  }
+
+  // ─── Paso 2 (R5) ───────────────────────────────────────────────────
+  const day23 = lead.executionCycle && lead.executionCycle.day23;
+  const paso2Body = day23 || (
+    paso1.channelKey === 'email' ? 'Follow-up corto por el mismo canal si no hubo respuesta.' :
+    paso1.channelKey === 'ig' ? 'Segundo DM breve referenciando el primero.' :
+    paso1.channelKey === 'wa' ? 'Segundo WhatsApp breve referenciando el primero.' : ''
+  );
+  const paso2 = { body: paso2Body, when: '48h', conditional: true };
+
+  return { paso1, refuerzo, paso2 };
+}
+
 function openPB(d){
   let l=TL.find(x=>dom(x.website)===d)||PL.find(x=>dom(x.website)===d);
   if(!l){const rec=gr(d);if(rec.lead){l=rec.lead;TL.push(l)}else return}
@@ -907,168 +1044,65 @@ function openPB(d){
   const tags=[...(l.notableClients||[]).slice(0,3),l.industry?.toUpperCase()].filter(Boolean).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
 
   // ═══ NEXT ACTION SYSTEM ═══
-  // ONE action at a time. Channel-driven. Includes message + playbook steps.
-  // No multi-channel display, no fallback options, no decisions for the user.
-  const fuPB=getFollowUp(rec,l);
-  const phonePB=l.contactPhone||l.apolloCompanyPhone;
+  // Pure cycle computation lives in computeExecutionCycle (above openPB).
+  // This block is purely RENDER — it must not redefine the rules.
+  const cycle = computeExecutionCycle(rec, l);
+  const phonePB=l.contactPhone||l.apolloCompanyPhone;   // used by legacy strategy/accordion blocks
   const firstPB=l.contactName?l.contactName.split(/\s+/)[0]:null;
-  let action=null;
-  if(fuPB.active&&fuPB.step&&fuPB.step.channel){
-    action={channel:fuPB.step.channel,isFollowUp:fuPB.cycle>=2,color:fuPB.color,timeStr:fuPB.timeStr};
-    // Channel pivot: if the engine picked 'email' but the lead has no usable
-    // email (masked / missing) and has an Instagram handle, route the primary
-    // action through Instagram instead. Zeta Positivo is the canonical case —
-    // emails are masked, IG is the only actionable channel.
-    if(action.channel==='email'&&!(l.contactEmail&&l.contactEmail.trim())&&(l.instagramUrl||l.instagramHandle)){
-      action.channel='ig';
-    }
-  }
+
   let actionSection='';
-  if(action){
-    let title,actMsg,playbook,actCh;
-    if(action.channel==='ig'||action.channel==='instagram'){
-      title='DM Instagram a @'+ig;
-      // If this is the FIRST touch (no messages yet) and the lead carries a
-      // pre-authored emailCercana (which for IG-primary leads like Zeta was
-      // written as a DM opener), prefer it over the "mail hace un par de días"
-      // canned follow-up — that line only makes sense when email was
-      // actually sent earlier in the cycle.
-      const hasPriorMsg=(rec.msgs||[]).length>0;
-      if(l.emailCercana&&!hasPriorMsg){
-        actMsg=l.emailCercana;
-      }else{
-        actMsg='Hola, ¿cómo están? Soy Scarlett de UnaBase.\nLes escribimos por Instagram porque les enviamos un mail hace un par de días desde UnaBase y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.';
-      }
-      playbook=['Ver 2–3 posts recientes','Dar like + follow','Esperar 30–60 segundos','Enviar el DM'];
-      actCh='ig';
-    }else if(action.channel==='wa'||action.channel==='whatsapp'){
-      title='WhatsApp a '+phonePB;
-      actMsg='Hola, ¿cómo están? Soy Scarlett de UnaBase.\nLes escribimos por WhatsApp porque les enviamos un mail hace un par de días desde UnaBase y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.';
-      playbook=['Revisar contexto rápido del lead','Enviar mensaje directo'];
-      actCh='wa';
-    }else{
-      actCh='email';
-      // Detect generic/shared mailboxes — person's name would land in the wrong inbox.
-      // IMPORTANT: a free-provider address (yahoo/gmail/hotmail/etc) is PERSONAL when
-      // the local part contains the contact's name (e.g. juliopachongonzalez@yahoo.com
-      // for contactName "Julio Pachon" → direct personal inbox, NOT generic).
-      const GENERIC_RE=/^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos)@/i;
-      const fullEmail=(l.contactEmail||'').toLowerCase();
-      const localPart=fullEmail.split('@')[0]||'';
-      const isFreeProviderEmail=/@(gmail|hotmail|yahoo|outlook|icloud|live)\./i.test(fullEmail);
-      const nameParts=(l.contactName||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').split(/\s+/).filter(p=>p.length>2);
-      const nameInLocal=nameParts.length>0&&nameParts.some(p=>localPart.includes(p));
-      const isGenericEmail=!fullEmail||GENERIC_RE.test(fullEmail)||(isFreeProviderEmail&&!nameInLocal);
-      const hasName=!!l.contactName;
-      title=action.isFollowUp?'Email follow-up'+(hasName&&!isGenericEmail?' a '+firstPB:' al equipo'):'Email inicial'+(hasName&&!isGenericEmail?' a '+firstPB:' al equipo');
-      // Build greeting based on email type:
-      //   Personal + name       → "Hola [Name], ¿cómo estás?"
-      //   Generic + name        → "¿Es esta la mejor manera de contactar a [Full Name]?"  (no team line — direct route-finding)
-      //   Generic/unknown + no  → "Hola equipo de [Company],"
-      let greeting;
-      if(hasName&&!isGenericEmail){
-        greeting=action.isFollowUp?'Hola '+firstPB+',':'Hola '+firstPB+', ¿cómo estás?';
-      }else if(hasName&&isGenericEmail){
-        greeting='¿Es esta la mejor manera de contactar a '+l.contactName+'?';
-      }else{
-        greeting='Hola equipo de '+l.companyName+',';
-      }
-      if(action.isFollowUp){
-        actMsg=greeting+'\n\nTe escribí hace unos días sobre UnaBase. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min para que te muestre cómo otras productoras están manejando su presupuestación.\n\nScarlett';
-        playbook=['Revisar último email enviado','Ajustar si es necesario','Enviar follow-up corto'];
-      }else{
-        // If the lead carries a pre-authored personalized email (emailCercana),
-        // use it as source of truth. Tier-segmented, references real client/project
-        // signals. Otherwise fall back to the LOCKED runtime template for leads
-        // without pre-authored copy.
-        if(l.emailCercana){
-          actMsg=l.emailCercana;
-          playbook=['Revisar email personalizado abajo','Ajustar si es necesario','Enviar'];
-        }else{
-          actMsg="Asunto: Una pregunta rápida sobre cómo manejan presupuestos\n\n"+greeting+"\n\nEstuve viendo "+l.companyName+" y el tipo de proyectos que manejan.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nEn UnaBase armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.";
-          playbook=['Revisar el contexto del lead','Personalizar si es necesario','Enviar el email'];
-        }
-      }
-    }
-    const colorIcon=action.color==='red'?'🔴':action.color==='yellow'?'⚡':'✓';
-    // Window-aware time: replace "ahora" / "hace Xh" with "programado para..." when outside 10AM-6PM lead-local
-    const adjustedTime=adjustTimeStr({color:action.color,timeStr:action.timeStr},l.country);
-    // Channel-aware target line — what the operator actually does + to whom
-    const targetLine=(()=>{
-      if(action.channel==='ig'||action.channel==='instagram'){
-        const ig2=ig||l.founderInstagramHandle;
-        return `Instagram DM → <strong>@${esc(ig2||'')}</strong>`;
-      }
-      if(action.channel==='wa'||action.channel==='whatsapp'){
-        return `WhatsApp → <strong>${esc(phonePB||'')}</strong>`;
-      }
-      const emailTo=l.contactEmail||'';
-      const who=l.contactName?esc(firstPB):'equipo';
-      return `Email → <strong>${esc(emailTo)}</strong> <span class="step-who">(${who})</span>`;
-    })();
-    // Is the current action already logged? Use it to drive the checkbox state.
-    const actDone=(rec.acts||[]).includes(actCh);
-    actionSection=`<div class="step step-primary">
+  if(cycle.paso1){
+    const p1=cycle.paso1;
+    const adjustedTime=adjustTimeStr({color:p1.color,timeStr:p1.time},l.country);
+    const ck=p1.channelKey;
+    const doneClass=p1.isDone?' step-done':'';
+    const checkLabel=p1.isDone?`✓ ${p1.doneLabel}`:p1.actionLabel;
+    actionSection=`<div class="step step-primary${doneClass}">
       <div class="step-head">
         <div class="step-num">Paso 1</div>
-        <div class="step-title">${action.channel==='email'?'Enviar ahora':action.channel==='ig'||action.channel==='instagram'?'Enviar DM ahora':action.channel==='wa'||action.channel==='whatsapp'?'Enviar WhatsApp ahora':'Ahora'}</div>
-        <div class="step-time step-time-${action.color}">${esc(adjustedTime)}</div>
+        <div class="step-title">${esc(p1.title)}</div>
+        <div class="step-time step-time-${p1.color}">${esc(adjustedTime)}</div>
       </div>
-      <div class="step-to">${targetLine}</div>
-      <div class="msg"><pre>${esc(actMsg)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">Copiar</button></div>
-      <label class="step-check${actDone?' is-done':''}" onclick="event.stopPropagation()">
-        <input type="checkbox" ${actDone?'checked':''} onclick="tA('${d}','${actCh}','${actCh}');setTimeout(()=>openPB('${d}'),120)">
-        <span>${actDone?'✓ Marcado como enviado':'Marcar como enviado'}</span>
+      <div class="step-to">${p1.targetLineHTML}</div>
+      <div class="msg"><pre>${esc(p1.message)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">Copiar</button></div>
+      <label class="step-check${p1.isDone?' is-done':''}" onclick="event.stopPropagation()">
+        <input type="checkbox" ${p1.isDone?'checked':''} onclick="tA('${d}','${ck}','${ck}');setTimeout(()=>openPB('${d}'),120)">
+        <span>${esc(checkLabel)}</span>
       </label>
       <details class="step-adv"><summary>Guardar el mensaje real enviado (opcional)</summary>
-        <textarea class="sa" id="sa-${d}-${actCh}" placeholder="Pegá lo que enviaste..." onclick="event.stopPropagation()"></textarea>
-        <button class="svb" onclick="event.stopPropagation();sM('${d}','${actCh}','${actCh}');openPB('${d}')">Guardar mensaje enviado</button>
+        <textarea class="sa" id="sa-${d}-${ck}" placeholder="Pegá lo que enviaste..." onclick="event.stopPropagation()"></textarea>
+        <button class="svb" onclick="event.stopPropagation();sM('${d}','${ck}','${ck}');openPB('${d}')">Guardar mensaje enviado</button>
       </details>
     </div>`;
   }
-  // REFUERZO block — same-day LinkedIn touch. Only renders when:
-  //   1. Current action channel is email (we're at Day 0, not already in 48h cycle)
-  //   2. Lead has a pre-authored linkedinMessage
-  //   3. Lead has a PERSONAL LinkedIn URL accessible either on the primary
-  //      contact or on ANY additionalContact (e.g. Sinapsis: Mario Borovich's LI).
-  //      Company LinkedIn (apolloCompanyLinkedIn) does NOT count — user rule:
-  //      LinkedIn outreach must be from Scarlett's personal LI to a PERSON.
-  // Never built out of IG or WhatsApp — those live in PASO 2 (48h cycle).
+
   let refuerzoSection='';
-  const liPersonal=l.contactLinkedIn||((l.additionalContacts||[]).find(c=>c.contactLinkedIn)?.contactLinkedIn)||null;
-  const liTargetName=l.contactLinkedIn?l.contactName:(((l.additionalContacts||[]).find(c=>c.contactLinkedIn)||{}).contactName||l.contactName||'');
-  if(action&&action.channel==='email'&&l.linkedinMessage&&liPersonal){
-    const liDone=(rec.acts||[]).includes('li');
-    refuerzoSection=`<div class="step step-refuerzo">
+  if(cycle.refuerzo){
+    const r=cycle.refuerzo;
+    const doneClass=r.isDone?' step-done':'';
+    const checkLabel=r.isDone?`✓ ${r.doneLabel}`:r.actionLabel;
+    refuerzoSection=`<div class="step step-refuerzo${doneClass}">
       <div class="step-head step-head-minor">
         <div class="step-tag-minor">Refuerzo hoy</div>
-        <div class="step-tag-opt">opcional</div>
+        <div class="step-tag-opt">recomendado</div>
       </div>
-      <div class="step-to-minor">LinkedIn → <strong>${esc(liTargetName||'')}</strong> <a href="${esc(liPersonal)}" target="_blank" class="step-ext">abrir perfil ↗</a></div>
-      <div class="msg msg-small"><pre>${esc(l.linkedinMessage)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">Copiar</button></div>
-      <label class="step-check step-check-small${liDone?' is-done':''}" onclick="event.stopPropagation()">
-        <input type="checkbox" ${liDone?'checked':''} onclick="tA('${d}','li','li');setTimeout(()=>openPB('${d}'),120)">
-        <span>${liDone?'✓ LinkedIn enviado':'LinkedIn enviado'}</span>
+      <div class="step-to-minor">LinkedIn → <strong>${esc(r.targetName||'')}</strong> <a href="${esc(r.target)}" target="_blank" class="step-ext">abrir perfil ↗</a></div>
+      <div class="msg msg-small"><pre>${esc(r.message)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">Copiar</button></div>
+      <label class="step-check step-check-small${r.isDone?' is-done':''}" onclick="event.stopPropagation()">
+        <input type="checkbox" ${r.isDone?'checked':''} onclick="tA('${d}','li','li');setTimeout(()=>openPB('${d}'),120)">
+        <span>${esc(checkLabel)}</span>
       </label>
     </div>`;
   }
-  // PASO 2 — 48h follow-up preview. Uses executionCycle.day23 if present,
-  // otherwise a channel-aware fallback. This is the ONLY lifecycle step.
+
   let paso2Section='';
-  if(action){
-    const day23=l.executionCycle&&l.executionCycle.day23;
-    let paso2Text=day23;
-    if(!paso2Text){
-      if(action.channel==='email')paso2Text='Follow-up corto por el mismo canal si no hubo respuesta.';
-      else if(action.channel==='ig'||action.channel==='instagram')paso2Text='Segundo DM breve referenciando el primero.';
-      else if(action.channel==='wa'||action.channel==='whatsapp')paso2Text='Segundo WhatsApp breve referenciando el primero.';
-    }
+  if(cycle.paso2){
     paso2Section=`<div class="step step-secondary">
       <div class="step-head">
         <div class="step-num">Paso 2</div>
-        <div class="step-title">En 48h</div>
+        <div class="step-title">Si no responde (48h)</div>
       </div>
-      <div class="step-body-text">${esc(paso2Text||'')}</div>
+      <div class="step-body-text">${esc(cycle.paso2.body||'')}</div>
     </div>`;
   }
 
