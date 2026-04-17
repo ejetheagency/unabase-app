@@ -2983,5 +2983,1297 @@
     "approved": true,
     "batch_id": "batch-2026-04-15",
     "emailCercana": "Hola, esta es la mejor forma de contactar a Álvaro Ochoa?\n\nvi que Cinebrand hace cine publicitario y branded content desde España.\n\ncómo manejan los presupuestos cuando tienen varias campañas de marca en paralelo?\n\nen UnaBase vemos este tipo de operación todo el tiempo, hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación, lo vemos 10 min?\n\nScarlett"
+  },
+  {
+    "companyName": "House of Brands",
+    "website": "https://housebrands.es",
+    "country": "Spain",
+    "summary": "REPRODUCIR #PLAYSTATION HAS SIDO TÚ Te presentamos un nuevo juego. REPRODUCIR #CULTURA INQUIETA# IQOS IQOS_SMOTHIE IQOS nos trae la mejor receta para un smothie. REPRODUCIR #CULTURA INQUIETA FILMS# DISNEY CHANNEL SANDRA PELUSA - TODOS LOS DÍAS Alimenta tu imaginación con Sandra Pelusa.",
+    "notableClients": [
+      "Disney",
+      "Fox",
+      "Facebook"
+    ],
+    "recentProjects": [
+      "Playfriends",
+      "Telejuegos",
+      "de humor",
+      "COMPLETA CAPÍTULO 5 CERVEZA A nuestro Ser"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team"
+    ],
+    "contactName": "Javi Clarke",
+    "contactTitle": "Co-Founder & Creative Manager",
+    "contactEmail": "javi@housebrands.es",
+    "contactLinkedIn": "http://www.linkedin.com/in/javiclarke",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/houseofbrands_es/",
+    "instagramHandle": "houseofbrands_es",
+    "instagramBio": "See Instagram photos and videos from House of Brands (@houseofbrands_es)",
+    "instagramFollowers": "618",
+    "facebookUrl": "https://es-la.facebook.com/BrandedContentHouse/",
+    "twitterUrl": "https://twitter.com/brandshouse",
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "87506812",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Javi Clarke",
+        "title": "Innovation and Creative Manager. Co-founder.",
+        "email": "javi@housebrands.es",
+        "linkedin": "http://www.linkedin.com/in/javiclarke"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "javi@housebrands.es"
+        ],
+        "genericEmails": [
+          "info@housebrands.es"
+        ],
+        "phones": [
+          "87506812"
+        ],
+        "name": "Javi Clarke",
+        "social": {
+          "instagram": "https://www.instagram.com/houseofbrands_es/",
+          "facebook": "https://es-la.facebook.com/BrandedContentHouse/",
+          "twitter": "https://twitter.com/brandshouse",
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 1
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/houseofbrands_es/",
+        "igHandle": "houseofbrands_es",
+        "igFollowers": "618",
+        "socialEmail": "info@housebrands.es",
+        "socialPhone": null
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "source_date": "2026-04-16",
+    "approved": true,
+    "batch_id": "batch-2026-04-16"
+  },
+  {
+    "companyName": "Martillo Media",
+    "website": "https://martillomedia.com",
+    "country": "Argentina",
+    "summary": "Ir al contenido MAIN MENU Productora Audiovisual Cine . Social Media Creemos en lo que Creamos\" 01 Services Servicios de Producción Nos hacemos cargo de todo el proceso! Desarrolla los mejores formatos para comunicarte con tu audiencia.",
+    "notableClients": [
+      "Univision"
+    ],
+    "recentProjects": [
+      "Desarrollo en Co-Producción con Media Bus",
+      "de Ficción"
+    ],
+    "estimatedSize": "large",
+    "unabaseScore": 9,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "large_team"
+    ],
+    "contactName": "Pablo Muñiz",
+    "contactTitle": "CEO",
+    "contactEmail": "contacto@martillomedia.com",
+    "contactLinkedIn": "https://www.linkedin.com/in/pablom10/",
+    "contactConfidence": "confirmed",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/martillo.media/",
+    "instagramHandle": "martillo.media",
+    "instagramBio": "See Instagram photos and videos from Martillo Media | Productora Audiovisual (@martillo.media)",
+    "instagramFollowers": "2,629",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "+1 281 506-0184",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@martillomedia.com"
+        ],
+        "phones": [
+          "+1 281 506-0184"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/martillo.media/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/martillo.media/",
+        "igHandle": "martillo.media",
+        "igFollowers": "2,629",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "martillo.media",
+        "followers": "2,629",
+        "email": null,
+        "phone": null,
+        "triedHandles": 15
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+1 281 506-0184"
+        ]
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "manualNote": "Email generico (contacto@martillomedia.com) — contactar tambien por Instagram @martillo.media",
+    "source_date": "2026-04-16",
+    "approved": true,
+    "batch_id": "batch-2026-04-16",
+    "recoveryNote": "Added Pablo Muñiz personal LinkedIn (pablom10) via LinkedIn name-search. No direct personal email found publicly; contacto@ retained as primary."
+  },
+  {
+    "companyName": "Caudiovisual",
+    "website": "https://caudiovisual.com",
+    "country": "Spain",
+    "summary": "Productora audiovisual en Valencia y Madrid. Creamos vídeos que cuentan historias, atraen clientes y hacen crecer tu marca. Sin foto o vídeo, no existes.",
+    "notableClients": [],
+    "recentProjects": [
+      "sigue",
+      "AUDIOVISUAL"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 8,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "multiple_projects",
+      "mid_size_team"
+    ],
+    "contactName": "Carlos Llorca Garcia",
+    "contactTitle": "Fundador",
+    "contactEmail": "contacto@caudiovisual.com",
+    "contactLinkedIn": "https://www.linkedin.com/in/carlos-llorca/",
+    "contactConfidence": "confirmed",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/caudiovisualcom/",
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@Caudiovisualcom",
+    "vimeoUrl": null,
+    "contactPhone": "+34614233945",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 15,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@caudiovisual.com"
+        ],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/caudiovisualcom/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": "https://www.youtube.com/@Caudiovisualcom",
+          "vimeo": null,
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/caudiovisualcom/",
+        "igHandle": "caudiovisualcom",
+        "igFollowers": "556",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": "+34614233945",
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": null,
+        "followers": null,
+        "email": null,
+        "phone": null,
+        "triedHandles": 15
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+34614233945"
+        ]
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "manualNote": "Email generico (contacto@caudiovisual.com) — contactar tambien por Instagram @",
+    "source_date": "2026-04-16",
+    "approved": true,
+    "batch_id": "batch-2026-04-16",
+    "recoveryNote": "Added Carlos Llorca personal LinkedIn via name-search. Personal email not publicly listed; contacto@ retained as primary."
+  },
+  {
+    "companyName": "La Villa Producciones",
+    "website": "https://lavillaproducciones.com",
+    "country": "Colombia",
+    "summary": "La Villa Producciones es una productora audiovisual en Colombia, especializada en la producción de cine. Ofrecemos servicios de alta calidad y un equipo profesional comprometido con cada proyecto. Conócenos y descubre cómo podemos hacer realidad tus ideas cinematográficas.",
+    "notableClients": [
+      "Netflix"
+    ],
+    "recentProjects": [
+      "Vidas Cruzadas",
+      "to tell Latin American stories that leave",
+      "Santa María",
+      "La espina del Salmón",
+      "audiovisual en Colombia",
+      "Roa",
+      "Olor a Fama",
+      "La María",
+      "Nigromante",
+      "Donde tú quieras y la dirección asistente"
+    ],
+    "estimatedSize": "large",
+    "unabaseScore": 9,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 12,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 5,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "large_team",
+      "high_ent_signals"
+    ],
+    "contactName": "Julio Pachon",
+    "contactTitle": "CEO",
+    "contactEmail": "juliopachongonzalez@yahoo.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/julio-pach%c3%b3n-65b563240",
+    "contactConfidence": "confirmed",
+    "contactSource": "founder_ig_contact_button",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/lavillaproducciones",
+    "instagramHandle": "lavillaproducciones",
+    "instagramBio": "See Instagram photos and videos from LA VILLA PRODUCCIONES (@lavillaproducciones)",
+    "instagramFollowers": "2,623",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "+57 312 4684498",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name_only",
+        "name": "Julio Pachon"
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "lavillaproduccionescolombia@gmail.com"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "+57 3204016295"
+        ],
+        "name": "Edwin Daniel Díaz",
+        "social": {
+          "instagram": "https://www.instagram.com/lavillaproducciones",
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/lavillaproducciones",
+        "igHandle": "lavillaproducciones",
+        "igFollowers": "2,623",
+        "socialEmail": null,
+        "socialPhone": null
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "source_date": "2026-04-16",
+    "approved": true,
+    "batch_id": "batch-2026-04-16",
+    "previousContactEmail": "contacto@lavillaproducciones.com",
+    "founderInstagramHandle": "juliopachongonzalez",
+    "founderInstagramUrl": "https://www.instagram.com/juliopachongonzalez/",
+    "recoveryNote": "FULL 7-STEP PATH: website /julio-pachon + /edwin-diaz → company IG @lavillaproducciones → bio lists TWO tagged CEOs (@juliopachongonzalez + @edwin2005co) → visit each personal IG → Contact button on Julio revealed direct yahoo email + phone. Edwin Contact button pending manual check.",
+    "companyPhone": "+57 3204016295",
+    "additionalContacts": [
+      {
+        "contactName": "Edwin Daniel Díaz",
+        "contactTitle": "CEO",
+        "role": "co_founder",
+        "instagramHandle": "edwin2005co",
+        "instagramUrl": "https://www.instagram.com/edwin2005co/",
+        "websiteBio": "https://lavillaproducciones.com/edwin-diaz",
+        "contactSource": "company_ig_bio_tag",
+        "note": "Film Director / Director y productor. Co-CEO with Julio Pachón. Personal Contact-button email/phone not yet captured — check IG Contact button manually.",
+        "needsManualContactButtonCheck": true
+      }
+    ]
+  },
+  {
+    "companyName": "Voilà Estudios",
+    "website": "https://www.voilaestudios.com",
+    "country": "Chile",
+    "summary": "Aunque tenemos base en Santiago de Chile, trabajamos a nivel global. Contamos con tecnología de vanguardia y un equipo humano de primer nivel. Para nosotros, no hay nada imposible.",
+    "notableClients": [
+      "P&G"
+    ],
+    "recentProjects": [
+      "by ALVARO PRUNEDA N",
+      "en desarrollo Voilà Estudios Escrito y di",
+      "en búsqueda de financiamiento",
+      "Horror 2022 00:58 Olimpia Artificial Inte"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 7,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "contactName": "Álvaro Pruneda",
+    "contactTitle": "Director",
+    "contactEmail": "contacto@voilaestudios.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "http://www.instagram.com/voilaestudios",
+    "instagramHandle": "voilaestudios",
+    "instagramBio": "See Instagram photos and videos from Voilà Estudios (@voilaestudios)",
+    "instagramFollowers": "4,546",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/channel/UCvqdqF0N8nmwWRBLvNeg8Wg",
+    "vimeoUrl": null,
+    "contactPhone": "76.772.947",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@voilaestudios.com"
+        ],
+        "phones": [
+          "76.772.947"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "http://www.instagram.com/voilaestudios",
+          "facebook": null,
+          "twitter": null,
+          "youtube": "https://www.youtube.com/channel/UCvqdqF0N8nmwWRBLvNeg8Wg",
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "http://www.instagram.com/voilaestudios",
+        "igHandle": "voilaestudios",
+        "igFollowers": "4,546",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "voilaestudios",
+        "followers": "4,546",
+        "email": null,
+        "phone": null,
+        "triedHandles": 14
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "76.772.947"
+        ]
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "manualNote": "Email generico (contacto@voilaestudios.com) — contactar tambien por Instagram @voilaestudios",
+    "source_date": "2026-04-16",
+    "approved": true,
+    "batch_id": "batch-2026-04-16"
+  },
+  {
+    "companyName": "Container Films DVA",
+    "website": "https://d1k99g9uq6mstv.cloudfront.net",
+    "country": "Colombia",
+    "summary": "Container Films DVA - Productora de Series, Cine y TV. Creadores de contenidos audiovisuales y de entretenimiento de alta calidad en Colombia. Nominados a 6 Premios India Catalina 2021.",
+    "notableClients": [
+      "Warner",
+      "Warner Music"
+    ],
+    "recentProjects": [
+      "Amparo la negra más popular",
+      "CONTAINER FILMS DVA Productora de Series",
+      "de ficción",
+      "de televisión nominada en seis categorías",
+      "Amparo la negra más popular Inventario de",
+      "Largometraje Inventario de las culpas La",
+      "La vida de Facundo Cabral Agua Ardiente C",
+      "Agua Ardiente All eyes on Colombia Docume",
+      "All eyes on Colombia Juegos Panamericanos",
+      "Liliana Bocanegra y Luis Velasco Mejor Ac"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 8,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 14,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "contactName": "David Vergara",
+    "contactTitle": "CEO & Productor General",
+    "contactEmail": "vergaraagudelo@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/container_films_dva/",
+    "instagramHandle": "container_films_dva",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "+57 315 4151661",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [
+          "vergaraagudelo@gmail.com"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "+57 315 4151661"
+        ],
+        "name": "David Vergara",
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/container_films_dva/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "source_date": "2026-04-16",
+    "approved": true,
+    "batch_id": "batch-2026-04-16"
+  },
+  {
+    "companyName": "Red Noise Films",
+    "website": "https://www.rednoisefilms.com",
+    "country": "Spain",
+    "summary": "Red Noise Films es una productora audiovisual en Madrid con más de 10 años creando vídeos corporativos, spots publicitarios y branded content para marcas líderes.",
+    "notableClients": [
+      "Adidas",
+      "Mercedes",
+      "TikTok"
+    ],
+    "recentProjects": [
+      "para empresas que buscan destacar en el m",
+      "audiovisual"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 8,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "contactName": "Alberto García Prieto",
+    "contactTitle": "Co-Founder & Film Producer",
+    "contactEmail": "info@rednoisefilms.com",
+    "contactLinkedIn": "https://www.linkedin.com/in/albertogarciaprieto/",
+    "contactConfidence": "confirmed",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/rednoisefilms/",
+    "instagramHandle": "rednoisefilms",
+    "instagramBio": "See Instagram photos and videos from RedNoiseFilms (@rednoisefilms)",
+    "instagramFollowers": "208",
+    "facebookUrl": null,
+    "twitterUrl": "https://www.netflix.com/es-en/title/81568624",
+    "youtubeUrl": "https://www.youtube.com/channel/UCT6CWBXkHJ49vYlVzV04K-A",
+    "vimeoUrl": null,
+    "contactPhone": "678 878 565",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@rednoisefilms.com"
+        ],
+        "phones": [
+          "678 878 565",
+          "+34 678 878 565",
+          "608 848 089",
+          "+34 608 848 089"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/rednoisefilms/",
+          "facebook": null,
+          "twitter": "https://www.netflix.com/es-en/title/81568624",
+          "youtube": "https://www.youtube.com/channel/UCT6CWBXkHJ49vYlVzV04K-A",
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/rednoisefilms/",
+        "igHandle": "rednoisefilms",
+        "igFollowers": "208",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "rednoisefilms",
+        "followers": "208",
+        "email": null,
+        "phone": null,
+        "triedHandles": 15
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "678 878 565",
+          "+34 678 878 565",
+          "608 848 089",
+          "+34 608 848 089"
+        ]
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "manualNote": "Email generico (info@rednoisefilms.com) — contactar tambien por Instagram @rednoisefilms",
+    "source_date": "2026-04-16",
+    "approved": true,
+    "batch_id": "batch-2026-04-16",
+    "recoveryNote": "Red Noise IG bio does not @-tag founders. Both co-founders surface via \"MEET THE TEAM\" carousel posts, BUT their personal IG profiles are PRIVATE — Contact button path is dead. Actionable paths: LinkedIn (Alberto confirmed), Hunter/Apollo for domain-pattern emails, warm intro via shared network.",
+    "founderInstagramHandle": null,
+    "founderInstagramUrl": null,
+    "additionalContacts": [
+      {
+        "contactName": "Javier García",
+        "contactTitle": "Co-Founder & Film Producer",
+        "role": "co_founder",
+        "instagramHandle": null,
+        "instagramUrl": null,
+        "candidateInstagramHandles": [
+          "javigarcia871"
+        ],
+        "contactSource": "company_ig_meet_the_team_post",
+        "note": "Co-founder identified via @rednoisefilms \"MEET THE TEAM\" posts. Personal IG @javigarcia871 is a candidate (surfaced in rednoisefilms context) but not confirmed. Verify on @rednoisefilms IG → tap \"MEET THE TEAM\" post with Javier → check tagged accounts → confirm handle → tap Contact button for direct email/phone.",
+        "igIsPrivate": true,
+        "actionablePath": "LinkedIn + press + Hunter"
+      }
+    ],
+    "igIsPrivate": true
+  },
+  {
+    "companyName": "Estudio Diverge",
+    "website": "https://estudiodiverge.com",
+    "country": "Chile",
+    "summary": "Ir al contenido De la Idea al Impacto: Producción Audiovisual Integral con Mirada Autoral. Transformamos proyectos culturales, artísticos y comerciales en contenido audiovisual original y profesional. Gestionamos cada etapa, desde la guionización hasta la postproducción, asegurando una pieza lista para brillar.",
+    "notableClients": [],
+    "recentProjects": [
+      "audiovisual requiere más que solo buen eq",
+      "audiovisual Estudio Diverge Nosotros Port"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 8,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "multiple_projects",
+      "mid_size_team"
+    ],
+    "contactName": "Francisca Arellano",
+    "contactTitle": "Director",
+    "contactEmail": "contacto@estudiodiverge.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/estudiodiverge/",
+    "instagramHandle": "estudiodiverge",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "+569 3876 4234",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "estudiodiverge@gmail.com"
+        ],
+        "genericEmails": [
+          "contacto@estudiodiverge.com",
+          "contacto@strimo.cl"
+        ],
+        "phones": [
+          "+569 3876 4234",
+          "+569 7216 8203"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/estudiodiverge/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/estudiodiverge/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "source_date": "2026-04-16",
+    "approved": true,
+    "batch_id": "batch-2026-04-16",
+    "previousContactEmail": "estudiodiverge@gmail.com",
+    "recoveryNote": "Recovered named decision-maker (Francisca Arellano) from website /nosotros; upgraded from generic gmail to company domain email."
   }
 ]

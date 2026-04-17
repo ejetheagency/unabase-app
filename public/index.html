@@ -172,6 +172,13 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .dm-card{padding:8px 10px;background:var(--pn);border:1px solid var(--bd);border-radius:6px;margin-top:6px}
 .dm-card:first-child{margin-top:0}
 .dm-flag{font-size:10px;color:var(--am);margin-top:4px;font-weight:500}
+.str-row{display:flex;gap:8px;align-items:flex-start;font-size:11px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.str-row:last-child{border-bottom:none}
+.str-k{color:var(--mt);min-width:54px;font-weight:600;text-transform:uppercase;font-size:9px;letter-spacing:0.5px;padding-top:2px}
+.str-v{color:var(--t2);line-height:1.4;flex:1}
+.str-badge{display:inline-block;padding:1px 7px;border-radius:10px;font-weight:700;font-size:10px;margin-right:4px}
+.str-msg{position:relative;background:rgba(0,0,0,0.2);border:1px solid var(--bd);border-radius:4px;padding:6px 32px 6px 8px;flex:1;font-size:11px}
+.str-msg pre{margin:0;white-space:pre-wrap;font-family:inherit;color:var(--t2)}
 
 /* Actions */
 .act{display:flex;gap:10px;padding:10px 12px;margin:0 -12px;border-radius:8px;transition:.15s}
@@ -894,9 +901,17 @@ function openPB(d){
         actMsg=greeting+'\n\nTe escribí hace unos días sobre UnaBase. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min para que te muestre cómo otras productoras están manejando su presupuestación.\n\nScarlett';
         playbook=['Revisar último email enviado','Ajustar si es necesario','Enviar follow-up corto'];
       }else{
-        // Initial email template (LOCKED). No dashes, no variations, no improvisation.
-        actMsg="Asunto: Una pregunta rápida sobre cómo manejan presupuestos\n\n"+greeting+"\n\nEstuve viendo "+l.companyName+" y el tipo de proyectos que manejan.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nEn UnaBase armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.";
-        playbook=['Revisar el contexto del lead','Personalizar si es necesario','Enviar el email'];
+        // If the lead carries a pre-authored personalized email (emailCercana),
+        // use it as source of truth. Tier-segmented, references real client/project
+        // signals. Otherwise fall back to the LOCKED runtime template for leads
+        // without pre-authored copy.
+        if(l.emailCercana){
+          actMsg=l.emailCercana;
+          playbook=['Revisar email personalizado abajo','Ajustar si es necesario','Enviar'];
+        }else{
+          actMsg="Asunto: Una pregunta rápida sobre cómo manejan presupuestos\n\n"+greeting+"\n\nEstuve viendo "+l.companyName+" y el tipo de proyectos que manejan.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nEn UnaBase armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.";
+          playbook=['Revisar el contexto del lead','Personalizar si es necesario','Enviar el email'];
+        }
       }
     }
     const colorIcon=action.color==='red'?'🔴':action.color==='yellow'?'⚡':'✓';
@@ -947,9 +962,24 @@ function openPB(d){
     return `<div class="dm-card"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(dm.contactName||'?')}</strong>${dm.contactTitle?` · <span style="color:var(--pp)">${esc(dm.contactTitle)}</span>`:''}</div><div class="chs" style="margin-top:4px">${dmChs}</div>${manualFlag}</div>`;
   }).join('')}</div>`:'';
 
+  // Strategy block — renders only if the lead carries the outreach-strategy
+  // metadata (contactStrength / primaryContactPath / linkedinMessage / executionCycle).
+  // Backward-compatible: leads without these fields get no extra block.
+  const strengthColor=l.contactStrength==='A'?'var(--gr)':l.contactStrength==='B'?'var(--am)':l.contactStrength==='C'?'var(--rd)':'var(--mt)';
+  const hasStrategy=l.contactStrength||l.primaryContactPath||l.linkedinMessage||(l.executionCycle&&l.executionCycle.day0);
+  const strHtml=hasStrategy?`<div class="sec" style="margin-top:10px"><div class="sl">Estrategia de outreach</div>
+    ${l.contactStrength?`<div class="str-row"><span class="str-k">Fuerza</span><span class="str-badge" style="background:${strengthColor};color:#0a0a0f">${esc(l.contactStrength)}</span>${l.emailStatus?` <span class="str-v">${esc(l.emailStatus)}</span>`:''}</div>`:''}
+    ${l.primaryContactPath?`<div class="str-row"><span class="str-k">Canal</span><span class="str-v">${esc(l.primaryContactPath)}</span></div>`:''}
+    ${l.dataGaps?`<div class="str-row"><span class="str-k">Gaps</span><span class="str-v" style="color:var(--mt)">${esc(l.dataGaps)}</span></div>`:''}
+    ${l.linkedinMessage?`<div class="str-row"><span class="str-k">LinkedIn</span><div class="str-msg"><pre>${esc(l.linkedinMessage)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">copiar</button></div></div>`:''}
+    ${l.executionCycle&&l.executionCycle.day0?`<div class="str-row"><span class="str-k">Día 0</span><span class="str-v">${esc(l.executionCycle.day0)}</span></div>`:''}
+    ${l.executionCycle&&l.executionCycle.day23?`<div class="str-row"><span class="str-k">Día 2–3</span><span class="str-v">${esc(l.executionCycle.day23)}</span></div>`:''}
+  </div>`:'';
+
   document.getElementById('pbB').innerHTML=`
     <div class="sec"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div><div class="chs" style="margin-top:6px">${chs}</div>${primaryManualFlag}${tags?`<div class="tags">${tags}</div>`:''}</div>
     ${addHtml}
+    ${strHtml}
     ${l.keyInsight?`<div class="insight">${esc(l.keyInsight)}</div>`:''}
     ${l.companyBrief?`<div class="sec"><div class="sl">Contexto</div><div class="ctx">${esc(l.companyBrief)}</div></div>`:''}
     ${actionSection}

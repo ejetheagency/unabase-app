@@ -1,13 +1,39 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-04-17",
+      "source_date": "2026-04-17",
+      "file": "leads-2026-04-17.json",
+      "lead_count": 11,
+      "approved": true,
+      "approved_at": "2026-04-17T21:14:17.731Z",
+      "status": "active",
+      "supply_metrics": {
+        "valid_leads": 11,
+        "named_decision_makers": 9,
+        "fallback_contacts": 2,
+        "countries": [
+          "Argentina",
+          "Colombia",
+          "Mexico",
+          "Honduras"
+        ],
+        "contact_strength": {
+          "A": 4,
+          "B": 5,
+          "C": 2
+        },
+        "note": "11-lead batch: 6 named DMs + 13 total named individuals. Tier-segmented personalized emails, LinkedIn messages, and Day 0/Day 2-3 execution cycles embedded per lead."
+      }
+    },
+    {
       "batch_id": "batch-2026-04-16",
       "source_date": "2026-04-16",
       "file": "leads-2026-04-16.json",
       "lead_count": 8,
       "approved": true,
       "approved_at": "2026-04-16T21:50:43.883Z",
-      "status": "active",
+      "status": "archived",
       "supply_metrics": {
         "valid_leads": 8,
         "named_decision_makers": 6,
@@ -42,6 +68,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-04-16",
+  "active_batch_id": "batch-2026-04-17",
   "timezone": "America/New_York"
 }
