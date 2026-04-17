@@ -1014,12 +1014,31 @@ function sN(d){const ta=document.getElementById('nt-'+d);if(!ta)return;ur(d,{not
 function cpM(btn){const t=btn.previousElementSibling.textContent;navigator.clipboard.writeText(t).then(()=>{btn.textContent='copiado';btn.classList.add('ok');setTimeout(()=>{btn.textContent='copiar';btn.classList.remove('ok')},1500)})}
 
 // ═══ METRICS + GLOBAL PROGRESS ═══
+// Counter scoping:
+//   • Non-terminal states (SIN CONTACTAR / PARCIAL / CONTACTADO) are scoped to
+//     TL (today's batch) — they represent PROGRESS on today's outreach.
+//   • Terminal states (RESPONDIÓ / REUNIÓN / CERRADO) are counted across ALL
+//     approved leads — they represent LIFECYCLE conversions that can land any
+//     time from any batch. A reply on a lead from last week's batch still
+//     needs to show up in today's RESPONDIÓ count.
 function rM(){
   const c={};ST.forEach(s=>c[s]=0);let totalActs=0,doneActs=0,completedLeads=0;
-  TL.forEach(l=>{const d=dom(l.website);const rec=gr(d);const s=cSt(rec);c[s]=(c[s]||0)+1;
+  // Pass 1: Today's batch — count non-terminal states + progress bar
+  TL.forEach(l=>{const d=dom(l.website);const rec=gr(d);const s=cSt(rec);
+    if(['none','partial','contacted'].includes(s))c[s]=(c[s]||0)+1;
     const steps=getSteps(l);totalActs+=steps.length;
     const dn=steps.filter(s=>(rec.acts||[]).includes(s.id)).length;doneActs+=dn;
     if(s!=='none')completedLeads++;
+  });
+  // Pass 2: Terminal states across all APPROVED leads (TL + PL + SEED_PAST)
+  const approved=new Set();
+  TL.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
+  PL.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
+  if(typeof SEED_PAST!=='undefined'&&SEED_PAST)SEED_PAST.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
+  allR().forEach(r=>{
+    if(!approved.has(r.id))return;
+    const s=cSt(r);
+    if(['replied','meeting','closed'].includes(s))c[s]=(c[s]||0)+1;
   });
   const show=[['none',0],['partial',1],['contacted',2],['replied',3],['meeting',4],['closed',5]];
   document.getElementById('mB').innerHTML=show.map(([k,mi])=>`<div class="m"><div class="m-v mc${mi}">${c[k]||0}</div><div class="m-l">${SL[ST.indexOf(k)]}</div></div>`).join('');
