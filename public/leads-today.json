@@ -520,10 +520,10 @@
     ],
     "contactName": "Julio Pachon",
     "contactTitle": "CEO",
-    "contactEmail": "contacto@lavillaproducciones.com",
+    "contactEmail": "juliopachongonzalez@yahoo.com",
     "contactLinkedIn": "http://www.linkedin.com/in/julio-pach%c3%b3n-65b563240",
     "contactConfidence": "confirmed",
-    "contactSource": "website",
+    "contactSource": "founder_ig_contact_button",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/lavillaproducciones",
     "instagramHandle": "lavillaproducciones",
@@ -533,7 +533,7 @@
     "twitterUrl": null,
     "youtubeUrl": null,
     "vimeoUrl": null,
-    "contactPhone": "+57 3204016295",
+    "contactPhone": "+57 312 4684498",
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -600,10 +600,23 @@
     "source_date": "2026-04-16",
     "approved": true,
     "batch_id": "batch-2026-04-16",
-    "previousContactEmail": "lavillaproduccionescolombia@gmail.com",
+    "previousContactEmail": "contacto@lavillaproducciones.com",
     "founderInstagramHandle": "juliopachongonzalez",
     "founderInstagramUrl": "https://www.instagram.com/juliopachongonzalez/",
-    "recoveryNote": "Upgraded from generic gmail to company domain email; added founder personal IG via web→name→IG recovery."
+    "recoveryNote": "FULL 7-STEP PATH: website /julio-pachon + /edwin-diaz → company IG @lavillaproducciones → bio lists TWO tagged CEOs (@juliopachongonzalez + @edwin2005co) → visit each personal IG → Contact button on Julio revealed direct yahoo email + phone. Edwin Contact button pending manual check.",
+    "companyPhone": "+57 3204016295",
+    "additionalContacts": [
+      {
+        "contactName": "Edwin Daniel Díaz",
+        "contactTitle": "CEO",
+        "role": "co_founder",
+        "instagramHandle": "edwin2005co",
+        "instagramUrl": "https://www.instagram.com/edwin2005co/",
+        "websiteBio": "https://lavillaproducciones.com/edwin-diaz",
+        "contactSource": "company_ig_bio_tag",
+        "note": "Film Director / Director y productor. Co-CEO with Julio Pachón. Personal Contact-button email/phone not yet captured — check IG Contact button manually."
+      }
+    ]
   },
   {
     "companyName": "Voilà Estudios",
