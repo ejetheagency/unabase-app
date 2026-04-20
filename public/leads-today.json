@@ -1,680 +1,1767 @@
 [
   {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Sinapsis Producción",
-    "website": "https://sinapsisproduccion.com",
-    "country": "Argentina",
-    "industry": "content",
-    "estimatedSize": "mid",
-    "unabaseScore": 9,
-    "companyBrief": "Sinapsis Producción es una productora audiovisual de Buenos Aires especializada en desarrollo de formatos originales para Netflix, Disney, NBC Telemundo, TV Azteca y Canal 9. Liderada por Marcos Gorban, Silvina Acosta y Mario Borovich — equipo con 30+ años operando en Argentina, EE.UU., México, Chile, Perú, Colombia y Ecuador.",
-    "notableClients": [
-      "Netflix",
-      "Disney",
-      "NBC Telemundo",
-      "TV Azteca",
-      "Canal 9"
-    ],
-    "recentProjects": [
-      "Combate Argentina",
-      "El Domo del Dinero",
-      "El Mejor de los Peores (Emmy nom 2014)",
-      "La Hora Exacta",
-      "Dilema"
-    ],
-    "contactName": "Marcos Gorban",
-    "contactTitle": "Director General",
-    "contactEmail": "info@sinapsisproduccion.com",
-    "contactPhone": null,
-    "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/sinapsisprodu/",
-    "instagramHandle": "sinapsisprodu",
-    "twitterUrl": "https://x.com/sinapsisprodu",
-    "contactSource": "web_team_page",
-    "entertainmentSignals": 12,
-    "fitSignals": 4,
-    "fitReasons": [
-      "premium_clients",
-      "multi_market_ops",
-      "mid_size_team",
-      "high_ent_signals"
-    ],
-    "additionalContacts": [
-      {
-        "contactName": "Silvina Acosta",
-        "contactTitle": "Founding Partner",
-        "role": "co_founder",
-        "note": "Cofundadora. Actriz, psicóloga y directora de casting. Lidera Content Consultancy con perspectiva de género."
-      },
-      {
-        "contactName": "Mario Borovich",
-        "contactTitle": "Content Director",
-        "role": "content_director",
-        "contactLinkedIn": "https://www.linkedin.com/in/mario-borovich-41b08312/",
-        "note": "Creador de contenido, productor, guionista premiado. Licenciado en Psicología, profesor universitario."
-      }
-    ],
-    "recoveryNote": "Top-priority lead. 3 named DMs via /our-team page. Multi-market ops + streaming premium clients = highest-fit UnaBase target.",
-    "contactStrength": "A",
-    "emailStatus": "Generic",
-    "primaryContactPath": "Multi-channel: LinkedIn DM a Mario Borovich (desde LI personal de Scarlett, mensaje corto) → email info@sinapsisproduccion.com (pitch principal a Marcos)",
-    "dataGaps": "Sin email directo para Marcos Gorban · Sin LinkedIn personal para Marcos / Silvina · Sin IG personal · Sin teléfono",
-    "emailCercana": "Asunto: Presupuestación multi-network en Sinapsis\n\nMarcos,\n\nEstuve mirando el catálogo reciente de Sinapsis y el scope llama la atención — Estocolmo en Netflix, La Casa del Mar nominada al Emmy 2016, y en paralelo la mesa semanal con Mirtha. Eso es cinco formatos vivos en tres oficinas (AR/UY/US) moviéndose a velocidades distintas.\n\nLa pregunta que vengo haciendo a productoras con stack parecido: ¿cómo están consolidando presupuesto cuando un drama Netflix, una miniserie FLOW y un programa de Canal 13 conviven en la misma semana de caja? La mayoría termina con tres Excels paralelos y una persona interpretando cada uno.\n\nEn UnaBase armamos una vista única de budget multi-proyecto, multi-moneda, con control de versiones real — pensada para productoras en ese momento de escala.\n\n¿15 min esta semana?\n\nScarlett",
-    "linkedinMessage": "Mario, acabo de escribir a Marcos a info@sinapsisproduccion.com sobre algo específico para productoras multi-network. Te lo dejo por acá por si desde allí llega antes. Gracias.",
-    "executionCycle": {
-      "day0": "LinkedIn DM a Mario Borovich (desde LI personal de Scarlett) + email a info@sinapsisproduccion.com (pitch a Marcos)",
-      "day23": "Follow-up corto por email: \"Marcos, rebote rápido del mail del lunes. ¿Te sirve un slot de 15 min o prefieres que te mande el deck? — Scarlett\""
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Nitido Productora Audiovisual",
-    "website": "https://www.nitidoproductora.com",
-    "country": "Argentina",
-    "industry": "commercial",
-    "estimatedSize": "small",
-    "unabaseScore": 6,
-    "companyBrief": "Nitido Productora Audiovisual es una productora de contenido con sede en Buenos Aires especializada en branded content, spots publicitarios, videos institucionales y contenido inmersivo 360°. Fundada en 2018 (CUIT 30-71614243-0). Liderada por Alexis Chattah (CEO) y Felipe Fernández Koeraus (Presidente).",
-    "notableClients": [],
-    "recentProjects": [],
-    "contactName": "Alexis Chattah",
-    "contactTitle": "CEO & Creative Director",
-    "contactEmail": "contacto@nitidoproductora.com",
-    "previousContactEmail": "a***@nitidoproductora.com",
-    "contactPhone": "+54 11 4838-8810",
-    "companyPhone": "+54 11 7509-6372",
-    "contactLinkedIn": "https://www.linkedin.com/in/alexischattah/",
-    "instagramUrl": "https://www.instagram.com/nitidoproductora/",
-    "instagramHandle": "nitidoproductora",
-    "facebookUrl": "https://www.facebook.com/nitidoproductora/",
-    "apolloCompanyLinkedIn": "https://ar.linkedin.com/company/nitido-productora-audiovisual",
-    "contactSource": "linkedin_plus_registry",
-    "entertainmentSignals": 7,
-    "fitReasons": [
-      "mid_size_team",
-      "multi_format_ops"
-    ],
-    "additionalContacts": [
-      {
-        "contactName": "Felipe Fernández Koeraus",
-        "contactTitle": "Presidente",
-        "role": "president",
-        "note": "Registrado como presidente en Boletín Oficial Argentino (CUIT 30-71614243-0). Socio titular."
-      },
-      {
-        "contactName": "Ezequiel Slafer",
-        "contactTitle": "Director de Arte",
-        "role": "team"
-      },
-      {
-        "contactName": "Federico Belecco",
-        "contactTitle": "Diseñador Audiovisual & Editor Senior",
-        "role": "team"
-      }
-    ],
-    "recoveryNote": "CEO (Alexis Chattah) verificado vía ZoomInfo + LinkedIn. Born 1988, Industrial Design ORT. Email contacto@ verificado por operador; email directo de Alexis (masked) no accionable.",
-    "contactStrength": "B",
-    "emailStatus": "Generic",
-    "primaryContactPath": "Multi-channel: LinkedIn DM a Alexis Chattah (desde LI personal de Scarlett) → email contacto@nitidoproductora.com → WhatsApp +54 11 4838-8810 como respaldo a las 48h",
-    "dataGaps": "Email directo de Alexis bloqueado (masked, no accionable) · Sin IG personal · Sin LinkedIn personal para Felipe / Ezequiel / Federico",
-    "emailCercana": "Asunto: Presupuestar cuatro formatos en paralelo en Nitido\n\nAlexis,\n\nMirando Nitido desde afuera se nota el crecimiento — entre branded content, institucional, eventos y el 360° están tocando cuatro formatos con un equipo todavía chico. Ese es el punto donde presupuestar empieza a doler: cada cliente nuevo suma versiones, correos y planillas paralelas.\n\nPregunta directa: cuando arrancan un mes con cuatro productos corriendo, ¿cómo están cerrando cuánto costó cada uno por cliente sin reconstruir a mano al final?\n\nEn UnaBase armamos una herramienta para productoras en ese momento — una vista única de presupuesto que escala con el equipo sin sumar fricción administrativa.\n\nTe muestro en 10 min cómo lo están usando productoras argentinas que crecieron de 5 a 15 personas sin reventar los números.\n\nScarlett",
-    "linkedinMessage": "Alexis, te acabo de escribir a contacto@nitidoproductora.com con algo específico para productoras en el momento de escala de Nitido. Te lo dejo por acá también por si es más práctico. Gracias.",
-    "executionCycle": {
-      "day0": "LinkedIn DM a Alexis (desde LI personal de Scarlett) + email a contacto@nitidoproductora.com",
-      "day23": "WhatsApp a +54 11 4838-8810: \"Alexis, te escribí el lunes, ¿te quedó el mail? Si no, te dejo el link del deck por acá. — Scarlett\""
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Buena Movida",
-    "website": "https://www.buenamovida.com",
-    "country": "Colombia",
-    "industry": "film",
-    "estimatedSize": "small",
-    "unabaseScore": 6,
-    "companyBrief": "Buena Movida es una agencia audiovisual de Cali fundada en 2013 por Alejandro Montenegro Chacón. Especializada en documentales institucionales y contenido audiovisual para entidades públicas y privadas. Proyectos destacados: SOS Valle (10 ep, 2018), Aliadas: Mujeres construyendo paz (2016), Cali — Encuentro de Emociones (60 años Feria de Cali, 2017), Peaceful Views (Chocó, 2008).",
-    "notableClients": [
-      "Feria de Cali",
-      "Televisión Pública Colombiana"
-    ],
-    "recentProjects": [
-      "SOS Valle (2018)",
-      "Aliadas (2016)",
-      "Cali — Encuentro de Emociones (2017)",
-      "Peaceful Views (2008)"
-    ],
-    "contactName": "Alejandro Montenegro Chacón",
-    "contactTitle": "Fundador & Director",
-    "contactEmail": "produccion@buenamovida.com",
-    "previousContactEmail": "comercialbm@buenamovida.com",
-    "contactPhone": "+57 315 852 3898",
-    "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/buenamovida/",
-    "instagramHandle": "buenamovida",
-    "founderInstagramUrl": "https://www.instagram.com/montevisual/",
-    "founderInstagramHandle": "montevisual",
-    "contactSource": "web_team_page",
-    "entertainmentSignals": 10,
-    "fitReasons": [
-      "multi_format_ops",
-      "public_institutional_clients"
-    ],
-    "additionalContacts": [
-      {
-        "contactName": "Julian Montenegro",
-        "contactTitle": "Curador Internacional & Productor",
-        "role": "team",
-        "note": "Masters Fine Arts PUJ, curaduría artística y fotografía."
-      },
-      {
-        "contactName": "Mauricio Luque",
-        "contactTitle": "Director de Fotografía",
-        "role": "team",
-        "note": "30+ años de experiencia audiovisual."
-      }
-    ],
-    "recoveryNote": "Founder verificado vía /home team section. Fundado 2013. IG @montevisual probablemente handle personal de Alejandro (Montenegro + visual).",
-    "contactStrength": "B",
-    "emailStatus": "Generic",
-    "primaryContactPath": "Multi-channel: email produccion@buenamovida.com (pitch a Alejandro) → Instagram DM @montevisual como segundo toque tras 24–48h → WhatsApp +57 315 852 3898 como último recurso",
-    "dataGaps": "Sin email directo para Alejandro · Sin LinkedIn personal de ningún miembro · Sin IG personal de Julian / Mauricio",
-    "emailCercana": "Asunto: Documental + institucional + comercial en la misma caja\n\nAlejandro,\n\nVi el recorrido de Buena Movida y lo que hacen en documental público pega fuerte — SOS Valle diez capítulos, Aliadas, y encima 60 años de Feria de Cali en 2017. Eso es un abanico real: docs largos, institucional de agencia pública y comercial privado conviviendo en la misma oficina.\n\nLo que veo una y otra vez en productoras con tres tipos de cliente: cada formato tiene su plazo de pago, su margen y su forma de presupuestar. Cuadrar los tres en Excel termina siendo un trabajo aparte de fin de mes.\n\nUnaBase resuelve exactamente eso — una plataforma donde cada proyecto se presupuesta en su lógica pero todo consolida solo.\n\n¿Te funciona charlar 10 min esta semana?\n\nScarlett",
-    "linkedinMessage": null,
-    "executionCycle": {
-      "day0": "Email a produccion@buenamovida.com",
-      "day23": "Instagram DM a @montevisual: \"Alejandro, te escribí por mail el lunes. Te lo dejo acá por si es más fácil desde el celular. — Scarlett / UnaBase\""
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Fábrica Visual",
-    "website": "https://fabricavisual.com.mx",
+    "companyName": "Guayabo Films",
+    "website": "https://guayabofilms.com",
     "country": "Mexico",
-    "industry": "commercial",
-    "estimatedSize": "mid",
-    "unabaseScore": 7,
-    "companyBrief": "Fábrica Visual es una productora audiovisual de Guanajuato especializada en videos corporativos, industriales y de seguridad/capacitación para manufactura. 10+ años de operación, clientes premium: Ford, Kostal, Adecco. Fundada y dirigida por José Eduardo Saravia Gallart.",
-    "notableClients": [
-      "Ford",
-      "Kostal",
-      "Adecco"
-    ],
-    "recentProjects": [
-      "Videos de seguridad industrial",
-      "Training corporativo",
-      "Marketing B2B"
-    ],
-    "contactName": "José Eduardo Saravia Gallart",
-    "contactTitle": "Fundador & Director",
-    "contactEmail": "eduardo@fabricavisual.com.mx",
-    "contactPhone": "+52 442 811 5653",
-    "companyPhone": "+52 473 141 0792",
-    "contactLinkedIn": "https://www.linkedin.com/in/jos%C3%A9-eduardo-saravia-gallart-7888b188",
-    "instagramUrl": "https://www.instagram.com/fabricavisualmx/",
-    "instagramHandle": "fabricavisualmx",
-    "contactSource": "linkedin_plus_email",
-    "entertainmentSignals": 3,
-    "fitReasons": [
-      "recurring_corporate_clients",
-      "multi_client_parallel"
-    ],
-    "recoveryNote": "Founder verificado vía LinkedIn + email directo name-matched (eduardo@fabricavisual.com.mx). 10+ años. Clientes Ford/Kostal/Adecco.",
-    "contactStrength": "A",
-    "emailStatus": "Direct",
-    "primaryContactPath": "Email (directo) — eduardo@fabricavisual.com.mx (pitch) + LinkedIn touch (mismo día o siguiente, desde LI personal de Scarlett, mensaje corto)",
-    "dataGaps": "Sin IG personal",
-    "emailCercana": "Asunto: Tres clientes, tres formatos de cotización distintos\n\nEduardo,\n\nEstuve viendo el portafolio de Fábrica Visual y el mix Ford + Kostal + Adecco cuenta una historia muy específica: están operando en tres lógicas de presupuesto al mismo tiempo — automotriz de seguridad industrial, manufactura B2B europea y consultoría HR corporativa. Cada cliente pide un formato de reporte distinto.\n\nLa pregunta honesta: cuando tres clientes recurrentes piden tres formatos de cotización cada mes, ¿cómo están evitando que un video de training y un shoot comercial terminen presupuestados en la misma planilla con las mismas unidades?\n\nUnaBase está pensado para productoras como la tuya en Guanajuato que atienden industrial + corporate en paralelo — una vista por cliente, categorías por tipo de proyecto, y cierre de mes sin dolor.\n\n¿Te cuadra agendar 10 min esta semana?\n\nScarlett",
-    "linkedinMessage": "Eduardo, acabo de mandarte un email a eduardo@fabricavisual.com.mx sobre algo específico para productoras que manejan clientes industrial + corporate en paralelo. Te lo dejo por acá por si es más cómodo. Gracias.",
-    "executionCycle": {
-      "day0": "Email a eduardo@fabricavisual.com.mx + LinkedIn touch a Eduardo (mismo día)",
-      "day23": "Follow-up corto por email: \"Eduardo, ¿te llegó el mail del lunes? Si tenés 10 min esta semana te lo muestro rápido. — Scarlett\""
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Thau Honduras",
-    "website": "https://www.thauhonduras.com",
-    "country": "Honduras",
     "industry": "film",
-    "estimatedSize": "small",
-    "unabaseScore": 6,
-    "companyBrief": "Thau Honduras (Thau Films) es una casa productora cinematográfica fundada en 2014 en Tegucigalpa por Luis Flores Alvarenga. Opera en dos verticales: cine independiente (películas de autor) y cine publicitario. Filmografía: Soy Lluvia (Laura Bermúdez, doc), Los Niños Perdidos (Enrique Medrano, ficción), serie Tortilla. 15 años de trayectoria del fundador en producción hondureña.",
-    "notableClients": [],
-    "recentProjects": [
-      "Soy Lluvia",
-      "Los Niños Perdidos",
-      "Serie Tortilla"
-    ],
-    "contactName": "Luis Flores Alvarenga",
-    "contactTitle": "Fundador & Productor General",
-    "contactEmail": "thaudesignhn@gmail.com",
-    "contactPhone": null,
-    "contactLinkedIn": "https://www.linkedin.com/in/luis-flores-alvarenga-272b821b7/",
-    "instagramUrl": "https://www.instagram.com/thauhonduras/",
-    "instagramHandle": "thauhonduras",
-    "personalPortfolio": "https://luisfloresalvarenga.com",
-    "vimeoUrl": "https://vimeo.com/thauhonduras",
-    "contactSource": "web_team_about",
-    "entertainmentSignals": 13,
-    "fitReasons": [
-      "dual_vertical_ops",
-      "multi_project"
-    ],
-    "recoveryNote": "Founder verificado vía Thau About + LinkedIn + portafolio personal. Email gmail compartido con portafolio personal (thaudesignhn@gmail.com). 15 años en producción hondureña.",
-    "contactStrength": "A",
-    "emailStatus": "Direct",
-    "primaryContactPath": "Email (directo) — thaudesignhn@gmail.com (pitch) + LinkedIn touch (mismo día o siguiente, desde LI personal de Scarlett, mensaje corto)",
-    "dataGaps": "Sin email de dominio corporativo · Sin teléfono · Sin IG personal",
-    "emailCercana": "Asunto: Cine independiente + publicidad en la misma caja\n\nLuis,\n\nVi Soy Lluvia con Laura y Los Niños Perdidos con Enrique — y al mismo tiempo Thau corriendo publicidad comercial en paralelo. Son dos ritmos muy distintos compartiendo equipo.\n\nLo que siempre me llama la atención en productoras así: el cine independiente presupuesta por fondo y por etapa, mientras el comercial presupuesta por entrega. Cuadrar los dos flujos en la misma caja es donde la mayoría termina perdiendo margen invisible — horas de cine cubiertas con caja comercial sin que nadie se dé cuenta hasta fin de año.\n\nEn UnaBase resolvemos exactamente eso: separar la lógica de budget por vertical sin separar la operación.\n\n¿Tenés 10 min esta semana? Te muestro cómo funciona en productoras centroamericanas que operan con el mismo doble stack.\n\nScarlett",
-    "linkedinMessage": "Luis, acabo de escribirte a thaudesignhn@gmail.com con algo pensado para productoras que manejan cine independiente + publicidad en paralelo. Te lo dejo por acá también por si es más fácil. Gracias.",
-    "executionCycle": {
-      "day0": "Email a thaudesignhn@gmail.com + LinkedIn touch a Luis (mismo día)",
-      "day23": "Follow-up corto por email: \"Luis, rebote rápido del mail. ¿Slot corto esta semana o te mando el deck directo? — Scarlett\""
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Audioenlace Producciones",
-    "website": "https://audioenlacepro.com",
-    "country": "Colombia",
-    "industry": "film",
-    "estimatedSize": "mid",
-    "unabaseScore": 5,
-    "companyBrief": "Audioenlace Producciones es una productora audiovisual de Bogotá fundada en 2004 por Alejandro Oviedo (CEO & Productor Musical, Industrial Engineer de Uniandes). 20+ años de operación, 200+ producciones. Tres unidades de negocio paralelas: música, audiovisual y tech-marketing.",
-    "notableClients": [],
-    "recentProjects": [
-      "200+ producciones musicales y audiovisuales (2004-presente)"
-    ],
-    "contactName": "Alejandro Oviedo",
-    "contactTitle": "CEO & Fundador",
-    "contactEmail": "aoviedo@audioenlacepro.com",
-    "contactPhone": null,
-    "contactLinkedIn": "https://www.linkedin.com/in/alejandro-oviedo-49080580/",
-    "instagramUrl": "https://www.instagram.com/audioenlace.pro/",
-    "instagramHandle": "audioenlace.pro",
-    "contactSource": "linkedin_verified",
-    "entertainmentSignals": 3,
-    "fitReasons": [
-      "multi_unit_ops",
-      "long_tenure"
-    ],
-    "recoveryNote": "Founder verificado vía LinkedIn + directorios corporativos. Email aoviedo@ = inbox directo (name-match).",
-    "contactStrength": "A",
-    "emailStatus": "Direct",
-    "primaryContactPath": "Email (directo) — aoviedo@audioenlacepro.com (pitch) + LinkedIn touch (mismo día o siguiente, desde LI personal de Scarlett, mensaje corto)",
-    "dataGaps": "Sin teléfono · Sin IG personal",
-    "emailCercana": "Asunto: Cerrar mes con tres unidades en paralelo\n\nAlejandro,\n\n21 años y 200+ producciones después, Audioenlace está corriendo tres unidades en paralelo — música, audiovisual y tech-marketing. Es una operación sólida pero con una complejidad administrativa que crece silenciosa.\n\nLo que vengo viendo en productoras con ese perfil es siempre lo mismo: cada unidad factura distinto, tiene márgenes distintos y cierra mes en planillas distintas. A fin de año armar el consolidado se convierte en una semana de trabajo recuperando datos.\n\nUnaBase simplifica eso — una sola herramienta donde presupuestás, cerrás y consolidás por unidad sin tener que reconstruir nada.\n\nNo es una venta complicada. Es literalmente menos tiempo cuadrando Excel.\n\n¿10 min esta semana para que te lo muestre rápido?\n\nScarlett",
-    "linkedinMessage": "Alejandro, te acabo de escribir a aoviedo@audioenlacepro.com sobre algo para simplificar el cierre de mes en operaciones de tres unidades como la tuya. Te lo dejo por acá por si es más fácil. Gracias.",
-    "executionCycle": {
-      "day0": "Email a aoviedo@audioenlacepro.com + LinkedIn touch a Alejandro (mismo día)",
-      "day23": "Follow-up corto por email: \"Alejandro, ¿te quedó el mail del lunes? 10 min y te muestro en vivo cómo queda el cierre con las tres unidades. — Scarlett\""
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "New Walk Productions",
-    "website": "https://newwalkproductions.com",
-    "country": "Honduras",
-    "industry": "film",
-    "estimatedSize": "small",
-    "unabaseScore": 6,
-    "companyBrief": "New Walk Productions es una productora cinematográfica hondureña especializada en films, documentales y contenido publicitario. Cliente destacado: Facebook. Decision-maker público no identificado; outreach dirigido a productor/a general.",
+    "summary": "Somos una casa productora con más de catorce años de experiencia en México. Colaboramos con nuestros clientes creando y transformando grandes ideas, en los contenidos visuales más chingones.",
     "notableClients": [
       "Facebook"
     ],
     "recentProjects": [],
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "info@newwalkproductions.com",
-    "contactPhone": null,
-    "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/newwalkproduction/",
-    "instagramHandle": "newwalkproduction",
-    "contactSource": "deep_rescue",
-    "entertainmentSignals": 5,
-    "fitReasons": [
-      "enterprise_client"
-    ],
-    "recoveryNote": "Fallback: productora hondureña con un cliente enterprise (Facebook). Decision-maker no en web público — outreach role-based a info@. Considerar LinkedIn manual search como paso futuro.",
-    "contactStrength": "C",
-    "emailStatus": "Generic",
-    "primaryContactPath": "Multi-channel: email info@newwalkproductions.com (pitch dirigido a \"productor/a general\") → Instagram DM @newwalkproduction como seguimiento tras 48h",
-    "dataGaps": "Sin decision-maker nombrado · Sin LinkedIn · Sin IG personal · Sin teléfono · Sin email directo",
-    "emailCercana": "Asunto: Cliente enterprise + productora local = doble estándar de budget\n\nHola equipo de New Walk,\n\nEstuve mirando el trabajo que hacen y lo del cliente Facebook me llamó la atención — no es tan común en Centroamérica que una productora del tamaño de ustedes maneje un cliente enterprise de ese calibre. Ahí es donde aparece el desafío real: los clientes grandes piden presupuestos con un formato y un nivel de detalle distinto a los locales, y muchas productoras terminan armando cada cotización desde cero.\n\nPregunta para quien lleva producción o finanzas: ¿cómo están manejando ese doble estándar entre Facebook y proyectos más chicos sin duplicar trabajo administrativo?\n\nEn UnaBase armamos una plataforma específica para productoras que saltan ese escalón — se adapta al nivel de detalle que pide cada cliente sin rehacer todo.\n\n¿Puedo agendar 10 min con quien corresponde?\n\nScarlett",
-    "linkedinMessage": null,
-    "executionCycle": {
-      "day0": "Email a info@newwalkproductions.com",
-      "day23": "Instagram DM a @newwalkproduction: \"Hola, les escribí por mail el lunes preguntando por la persona que lleva producción/finanzas. Lo dejo acá también por si es más fácil dirigirme directo. — Scarlett / UnaBase\""
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Paranova Films",
-    "website": "https://www.paranovafilms.com",
-    "country": "Colombia",
-    "industry": "film",
     "estimatedSize": "mid",
-    "unabaseScore": 4,
-    "companyBrief": "Paranova Films S.A.S. es una productora de televisión colombiana fundada en 1976 en Cali (NIT 890311046). 45+ años produciendo telenovelas, series, programas deportivos, editing y producción en vivo. Representante legal no público (gated en Datacrédito/EMIS); outreach dirigido a dirección general / productor ejecutivo.",
-    "notableClients": [],
-    "recentProjects": [
-      "45+ años de TV colombiana: telenovelas, deportes, live production, series"
-    ],
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "paranovafilms@gmail.com",
-    "contactPhone": "+57 314 880 4518",
-    "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/paranova_films/",
-    "instagramHandle": "paranova_films",
-    "contactSource": "company_email",
-    "entertainmentSignals": 6,
-    "fitReasons": [
-      "legacy_operation",
-      "multi_format"
-    ],
-    "recoveryNote": "Fallback Tier 3: casa de TV con 45 años, legal rep gated en paywall. Pedigree supera ausencia de nombre. Outreach role-based.",
-    "contactStrength": "C",
-    "emailStatus": "Generic",
-    "primaryContactPath": "Multi-channel: email paranovafilms@gmail.com (pitch dirigido a \"dirección general / productor ejecutivo\") → Instagram DM @paranova_films como seguimiento tras 48h",
-    "dataGaps": "Sin decision-maker nombrado · Sin LinkedIn · Sin IG personal · Sin email de dominio corporativo",
-    "emailCercana": "Asunto: Digitalizar 45 años de presupuestación sin romper lo que funciona\n\nHola equipo de Paranova,\n\nCuarenta y cinco años produciendo televisión en Colombia es una trayectoria poco común — telenovela, deportivo, vivo y post todo bajo el mismo techo. Ese es el tipo de operación que tiene la memoria institucional más difícil de reemplazar: la gente sabe presupuestar cada formato porque lo llevan haciendo décadas.\n\nEl reto con una casa así es distinto al de una productora nueva. No es aprender a presupuestar — es digitalizar lo que ya funciona sin romperlo.\n\nUnaBase está diseñado justamente para migrar operaciones heredadas de Excel a una plataforma sin perder la lógica interna de cada formato. Telenovela sigue presupuestando como telenovela, deportivo como deportivo — pero todo consolidado en una sola vista.\n\n¿Puedo agendar 10 min con la persona que hoy lleva presupuestación?\n\nScarlett",
-    "linkedinMessage": null,
-    "executionCycle": {
-      "day0": "Email a paranovafilms@gmail.com",
-      "day23": "Instagram DM a @paranova_films: \"Hola, les escribí por mail el lunes preguntando por la persona que lleva presupuestación. Lo dejo acá por si es más cómodo. — Scarlett / UnaBase\""
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
+    "unabaseScore": 7,
     "entertainmentVerified": true,
-    "fitVerified": true,
+    "entertainmentSignals": 7,
     "nicheVerified": true,
     "nicheReason": "niche_confirmed",
-    "companyName": "StoryLab Argentina",
-    "website": "https://storylab.com.ar",
-    "country": "Argentina",
-    "industry": "content",
-    "estimatedSize": "large",
-    "unabaseScore": 9,
-    "companyBrief": "StoryLab Argentina es una productora de contenido audiovisual premium fundada en 2013 por Nacho Viale (CEO) y Diego Palacio (CCO). Oficinas en Argentina, Uruguay y EE.UU. Producen para Netflix (Estocolmo), DirecTV (La Casa del Mar — nominada al Emmy 2016), Canal 13 (Almorzando con Mirtha Legrand, La Noche de Mirtha), Telefe (La dueña), FLOW (Último Primer Día, Frágiles, Nieve Roja 2025).",
-    "notableClients": [
-      "Netflix",
-      "DirecTV",
-      "Canal 13",
-      "Telefe",
-      "FLOW"
-    ],
-    "recentProjects": [
-      "Estocolmo (Netflix)",
-      "La Casa del Mar (DirecTV — Emmy nom 2016)",
-      "Almorzando con Mirtha Legrand",
-      "La Noche de Mirtha",
-      "Nieve Roja (FLOW 2025)",
-      "Frágiles (FLOW)"
-    ],
-    "contactName": "Nacho Viale",
-    "contactTitle": "CEO",
-    "contactEmail": "prensa@storylab.com.ar",
-    "previousContactEmail": "info@storylab.com.ar",
-    "contactPhone": "+54 5272 0400",
-    "companyPhone": "+598 2900 9029",
-    "contactLinkedIn": "https://www.linkedin.com/in/nacho-viale-2239815",
-    "instagramUrl": "https://www.instagram.com/storylabarg/",
-    "instagramHandle": "storylabarg",
-    "instagramFollowers": "13K",
-    "twitterUrl": "https://x.com/storylabarg",
-    "apolloCompanyLinkedIn": "https://ar.linkedin.com/company/storylabsa",
-    "facebookUrl": "https://www.facebook.com/StoryLabArg/",
-    "youtubeUrl": "https://youtube.com/@storylabargentina.oficial",
-    "contactSource": "web_team_page",
-    "entertainmentSignals": 15,
-    "fitSignals": 5,
+    "companyBrief": "Guayabo Films es una productora mexicana con 14 años creando contenido visual para marcas grandes como Facebook. Con 45 empleados, se posicionan como especialistas en transformar ideas en 'contenidos visuales más chingones'.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Rodrigo — 14 años produciendo para clientes como Facebook, probablemente coordinas varios proyectos premium al mismo tiempo.\n\n¿cómo manejan los presupuestos cuando hay múltiples producciones corriendo en paralelo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
     "fitReasons": [
       "premium_clients",
-      "multi_market_ops",
-      "emmy_nominee",
-      "multi_network",
-      "large_team"
+      "mid_size_team",
+      "high_ent_signals"
     ],
-    "additionalContacts": [
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "rodrigo@guayabofilms.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/guayabofilms/?hl=es-la",
+    "instagramHandle": "guayabofilms",
+    "instagramBio": "See Instagram photos and videos from Guayabo (@guayabofilms) Log In",
+    "instagramFollowers": "15K",
+    "facebookUrl": "https://www.facebook.com/guayabofilms/",
+    "twitterUrl": "https://twitter.com/guayabofilms?lang=es",
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/guayabofilms",
+    "contactPhone": "+52 (55) 4774 0569",
+    "emailPatterns": null,
+    "scoutLog": [
       {
-        "contactName": "Diego Palacio",
-        "contactTitle": "CCO",
-        "role": "cofounder",
-        "note": "Chief Creative Officer, cofundador."
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
       },
       {
-        "contactName": "Lorena Bruquetas",
-        "contactTitle": "Executive Producer",
-        "role": "team"
+        "step": 1,
+        "found": "org_only",
+        "name": null
       },
       {
-        "contactName": "Denise Obremski",
-        "contactTitle": "Finance & Administration Director",
-        "role": "team",
-        "note": "Potencial campeón interno para adopción de UnaBase (dolor en presupuestación multi-territorio)."
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
       },
       {
-        "contactName": "M. Eugenia Sancho Goñalons",
-        "contactTitle": "Legal Director",
-        "role": "team"
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "rodrigo@guayabofilms.com",
+          "admon@guayabofilms.com",
+          "poncho@guayabofilms.com"
+        ],
+        "genericEmails": [
+          "info@guayabofilms.com"
+        ],
+        "phones": [
+          "+52 (55) 4774 0569",
+          "+52 55 39966041"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/guayabofilms/?hl=es-la",
+          "facebook": "https://www.facebook.com/guayabofilms/",
+          "twitter": "https://twitter.com/guayabofilms?lang=es",
+          "youtube": null,
+          "vimeo": "https://vimeo.com/guayabofilms",
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/guayabofilms/?hl=es-la",
+        "igHandle": "guayabofilms",
+        "igFollowers": "15K",
+        "socialEmail": "info@guayabofilms.com",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "rodrigo@guayabofilms.com",
+          "additional": 0,
+          "upgraded": false
+        }
       }
     ],
-    "recoveryNote": "Top-priority Tier 1. CEO (Nacho Viale, grandson of Mirtha Legrand) con LinkedIn verificado. Equipo completo en /about-us. IG 13K followers. Multi-territorio + multi-network + Emmy-level production = máximo fit UnaBase.",
-    "contactStrength": "B",
-    "emailStatus": "Generic",
-    "primaryContactPath": "Multi-channel: LinkedIn DM a Nacho Viale (desde LI personal de Scarlett) → email prensa@storylab.com.ar (pitch) → phone +54 5272 0400 como respaldo final",
-    "dataGaps": "Sin email directo para Nacho Viale o Diego Palacio · Sin IG personal · Sin LinkedIn personal de Diego / Lorena / Denise / Eugenia",
-    "emailCercana": "Asunto: Arquitectura de budget para stack multi-network\n\nNacho,\n\nSiguiendo lo que viene con StoryLab — Estocolmo en Netflix, La Casa del Mar nominada al Emmy, Nieve Roja arrancando en agosto con FLOW, y Mirtha semanal en Canal 13 — se repite algo en productoras con stack multi-network: el presupuesto deja de ser un Excel y pasa a ser un problema de arquitectura.\n\nTres oficinas (AR/UY/US), tres monedas, y cada cliente con su propio formato de reporte financiero. La mayoría termina con alguien de finanzas dedicando el 40% del tiempo traduciendo números entre sistemas.\n\nUnaBase es una plataforma de presupuestación pensada para productoras en ese momento — multi-territorio, multi-cliente, consolidación real en una sola vista.\n\n¿Tenemos 15 min esta semana? Lo mostramos con datos de operaciones comparables.\n\nScarlett",
-    "linkedinMessage": "Nacho, acabo de mandarte un email a prensa@storylab.com.ar con algo específico para el stack multi-network de StoryLab. Te lo dejo por acá también — es más práctico desde el móvil. Gracias.",
-    "executionCycle": {
-      "day0": "LinkedIn DM a Nacho Viale (desde LI personal de Scarlett) + email a prensa@storylab.com.ar",
-      "day23": "Llamada a +54 5272 0400 (oficina AR) preguntando por asistente de Nacho para confirmar recepción del mail"
-    }
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/guayabo-films",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 45,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "¡Hola! Soy Scarlett de UnaBase. Vimos su trabajo para Facebook - impresionante. Ayudamos a productoras como ustedes con el tema de presupuestos. ¿Les interesa una demo rápida?",
+    "readyToSend": true,
+    "contactDecisionPower": "Medio",
+    "contactWhyThisPerson": "Con email @guayabofilms.com y nombre Rodrigo, probablemente es productor o director con poder de decisión sobre herramientas operativas.",
+    "whyThisLead": [
+      "Casa productora establecida con 14 años manejando múltiples proyectos simultáneos",
+      "45 empleados y clientes como Facebook indican volumen considerable de producción",
+      "Productoras mid-size necesitan control de presupuestos en múltiples proyectos activos"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su experiencia con Facebook y posicionamiento premium",
+      "Email como canal primario al contacto directo rodrigo@guayabofilms.com",
+      "Tono profesional pero cercano, estilo mexicano casual-business"
+    ],
+    "conversationAngle": "Con 14 años produciendo para clientes como Facebook, seguro manejan varios presupuestos simultáneos - les mostramos cómo productoras similares organizan mejor sus números.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "instagram",
+      "opcional": "whatsapp"
+    },
+    "emailCercana": "hola Rodrigo — 14 años produciendo para clientes como Facebook, probablemente coordinas varios proyectos premium al mismo tiempo.\n\n¿cómo manejan los presupuestos cuando hay múltiples producciones corriendo en paralelo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Estimado equipo de Guayabo Films,\n\nSoy Scarlett del equipo de UnaBase. Ayudamos a más de 300 productoras a manejar presupuestos de forma más visual y organizada.\n\nCon su experiencia trabajando para Facebook y 14 años en la industria, seguro coordinan múltiples presupuestos complejos - justo donde nuestra plataforma genera mayor impacto.\n\nMe encantaría mostrarles en 10 minutos cómo otras productoras mexicanas están optimizando este proceso.\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @guayabofilms",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar: 'Increíble la calidad de producción que manejan! 👏'",
+      "dm": "¡Hola! Soy Scarlett de UnaBase. Vimos su trabajo para Facebook - impresionante. Ayudamos a productoras como ustedes con el tema de presupuestos. ¿Les interesa una demo rápida?"
+    },
+    "whatsappMessage": "Hola! Soy Scarlett de UnaBase. Vimos el trabajo que hacen en Guayabo Films para clientes como Facebook. Ayudamos a productoras a manejar presupuestos más fácil. ¿10 min para mostrarles la plataforma?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Rodrigo, ayudamos a productoras como Guayabo Films con presupuestación",
+      "followUp": "Gracias por conectar! Vimos su trabajo con Facebook - impresionante. Nos encantaría mostrarles cómo otras productoras mexicanas están optimizando sus presupuestos con nuestra plataforma."
+    },
+    "outreachSequence": [
+      "Día 1: Enviar email personalizado + seguir en Instagram",
+      "Día 2: Dar engagement en Instagram y enviar DM",
+      "Día 4: Mensaje de WhatsApp con enfoque casual",
+      "Día 7: Email final ofreciendo caso de éxito específico de productora mexicana"
+    ],
+    "keyInsight": "Productora establecida con clientes premium como Facebook tiene necesidad probada de manejar presupuestos complejos múltiples.",
+    "source_date": "2026-04-20",
+    "approved": false
   },
   {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Zeta Positivo Animation Studio",
-    "website": "https://www.zetapositivo.com.ar",
-    "country": "Argentina",
+    "companyName": "Mono Dorado Animation Studios",
+    "website": "https://monodoradoanima.com",
+    "country": "Colombia",
     "industry": "animation",
-    "estimatedSize": "mid",
-    "unabaseScore": 8,
-    "companyBrief": "Zeta Positivo es un estudio argentino de animación 3D, VFX y motion graphics fundado en 2008 por los hermanos Maximiliano Gaspar (Owner) y Sergio Gaspar (Director de Animación). Ubicado en Garín (Buenos Aires). Especializados en TV spots, branded content, series animadas y colecciones NFT. Cartera de marcas blue-chip: Coca-Cola, Pepsi, Fanta, Nestlé, Eco de los Andes, Claro, Sancor, Raid, Glade, Lysoform, Off, Baygon.",
+    "summary": "Ir al contenido principal Somos una corporación y productora audiovisual colombiana enfocada en el entretenimiento para niños y adolescentes. Realizamos películas animadas, videojuegos, realidad aumentada y contenido transmedia. También dictamos talleres de realización, guión, animación, fotografía e ilustración tradicional y digital a poblaciones vulnerables.",
     "notableClients": [
-      "Coca-Cola",
-      "Pepsi",
-      "Fanta",
-      "Nestlé",
-      "Eco de los Andes",
-      "Claro",
-      "Sancor",
-      "Raid",
-      "Glade",
-      "Lysoform",
-      "Off",
-      "Baygon"
+      "Facebook"
     ],
     "recentProjects": [
-      "TV spots multi-marca",
-      "Series animadas",
-      "NFT Collections",
-      "Motion graphics broadcast"
+      "de acuerdo al presupuesto que tengas"
     ],
-    "contactName": "Maximiliano Gaspar",
-    "contactTitle": "Owner",
-    "contactEmail": null,
-    "contactPhone": null,
-    "contactLinkedIn": null,
-    "apolloCompanyLinkedIn": "https://ar.linkedin.com/company/zetapositivo",
-    "instagramUrl": "https://www.instagram.com/zeta.positivo.animation.studio/",
-    "instagramHandle": "zeta.positivo.animation.studio",
-    "facebookUrl": "https://www.facebook.com/zetapositivoanimationstudio/",
-    "vimeoUrl": "https://vimeo.com/zetapositivo",
-    "contactSource": "registry_plus_directory",
-    "entertainmentSignals": 11,
-    "fitSignals": 5,
-    "fitReasons": [
-      "blue_chip_clients",
-      "multi_brand_parallel",
-      "long_tenure",
-      "b2b_studio"
-    ],
-    "additionalContacts": [
-      {
-        "contactName": "Sergio Gaspar",
-        "contactTitle": "Director de Animación",
-        "role": "co_lead",
-        "note": "Hermano de Maximiliano. Co-lidera operación creativa."
-      }
-    ],
-    "recoveryNote": "Tier 1 en fit comercial. 12+ marcas blue-chip paralelas. Emails masked (no accionables). IG es único canal actionable — LinkedIn de empresa no se usa para outreach personal. Desde 2008.",
-    "contactStrength": "B",
-    "emailStatus": "Masked",
-    "primaryContactPath": "Instagram DM a @zeta.positivo.animation.studio (único canal accionable — emails masked no se usan y el LinkedIn de empresa no aplica para outreach personal)",
-    "dataGaps": "Emails masked (no accionables) · Sin LinkedIn personal para Maximiliano / Sergio · Sin IG personal · Sin teléfono",
-    "emailCercana": "Asunto: Doce marcas blue-chip en una sola pipeline\n\nMaxi,\n\nEstuve mirando el portfolio de Zeta Positivo y la lista de clientes impone — Coca, Pepsi, Fanta, Nestlé, Claro, Sancor, Raid, Glade. Son doce marcas blue-chip compartiendo una sola pipeline de VFX, animación y spots. Cada una con su propia agencia, su calendario y su formato de cotización.\n\nLa pregunta honesta que vengo haciendo a estudios en ese rango: ¿cómo están presupuestando un spot de Coca y una serie animada para Pepsi en paralelo sin que el equipo administrativo pase el 30% del tiempo reformateando cotizaciones por cliente?\n\nUnaBase resuelve la capa de presupuestación multi-cliente — un solo backend, formatos de export por cliente.\n\n¿15 min esta semana? Vale la pena verlo.\n\nScarlett",
-    "linkedinMessage": null,
-    "executionCycle": {
-      "day0": "Instagram DM a @zeta.positivo.animation.studio — versión corta del email (primer párrafo + CTA de 15 min)",
-      "day23": "Segundo Instagram DM: referencia al primero + pedir canal alternativo (mail o teléfono de oficina)"
-    }
-  },
-  {
-    "source_date": "2026-04-17",
-    "approved": true,
-    "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
+    "estimatedSize": "small",
+    "unabaseScore": 6,
     "entertainmentVerified": true,
-    "fitVerified": true,
+    "entertainmentSignals": 9,
     "nicheVerified": true,
     "nicheReason": "niche_confirmed",
-    "companyName": "Media Branders",
-    "website": "https://mediabranders.com",
-    "country": "Argentina",
-    "industry": "commercial",
+    "companyBrief": "Monodoradoanima es una productora audiovisual colombiana especializada en entretenimiento infantil que produce películas animadas, videojuegos y contenido transmedia. Trabajan con clientes como Facebook y ofrecen talleres educativos a poblaciones vulnerables.",
+    "approachAngle": null,
+    "pitchEmailES": "hola — animación para Facebook, videojuegos y contenido transmedia todo bajo la misma operación.\n\n¿cómo manejan los presupuestos cuando cada formato tiene costos tan distintos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "premium_clients",
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "corporacionmonodorado@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "social_only",
+    "contactSource": "social",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/mono_dorado_animation/",
+    "instagramHandle": "mono_dorado_animation",
+    "instagramBio": "See Instagram photos and videos from Mono Dorado Animation Studios (@mono_dorado_animation) Log In",
+    "instagramFollowers": "937",
+    "facebookUrl": "https://www.facebook.com/monodoradoanimation/",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "+57 310 3734457",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/mono_dorado_animation/",
+          "facebook": "https://www.facebook.com/monodoradoanimation/",
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/mono_dorado_animation/",
+        "igHandle": "mono_dorado_animation",
+        "igFollowers": "937",
+        "socialEmail": "corporacionmonodorado@gmail.com",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "name_derive",
+        "email": "corporacionmonodorado@gmail.com"
+      },
+      {
+        "step": "name_confirm",
+        "confirmed": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "mono_dorado_animation",
+        "followers": "937",
+        "email": null,
+        "phone": null,
+        "triedHandles": 7
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+57 310 3734457"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "corporacionmonodorado@gmail.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/monodorado",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 1,
+    "manualNote": "Email personal encontrado (corporacionmonodorado@gmail.com) — verificar nombre antes de enviar",
+    "contactVenues": 3,
+    "contactPath": "company_fallback",
+    "tier": "tier3",
+    "instagramDM": "Hola! Vi el trabajo que hacen con animación y transmedia. Trabajamos con productoras ayudando a simplificar presupuestos. Te interesa conocer cómo? 🎬",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como empresa de 1 empleado, esta persona es el founder/CEO que toma todas las decisiones de herramientas y presupuesto.",
+    "whyThisLead": [
+      "Manejan múltiples formatos (animación, videojuegos, transmedia) que requieren presupuestos complejos",
+      "Cliente de Facebook indica capacidad de trabajar con grandes marcas y proyectos escalables",
+      "Productora de entretenimiento con múltiples líneas de negocio encaja perfectamente con UnaBase"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su trabajo con Facebook y múltiples formatos",
+      "Email como canal primario",
+      "Tono profesional pero cálido, reconociendo su trabajo social"
+    ],
+    "conversationAngle": "Como manejan presupuestos tan diversos entre películas animadas para Facebook, videojuegos y talleres sociales - debe ser complejo trackear costos por proyecto.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "WhatsApp",
+      "opcional": "Instagram DM"
+    },
+    "emailCercana": "hola — animación para Facebook, videojuegos y contenido transmedia todo bajo la misma operación.\n\n¿cómo manejan los presupuestos cuando cada formato tiene costos tan distintos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Estimado equipo de Monodoradoanima,\n\nSoy Scarlett del equipo de UnaBase, plataforma de presupuestación para productoras de entretenimiento.\n\nVimos su trabajo diverso entre animación para Facebook, videojuegos y contenido transmedia, y creemos que nuestra herramienta podría simplificar significativamente el manejo de presupuestos entre proyectos tan diversos.\n\nMe gustaría mostrarles cómo otras productoras optimizan sus procesos financieros con nuestra plataforma.\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @mono_dorado_animation",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar: 'Increíble la calidad de animación que logran! 👏'",
+      "dm": "Hola! Vi el trabajo que hacen con animación y transmedia. Trabajamos con productoras ayudando a simplificar presupuestos. Te interesa conocer cómo? 🎬"
+    },
+    "whatsappMessage": "Hola! Soy Scarlett de UnaBase. Vimos el trabajo increíble que hacen en Monodoradoanima con Facebook y sus proyectos transmedia. Ayudamos a productoras como ustedes a manejar presupuestos de forma más visual y simple. Les interesa una demo rápida?",
+    "linkedinPlaybook": {
+      "connectionNote": "Trabajamos con productoras de entretenimiento optimizando presupuestos - me encantaría conectar",
+      "followUp": "Hola! Vi el trabajo diverso que hacen entre animación, videojuegos y transmedia. Ayudamos a productoras a simplificar el manejo de presupuestos entre proyectos tan diferentes. Te interesa conocer cómo?"
+    },
+    "outreachSequence": [
+      "Día 1: Enviar email personalizado",
+      "Día 2: Seguir en Instagram y engagement",
+      "Día 4: WhatsApp de seguimiento",
+      "Día 7: LinkedIn connection si no hay respuesta"
+    ],
+    "keyInsight": "Empresa pequeña pero con cliente grande (Facebook) indica crecimiento y necesidad de profesionalizar procesos financieros.",
+    "source_date": "2026-04-20",
+    "approved": false
+  },
+  {
+    "companyName": "DCFILMS.MX",
+    "website": "https://dcfilms.mx",
+    "country": "Mexico",
+    "industry": "film",
+    "summary": "DC Films es una Agencia de Produccion Audiovisual en la CDMX. Producimos cinematografí para cine, cinematografía comercial, producción audiovisual corporativa y renta de equipo audiovisual profesional.",
+    "notableClients": [
+      "Netflix",
+      "Amazon",
+      "ViX",
+      "Facebook"
+    ],
+    "recentProjects": [
+      "PARA NUEVAS AUDIENCIAS",
+      "CONTACTANOS HOY CONECTAR PARA COMUNICAR M"
+    ],
     "estimatedSize": "small",
     "unabaseScore": 7,
-    "companyBrief": "Media Branders es una productora audiovisual B2B2G de Buenos Aires fundada en 2017, con 15+ años de experiencia acumulada del equipo. Co-fundada por Sebastián Geraldo. Clientes institucionales: Mercado Libre, Intel, Banco Mundial, La Serenísima Mastellone, Embajada Británica, Embajada de Francia, Embajada de Italia, Hospital Británico, Fundación River, UDESA, Universidad San Andrés, IFF, Vaio, Neotel, Cámara de Comercio, Elea.",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "DC Films es una agencia de producción audiovisual en CDMX especializada en cinematografía comercial, corporativa y cine para grandes plataformas. Trabajan con Netflix, Amazon, ViX y Facebook produciendo contenido para nuevas audiencias.",
+    "approachAngle": null,
+    "pitchEmailES": "hola — Netflix, Amazon, ViX, Facebook... mucho tipo de producción corriendo desde una misma agencia.\n\n¿cómo manejan los presupuestos cuando tienen proyectos tan distintos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "info@dcfilms.mx",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/dcfilms___/",
+    "instagramHandle": "dcfilms___",
+    "instagramBio": "See Instagram photos and videos from Wix Studio | For Web Creators (@wixstudio)",
+    "instagramFollowers": "312K",
+    "facebookUrl": "https://www.facebook.com/WixStudio",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "55 3974 9774",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "warn": "IG handle @wixstudio does not match domain \"dcfilms\" — may be wrong company"
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@dcfilms.mx"
+        ],
+        "phones": [
+          "55 3974 9774"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/wixstudio",
+          "facebook": "https://www.facebook.com/WixStudio",
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 0
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/wixstudio",
+        "igHandle": "wixstudio",
+        "igFollowers": "312K",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "wixstudio",
+        "followers": "312K",
+        "email": null,
+        "phone": null,
+        "triedHandles": 10
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "55 3974 9774"
+        ]
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/dcfilms___/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@dcfilms.mx",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "manualNote": "Email generico (info@dcfilms.mx) — contactar tambien por Instagram @wixstudio",
+    "whoisCheckPending": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vimos sus producciones para Netflix y Amazon 🎬 En UnaBase ayudamos a productoras como ustedes a simplificar la gestión de presupuestos. ¿Les interesa una demo rápida?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Email general de la empresa pero como agencia pequeña, probablemente llegue al fundador o director de producción.",
+    "whyThisLead": [
+      "Producen múltiples tipos de contenido (cine, comercial, corporativo) que requieren presupuestación compleja",
+      "Trabajan con clientes premium (Netflix, Amazon) y tienen 312K seguidores en IG mostrando crecimiento",
+      "Agencias de producción audiovisual son usuarios perfectos de UnaBase para gestionar presupuestos por proyecto"
+    ],
+    "actionBlock": [
+      "Enviar email inicial hoy",
+      "Instagram para engagement inmediato",
+      "Tono profesional pero cercano - hablar de igual a igual en la industria"
+    ],
+    "conversationAngle": "Con clientes como Netflix y Amazon, seguramente manejan múltiples presupuestos complejos por proyecto - mostrarles cómo UnaBase puede simplificar la gestión financiera de sus producciones.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "WhatsApp"
+    },
+    "emailCercana": "hola — Netflix, Amazon, ViX, Facebook... mucho tipo de producción corriendo desde una misma agencia.\n\n¿cómo manejan los presupuestos cuando tienen proyectos tan distintos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Estimado equipo de DC Films,\n\nSoy Scarlett del equipo de UnaBase, plataforma de presupuestación para la industria del entretenimiento.\n\nConocemos el trabajo que realizan para Netflix, Amazon y ViX, y creemos que nuestra herramienta puede optimizar significativamente la gestión de presupuestos en sus producciones audiovisuales.\n\nMe gustaría coordinar una breve demostración para mostrarles cómo más de 300 productoras utilizan UnaBase para simplificar su planificación financiera.\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @dcfilms___",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo especifico en un post reciente (1 linea de ejemplo)",
+      "dm": "Hola! Vimos sus producciones para Netflix y Amazon 🎬 En UnaBase ayudamos a productoras como ustedes a simplificar la gestión de presupuestos. ¿Les interesa una demo rápida?"
+    },
+    "whatsappMessage": "Hola equipo de DC Films! Soy Scarlett de UnaBase 👋 Vimos sus producciones para Netflix y Amazon - trabajamos con 300+ productoras simplificando la gestión de presupuestos. ¿Les interesa ver cómo funciona?",
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Enviar email inicial + seguir en Instagram",
+      "Dia 2: Dar like y comentar posts recientes de Instagram",
+      "Dia 4: Enviar WhatsApp de follow-up",
+      "Dia 7: Instagram DM final ofreciendo demo específica"
+    ],
+    "keyInsight": "Con clientes premium como Netflix y Amazon, ya manejan presupuestos complejos y entienden el valor de herramientas profesionales.",
+    "source_date": "2026-04-20",
+    "approved": false
+  },
+  {
+    "companyName": "Vertize Digital",
+    "website": "https://vertizedigital.com",
+    "country": "Colombia",
+    "industry": "animation",
+    "summary": "Certificados internacionalmente en los más importantes software de animación así como una amplia experiencia en capacitación y formación de nuevos talentos en la industria de la animación digital. Vertize Digital LTDA es una empresa registrada en la Cámara de Comercio de Bogotá con NIT. Estamos muy satisfechos con esta relación comercial que para nosotros es de largo plazo.",
     "notableClients": [
-      "Mercado Libre",
-      "Intel",
-      "Banco Mundial",
-      "La Serenísima Mastellone",
-      "Embajada Británica",
-      "Embajada de Francia",
-      "Embajada de Italia",
-      "Hospital Británico",
-      "Fundación River",
-      "UDESA",
-      "Universidad San Andrés",
-      "IFF",
-      "Vaio",
-      "Neotel",
-      "Cámara de Comercio",
-      "Elea"
+      "Facebook"
     ],
     "recentProjects": [
-      "Corporate video",
-      "2D animation",
-      "Event streaming",
-      "Training videos"
+      "PROYECTOS DESTACADOS Serie Animada Josué",
+      "David y Goliat Proyecto Itaka Face Replac"
     ],
-    "contactName": "Sebastián Geraldo",
-    "contactTitle": "Cofundador",
-    "contactEmail": "info@mediabranders.com",
-    "previousContactEmail": "s***@mediabranders.com",
-    "contactPhone": "+54 11 5462-8440",
-    "contactLinkedIn": null,
-    "apolloCompanyLinkedIn": "https://ar.linkedin.com/company/mediabranders",
-    "instagramUrl": "https://www.instagram.com/mediabranders/",
-    "instagramHandle": "mediabranders",
-    "facebookUrl": "https://www.facebook.com/MediaBranders/",
-    "youtubeUrl": "https://youtube.com/channel/UCyg6RMraZiVVsL5Cmsz1ioQ",
-    "contactSource": "zoominfo_plus_web",
-    "entertainmentSignals": 5,
+    "estimatedSize": "small",
+    "unabaseScore": 6,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": false,
+    "nicheReason": "niche_reject: \\bcámara\\s+de\\b",
+    "companyBrief": "Vertize Digital es un estudio de animación de 2 personas certificado internacionalmente que crea contenido para clientes como Facebook. Producen series animadas como 'Josué, David y Goliat' y proyectos de face replacement desde Bogotá.",
+    "approachAngle": null,
+    "pitchEmailES": "hola — series animadas para Facebook desde Bogotá, certificados internacionalmente en los softwares líderes de animación.\n\n¿cómo manejan los presupuestos cuando tienen proyectos de diferentes formatos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
     "fitReasons": [
-      "institutional_clients",
-      "compliance_varied",
-      "multi_segment_b2b2g"
+      "multiple_projects",
+      "premium_clients"
     ],
-    "recoveryNote": "Tier 2. Cofundador verificado (Sebastián Geraldo, ZoomInfo). Cartera institucional muy sólida. Email directo masked — usar info@ con pitch a nombre.",
-    "contactStrength": "B",
-    "emailStatus": "Generic",
-    "primaryContactPath": "Multi-channel: email info@mediabranders.com (pitch a Sebastián) → Instagram DM @mediabranders como seguimiento tras 48h → WhatsApp +54 11 5462-8440 como respaldo final",
-    "dataGaps": "Email directo de Sebastián bloqueado (masked) · Sin LinkedIn personal para Sebastián · Sin IG personal",
-    "emailCercana": "Asunto: Compliance por cliente: embajada vs corporate vs banca\n\nSebastián,\n\nMirando Media Branders desde afuera, el mix de clientes es una radiografía — Mercado Libre, Intel, Banco Mundial, tres embajadas, UDESA. Están presupuestando simultáneamente para corporate multinacional, diplomacia cultural, banca y academia. Cada uno exige su propio formato de reporte de budget.\n\nPregunta concreta: cuando un shoot para una embajada y otro para Mercado Libre corren en la misma semana, ¿están rehaciendo la cotización dos veces porque los estándares de compliance son distintos, o ya tienen forma de separar eso?\n\nEn UnaBase armamos una plataforma para productoras B2B2G como ustedes — una sola fuente de verdad de budget con formatos de export por tipo de cliente (corporate, diplomático, académico, financiero).\n\n¿Puedo mostrártelo en 10 min esta semana?\n\nScarlett",
-    "linkedinMessage": null,
-    "executionCycle": {
-      "day0": "Email a info@mediabranders.com",
-      "day23": "Instagram DM a @mediabranders: \"Sebastián, te escribí por mail el lunes sobre la parte de compliance distinto por cliente. Te lo dejo por acá por si es más fácil. — Scarlett / UnaBase\" → si no hay respuesta en 24h adicionales, WhatsApp +54 11 5462-8440"
-    }
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "inf@vertizedigital.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/vertizedigital",
+    "instagramHandle": "vertizedigital",
+    "instagramBio": "See Instagram photos and videos from Vertize Digital (@vertizedigital) Log In",
+    "instagramFollowers": "127",
+    "facebookUrl": "https://www.facebook.com/VertizeDigital",
+    "twitterUrl": "https://wwwtwitter.com/vertizedigital",
+    "youtubeUrl": "https://www.youtube.com/channel/UCVCMbqUehCOKDdB2pjZ56iA",
+    "vimeoUrl": "https://vimeo.com/vertizedigital",
+    "contactPhone": "900.272.594",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [
+          "inf@vertizedigital.com",
+          "yourmail@domain.com"
+        ],
+        "genericEmails": [
+          "info@vertizedigital.com"
+        ],
+        "phones": [
+          "900.272.594",
+          "+57 300 211 7825",
+          "(57)300 211",
+          "+7(111)12345678"
+        ],
+        "name": "Main Architect\nAustin",
+        "social": {
+          "instagram": "https://www.instagram.com/vertizedigital",
+          "facebook": "https://www.facebook.com/VertizeDigital",
+          "twitter": "https://wwwtwitter.com/vertizedigital",
+          "youtube": "https://www.youtube.com/channel/UCVCMbqUehCOKDdB2pjZ56iA",
+          "vimeo": "https://vimeo.com/vertizedigital",
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/vertizedigital",
+        "igHandle": "vertizedigital",
+        "igFollowers": "127",
+        "socialEmail": "info@vertizedigital.com",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Main Architect\nAustin"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "inf@vertizedigital.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/vertize-digital-ltda",
+    "apolloCompanyPhone": "+57 300 2117825",
+    "apolloEmployeeCount": 2,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "instagramDM": "Hola! Vi su trabajo de animación para Facebook, impresionante calidad. Trabajo con UnaBase ayudando estudios como el suyo con presupuestación. ¿Les interesaría una demo rápida?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como CEO de un equipo pequeño, Austin toma todas las decisiones financieras y operativas directamente.",
+    "whyThisLead": [
+      "Producen múltiples proyectos de animación que requieren presupuestación detallada",
+      "Cliente de Facebook indica capacidad de pago y proyectos de escala",
+      "Estudios pequeños de animación necesitan herramientas profesionales de budgeting sin complejidad enterprise"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando sus proyectos con Facebook",
+      "Email directo a inf@vertizedigital.com",
+      "Tono profesional pero cercano, reconociendo su expertise"
+    ],
+    "conversationAngle": "Con clientes como Facebook y proyectos de series animadas, seguramente manejan presupuestos complejos en Excel - les mostramos cómo otros estudios de animación en LATAM optimizan esto con UnaBase.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram DM",
+      "opcional": "WhatsApp"
+    },
+    "emailCercana": "hola — series animadas para Facebook desde Bogotá, certificados internacionalmente en los softwares líderes de animación.\n\n¿cómo manejan los presupuestos cuando tienen proyectos de diferentes formatos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Estimado Austin,\n\nSoy Scarlett del equipo de UnaBase. Vimos el excelente trabajo que realizan en Vertize Digital con clientes como Facebook y sus proyectos de series animadas.\n\nAyudamos a más de 300 empresas creativas a optimizar su presupuestación. Estudios de animación como el suyo, con proyectos complejos de múltiples entregas, encuentran muy útil nuestra plataforma.\n\n¿Tendría 10 minutos esta semana para mostrarle cómo otros estudios de animación en Colombia están usando UnaBase?\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @vertizedigital",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo especifico en un post reciente (1 linea de ejemplo)",
+      "dm": "Hola! Vi su trabajo de animación para Facebook, impresionante calidad. Trabajo con UnaBase ayudando estudios como el suyo con presupuestación. ¿Les interesaría una demo rápida?"
+    },
+    "whatsappMessage": "Hola Austin! Soy Scarlett de UnaBase. Vi el trabajo que hacen con Facebook en animación - muy buena calidad. Ayudamos estudios como Vertize con presupuestación de proyectos. ¿10 min para mostrarles la plataforma?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Austin, vi el trabajo de Vertize Digital con Facebook. Ayudo estudios de animación con presupuestación.",
+      "followUp": "Gracias por conectar Austin. UnaBase ayuda a más de 300 empresas creativas con budgeting. Con sus proyectos de series animadas seguramente manejan presupuestos complejos - ¿les interesaría ver cómo optimizamos esto?"
+    },
+    "outreachSequence": [
+      "Dia 1: Email personalizado mencionando Facebook y series animadas",
+      "Dia 2: Follow en Instagram y engagement en posts recientes",
+      "Dia 4: WhatsApp casual si no responde email",
+      "Dia 7: LinkedIn connection request como último intento"
+    ],
+    "keyInsight": "Cliente de Facebook indica solvencia económica y necesidad de herramientas profesionales para manejar presupuestos de proyectos complejos.",
+    "source_date": "2026-04-20",
+    "approved": false
+  },
+  {
+    "companyName": "Habanero Films",
+    "website": "https://habanerofilms.com",
+    "country": "Mexico",
+    "industry": "film",
+    "summary": "Habanero Films | Productora | Tuxpan 69A, Roma Sur, Mexico City, CDMX .... Habanero Films - LinkedIn. Habanero films is a production company with more than 15 years of experience producing content for television, several documentaries, short films and feature films throughout Mexico and Latin America.",
+    "notableClients": [],
+    "recentProjects": [],
+    "estimatedSize": "large",
+    "unabaseScore": 6,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Habanero Films es una productora mexicana con 15 años de experiencia creando contenido televisivo, documentales y largometrajes en México y Latinoamérica. Operan desde Roma Sur con presencia digital activa en Instagram.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Anders — 15 años produciendo documentales, series y largometrajes en México y Latinoamérica.\n\n¿cómo manejan los presupuestos cuando hay varios formatos tan distintos corriendo al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "large_team"
+    ],
+    "contactName": "Anders Ehrnberg",
+    "contactTitle": null,
+    "contactEmail": "anders@habanerofilms.co",
+    "contactLinkedIn": null,
+    "contactConfidence": "name_from_email",
+    "contactSource": "press",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/habanero_films/",
+    "instagramHandle": "habanero_films",
+    "instagramBio": "See Instagram photos and videos from Habanero Films (@habanero_films)",
+    "instagramFollowers": "853",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "+52 (55) 5207 7327",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@habaneropower.com",
+          "contact@habanerofilms.com"
+        ],
+        "phones": [
+          "+52 (55) 5207 7327"
+        ],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": [
+          "anders@habanerofilms.co"
+        ]
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/habanero_films/",
+        "igHandle": "habanero_films",
+        "igFollowers": "853",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": "55 5207 7327",
+        "gmbOwner": null
+      },
+      {
+        "step": "name_derive",
+        "email": "anders@habanerofilms.co"
+      },
+      {
+        "step": "name_confirm",
+        "confirmed": "Anders Ehrnberg",
+        "via": "prefix_match"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "habanero_films",
+        "followers": "853",
+        "email": null,
+        "phone": null,
+        "triedHandles": 13
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+52 (55) 5207 7327",
+          "55 5207 7327"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Anders Ehrnberg"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "nektarconk"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "nektarconk",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "anders@habanerofilms.co",
+          "additional": 1,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/habanero-films",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 1,
+    "manualNote": "Founder IG(s) identified (@nektarconk) — check IG Contact button manually for direct email + phone.",
+    "contactVenues": 3,
+    "additionalContacts": [
+      {
+        "instagramHandle": "nektarconk",
+        "instagramUrl": "https://www.instagram.com/nektarconk/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "\udde3𝗥𝗢𝗗𝗨𝗖𝗧𝗢𝗥𝗔 🎬 🍸K de Nektar en @nektarconk"
+      }
+    ],
+    "contactPath": "company_fallback",
+    "tier": "tier1",
+    "instagramDM": "Hola! Vi el trabajo de Habanero y me encantó. Trabajo con UnaBase ayudando a productoras a optimizar presupuestos. ¿Les interesaría conocer la plataforma?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como contacto principal de la empresa puede aprobar herramientas que optimicen la gestión de presupuestos de producción.",
+    "whyThisLead": [
+      "15 años produciendo múltiples formatos (TV, documentales, largometrajes) requiere gestión compleja de presupuestos",
+      "Productora establecida con operaciones en México y Latinoamérica indica volumen de proyectos",
+      "Empresa de entretenimiento madura que necesita herramientas profesionales de presupuestación"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su trayectoria de 15 años y diversidad de formatos",
+      "Email como canal primario",
+      "Tono profesional pero cercano"
+    ],
+    "conversationAngle": "Con 15 años manejando presupuestos complejos entre documentales, series y largometrajes, Habanero podría beneficiarse de una herramienta que unifique toda esa gestión financiera en la nube.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "WhatsApp",
+      "opcional": "Instagram DM"
+    },
+    "emailCercana": "hola Anders — 15 años produciendo documentales, series y largometrajes en México y Latinoamérica.\n\n¿cómo manejan los presupuestos cuando hay varios formatos tan distintos corriendo al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Estimado Anders,\n\nSoy Scarlett del equipo de UnaBase. Hemos trabajado con más de 300 empresas en la industria creativa optimizando la gestión de presupuestos.\n\nViendo la trayectoria de 15 años de Habanero Films produciendo contenido tan diverso desde documentales hasta largometrajes en México y Latinoamérica, creo que nuestra plataforma podría ser muy valiosa para ustedes.\n\n¿Tendría disponibilidad para una demo rápida esta semana?\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @habanero_films",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: '15 años creando contenido increíble! 👏'",
+      "dm": "Hola! Vi el trabajo de Habanero y me encantó. Trabajo con UnaBase ayudando a productoras a optimizar presupuestos. ¿Les interesaría conocer la plataforma?"
+    },
+    "whatsappMessage": "Hola Anders! Soy Scarlett de UnaBase. Vi que Habanero lleva 15 años produciendo contenido increíble por toda Latinoamérica. Ayudamos a productoras a gestionar presupuestos de manera más eficiente. ¿Te interesa una demo rápida?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Anders! Trabajo con productoras como Habanero optimizando gestión de presupuestos.",
+      "followUp": "Gracias por conectar! Con la experiencia de Habanero en múltiples formatos, creo que UnaBase podría ser muy útil para optimizar sus procesos de presupuestación. ¿Te interesa conocer la plataforma?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email cercana + seguir en Instagram",
+      "Dia 2: Dar engagement en Instagram + comentar post",
+      "Dia 4: WhatsApp de seguimiento si no hay respuesta",
+      "Dia 7: Email formal final mencionando productoras similares que usan UnaBase"
+    ],
+    "keyInsight": "15 años de experiencia y diversidad de formatos indica procesos maduros que se beneficiarían de optimización digital.",
+    "source_date": "2026-04-20",
+    "approved": false
+  },
+  {
+    "companyName": "Piragna",
+    "website": "https://piragna.com",
+    "country": "Colombia",
+    "industry": "animation",
+    "summary": "Projects 2D Animation Series We choose to delve into the dark abyss of madness and revelry in 2D animation, where artistic essence and magic intertwine like dancing shadows. Its twisted strokes and colors awaken a visually unique and eternally unsettling style, capable of whispering emotions with a macabre expressiveness. This technique, in perfect harmony with our passion for weaving shadowy narratives and spawning captivating worlds, becomes the sinister canvas where we breathe life into our most twisted fantasies.",
+    "notableClients": [],
+    "recentProjects": [
+      "to life in the most efficient and cost ef"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 5,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 13,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Who we are es un estudio de animación 2D en Colombia que se especializa en series animadas con estilo visual dark y macabro. Equipo de 10 personas liderado por Valet Siv Manrique como Director General y Artístico.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Valet — series 2D con un estilo visual único, 10 personas coordinando producción de animación.\n\n¿cómo manejan los presupuestos cuando producen por episodios o temporadas simultáneas?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "contactName": "Valet Siv Manrique",
+    "contactTitle": "GENERAL AND ART DIRECTOR. CO-FOUNDER",
+    "contactEmail": "piragnastudios@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/piragna.animacion/",
+    "instagramHandle": "piragna.animacion",
+    "instagramBio": "See Instagram photos and videos from Piragna S.A.S (@piragna.animacion) Log In",
+    "instagramFollowers": "8,738",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@PiragnaSAS",
+    "vimeoUrl": null,
+    "contactPhone": "(057) 31386424",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "piragnastudios@gmail.com",
+          "produccion@piragna.com"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "(057) 31386424",
+          "3138642464",
+          "+3138642464",
+          "+3023656021"
+        ],
+        "name": "Valet Siv Manrique",
+        "social": {
+          "instagram": "https://www.instagram.com/piragna.animacion/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": "https://www.youtube.com/@PiragnaSAS",
+          "vimeo": null,
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/piragna.animacion/",
+        "igHandle": "piragna.animacion",
+        "igFollowers": "8,738",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Valet Siv Manrique"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "soyelfrailejon"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "soyelfrailejon",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "piragnastudios@gmail.com",
+          "additional": 1,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/the-who-we-are-project",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 10,
+    "additionalContacts": [
+      {
+        "instagramHandle": "soyelfrailejon",
+        "instagramUrl": "https://www.instagram.com/soyelfrailejon/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "mos realidades de fantasía Creadores de @soyelfrailejon",
+        "contactName": "Frailejón Ernesto Pérez"
+      }
+    ],
+    "manualNote": "Founder IG(s) identified (@soyelfrailejon) — check IG Contact button manually for direct email + phone.",
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "instagramDM": "Hola Valet! Vi el increíble trabajo visual que hacen en Who we are. Trabajo con estudios de animación ayudándolos con budgeting. ¿Te interesaría ver cómo optimizar presupuestos por episodio? 🎬",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Es cofundador y Director General - toma todas las decisiones financieras y operativas del estudio.",
+    "whyThisLead": [
+      "Producen series de animación 2D que requieren presupuestación compleja por episodios y temporadas",
+      "Estudio mid-size de 10 empleados con crecimiento en Instagram (8,7K seguidores) indica operación activa",
+      "Productora de entretenimiento animado es el target exacto de UnaBase"
+    ],
+    "actionBlock": [
+      "Enviar email directo + seguir en Instagram",
+      "Email primario, Instagram secundario",
+      "Tono profesional pero creativo que respete su estética única"
+    ],
+    "conversationAngle": "Mostrarle cómo otros estudios de animación manejan presupuestos por episodio y temporada de forma visual, especialmente cuando tienen múltiples series en desarrollo simultáneo.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram",
+      "opcional": "WhatsApp"
+    },
+    "emailCercana": "hola Valet — series 2D con un estilo visual único, 10 personas coordinando producción de animación.\n\n¿cómo manejan los presupuestos cuando producen por episodios o temporadas simultáneas?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Estimado Valet,\n\nSoy Scarlett del equipo de UnaBase. Hemos estado revisando el trabajo de Who we are y nos impresiona su enfoque único en animación 2D.\n\nAyudamos a más de 300 productoras de entretenimiento a gestionar presupuestos complejos de forma visual y eficiente. Entendemos los desafíos específicos de presupuestar series animadas con múltiples episodios y el nivel de detalle artístico que manejan.\n\nMe gustaría mostrarle cómo otros estudios de animación están optimizando sus procesos de budgeting. ¿Tendría 10 minutos esta semana para una demo rápida?\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @piragna.animacion",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo específico sobre su estilo visual único o proceso creativo",
+      "dm": "Hola Valet! Vi el increíble trabajo visual que hacen en Who we are. Trabajo con estudios de animación ayudándolos con budgeting. ¿Te interesaría ver cómo optimizar presupuestos por episodio? 🎬"
+    },
+    "whatsappMessage": "Hola Valet! Soy Scarlett de UnaBase. Vi el trabajo increíble que hacen con animación 2D en Who we are. Ayudamos a estudios como el suyo a manejar presupuestos de series por episodio de forma más visual. ¿10 min para mostrarte la plataforma?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Valet, trabajo con estudios de animación como Who we are optimizando sus procesos de budgeting.",
+      "followUp": "Gracias por conectar! Me encanta el enfoque visual único que tienen en Who we are. Me gustaría mostrarte cómo otros estudios de animación están manejando presupuestos por episodio y temporada de forma más eficiente. ¿Tienes 10 minutos esta semana?"
+    },
+    "outreachSequence": [
+      "Dia 1: Email inicial + seguir Instagram",
+      "Dia 2: Likes y comentario específico en Instagram",
+      "Dia 4: DM por Instagram si no responde email",
+      "Dia 7: WhatsApp final con propuesta concreta"
+    ],
+    "keyInsight": "Studio de animación mid-size con proyectos de series necesita exactamente lo que ofrece UnaBase para budgeting complejo por episodios.",
+    "source_date": "2026-04-20",
+    "approved": false
+  },
+  {
+    "companyName": "bit producción de medios digitales",
+    "website": "https://bit-pmd.com",
+    "country": "Mexico",
+    "industry": "film",
+    "summary": "bit producción de medios digitales es una agencia productora audiovisual ubicada en CDMX especializado en spots de TV y cine, videoclip, cortometrajes, video corporativo y documentales.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 4,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 7,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "bit producción de medios digitales es una productora audiovisual en CDMX especializada en spots de TV, cine, videoclips y documentales. Trabajan con clientes como Facebook y manejan múltiples formatos creativos desde su equipo compacto de 3 personas.",
+    "approachAngle": null,
+    "pitchEmailES": "hola Juan Carlos — spots para Facebook, cine, videoclips y corporativo desde un equipo de 3.\n\n¿cómo manejan los presupuestos cuando cada formato tiene variables tan distintas de crew y post?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "premium_clients",
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "juancarlos@bit-pmd.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/bitpmd",
+    "instagramHandle": "bitpmd",
+    "instagramBio": "See Instagram photos and videos from bit producción de medios digitales (@bitpmd)",
+    "instagramFollowers": "455",
+    "facebookUrl": "https://www.facebook.com/bitpmd",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/bitpmd",
+    "contactPhone": "+52(55)5682 2276",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [
+          "juancarlos@bit-pmd.com"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "+52(55)5682 2276",
+          "+52(55)6235 4310"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/bitpmd",
+          "facebook": "https://www.facebook.com/bitpmd",
+          "twitter": null,
+          "youtube": null,
+          "vimeo": "https://vimeo.com/bitpmd",
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/bitpmd",
+        "igHandle": "bitpmd",
+        "igFollowers": "455",
+        "socialEmail": "juancarlos@bit-pmd.com",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "juancarlos@bit-pmd.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/bit-pmd",
+    "apolloCompanyPhone": "+52 55 6235 4310",
+    "apolloEmployeeCount": 3,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vimos su trabajo con Facebook y otros proyectos. Ayudamos a productoras como ustedes a simplificar la presupuestación. ¿Les interesa conocer más?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Con solo 3 empleados, Juan Carlos likely es fundador/socio y toma decisiones sobre herramientas operacionales.",
+    "whyThisLead": [
+      "Manejan múltiples formatos (TV, cine, videoclips, corporativo) que requieren presupuestación diferenciada",
+      "Equipo pequeño trabajando con clientes grandes como Facebook indica crecimiento y necesidad de eficiencia",
+      "Productoras audiovisuales necesitan UnaBase para manejar presupuestos complejos de crew, equipo y post-producción"
+    ],
+    "actionBlock": [
+      "Enviar email directo a juancarlos@bit-pmd.com mencionando su trabajo con Facebook",
+      "Email como canal primario",
+      "Tono profesional pero cercano, directo al pain point de presupuestación"
+    ],
+    "conversationAngle": "Trabajando con clientes como Facebook desde un equipo de 3 personas, seguro saben lo complejo que es presupuestar spots de TV vs documentales vs videoclips - cada formato tiene variables completamente diferentes.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram DM",
+      "opcional": "WhatsApp"
+    },
+    "emailCercana": "hola Juan Carlos — spots para Facebook, cine, videoclips y corporativo desde un equipo de 3.\n\n¿cómo manejan los presupuestos cuando cada formato tiene variables tan distintas de crew y post?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Estimado Juan Carlos,\n\nSoy Scarlett del equipo de UnaBase. Vimos el trabajo diverso que realizan en bit producción - desde spots para Facebook hasta documentales.\n\nAyudamos a más de 300 productoras a simplificar la presupuestación de proyectos audiovisuales. Sabemos que manejar presupuestos de TV, cine y videoclips requiere flexibilidad que las hojas de cálculo no ofrecen.\n\n¿Tendría 10 minutos esta semana para mostrarle cómo UnaBase puede optimizar sus procesos?\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @bitpmd",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Excelente trabajo en este proyecto! La calidad visual está increíble 👏'",
+      "dm": "Hola! Vimos su trabajo con Facebook y otros proyectos. Ayudamos a productoras como ustedes a simplificar la presupuestación. ¿Les interesa conocer más?"
+    },
+    "whatsappMessage": "Hola Juan Carlos! Soy Scarlett de UnaBase. Vimos el trabajo que hacen para Facebook y otros clientes. Ayudamos a productoras como bit pmd a manejar presupuestos de diferentes formatos más fácil. ¿10 minutos para mostrarles?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Juan Carlos, vi el trabajo diverso de bit pmd y me encantaría conectar",
+      "followUp": "Gracias por conectar! UnaBase ayuda a productoras como bit pmd a manejar presupuestos complejos más eficientemente. ¿Te interesa conocer cómo funciona?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email cercano",
+      "Dia 2: Seguir en Instagram y dar likes",
+      "Dia 4: DM en Instagram con enfoque casual",
+      "Dia 7: WhatsApp directo mencionando Facebook"
+    ],
+    "keyInsight": "Equipo pequeño manejando clientes grandes como Facebook indica alta necesidad de eficiencia en presupuestación y procesos.",
+    "source_date": "2026-04-20",
+    "approved": false
+  },
+  {
+    "companyName": "Team Toon Studio",
+    "website": "https://teamtoonstudio.com",
+    "country": "Colombia",
+    "industry": "animation",
+    "summary": "Inicio is a production company.",
+    "notableClients": [],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 3,
+    "entertainmentVerified": true,
+    "entertainmentSignals": 8,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Teamtoonstudio es un estudio de animación colombiano de 34 empleados que produce contenido animado. Con casi 8K seguidores en Instagram, están activos digitalmente pero no tienen información pública sobre sus clientes o proyectos específicos.",
+    "approachAngle": null,
+    "pitchEmailES": "hola — estudio de animación de 34 personas, múltiples proyectos corriendo en Colombia.\n\n¿cómo manejan los presupuestos cuando tienen varios proyectos o episodios activos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 1,
+    "fitReasons": [
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "cammgo@teamtoonstudio.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "press_confirmed",
+    "contactSource": "press",
+    "contactStatus": null,
+    "instagramUrl": "http://instagram.com/teamtoonstudio",
+    "instagramHandle": "teamtoonstudio",
+    "instagramBio": "See Instagram photos and videos from Team Toon Studio (@teamtoonstudio)",
+    "instagramFollowers": "7,985",
+    "facebookUrl": "http://www.facebook.com/teamtoonstudio",
+    "twitterUrl": "https://twitter.com/TeamToonStudio",
+    "youtubeUrl": null,
+    "vimeoUrl": "http://vimeo.com/user30920164",
+    "contactPhone": "+573003322633",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "http://instagram.com/teamtoonstudio",
+          "facebook": "http://www.facebook.com/teamtoonstudio",
+          "twitter": "https://twitter.com/TeamToonStudio",
+          "youtube": null,
+          "vimeo": "http://vimeo.com/user30920164",
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": "Camila Gómez Co",
+        "emails": [
+          "cammgo@teamtoonstudio.com"
+        ]
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": [
+          "diana@teamtoonstudio.com",
+          "alejandro@teamtoonstudio.com",
+          "cammgo@teamtoonstudio.com"
+        ]
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": "Camila Gómez",
+        "emails": [
+          "cammgo@teamtoonstudio.com"
+        ]
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "http://instagram.com/teamtoonstudio",
+        "igHandle": "teamtoonstudio",
+        "igFollowers": "7,987",
+        "socialEmail": "contacto@teamtoonstudio.com",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "teamtoonstudio",
+        "followers": "7,985",
+        "email": null,
+        "phone": null,
+        "triedHandles": 7
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+573003322633"
+        ]
+      },
+      {
+        "step": "mismatch_check",
+        "name": "Camila Gómez Co",
+        "email": "cammgo@teamtoonstudio.com",
+        "result": "MISMATCH — clearing name"
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "cammgo@teamtoonstudio.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/teamtoonstudio",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 34,
+    "contactVenues": 3,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vimos el increíble trabajo que hacen en animación 🎬 Somos UnaBase - ayudamos a estudios como ustedes con herramientas de presupuestación más eficientes. ¿Les interesa saber más?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Sin información del rol específico, pero el email sugiere contacto operativo que puede dirigirnos al tomador de decisiones.",
+    "whyThisLead": [
+      "Estudio de animación que maneja múltiples proyectos requiere control preciso de presupuestos por episodio/temporada",
+      "Estudio mediano de 34 empleados tiene complejidad operativa suficiente para necesitar herramientas especializadas",
+      "Industria de animación encaja perfectamente con UnaBase - manejan presupuestos de producción complejos con múltiples líneas"
+    ],
+    "actionBlock": [
+      "Enviar email inicial para identificar al Producer/Director correcto",
+      "Empezar con email directo al contacto disponible",
+      "Tono profesional pero cercano - mercado colombiano valora calidez"
+    ],
+    "conversationAngle": "Los estudios de animación como Teamtoonstudio manejan presupuestos complejos por proyecto con múltiples variables - UnaBase puede simplificar este proceso y darles mejor control financiero.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "WhatsApp",
+      "opcional": "Instagram"
+    },
+    "emailCercana": "hola — estudio de animación de 34 personas, múltiples proyectos corriendo en Colombia.\n\n¿cómo manejan los presupuestos cuando tienen varios proyectos o episodios activos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "emailFormal": "Estimado equipo de Teamtoonstudio,\n\nSoy Scarlett del equipo de UnaBase, plataforma especializada en presupuestación para la industria del entretenimiento.\n\nHemos trabajado con más de 300 productoras ayudándoles a optimizar el manejo de sus presupuestos de producción. Viendo que Teamtoonstudio es un estudio establecido manejando múltiples proyectos de animación, creemos que nuestra herramienta puede agregarles mucho valor.\n\n¿Podrían conectarme con quien maneja la parte financiera/productiva para una demo rápida de 10 minutos?\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @teamtoonstudio",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar algo específico sobre su estilo de animación o proyecto mostrado",
+      "dm": "Hola! Vimos el increíble trabajo que hacen en animación 🎬 Somos UnaBase - ayudamos a estudios como ustedes con herramientas de presupuestación más eficientes. ¿Les interesa saber más?"
+    },
+    "whatsappMessage": "Hola! Soy Scarlett de UnaBase 👋 Ayudamos a estudios de animación como Teamtoonstudio a manejar sus presupuestos de producción de forma más eficiente. ¿Tienen 10 minutos esta semana para una demo rápida?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola! Trabajo con UnaBase ayudando a estudios de animación a optimizar sus procesos de presupuestación.",
+      "followUp": "Gracias por conectar! Vimos el trabajo de Teamtoonstudio y nos encanta lo que hacen. ¿Te interesa conocer cómo UnaBase puede ayudarles con el manejo de presupuestos de producción? Es súper específico para su industria."
+    },
+    "outreachSequence": [
+      "Día 1: Enviar email inicial + seguir en Instagram",
+      "Día 2: Dar engagement en Instagram + enviar WhatsApp si no hay respuesta al email",
+      "Día 4: Segundo email más específico sobre dolores de presupuestación en animación",
+      "Día 7: Último follow-up ofreciendo caso de estudio de otro estudio de animación"
+    ],
+    "keyInsight": "Estudio mediano de animación con presencia digital fuerte sugiere operaciones sólidas que se beneficiarían de herramientas de presupuestación especializadas.",
+    "source_date": "2026-04-20",
+    "approved": false
   }
 ]
