@@ -579,18 +579,27 @@ async function sbLoadAll(){
         }
       }
     });
-    // Load actions — filtered by client_id
+    // Load actions — filtered by client_id. Capture earliest completed_at
+    // per (lead, channel) so we can backfill auto-anchor messages below for
+    // any action that was logged without a corresponding message.
     const{data:acts}=await sb.from('actions').select('*').eq('completed',true).eq('client_id',CLIENT_ID);
     Object.values(D).forEach(r=>{if(r.acts)r.acts=[]});
-    if(acts)acts.forEach(a=>{if(D[a.lead_id]&&!D[a.lead_id].acts.includes(a.channel))D[a.lead_id].acts.push(a.channel)});
+    const actionTs={}; // { leadId: { channel: earliest_completed_at } }
+    if(acts)acts.forEach(a=>{
+      if(!D[a.lead_id])return;
+      if(!D[a.lead_id].acts.includes(a.channel))D[a.lead_id].acts.push(a.channel);
+      if(!actionTs[a.lead_id])actionTs[a.lead_id]={};
+      const prev=actionTs[a.lead_id][a.channel];
+      if(!prev||(a.completed_at&&new Date(a.completed_at)<new Date(prev)))actionTs[a.lead_id][a.channel]=a.completed_at;
+    });
     // Load messages — filtered by client_id
     const{data:msgs}=await sb.from('messages_sent').select('*').eq('client_id',CLIENT_ID);
     if(msgs)msgs.forEach(m=>{if(D[m.lead_id]){const existing=D[m.lead_id].msgs||[];if(!existing.find(x=>x.ts===m.sent_at))existing.push({ch:m.channel,tx:m.message_text,ts:m.sent_at});D[m.lead_id].msgs=existing}});
     // Load notes — filtered by client_id
     const{data:nts}=await sb.from('notes').select('*').eq('client_id',CLIENT_ID);
     if(nts)nts.forEach(n=>{if(D[n.lead_id])D[n.lead_id].notes=n.note_text||''});
-    // SELF-HEAL: if a lead has a message for channel X but no matching action row, repair it.
-    // Protects against any future sM() bug that could cause msg/act drift.
+    // SELF-HEAL (forward): if a lead has a message for channel X but no
+    // matching action row, add the action. Protects against sM()/tA() drift.
     const healed=[];
     Object.entries(D).forEach(([id,r])=>{
       (r.msgs||[]).forEach(m=>{
@@ -598,12 +607,31 @@ async function sbLoadAll(){
         if(!r.acts.includes(m.ch)){
           r.acts.push(m.ch);
           healed.push({id,ch:m.ch});
-          // Fire-and-forget Supabase backfill for the missing action
           sb.from('actions').insert({lead_id:id,user_name:USER,channel:m.ch,completed:true,completed_at:m.ts,client_id:CLIENT_ID}).then(()=>{}).catch(()=>{});
         }
       });
     });
     if(healed.length)console.warn('[self-heal] repaired '+healed.length+' missing action(s):',healed);
+    // SELF-HEAL (reverse): if a lead has an action for channel X but NO
+    // message with that channel, insert an auto-anchor message. The cycle
+    // engine (getFollowUp) reads rec.msgs[].ts to compute +48h / +168h —
+    // without this, checkbox-only contacted leads stay stuck at RED
+    // "Guardar mensaje enviado". Anchor ts = Supabase actions.completed_at
+    // (first click) or falls back to rec.up if missing. Fires once per lead
+    // per channel — the check `msgs.some(m=>m.ch===ch)` keeps it idempotent.
+    const anchored=[];
+    Object.entries(D).forEach(([id,r])=>{
+      if(!r.acts)return;
+      if(!r.msgs)r.msgs=[];
+      r.acts.forEach(ch=>{
+        if(r.msgs.some(m=>m.ch===ch))return;
+        const ts=(actionTs[id]&&actionTs[id][ch])||r.up||new Date().toISOString();
+        r.msgs.push({ch,tx:AUTO_ANCHOR_TX,ts});
+        anchored.push({id,ch,ts});
+        sb.from('messages_sent').insert({lead_id:id,user_name:USER,channel:ch,message_text:AUTO_ANCHOR_TX,sent_at:ts,client_id:CLIENT_ID}).then(()=>{}).catch(()=>{});
+      });
+    });
+    if(anchored.length)console.warn('[self-heal] anchored '+anchored.length+' checkbox-only action(s):',anchored);
     // Recalculate status from actions for leads without manual override
     Object.values(D).forEach(r=>{
       if(!['replied','meeting','closed','skip'].includes(r.st)){
@@ -650,6 +678,12 @@ function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\
 //
 // Stops (no active follow-up): replied / meeting / closed / skip
 const SEQ_STOPS=['replied','meeting','closed','skip'];
+// AUTO-ANCHOR MARKER — text used when the user marks a channel as sent via
+// the checkbox without pasting the real body. This placeholder message is
+// what the follow-up engine uses as the cycle anchor timestamp. Stable text
+// so multi-device sync can identify + clean up on uncheck, AND so sbLoadAll's
+// reverse self-heal can skip duplicate inserts.
+const AUTO_ANCHOR_TX='[Marcado como enviado]';
 const CYCLE_LEN=7*24*3600000;   // 168h main follow-up
 const ALT_DELAY=2*24*3600000;   // 48h alt channel
 const MONTHLY_LEN=30*24*3600000; // 30 days after cycle 4
@@ -715,10 +749,15 @@ function getFollowUp(rec,lead,context){
       if(lead._batchDate){
         // Rule 1: Anteriores leads always use batch floor
         anchorTs=Math.min(allTs[0],bdTs);
-      }else if(allTs[0]-bdTs>48*3600000){
-        // Rule 3 SAFEGUARD: msg logged >48h after source_date → looks like backfill/import
+      }else if(allTs[0]-bdTs>14*24*3600000){
+        // Rule 3 SAFEGUARD: msg logged >14 days after source_date → looks like
+        // a stale import/backfill (someone pasting in very old leads). Normal
+        // workflow is a batch being worked over days, not weeks — so we give
+        // the user a reasonable 14-day window where real send timestamps are
+        // trusted as-is. Previous 48h threshold was breaking normal 2–4 day
+        // batches (user sends email Day 3 → engine thought it was backfill).
         anchorTs=bdTs;
-        console.warn('[timestamp-safeguard]',lead.companyName||'?','msg is '+Math.round((allTs[0]-bdTs)/3600000)+'h after source_date. Using source_date as anchor.');
+        console.warn('[timestamp-safeguard]',lead.companyName||'?','msg is '+Math.round((allTs[0]-bdTs)/(24*3600000))+'d after source_date. Using source_date as anchor.');
       }
       // else Rule 2: normal case, keep actual
     }
@@ -1191,18 +1230,55 @@ function closePB(){document.getElementById('pbO').classList.remove('open');docum
 // ═══ ACTIONS ═══
 async function tA(d,aid,ch){
   console.log('[tA] click',{d,aid,ch});
-  const rec=gr(d);const acts=[...(rec.acts||[])];const tl=[...(rec.tl||[])];
+  const rec=gr(d);
+  const acts=[...(rec.acts||[])];
+  const tl=[...(rec.tl||[])];
+  let msgs=[...(rec.msgs||[])];
   const idx=acts.indexOf(aid);
   const completed=idx<0;
-  if(idx>=0){acts.splice(idx,1);tl.push({tp:'act',desc:'Desmarcó: '+ch,ts:now()});}
-  else{acts.push(aid);tl.push({tp:'act',desc:'Completó: '+ch,ts:now()});}
-  const ns=cSt({...rec,acts});
+  // Track cycle anchor additions/removals so Supabase stays in sync.
+  let autoAnchorToPush=null;          // new anchor msg to persist
+  let autoAnchorsToDelete=[];         // previously-persisted auto anchors to clean up on uncheck
+  if(idx>=0){
+    // UNCHECK: remove the action AND any auto-anchor msg we inserted for
+    // this channel. Real user-saved messages (pasted via sM) are preserved
+    // because they have different tx content.
+    acts.splice(idx,1);
+    tl.push({tp:'act',desc:'Desmarcó: '+ch,ts:now()});
+    autoAnchorsToDelete=msgs.filter(m=>m.ch===ch && m.tx===AUTO_ANCHOR_TX).map(m=>m.ts);
+    msgs=msgs.filter(m=>!(m.ch===ch && m.tx===AUTO_ANCHOR_TX));
+  }else{
+    // CHECK: mark the action complete. If no message with a timestamp exists
+    // yet for this channel, insert a lightweight auto-anchor so the
+    // follow-up engine (getFollowUp) has a valid anchor to compute +48h /
+    // +168h from. Without this, the engine falls into the "no msgs" branch
+    // and returns RED "Guardar mensaje enviado — ahora" instead of letting
+    // the cycle run. The optional "Guardar mensaje enviado" flow still
+    // exists for operators who want the real body on record.
+    acts.push(aid);
+    tl.push({tp:'act',desc:'Completó: '+ch,ts:now()});
+    if(!msgs.some(m=>m.ch===ch)){
+      const ts=now();
+      autoAnchorToPush={ch,tx:AUTO_ANCHOR_TX,ts};
+      msgs.push(autoAnchorToPush);
+      tl.push({tp:'msg',desc:'Anclaje de ciclo ('+ch+')',ts});
+    }
+  }
+  const ns=cSt({...rec,acts,msgs});
   if(ns!==cSt(rec))tl.push({tp:'st',desc:'Estado → '+SL[ST.indexOf(ns)],ts:now()});
-  ur(d,{acts,st:ns,tl});
-  // Await Supabase so we know if it actually persisted
-  const ok=await sbLogAction(d,ch,completed);
-  console.log('[tA] write',{d,ch,completed,sbOk:ok});
-  toast(ok?(completed?'+1 acción completada':'Desmarcado'):'⚠️ No se pudo sincronizar — intenta de nuevo');
+  ur(d,{acts,msgs,st:ns,tl});
+  // Supabase persistence
+  const actOk=await sbLogAction(d,ch,completed);
+  let msgOk=true;
+  if(autoAnchorToPush){
+    msgOk=await sbLogMessage(d,ch,AUTO_ANCHOR_TX);
+  }
+  // Clean up auto-anchors from Supabase when unchecking (keeps multi-device sync aligned)
+  for(const ts of autoAnchorsToDelete){
+    try{await sbDeleteMessage(d,ts)}catch{}
+  }
+  console.log('[tA] write',{d,ch,completed,actOk,anchored:!!autoAnchorToPush,cleaned:autoAnchorsToDelete.length,msgOk});
+  toast(actOk?(completed?'+1 acción completada':'Desmarcado'):'⚠️ No se pudo sincronizar — intenta de nuevo');
   refresh();
 }
 async function sM(d,aid,ch){
