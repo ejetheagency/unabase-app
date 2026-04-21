@@ -617,22 +617,58 @@ async function sbLoadAll(){
     // message with that channel, insert an auto-anchor message. The cycle
     // engine (getFollowUp) reads rec.msgs[].ts to compute +48h / +168h —
     // without this, checkbox-only contacted leads stay stuck at RED
-    // "Guardar mensaje enviado". Anchor ts = Supabase actions.completed_at
-    // (first click) or falls back to rec.up if missing. Fires once per lead
-    // per channel — the check `msgs.some(m=>m.ch===ch)` keeps it idempotent.
+    // "Guardar mensaje enviado".
+    //
+    // TIMESTAMP INTEGRITY RULES — the anchor MUST reflect the real moment
+    // the operator marked the channel as sent, never a load-time fabrication.
+    // Sources, in order of reliability:
+    //   1. Supabase actions.completed_at (set by DEFAULT NOW() on insert —
+    //      this is the authoritative real-time stamp of the original click)
+    //   2. Local rec.tl 'act' entry matching this channel (same ts as written
+    //      by tA() at click time — backup when Supabase sync was skipped)
+    //   3. If BOTH are missing → flag rec._anchorUncertain=true and SKIP
+    //      the insert. Never fall back to `new Date()` (= load time) or to
+    //      `r.up` (= last record write) because both would silently offset
+    //      the +48h / +168h cycle math from reality.
+    //
+    // Fires once per (lead,channel) — `msgs.some(m=>m.ch===ch)` is idempotent.
     const anchored=[];
+    const uncertain=[];
     Object.entries(D).forEach(([id,r])=>{
       if(!r.acts)return;
       if(!r.msgs)r.msgs=[];
       r.acts.forEach(ch=>{
         if(r.msgs.some(m=>m.ch===ch))return;
-        const ts=(actionTs[id]&&actionTs[id][ch])||r.up||new Date().toISOString();
+        // Source 1: Supabase actions.completed_at
+        let ts=(actionTs[id]&&actionTs[id][ch])||null;
+        let source=ts?'supabase_completed_at':null;
+        // Source 2: local rec.tl timeline (earliest 'Completó: <ch>' entry)
+        if(!ts&&Array.isArray(r.tl)){
+          const tlMatch=r.tl
+            .filter(e=>e&&e.tp==='act'&&typeof e.desc==='string'&&e.desc.startsWith('Completó: ')&&e.desc.endsWith(' '+ch))
+            .sort((a,b)=>new Date(a.ts)-new Date(b.ts))[0];
+          if(tlMatch&&tlMatch.ts){ts=tlMatch.ts;source='local_tl';}
+        }
+        if(!ts){
+          // No reliable timestamp — flag and skip. Do NOT invent.
+          r._anchorUncertain=true;
+          r._anchorUncertainChannels=r._anchorUncertainChannels||[];
+          if(!r._anchorUncertainChannels.includes(ch))r._anchorUncertainChannels.push(ch);
+          uncertain.push({id,ch});
+          return;
+        }
         r.msgs.push({ch,tx:AUTO_ANCHOR_TX,ts});
-        anchored.push({id,ch,ts});
+        anchored.push({id,ch,ts,source});
         sb.from('messages_sent').insert({lead_id:id,user_name:USER,channel:ch,message_text:AUTO_ANCHOR_TX,sent_at:ts,client_id:CLIENT_ID}).then(()=>{}).catch(()=>{});
       });
+      // Clean flag if every channel now has a reliable anchor (idempotent reload)
+      if(r._anchorUncertain&&r.acts.every(ch=>r.msgs.some(m=>m.ch===ch))){
+        delete r._anchorUncertain;
+        delete r._anchorUncertainChannels;
+      }
     });
     if(anchored.length)console.warn('[self-heal] anchored '+anchored.length+' checkbox-only action(s):',anchored);
+    if(uncertain.length)console.error('[self-heal] ⚠️ '+uncertain.length+' action(s) have NO reliable timestamp source — flagged _anchorUncertain, NOT inserting synthetic anchors:',uncertain);
     // Recalculate status from actions for leads without manual override
     Object.values(D).forEach(r=>{
       if(!['replied','meeting','closed','skip'].includes(r.st)){
