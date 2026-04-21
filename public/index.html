@@ -108,6 +108,7 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .aa-urgency{position:absolute;top:14px;right:14px;font-size:9px;font-weight:900;padding:4px 10px;border-radius:5px;letter-spacing:1.5px}
 .aa-urgency.red{background:var(--rd);color:#fff;animation:fupulse 1s infinite}
 .aa-urgency.yellow{background:var(--am);color:#0a0a0f}
+.aa-urgency.green{background:rgba(0,200,80,0.15);color:var(--gr);border:1px solid rgba(0,200,80,0.35)}
 .aa-company{font-size:22px;font-weight:800;color:#fff;margin-top:24px;letter-spacing:-.3px;line-height:1.2}
 .aa-action{font-size:13px;color:var(--t2);font-weight:600;margin-top:4px}
 .aa-time{font-size:15px;font-weight:800;letter-spacing:.3px;margin-top:2px}
@@ -880,11 +881,23 @@ function renderDay(){
     });
     indEl.innerHTML=pending>0?`<div class="hoy-pending" onclick="showV('now')"><span>⚠️</span><strong>${pending}</strong> ${pending===1?'acción pendiente':'acciones pendientes'} en Acción Ahora</div>`:'';
   }
-  // Sort by score (highest first), then by status (pending first)
+  // TAB SEPARATION RULE — Hoy vs Acción Ahora are mutually exclusive:
+  //   • Hoy     = fresh leads with no sent-message anchor yet (first contact).
+  //   • Acción Ahora = leads already in cycle (has rec.msgs), all follow-up
+  //                    phases regardless of color.
+  //   • Stopped leads (replied/meeting/closed/skip) live in Historial only.
+  // This filter enforces the Hoy side of the rule. Acción Ahora has the
+  // mirrored filter on its render function.
+  const freshOnly=TL.filter(l=>{
+    const d=dom(l.website);const rec=gr(d);
+    if(SEQ_STOPS.includes(rec.st||'none'))return false;
+    if((rec.msgs||[]).length>0)return false;
+    return true;
+  });
+  // Sort by score (highest first) — all leads here share status 'none' (no msgs)
   const ord={none:0,partial:1,contacted:2,replied:3,meeting:4,closed:5,skip:6};
-  const sorted=[...TL].sort((a,b)=>{
+  const sorted=[...freshOnly].sort((a,b)=>{
     const sa=cSt(gr(dom(a.website))),sb=cSt(gr(dom(b.website)));
-    // Pending leads first, then by score descending
     if(ord[sa]!==ord[sb])return(ord[sa]||0)-(ord[sb]||0);
     return(b.unabaseScore||0)-(a.unabaseScore||0);
   });
@@ -892,6 +905,11 @@ function renderDay(){
   const priDom=sorted.find(l=>cSt(gr(dom(l.website)))==='none');
   const priId=priDom?dom(priDom.website):null;
 
+  // Empty-state hint: if TL has leads but all are already in cycle, explain why Hoy is empty
+  if(sorted.length===0&&TL.length>0){
+    document.getElementById('leadL').innerHTML='<div class="aa-empty" style="padding:40px 20px"><div class="aa-empty-icon">✓</div>Todos los leads de hoy ya están en ciclo. Revisá <a href="#" onclick="event.preventDefault();showV(\'now\')" style="color:var(--ac);text-decoration:underline">Acción Ahora</a> para los próximos pasos.</div>';
+    rM();return;
+  }
   document.getElementById('leadL').innerHTML=sorted.map((l,i)=>{
     const d=dom(l.website);const rec=gr(d);const st=cSt(rec);const si=ST.indexOf(st);
     const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';
@@ -1439,35 +1457,51 @@ function actionTypeLabel(fu){
 function renderAccionAhora(){
   const el=document.getElementById('nowL');
   if(!el)return;
-  // Combine today + past, dedupe by domain
+  // TAB SEPARATION RULE — mirror of the renderDay filter.
+  //   Acción Ahora shows ONLY leads that have already started the cycle
+  //   (rec.msgs has at least one entry) and are not stopped. Hoy shows
+  //   fresh first-contact leads. A lead never appears in both tabs.
+  //   All colors render here (RED due now → GREEN upcoming), sorted by
+  //   urgency so the operator sees what needs action first.
   const pool=[...TL,...PL];
   const seen=new Set();
   const deduped=pool.filter(l=>{const dd=dom(l.website);if(!dd||seen.has(dd))return false;seen.add(dd);return true});
-  // Filter via shared isActionable() — enforces grace period + color rules consistently
-  const COLOR_PRI={red:0,yellow:1};
+  const COLOR_PRI={red:0,yellow:1,green:2};
   const items=deduped.map(l=>{
     const dd=dom(l.website);const rec=gr(dd);
-    const check=isActionable(rec,l);
-    if(!check.ok)return null;
-    return {lead:l,rec,d:dd,fu:check.fu};
+    // Must be in cycle
+    if((rec.msgs||[]).length===0)return null;
+    // Must not be in a terminal state
+    if(SEQ_STOPS.includes(rec.st||'none'))return null;
+    // Compute follow-up state — if engine says inactive (shouldn't happen
+    // for in-cycle leads but just in case), skip.
+    const fu=getFollowUp(rec,l,lead=>lead&&lead._batchDate?'past':'hoy');
+    if(!fu.active||!fu.step)return null;
+    return {lead:l,rec,d:dd,fu};
   }).filter(Boolean);
-  // Sort: RED first, YELLOW second, earliest due within group
+  // Sort: RED first (overdue), YELLOW second (due soon), GREEN last (upcoming).
+  // Within same color, earliest due first.
   items.sort((a,b)=>{
-    const ca=COLOR_PRI[a.fu.color]??2,cb=COLOR_PRI[b.fu.color]??2;
+    const ca=COLOR_PRI[a.fu.color]??3,cb=COLOR_PRI[b.fu.color]??3;
     if(ca!==cb)return ca-cb;
     return (a.fu.dueMs||0)-(b.fu.dueMs||0);
   });
-  // Cap at 4 visible, count rest as queued
-  const visible=items.slice(0,4);
+  // Cap visible at 4 urgent + preview of upcoming. Rest counted as queued.
+  const urgent=items.filter(i=>i.fu.color==='red'||i.fu.color==='yellow');
+  const upcoming=items.filter(i=>i.fu.color==='green');
+  const visibleUrgent=urgent.slice(0,4);
+  const visibleUpcoming=urgent.length<4?upcoming.slice(0,4-urgent.length):[];
+  const visible=[...visibleUrgent,...visibleUpcoming];
   const queued=items.length-visible.length;
   if(!visible.length){
-    el.innerHTML='<div class="aa-empty"><div class="aa-empty-icon">✓</div>No hay acciones pendientes</div>';
+    el.innerHTML='<div class="aa-empty"><div class="aa-empty-icon">✓</div>No hay leads en ciclo todavía. Contactá a los de Hoy para arrancar.</div>';
     return;
   }
   let html='<div class="aa-grid">';
   visible.forEach(({lead:l,d,fu})=>{
     const urgency=fu.color==='red'?'<div class="aa-urgency red">VENCIDO</div>'
-                 :fu.color==='yellow'?'<div class="aa-urgency yellow">PRONTO</div>':'';
+                 :fu.color==='yellow'?'<div class="aa-urgency yellow">PRONTO</div>'
+                 :'<div class="aa-urgency green">EN CICLO</div>';
     const actType=actionTypeLabel(fu);
     const adjT=adjustTimeStr(fu,l.country);
     html+=`<div class="aa-card fu-${fu.color}" onclick="openPB('${d}')">
