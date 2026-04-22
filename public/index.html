@@ -417,12 +417,14 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 // ═════════════════════════════════════════════════════════════════════════
 const WORKSPACES = {
   // Client workspace — UnaBase selling to production companies (Scarlett).
+  // ICP soul and pipeline config live in unabasi-leads/workspaces/unabase_default.js
   unabase_default: {
     brand:      'unabase',
     leadsFile:  'leads-today.json',
     accent:     '#d4a017',     // gold — UnaBase brand
     badgeColor: null,           // no visible badge (default)
     kind:       'client',
+    soul:       'Productoras de entretenimiento que manejan múltiples proyectos en paralelo.',
   },
   // Operational / internal / admin view — separate data scope for oversight.
   operator: {
@@ -431,15 +433,17 @@ const WORKSPACES = {
     accent:     '#d4a017',
     badgeColor: 'var(--rd)',   // red — admin/operator signal
     kind:       'operator',
+    soul:       'Internal oversight view — not a target ICP.',
   },
   // Outbound workspace for selling this system ourselves (EJE Agency).
-  // Separate data, separate branding, separate targeting. Same engine.
+  // ICP soul and pipeline config live in unabasi-leads/workspaces/eje.js
   eje: {
     brand:      'EJE',
     leadsFile:  'leads-eje.json',
     accent:     '#4a9eff',     // blue — distinct from UnaBase gold + operator red
     badgeColor: '#4a9eff',
     kind:       'outbound',
+    soul:       'Empresas B2B high-ticket que ya venden pero sin pipeline predecible.',
   },
 };
 const CLIENT_ID=(new URLSearchParams(window.location.search).get('client')||'unabase_default').replace(/[^a-zA-Z0-9_-]/g,'');
