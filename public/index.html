@@ -425,6 +425,7 @@ const WORKSPACES = {
     badgeColor: null,           // no visible badge (default)
     kind:       'client',
     soul:       'Productoras de entretenimiento que manejan múltiples proyectos en paralelo.',
+    userLabel:  'Scarlett',    // display name in top-right user dropdown
   },
   // Operational / internal / admin view — separate data scope for oversight.
   operator: {
@@ -434,6 +435,7 @@ const WORKSPACES = {
     badgeColor: 'var(--rd)',   // red — admin/operator signal
     kind:       'operator',
     soul:       'Internal oversight view — not a target ICP.',
+    userLabel:  'Operator',
   },
   // Outbound workspace for selling this system ourselves (EJE Agency).
   // ICP soul and pipeline config live in unabasi-leads/workspaces/eje.js
@@ -444,6 +446,7 @@ const WORKSPACES = {
     badgeColor: '#4a9eff',
     kind:       'outbound',
     soul:       'Empresas B2B high-ticket que ya venden pero sin pipeline predecible.',
+    userLabel:  'Emiliano',    // EJE outbound sender identity (matches eje.js copy.senderName)
   },
 };
 const CLIENT_ID=(new URLSearchParams(window.location.search).get('client')||'unabase_default').replace(/[^a-zA-Z0-9_-]/g,'');
@@ -475,7 +478,7 @@ console.log('[workspace] client_id='+CLIENT_ID+' | kind='+WS.kind+' | brand='+WS
     <button class="n-tab" onclick="showV('hist')">Historial</button>
   </div>
   <div class="n-user">
-    <button class="n-ubtn" onclick="this.nextElementSibling.classList.toggle('open')">Scarlett &#9662;</button>
+    <button class="n-ubtn" id="userBtn" onclick="this.nextElementSibling.classList.toggle('open')">Scarlett &#9662;</button>
     <div class="n-udd"><a href="#" onclick="showV('today');this.parentElement.classList.remove('open');return false">Mi ejecución</a><a href="#" onclick="showV('hist');this.parentElement.classList.remove('open');return false">Historial</a><a href="#" onclick="if(confirm('¿Borrar datos?')){localStorage.clear();location.reload()}return false" style="color:var(--rd)">Reset</a></div>
   </div>
   <label class="n-upload" style="cursor:pointer">Importar<input type="file" accept=".json" onchange="loadFile(event)" style="display:none"></label>
@@ -1709,6 +1712,12 @@ if(WS.badgeColor){
   wsEl.style.display='none';
 }
 document.documentElement.style.setProperty('--accent',CLIENT.accent);
+// Top-right user-identity label: driven by WORKSPACES[CLIENT_ID].userLabel so
+// EJE shows "Emiliano", operator shows "Operator", UnaBase shows "Scarlett".
+// Prevents the hardcoded "Scarlett" literal from leaking into non-UnaBase
+// workspaces. Falls back to CLIENT.name (brand) if userLabel is undefined.
+const userBtn=document.getElementById('userBtn');
+if(userBtn){userBtn.textContent=(WS.userLabel||CLIENT.name||'User')+' \u25BE'}
 document.addEventListener('click',e=>{if(!e.target.closest('.n-user'))document.querySelector('.n-udd')?.classList.remove('open')});
 document.getElementById('pbO').addEventListener('click',e=>{if(e.target===document.getElementById('pbO'))closePB()});
 // Init: load Supabase + past leads (PL feeds awareness indicator + Acción Ahora) + autoLoad today

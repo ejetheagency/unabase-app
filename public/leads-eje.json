@@ -1,1 +1,3274 @@
-[]
+[
+  {
+    "companyName": "Boundify",
+    "website": "https://boundify.io",
+    "country": "Mexico",
+    "industry": "services",
+    "summary": "B2B Demand generation agency & HubSpot Gold Partner specializing in digital advertising. We help B2B tech-enabled brands hit their revenue and ROI goals.",
+    "notableClients": [
+      "Google",
+      "Facebook",
+      "Spotify"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 4,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Agencia de demand generation B2B y HubSpot Gold Partner enfocada en publicidad digital. Trabajan con marcas tech como Google, Facebook y Spotify para cumplir objetivos de revenue y ROI.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Boundify! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Boundify y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que manejan cuentas de nivel Google y Facebook - con clientes de ese calibre, la inconsistencia mes a mes en conversaciones nuevas puede ser especialmente costosa cuando los referidos no llegan.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "has_clients",
+      "mid_size_team",
+      "strong_b2b_signal"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "a@boundify.io",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "ddg_email",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/boundifyio",
+    "instagramHandle": "boundifyio",
+    "instagramBio": "See Instagram photos and videos from Boundify (@boundifyio)",
+    "instagramFollowers": "65",
+    "facebookUrl": "https://facebook.com/boundify",
+    "twitterUrl": "https://x.com/boundify",
+    "youtubeUrl": "https://www.youtube.com/@boundify",
+    "vimeoUrl": null,
+    "contactPhone": "(864) 770-4257",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [
+          "(864) 770-4257"
+        ],
+        "name": "Summit Solar",
+        "social": {
+          "instagram": "https://www.instagram.com/boundifyio",
+          "facebook": "https://facebook.com/boundify",
+          "twitter": "https://x.com/boundify",
+          "youtube": "https://www.youtube.com/@boundify",
+          "vimeo": null,
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": "reverse",
+        "name": "Reverse Lookup",
+        "started": true,
+        "targetName": "Summit Solar"
+      },
+      {
+        "step": "reverse",
+        "hunter_error": "Request failed with status code 429"
+      },
+      {
+        "step": "reverse",
+        "found": "nothing"
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": [
+          "a@boundify.io"
+        ]
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/boundifyio",
+        "igHandle": "boundifyio",
+        "igFollowers": "65",
+        "socialEmail": "hello@boundify.io",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": "864-770-4257",
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "boundifyio",
+        "followers": "65",
+        "email": null,
+        "phone": null,
+        "triedHandles": 7
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "(864) 770-4257",
+          "864-770-4257",
+          "+52 8141709480",
+          "81203939"
+        ]
+      },
+      {
+        "step": "mismatch_check",
+        "name": "Summit Solar",
+        "email": "a@boundify.io",
+        "result": "MISMATCH — clearing name"
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "a@boundify.io",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/boundify",
+    "apolloCompanyPhone": "+1 864-770-4257",
+    "apolloEmployeeCount": 6,
+    "contactVenues": 3,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vi su trabajo con marcas como Google y Facebook. Con clientes de ese nivel, ¿cómo manejan la generación consistente de nuevas conversaciones cada mes? Emiliano aquí 👋",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Email genérico sugiere posible filtro administrativo, pero en empresa de 6 personas probablemente llegue al decisor real.",
+    "whyThisLead": [
+      "Agencia B2B que vende servicios de alto valor con ciclos consultivos",
+      "Clientes enterprise de nivel Google/Facebook indica tickets altos y relaciones complejas",
+      "Gold Partner de HubSpot muestra expertise en sales ops pero probablemente depende de referidos para nuevos clientes"
+    ],
+    "actionBlock": [
+      "Enviar email específico mencionando su portfolio de clientes tech",
+      "Instagram como canal secundario por su baja audiencia (oportunidad)",
+      "Tono profesional pero directo - hablan el lenguaje B2B"
+    ],
+    "conversationAngle": "Agencias como la suya con clientes del calibre de Google necesitan un pipeline predecible que no dependa solo de referidos o inbound esporádico.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "WhatsApp",
+      "opcional": "Instagram DM"
+    },
+    "specificLine": "Vimos que manejan cuentas de nivel Google y Facebook - con clientes de ese calibre, la inconsistencia mes a mes en conversaciones nuevas puede ser especialmente costosa cuando los referidos no llegan.",
+    "emailCercana": "Hola equipo de Boundify! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Boundify y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que manejan cuentas de nivel Google y Facebook - con clientes de ese calibre, la inconsistencia mes a mes en conversaciones nuevas puede ser especialmente costosa cuando los referidos no llegan.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado equipo,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que manejan cuentas de nivel Google y Facebook - con clientes de ese calibre, la inconsistencia mes a mes en conversaciones nuevas puede ser especialmente costosa cuando los referidos no llegan.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @boundifyio",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Ese portfolio con Google y Spotify habla por sí solo 👏'",
+      "dm": "Hola! Vi su trabajo con marcas como Google y Facebook. Con clientes de ese nivel, ¿cómo manejan la generación consistente de nuevas conversaciones cada mes? Emiliano aquí 👋"
+    },
+    "whatsappMessage": "Hola! Soy Emiliano. Vi que manejan cuentas como Google y Facebook - impresionante portfolio. ¿Cómo están generando conversaciones nuevas consistentemente cada mes, más allá de referidos?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola! Interesante su trabajo con Google y Facebook en demand gen",
+      "followUp": "Gracias por conectar! Con su portfolio de clientes enterprise, me imagino que mantener un pipeline consistente de nuevas conversaciones cada mes es crítico. ¿Cómo lo manejan actualmente?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email específico",
+      "Dia 2: Seguir y engagement en Instagram",
+      "Dia 4: WhatsApp directo mencionando portfolio",
+      "Dia 7: LinkedIn connection con follow-up profesional"
+    ],
+    "keyInsight": "Agencia con clientes premium que entiende el valor de sistemas predecibles - probablemente sienten el dolor de inconsistencia en su propio negocio.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Crist El Escal",
+    "website": "https://cristelescal.com",
+    "country": "Argentina",
+    "industry": "services",
+    "summary": "Agencia de marketing digital B2B en Buenos Aires, Argentina. Estrategia digital, Meta Ads, Google Ads, diseño web y branding para empresas de servicios. Diagnóstico gratuito.",
+    "notableClients": [
+      "HBO",
+      "Universal",
+      "Televisa",
+      "Univision",
+      "Google",
+      "Meta"
+    ],
+    "recentProjects": [
+      "over twenty films and four television ser",
+      "sixteen",
+      "y dos services internacionales"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Agencia de marketing digital B2B especializada en Meta Ads, Google Ads y estrategia digital para empresas de servicios. Trabajan con clientes internacionales de alto perfil como HBO, Universal, Google y Meta.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Crist El Escal! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Crist El Escal y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como HBO, Universal y Google ya demuestran que cierran proyectos grandes, pero vemos que muchas agencias B2B como la suya tienen meses inconsistentes en conversaciones nuevas. ¿Cómo están manejando la generación predecible de leads sin depender solo de referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 5,
+    "fitReasons": [
+      "has_clients",
+      "case_studies",
+      "strong_b2b_signal"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "info@cristelescal.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "deep_rescue",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/cristel.escal",
+    "instagramHandle": "cristel.escal",
+    "instagramBio": "See Instagram photos and videos from Soluciones integrales en Marketing Digital (@cristel.escal)",
+    "instagramFollowers": "245",
+    "facebookUrl": "https://www.facebook.com/cristelescalagencia/",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/738905741",
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "tu@empresa.com",
+          "vos@tuempresa.com"
+        ],
+        "genericEmails": [
+          "info@cristelescal.com"
+        ],
+        "phones": [
+          "9 11 6563-6590"
+        ],
+        "name": "Martín Rodríguez",
+        "social": {
+          "instagram": "https://www.instagram.com/cristel.escal",
+          "facebook": "https://www.facebook.com/cristelescalagencia/",
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/cristel.escal",
+        "igHandle": "cristel.escal",
+        "igFollowers": "245",
+        "socialEmail": "info@cristelescal.com",
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_email": "info@cristelescal.com",
+        "pages_crawled": 20
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Martín Rodríguez"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/738905741"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@cristelescal.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/sobre-nosotros-%e2%80%93-serendipia-toys",
+    "apolloCompanyPhone": "+34 622 91 91 07",
+    "apolloEmployeeCount": 3,
+    "whoisCheckPending": true,
+    "contactPath": "email_only",
+    "tier": "tier2",
+    "instagramDM": "Hola Martín! Vi el trabajo con clientes como HBO y Google - impresionante level. ¿Cómo manejan la consistencia en nuevos leads cada mes? Tengo algo que puede interesarte para agencias como la tuya.",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como CEO de TechnoServ puede tomar decisiones sobre inversiones en sistemas comerciales para generar leads consistentes.",
+    "whyThisLead": [
+      "Agencia B2B con servicios de alto ticket que depende de conversaciones consultivas",
+      "Cartera de clientes premium indica capacidad de cerrar deals grandes pero necesita consistencia",
+      "Gap entre calidad de clientes actuales y sistema de prospección predecible"
+    ],
+    "actionBlock": [
+      "Contactar por WhatsApp con mensaje específico sobre su cartera internacional",
+      "WhatsApp como canal primario por ser Argentina",
+      "Tono profesional pero directo, enfocado en consistencia comercial"
+    ],
+    "conversationAngle": "Con clientes como HBO y Google ya demuestran que cierran deals grandes, pero ¿cómo están asegurando que cada mes tengan suficientes conversaciones nuevas sin depender solo de referidos?",
+    "channelPriority": {
+      "primario": "WhatsApp",
+      "secundario": "Email",
+      "opcional": "LinkedIn"
+    },
+    "specificLine": "Con clientes como HBO, Universal y Google ya demuestran que cierran proyectos grandes, pero vemos que muchas agencias B2B como la suya tienen meses inconsistentes en conversaciones nuevas. ¿Cómo están manejando la generación predecible de leads sin depender solo de referidos?",
+    "emailCercana": "Hola equipo de Crist El Escal! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Crist El Escal y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como HBO, Universal y Google ya demuestran que cierran proyectos grandes, pero vemos que muchas agencias B2B como la suya tienen meses inconsistentes en conversaciones nuevas. ¿Cómo están manejando la generación predecible de leads sin depender solo de referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado equipo,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como HBO, Universal y Google ya demuestran que cierran proyectos grandes, pero vemos que muchas agencias B2B como la suya tienen meses inconsistentes en conversaciones nuevas. ¿Cómo están manejando la generación predecible de leads sin depender solo de referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @cristel.escal",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar sobre algún insight de marketing B2B o caso de cliente internacional",
+      "dm": "Hola Martín! Vi el trabajo con clientes como HBO y Google - impresionante level. ¿Cómo manejan la consistencia en nuevos leads cada mes? Tengo algo que puede interesarte para agencias como la tuya."
+    },
+    "whatsappMessage": "Hola Martín, soy Emiliano de UnaBase. Vi que Cristel Escal trabaja con clientes como HBO y Google - nivel premium. ¿Cómo están manejando la generación consistente de nuevos leads cada mes sin depender solo de referidos? Tengo algo específico para agencias B2B como la tuya.",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Martín, trabajo con agencias B2B como Cristel Escal",
+      "followUp": "Gracias por conectar Martín. Con clientes como HBO y Google ya están en un nivel premium. ¿Cómo manejan la consistencia en nuevas conversaciones cada mes? Trabajo específicamente con agencias B2B en este tema."
+    },
+    "outreachSequence": [
+      "Dia 1: WhatsApp directo mencionando cartera de clientes premium",
+      "Dia 2: Email con specificLine sobre consistencia en leads",
+      "Dia 4: LinkedIn follow-up si no responde WhatsApp",
+      "Dia 7: Instagram DM casual como último touchpoint"
+    ],
+    "keyInsight": "Ya tienen clientes premium que validan su capacidad de cerrar deals grandes, solo necesitan sistematizar la generación consistente.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Adrián Leira Consulting",
+    "website": "https://adrianleira.com",
+    "country": "Spain",
+    "industry": "services",
+    "summary": "Estrategia y procesos para escalar empresas",
+    "notableClients": [
+      "Google",
+      "Facebook"
+    ],
+    "recentProjects": [
+      "Estoy de acuerdo"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 4,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Consultoría RevOps liderada por Adrián Leira que desarrolla estrategia y procesos para escalar empresas B2B. Trabajan con clientes enterprise como Google y Facebook implementando sistemas operacionales de crecimiento.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Adrián Leira Consulting! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Adrián Leira Consulting y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Facebook, seguramente te enfrentás al desafío de que cada implementación RevOps depende de variables internas impredecibles. La mayoría de consultores optimizan procesos existentes, pero pocos pueden garantizar generación consistente desde cero.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "has_clients",
+      "mid_size_team",
+      "strong_b2b_signal"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "contacto@adrianleira.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/policy/cookies",
+    "twitterUrl": "https://twitter.com/en/privacy",
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "00.0000000",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 15,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@adrianleira.com"
+        ],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": "https://www.facebook.com/policy/cookies",
+          "twitter": "https://twitter.com/en/privacy",
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": null,
+        "followers": null,
+        "email": null,
+        "phone": null,
+        "triedHandles": 13
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": []
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/popular/RevOps-Consulting-Services/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "00.0000000"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "contacto@adrianleira.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 1,
+    "whoisCheckPending": true,
+    "contactPath": "email_only",
+    "tier": "tier2",
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como founder de la consultoría, toma decisiones directas sobre herramientas y metodologías que implementa para sus clientes enterprise.",
+    "whyThisLead": [
+      "Como consultor RevOps necesita metodologías probadas de generación predecible para implementar en clientes",
+      "Trabaja con clientes enterprise (Google, Facebook) que requieren procesos escalables y consistentes",
+      "Su expertise en procesos de scaling lo convierte en early adopter de sistemas que generen resultados medibles"
+    ],
+    "actionBlock": [
+      "Contactar por email con enfoque en metodología para consultores",
+      "Email como canal primario (profesional, B2B)",
+      "Tono profesional-consultivo, peer-to-peer"
+    ],
+    "conversationAngle": "Cómo puede implementar un sistema de pipeline predecible como servicio adicional para sus clientes enterprise, diferenciándose de otras consultorías RevOps que solo optimizan procesos internos.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "WhatsApp",
+      "opcional": "LinkedIn"
+    },
+    "specificLine": "Con clientes como Google y Facebook, seguramente te enfrentás al desafío de que cada implementación RevOps depende de variables internas impredecibles. La mayoría de consultores optimizan procesos existentes, pero pocos pueden garantizar generación consistente desde cero.",
+    "emailCercana": "Hola equipo de Adrián Leira Consulting! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Adrián Leira Consulting y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Facebook, seguramente te enfrentás al desafío de que cada implementación RevOps depende de variables internas impredecibles. La mayoría de consultores optimizan procesos existentes, pero pocos pueden garantizar generación consistente desde cero.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado equipo,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Facebook, seguramente te enfrentás al desafío de que cada implementación RevOps depende de variables internas impredecibles. La mayoría de consultores optimizan procesos existentes, pero pocos pueden garantizar generación consistente desde cero.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Hola Adrián! Vimos tu trabajo con Google y Facebook en RevOps. Tenemos un sistema que varios consultores están usando para ofrecer pipelines predecibles como servicio adicional. ¿Te interesa ver cómo lo implementan?",
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Email con specificLine + propuesta de demo",
+      "Dia 2: WhatsApp casual mencionando diferenciación competitiva",
+      "Dia 4: Email con caso de éxito de consultor similar",
+      "Dia 7: Email final con insight sobre tendencias RevOps"
+    ],
+    "keyInsight": "Como consultor enterprise, entiende el valor de procesos predecibles y puede implementar EJE tanto internamente como ofrecerlo a clientes.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Lead & Brand",
+    "website": "https://leadandbrand.com",
+    "country": "Colombia",
+    "industry": "services",
+    "summary": "Agencia de generación de leads B2B y marketing digital, especialistas en prospección inteligente, CRM con IA, campañas Google y redes sociales.",
+    "notableClients": [
+      "Google",
+      "Meta",
+      "TikTok"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "large",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Agencia de generación de leads B2B con 810 empleados que trabaja con gigantes tech como Google, Meta y TikTok. Especializada en prospección inteligente, CRM con IA y campañas digitales para empresas de alto valor.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Lead & Brand! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Lead & Brand y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que generan leads para Google y Meta, pero como la mayoría de agencias B2B, probablemente algunos meses el pipeline propio cae sin aviso previo. Con 810 personas, esa inconsistencia debe impactar fuerte la operación.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 5,
+    "fitReasons": [
+      "has_clients",
+      "large_team",
+      "strong_b2b_signal"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "info@leadandbrand.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "deep_rescue",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": "See Instagram photos and videos from Soluciones Films (@solucionesfilms)",
+    "instagramFollowers": "520",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/1175521118",
+    "contactPhone": "+57 305 4132452",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@leadandbrand.com"
+        ],
+        "phones": [
+          "+57 305 4132452"
+        ],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": [
+          "despinosa@cisoluciones.com",
+          "stoledo@cisoluciones.com",
+          "n@emaxsoluciones.com",
+          "eliudc@emaxsoluciones.com",
+          "lfrau@solofisa.es"
+        ]
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": "Daniel Onorato",
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": "Genaro Hurtado",
+        "emails": [
+          "ntrochez@outlook.com"
+        ]
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/solucionesfilms/",
+        "igHandle": "solucionesfilms",
+        "igFollowers": "520",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "solucionesfilms",
+        "followers": "520",
+        "email": null,
+        "phone": null,
+        "triedHandles": 6
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+57 305 4132452",
+          "3142118465",
+          "702 301 5030008"
+        ]
+      },
+      {
+        "step": "mismatch_check",
+        "name": "Daniel Onorato",
+        "email": "ntrochez@outlook.com",
+        "result": "MISMATCH — clearing name"
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_email": "info@leadandbrand.com",
+        "pages_crawled": 0
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/doctorsoluciones/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/1175521118"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@leadandbrand.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/exsa-s-a-",
+    "apolloCompanyPhone": "+51 1 3157000",
+    "apolloEmployeeCount": 810,
+    "contactVenues": 3,
+    "whoisCheckPending": true,
+    "contactPath": "email_only",
+    "tier": "tier2",
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Email genérico de la empresa, probablemente llegue a administración o ventas que puede derivar al decisor correcto.",
+    "whyThisLead": [
+      "Agencia B2B con servicios de alto ticket que depende de flujo constante de clientes nuevos",
+      "810 empleados y clientes enterprise indican operación robusta que necesita previsibilidad",
+      "Su negocio ES generar leads para otros, conocen el dolor de inconsistencia en pipeline propio"
+    ],
+    "actionBlock": [
+      "Contactar via WhatsApp con enfoque directo sobre predictibilidad",
+      "WhatsApp empresarial como canal primario",
+      "Tono profesional pero directo, de operador a operador"
+    ],
+    "conversationAngle": "Agencia que genera leads para gigantes como Google pero probablemente enfrenta el mismo desafío interno: meses donde el pipeline propio fluctúa sin control.",
+    "channelPriority": {
+      "primario": "WhatsApp",
+      "secundario": "Email",
+      "opcional": "LinkedIn"
+    },
+    "specificLine": "Vimos que generan leads para Google y Meta, pero como la mayoría de agencias B2B, probablemente algunos meses el pipeline propio cae sin aviso previo. Con 810 personas, esa inconsistencia debe impactar fuerte la operación.",
+    "emailCercana": "Hola equipo de Lead & Brand! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Lead & Brand y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que generan leads para Google y Meta, pero como la mayoría de agencias B2B, probablemente algunos meses el pipeline propio cae sin aviso previo. Con 810 personas, esa inconsistencia debe impactar fuerte la operación.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado equipo,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que generan leads para Google y Meta, pero como la mayoría de agencias B2B, probablemente algunos meses el pipeline propio cae sin aviso previo. Con 810 personas, esa inconsistencia debe impactar fuerte la operación.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Hola! Vimos que Lead & Brand genera leads para Google y Meta - impresionante. Una pregunta rápida: ¿cómo están manejando la predictibilidad de SU propio pipeline? La mayoría de agencias B2B que conocemos dominan generar para clientes pero luchan con la consistencia interna.",
+    "linkedinPlaybook": {
+      "connectionNote": "Agencia que trabaja con Google/Meta - quiero intercambiar sobre predictibilidad en B2B",
+      "followUp": "Gracias por conectar. Vi que trabajan con Google y Meta - sólido. ¿Cómo manejan la predictibilidad del pipeline interno? La mayoría de agencias B2B grandes que conocemos tienen ese desafío."
+    },
+    "outreachSequence": [
+      "Dia 1: Mensaje WhatsApp directo sobre predictibilidad interna",
+      "Dia 2: Email de seguimiento con specificLine",
+      "Dia 4: LinkedIn connection + follow up sobre el tema",
+      "Dia 7: WhatsApp final preguntando si es momento adecuado para la conversación"
+    ],
+    "keyInsight": "Agencia B2B exitosa que entiende perfectamente el problema de pipeline inconsistente porque lo vive internamente mientras lo soluciona para clientes.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Inboundcycle",
+    "website": "https://inboundcycle.com",
+    "country": "Peru",
+    "industry": "services",
+    "summary": "Agencia de inbound marketing TOP 10 mundial según el HubSpot Agency Directory. Primera agencia de inbound marketing en España y Latinoamérica. Primer Elite Partner de HubSpot en España e Hispanoamérica.",
+    "notableClients": [
+      "Google"
+    ],
+    "recentProjects": [
+      "nos ha permitido crecer a todos los nivel"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 4,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Agencia de inbound marketing TOP 10 mundial y primer Elite Partner de HubSpot en España e Hispanoamérica. Trabajan con clientes Enterprise como Google desarrollando estrategias de marketing digital de alto valor.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Inboundcycle! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Inboundcycle y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nComo Elite Partner con clientes Enterprise como Google, imagino que el reto no es conseguir clientes sino asegurar que cada mes tengan conversaciones consistentes sin depender solo de referidos de HubSpot.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "has_clients",
+      "mid_size_team",
+      "strong_b2b_signal"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "info@inboundcycle.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/inboundcycle/",
+    "instagramHandle": "inboundcycle",
+    "instagramBio": "See Instagram photos and videos from InboundCycle | Agencia Inbound Marketing (@inboundcycle)",
+    "instagramFollowers": "12K",
+    "facebookUrl": "https://www.facebook.com/policy.php/",
+    "twitterUrl": "https://twitter.com/en/privacy",
+    "youtubeUrl": "http://www.youtube.com/subscription_center?add_user=inboundcycle",
+    "vimeoUrl": null,
+    "contactPhone": "34) 936 116",
+    "emailPatterns": [
+      "lluis@inboundcycle.com",
+      "lluis.martinez@inboundcycle.com",
+      "l.martinez@inboundcycle.com"
+    ],
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@inboundcycle.com"
+        ],
+        "phones": [
+          "34) 936 116",
+          "21 96947-7223",
+          "34) 918 318",
+          "55 5101 4752",
+          "+34 936 116 054",
+          "+52 55 5101 4752",
+          "+55 21 969467"
+        ],
+        "name": "Lluis Martínez",
+        "social": {
+          "instagram": "https://www.instagram.com/inboundcycle/",
+          "facebook": "https://www.facebook.com/policy.php/",
+          "twitter": "https://twitter.com/en/privacy",
+          "youtube": "http://www.youtube.com/subscription_center?add_user=inboundcycle",
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": "reverse",
+        "name": "Reverse Lookup",
+        "started": true,
+        "targetName": "Lluis Martínez"
+      },
+      {
+        "step": "reverse",
+        "hunter_error": "Request failed with status code 429"
+      },
+      {
+        "step": "reverse",
+        "found": "nothing"
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": "Pau Valdés",
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/inboundcycle/",
+        "igHandle": "inboundcycle",
+        "igFollowers": "12K",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": "936116054",
+        "gmbOwner": null
+      },
+      {
+        "step": "D",
+        "name": "Name→Email",
+        "started": true
+      },
+      {
+        "step": "D",
+        "patterns": [
+          "lluis@inboundcycle.com",
+          "lluis.martinez@inboundcycle.com",
+          "l.martinez@inboundcycle.com"
+        ],
+        "via": "pattern"
+      },
+      {
+        "step": 9,
+        "name": "Hunter Find",
+        "started": true
+      },
+      {
+        "step": 9,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "inboundcycle",
+        "followers": "12K",
+        "email": null,
+        "phone": null,
+        "triedHandles": 6
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "34) 936 116",
+          "21 96947-7223",
+          "34) 918 318",
+          "55 5101 4752",
+          "+34 936 116 054",
+          "+52 55 5101 4752",
+          "+55 21 969467",
+          "936116054"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Lluis Martínez"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@inboundcycle.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/inboundcycle",
+    "apolloCompanyPhone": "+34 936 11 60 54",
+    "apolloEmployeeCount": 76,
+    "contactVenues": 3,
+    "whoisCheckPending": true,
+    "contactPath": "email_only",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vi que son TOP 10 mundial en inbound. Estamos ayudando a varias agencias Elite Partners a sistematizar sus conversaciones comerciales. Te mando algo por email.",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como Founder y CSO tiene autoridad total sobre decisiones de inversión en sistemas comerciales para escalar la agencia.",
+    "whyThisLead": [
+      "Agencia TOP que maneja múltiples clientes Enterprise con ciclos consultivos largos",
+      "76 empleados y reconocimiento mundial indica operación de alto ticket con necesidad de consistencia",
+      "Como Elite Partner dependen de generar conversaciones predecibles para mantener su estatus y crecimiento"
+    ],
+    "actionBlock": [
+      "Investigar casos recientes de Google en su LinkedIn",
+      "Email como canal primario",
+      "Tono profesional directo"
+    ],
+    "conversationAngle": "Como Elite Partner manejan múltiples clientes Enterprise, pero su crecimiento depende de que no caigan en picos aleatorios mes a mes - exactamente lo que EJE sistematiza.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "LinkedIn",
+      "opcional": "Instagram"
+    },
+    "specificLine": "Como Elite Partner con clientes Enterprise como Google, imagino que el reto no es conseguir clientes sino asegurar que cada mes tengan conversaciones consistentes sin depender solo de referidos de HubSpot.",
+    "emailCercana": "Hola equipo de Inboundcycle! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Inboundcycle y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nComo Elite Partner con clientes Enterprise como Google, imagino que el reto no es conseguir clientes sino asegurar que cada mes tengan conversaciones consistentes sin depender solo de referidos de HubSpot.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado equipo,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nComo Elite Partner con clientes Enterprise como Google, imagino que el reto no es conseguir clientes sino asegurar que cada mes tengan conversaciones consistentes sin depender solo de referidos de HubSpot.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @inboundcycle",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Elite Partner status bien merecido 👏'",
+      "dm": "Hola! Vi que son TOP 10 mundial en inbound. Estamos ayudando a varias agencias Elite Partners a sistematizar sus conversaciones comerciales. Te mando algo por email."
+    },
+    "whatsappMessage": "Hola Lluis! Felicitaciones por ser Elite Partner de HubSpot. Estamos ayudando a agencias de su nivel a sistematizar la generación de conversaciones comerciales. ¿Te interesaría conocer cómo?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Lluis, felicitaciones por el estatus Elite Partner de HubSpot",
+      "followUp": "Gracias por aceptar la conexión. Ayudamos a agencias Elite Partner como InboundCycle a sistematizar sus conversaciones comerciales para no depender de picos aleatorios cada mes."
+    },
+    "outreachSequence": [
+      "Dia 1: Email con specificLine + seguir en Instagram",
+      "Dia 2: Likes y comentario en Instagram",
+      "Dia 4: LinkedIn connection request",
+      "Dia 7: Email de seguimiento mencionando otros Elite Partners"
+    ],
+    "keyInsight": "Elite Partners de HubSpot tienen presión constante por mantener performance - necesitan sistemas predecibles más que cualquier agencia regular.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Cyberclick",
+    "website": "https://cyberclick.es",
+    "country": "Mexico",
+    "industry": "services",
+    "summary": "Cyberclick, empresa tecnológica experta en marketing digital, ventas e IA, con más de 25 años de experiencia. Estrategias a medida orientadas a resultados.",
+    "notableClients": [
+      "Amazon",
+      "Google",
+      "Meta",
+      "Facebook",
+      "TikTok"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "large",
+    "unabaseScore": 8,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Cyberclick es una empresa tecnológica especializada en marketing digital, ventas e IA con más de 25 años de experiencia en México. Trabajan con clientes de alto perfil como Amazon, Google, Meta y TikTok desarrollando estrategias a medida orientadas a resultados.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Cyberclick! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Cyberclick y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que trabajan con clientes como Amazon y Google — con ese nivel de cuentas, cada conversación nueva que no llega de forma predecible en el mes puede significar oportunidades de 6 cifras que se pierden por timing.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 5,
+    "fitReasons": [
+      "has_clients",
+      "large_team",
+      "strong_b2b_signal"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "comunicacion@cyberclick.net",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/cyberclicknet/",
+    "instagramHandle": "cyberclicknet",
+    "instagramBio": "See Instagram photos and videos from Cyberclick • Agencia de Marketing Digital (@cyberclicknet)",
+    "instagramFollowers": "16K",
+    "facebookUrl": "https://www.facebook.com/pages/Cyberclick/207905862604108",
+    "twitterUrl": "https://twitter.com/cyberclicknet",
+    "youtubeUrl": "https://www.youtube.com/user/cyberclicknet",
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [
+          "comunicacion@cyberclick.net"
+        ],
+        "genericEmails": [
+          "info@cyberclick.es"
+        ],
+        "phones": [
+          "50\n51-100\n101",
+          "500\n501-1000"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/cyberclicknet/",
+          "facebook": "https://www.facebook.com/pages/Cyberclick/207905862604108",
+          "twitter": "https://twitter.com/cyberclicknet",
+          "youtube": "https://www.youtube.com/user/cyberclicknet",
+          "vimeo": null,
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/cyberclicknet/",
+        "igHandle": "cyberclicknet",
+        "igFollowers": "16K",
+        "socialEmail": "info@cyberclick.es",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "comunicacion@cyberclick.net",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/cyberclicknet",
+    "apolloCompanyPhone": "+34 935 08 82 34",
+    "apolloEmployeeCount": 75,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vi el trabajo que hacen con clientes como Amazon y Google — impresionante portfolio. Me da curiosidad, ¿cómo manejan el flujo de conversaciones nuevas cada mes con ese nivel de cuentas? Emiliano de UnaBase.",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Rol de comunicación puede tener acceso directo a decisores comerciales o CEO para coordinar demos estratégicas.",
+    "whyThisLead": [
+      "Empresa de servicios B2B con 75 empleados que maneja clientes enterprise de alto valor",
+      "Portfolio de clientes premium (Amazon, Google, Meta) indica tickets altos y ciclos consultivos",
+      "25 años de experiencia sugiere equipo comercial maduro que necesita consistencia, no entrenamiento básico"
+    ],
+    "actionBlock": [
+      "Contactar por email corporativo primero, seguir con LinkedIn y Instagram",
+      "Email profesional + Instagram casual como backup",
+      "Tono profesional directo enfocado en precisión comercial"
+    ],
+    "conversationAngle": "Con una cartera de clientes como Amazon y Google, seguramente manejan múltiples oportunidades simultáneas pero las conversaciones nuevas llegan de forma irregular cada mes.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "LinkedIn",
+      "opcional": "Instagram"
+    },
+    "specificLine": "Vimos que trabajan con clientes como Amazon y Google — con ese nivel de cuentas, cada conversación nueva que no llega de forma predecible en el mes puede significar oportunidades de 6 cifras que se pierden por timing.",
+    "emailCercana": "Hola equipo de Cyberclick! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Cyberclick y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que trabajan con clientes como Amazon y Google — con ese nivel de cuentas, cada conversación nueva que no llega de forma predecible en el mes puede significar oportunidades de 6 cifras que se pierden por timing.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado equipo,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que trabajan con clientes como Amazon y Google — con ese nivel de cuentas, cada conversación nueva que no llega de forma predecible en el mes puede significar oportunidades de 6 cifras que se pierden por timing.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @cyberclicknet",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Excelente trabajo con estas campañas, se nota la experiencia de 25 años'",
+      "dm": "Hola! Vi el trabajo que hacen con clientes como Amazon y Google — impresionante portfolio. Me da curiosidad, ¿cómo manejan el flujo de conversaciones nuevas cada mes con ese nivel de cuentas? Emiliano de UnaBase."
+    },
+    "whatsappMessage": "Hola! Soy Emiliano de UnaBase. Vimos el trabajo que hacen en Cyberclick con clientes como Amazon y Google. Con ese nivel de cuentas, me da curiosidad saber cómo manejan el flujo de conversaciones comerciales nuevas cada mes. ¿Podríamos hablar 15 min?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola! Trabajo con empresas como Cyberclick que manejan cuentas enterprise. Me interesa conectar.",
+      "followUp": "Gracias por aceptar! Con la experiencia que tienen trabajando con Amazon y Google, me da curiosidad saber cómo manejan la generación consistente de conversaciones comerciales nuevas cada mes. ¿Te interesaría una charla rápida sobre esto?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email corporativo con línea específica",
+      "Dia 2: Seguir en Instagram y dar engagement",
+      "Dia 4: Conexión en LinkedIn con nota personalizada",
+      "Dia 7: DM en Instagram si no hay respuesta por otros canales"
+    ],
+    "keyInsight": "25 años de experiencia + clientes premium como Amazon/Google = equipo comercial maduro que valorará soluciones de precisión sobre volumen.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Estrategia Growth",
+    "website": "https://estrategiagrowth.com",
+    "country": "Argentina",
+    "industry": "services",
+    "summary": "Descubre cómo Estrategia Growth puede ayudarte con estrategias de crecimiento eficientes.",
+    "notableClients": [
+      "Google",
+      "Meta"
+    ],
+    "recentProjects": [
+      "Growth Marketing"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Estrategia Growth es una consultora de growth marketing que trabaja con clientes enterprise como Google y Meta. Con 37K seguidores en Instagram, posicionan estrategias de crecimiento eficientes para empresas de alto nivel.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Estrategia Growth! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Estrategia Growth y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nConsultoras que trabajan con clientes como Google y Meta nos comentan que el mayor desafio no es cerrar proyectos, sino generar conversaciones enterprise de forma consistente cada mes sin depender solo de referidos.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "has_clients",
+      "strong_b2b_signal"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "contacto@estrategiagrowth.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/eg/",
+    "instagramHandle": "eg",
+    "instagramBio": "See Instagram photos and videos from Obaid alnuaimi (@eg)",
+    "instagramFollowers": "37K",
+    "facebookUrl": null,
+    "twitterUrl": "https://www.wix.com/templateslp/studio-external-link",
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/marketingautomatizado360",
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@estrategiagrowth.com"
+        ],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": "https://www.wix.com/templateslp/studio-external-link",
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/estrategia_growth/",
+        "igHandle": "estrategia_growth",
+        "igFollowers": "2,148",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "eg",
+        "followers": "37K",
+        "email": null,
+        "phone": null,
+        "triedHandles": 13
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": []
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/marketingautomatizado360"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "contacto@estrategiagrowth.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/workwithbrava",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 1,
+    "contactVenues": 2,
+    "manualNote": "Email generico (contacto@estrategiagrowth.com) — contactar tambien por Instagram @eg",
+    "whoisCheckPending": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vi que manejan growth marketing para clientes como Google y Meta. Nosotros trabajamos con consultoras similares ayudandoles con algo muy especifico: generar conversaciones enterprise consistentes cada mes. Te mando un email con mas detalles.",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como founder/owner de una consultora boutique con clientes enterprise, tiene poder total de decision sobre inversiones en sistemas comerciales.",
+    "whyThisLead": [
+      "Consultora de servicios high-ticket con clientes enterprise - necesita flujo consistente de conversaciones",
+      "Trabaja con Google y Meta, maneja proyectos de alto valor con ciclos consultivos",
+      "Empresa pequena (1 empleado) que seguramente depende de referidos y tiene picos aleatorios de nuevos clientes"
+    ],
+    "actionBlock": [
+      "Conectar por Instagram aprovechando sus 37K seguidores",
+      "Instagram DM seguido de email",
+      "Tono profesional-casual, reconociendo su expertise"
+    ],
+    "conversationAngle": "Consultoras que manejan clientes como Google/Meta usualmente tienen el desafio de generar conversaciones enterprise consistentes sin depender solo de referidos o inbound.",
+    "channelPriority": {
+      "primario": "Instagram",
+      "secundario": "Email",
+      "opcional": "LinkedIn"
+    },
+    "specificLine": "Consultoras que trabajan con clientes como Google y Meta nos comentan que el mayor desafio no es cerrar proyectos, sino generar conversaciones enterprise de forma consistente cada mes sin depender solo de referidos.",
+    "emailCercana": "Hola equipo de Estrategia Growth! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Estrategia Growth y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nConsultoras que trabajan con clientes como Google y Meta nos comentan que el mayor desafio no es cerrar proyectos, sino generar conversaciones enterprise de forma consistente cada mes sin depender solo de referidos.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado equipo,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nConsultoras que trabajan con clientes como Google y Meta nos comentan que el mayor desafio no es cerrar proyectos, sino generar conversaciones enterprise de forma consistente cada mes sin depender solo de referidos.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @eg",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Excelente insight sobre growth para enterprise, especialmente relevante para consultoras'",
+      "dm": "Hola! Vi que manejan growth marketing para clientes como Google y Meta. Nosotros trabajamos con consultoras similares ayudandoles con algo muy especifico: generar conversaciones enterprise consistentes cada mes. Te mando un email con mas detalles."
+    },
+    "whatsappMessage": null,
+    "linkedinPlaybook": {
+      "connectionNote": "Conectando con consultores de growth marketing que trabajan con enterprise",
+      "followUp": "Hola! Veo que manejan growth marketing para clientes como Google/Meta. Trabajamos con consultoras similares en algo muy especifico: sistemas para generar conversaciones enterprise consistentes. ¿Te interesa conocer como lo resolvieron otros?"
+    },
+    "outreachSequence": [
+      "Dia 1: Seguir y dar likes en Instagram + comentario",
+      "Dia 2: Instagram DM + email especifico",
+      "Dia 4: LinkedIn connection con nota personalizada",
+      "Dia 7: Email final mencionando casos similares de consultoras growth"
+    ],
+    "keyInsight": "Consultora boutique con clientes enterprise de primer nivel que seguramente enfrenta el clasico problema de inconsistencia en pipeline de nuevos proyectos.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "HikeFoxter",
+    "website": "https://hikefoxter.com",
+    "country": "Spain",
+    "industry": "services",
+    "summary": "Impulsamos la transformación digital de tu empresa con consultoría, CRM, analítica web, CRO, HubSpot, Salesforce e inteligencia artificial.",
+    "notableClients": [
+      "Mediaset",
+      "Google",
+      "Modelo"
+    ],
+    "recentProjects": [
+      "Consultoría Independiente especializada e"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 2,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 2,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Consultoría especializada en CRM y RevOps que impulsa transformación digital con HubSpot, Salesforce e IA. Trabajan con clientes enterprise como Mediaset, Google y Modelo.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Eduard! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en HikeFoxter y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Mediaset y Google seguramente manejan proyectos de RevOps complejos, pero como la mayoría de consultorías especializadas, las conversaciones nuevas llegan en picos impredecibles cada mes.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "has_clients"
+    ],
+    "contactName": "Eduard I Cortadellas",
+    "contactTitle": "Co-CEO",
+    "contactEmail": "edu@hikefoxter.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/eduardbarredo",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Eduard I Cortadellas",
+        "title": "Co-CEO",
+        "email": "edu@hikefoxter.com",
+        "linkedin": "http://www.linkedin.com/in/eduardbarredo"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/popular/revops/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como Co-CEO define la estrategia comercial y puede aprobar inversiones en optimización de pipeline.",
+    "whyThisLead": [
+      "Venden consultoría de alto ticket a empresas grandes con ciclos consultivos largos",
+      "Portfolio de clientes enterprise (Mediaset, Google) indica capacidad de cierre de deals importantes",
+      "Como consultores RevOps entienden el valor de sistemas predecibles pero probablemente dependen de referidos"
+    ],
+    "actionBlock": [
+      "Enviar email directo mencionando el desafío de generar conversaciones consistentes sin depender solo de referidos",
+      "Email como canal primario",
+      "Tono profesional entre pares - consultor a consultor"
+    ],
+    "conversationAngle": "Como consultores RevOps para empresas grandes, seguramente entienden la ironía de tener sistemas perfectos para clientes pero generar sus propias conversaciones de forma inconsistente mes a mes.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "LinkedIn",
+      "opcional": "ninguno"
+    },
+    "specificLine": "Con clientes como Mediaset y Google seguramente manejan proyectos de RevOps complejos, pero como la mayoría de consultorías especializadas, las conversaciones nuevas llegan en picos impredecibles cada mes.",
+    "emailCercana": "Hola Eduard! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en HikeFoxter y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Mediaset y Google seguramente manejan proyectos de RevOps complejos, pero como la mayoría de consultorías especializadas, las conversaciones nuevas llegan en picos impredecibles cada mes.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a Eduard,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Mediaset y Google seguramente manejan proyectos de RevOps complejos, pero como la mayoría de consultorías especializadas, las conversaciones nuevas llegan en picos impredecibles cada mes.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": {
+      "connectionNote": "Co-CEO en HikeForxter - me interesa tu enfoque en RevOps para enterprise",
+      "followUp": "Eduard, veo que trabajan RevOps para clientes grandes como Mediaset. Me imagino que como la mayoría de consultorías especializadas, generar conversaciones nuevas cada mes sin depender de referidos es el verdadero desafío operativo."
+    },
+    "outreachSequence": [
+      "Día 1: Enviar email específico mencionando el desafío de consistencia en generación de conversaciones",
+      "Día 2: Seguimiento por LinkedIn con conexión",
+      "Día 4: Email corto preguntando sobre su proceso actual de generación de leads",
+      "Día 7: Mensaje final en LinkedIn ofreciendo recurso específico para consultorías RevOps"
+    ],
+    "keyInsight": "Como expertos en RevOps van a entender inmediatamente el problema de pipeline inconsistente y valorar una solución sistemática.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Mangoycia",
+    "website": "https://mangoycia.com",
+    "country": "Colombia",
+    "industry": "services",
+    "summary": "Somos una Agencia Especializada en Generación de Leads B2B, B2C. Gestión de Google Ads, Facebook e Instagram ADS, Campañas PPC y Automatización.",
+    "notableClients": [
+      "Google",
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 2,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 2,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Mangoycia es una agencia especializada en generación de leads B2B/B2C que gestiona Google Ads, Facebook/Instagram Ads y automatización para clientes. Trabajan con grandes marcas como Google y Facebook, operando desde Colombia con un equipo pequeño de 2 personas.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Mangoycia! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Mangoycia y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que gestionan campañas para clientes como Google y Facebook - con ese nivel de cuentas, conseguir 3-4 reuniones comerciales nuevas cada mes de forma predecible debe ser crítico para mantener el crecimiento.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "has_clients"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "hola@mangoycia.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "social_only",
+    "contactSource": "social",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/mangoycia/",
+    "instagramHandle": "mangoycia",
+    "instagramBio": "See Instagram photos and videos from Mango&Cía (@mangoycia) Log In",
+    "instagramFollowers": "209",
+    "facebookUrl": "https://www.facebook.com/mangoycia/",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [
+          "hola@mangoycia.com"
+        ],
+        "phones": [
+          "+54 11 3626 3069",
+          "+1 (321) 280-1151"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/mangoycia/",
+          "facebook": "https://www.facebook.com/mangoycia/",
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": "hola@mangoycia.com",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "mangoycia",
+        "followers": "209",
+        "email": null,
+        "phone": null,
+        "triedHandles": 6
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+54 11 3626 3069",
+          "+1 (321) 280-1151"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "hola@mangoycia.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/mangoycia",
+    "apolloCompanyPhone": "54 9 11 3626-3069",
+    "apolloEmployeeCount": 2,
+    "contactVenues": 3,
+    "manualNote": "Email generico (hola@mangoycia.com) — contactar tambien por Instagram @mangoycia",
+    "whoisCheckPending": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vi que manejan campañas para clientes muy grandes. ¿Cómo hacen para conseguir reuniones comerciales consistentes cada mes más allá de referidos? Pregunto porque trabajo con agencias similares.",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Al ser una empresa de 2 personas, quien maneje el email principal tiene poder de decisión directo sobre inversiones y herramientas comerciales.",
+    "whyThisLead": [
+      "Venden servicios de alto valor (gestión de ads) que requieren conversaciones consultivas constantes con prospectos",
+      "Tienen clientes enterprise (Google, Facebook) lo que indica capacidad de cerrar deals grandes",
+      "Como agencia necesitan un pipeline predecible de reuniones comerciales más allá de referidos"
+    ],
+    "actionBlock": [
+      "Enviar email específico sobre su desafío de conseguir reuniones comerciales consistentes",
+      "WhatsApp como canal principal (tienen número argentino)",
+      "Tono profesional pero directo, enfocado en precisión operativa"
+    ],
+    "conversationAngle": "Como agencia que maneja cuentas de alto valor, probablemente dependen de referidos y algunos leads de marketing, pero necesitan un sistema que les garantice X reuniones comerciales cada mes sin depender de variables externas.",
+    "channelPriority": {
+      "primario": "WhatsApp",
+      "secundario": "Email",
+      "opcional": "Instagram"
+    },
+    "specificLine": "Vimos que gestionan campañas para clientes como Google y Facebook - con ese nivel de cuentas, conseguir 3-4 reuniones comerciales nuevas cada mes de forma predecible debe ser crítico para mantener el crecimiento.",
+    "emailCercana": "Hola equipo de Mangoycia! Como estan? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Mangoycia y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que gestionan campañas para clientes como Google y Facebook - con ese nivel de cuentas, conseguir 3-4 reuniones comerciales nuevas cada mes de forma predecible debe ser crítico para mantener el crecimiento.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado equipo,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nVimos que gestionan campañas para clientes como Google y Facebook - con ese nivel de cuentas, conseguir 3-4 reuniones comerciales nuevas cada mes de forma predecible debe ser crítico para mantener el crecimiento.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @mangoycia",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo específico sobre su expertise en ads B2B: 'Excelente approach en la segmentación'",
+      "dm": "Hola! Vi que manejan campañas para clientes muy grandes. ¿Cómo hacen para conseguir reuniones comerciales consistentes cada mes más allá de referidos? Pregunto porque trabajo con agencias similares."
+    },
+    "whatsappMessage": "Hola! Soy Emiliano, vi que Mangoycia maneja campañas para Google y Facebook. Trabajo con agencias como la suya que necesitan reuniones comerciales predecibles cada mes. ¿Cómo están generando conversaciones nuevas hoy sin depender solo de referidos?",
+    "linkedinPlaybook": {
+      "connectionNote": "Trabajo con agencias que necesitan reuniones comerciales predecibles",
+      "followUp": "Hola! Vi que Mangoycia maneja cuentas de alto nivel como Google. Me especializo en ayudar a agencias a generar reuniones comerciales de forma consistente. ¿Cómo están manejando ese tema actualmente?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar WhatsApp inicial con pregunta específica",
+      "Dia 2: Follow up por email con specificLine",
+      "Dia 4: Interacción en Instagram + DM casual",
+      "Dia 7: WhatsApp final ofreciendo insight específico sobre agencias"
+    ],
+    "keyInsight": "Agencia pequeña con clientes enterprise indica alta capacidad de pago y necesidad real de pipeline predecible para sostener el crecimiento.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Cronuts Digital",
+    "website": "https://cronuts.digital",
+    "country": "Mexico",
+    "industry": "services",
+    "summary": "Growth Marketing y Productos IA paquetizados para empresas B2B entre 500 K€ y 100 M€ de facturación. Sistemas que ejecutan, no decks. Diagnóstico ejecutivo gratis en 30 min.",
+    "notableClients": [
+      "Google",
+      "Meta",
+      "Modelo"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 8,
+    "scopeVerified": true,
+    "scopeSignals": 4,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Cronuts Digital es una agencia de Growth Marketing B2B que ofrece sistemas medibles y productos IA paquetizados para empresas entre 500K€-100M€. Trabajan con clientes de primer nivel como Google, Meta y Modelo.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Roger! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Cronuts Digital y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Meta seguramente el reto no es cerrar proyectos sino mantener conversaciones consistentes cada mes sin depender solo de referidos.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "has_clients",
+      "mid_size_team",
+      "strong_b2b_signal"
+    ],
+    "contactName": "Roger C",
+    "contactTitle": "CEO",
+    "contactEmail": "info@cronuts.digital",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "deep_rescue",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/cronuts.digital/",
+    "instagramHandle": "cronuts.digital",
+    "instagramBio": "See Instagram photos and videos from CRONUTS DIGITAL (@cronuts.digital)",
+    "instagramFollowers": "3,976",
+    "facebookUrl": "https://www.facebook.com/cronutsdigital/",
+    "twitterUrl": null,
+    "youtubeUrl": "https://youtube.com/c/CRONUTSDIGITAL",
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "tu@empresa.com"
+        ],
+        "genericEmails": [
+          "info@cronuts.digital"
+        ],
+        "phones": [
+          "+34 722 525 769",
+          "67049718"
+        ],
+        "name": "Roger C",
+        "social": {
+          "instagram": "https://www.instagram.com/cronuts.digital/",
+          "facebook": "https://www.facebook.com/cronutsdigital/",
+          "twitter": null,
+          "youtube": "https://youtube.com/c/CRONUTSDIGITAL",
+          "vimeo": null,
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/cronuts.digital/",
+        "igHandle": "cronuts.digital",
+        "igFollowers": "3,976",
+        "socialEmail": "info@cronuts.digital",
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_email": "info@cronuts.digital",
+        "pages_crawled": 20
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Roger C"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@cronuts.digital",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "whoisCheckPending": true,
+    "contactPath": "decision_maker_email",
+    "tier": "tier2",
+    "instagramDM": "Hola Roger! Vi que manejan clientes como Google y Meta - qué nivel. Me imagino que con ese tipo de proyectos el reto no es cerrar sino mantener el pipeline lleno consistentemente. ¿Cómo lo están manejando ahora?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Es CEO y fundador, toma decisiones de inversión en sistemas comerciales para la agencia.",
+    "whyThisLead": [
+      "Agencia B2B con servicios de alto valor que necesita conversaciones consistentes para mantener pipeline",
+      "Clientes enterprise (Google, Meta, Modelo) indican ticket alto y capacidad de inversión",
+      "Ya venden consultivamente pero como agencia necesitan predictibilidad en nuevas conversaciones"
+    ],
+    "actionBlock": [
+      "Contactar por Instagram DM primero",
+      "Instagram + WhatsApp",
+      "Tono casual pero profesional"
+    ],
+    "conversationAngle": "Con clientes como Google y Meta seguramente el challenge no es cerrar deals sino tener conversaciones suficientes cada mes sin depender solo de referidos.",
+    "channelPriority": {
+      "primario": "Instagram",
+      "secundario": "WhatsApp",
+      "opcional": "Email"
+    },
+    "specificLine": "Con clientes como Google y Meta seguramente el reto no es cerrar proyectos sino mantener conversaciones consistentes cada mes sin depender solo de referidos.",
+    "emailCercana": "Hola Roger! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Cronuts Digital y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Meta seguramente el reto no es cerrar proyectos sino mantener conversaciones consistentes cada mes sin depender solo de referidos.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a Roger,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Meta seguramente el reto no es cerrar proyectos sino mantener conversaciones consistentes cada mes sin depender solo de referidos.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @cronuts.digital",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Impresionante roster de clientes, Google y Meta no son fáciles de conseguir'",
+      "dm": "Hola Roger! Vi que manejan clientes como Google y Meta - qué nivel. Me imagino que con ese tipo de proyectos el reto no es cerrar sino mantener el pipeline lleno consistentemente. ¿Cómo lo están manejando ahora?"
+    },
+    "whatsappMessage": "Hola Roger, soy Emiliano de UnaBase. Vi Cronuts Digital - impresionante trabajar con Google y Meta. Con ese nivel de clientes imagino que el challenge es mantener conversaciones consistentes cada mes, no cerrar. ¿Cómo lo manejan hoy?",
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Seguir y dar likes en Instagram",
+      "Dia 2: Comentar en post + enviar DM en Instagram",
+      "Dia 4: WhatsApp follow-up",
+      "Dia 7: Email final"
+    ],
+    "keyInsight": "Agencia establecida con clientes premium que entiende ventas B2B pero necesita predictibilidad en pipeline.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Ahá",
+    "website": "https://ahamarketingdigital.com.ar",
+    "country": "Argentina",
+    "industry": "services",
+    "summary": "Ir al contenido INICIO NOSOTROS SERVICIOS MERCHANDINSING ACADEMIA AGENCIA DE MARKETING Y PUBLICIDAD Impulsa tu negocio con nosotros Despeguemos tu negocio juntos, llevemos tu marca al siguiente nivel. ¡Bienvenidos a AHÁ AGENCIA DE MARKETING! Nos especializamos en Marketing y Publicidad Digital, centrandonos en atender las necesidades específicas de clientes B2B.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 2,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 2,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Ahá es una agencia de marketing digital argentina de 210 empleados especializada en atender clientes B2B. Trabajan con empresas grandes como Facebook y se posicionan como especialistas en marketing y publicidad digital consultiva.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola David! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Ahá y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Facebook y un equipo de 210 personas, seguramente manejan cuentas de alto valor donde cada conversación cuenta. La pregunta es: ¿cómo están generando conversaciones B2B nuevas cada mes más allá de los referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "has_clients",
+      "mid_size_team"
+    ],
+    "contactName": "David Perez",
+    "contactTitle": "Founder",
+    "contactEmail": "david.perez@ahamarketingdigital.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/david-edgardo-perez",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/aha_marketing_digital/",
+    "instagramHandle": "aha_marketing_digital",
+    "instagramBio": "See Instagram photos and videos from Sport & Wedding Photo or Video (@ahstudio) Log In",
+    "instagramFollowers": "146",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "929-242-6868",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "David Perez",
+        "title": "Founder",
+        "email": "david.perez@ahamarketingdigital.com",
+        "linkedin": "http://www.linkedin.com/in/david-edgardo-perez"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 15,
+        "personalEmails": [],
+        "genericEmails": [
+          "contact@info.com"
+        ],
+        "phones": [
+          "929-242-6868"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/aha_marketing_digital/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/aha_marketing_digital/",
+        "igHandle": "aha_marketing_digital",
+        "igFollowers": "146",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "David Perez"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "tiendanube"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "tiendanube",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "david.perez@ahamarketingdigital.com",
+          "additional": 1,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/ahoraempleo",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 210,
+    "additionalContacts": [
+      {
+        "instagramHandle": "tiendanube",
+        "instagramUrl": "https://www.instagram.com/tiendanube/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "y Agencia de marketing integral Partner @tiendanube"
+      }
+    ],
+    "manualNote": "Founder IG(s) identified (@tiendanube) — check IG Contact button manually for direct email + phone.",
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "instagramDM": "Hola David! Vi que se especializan en B2B con clientes como Facebook. Nosotros también trabajamos pure B2B y entendemos lo desafiante que es mantener el pipeline consistente mes a mes. ¿Cómo están manejando la generación de conversaciones nuevas?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como Founder de la agencia, David tiene control total sobre las decisiones de herramientas y procesos comerciales que impacten el crecimiento.",
+    "whyThisLead": [
+      "Agencia B2B consultiva con clientes corporativos grandes - exactamente el perfil que necesita consistencia en pipeline",
+      "210 empleados con clientes como Facebook indica operación madura que ya vende, no startup buscando primeros clientes",
+      "Como agencia dependen de flujo constante de prospects empresariales, no pueden permitirse meses sin conversaciones nuevas"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su especialización B2B",
+      "Canal primario: Email directo",
+      "Tono: Profesional-consultivo, de peer a peer entre empresas B2B"
+    ],
+    "conversationAngle": "Con clientes corporativos como Facebook, seguramente entienden lo frustrante que es no poder predecir cuántas conversaciones nuevas van a tener cada mes, especialmente cuando manejan cuentas de tanto valor.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "LinkedIn",
+      "opcional": "WhatsApp"
+    },
+    "specificLine": "Con clientes como Facebook y un equipo de 210 personas, seguramente manejan cuentas de alto valor donde cada conversación cuenta. La pregunta es: ¿cómo están generando conversaciones B2B nuevas cada mes más allá de los referidos?",
+    "emailCercana": "Hola David! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Ahá y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Facebook y un equipo de 210 personas, seguramente manejan cuentas de alto valor donde cada conversación cuenta. La pregunta es: ¿cómo están generando conversaciones B2B nuevas cada mes más allá de los referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a David,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Facebook y un equipo de 210 personas, seguramente manejan cuentas de alto valor donde cada conversación cuenta. La pregunta es: ¿cómo están generando conversaciones B2B nuevas cada mes más allá de los referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @aha_marketing_digital",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo sobre su enfoque B2B: 'Me gusta su enfoque en B2B, es un nicho que requiere mucha precisión'",
+      "dm": "Hola David! Vi que se especializan en B2B con clientes como Facebook. Nosotros también trabajamos pure B2B y entendemos lo desafiante que es mantener el pipeline consistente mes a mes. ¿Cómo están manejando la generación de conversaciones nuevas?"
+    },
+    "whatsappMessage": "Hola David! Soy Emiliano de EJE. Vi que Ahá maneja cuentas B2B grandes como Facebook. Nos especializamos en ayudar a empresas consultivas como la tuya a tener conversaciones predecibles cada mes. ¿Te interesa una charla de 15 min sobre cómo están generando pipeline nuevo?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola David, fellow B2B en Argentina. Me interesa tu enfoque con clientes corporativos.",
+      "followUp": "Gracias por conectar David. Con clientes como Facebook imagino que manejan deals de alto valor. ¿Cómo están generando conversaciones B2B nuevas cada mes más allá de referidos?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email personalizado con specificLine",
+      "Dia 2: Follow en Instagram + like a posts recientes",
+      "Dia 4: Mensaje por LinkedIn si no responde email",
+      "Dia 7: WhatsApp directo si los otros canales no funcionan"
+    ],
+    "keyInsight": "Agencia B2B madura con clientes corporativos grandes - entienden perfectamente el dolor de inconsistencia en pipeline porque lo viven cada mes.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Parrot Marketing",
+    "website": "https://parrotmarketing.mx",
+    "country": "Mexico",
+    "industry": "services",
+    "summary": "Somos una agencia de Inbound Marketing en México con el objetivo de aumentar las ventas, disminuir los costos y mejorar la rentabilidad.",
+    "notableClients": [
+      "Google",
+      "Facebook",
+      "TikTok",
+      "Modelo"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Parrot Marketing es una agencia de Inbound Marketing en México que trabaja con clientes enterprise como Google, Facebook, TikTok y Modelo. Especializados en aumentar ventas, reducir costos y mejorar rentabilidad para marcas de alto perfil.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Alberto! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Parrot Marketing y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google, Facebook y Modelo, manejan cuentas enterprise que requieren un pipeline comercial predecible cada mes. La pregunta que nos hacen otros CEOs de agencias: ¿cómo generan conversaciones nuevas consistentemente sin depender solo de referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "has_clients",
+      "strong_b2b_signal"
+    ],
+    "contactName": "Alberto Ramirez Landa",
+    "contactTitle": "CEO & Founder",
+    "contactEmail": "hola@parrotmarketing.mx",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/parrotmkt/",
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/ParrotMarketing",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/214716856",
+    "contactPhone": null,
+    "emailPatterns": [
+      "alberto@parrotmarketing.mx",
+      "alberto.ramirezlanda@parrotmarketing.mx",
+      "a.ramirezlanda@parrotmarketing.mx"
+    ],
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [
+          "hola@parrotmarketing.mx"
+        ],
+        "phones": [
+          "+52 81 1544 1223",
+          "+52 961 233 5749",
+          "+52 961 264 3999",
+          "+52 55 2760 3685"
+        ],
+        "name": "Alberto Ramirez Landa",
+        "social": {
+          "instagram": "https://www.instagram.com/parrotmkt/",
+          "facebook": "https://www.facebook.com/ParrotMarketing",
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 1
+        }
+      },
+      {
+        "step": "reverse",
+        "name": "Reverse Lookup",
+        "started": true,
+        "targetName": "Alberto Ramirez Landa"
+      },
+      {
+        "step": "reverse",
+        "hunter_error": "Request failed with status code 429"
+      },
+      {
+        "step": "reverse",
+        "found": "nothing"
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "D",
+        "name": "Name→Email",
+        "started": true
+      },
+      {
+        "step": "D",
+        "patterns": [
+          "alberto@parrotmarketing.mx",
+          "alberto.ramirezlanda@parrotmarketing.mx",
+          "a.ramirezlanda@parrotmarketing.mx"
+        ],
+        "via": "pattern"
+      },
+      {
+        "step": 9,
+        "name": "Hunter Find",
+        "started": true
+      },
+      {
+        "step": 9,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": null,
+        "followers": null,
+        "email": null,
+        "phone": null,
+        "triedHandles": 14
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+52 81 1544 1223",
+          "+52 961 233 5749",
+          "+52 961 264 3999",
+          "+52 55 2760 3685"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Alberto Ramirez Landa"
+      },
+      {
+        "step": "founder_recovery",
+        "ig_bio_error": "Attempted to use detached Frame '080B50C8CC19C12F3670F4BB7D20F932'."
+      },
+      {
+        "step": "founder_recovery",
+        "ig_search_error": "Attempted to use detached Frame '080B50C8CC19C12F3670F4BB7D20F932'."
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "blog_error": "Attempted to use detached Frame '080B50C8CC19C12F3670F4BB7D20F932'."
+      },
+      {
+        "step": "alt_paths",
+        "directory_error": "Attempted to use detached Frame '080B50C8CC19C12F3670F4BB7D20F932'."
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "hola@parrotmarketing.mx",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Alberto Ramirez Landa"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "parrotmkt"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "parrotmkt",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/214716856"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 1
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "hola@parrotmarketing.mx",
+          "additional": 1,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/strategicabm",
+    "apolloCompanyPhone": "+44 20 3301 3888",
+    "apolloEmployeeCount": 21,
+    "contactVenues": 3,
+    "whoisCheckPending": true,
+    "additionalContacts": [
+      {
+        "instagramHandle": "parrotmkt",
+        "instagramUrl": "https://www.instagram.com/parrotmkt/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "arrot Marketing | Agencia de Marketing (@parrotmkt"
+      }
+    ],
+    "manualNote": "Founder IG(s) identified (@parrotmkt) — check IG Contact button manually for direct email + phone.",
+    "contactPath": "decision_maker_email",
+    "tier": "tier2",
+    "instagramDM": "Hola Alberto! Vi el trabajo que hacen con marcas como Google y Modelo. Como CEO de agencia, me imagino que el reto más grande es mantener el pipeline predecible cada mes. ¿Tienes 5 min para intercambiar experiencias?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "CEO & Founder - toma todas las decisiones de inversión en herramientas y procesos comerciales para la agencia.",
+    "whyThisLead": [
+      "Agencia con clientes enterprise que requiere pipeline predecible para mantener cuentas de alto valor",
+      "Portfolio de clientes premium (Google, Facebook, TikTok, Modelo) indica manejo de tickets altos",
+      "Como agencia B2B necesita conversaciones consistentes cada mes sin depender solo de referidos"
+    ],
+    "actionBlock": [
+      "Enviar email específico mencionando sus clientes enterprise",
+      "Email como canal primario",
+      "Tono profesional pero directo - hablar de CEO a CEO"
+    ],
+    "conversationAngle": "Con clientes como Google y Modelo, Alberto sabe lo que es manejar cuentas enterprise - pero ¿cómo mantiene el pipeline de nuevas conversaciones predecible cada mes sin depender de referidos?",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "LinkedIn",
+      "opcional": "Instagram"
+    },
+    "specificLine": "Con clientes como Google, Facebook y Modelo, manejan cuentas enterprise que requieren un pipeline comercial predecible cada mes. La pregunta que nos hacen otros CEOs de agencias: ¿cómo generan conversaciones nuevas consistentemente sin depender solo de referidos?",
+    "emailCercana": "Hola Alberto! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Parrot Marketing y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google, Facebook y Modelo, manejan cuentas enterprise que requieren un pipeline comercial predecible cada mes. La pregunta que nos hacen otros CEOs de agencias: ¿cómo generan conversaciones nuevas consistentemente sin depender solo de referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a Alberto,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google, Facebook y Modelo, manejan cuentas enterprise que requieren un pipeline comercial predecible cada mes. La pregunta que nos hacen otros CEOs de agencias: ¿cómo generan conversaciones nuevas consistentemente sin depender solo de referidos?\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @parrotmkt",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Excelente trabajo con estas campañas enterprise'",
+      "dm": "Hola Alberto! Vi el trabajo que hacen con marcas como Google y Modelo. Como CEO de agencia, me imagino que el reto más grande es mantener el pipeline predecible cada mes. ¿Tienes 5 min para intercambiar experiencias?"
+    },
+    "whatsappMessage": "Hola Alberto! Soy Emiliano de UnaBase. Vi que Parrot trabaja con clientes como Google y Modelo. Me imagino que como CEO el reto es mantener conversaciones nuevas cada mes sin depender solo de referidos. ¿5 min para platicar de CEO a CEO?",
+    "linkedinPlaybook": {
+      "connectionNote": "CEO a CEO - me interesa tu experiencia con cuentas enterprise",
+      "followUp": "Hola Alberto! Impresionante el portfolio con Google, Facebook y Modelo. Como CEO, ¿cuál es tu estrategia para generar conversaciones predecibles cada mes más allá de referidos?"
+    },
+    "outreachSequence": [
+      "Dia 1: Email específico sobre clientes enterprise",
+      "Dia 2: Seguir en Instagram y engagement en posts",
+      "Dia 4: LinkedIn connection con nota CEO a CEO",
+      "Dia 7: WhatsApp directo si no hay respuesta previa"
+    ],
+    "keyInsight": "CEO de agencia con clientes enterprise premium que entiende el valor de sistemas predecibles por su propia experiencia.",
+    "source_date": "2026-04-22",
+    "approved": true
+  },
+  {
+    "companyName": "Cangrejo Digital",
+    "website": "https://cangrejodigital.com",
+    "country": "Mexico",
+    "industry": "services",
+    "summary": "Agencia de marketing digital en Colombia especializada en PYMES.SEO, diseño web, Meta Ads y consultoría con ROI comprobado.Diagnóstico gratuito. ¡Impulsa tu negocio hoy!",
+    "notableClients": [
+      "Google",
+      "Meta",
+      "Facebook",
+      "Modelo"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 4,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Agencia de marketing digital colombiana especializada en PYMES con servicios de SEO, diseño web y Meta Ads. Trabajan con clientes grandes como Google, Meta y Modelo, tienen 29K seguidores en Instagram.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Alejandro! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Cangrejo Digital y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Meta ya tienen la operación comercial funcionando, pero trabajando con PYMES colombianas sabemos que el desafío real está en llenar la agenda comercial cada mes de forma predecible.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "has_clients",
+      "strong_b2b_signal"
+    ],
+    "contactName": "Alejandro Perez",
+    "contactTitle": "CEO y Consultor en Cangrejo Digital",
+    "contactEmail": "contacto@cangrejodigital.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/alejodelperez",
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/cangrejodigital/",
+    "instagramHandle": "cangrejodigital",
+    "instagramBio": "See Instagram photos and videos from Cangrejo Digital (@cangrejodigital)",
+    "instagramFollowers": "29K",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/channel/UCIjhZttrBm2fwueWNez2KXA",
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": [
+      "alejandro@cangrejodigital.com",
+      "alejandro.perez@cangrejodigital.com",
+      "a.perez@cangrejodigital.com"
+    ],
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name_only",
+        "name": "Alejandro Perez"
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@cangrejodigital.com"
+        ],
+        "phones": [
+          "+57 301 167 9837"
+        ],
+        "name": "Andrés Ospina",
+        "social": {
+          "instagram": "https://www.instagram.com/cangrejodigital/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": "https://www.youtube.com/channel/UCIjhZttrBm2fwueWNez2KXA",
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": "reverse",
+        "name": "Reverse Lookup",
+        "started": true,
+        "targetName": "Alejandro Perez"
+      },
+      {
+        "step": "reverse",
+        "hunter_error": "Request failed with status code 429"
+      },
+      {
+        "step": "reverse",
+        "found": "nothing"
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": "Soy Emilio Villarreal",
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/cangrejodigital/",
+        "igHandle": "cangrejodigital",
+        "igFollowers": "29K",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": "+573011679837",
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "D",
+        "name": "Name→Email",
+        "started": true
+      },
+      {
+        "step": "D",
+        "patterns": [
+          "alejandro@cangrejodigital.com",
+          "alejandro.perez@cangrejodigital.com",
+          "a.perez@cangrejodigital.com"
+        ],
+        "via": "pattern"
+      },
+      {
+        "step": 9,
+        "name": "Hunter Find",
+        "started": true
+      },
+      {
+        "step": 9,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "cangrejodigital",
+        "followers": "29K",
+        "email": null,
+        "phone": null,
+        "triedHandles": 14
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+57 301 167 9837",
+          "+573011679837"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Alejandro Perez"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "contacto@cangrejodigital.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 4,
+    "whoisCheckPending": true,
+    "contactPath": "decision_maker_email",
+    "tier": "tier2",
+    "instagramDM": "Alejandro, vi el trabajo que hacen con Google y Meta. Estamos ayudando a agencias como la tuya a tener pipeline comercial más predecible. ¿Te interesa platicar?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como CEO y consultor principal, Alejandro toma todas las decisiones comerciales y conoce directamente los desafíos de generar clientes consistentemente.",
+    "whyThisLead": [
+      "Agencia con servicios de alto valor que requiere flujo constante de clientes corporativos",
+      "Ya tienen clientes enterprise (Google, Meta) y presencia digital sólida (29K seguidores)",
+      "Perfil exacto de empresa B2B consultiva que necesita pipeline predecible más allá del marketing"
+    ],
+    "actionBlock": [
+      "Revisar sus últimos posts de Instagram para identificar servicios actuales y casos de éxito",
+      "Email como canal principal + Instagram como apoyo",
+      "Tono profesional pero directo, enfocado en precisión comercial"
+    ],
+    "conversationAngle": "Con clientes como Google y Meta ya dominan la entrega, pero ¿cómo aseguran que cada mes tengan suficientes reuniones comerciales nuevas sin depender solo de su contenido orgánico?",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram DM",
+      "opcional": "LinkedIn"
+    },
+    "specificLine": "Con clientes como Google y Meta ya tienen la operación comercial funcionando, pero trabajando con PYMES colombianas sabemos que el desafío real está en llenar la agenda comercial cada mes de forma predecible.",
+    "emailCercana": "Hola Alejandro! Como estas? Soy Emiliano del equipo de EJE.\n\nEstabamos viendo el trabajo que hacen en Cangrejo Digital y conectamos.\n\nTrabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Meta ya tienen la operación comercial funcionando, pero trabajando con PYMES colombianas sabemos que el desafío real está en llenar la agenda comercial cada mes de forma predecible.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a Alejandro,\n\nSoy Emiliano del equipo de EJE. Trabajamos con empresas B2B con tickets altos, ayudandoles a hacer su adquisicion de clientes predecible: menos conversaciones, pero cada una con valor real.\n\nCon clientes como Google y Meta ya tienen la operación comercial funcionando, pero trabajando con PYMES colombianas sabemos que el desafío real está en llenar la agenda comercial cada mes de forma predecible.\n\nte muestro en 10 min cómo lo están usando empresas parecidas para volver su pipeline predecible.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "instagramPlaybook": {
+      "paso1": "Seguir @cangrejodigital",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Excelente trabajo con estas marcas, se ve el nivel de operación que manejan'",
+      "dm": "Alejandro, vi el trabajo que hacen con Google y Meta. Estamos ayudando a agencias como la tuya a tener pipeline comercial más predecible. ¿Te interesa platicar?"
+    },
+    "whatsappMessage": null,
+    "linkedinPlaybook": {
+      "connectionNote": "Ayudamos a agencias como Cangrejo Digital a tener pipeline comercial predecible",
+      "followUp": "Alejandro, veo que manejan clientes enterprise importantes. Estamos especializados en ayudar a agencias consultivas como ustedes a generar reuniones comerciales de forma consistente cada mes. ¿Te interesa una charla de 15 min?"
+    },
+    "outreachSequence": [
+      "Dia 1: Email directo mencionando clientes Google/Meta",
+      "Dia 2: Follow en Instagram + likes a posts recientes",
+      "Dia 4: Instagram DM casual de Emiliano",
+      "Dia 7: Email final con caso específico de agencia similar"
+    ],
+    "keyInsight": "Agencia establecida con clientes enterprise que ya sabe vender pero necesita sistematizar la generación de oportunidades comerciales.",
+    "source_date": "2026-04-22",
+    "approved": true
+  }
+]
