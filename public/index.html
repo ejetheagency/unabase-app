@@ -117,6 +117,23 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .aa-cta:hover{background:var(--ac2);transform:scale(1.03)}
 .aa-empty{text-align:center;padding:80px 20px;color:var(--dm);font-size:16px;font-weight:600;letter-spacing:.3px}
 .aa-empty .aa-empty-icon{font-size:42px;margin-bottom:14px;opacity:.5}
+/* Hoy "completed" state — NOT an empty-state. Compact, top-aligned, forward-pointing. */
+.hoy-done{grid-column:1/-1;display:flex;align-items:center;gap:14px;padding:14px 18px;margin:10px 0 6px;background:linear-gradient(90deg,rgba(0,200,80,0.06),rgba(212,160,23,0.04));border:1px solid rgba(0,200,80,0.25);border-radius:10px}
+.hoy-done-icon{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:rgba(0,200,80,0.12);color:var(--gr);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800}
+.hoy-done-body{flex:1;min-width:0}
+.hoy-done-title{font-size:13px;font-weight:700;color:var(--t);letter-spacing:-0.1px}
+.hoy-done-sub{font-size:11px;color:var(--mt);margin-top:2px}
+.hoy-done-sub strong{color:var(--t2);font-weight:600}
+.hoy-done-cta{flex-shrink:0;background:var(--ac);color:#0a0a0f;border:none;padding:9px 16px;border-radius:7px;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:0.3px;transition:transform .1s}
+.hoy-done-cta:hover{transform:translateX(2px)}
+.hoy-done-cta::after{content:'  →';font-weight:800}
+@media(max-width:700px){
+  .hoy-done{flex-wrap:wrap;gap:10px 12px}
+  .hoy-done-body{flex:1 1 calc(100% - 50px);min-width:0}
+  .hoy-done-title{white-space:normal}
+  .hoy-done-cta{width:100%;margin-top:2px;padding:10px}
+  .hoy-done-cta::after{content:' →'}
+}
 .aa-queue-info{text-align:center;color:var(--dm);font-size:11px;margin-top:24px;letter-spacing:.5px;text-transform:uppercase}
 /* NEXT ACTION block — single source of truth in playbook */
 .next-action{background:linear-gradient(135deg,rgba(212,160,23,.04),rgba(255,255,255,.01));border:1px solid var(--bd2);border-radius:10px;padding:14px;margin-top:10px}
@@ -941,9 +958,37 @@ function renderDay(){
   const priDom=sorted.find(l=>cSt(gr(dom(l.website)))==='none');
   const priId=priDom?dom(priDom.website):null;
 
-  // Empty-state hint: if TL has leads but all are already in cycle, explain why Hoy is empty
+  // Hoy "completed" state — NOT an empty app. Every lead of today's batch
+  // already started the cycle; the user's momentum should transition to
+  // Acción Ahora. Compact, top-aligned, directional — a progression cue,
+  // not a dead zone.
   if(sorted.length===0&&TL.length>0){
-    document.getElementById('leadL').innerHTML='<div class="aa-empty" style="padding:40px 20px"><div class="aa-empty-icon">✓</div>Todos los leads de hoy ya están en ciclo. Revisá <a href="#" onclick="event.preventDefault();showV(\'now\')" style="color:var(--ac);text-decoration:underline">Acción Ahora</a> para los próximos pasos.</div>';
+    // Count in-cycle actions across TL + PL so the CTA shows real volume
+    let urgent=0,upcoming=0;
+    const pool=[...TL,...PL];const dedup=new Set();
+    pool.forEach(l=>{
+      const dd=dom(l.website);if(!dd||dedup.has(dd))return;dedup.add(dd);
+      const rec=gr(dd);
+      if((rec.msgs||[]).length===0)return;
+      if(SEQ_STOPS.includes(rec.st||'none'))return;
+      const fu=getFollowUp(rec,l);
+      if(!fu.active||!fu.color)return;
+      if(fu.color==='red'||fu.color==='yellow')urgent++;
+      else if(fu.color==='green')upcoming++;
+    });
+    const total=urgent+upcoming;
+    const subParts=[];
+    if(urgent>0)subParts.push(`<strong>${urgent}</strong> ${urgent===1?'vencido/próximo':'vencidos o próximos'}`);
+    if(upcoming>0)subParts.push(`<strong>${upcoming}</strong> en ciclo`);
+    const subLine=subParts.length?subParts.join(' · '):'Sin acciones pendientes ahora.';
+    document.getElementById('leadL').innerHTML=`<div class="hoy-done">
+      <div class="hoy-done-icon">✓</div>
+      <div class="hoy-done-body">
+        <div class="hoy-done-title">${TL.length} lead${TL.length===1?'':'s'} de hoy ya ${TL.length===1?'está':'están'} en ciclo</div>
+        <div class="hoy-done-sub">${subLine}</div>
+      </div>
+      ${total>0?`<button class="hoy-done-cta" onclick="showV('now')">Ir a Acción Ahora</button>`:''}
+    </div>`;
     rM();return;
   }
   document.getElementById('leadL').innerHTML=sorted.map((l,i)=>{
