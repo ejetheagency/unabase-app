@@ -1113,6 +1113,11 @@ function computeExecutionCycle(rec, lead) {
   return { paso1, refuerzo, paso2 };
 }
 
+// Tab persistence across playbook open/close — remembers which tab the user
+// was on before opening a lead and restores it on close. Without this, any
+// caller that happened to switch tabs before calling openPB() (or any future
+// rendering side-effect) could leave the user stranded on the wrong tab.
+let _pbOriginTab=null;
 function openPB(d){
   let l=TL.find(x=>dom(x.website)===d)||PL.find(x=>dom(x.website)===d);
   if(!l){const rec=gr(d);if(rec.lead){l=rec.lead;TL.push(l)}else return}
@@ -1276,10 +1281,35 @@ function openPB(d){
     ${msH}
     <div class="sec" style="margin-top:10px"><div class="sl">Notas</div><textarea class="notes" placeholder="Notas..." id="nt-${d}" onclick="event.stopPropagation()">${esc(rec.notes||'')}</textarea><button class="notes-sv" onclick="event.stopPropagation();sN('${d}')">Guardar</button></div>
   `;
+  // Capture the tab that was active when the playbook opened — only if not
+  // already captured (openPB is re-called from status buttons etc. within
+  // the same session; we want the ORIGINAL origin tab, not the re-entry one).
+  if(_pbOriginTab===null){
+    const activeTab=document.querySelector('.n-tab.on');
+    if(activeTab){
+      const m=(activeTab.getAttribute('onclick')||'').match(/showV\('([^']+)'\)/);
+      if(m)_pbOriginTab=m[1];
+    }
+  }
   document.getElementById('pbO').classList.add('open');
   document.body.style.overflow='hidden';
 }
-function closePB(){document.getElementById('pbO').classList.remove('open');document.body.style.overflow='';refresh()}
+function closePB(){
+  document.getElementById('pbO').classList.remove('open');
+  document.body.style.overflow='';
+  refresh();
+  // Restore the origin tab. If user drifted away from it while the playbook
+  // was open (shouldn't happen — overlay blocks it — but defensive), bring
+  // them back to where they were before.
+  if(_pbOriginTab){
+    const currentActive=document.querySelector('.n-tab.on');
+    const currentName=currentActive?(currentActive.getAttribute('onclick')||'').match(/showV\('([^']+)'\)/)?.[1]:null;
+    if(currentName!==_pbOriginTab){
+      showV(_pbOriginTab);
+    }
+  }
+  _pbOriginTab=null;
+}
 
 // ═══ ACTIONS ═══
 async function tA(d,aid,ch){
@@ -1433,7 +1463,7 @@ function rHist(q){
   if(!h)h='<div style="text-align:center;color:var(--dm);padding:40px;font-size:12px">No hay leads en memoria todavía.</div>';
   document.getElementById('histL').innerHTML=h;
 }
-function oH(id){const rec=gr(id);if(!rec.lead)return;showV('today');if(!TL.find(l=>dom(l.website)===id)){TL.push(rec.lead);renderDay()}setTimeout(()=>openPB(id),100)}
+function oH(id){const rec=gr(id);if(!rec.lead)return;if(!TL.find(l=>dom(l.website)===id)){TL.push(rec.lead);renderDay()}setTimeout(()=>openPB(id),100)}
 function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 
 // ═══ PAST LEADS ═══
