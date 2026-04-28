@@ -426,6 +426,8 @@ const WORKSPACES = {
     kind:       'client',
     soul:       'Productoras de entretenimiento que manejan múltiples proyectos en paralelo.',
     userLabel:  'Scarlett',    // display name in top-right user dropdown
+    senderName: 'Scarlett',    // who signs every outbound message in this workspace
+    productName:'UnaBase',     // the brand name spoken in outbound messages
   },
   // Operational / internal / admin view — separate data scope for oversight.
   operator: {
@@ -436,9 +438,14 @@ const WORKSPACES = {
     kind:       'operator',
     soul:       'Internal oversight view — not a target ICP.',
     userLabel:  'Operator',
+    senderName: 'Scarlett',
+    productName:'UnaBase',
   },
   // Outbound workspace for selling this system ourselves (EJE Agency).
   // ICP soul and pipeline config live in unabasi-leads/workspaces/eje.js
+  // CRITICAL: every outbound surface in this workspace must say "Emiliano" +
+  // "EJE", never Scarlett, never UnaBase. The values below are the single
+  // source of truth that the playbook renderer reads.
   eje: {
     brand:      'EJE',
     leadsFile:  'leads-eje.json',
@@ -446,10 +453,31 @@ const WORKSPACES = {
     badgeColor: '#4a9eff',
     kind:       'outbound',
     soul:       'Empresas B2B high-ticket que ya venden pero sin pipeline predecible.',
-    userLabel:  'Emiliano',    // EJE outbound sender identity (matches eje.js copy.senderName)
+    userLabel:  'Emiliano',    // top-right user dropdown
+    senderName: 'Emiliano',    // signs every outbound (email + IG DM + WA + LinkedIn)
+    productName:'EJE',         // brand name used in every channel
+    senderEmail:'contacto@ejetheagency.com',  // reply-to address shown in signoff
   },
 };
-const CLIENT_ID=(new URLSearchParams(window.location.search).get('client')||'unabase_default').replace(/[^a-zA-Z0-9_-]/g,'');
+// ═══ WORKSPACE PERSISTENCE ═══
+// Priority: 1) URL ?client= param  2) localStorage sticky  3) fallback
+// This ensures refresh / back / close → reopen all land on the correct workspace.
+const _urlClient = new URLSearchParams(window.location.search).get('client');
+const _stickyClient = localStorage.getItem('unabase_active_client');
+const _resolvedClient = (_urlClient || _stickyClient || 'unabase_default').replace(/[^a-zA-Z0-9_-]/g, '');
+const CLIENT_ID = _resolvedClient;
+
+// Persist so next bare-URL visit restores this workspace
+localStorage.setItem('unabase_active_client', CLIENT_ID);
+
+// If URL is missing ?client= but we resolved from localStorage, fix the URL
+// so it's shareable and so refresh works with the same visible state.
+if (!_urlClient && _stickyClient && _stickyClient !== 'unabase_default') {
+  const u = new URL(window.location.href);
+  u.searchParams.set('client', CLIENT_ID);
+  window.history.replaceState(null, '', u.toString());
+}
+
 // Resolve workspace config. Unknown ?client=<X> values fall through to a
 // generic custom workspace (leads-<X>.json, purple badge) — matches the
 // previous fallback behavior so no existing bookmarks break.
@@ -464,7 +492,7 @@ const CLIENT = { name: WS.brand, leadsPath: './' + WS.leadsFile, accent: WS.acce
 const SB_URL='https://ogdsuztzhmnnjolilsuo.supabase.co';
 const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9nZHN1enR6aG1ubmpvbGlsc3VvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYyMDI0MDMsImV4cCI6MjA5MTc3ODQwM30.9iKhJJWd_zg6WfdxTR9ojK4DVLR3e-bLdPXY-0uDp7Q';
 const sb=window.supabase.createClient(SB_URL,SB_KEY);
-console.log('[workspace] client_id='+CLIENT_ID+' | kind='+WS.kind+' | brand='+WS.brand+' | leads='+CLIENT.leadsPath);
+console.log('[workspace] client_id='+CLIENT_ID+' | source='+ (_urlClient?'url':(_stickyClient?'localStorage':'default')) +' | brand='+WS.brand+' | leads='+CLIENT.leadsPath);
 </script>
 
 <div class="nav">
@@ -562,20 +590,48 @@ async function sbSync(id,rec){
 
 async function sbLogAction(leadId,channel,completed){
   try{
-    const r=completed
-      ?await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed:true,client_id:CLIENT_ID})
-      :await sb.from('actions').delete().match({lead_id:leadId,channel,user_name:USER,client_id:CLIENT_ID});
-    if(r&&r.error){console.error('[sb] action FAILED:',r.error.message);return false}
+    if(completed){
+      // DELETE any existing rows for this (lead, channel) FIRST — prevents duplicates
+      // from double-clicks, self-heal re-runs, or network retries.
+      await sb.from('actions').delete().match({lead_id:leadId,channel,user_name:USER,client_id:CLIENT_ID});
+      const r=await sb.from('actions').insert({lead_id:leadId,user_name:USER,channel,completed:true,client_id:CLIENT_ID});
+      if(r&&r.error){console.error('[sb] action FAILED:',r.error.message);return false}
+    }else{
+      const r=await sb.from('actions').delete().match({lead_id:leadId,channel,user_name:USER,client_id:CLIENT_ID});
+      if(r&&r.error){console.error('[sb] action FAILED:',r.error.message);return false}
+    }
     return true;
   }catch(e){console.error('[sb] action EXCEPTION:',e.message);return false}
 }
 
-async function sbLogMessage(leadId,channel,text){
+// sbLogMessage: DEDUPE-FIRST insert.
+// 1. Check if an identical message already exists within 60s window
+// 2. If yes, skip (idempotent — safe for retries, double-clicks, self-heal replays)
+// 3. If no, insert with the exact local timestamp as sent_at
+async function sbLogMessage(leadId,channel,text,sentAt){
+  const debugId=Math.random().toString(36).slice(2,8);
+  console.log(`[sbLogMessage:${debugId}] START`,{leadId,channel,text:text.slice(0,40),sentAt});
   try{
-    const r=await sb.from('messages_sent').insert({lead_id:leadId,user_name:USER,channel,message_text:text,client_id:CLIENT_ID});
-    if(r&&r.error){console.error('[sb] msg FAILED:',r.error.message);return false}
+    // DEDUPE CHECK: look for identical (lead, channel, text, user, client) within 60s
+    if(sentAt){
+      const windowStart=new Date(new Date(sentAt).getTime()-60000).toISOString();
+      const windowEnd=new Date(new Date(sentAt).getTime()+60000).toISOString();
+      const{data:existing}=await sb.from('messages_sent').select('id')
+        .eq('lead_id',leadId).eq('channel',channel).eq('message_text',text)
+        .eq('user_name',USER).eq('client_id',CLIENT_ID)
+        .gte('sent_at',windowStart).lte('sent_at',windowEnd);
+      if(existing&&existing.length>0){
+        console.warn(`[sbLogMessage:${debugId}] SKIPPED — duplicate exists (${existing.length} row(s) within 60s window)`);
+        return true; // Return true — message already stored, not an error
+      }
+    }
+    const payload={lead_id:leadId,user_name:USER,channel,message_text:text,client_id:CLIENT_ID};
+    if(sentAt)payload.sent_at=sentAt;
+    const r=await sb.from('messages_sent').insert(payload);
+    if(r&&r.error){console.error(`[sbLogMessage:${debugId}] FAILED:`,r.error.message);return false}
+    console.log(`[sbLogMessage:${debugId}] OK — 1 row inserted`);
     return true;
-  }catch(e){console.error('[sb] msg EXCEPTION:',e.message);return false}
+  }catch(e){console.error(`[sbLogMessage:${debugId}] EXCEPTION:`,e.message);return false}
 }
 
 async function sbDeleteMessage(leadId,sentAt){
@@ -662,9 +718,28 @@ async function sbLoadAll(){
       const prev=actionTs[a.lead_id][a.channel];
       if(!prev||(a.completed_at&&new Date(a.completed_at)<new Date(prev)))actionTs[a.lead_id][a.channel]=a.completed_at;
     });
-    // Load messages — filtered by client_id
+    // Load messages — filtered by client_id.
+    // MERGE STRATEGY: Supabase is the source of truth for messages. Replace
+    // the entire local msgs array with Supabase data to eliminate timestamp
+    // drift duplicates (local ts ≠ Supabase sent_at from pre-fix writes).
+    // This is safe because every sbLogMessage call now writes sent_at.
     const{data:msgs}=await sb.from('messages_sent').select('*').eq('client_id',CLIENT_ID);
-    if(msgs)msgs.forEach(m=>{if(D[m.lead_id]){const existing=D[m.lead_id].msgs||[];if(!existing.find(x=>x.ts===m.sent_at))existing.push({ch:m.channel,tx:m.message_text,ts:m.sent_at});D[m.lead_id].msgs=existing}});
+    if(msgs){
+      // Group Supabase messages by lead_id (deduplicate by exact sent_at)
+      const sbMsgsByLead={};
+      msgs.forEach(m=>{
+        if(!D[m.lead_id])return;
+        if(!sbMsgsByLead[m.lead_id])sbMsgsByLead[m.lead_id]=[];
+        // Skip if we already have this exact sent_at (server-side duplicates)
+        if(!sbMsgsByLead[m.lead_id].find(x=>x.ts===m.sent_at)){
+          sbMsgsByLead[m.lead_id].push({ch:m.channel,tx:m.message_text,ts:m.sent_at});
+        }
+      });
+      // Replace local msgs with authoritative Supabase data
+      Object.entries(sbMsgsByLead).forEach(([id,sbMsgs])=>{
+        D[id].msgs=sbMsgs;
+      });
+    }
     // Load notes — filtered by client_id
     const{data:nts}=await sb.from('notes').select('*').eq('client_id',CLIENT_ID);
     if(nts)nts.forEach(n=>{if(D[n.lead_id])D[n.lead_id].notes=n.note_text||''});
@@ -728,7 +803,9 @@ async function sbLoadAll(){
         }
         r.msgs.push({ch,tx:AUTO_ANCHOR_TX,ts});
         anchored.push({id,ch,ts,source});
-        sb.from('messages_sent').insert({lead_id:id,user_name:USER,channel:ch,message_text:AUTO_ANCHOR_TX,sent_at:ts,client_id:CLIENT_ID}).then(()=>{}).catch(()=>{});
+        // Use dedupe-aware sbLogMessage instead of raw insert to prevent
+        // self-heal from creating duplicates across reloads.
+        sbLogMessage(id,ch,AUTO_ANCHOR_TX,ts).catch(()=>{});
       });
       // Clean flag if every channel now has a reliable anchor (idempotent reload)
       if(r._anchorUncertain&&r.acts.every(ch=>r.msgs.some(m=>m.ch===ch))){
@@ -928,10 +1005,10 @@ function getFollowUp(rec,lead,context){
 }
 
 let PL=[];// past leads
-function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');if(v==='hist')loadPast().then(()=>rHist(''));if(v==='now')loadPast().then(()=>renderAccionAhora())}
+function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');localStorage.setItem('unabase_active_tab',v);if(v==='hist')loadPast().then(()=>rHist(''));if(v==='now')loadPast().then(()=>renderAccionAhora())}
 // Centralized re-render after any state change. Updates all visible action surfaces.
 function refresh(){renderDay();if(typeof renderAccionAhora==='function')renderAccionAhora();}
-function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
+function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}ejeClassifyAll(TL);merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
 // ═══ DATE-GATING: Timezone-aware activation (America/New_York) ═══
 function gateLeads(leads){
   const nowET=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'}));
@@ -947,8 +1024,99 @@ function gateLeads(leads){
   });
 }
 
+// ═══ EJE WORKSPACE QUALITY LAYER ═══
+// Runs ONLY for CLIENT_ID==='eje'. UnaBase is completely untouched.
+// Classifies each lead's contact quality, proof tier, and ICP fit.
+// Marks leads that fail minimum standards so the UI can warn the operator.
+
+const EJE_ICP_EXCLUSIONS = /\b(sdr outsourc|appointment.?setting|cold.?call.?center|telemarketing|mass.?prospect|lead.?gen.?agency)\b/i;
+const EJE_PROOF_TIER_C = /\b(partner badge|certified partner|platform logo|technology partner)\b/i;
+// Known weak proof patterns: just saying "Google" or "Meta" without case study
+const EJE_WEAK_CLIENT_NAMES = new Set(['google','meta','facebook','tiktok','amazon','microsoft','apple','spotify']);
+
+function ejeClassifyLead(l) {
+  if (CLIENT_ID !== 'eje') return null;
+  const cl = {};
+
+  // ── 1. CONTACT QUALITY ──
+  if (l.contactName && l.contactEmail && !/(info@|contacto@|hola@|hello@|team@|contact@|admin@|comunicacion@|ventas@|sales@)/i.test(l.contactEmail)) {
+    cl.contactGrade = 'A'; // Named DM + personal email
+    cl.contactLabel = l.contactName;
+  } else if (l.contactName && l.contactEmail) {
+    cl.contactGrade = 'B'; // Named DM + generic email
+    cl.contactLabel = l.contactName + ' (email genérico)';
+  } else if (l.contactEmail) {
+    cl.contactGrade = 'C'; // No named DM — team fallback
+    cl.contactLabel = 'Sin decisor nombrado';
+  } else {
+    cl.contactGrade = 'D'; // No usable contact
+    cl.contactLabel = 'Sin contacto';
+  }
+  cl.sendReady = cl.contactGrade <= 'B'; // A or B = send-ready
+
+  // ── 2. PROOF TIER ──
+  const nc = l.notableClients || [];
+  const hasRealCaseStudy = (l.fitReasons || []).includes('case_studies');
+  const hasStrongProof = (l.fitReasons || []).includes('has_clients') && nc.length > 0;
+  // Count how many notable clients are weak (just big-name logos)
+  const weakCount = nc.filter(c => EJE_WEAK_CLIENT_NAMES.has(c.toLowerCase())).length;
+  const strongCount = nc.length - weakCount;
+
+  if (hasRealCaseStudy || strongCount >= 2) {
+    cl.proofTier = 'A'; cl.proofLabel = 'Caso de estudio / clientes verificables';
+  } else if (hasStrongProof && strongCount >= 1) {
+    cl.proofTier = 'B'; cl.proofLabel = 'Clientes nombrados (sin caso completo)';
+  } else if (nc.length > 0 && weakCount === nc.length) {
+    cl.proofTier = 'C'; cl.proofLabel = '⚠ Solo logos genéricos (Google/Meta) — no usar en email';
+  } else if (nc.length === 0) {
+    cl.proofTier = 'C'; cl.proofLabel = '⚠ Sin prueba de trabajo verificable';
+  } else {
+    cl.proofTier = 'B'; cl.proofLabel = 'Clientes nombrados';
+  }
+
+  // ── 3. ICP FIT ──
+  const desc = ((l.summary || '') + ' ' + (l.companyBrief || '')).toLowerCase();
+  if (EJE_ICP_EXCLUSIONS.test(desc)) {
+    cl.icpFlag = 'excluded'; cl.icpLabel = '⛔ ICP excluido (SDR/appointment-setting)';
+  } else {
+    cl.icpFlag = 'ok'; cl.icpLabel = '';
+  }
+
+  // ── 4. EMAIL TRUST ──
+  // Check if email observation relies solely on Tier C proof
+  const emailBody = (l.pitchEmailES || l.emailCercana || '').toLowerCase();
+  const usesWeakProof = EJE_WEAK_CLIENT_NAMES.size > 0 &&
+    [...EJE_WEAK_CLIENT_NAMES].some(w => emailBody.includes(w)) &&
+    cl.proofTier === 'C';
+  cl.emailTrust = usesWeakProof ? 'low' : 'ok';
+  cl.emailTrustLabel = usesWeakProof ? '⚠ Email usa logos sin verificar — revisar' : '';
+
+  // ── 5. OVERALL READINESS ──
+  const issues = [];
+  if (cl.contactGrade >= 'C') issues.push('sin decisor');
+  if (cl.proofTier === 'C') issues.push('prueba débil');
+  if (cl.icpFlag === 'excluded') issues.push('ICP excluido');
+  if (cl.emailTrust === 'low') issues.push('email no confiable');
+  cl.issues = issues;
+  cl.ready = issues.length === 0;
+  cl.readyLabel = cl.ready ? '✓ Listo para enviar' : '⚠ Revisión manual: ' + issues.join(', ');
+
+  return cl;
+}
+
+// Attach classification to each EJE lead after loading (non-destructive)
+function ejeClassifyAll(leads) {
+  if (CLIENT_ID !== 'eje') return;
+  leads.forEach(l => { l._eje = ejeClassifyLead(l); });
+  const warnings = leads.filter(l => l._eje && !l._eje.ready);
+  if (warnings.length) {
+    console.warn('[EJE] ' + warnings.length + '/' + leads.length + ' leads need review:',
+      warnings.map(l => l.companyName + ': ' + l._eje.issues.join(', ')));
+  }
+}
+
 async function autoLoad(){
-  if(typeof EMBEDDED_LEADS!=='undefined'&&EMBEDDED_LEADS&&EMBEDDED_LEADS.length){TL=gateLeads(EMBEDDED_LEADS);merge(TL);renderDay();return}
+  if(typeof EMBEDDED_LEADS!=='undefined'&&EMBEDDED_LEADS&&EMBEDDED_LEADS.length){TL=gateLeads(EMBEDDED_LEADS);ejeClassifyAll(TL);merge(TL);renderDay();return}
   // Cache-buster: JSON lead files are small and get overwritten every batch
   // activation. If the browser serves a cached copy, the card shows stale
   // contacts. Append ?v=<timestamp> so each page load pulls fresh data.
@@ -967,14 +1135,14 @@ async function autoLoad(){
         const active=manifest.batches.find(b=>b.batch_id===manifest.active_batch_id);
         if(active&&active.file){
           const lr=await fetch('./'+active.file+cb);
-          if(lr.ok){TL=gateLeads(await lr.json());if(TL.length){merge(TL);renderDay();return}}
+          if(lr.ok){TL=gateLeads(await lr.json());if(TL.length){ejeClassifyAll(TL);merge(TL);renderDay();return}}
         }
       }
     }catch{}
   }
   // Per-workspace leads file (always used for non-default; fallback for default)
-  try{const r=await fetch(CLIENT.leadsPath+cb);if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}
-  const t=new Date();for(let o=0;o<3;o++){const d=new Date(t);d.setDate(d.getDate()-o);try{const r=await fetch('../output/leads-'+d.toISOString().slice(0,10)+'.json'+cb);if(r.ok){let raw=await r.json();TL=gateLeads(raw);merge(TL);renderDay();return}}catch{}}
+  try{const r=await fetch(CLIENT.leadsPath+cb);if(r.ok){let raw=await r.json();TL=gateLeads(raw);ejeClassifyAll(TL);merge(TL);renderDay();return}}catch{}
+  const t=new Date();for(let o=0;o<3;o++){const d=new Date(t);d.setDate(d.getDate()-o);try{const r=await fetch('../output/leads-'+d.toISOString().slice(0,10)+'.json'+cb);if(r.ok){let raw=await r.json();TL=gateLeads(raw);ejeClassifyAll(TL);merge(TL);renderDay();return}}catch{}}
   if(typeof SEED_HISTORY!=='undefined'&&SEED_HISTORY)merge(SEED_HISTORY);
   const a=allR();if(a.length){TL=a.filter(r=>r.lead).map(r=>r.lead);renderDay();toast('Desde memoria');return}
   document.getElementById('emptyS').style.display='block';
@@ -1070,12 +1238,20 @@ function renderDay(){
     const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
     const adjTime=adjustTimeStr(fu,l.country);
     const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${adjTime}</div>`:'';
+    // EJE quality indicator (only for EJE workspace, scoped)
+    const _ejeQ = l._eje || null;
+    const _ejeBadge = _ejeQ ? (_ejeQ.ready
+      ? '<span style="font-size:9px;color:#22c55e;font-weight:700;margin-left:6px" title="Send-ready">● LISTO</span>'
+      : '<span style="font-size:9px;color:#f59e0b;font-weight:700;margin-left:6px" title="'+esc(_ejeQ.readyLabel)+'">⚠ REVISAR</span>') : '';
+    const _ejeContactBadge = _ejeQ ? '<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:4px;background:'
+      + (_ejeQ.contactGrade==='A'?'#22c55e20;color:#22c55e':_ejeQ.contactGrade==='B'?'#3b82f620;color:#3b82f6':'#f59e0b20;color:#f59e0b')
+      + ';font-weight:700">' + (_ejeQ.contactGrade==='A'||_ejeQ.contactGrade==='B'?esc(first):'Equipo') + '</span>' : '';
     return`<div class="lead${si>=2?' dn':''}${isPri?' priority':''} ${fuCls}" onclick="openPB('${d}')">
       ${isPri?'<div class="pri-tag">Siguiente</div>':''}
       <div class="lh">
         <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
-        <div class="lc">${esc(l.companyName)}</div>
-        <div class="lh-sub"><strong>${esc(first)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
+        <div class="lc">${esc(l.companyName)}${_ejeBadge}</div>
+        <div class="lh-sub"><strong>${esc(first)}</strong>${_ejeContactBadge}${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
         <div class="lh-score ${scCls}">${done} / ${total}</div>
         <div class="ls s${si}">${SL[si]}</div>
         ${fuTag}
@@ -1129,6 +1305,15 @@ function computeExecutionCycle(rec, lead) {
   // ─── Paso 1 ─────────────────────────────────────────────────────────
   const paso1 = { channel, isFollowUp, color: fu.color, time: fu.timeStr };
 
+  // ─── Workspace-driven sender identity ─────────────────────────────────
+  // Every channel fallback string is built from WS.senderName / WS.productName
+  // so EJE never inherits "Scarlett / UnaBase" wording, and UnaBase keeps
+  // its "Scarlett / UnaBase" wording. SAME code, DIFFERENT identity per
+  // workspace. Read from the registry so they cannot drift.
+  const SENDER = (typeof WS !== 'undefined' && WS.senderName) ? WS.senderName : 'Scarlett';
+  const PRODUCT = (typeof WS !== 'undefined' && WS.productName) ? WS.productName : 'UnaBase';
+  // Prefer the lead's own per-channel message if it exists (AI-rendered, lead-specific).
+  // Only fall back to the generic per-channel string when the lead has nothing.
   if (channel === 'ig' || channel === 'instagram') {
     const handle = ig || lead.founderInstagramHandle || '';
     paso1.channelKey = 'ig';
@@ -1138,9 +1323,9 @@ function computeExecutionCycle(rec, lead) {
     paso1.targetKind = 'Instagram DM';
     paso1.targetLabel = '@' + handle;
     paso1.targetLineHTML = `Instagram DM → <strong>@${esc(handle)}</strong>`;
-    paso1.message = (lead.emailCercana && !hasPriorMsg)
-      ? lead.emailCercana
-      : 'Hola, ¿cómo están? Soy Scarlett de UnaBase.\nLes escribimos por Instagram porque les enviamos un mail hace un par de días desde UnaBase y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.';
+    paso1.message = (lead.instagramDM && !hasPriorMsg) ? lead.instagramDM
+      : (lead.emailCercana && !hasPriorMsg) ? lead.emailCercana
+      : `Hola, ¿cómo están? Soy ${SENDER} de ${PRODUCT}.\nLes escribimos por Instagram porque les enviamos un mail hace un par de días desde ${PRODUCT} y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.`;
   } else if (channel === 'wa' || channel === 'whatsapp') {
     paso1.channelKey = 'wa';
     paso1.title = 'Enviar WhatsApp ahora';
@@ -1149,7 +1334,8 @@ function computeExecutionCycle(rec, lead) {
     paso1.targetKind = 'WhatsApp';
     paso1.targetLabel = phone || '';
     paso1.targetLineHTML = `WhatsApp → <strong>${esc(phone || '')}</strong>`;
-    paso1.message = 'Hola, ¿cómo están? Soy Scarlett de UnaBase.\nLes escribimos por WhatsApp porque les enviamos un mail hace un par de días desde UnaBase y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.';
+    paso1.message = (lead.whatsappMessage && !hasPriorMsg) ? lead.whatsappMessage
+      : `Hola, ¿cómo están? Soy ${SENDER} de ${PRODUCT}.\nLes escribimos por WhatsApp porque les enviamos un mail hace un par de días desde ${PRODUCT} y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.`;
   } else {
     paso1.channelKey = 'email';
     paso1.title = 'Enviar email ahora';
@@ -1172,11 +1358,28 @@ function computeExecutionCycle(rec, lead) {
     else if (hasName && isGeneric) greeting = '¿Es esta la mejor manera de contactar a ' + lead.contactName + '?';
     else greeting = 'Hola equipo de ' + lead.companyName + ',';
     if (isFollowUp) {
-      paso1.message = greeting + '\n\nTe escribí hace unos días sobre UnaBase. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min para que te muestre cómo otras productoras están manejando su presupuestación.\n\nScarlett';
+      // Cycle 2+ follow-up. ALWAYS prefer the lead's own emailCercana if present
+      // (it carries the workspace-correct sender + signature). Only when the
+      // lead has no body do we fall back to a workspace-driven generic.
+      // Previously this branch had a UnaBase/Scarlett hardcoded literal that
+      // leaked into EJE follow-ups — now driven by WS.copy.
+      if (lead.emailCercana) {
+        paso1.message = lead.emailCercana;
+      } else {
+        paso1.message = `${greeting}\n\nTe escribí hace unos días sobre ${PRODUCT}. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min.\n\n${SENDER}`;
+      }
     } else if (lead.emailCercana) {
       paso1.message = lead.emailCercana;
     } else {
-      paso1.message = 'Asunto: Una pregunta rápida sobre cómo manejan presupuestos\n\n' + greeting + '\n\nEstuve viendo ' + lead.companyName + ' y el tipo de proyectos que manejan.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nEn UnaBase armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.';
+      // First-touch fallback — only fires when the lead has no AI-rendered email.
+      // For UnaBase this preserves the original budgeting/Excel pitch; for any
+      // other workspace it now uses WS.copy.productDescription instead of the
+      // hardcoded UnaBase pitch. Workspaces should still aim to ship every lead
+      // with lead.emailCercana populated; this is a last-resort safety net.
+      const productDesc = (typeof WS !== 'undefined' && WS.kind === 'client')
+        ? 'En UnaBase armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.'
+        : `${SENDER} del equipo de ${PRODUCT}.`;
+      paso1.message = `Asunto: Una pregunta rápida\n\n${greeting}\n\nEstuve viendo ${lead.companyName}.\n\n${productDesc}\n\n${SENDER}`;
     }
   }
   paso1.isDone = (rec.acts || []).includes(paso1.channelKey);
@@ -1308,7 +1511,9 @@ function openPB(d){
     </div>`;
   }
 
-  const allMsgs=(rec.msgs||[]).sort((a,b)=>new Date(b.ts)-new Date(a.ts));
+  // Filter auto-anchors from display — they're internal cycle markers,
+  // not real user-saved messages. Showing them causes phantom "2 msgs" counts.
+  const allMsgs=(rec.msgs||[]).filter(m=>m.tx!==AUTO_ANCHOR_TX).sort((a,b)=>new Date(b.ts)-new Date(a.ts));
   const msH=allMsgs.length?'<div class="sec" style="margin-top:12px"><div class="sl">Mensajes Enviados</div>'+allMsgs.map(m=>`<div class="ml-i"><div class="ml-h"><span class="ml-ch ml-${m.ch}">${m.ch}</span><span class="ml-t">${new Date(m.ts).toLocaleString('es')}</span><button class="ml-del" onclick="event.stopPropagation();delMsg('${d}','${m.ts}')">&#10005;</button></div><div class="ml-tx">${esc(m.tx)}</div></div>`).join('')+'</div>':'';
 
   const stBtns=ST.slice(2).map(s=>`<button class="stb${rec.st===s?' on':''}" onclick="event.stopPropagation();sS('${d}','${s}');openPB('${d}')">${SL[ST.indexOf(s)]}</button>`).join('');
@@ -1379,6 +1584,29 @@ function openPB(d){
     ${refuerzoSection}
     ${paso2Section}
     <details class="acc"><summary>Ver contacto</summary>${contactoAccBody}</details>
+    ${(function(){
+      // EJE review context panel — only rendered for EJE workspace
+      if(CLIENT_ID!=='eje'||!l._eje)return'';
+      const q=l._eje;
+      const cColor=q.contactGrade==='A'?'#22c55e':q.contactGrade==='B'?'#3b82f6':'#f59e0b';
+      const pColor=q.proofTier==='A'?'#22c55e':q.proofTier==='B'?'#3b82f6':'#f59e0b';
+      const rColor=q.ready?'#22c55e':'#f59e0b';
+      return '<div style="background:#1a1a2e;border:1px solid #2a2a3e;border-radius:8px;padding:10px 12px;margin-top:10px;font-size:11px">'
+        +'<div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#4a9eff;margin-bottom:8px">Revisión EJE</div>'
+        // Website
+        +(l.website?'<div style="margin-bottom:4px"><span style="color:#888">Web:</span> <a href="'+esc(l.website)+'" target="_blank" style="color:#4a9eff;text-decoration:underline">'+esc(l.website)+'</a></div>':'')
+        // Contact grade
+        +'<div style="margin-bottom:4px"><span style="color:#888">Contacto:</span> <span style="color:'+cColor+';font-weight:700">'+q.contactGrade+'</span> — '+esc(q.contactLabel)+'</div>'
+        // Proof tier
+        +'<div style="margin-bottom:4px"><span style="color:#888">Prueba:</span> <span style="color:'+pColor+';font-weight:700">Tier '+q.proofTier+'</span> — '+esc(q.proofLabel)+'</div>'
+        // ICP flag
+        +(q.icpFlag==='excluded'?'<div style="margin-bottom:4px;color:#ef4444;font-weight:700">'+esc(q.icpLabel)+'</div>':'')
+        // Email trust
+        +(q.emailTrust==='low'?'<div style="margin-bottom:4px;color:#f59e0b;font-weight:600">'+esc(q.emailTrustLabel)+'</div>':'')
+        // Overall readiness
+        +'<div style="margin-top:6px;padding-top:6px;border-top:1px solid #2a2a3e;color:'+rColor+';font-weight:700">'+esc(q.readyLabel)+'</div>'
+        +'</div>';
+    })()}
     ${contextoAccBody?`<details class="acc"><summary>Ver contexto</summary>${contextoAccBody}</details>`:''}
     ${estrategiaAccBody?`<details class="acc"><summary>Ver estrategia</summary>${estrategiaAccBody}</details>`:''}
     <div class="stbar" style="margin-top:14px">${stBtns}</div>
@@ -1416,8 +1644,13 @@ function closePB(){
 }
 
 // ═══ ACTIONS ═══
+let _taBusy={};  // double-click guard per (lead, channel)
 async function tA(d,aid,ch){
-  console.log('[tA] click',{d,aid,ch});
+  const debugId='tA_'+Math.random().toString(36).slice(2,8);
+  const guardKey=d+'_'+ch;
+  if(_taBusy[guardKey]){console.warn(`[${debugId}] BLOCKED double-click`,{d,ch});return}
+  _taBusy[guardKey]=true;
+  console.log(`[${debugId}] START`,{d,aid,ch,currentMsgCount:(gr(d).msgs||[]).length});
   const rec=gr(d);
   const acts=[...(rec.acts||[])];
   const tl=[...(rec.tl||[])];
@@ -1459,36 +1692,44 @@ async function tA(d,aid,ch){
   const actOk=await sbLogAction(d,ch,completed);
   let msgOk=true;
   if(autoAnchorToPush){
-    msgOk=await sbLogMessage(d,ch,AUTO_ANCHOR_TX);
+    msgOk=await sbLogMessage(d,ch,AUTO_ANCHOR_TX,autoAnchorToPush.ts);
   }
   // Clean up auto-anchors from Supabase when unchecking (keeps multi-device sync aligned)
   for(const ts of autoAnchorsToDelete){
     try{await sbDeleteMessage(d,ts)}catch{}
   }
-  console.log('[tA] write',{d,ch,completed,actOk,anchored:!!autoAnchorToPush,cleaned:autoAnchorsToDelete.length,msgOk});
+  console.log(`[${debugId}] DONE`,{d,ch,completed,actOk,anchored:!!autoAnchorToPush,cleaned:autoAnchorsToDelete.length,msgOk,finalMsgCount:(gr(d).msgs||[]).length});
   toast(actOk?(completed?'+1 acción completada':'Desmarcado'):'⚠️ No se pudo sincronizar — intenta de nuevo');
   refresh();
+  _taBusy[guardKey]=false;
 }
+let _smBusy={};  // double-click guard per (lead, channel)
 async function sM(d,aid,ch){
+  const guardKey=d+'_'+ch;
+  if(_smBusy[guardKey]){console.warn('[sM] blocked double-click',{d,ch});return}
   const ta=document.getElementById('sa-'+d+'-'+aid);
   if(!ta||!ta.value.trim()){console.log('[sM] empty, abort',{d,aid,ch});return}
-  console.log('[sM] click',{d,aid,ch});
-  const rec=gr(d);const msgs=[...(rec.msgs||[])];const tl=[...(rec.tl||[])];const acts=[...(rec.acts||[])];
-  const msgText=ta.value.trim();
-  const ts=now();
-  msgs.push({ch,tx:msgText,ts});
-  tl.push({tp:'msg',desc:'Mensaje por '+ch,ts});
-  // CRITICAL: saving a message IS completing the action for that channel
-  let actAdded=false;
-  if(!acts.includes(ch)){acts.push(ch);actAdded=true;tl.push({tp:'act',desc:'Completó: '+ch,ts});}
-  const newSt=cSt({...rec,acts,msgs});
-  ur(d,{msgs,tl,acts,st:newSt});ta.value='';
-  // Persist to Supabase with error visibility
-  const msgOk=await sbLogMessage(d,ch,msgText);
-  let actOk=true;if(actAdded)actOk=await sbLogAction(d,ch,true);
-  console.log('[sM] write',{d,ch,msgOk,actOk,actAdded});
-  toast((msgOk&&actOk)?'Mensaje guardado ✓':'⚠️ Guardado local OK, error en Supabase — revisa consola');
-  refresh();
+  _smBusy[guardKey]=true;
+  const debugId='sM_'+Math.random().toString(36).slice(2,8);
+  console.log(`[${debugId}] START`,{d,aid,ch,currentMsgCount:(gr(d).msgs||[]).length});
+  try{
+    const rec=gr(d);const msgs=[...(rec.msgs||[])];const tl=[...(rec.tl||[])];const acts=[...(rec.acts||[])];
+    const msgText=ta.value.trim();
+    const ts=now();
+    msgs.push({ch,tx:msgText,ts});
+    tl.push({tp:'msg',desc:'Mensaje por '+ch,ts});
+    // CRITICAL: saving a message IS completing the action for that channel
+    let actAdded=false;
+    if(!acts.includes(ch)){acts.push(ch);actAdded=true;tl.push({tp:'act',desc:'Completó: '+ch,ts});}
+    const newSt=cSt({...rec,acts,msgs});
+    ur(d,{msgs,tl,acts,st:newSt});ta.value='';
+    // Persist to Supabase with error visibility
+    const msgOk=await sbLogMessage(d,ch,msgText,ts);
+    let actOk=true;if(actAdded)actOk=await sbLogAction(d,ch,true);
+    console.log(`[${debugId}] DONE`,{d,ch,msgOk,actOk,actAdded,finalMsgCount:(gr(d).msgs||[]).length});
+    toast((msgOk&&actOk)?'Mensaje guardado ✓':'⚠️ Guardado local OK, error en Supabase — revisa consola');
+    refresh();
+  }finally{_smBusy[guardKey]=false}
 }
 async function sS(d,status){
   console.log('[sS] click',{d,status});
@@ -1560,7 +1801,7 @@ function rHist(q){
     // Sort by most recent activity (up timestamp) desc
     items.sort((a,b)=>new Date(b.up||0)-new Date(a.up||0));
     h+=`<div class="hg"><div class="hg-t">${label}<span class="hg-c">${items.length}</span></div>`;
-    items.forEach(r=>{const a=(r.acts||[]).length;const m=(r.msgs||[]).length;
+    items.forEach(r=>{const a=(r.acts||[]).length;const m=(r.msgs||[]).filter(x=>x.tx!==AUTO_ANCHOR_TX).length;
       h+=`<div class="hi" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`});
     h+='</div>';
   });
@@ -1722,7 +1963,12 @@ document.addEventListener('click',e=>{if(!e.target.closest('.n-user'))document.q
 document.getElementById('pbO').addEventListener('click',e=>{if(e.target===document.getElementById('pbO'))closePB()});
 // Init: load Supabase + past leads (PL feeds awareness indicator + Acción Ahora) + autoLoad today
 // Default landing tab = Hoy. autoLoad calls renderDay which now also computes the awareness indicator.
-sbLoadAll().then(()=>loadPast().then(()=>autoLoad().then(()=>{renderAccionAhora();renderDay();})));
+sbLoadAll().then(()=>loadPast().then(()=>autoLoad().then(()=>{
+  renderAccionAhora();renderDay();
+  // Restore last-active tab on boot (workspace + tab survive refresh)
+  const _savedTab=localStorage.getItem('unabase_active_tab');
+  if(_savedTab&&['today','now','hist'].includes(_savedTab)&&_savedTab!=='today'){showV(_savedTab)}
+})));
 </script>
 </body>
 </html>
