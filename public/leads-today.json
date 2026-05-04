@@ -1,35 +1,32 @@
 [
   {
-    "companyName": "Vivo Films",
-    "website": "https://vivofilmspanama.com",
-    "country": "Panama",
+    "companyName": "DEDALO Films",
+    "website": "https://dedalofilms.com",
+    "country": "Uruguay",
     "industry": "film",
-    "summary": "VIVO FILMS es una empresa de producción de contenidos audiovisuales. Con especialidad en la producción de series de tv, films y documentales.",
+    "summary": "Producción audiovisual. Cine, Publicidad o Prensa. Video y fotografía con estándares internacionales.",
     "notableClients": [
-      "Nike",
-      "Google"
+      "Netflix",
+      "Facebook"
     ],
     "recentProjects": [
-      "in 2015 by Louise Bellicaud and Claire Ch",
-      "by In Vivo Films",
-      "Escándalos",
-      "Naza",
-      "PDF",
-      "LEER MÁS ESTRENO DEL FILM TODOS CAMBIAMOS",
-      "PANAMÁ LEER MÁS TALLER DE PRODUCCIÓN"
+      "Salió la Foto",
+      "Uruguay al mundial Cssc AMSTERDAM llega a",
+      "Desarrollo Sostenible para Francia VER TO",
+      "como su favorito"
     ],
     "estimatedSize": "large",
     "unabaseScore": 9,
     "scopeVerified": true,
-    "scopeSignals": 7,
+    "scopeSignals": 9,
     "scopeLabel": "entertainment",
     "entertainmentVerified": true,
-    "entertainmentSignals": 7,
+    "entertainmentSignals": 9,
     "nicheVerified": true,
     "nicheReason": "niche_confirmed",
     "companyBrief": null,
     "approachAngle": null,
-    "pitchEmailES": "hola — vi que Vivo Films produce series, films y documentales para marcas como Nike y Google desde Panamá\n\n¿cómo están manejando el presupuesto y seguimiento de cada producción cuando manejan varios proyectos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailES": "hola — vi que DEDALO Films produce series y documentales con estándares internacionales para marcas como Netflix desde Uruguay\n\n¿cómo están manejando el presupuesto y el seguimiento de cada producción cuando coordinan varios proyectos en paralelo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
     "fitSignals": 5,
@@ -41,550 +38,223 @@
     ],
     "contactName": null,
     "contactTitle": null,
-    "contactEmail": "jrodriguez@vivofilmspanama.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/vivofilmspty",
-    "instagramHandle": "vivofilmspty",
-    "instagramBio": "See Instagram photos and videos from Vivo Films (@vivofilms)",
-    "instagramFollowers": "146",
-    "facebookUrl": "https://www.facebook.com/VIVO-FILMS-PTY-314711332811710",
-    "twitterUrl": null,
-    "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": null,
-    "emailPatterns": null,
-    "scoutLog": [
-      {"step": 1, "name": "Apollo Pro", "started": true},
-      {"step": 1, "found": "org_only", "name": null},
-      {"step": 2, "name": "Hunter.io", "started": true},
-      {"step": 2, "error": "Request failed with status code 429"},
-      {"step": 3, "name": "Website Crawl", "started": true},
-      {"step": 3, "pagesScanned": 16, "personalEmails": ["jrodriguez@vivofilmspanama.com"], "genericEmails": [], "phones": [], "name": null, "social": {"instagram": "https://www.instagram.com/vivofilmspty", "facebook": "https://www.facebook.com/VIVO-FILMS-PTY-314711332811710", "youtube": null, "vimeo": null, "instagramScore": 1}},
-      {"step": 8, "name": "Social Scan", "started": true},
-      {"step": 8, "igUrl": "https://www.instagram.com/vivofilmspty", "igHandle": "vivofilmspty", "igFollowers": "146", "socialEmail": "produccion@vivofilmspanama.com", "socialPhone": null},
-      {"step": "founder_recovery", "started": true, "name": "(none)"},
-      {"step": "founder_recovery", "company_ig_tagged": []},
-      {"step": "founder_recovery", "final": {"email": "jrodriguez@vivofilmspanama.com", "additional": 0, "upgraded": false}}
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactPath": "company_fallback",
-    "tier": "tier2",
-    "instagramDM": null,
-    "readyToSend": true,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "source_date": "2026-05-01",
-    "approved": false
-  },
-  {
-    "companyName": "Central Post Media",
-    "website": "https://centralpost.com.mx",
-    "country": "Mexico",
-    "industry": "commercial",
-    "summary": "En Central Post Media casa productora creamos contenido audiovisual y videos para redes sociales, videos corporativos, e infomerciales en CDMX.",
-    "notableClients": [
-      "Televisa"
-    ],
-    "recentProjects": [
-      "es un reto nuevo que debemos hacerlo real"
-    ],
-    "estimatedSize": "small",
-    "unabaseScore": 7,
-    "scopeVerified": true,
-    "scopeSignals": 5,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 5,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que Central Post Media produce contenido audiovisual y videos para redes sociales y marcas como Televisa en CDMX\n\n¿cómo están controlando el presupuesto y los tiempos de entrega cuando tienen múltiples proyectos corriendo al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 2,
-    "fitReasons": [
-      "premium_clients",
-      "high_ent_signals"
-    ],
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "centralpostmx@gmail.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/centralpostmex/",
-    "instagramHandle": "centralpostmex",
-    "instagramBio": "See Instagram photos and videos from Central Produções (@centralprod) Log In",
-    "instagramFollowers": "20",
-    "facebookUrl": "https://www.facebook.com/centralpostmx",
-    "twitterUrl": "https://twitter.com/CentralPostMex",
-    "youtubeUrl": "https://www.youtube.com/user/CentralPostmx",
-    "vimeoUrl": null,
-    "contactPhone": null,
-    "emailPatterns": null,
-    "scoutLog": [
-      {"step": 1, "name": "Apollo Pro", "started": true},
-      {"step": 1, "found": "org_only", "name": null},
-      {"step": 2, "name": "Hunter.io", "started": true},
-      {"step": 2, "error": "Request failed with status code 429"},
-      {"step": 3, "name": "Website Crawl", "started": true},
-      {"step": 3, "pagesScanned": 14, "personalEmails": ["centralpostmx@gmail.com"], "genericEmails": ["info@centralpost.com.mx"], "phones": ["01 (55) 3235 5929"], "name": null, "social": {"instagram": "https://www.instagram.com/centralpostmex/", "facebook": "https://www.facebook.com/centralpostmx", "twitter": "https://twitter.com/CentralPostMex", "youtube": "https://www.youtube.com/user/CentralPostmx", "vimeo": null, "instagramScore": 2}},
-      {"step": 8, "name": "Social Scan", "started": true},
-      {"step": 8, "igUrl": "https://www.instagram.com/centralpostmex/", "igHandle": "centralpostmex", "igFollowers": "20", "socialEmail": "centralpostmx@gmail.com", "socialPhone": null},
-      {"step": "founder_recovery", "started": true, "name": "(none)"},
-      {"step": "founder_recovery", "company_ig_tagged": []},
-      {"step": "founder_recovery", "final": {"email": "centralpostmx@gmail.com", "additional": 0, "upgraded": false}}
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactPath": "company_fallback",
-    "tier": "tier3",
-    "instagramDM": null,
-    "readyToSend": true,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "source_date": "2026-05-01",
-    "approved": false
-  },
-  {
-    "companyName": "Laberintos Films",
-    "website": "https://laberintosfilms.com",
-    "country": "Panama",
-    "industry": "film",
-    "summary": "Laberintos Films es el brazo audiovisual de Paverte Media, con más de 22 años de experiencia en el desarrollo y producción de proyectos audiovisuales. Trabajamos desde la idea inicial hasta su ejecución final, combinando desarrollo creativo y producción técnica en documentales, ficción, contenidos institucionales y medios digitale",
-    "notableClients": [
-      "Facebook",
-      "TikTok"
-    ],
-    "recentProjects": [
-      "Transformando ideas en imágenes",
-      "Peter, ni soldado, ni civil, ni traidor",
-      "Peter",
-      "Producción de Documental Institucional",
-      "institucional",
-      "Duración 20 minutos",
-      "de trabajos realizados en diversos puntos",
-      "en mente",
-      "audiovisual"
-    ],
-    "estimatedSize": "mid",
-    "unabaseScore": 8,
-    "scopeVerified": true,
-    "scopeSignals": 5,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 5,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que Laberintos Films lleva más de 22 años produciendo documentales, ficción e institucionales para clientes como Facebook y TikTok en Panamá\n\n¿cómo están manejando el control de presupuesto entre proyectos simultáneos de distintas categorías?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 4,
-    "fitReasons": [
-      "multiple_projects",
-      "premium_clients",
-      "mid_size_team",
-      "high_ent_signals"
-    ],
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "infopaverte@gmail.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/laberintosproducciones/",
-    "instagramHandle": "laberintosproducciones",
-    "instagramBio": "See Instagram photos and videos from Laberintos / Producción audiovisual (@laberintosproducciones)",
-    "instagramFollowers": "1,218",
-    "facebookUrl": "http://www.facebook.com/laberintosproducciones",
-    "twitterUrl": "http://www.twitter.com/pavertec",
-    "youtubeUrl": "http://www.youtube.com/pavertepanama",
-    "vimeoUrl": null,
-    "contactPhone": "(507) 6997-1456",
-    "emailPatterns": null,
-    "scoutLog": [
-      {"step": 1, "name": "Apollo Pro", "started": true},
-      {"step": 1, "found": "org_only", "name": null},
-      {"step": 2, "name": "Hunter.io", "started": true},
-      {"step": 2, "error": "Request failed with status code 429"},
-      {"step": 3, "name": "Website Crawl", "started": true},
-      {"step": 3, "pagesScanned": 16, "personalEmails": ["infopaverte@gmail.com", "laberintosfilms@yahoo.es"], "genericEmails": [], "phones": ["(507) 6997-1456", "507-6997-1456"], "name": null, "social": {"instagram": "https://www.instagram.com/laberintosproducciones/", "facebook": "http://www.facebook.com/laberintosproducciones", "twitter": "http://www.twitter.com/pavertec", "youtube": "http://www.youtube.com/pavertepanama", "vimeo": null, "instagramScore": 1}},
-      {"step": 8, "name": "Social Scan", "started": true},
-      {"step": 8, "igUrl": "https://www.instagram.com/laberintosproducciones/", "igHandle": "laberintosproducciones", "igFollowers": "1,218", "socialEmail": "infopaverte@gmail.com", "socialPhone": null},
-      {"step": "founder_recovery", "started": true, "name": "(none)"},
-      {"step": "founder_recovery", "company_ig_tagged": []},
-      {"step": "founder_recovery", "final": {"email": "infopaverte@gmail.com", "additional": 0, "upgraded": false}}
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactPath": "company_fallback",
-    "tier": "tier3",
-    "instagramDM": null,
-    "readyToSend": true,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "source_date": "2026-05-01",
-    "approved": false
-  },
-  {
-    "companyName": "Nikola Anakabe",
-    "website": "https://nikolaanakabe.com",
-    "country": "Mexico",
-    "industry": "commercial",
-    "summary": "Nikola Anakabe is a full-service video production company in Mexico with a passion for providing top-level production services to clients from all across the world.",
-    "notableClients": [
-      "Facebook"
-    ],
-    "recentProjects": [
-      "a video"
-    ],
-    "estimatedSize": "small",
-    "unabaseScore": 6,
-    "scopeVerified": true,
-    "scopeSignals": 5,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 5,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola Nikola — vi que produces videos de alto nivel para clientes internacionales desde México\n\n¿cómo estás manejando presupuestos y entregas cuando los clientes son de distintos países y zonas horarias?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 2,
-    "fitReasons": [
-      "premium_clients",
-      "high_ent_signals"
-    ],
-    "contactName": "Nikola",
-    "contactTitle": null,
-    "contactEmail": "nikolaanakabe@gmail.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": null,
-    "instagramHandle": null,
-    "instagramBio": null,
-    "instagramFollowers": null,
-    "facebookUrl": null,
-    "twitterUrl": null,
-    "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": "+52-614-131-7880",
-    "emailPatterns": null,
-    "scoutLog": [
-      {"step": 1, "name": "Apollo Pro", "started": true},
-      {"step": 1, "found": "org_only", "name": null},
-      {"step": 2, "name": "Hunter.io", "started": true},
-      {"step": 2, "error": "Request failed with status code 429"},
-      {"step": 3, "name": "Website Crawl", "started": true},
-      {"step": 3, "warn": "IG handle @wixstudio does not match domain \"nikolaanakabe\" — may be wrong company"},
-      {"step": 3, "pagesScanned": 14, "personalEmails": ["nikolaanakabe@gmail.com"], "genericEmails": ["info@mysite.com"], "phones": ["+52-614-131-7880"], "name": null, "social": {"instagram": null, "facebook": null, "twitter": null, "youtube": null, "vimeo": null, "instagramScore": 0}},
-      {"step": 8, "name": "Social Scan", "started": true},
-      {"step": "deep_rescue", "started": true},
-      {"step": "deep_rescue", "final": {"email": true, "ig": false, "phone": true}}
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactPath": "email_only",
-    "tier": "tier2",
-    "instagramDM": null,
-    "readyToSend": true,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "source_date": "2026-05-01",
-    "approved": false
-  },
-  {
-    "companyName": "Extranavida",
-    "website": "https://extranavida.com",
-    "country": "Panama",
-    "industry": "film",
-    "summary": "Somos una productora audiovisual en Panamá que crea proyectos de cine, fotografía y video con una visión única, creativa y profesional. ¡Conecta tu historia con el mundo!",
-    "notableClients": [
-      "Mercedes"
-    ],
-    "recentProjects": [
-      "by Mercedes Gironella and Jorge Cordero",
-      "se ejecute y se entregue con éxito para s"
-    ],
-    "estimatedSize": "small",
-    "unabaseScore": 7,
-    "scopeVerified": true,
-    "scopeSignals": 6,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 6,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que Extranavida produce cine, fotografía y video con un enfoque creativo y profesional en Panamá, trabajando con marcas como Mercedes\n\n¿cómo están gestionando el presupuesto y seguimiento de cada proyecto cuando manejan cine y fotografía al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 3,
-    "fitReasons": [
-      "multiple_projects",
-      "premium_clients",
-      "high_ent_signals"
-    ],
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "extranavidaprod@gmail.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/extranavida",
-    "instagramHandle": "extranavida",
-    "instagramBio": "See Instagram photos and videos from Yur (@extranavida)",
-    "instagramFollowers": "108",
-    "facebookUrl": null,
-    "twitterUrl": null,
-    "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": "+507 6530-1895",
-    "emailPatterns": null,
-    "scoutLog": [
-      {"step": 1, "name": "Apollo Pro", "started": true},
-      {"step": 1, "found": "org_only", "name": null},
-      {"step": 2, "name": "Hunter.io", "started": true},
-      {"step": 2, "error": "Request failed with status code 429"},
-      {"step": 3, "name": "Website Crawl", "started": true},
-      {"step": 3, "pagesScanned": 16, "personalEmails": ["extranavidaprod@gmail.com"], "genericEmails": [], "phones": ["+507 6530-1895", "+507 65301895"], "name": null, "social": {"instagram": "https://www.instagram.com/extranavida", "facebook": null, "twitter": null, "youtube": null, "vimeo": null, "instagramScore": 3}},
-      {"step": 8, "name": "Social Scan", "started": true},
-      {"step": 8, "igUrl": "https://www.instagram.com/extranavida", "igHandle": "extranavida", "igFollowers": "108", "socialEmail": null, "socialPhone": null},
-      {"step": "founder_recovery", "started": true, "name": "(none)"},
-      {"step": "founder_recovery", "company_ig_tagged": []},
-      {"step": "founder_recovery", "final": {"email": "extranavidaprod@gmail.com", "additional": 0, "upgraded": false}}
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactPath": "company_fallback",
-    "tier": "tier3",
-    "instagramDM": null,
-    "readyToSend": true,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "source_date": "2026-05-01",
-    "approved": false
-  },
-  {
-    "companyName": "Latido Producciones",
-    "website": "https://latidoproducciones.com",
-    "country": "Panama",
-    "industry": "film",
-    "summary": "Soluciones de producción audiovisual de alta calidad para la industria del cine, televisión, publicidad y fotografía. ¡Haz click y conoce nuestro trabajo!",
-    "notableClients": [
-      "Facebook"
-    ],
-    "recentProjects": [
-      "by Latido Producciones",
-      "by industry professionals",
-      "lo necesite"
-    ],
-    "estimatedSize": "small",
-    "unabaseScore": 6,
-    "scopeVerified": true,
-    "scopeSignals": 7,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 7,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola Daniel — vi que Latido Producciones ofrece producción audiovisual de alta calidad para cine, televisión y publicidad en Panamá\n\n¿cómo están manejando el control de presupuesto y seguimiento de proyectos cuando atienden cine, tv y publicidad al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 3,
-    "fitReasons": [
-      "multiple_projects",
-      "premium_clients",
-      "high_ent_signals"
-    ],
-    "contactName": "Daniel",
-    "contactTitle": "Productor Ejecutivo",
-    "contactEmail": "daniel@latidoproducciones.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://instagram.com/latidopro",
-    "instagramHandle": "latidopro",
-    "instagramBio": "See Instagram photos and videos from Latido Films (@latidofilms)",
-    "instagramFollowers": "4,637",
-    "facebookUrl": "https://www.facebook.com/people/Latido-Producciones/100063671553432/",
-    "twitterUrl": null,
-    "youtubeUrl": "https://www.youtube.com/@fantusm11",
-    "vimeoUrl": "https://vimeo.com/danielisaacgomez",
-    "contactPhone": "+50766193877",
-    "emailPatterns": null,
-    "scoutLog": [
-      {"step": 1, "name": "Apollo Pro", "started": true},
-      {"step": 1, "found": "org_only", "name": null},
-      {"step": 2, "name": "Hunter.io", "started": true},
-      {"step": 2, "error": "Request failed with status code 429"},
-      {"step": 3, "name": "Website Crawl", "started": true},
-      {"step": 3, "pagesScanned": 16, "personalEmails": ["daniel@latidoproducciones.com"], "genericEmails": ["info@latidoproducciones.com"], "phones": ["+50766193877", "+507 6619-3877"], "name": "Daniel", "social": {"instagram": "https://instagram.com/latidopro", "facebook": "https://www.facebook.com/people/Latido-Producciones/100063671553432/", "twitter": null, "youtube": "https://www.youtube.com/@fantusm11", "vimeo": "https://vimeo.com/danielisaacgomez", "instagramScore": 2}},
-      {"step": 8, "name": "Social Scan", "started": true},
-      {"step": 8, "igUrl": "https://instagram.com/latidopro", "igHandle": "latidopro", "igFollowers": "4,637", "socialEmail": "info@latidoproducciones.com", "socialPhone": null},
-      {"step": "founder_recovery", "started": true, "name": "Daniel"},
-      {"step": "founder_recovery", "company_ig_tagged": []},
-      {"step": "founder_recovery", "final": {"email": "daniel@latidoproducciones.com", "additional": 0, "upgraded": false}}
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactPath": "decision_maker_email",
-    "tier": "tier1",
-    "instagramDM": null,
-    "readyToSend": true,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "source_date": "2026-05-01",
-    "approved": false
-  },
-  {
-    "companyName": "Mansion Studio Films",
-    "website": "https://mansionstudiofilms.com",
-    "country": "Panama",
-    "industry": "film",
-    "summary": "Mansion Studio Films es una productora audiovisual especializada en la creación de contenido profesional para empresas, marcas y proyectos comerciales en Panamá. Nuestro equipo combina creatividad, dirección cinematográfica y producción de alto nivel para ofrecer videos corporativos, contenido digital para redes sociales, comerciales, videos institucionales, fotografía profesional y cobertura de eventos empresariales.",
-    "notableClients": [],
-    "recentProjects": [],
-    "estimatedSize": "mid",
-    "unabaseScore": 6,
-    "scopeVerified": true,
-    "scopeSignals": 7,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 7,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que Mansion Studio Films produce videos corporativos, comerciales y contenido digital para marcas en Panamá\n\n¿cómo están organizando los presupuestos y tiempos de entrega cuando manejan distintos tipos de proyectos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 2,
-    "fitReasons": [
-      "mid_size_team",
-      "high_ent_signals"
-    ],
-    "contactName": null,
-    "contactTitle": null,
     "contactEmail": null,
     "contactLinkedIn": null,
     "contactConfidence": null,
     "contactSource": null,
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/mansionstudiofilms/",
-    "instagramHandle": "mansionstudiofilms",
-    "instagramBio": "See Instagram photos and videos from MansionStudioFilms (@mansionstudiofilms)",
-    "instagramFollowers": "4,026",
-    "facebookUrl": null,
-    "twitterUrl": null,
-    "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": "507-66274463",
+    "instagramUrl": "https://instagram.com/dedalo_films",
+    "instagramHandle": "dedalo_films",
+    "instagramBio": "See Instagram photos and videos from DEDALO Films (@dedalo_films)",
+    "instagramFollowers": "6,281",
+    "facebookUrl": "https://facebook.com/dedalofilmsuy",
+    "twitterUrl": "https://twitter.com/dedalofilmsuy",
+    "youtubeUrl": "https://www.youtube.com/c/DedaloUy",
+    "vimeoUrl": "https://vimeo.com/dedalo",
+    "contactPhone": "+598 99 968929",
     "emailPatterns": null,
     "scoutLog": [
-      {"step": 1, "name": "Apollo Pro", "started": true},
-      {"step": 1, "found": "org_only", "name": null},
-      {"step": 2, "name": "Hunter.io", "started": true},
-      {"step": 2, "error": "Request failed with status code 429"},
-      {"step": 3, "name": "Website Crawl", "started": true},
-      {"step": 3, "pagesScanned": 14, "personalEmails": ["produccion@mansionstudiopanama.com"], "genericEmails": [], "phones": ["507-66274463"], "name": null, "social": {"instagram": null, "facebook": null, "twitter": null, "youtube": null, "vimeo": null}},
-      {"step": 8, "name": "Social Scan", "started": true},
-      {"step": 8, "igUrl": "https://www.instagram.com/mansionstudiofilms/", "igHandle": "mansionstudiofilms", "igFollowers": "4,026", "socialEmail": null, "socialPhone": null},
-      {"step": "deep_rescue", "started": true},
-      {"step": "deep_rescue", "final": {"email": false, "ig": true, "phone": true}},
-      {"step": "founder_recovery", "started": true, "name": "(none)"},
-      {"step": "founder_recovery", "company_ig_tagged": []},
-      {"step": "alt_paths", "started": true},
-      {"step": "alt_paths", "done": true, "additional_found": 0},
-      {"step": "founder_recovery", "final": {"email": null, "additional": 0, "upgraded": false}}
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@dedalo.com.uy"
+        ],
+        "phones": [
+          "+598 99 968929"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://instagram.com/dedalo_films",
+          "facebook": "https://facebook.com/dedalofilmsuy",
+          "twitter": "https://twitter.com/dedalofilmsuy",
+          "youtube": "https://www.youtube.com/c/DedaloUy",
+          "vimeo": "https://vimeo.com/dedalo",
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://instagram.com/dedalo_films",
+        "igHandle": "dedalo_films",
+        "igFollowers": "6,281",
+        "socialEmail": "info@dedalo.com.uy",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "dedalo_films",
+        "followers": "6,281",
+        "email": null,
+        "phone": null,
+        "triedHandles": 15
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+598 99 968929"
+        ]
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_email": "info@dedalo.com.uy",
+        "pages_crawled": 20
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_email": "info@dedalo.com.uy",
+        "pages_crawled": 20
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/dedalo"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": null,
+          "additional": 0,
+          "upgraded": false
+        }
+      }
     ],
     "apolloCompanyLinkedIn": null,
     "apolloCompanyPhone": null,
     "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "manualNote": "Email generico (info@dedalo.com.uy) — contactar tambien por Instagram @dedalo_films",
     "whoisCheckPending": true,
     "contactPath": "ig_only",
     "tier": "tier3",
@@ -602,7 +272,1202 @@
     "linkedinPlaybook": null,
     "outreachSequence": null,
     "keyInsight": null,
-    "source_date": "2026-05-01",
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-04",
+    "approved": false
+  },
+  {
+    "companyName": "Dimática Films",
+    "website": "https://dimaticafilms.com",
+    "country": "Chile",
+    "industry": "film",
+    "summary": "Dimática Films es una productora audiovisual chilena especializada en videoclips, cortometrajes, documentales, cine, programas de televisión, podcast, radio, piezas promocionales y tours patrimoniales.",
+    "notableClients": [
+      "Canal 13",
+      "Facebook"
+    ],
+    "recentProjects": [
+      "musical",
+      "protagonizado por Edson Valdivia y Cristi",
+      "El Centinela de las Ánimas",
+      "realizado por Dimática Films en torno a l",
+      "en honor a Pogo"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 10,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 10,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola — vi que Dimática Films cubre desde videoclips y cortometrajes hasta cine y programas de TV para clientes como Canal 13\n\n¿cómo están controlando costos y cronogramas cuando rotan entre formatos tan distintos en cada proyecto?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "dimaticafilms@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/dimaticafilms/",
+    "instagramHandle": "dimaticafilms",
+    "instagramBio": "See Instagram photos and videos from Dimatica Films | Productora de cine y eventos en vivo (@dimaticafilms)",
+    "instagramFollowers": "47K",
+    "facebookUrl": "https://www.facebook.com/dimaticafilms",
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/playlist?list=PL2_Nuql_6Z3pMqX7C2P_ZSGiowmEFRqwy",
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 0
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [
+          "dimaticafilms@gmail.com"
+        ],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/dimaticafilms/",
+          "facebook": "https://www.facebook.com/dimaticafilms",
+          "twitter": null,
+          "youtube": "https://www.youtube.com/playlist?list=PL2_Nuql_6Z3pMqX7C2P_ZSGiowmEFRqwy",
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/dimaticafilms/",
+        "igHandle": "dimaticafilms",
+        "igFollowers": "47K",
+        "socialEmail": "edson.valdivia@dimaticafilms.com",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "dimaticafilms@gmail.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactPath": "company_fallback",
+    "tier": "tier3",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-04",
+    "approved": false
+  },
+  {
+    "companyName": "Martillomedia",
+    "website": "https://martillomedia.com",
+    "country": "Argentina",
+    "industry": "commercial",
+    "summary": "Ir al contenido MAIN MENU Productora Audiovisual Cine . Social Media Creemos en lo que Creamos\" 01 Services Servicios de Producción Nos hacemos cargo de todo el proceso! Desarrolla los mejores formatos para comunicarte con tu audiencia.",
+    "notableClients": [
+      "Univision"
+    ],
+    "recentProjects": [
+      "Desarrollo en Co-Producción con Media Bus",
+      "de Ficción"
+    ],
+    "estimatedSize": "large",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 8,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola — vi que en Martillomedia se hacen cargo del ciclo completo de producción audiovisual y trabajan con marcas como Univision\n\n¿cómo están manejando el presupuesto cuando cada cliente trae un alcance distinto y los tiempos son cortos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "large_team"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "contacto@martillomedia.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/martillo.media/",
+    "instagramHandle": "martillo.media",
+    "instagramBio": "See Instagram photos and videos from Martillo Media | Productora Audiovisual (@martillo.media)",
+    "instagramFollowers": "2,629",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/threefishmedia",
+    "contactPhone": "+1 281 506-0184",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@martillomedia.com"
+        ],
+        "phones": [
+          "+1 281 506-0184"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/martillo.media/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/martillo.media/",
+        "igHandle": "martillo.media",
+        "igFollowers": "2,629",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "martillo.media",
+        "followers": "2,629",
+        "email": null,
+        "phone": null,
+        "triedHandles": 15
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+1 281 506-0184"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/threefishmedia"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "contacto@martillomedia.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "manualNote": "Email generico (contacto@martillomedia.com) — contactar tambien por Instagram @martillo.media",
+    "whoisCheckPending": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-04",
+    "approved": false
+  },
+  {
+    "companyName": "Filo Studios",
+    "website": "https://filostudios.com",
+    "country": "Guatemala",
+    "industry": "film",
+    "summary": "Tu idea merece ser HABLEMOS DE TU PROYECTO Cine, publicidad y producción con lenguaje cinematográfico Somos una productora internacional de cine y televisión con sede en Ciudad de Guatemala. Desarrollamos películas para salas de cine y plataformas VOD, comerciales de televisión y producciones audiovisuales de alto nivel. Integramos producción, postproducción y distribución dentro de una misma estructura, lo que nos permite desarrollar proyectos de forma eficiente y con altos estándares de calidad.",
+    "notableClients": [
+      "Pepsi"
+    ],
+    "recentProjects": [
+      "Vive tu Navidad - Pepsi",
+      "Cine"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 9,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 9,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola — vi que Filo Studios produce campañas de cine y publicidad para marcas como Pepsi desde Guatemala\n\n¿cómo están ordenando el presupuesto y el cronograma de cada campaña cuando el equipo es chico y los proyectos no paran?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "mannyfilo@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/thefilostudios/",
+    "instagramHandle": "thefilostudios",
+    "instagramBio": "See Instagram photos and videos from Fiona | Filo Films (@filofilms)",
+    "instagramFollowers": "2,541",
+    "facebookUrl": "https://www.facebook.com/filostudios?mibextid=LQQJ4d",
+    "twitterUrl": null,
+    "youtubeUrl": "https://youtube.com/@filostudios?feature=shared",
+    "vimeoUrl": null,
+    "contactPhone": "+502 5687-1424",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 1
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "warn": "IG handle @mannyherreradirector does not match domain \"filostudios\" — may be wrong company"
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [
+          "mannyfilo@gmail.com"
+        ],
+        "genericEmails": [
+          "info@filostudios.com"
+        ],
+        "phones": [
+          "+502 5687-1424"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/mannyherreradirector?igsh=eWJoM2N3YWJxeXFh",
+          "facebook": "https://www.facebook.com/filostudios?mibextid=LQQJ4d",
+          "twitter": null,
+          "youtube": "https://youtube.com/@filostudios?feature=shared",
+          "vimeo": null,
+          "instagramScore": 0
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/mannyherreradirector?igsh=eWJoM2N3YWJxeXFh",
+        "igHandle": "mannyherreradirector?igsh=eWJoM2N3YWJxeXFh",
+        "igFollowers": "2,541",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/thefilostudios/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "mannyfilo@gmail.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/filo-animation-studios",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 6,
+    "contactPath": "company_fallback",
+    "tier": "tier3",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-04",
+    "approved": false
+  },
+  {
+    "companyName": "Antídoto Cine",
+    "website": "https://antidotocine.com",
+    "country": "Uruguay",
+    "industry": "film",
+    "summary": "Antídoto (creada originalmente como Antídoto Films), es una productora uruguaya independiente orientada al desarrollo de guiones y producción de películas, series y videoclips. Su primera producción fue la serie docu-ficción La huella de Sepé (2011), primera co-producción de Televisión Nacional de una miniserie con una productora independiente. Otros proyectos destacados son “Vicente”, serie en desarrollo premiada por el Fondo de Desarrollo de Producción ICAU, Montevideo Filma, premio ICAU-MIEM y premio IBERMEDIA de desarrollo; “Welkom”, largometraje de ficción.",
+    "notableClients": [
+      "Disney",
+      "ViX"
+    ],
+    "recentProjects": [
+      "Vicente",
+      "FICCIÓN - EN DESARROLLO Dirección y guion",
+      "FICCIÓN - EN POSTPRODUCCIÓN EN POSTPRODUC",
+      "DOCUMENTAL - EN DESARROLLO Pasado y prese",
+      "FICCIÓN - EN DESARROLLO Guion y dirección",
+      "POLICIAL - EN DESARROLLO - Premio Fondo d",
+      "DOCUMENTAL - EN DESARROLLO Un científico",
+      "FICCIÓN - 2015 Un productor audiovisual e",
+      "DOCUMENTAL - 2011 Con el objetivo de obte",
+      "docu-ficción La huella de Sepé"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 13,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 13,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola — vi que Antídoto Cine tiene proyectos en desarrollo y postproducción para plataformas como Disney y ViX\n\n¿cómo están haciendo el seguimiento de presupuesto entre proyectos que están en etapas distintas (desarrollo, rodaje, post)?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "antidotoproduccion@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/antidotocine/",
+    "instagramHandle": "antidotocine",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/lahuelladesepe",
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/user/filmsantidoto",
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 0
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "antidotoproduccion@gmail.com"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "+598 99 309 003"
+        ],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": "https://www.facebook.com/lahuelladesepe",
+          "twitter": null,
+          "youtube": "https://www.youtube.com/user/filmsantidoto",
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/antidotocine/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "antidotoproduccion@gmail.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactPath": "company_fallback",
+    "tier": "tier3",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-04",
+    "approved": false
+  },
+  {
+    "companyName": "Lucho Films",
+    "website": "https://luchofilms.cl",
+    "country": "Chile",
+    "industry": "film",
+    "summary": "Lucho Films productora audiovisual dedicada a la realización de largometrajes, cortometrajes y contenido para instituciones, empresas y artistas",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [
+      "by Lucho Films"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 8,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola — vi que Lucho Films hace largometrajes, cortos y contenido para empresas e instituciones desde Chile\n\n¿cómo están ordenando el presupuesto cuando cada cliente (institución, marca o proyecto propio) requiere otra estructura?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "luis@luchofilms.cl",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "hunter_domain",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/luchofilmscl",
+    "instagramHandle": "luchofilmscl",
+    "instagramBio": "See Instagram photos and videos from Lucho | Productor Musical (@luchoprod)",
+    "instagramFollowers": "269",
+    "facebookUrl": "https://www.facebook.com/LuchoFilms",
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/channel/UCqid_iix7h22v9MN0e-zLLA",
+    "vimeoUrl": "https://vimeo.com/user90908974",
+    "contactPhone": "+56982599099",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "named_contact",
+        "name": "Marco Ruvalcaba",
+        "title": "Principal Engineer",
+        "email": "luis@luchofilms.cl"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "luis@luchofilms.cl",
+          "miguel@luchofilms.cl"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "+56982599099",
+          "+56976063727"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/luchofilmscl",
+          "facebook": "https://www.facebook.com/LuchoFilms",
+          "twitter": null,
+          "youtube": "https://www.youtube.com/channel/UCqid_iix7h22v9MN0e-zLLA",
+          "vimeo": "https://vimeo.com/user90908974",
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/luchofilmscl",
+        "igHandle": "luchofilmscl",
+        "igFollowers": "269",
+        "socialEmail": "luis@luchofilms.cl",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Marco Ruvalcaba"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "luis@luchofilms.cl",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/lucho-films",
+    "apolloCompanyPhone": "+56 9 8259 9099",
+    "apolloEmployeeCount": 13,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-04",
+    "approved": false
+  },
+  {
+    "companyName": "Ufilms",
+    "website": "https://ufilms.com.uy",
+    "country": "Uruguay",
+    "industry": "film",
+    "summary": "Brindamos servicios de producción audiovisual, haciendo especial hincapié en las coproducciones internacionales y la distribución independiente.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [
+      "sobre crímenes",
+      "judicial Family Film Family film Maximili",
+      "Amparo Gonzalez Documental Pablo Zubizarr",
+      "Carlos A",
+      "Martín Salinas Comedia Negra Eduardo Lama",
+      "Mariano Frigerio",
+      "Nicolas Silver"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola — vi que Ufilms se enfoca en coproducciones internacionales y distribución independiente desde Uruguay\n\n¿cómo están coordinando presupuestos y reportes entre socios cuando trabajan con coproductores en otros países?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "lucia@ufilms.com.uy",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "hunter_domain",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/ufilms.uruguay",
+    "instagramHandle": "ufilms.uruguay",
+    "instagramBio": "See Instagram photos and videos from U Films (@ufilms.uruguay) Meta",
+    "instagramFollowers": "2,056",
+    "facebookUrl": "https://www.facebook.com/profile.php?id=100057397610485",
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/channel/UCeiSYTRNMRY-nY-LpD6ukvg",
+    "vimeoUrl": "https://vimeo.com/ufilms",
+    "contactPhone": "+598 2412 0170",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "named_contact",
+        "name": "Lucía Salkind",
+        "title": "Executive Director",
+        "email": "lucia@ufilms.com.uy"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@ufilms.com.uy"
+        ],
+        "phones": [
+          "+598 2412 0170"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/ufilms.uruguay",
+          "facebook": "https://www.facebook.com/profile.php?id=100057397610485",
+          "twitter": null,
+          "youtube": "https://www.youtube.com/channel/UCeiSYTRNMRY-nY-LpD6ukvg",
+          "vimeo": "https://vimeo.com/ufilms",
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/ufilms.uruguay",
+        "igHandle": "ufilms.uruguay",
+        "igFollowers": "2,056",
+        "socialEmail": "info@ufilms.com.uy",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Lucía Salkind"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "lucia@ufilms.com.uy",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/u-films",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 8,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-04",
+    "approved": false
+  },
+  {
+    "companyName": "THE LAB",
+    "website": "https://fashionlabproductions.com",
+    "country": "Spain",
+    "industry": "commercial",
+    "summary": "CASOS SERVICIOS EVENTOS THE LAB CONTACTA 1/5 2/5 3/5 4/5 5/5 1/5 2/5 3/5 4/5 5/5 1/5 2/5 3/5 4/5 5/5 Política de Privacidad Política de Cookies Usamos cookies para asegurar que te damos la mejor experiencia en nuestra web. Si continúas usando este sitio, asumiremos que estás de acuerdo con ello.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 5,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola bettina — vi que THE LAB produce eventos y campañas de moda con un equipo grande en España\n\n¿cómo están manejando los presupuestos y los reportes a marca cuando coordinan varios eventos al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "premium_clients",
+      "mid_size_team"
+    ],
+    "contactName": "Bettina Gariglio",
+    "contactTitle": "Founder",
+    "contactEmail": "bettina@fashionlabproductions.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/bettinagariglio",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": "See Instagram photos and videos from THE LAB (@thelabprod)",
+    "instagramFollowers": "13",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "+34 747 471031",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Bettina Gariglio",
+        "title": "Founder",
+        "email": "bettina@fashionlabproductions.com",
+        "linkedin": "http://www.linkedin.com/in/bettinagariglio"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@fashionlabproductions.com"
+        ],
+        "phones": [
+          "+34 747 471031"
+        ],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/the_lab/",
+        "igHandle": "the_lab",
+        "igFollowers": "13",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/thelabcreativespace/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/the-lab-consulting",
+    "apolloCompanyPhone": "+1 201-526-1200",
+    "apolloEmployeeCount": 110,
+    "isAdjacent": true,
+    "adjacentIndustry": "fashion",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-04",
     "approved": false
   }
 ]
