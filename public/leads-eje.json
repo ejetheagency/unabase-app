@@ -4531,5 +4531,149 @@
     "approved": true,
     "observation": "Vi que PCG optimiza modelos comerciales para empresas medianas en LATAM, y en consultorías estratégicas el flujo de conversaciones nuevas tiende a ser impredecible.",
     "relevance": "Eso genera meses donde el pipeline está robusto y otros donde dependen completamente del timing de referidos, sin control sobre cuándo van a entrar oportunidades frescas."
+  },
+  {
+    "companyName": "SEIDOR",
+    "website": "https://seidor.com",
+    "country": "Chile",
+    "industry": "services",
+    "summary": "SEIDOR - Technology consultancy | ERP solutions and services, AI, customer experience, analytics, employee experience, cloud, workplace, and cybersecurity.",
+    "notableClients": [
+      "Google"
+    ],
+    "recentProjects": [
+      "Accept all",
+      "Accept only necessary cookies",
+      "Configure",
+      "SAP on Google Cloud-Services",
+      "Trailblazers."
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 2,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 2,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "Hola Sergi,\n\nVi que SEIDOR maneja implementaciones complejas de SAP y ciberseguridad para corporaciones, y en consultoras tecnológicas especializadas el pipeline suele depender mucho del timing de referidos.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEso genera semanas donde el equipo comercial está saturado con oportunidades y otros períodos donde prácticamente no hay conversaciones nuevas entrando al funnel.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": false,
+    "fitSignals": 0,
+    "fitReasons": [
+      "fit_not_configured",
+      "scoring_fail:below_min:dmAccessibility=1"
+    ],
+    "ejeScores": {
+      "painClarity": 4,
+      "monetization": 5,
+      "dmAccessibility": 5,
+      "commercialMaturity": 5,
+      "specificityPotential": 3,
+      "average": 4.4
+    },
+    "scoringPass": true,
+    "scoringReason": "scoring_pass",
+    "contactName": "Sergi Biosca Arpa",
+    "contactTitle": "CEO of Seidor",
+    "contactEmail": "sergi.biosca@seidor.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/sergibiosca",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": "https://twitter.com/seidor",
+    "youtubeUrl": "https://www.youtube.com/@SEIDOR.official",
+    "vimeoUrl": null,
+    "contactPhone": "15393956",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Sergi Biosca Arpa",
+        "title": "CEO of Seidor",
+        "email": "sergi.biosca@seidor.com",
+        "linkedin": "http://www.linkedin.com/in/sergibiosca"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": "https://twitter.com/seidor",
+          "youtube": "https://www.youtube.com/@SEIDOR.official",
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/salesforce/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "15393956"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/salesforce",
+    "apolloCompanyPhone": "+1 800-664-9073",
+    "apolloEmployeeCount": 77000,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "observation": "Vi que SEIDOR maneja implementaciones complejas de SAP y ciberseguridad para corporaciones, y en consultoras tecnológicas especializadas el pipeline suele depender mucho del timing de referidos.",
+    "relevance": "Eso genera semanas donde el equipo comercial está saturado con oportunidades y otros períodos donde prácticamente no hay conversaciones nuevas entrando al funnel.",
+    "emailCercana": "Hola Sergi,\n\nVi que SEIDOR maneja implementaciones complejas de SAP y ciberseguridad para corporaciones, y en consultoras tecnológicas especializadas el pipeline suele depender mucho del timing de referidos.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEso genera semanas donde el equipo comercial está saturado con oportunidades y otros períodos donde prácticamente no hay conversaciones nuevas entrando al funnel.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a Sergi,\n\nVi que SEIDOR maneja implementaciones complejas de SAP y ciberseguridad para corporaciones, y en consultoras tecnológicas especializadas el pipeline suele depender mucho del timing de referidos.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEso genera semanas donde el equipo comercial está saturado con oportunidades y otros períodos donde prácticamente no hay conversaciones nuevas entrando al funnel.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "readyToSend": true,
+    "approved": true,
+    "source_date": "2026-05-07",
+    "_scrapeFixed": "Salesforce → SEIDOR (search-title leak)"
   }
 ]
