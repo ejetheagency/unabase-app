@@ -4675,5 +4675,328 @@
     "approved": true,
     "source_date": "2026-05-07",
     "_scrapeFixed": "Salesforce → SEIDOR (search-title leak)"
+  },
+  {
+    "companyName": "Greencode Software",
+    "website": "https://greencodesoftware.com",
+    "country": "LATAM",
+    "industry": "services",
+    "summary": "Enterprise AI agents, process automation and data engineering for companies in LATAM and the USA.",
+    "notableClients": [
+      "Unilever"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 5,
+    "scopeVerified": true,
+    "scopeSignals": 4,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "Hola Ezequiel,\n\nVi que están desarrollando AI agents y automatización para empresas como Unilever, y en consultoras especializadas el flujo de conversaciones calificadas suele ser muy irregular.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEn la práctica, son semanas con el equipo comercial saturado de reuniones y después meses enteros dependiendo completamente de referidos para llenar el pipeline.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": false,
+    "fitSignals": 0,
+    "fitReasons": [
+      "fit_not_configured",
+      "scoring_fail:below_min:dmAccessibility=1"
+    ],
+    "ejeScores": {
+      "painClarity": 5,
+      "monetization": 5,
+      "dmAccessibility": 5,
+      "commercialMaturity": 5,
+      "specificityPotential": 3,
+      "average": 4.6
+    },
+    "scoringPass": true,
+    "scoringReason": "scoring_pass",
+    "contactName": "Ezequiel Lamonica",
+    "contactTitle": "Co Founder",
+    "contactEmail": "elamonica@greencodesoftware.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/elamonica",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/greencodesoftware/",
+    "instagramHandle": "greencodesoftware",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "16814652",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Ezequiel Lamonica",
+        "title": "Co Founder | CEO",
+        "email": "elamonica@greencodesoftware.com",
+        "linkedin": "http://www.linkedin.com/in/elamonica"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "contact@greencodesoftware.com",
+          "hello@greencode.ai"
+        ],
+        "phones": [],
+        "name": "Ezequiel Lamónica\nCo",
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/greencodesoftware/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "16814652"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Ezequiel Lamonica"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "elamonica@greencodesoftware.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/greencodesoftware",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 40,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "observation": "Vi que están desarrollando AI agents y automatización para empresas como Unilever, y en consultoras especializadas el flujo de conversaciones calificadas suele ser muy irregular.",
+    "relevance": "En la práctica, son semanas con el equipo comercial saturado de reuniones y después meses enteros dependiendo completamente de referidos para llenar el pipeline.",
+    "emailCercana": "Hola Ezequiel,\n\nVi que están desarrollando AI agents y automatización para empresas como Unilever, y en consultoras especializadas el flujo de conversaciones calificadas suele ser muy irregular.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEn la práctica, son semanas con el equipo comercial saturado de reuniones y después meses enteros dependiendo completamente de referidos para llenar el pipeline.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a Ezequiel,\n\nVi que están desarrollando AI agents y automatización para empresas como Unilever, y en consultoras especializadas el flujo de conversaciones calificadas suele ser muy irregular.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEn la práctica, son semanas con el equipo comercial saturado de reuniones y después meses enteros dependiendo completamente de referidos para llenar el pipeline.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "readyToSend": true,
+    "_specAnchors": [
+      "client:Unilever"
+    ],
+    "_specReason": "specific",
+    "source_date": "2026-05-07",
+    "approved": true
+  },
+  {
+    "companyName": "Discoverypartners",
+    "website": "https://discoverypartners.co",
+    "country": "LATAM",
+    "industry": "services",
+    "summary": "Staffing SAP Salesforce Colombia: consultores S/4HANA y Salesforce certificados disponibles en días. Staff Augmentation y Headhunting TI en Colombia, México y Costa Rica.",
+    "notableClients": [],
+    "recentProjects": [
+      "y aportarle"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 4,
+    "scopeVerified": true,
+    "scopeSignals": 2,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 2,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "Hola Wilder,\n\nVi que se especializan en staffing de consultores SAP y Salesforce certificados, y en este nicho el flujo de conversaciones nuevas suele depender mucho del timing de proyectos específicos.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEso termina generando semanas donde llueven consultas urgentes por implementaciones, y después meses más lentos esperando que arranquen nuevos ciclos presupuestarios.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": false,
+    "fitSignals": 0,
+    "fitReasons": [
+      "fit_not_configured",
+      "scoring_fail:below_min:dmAccessibility=1"
+    ],
+    "ejeScores": {
+      "painClarity": 3,
+      "monetization": 4,
+      "dmAccessibility": 5,
+      "commercialMaturity": 5,
+      "specificityPotential": 3,
+      "average": 4
+    },
+    "scoringPass": true,
+    "scoringReason": "scoring_pass",
+    "_companyNameSource": "domain_canonical",
+    "contactName": "Wilder Gomez",
+    "contactTitle": "Founder & CEO at Discovery Partners",
+    "contactEmail": "wilder.gomez@discoverypartners.co",
+    "contactLinkedIn": "http://www.linkedin.com/in/wildergomez",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/discovery_partners/",
+    "instagramHandle": "discovery_partners",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/DiscoverypartnersCR/",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "0003005761",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Wilder Gomez",
+        "title": "Founder & CEO at Discovery Partners",
+        "email": "wilder.gomez@discoverypartners.co",
+        "linkedin": "http://www.linkedin.com/in/wildergomez"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "alexander.ramirez@discoverypartners.co"
+        ],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/discovery_partners/",
+          "facebook": "https://www.facebook.com/DiscoverypartnersCR/",
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": "recursoshumanos@discoverypartners.co",
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/discovery_partners/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "0003005761"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Wilder Gomez"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "wilder.gomez@discoverypartners.co",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/discovery-partners",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 28,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "observation": "Vi que se especializan en staffing de consultores SAP y Salesforce certificados, y en este nicho el flujo de conversaciones nuevas suele depender mucho del timing de proyectos específicos.",
+    "relevance": "Eso termina generando semanas donde llueven consultas urgentes por implementaciones, y después meses más lentos esperando que arranquen nuevos ciclos presupuestarios.",
+    "emailCercana": "Hola Wilder,\n\nVi que se especializan en staffing de consultores SAP y Salesforce certificados, y en este nicho el flujo de conversaciones nuevas suele depender mucho del timing de proyectos específicos.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEso termina generando semanas donde llueven consultas urgentes por implementaciones, y después meses más lentos esperando que arranquen nuevos ciclos presupuestarios.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nSaludos,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a Wilder,\n\nVi que se especializan en staffing de consultores SAP y Salesforce certificados, y en este nicho el flujo de conversaciones nuevas suele depender mucho del timing de proyectos específicos.\n\nSoy Emiliano del equipo de EJE.\n\nTrabajamos con empresas B2B que venden servicios o productos de alto valor, ayudandolas a que su pipeline sea mas constante y predecible. El foco esta en generar conversaciones relevantes con la gente correcta, no en volumen innecesario de contactos.\n\nEso termina generando semanas donde llueven consultas urgentes por implementaciones, y después meses más lentos esperando que arranquen nuevos ciclos presupuestarios.\n\nLo que termina marcando la diferencia no es cerrar bien, sino saber cuantas conversaciones nuevas van a entrar cada semana.\n\nSi tiene sentido, les muestro en 10 minutos como lo estan trabajando empresas parecidas, y ven si aplica o no a su caso.\n\nQuedo atento,\nEmiliano\nEquipo EJE\ncontacto@ejetheagency.com",
+    "readyToSend": true,
+    "_specAnchors": [
+      "summary:staffing"
+    ],
+    "_specReason": "specific",
+    "source_date": "2026-05-07",
+    "approved": true
   }
 ]
