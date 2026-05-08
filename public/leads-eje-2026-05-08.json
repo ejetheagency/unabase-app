@@ -1,0 +1,174 @@
+[
+  {
+    "companyName": "LATAM Software Development & Nearshore Teams",
+    "website": "https://agilityfeat.com",
+    "country": "LATAM",
+    "industry": "services",
+    "searchQuery": "co-founder nearshore software development company LATAM",
+    "summary": "LATAM nearshore software development since 2010. Staff augmentation, Build-Operate-Transfer, full-service project delivery and AI integration, all under one roof.",
+    "notableClients": [
+      "Google"
+    ],
+    "recentProjects": [
+      "a team"
+    ],
+    "estimatedSize": "large",
+    "unabaseScore": 6,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "b2b",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "Hola David,\nEstuve mirando LATAM Software Development y me llamó la atención el foco en nearshore con Build-Operate-Transfer, ese tipo de operación tiene su propia dinámica comercial.\n\nEn EJE nos encargamos de iniciar conversaciones para empresas B2B.\n\nMuchas veces abrir conversaciones realmente buenas en este rubro depende demasiado de cuando una empresa decide armar un equipo nuevo.\n\nLo que hacemos es resolver eso con un sistema super accionable que deja mucho mas aterrizado a quien escribirle, como abrir la conversacion y como moverla de forma natural desde el inicio. Si te hace sentido, te muestro 10 min y vemos si aplica.\n\nSaludos,\nEmiliano\ncontacto@ejetheagency.com",
+    "pitchEmailEN": null,
+    "fitVerified": false,
+    "fitSignals": 0,
+    "fitReasons": [
+      "fit_not_configured",
+      "scoring_fail:below_min:dmAccessibility=1"
+    ],
+    "ejeScores": {
+      "painClarity": 4,
+      "monetization": 5,
+      "dmAccessibility": 5,
+      "commercialMaturity": 3,
+      "specificityPotential": 3,
+      "average": 4
+    },
+    "scoringPass": true,
+    "scoringReason": "scoring_pass",
+    "contactName": "David Alfaro",
+    "contactTitle": "Co-CEO",
+    "contactEmail": "david@agilityfeat.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/iamdavidalfaro",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/",
+    "instagramHandle": null,
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": "https://twitter.com/arinsime",
+    "youtubeUrl": "https://www.youtube.com/@AgilityFeat",
+    "vimeoUrl": null,
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "David Alfaro",
+        "title": "Co-CEO",
+        "email": "david@agilityfeat.com",
+        "linkedin": "http://www.linkedin.com/in/iamdavidalfaro"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "ava-intelect-logo-@3.png",
+          "ava-intelect-logo-@3-300x89.png",
+          "language-line-logo-@3.png",
+          "language-line-logo-@3-300x82.png",
+          "scivera-lense-logo-@3.png",
+          "scivera-lense-logo-@3-300x46.png",
+          "vonage-logo-@3.png",
+          "platform-q-logo-@3.png",
+          "platform-q-logo-@3-300x60.png",
+          "mathnasium-logo-@3.png",
+          "mathnasium-logo-@3-300x93.png"
+        ],
+        "genericEmails": [],
+        "phones": [],
+        "name": "Nish Pandya",
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": "https://twitter.com/arinsime",
+          "youtube": "https://www.youtube.com/@AgilityFeat",
+          "vimeo": null
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "David Alfaro"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "david@agilityfeat.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "ejeTier": 1,
+    "observation": "Estuve mirando LATAM Software Development y me llamó la atención el foco en nearshore con Build-Operate-Transfer, ese tipo de operación tiene su propia dinámica comercial.",
+    "relevance": "Muchas veces abrir conversaciones realmente buenas en este rubro depende demasiado de cuando una empresa decide armar un equipo nuevo.",
+    "emailCercana": "Hola David,\nEstuve mirando LATAM Software Development y me llamó la atención el foco en nearshore con Build-Operate-Transfer, ese tipo de operación tiene su propia dinámica comercial.\n\nEn EJE nos encargamos de iniciar conversaciones para empresas B2B.\n\nMuchas veces abrir conversaciones realmente buenas en este rubro depende demasiado de cuando una empresa decide armar un equipo nuevo.\n\nLo que hacemos es resolver eso con un sistema super accionable que deja mucho mas aterrizado a quien escribirle, como abrir la conversacion y como moverla de forma natural desde el inicio. Si te hace sentido, te muestro 10 min y vemos si aplica.\n\nSaludos,\nEmiliano\ncontacto@ejetheagency.com",
+    "emailFormal": "Estimado/a David,\nEstuve mirando LATAM Software Development y me llamó la atención el foco en nearshore con Build-Operate-Transfer, ese tipo de operación tiene su propia dinámica comercial.\n\nEn EJE nos encargamos de iniciar conversaciones para empresas B2B.\n\nMuchas veces abrir conversaciones realmente buenas en este rubro depende demasiado de cuando una empresa decide armar un equipo nuevo.\n\nLo que hacemos es resolver eso con un sistema super accionable que deja mucho mas aterrizado a quien escribirle, como abrir la conversacion y como moverla de forma natural desde el inicio. Si te hace sentido, te muestro 10 min y vemos si aplica.\n\nQuedo atento,\nEmiliano\ncontacto@ejetheagency.com",
+    "readyToSend": true,
+    "_specAnchors": [
+      "brand:latam",
+      "summary:software"
+    ],
+    "_specReason": "specific",
+    "source_date": "2026-05-08",
+    "approved": true
+  }
+]
