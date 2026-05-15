@@ -1,32 +1,33 @@
 [
   {
-    "companyName": "Gran Montana",
-    "website": "https://granmontana.cl",
-    "country": "Chile",
-    "industry": "commercial",
-    "searchQuery": "productora de branded content Chile",
-    "summary": "En Gran Montana contamos historias alucinantes e inspiradoras. Una productora audiovisual que propone.",
+    "companyName": "Cinetrix",
+    "website": "https://cinetrixpr.com",
+    "country": "Puerto Rico",
+    "industry": "film",
+    "searchQuery": "productora audiovisual Puerto Rico",
+    "summary": "At Cinetrix our mission is to create outstanding audiovisual productions for our clients. We are committed to creating timeless cinematic experiences that resonate with audiences. Be it animations, long narrative format, advertising campaigns, production services or audiovisual content, our productions stand out for the storytelling excellence and superb audiovisuals.",
     "notableClients": [
       "Facebook"
     ],
     "recentProjects": [
-      "Docu, Ficción & Branded Content",
-      "by Gran Montana 1 Total Movies8",
-      "y Ficción"
+      "EL ESPECIAL",
+      "El Especial del Banco Popular",
+      "SAN JUAN, MÁS ALLÁ DE LAS MURALLAS",
+      "nine"
     ],
     "estimatedSize": "mid",
-    "unabaseScore": 9,
+    "unabaseScore": 7,
     "scopeVerified": true,
-    "scopeSignals": 5,
+    "scopeSignals": 7,
     "scopeLabel": "entertainment",
     "entertainmentVerified": true,
-    "entertainmentSignals": 5,
+    "entertainmentSignals": 7,
     "nicheVerified": true,
     "nicheReason": "niche_confirmed",
     "ejeSignals": [],
     "companyBrief": null,
     "approachAngle": null,
-    "pitchEmailES": "hola Jose — vi que Gran Montana hace branded content y ficción para marcas grandes y además mueven su propio canal de contenido (Total Movies).\n\n¿cómo controlan presupuestos y cronogramas cuando tienen branded, ficción y canal propio corriendo al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\n\n\nScarlett",
+    "pitchEmailES": "hola Euskady — vi que Cinetrix trabaja cine para Facebook entre otros.\n\n¿cómo cuadran presupuesto, cronograma y reportes cuando un largo lleva meses en producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
     "fitSignals": 4,
@@ -39,22 +40,22 @@
     "ejeScores": null,
     "scoringPass": true,
     "scoringReason": "scoring_not_configured",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "jose@granmontana.cl",
+    "contactName": "Euskady Burgos",
+    "contactTitle": "Executive Producer",
+    "contactEmail": "kady@cinetrixpr.com",
     "contactLinkedIn": null,
     "contactConfidence": "website_direct",
     "contactSource": "website",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/granmontana/",
-    "instagramHandle": "granmontana",
-    "instagramBio": "See Instagram photos and videos from Gran Montaña Comercializadora (@granmontana) Log In",
-    "instagramFollowers": "620",
-    "facebookUrl": null,
+    "instagramUrl": "https://www.instagram.com/cinetrixpr/",
+    "instagramHandle": "cinetrixpr",
+    "instagramBio": "See Instagram photos and videos from Cinetrix (@cinetrixpr)",
+    "instagramFollowers": "1,608",
+    "facebookUrl": "https://www.facebook.com/CinetrixMedia/",
     "twitterUrl": null,
     "youtubeUrl": null,
-    "vimeoUrl": "https://vimeo.com/islabros",
-    "contactPhone": null,
+    "vimeoUrl": "https://vimeo.com/showcase/10929566",
+    "contactPhone": "787 612-3080",
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -85,17 +86,19 @@
         "step": 3,
         "pagesScanned": 14,
         "personalEmails": [
-          "jose@granmontana.cl"
+          "kady@cinetrixpr.com"
         ],
         "genericEmails": [],
-        "phones": [],
-        "name": "Coni Revillot",
+        "phones": [
+          "787 612-3080"
+        ],
+        "name": "Euskady Burgos",
         "social": {
-          "instagram": "https://www.instagram.com/gran_montana/",
-          "facebook": null,
+          "instagram": "https://www.instagram.com/cinetrixpr/",
+          "facebook": "https://www.facebook.com/CinetrixMedia/",
           "twitter": null,
           "youtube": null,
-          "vimeo": "https://vimeo.com/islabros",
+          "vimeo": "https://vimeo.com/showcase/10929566",
           "instagramScore": 3
         }
       },
@@ -106,383 +109,35 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/granmontana/",
-        "igHandle": "granmontana",
-        "igFollowers": "620",
-        "socialEmail": "jose@granmontana.cl",
-        "socialPhone": "3143675266"
-      },
-      {
-        "step": "founder_recovery",
-        "started": true,
-        "name": "Coni Revillot"
-      },
-      {
-        "step": "founder_recovery",
-        "company_ig_tagged": []
-      },
-      {
-        "step": "founder_recovery",
-        "final": {
-          "email": "jose@granmontana.cl",
-          "additional": 0,
-          "upgraded": false
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/granmontana",
-    "apolloCompanyPhone": "+56 9 9199 9327",
-    "apolloEmployeeCount": 7,
-    "contactPath": "company_fallback",
-    "tier": "tier2",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-13",
-    "approved": false
-  },
-  {
-    "companyName": "Aliasfilms",
-    "website": "https://aliasfilms.cl",
-    "country": "Chile",
-    "industry": "commercial",
-    "searchQuery": "productora de video inmobiliario Chile",
-    "summary": "En Aliasfilms creamos animaciones 3D profesionales para minería e industria en Antofagasta, Calama y Santiago. Simulaciones, renders y modelados para potenciar tu proyecto.",
-    "notableClients": [
-      "Google",
-      "Facebook"
-    ],
-    "recentProjects": [
-      "Aliasfilms se especializa en la gestión y"
-    ],
-    "estimatedSize": "large",
-    "unabaseScore": 8,
-    "scopeVerified": true,
-    "scopeSignals": 7,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 7,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que Aliasfilms hace animación 3D, renders y simulaciones para minería e industria moviéndose entre Antofagasta, Calama y Santiago.\n\n¿cómo cuadran presupuesto y timeline cuando un mismo proyecto cruza tres ciudades, equipos y varios renders en paralelo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\n\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 4,
-    "fitReasons": [
-      "premium_clients",
-      "large_team",
-      "high_ent_signals"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "_companyNameSource": "domain_canonical",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "direccion@aliasfilms.cl",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/aliasfilms/",
-    "instagramHandle": "aliasfilms",
-    "instagramBio": "See Instagram photos and videos from Jose Luis Carmona (@aliasfilms)",
-    "instagramFollowers": "782",
-    "facebookUrl": "https://www.facebook.com/AliasFilms/",
-    "twitterUrl": null,
-    "youtubeUrl": "https://www.youtube.com/@AliasFilms",
-    "vimeoUrl": null,
-    "contactPhone": "9 97176779",
-    "emailPatterns": null,
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "pagesScanned": 16,
-        "personalEmails": [
-          "direccion@aliasfilms.cl"
-        ],
-        "genericEmails": [
-          "support@gmail.com"
-        ],
-        "phones": [
-          "9 97176779"
-        ],
-        "name": null,
-        "social": {
-          "instagram": "https://www.instagram.com/aliasfilms/?hl=es",
-          "facebook": "https://www.facebook.com/AliasFilms/",
-          "twitter": null,
-          "youtube": "https://www.youtube.com/@AliasFilms",
-          "vimeo": null,
-          "instagramScore": 3
-        }
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": "https://www.instagram.com/aliasfilms/",
-        "igHandle": "aliasfilms",
-        "igFollowers": "782",
-        "socialEmail": "direccion@aliasfilms.cl",
-        "socialPhone": null
-      },
-      {
-        "step": "founder_recovery",
-        "started": true,
-        "name": "(none)"
-      },
-      {
-        "step": "founder_recovery",
-        "company_ig_tagged": []
-      },
-      {
-        "step": "founder_recovery",
-        "final": {
-          "email": "direccion@aliasfilms.cl",
-          "additional": 0,
-          "upgraded": false
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/aliasfilms",
-    "apolloCompanyPhone": "+1 866-710-0308",
-    "apolloEmployeeCount": 4,
-    "contactPath": "company_fallback",
-    "tier": "tier2",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-13",
-    "approved": false
-  },
-  {
-    "companyName": "The Content Lab",
-    "website": "https://thecontentlab.cl",
-    "country": "Chile",
-    "industry": "commercial",
-    "searchQuery": "productora de branded content Chile",
-    "summary": "Reproductor de vídeo Creamos contenido que conecta a las personas con las marcas. &#x33; EN QUÉ CREEMOS Nos apasiona crear contenido emocionante que conecte genuinamente con tu audiencia. Para esto desarrollamos piezas audiovisuales únicas, cocreamos estrategias multiplataforma para tu marca y te asesoramos donde exhibirla para maximizar el alcance y el engagement con tu cliente.",
-    "notableClients": [
-      "Canal 13",
-      "Movistar"
-    ],
-    "recentProjects": [
-      "El Mundo del Profesor Rossa",
-      "de ciencia ficción",
-      "como idea original"
-    ],
-    "estimatedSize": "small",
-    "unabaseScore": 7,
-    "scopeVerified": true,
-    "scopeSignals": 7,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 7,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que en The Content Lab crean piezas audiovisuales y co-crean estrategias multiplataforma con marcas como Canal 13 y Movistar.\n\n¿cómo llevan control de horas, presupuestos y entregables cuando manejan estrategia + producción para varias marcas al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\n\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 3,
-    "fitReasons": [
-      "multiple_projects",
-      "premium_clients",
-      "high_ent_signals"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "hola@thecontentlab.cl",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "deep_rescue",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/thecontentlab.cl/",
-    "instagramHandle": "thecontentlab.cl",
-    "instagramBio": "See Instagram photos and videos from  (@thecontentlabstudio) Something went wrong",
-    "instagramFollowers": "1",
-    "facebookUrl": null,
-    "twitterUrl": "https://twitter.com/thecontentlabcl",
-    "youtubeUrl": "https://www.youtube.com/@thecontentlabchile",
-    "vimeoUrl": "https://vimeo.com/thecontentlab",
-    "contactPhone": "9 54100257",
-    "emailPatterns": null,
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "pagesScanned": 14,
-        "personalEmails": [
-          "yazna@aguad.cl"
-        ],
-        "genericEmails": [
-          "hola@thecontentlab.cl"
-        ],
-        "phones": [
-          "9 54100257"
-        ],
-        "name": null,
-        "social": {
-          "instagram": "https://www.instagram.com/thecontentlab.cl/",
-          "facebook": null,
-          "twitter": "https://twitter.com/thecontentlabcl",
-          "youtube": "https://www.youtube.com/@thecontentlabchile",
-          "vimeo": null,
-          "instagramScore": 2
-        }
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": "https://www.instagram.com/thefilms/",
-        "igHandle": "thefilms",
-        "igFollowers": "1",
+        "igUrl": "https://www.instagram.com/cinetrixpr/",
+        "igHandle": "cinetrixpr",
+        "igFollowers": "1,608",
         "socialEmail": null,
         "socialPhone": null
       },
       {
-        "step": "deep_rescue",
-        "started": true
-      },
-      {
-        "step": "deep_rescue",
-        "found_email": "hola@thecontentlab.cl",
-        "pages_crawled": 0
-      },
-      {
-        "step": "deep_rescue",
-        "found_ig": "https://www.instagram.com/theecontentlab/"
-      },
-      {
-        "step": "deep_rescue",
-        "final": {
-          "email": true,
-          "ig": true,
-          "phone": true
-        }
-      },
-      {
         "step": "founder_recovery",
         "started": true,
-        "name": "(none)"
+        "name": "Euskady Burgos"
       },
       {
-        "step": "alt_paths",
-        "started": true
-      },
-      {
-        "step": "alt_paths",
-        "vimeo": "https://vimeo.com/thecontentlab"
-      },
-      {
-        "step": "alt_paths",
-        "done": true,
-        "additional_found": 0
+        "step": "founder_recovery",
+        "company_ig_tagged": []
       },
       {
         "step": "founder_recovery",
         "final": {
-          "email": "hola@thecontentlab.cl",
+          "email": "kady@cinetrixpr.com",
           "additional": 0,
           "upgraded": false
         }
       }
     ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/the-content-lab-mumbai",
-    "apolloCompanyPhone": "+91 18432 20596",
-    "apolloEmployeeCount": 61,
-    "whoisCheckPending": true,
-    "contactPath": "email_only",
-    "tier": "tier2",
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/cinetrix-infotech-pvt.ltd",
+    "apolloCompanyPhone": "+61 8 6157 1245",
+    "apolloEmployeeCount": 29,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
     "instagramDM": null,
     "readyToSend": false,
     "contactDecisionPower": null,
@@ -499,27 +154,24 @@
     "keyInsight": null,
     "_aiFailReason": "ai_timeout",
     "_aiApiMsg": "canceled",
-    "source_date": "2026-05-13",
-    "approved": false,
-    "_instagramSalvagedFrom": "website_crawl_social"
+    "source_date": "2026-05-15",
+    "approved": false
   },
   {
-    "companyName": "Frambuesa",
-    "website": "https://frambuesa.tv",
-    "country": "Chile",
-    "industry": "commercial",
-    "searchQuery": "productora de branded content Chile",
-    "summary": "Enamora a tu comunidad con nuestra productora audiovisual, genera videos de calidad con toda la asesoría estratégica con los resultados que necesitas.",
+    "companyName": "Fk21 Films",
+    "website": "https://fk21films.com",
+    "country": "Puerto Rico",
+    "industry": "film",
+    "searchQuery": "productora audiovisual Puerto Rico",
+    "summary": "Descubre FK21 Films, la casa productora independiente de contenido audiovisual en la región sur de Puerto Rico. Sumérgete en nuestra creatividad innovadora, donde ofrecemos servicios de fotografía, grabación, edición y producción visual y musical. Destacamos por apoyar y colaborar con artistas locales, brindando oportunidades únicas en un entorno que celebra la libertad creativa.",
     "notableClients": [
-      "Facebook",
-      "Modelo"
+      "Facebook"
     ],
     "recentProjects": [
-      "según tu industria",
-      "requiere"
+      "sobre las costas de Puerto Rico 10:23 Rep"
     ],
     "estimatedSize": "small",
-    "unabaseScore": 6,
+    "unabaseScore": 7,
     "scopeVerified": true,
     "scopeSignals": 3,
     "scopeLabel": "entertainment",
@@ -530,12 +182,11 @@
     "ejeSignals": [],
     "companyBrief": null,
     "approachAngle": null,
-    "pitchEmailES": "hola — vi que Frambuesa.tv produce video con asesoría estratégica detrás — ya con clientes como Modelo en el portafolio.\n\n¿cómo organizan presupuesto y avances cuando entran varios videos al mismo tiempo, cada uno con su propio cliente y su propio brief?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\n\n\nScarlett",
+    "pitchEmailES": "hola — vi que Fk21 Films trabaja cine para Facebook entre otros.\n\n¿cómo cuadran presupuesto, cronograma y reportes cuando un largo lleva meses en producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
-    "fitSignals": 2,
+    "fitSignals": 1,
     "fitReasons": [
-      "multiple_projects",
       "premium_clients"
     ],
     "ejeScores": null,
@@ -543,483 +194,20 @@
     "scoringReason": "scoring_not_configured",
     "contactName": null,
     "contactTitle": null,
-    "contactEmail": "megusta@frambuesa.tv",
+    "contactEmail": "fk21films@gmail.com",
     "contactLinkedIn": null,
-    "contactConfidence": "confirmed",
-    "contactSource": "ddg_email",
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/frambuesa.tv/",
-    "instagramHandle": "frambuesa.tv",
-    "instagramBio": "See Instagram photos and videos from Frambuesa Tv (@frambuesa.tv)",
-    "instagramFollowers": "662",
-    "facebookUrl": "https://www.facebook.com/Frambuesa.tv/",
-    "twitterUrl": null,
-    "youtubeUrl": "https://www.youtube.com/channel/UCMVGEZtyBCyjnm2CeAHgBSg/videos",
-    "vimeoUrl": null,
-    "contactPhone": "+57 304 5644253",
-    "emailPatterns": null,
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "pagesScanned": 16,
-        "personalEmails": [],
-        "genericEmails": [
-          "contacto@frambuesa.tv"
-        ],
-        "phones": [],
-        "name": null,
-        "social": {
-          "instagram": "https://www.instagram.com/frambuesa.tv/",
-          "facebook": "https://www.facebook.com/Frambuesa.tv/",
-          "twitter": null,
-          "youtube": "https://www.youtube.com/channel/UCMVGEZtyBCyjnm2CeAHgBSg/videos",
-          "vimeo": null,
-          "instagramScore": 2
-        }
-      },
-      {
-        "step": 4,
-        "name": "News/Press",
-        "started": true
-      },
-      {
-        "step": 4,
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": 5,
-        "name": "LinkedIn DDG",
-        "started": true
-      },
-      {
-        "step": 5,
-        "found": "nothing"
-      },
-      {
-        "step": 6,
-        "name": "DDG Email",
-        "started": true
-      },
-      {
-        "step": 6,
-        "emails": [
-          "megusta@frambuesa.tv"
-        ]
-      },
-      {
-        "step": "A",
-        "name": "Industry DBs",
-        "started": true
-      },
-      {
-        "step": "A",
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": "B",
-        "name": "Press/Awards",
-        "started": true
-      },
-      {
-        "step": "B",
-        "name": "Antonio Domínguez",
-        "emails": []
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": "https://www.instagram.com/frambuesa.tv/",
-        "igHandle": "frambuesa.tv",
-        "igFollowers": "1,489",
-        "socialEmail": "acorrea@frambuesa.tv",
-        "socialPhone": null
-      },
-      {
-        "step": "C",
-        "name": "Extra Social",
-        "started": true
-      },
-      {
-        "step": "C",
-        "tiktokEmail": null,
-        "waPhone": null,
-        "gmbPhone": "+57 304 5644253",
-        "gmbOwner": null
-      },
-      {
-        "step": "ig_exhaustive",
-        "handle": "frambuesa.tv",
-        "followers": "662",
-        "email": null,
-        "phone": null,
-        "triedHandles": 7
-      },
-      {
-        "step": "phone_exhaustive",
-        "found": [
-          "+57 304 5644253",
-          "56933095225",
-          "+56 947165118"
-        ]
-      },
-      {
-        "step": "mismatch_check",
-        "name": "Antonio Domínguez",
-        "email": "megusta@frambuesa.tv",
-        "result": "MISMATCH — clearing name"
-      },
-      {
-        "step": "founder_recovery",
-        "started": true,
-        "name": "(none)"
-      },
-      {
-        "step": "founder_recovery",
-        "company_ig_tagged": []
-      },
-      {
-        "step": "founder_recovery",
-        "final": {
-          "email": "megusta@frambuesa.tv",
-          "additional": 0,
-          "upgraded": false
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/frambuesa-tv",
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": 5,
-    "contactVenues": 3,
-    "contactPath": "company_fallback",
-    "tier": "tier2",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-13",
-    "approved": false
-  },
-  {
-    "companyName": "Orugo",
-    "website": "https://orugo.cl",
-    "country": "Chile",
-    "industry": "commercial",
-    "searchQuery": "productora de video inmobiliario Chile",
-    "summary": "En productora Orugo desarrollamos proyectos audiovisuales, gráficos e Interactivos, Con soluciones a la medida de cada negocio.",
-    "notableClients": [],
-    "recentProjects": [
-      "y nos contactaremos contigo para un presu"
-    ],
-    "estimatedSize": "small",
-    "unabaseScore": 4,
-    "scopeVerified": true,
-    "scopeSignals": 7,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 7,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que en Orugo desarrollan proyectos audiovisuales, gráficos e interactivos a medida para distintos negocios.\n\n¿cómo manejan control de costos y timeline cuando un proyecto cruza video, gráfica e interactivo a la vez?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\n\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 1,
-    "fitReasons": [
-      "high_ent_signals"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "productora@orugo.cl",
-    "contactLinkedIn": null,
-    "contactConfidence": "social_only",
-    "contactSource": "social",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/orugoproductora/",
-    "instagramHandle": "orugoproductora",
-    "instagramBio": "See Instagram photos and videos from Movie & TV Clips (@video)",
-    "instagramFollowers": "60K",
-    "facebookUrl": "https://www.facebook.com/ProductoraOrugo/",
+    "instagramUrl": "https://instagram.com/fk21films?r=nametag",
+    "instagramHandle": "fk21films?r=nametag",
+    "instagramBio": "See Instagram photos and videos from ᖴK21 ᖴIᒪᗰՏ 🎬 (@fk21films)",
+    "instagramFollowers": "331",
+    "facebookUrl": null,
     "twitterUrl": null,
     "youtubeUrl": null,
-    "vimeoUrl": "https://vimeo.com/user9711036",
-    "contactPhone": "+569 9542 0561",
-    "emailPatterns": null,
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "pagesScanned": 14,
-        "personalEmails": [],
-        "genericEmails": [
-          "contacto@orugo.cl"
-        ],
-        "phones": [
-          "+569 9542 0561"
-        ],
-        "name": null,
-        "social": {
-          "instagram": "https://www.instagram.com/orugoproductora",
-          "facebook": "https://www.facebook.com/ProductoraOrugo/",
-          "twitter": null,
-          "youtube": null,
-          "vimeo": "https://vimeo.com/user9711036",
-          "instagramScore": 2
-        }
-      },
-      {
-        "step": 4,
-        "name": "News/Press",
-        "started": true
-      },
-      {
-        "step": 4,
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": 5,
-        "name": "LinkedIn DDG",
-        "started": true
-      },
-      {
-        "step": 5,
-        "found": "nothing"
-      },
-      {
-        "step": 6,
-        "name": "DDG Email",
-        "started": true
-      },
-      {
-        "step": 6,
-        "emails": []
-      },
-      {
-        "step": "A",
-        "name": "Industry DBs",
-        "started": true
-      },
-      {
-        "step": "A",
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": "B",
-        "name": "Press/Awards",
-        "started": true
-      },
-      {
-        "step": "B",
-        "name": "Rodrigo Peralta",
-        "emails": []
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": "https://www.instagram.com/video/",
-        "igHandle": "video",
-        "igFollowers": "60K",
-        "socialEmail": "productora@orugo.cl",
-        "socialPhone": null
-      },
-      {
-        "step": "C",
-        "name": "Extra Social",
-        "started": true
-      },
-      {
-        "step": "C",
-        "tiktokEmail": null,
-        "waPhone": null,
-        "gmbPhone": null,
-        "gmbOwner": null
-      },
-      {
-        "step": "ig_exhaustive",
-        "handle": "video",
-        "followers": "60K",
-        "email": null,
-        "phone": null,
-        "triedHandles": 7
-      },
-      {
-        "step": "phone_exhaustive",
-        "found": [
-          "+569 9542 0561"
-        ]
-      },
-      {
-        "step": "mismatch_check",
-        "name": "Rodrigo Peralta",
-        "email": "productora@orugo.cl",
-        "result": "MISMATCH — clearing name"
-      },
-      {
-        "step": "deep_rescue",
-        "started": true
-      },
-      {
-        "step": "deep_rescue",
-        "found_ig": "https://www.instagram.com/popular/video/"
-      },
-      {
-        "step": "deep_rescue",
-        "final": {
-          "email": true,
-          "ig": true,
-          "phone": true
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/primevideoamazonstudios",
-    "apolloCompanyPhone": "+1 206-266-1000",
-    "apolloEmployeeCount": 8900,
-    "contactVenues": 3,
-    "contactPath": "email_only",
-    "tier": "tier2",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-13",
-    "approved": false,
-    "_instagramSalvagedFrom": "website_crawl_social"
-  },
-  {
-    "companyName": "Stanleyfilms Ilimitada",
-    "website": "https://stanleyfilmsilimitada.com",
-    "country": "Chile",
-    "industry": "commercial",
-    "searchQuery": "productora de branded content Chile",
-    "summary": "Ir al contenido principal Inicio STANLEY PRODUCCIONES EN IA CATALINA MARTIN MATIAS FELIPE FEDERICO PROYECTOS CASA PRODUCTORA /CREATIVIDAD 360 360 Stanleyfilms/ilimitada Stanleyfilms ilimitada es una de las casas productoras con más trayectoria en el mercado de contenidos publicitarios de Chile. Desde el año 2017 expande su horizonte de acción, adaptándose a nuevas formas de generar y producir ideas y producciones. Contamos con un amplio portafolio para diversas plataformas con contenidos que se caracterizan por apuntar con alta calidad todo tipo de segmentos de audiencia.",
-    "notableClients": [],
-    "recentProjects": [],
-    "estimatedSize": "small",
-    "unabaseScore": 3,
-    "scopeVerified": true,
-    "scopeSignals": 10,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 10,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que Stanleyfilms Ilimitada lleva años produciendo contenido publicitario en Chile y desde 2017 expandieron a IA y nuevos formatos.\n\n¿cómo controlan presupuestos y cronogramas cuando trabajan en simultáneo con varios formatos y plataformas?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\n\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 1,
-    "fitReasons": [
-      "high_ent_signals"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "_companyNameSource": "domain_canonical",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": null,
-    "contactLinkedIn": null,
-    "contactConfidence": null,
-    "contactSource": null,
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/stanleyfilmsilimitada/",
-    "instagramHandle": "stanleyfilmsilimitada",
-    "instagramBio": "See Instagram photos and videos from Stanleyfilms Ilimitada (@stanleyfilmsilimitada)",
-    "instagramFollowers": "964",
-    "facebookUrl": "https://www.facebook.com/wix",
-    "twitterUrl": "https://twitter.com/Wix",
-    "youtubeUrl": null,
     "vimeoUrl": null,
-    "contactPhone": "+56998206616",
+    "contactPhone": "939-222-8251",
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -1050,19 +238,20 @@
         "step": 3,
         "pagesScanned": 14,
         "personalEmails": [
-          "stanley@stanleyfilms.cl"
+          "fk21films@gmail.com"
         ],
         "genericEmails": [],
         "phones": [
-          "+56998206616"
+          "939-222-8251"
         ],
         "name": null,
         "social": {
-          "instagram": null,
-          "facebook": "https://www.facebook.com/wix",
-          "twitter": "https://twitter.com/Wix",
+          "instagram": "https://instagram.com/fk21films?r=nametag",
+          "facebook": null,
+          "twitter": null,
           "youtube": null,
-          "vimeo": null
+          "vimeo": null,
+          "instagramScore": 3
         }
       },
       {
@@ -1072,28 +261,11 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/stanleyfilmsilimitada/",
-        "igHandle": "stanleyfilmsilimitada",
-        "igFollowers": "964",
+        "igUrl": "https://instagram.com/fk21films?r=nametag",
+        "igHandle": "fk21films?r=nametag",
+        "igFollowers": "331",
         "socialEmail": null,
         "socialPhone": null
-      },
-      {
-        "step": "deep_rescue",
-        "started": true
-      },
-      {
-        "step": "deep_rescue",
-        "found_email": "stanley@stanleyfilms.cl",
-        "pages_crawled": 0
-      },
-      {
-        "step": "deep_rescue",
-        "final": {
-          "email": true,
-          "ig": true,
-          "phone": true
-        }
       },
       {
         "step": "founder_recovery",
@@ -1102,31 +274,46 @@
       },
       {
         "step": "founder_recovery",
-        "company_ig_tagged": []
+        "company_ig_tagged": [
+          "fk21films"
+        ]
       },
       {
-        "step": "alt_paths",
-        "started": true
-      },
-      {
-        "step": "alt_paths",
-        "done": true,
-        "additional_found": 0
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "fk21films",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
       },
       {
         "step": "founder_recovery",
         "final": {
-          "email": null,
-          "additional": 0,
+          "email": "fk21films@gmail.com",
+          "additional": 1,
           "upgraded": false
         }
       }
     ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/stanleyunlimited-art",
+    "apolloCompanyLinkedIn": null,
     "apolloCompanyPhone": null,
-    "apolloEmployeeCount": 1,
-    "whoisCheckPending": true,
-    "contactPath": "ig_only",
+    "apolloEmployeeCount": null,
+    "additionalContacts": [
+      {
+        "instagramHandle": "fk21films",
+        "instagramUrl": "https://www.instagram.com/fk21films/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "m photos and videos from ᖴK21 ᖴIᒪᗰՏ 🎬 (@fk21films"
+      }
+    ],
+    "manualNote": "Founder IG(s) identified (@fk21films) — check IG Contact button manually for direct email + phone.",
+    "contactPath": "company_fallback",
     "tier": "tier3",
     "instagramDM": null,
     "readyToSend": false,
@@ -1144,7 +331,162 @@
     "keyInsight": null,
     "_aiFailReason": "ai_timeout",
     "_aiApiMsg": "canceled",
-    "source_date": "2026-05-13",
+    "source_date": "2026-05-15",
+    "approved": false
+  },
+  {
+    "companyName": "SUMMIT",
+    "website": "https://summitvideoandaudio.com",
+    "country": "Puerto Rico",
+    "industry": "film",
+    "searchQuery": "productora audiovisual Puerto Rico",
+    "summary": "www.summitvideoandaudio.com Video Corporativo Profesional, Producción audiovisual para empresas. Contacto Whatsapp mensaje: 📞 +1 (787) 628‑2578",
+    "notableClients": [
+      "Lionsgate",
+      "Facebook"
+    ],
+    "recentProjects": [
+      "de video corporativo profesional desde la"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 5,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola — vi que SUMMIT trabaja cine para marcas como Lionsgate y Facebook.\n\n¿cómo cuadran presupuesto, cronograma y reportes cuando un largo lleva meses en producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "premium_clients",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "summitcotiza@gmail.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/summitvideoandaudio",
+    "instagramHandle": "summitvideoandaudio",
+    "instagramBio": "See Instagram photos and videos from SummitStudio Photography (@summitstudio)",
+    "instagramFollowers": "121",
+    "facebookUrl": "https://www.facebook.com/1715724775319943",
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/channel/UCUVWh0wDeASvTRBPbk9JeKg/videos?view_as=subscriber",
+    "vimeoUrl": null,
+    "contactPhone": "+1 (787) 628-2578",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "summitcotiza@gmail.com",
+          "summithillsstudiopr@gmail.com"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "+1 (787) 628-2578"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/summitvideoandaudio",
+          "facebook": "https://www.facebook.com/1715724775319943",
+          "twitter": null,
+          "youtube": "https://www.youtube.com/channel/UCUVWh0wDeASvTRBPbk9JeKg/videos?view_as=subscriber",
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/summitvideoandaudio",
+        "igHandle": "summitvideoandaudio",
+        "igFollowers": "121",
+        "socialEmail": "info@summitvideoandaudio.com",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "summitcotiza@gmail.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/summit-search-group",
+    "apolloCompanyPhone": "+1 403-303-2727",
+    "apolloEmployeeCount": 49,
+    "contactPath": "company_fallback",
+    "tier": "tier3",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-15",
     "approved": false
   }
 ]
