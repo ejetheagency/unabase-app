@@ -1,355 +1,18 @@
 [
   {
-    "companyName": "Cinetrix",
-    "website": "https://cinetrixpr.com",
-    "country": "Puerto Rico",
-    "industry": "film",
-    "searchQuery": "productora audiovisual Puerto Rico",
-    "summary": "At Cinetrix our mission is to create outstanding audiovisual productions for our clients. We are committed to creating timeless cinematic experiences that resonate with audiences. Be it animations, long narrative format, advertising campaigns, production services or audiovisual content, our productions stand out for the storytelling excellence and superb audiovisuals.",
-    "notableClients": [
-      "Facebook"
-    ],
+    "companyName": "DVL Film House",
+    "website": "https://dvlfilmhouse.com",
+    "country": "Mexico",
+    "industry": "commercial",
+    "searchQuery": "productora documental Mexico",
+    "summary": "DVL Film House creates high-impact video strategies, original content, and end-to-end production services tailored for brands and agencies across North America — with competitive nearshore capabilities from Mexico.",
+    "notableClients": [],
     "recentProjects": [
-      "EL ESPECIAL",
-      "El Especial del Banco Popular",
-      "SAN JUAN, MÁS ALLÁ DE LAS MURALLAS",
-      "nine"
+      "Accept All",
+      "for Visit Tucson"
     ],
-    "estimatedSize": "mid",
-    "unabaseScore": 7,
-    "scopeVerified": true,
-    "scopeSignals": 7,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 7,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola Euskady — vi que Cinetrix trabaja cine para Facebook entre otros.\n\n¿cómo cuadran presupuesto, cronograma y reportes cuando un largo lleva meses en producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 4,
-    "fitReasons": [
-      "multiple_projects",
-      "premium_clients",
-      "mid_size_team",
-      "high_ent_signals"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "contactName": "Euskady Burgos",
-    "contactTitle": "Executive Producer",
-    "contactEmail": "kady@cinetrixpr.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/cinetrixpr/",
-    "instagramHandle": "cinetrixpr",
-    "instagramBio": "See Instagram photos and videos from Cinetrix (@cinetrixpr)",
-    "instagramFollowers": "1,608",
-    "facebookUrl": "https://www.facebook.com/CinetrixMedia/",
-    "twitterUrl": null,
-    "youtubeUrl": null,
-    "vimeoUrl": "https://vimeo.com/showcase/10929566",
-    "contactPhone": "787 612-3080",
-    "emailPatterns": null,
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "pagesScanned": 14,
-        "personalEmails": [
-          "kady@cinetrixpr.com"
-        ],
-        "genericEmails": [],
-        "phones": [
-          "787 612-3080"
-        ],
-        "name": "Euskady Burgos",
-        "social": {
-          "instagram": "https://www.instagram.com/cinetrixpr/",
-          "facebook": "https://www.facebook.com/CinetrixMedia/",
-          "twitter": null,
-          "youtube": null,
-          "vimeo": "https://vimeo.com/showcase/10929566",
-          "instagramScore": 3
-        }
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": "https://www.instagram.com/cinetrixpr/",
-        "igHandle": "cinetrixpr",
-        "igFollowers": "1,608",
-        "socialEmail": null,
-        "socialPhone": null
-      },
-      {
-        "step": "founder_recovery",
-        "started": true,
-        "name": "Euskady Burgos"
-      },
-      {
-        "step": "founder_recovery",
-        "company_ig_tagged": []
-      },
-      {
-        "step": "founder_recovery",
-        "final": {
-          "email": "kady@cinetrixpr.com",
-          "additional": 0,
-          "upgraded": false
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/cinetrix-infotech-pvt.ltd",
-    "apolloCompanyPhone": "+61 8 6157 1245",
-    "apolloEmployeeCount": 29,
-    "contactPath": "decision_maker_email",
-    "tier": "tier1",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-15",
-    "approved": false
-  },
-  {
-    "companyName": "Fk21 Films",
-    "website": "https://fk21films.com",
-    "country": "Puerto Rico",
-    "industry": "film",
-    "searchQuery": "productora audiovisual Puerto Rico",
-    "summary": "Descubre FK21 Films, la casa productora independiente de contenido audiovisual en la región sur de Puerto Rico. Sumérgete en nuestra creatividad innovadora, donde ofrecemos servicios de fotografía, grabación, edición y producción visual y musical. Destacamos por apoyar y colaborar con artistas locales, brindando oportunidades únicas en un entorno que celebra la libertad creativa.",
-    "notableClients": [
-      "Facebook"
-    ],
-    "recentProjects": [
-      "sobre las costas de Puerto Rico 10:23 Rep"
-    ],
-    "estimatedSize": "small",
-    "unabaseScore": 7,
-    "scopeVerified": true,
-    "scopeSignals": 3,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 3,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola — vi que Fk21 Films trabaja cine para Facebook entre otros.\n\n¿cómo cuadran presupuesto, cronograma y reportes cuando un largo lleva meses en producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 1,
-    "fitReasons": [
-      "premium_clients"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "fk21films@gmail.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://instagram.com/fk21films?r=nametag",
-    "instagramHandle": "fk21films?r=nametag",
-    "instagramBio": "See Instagram photos and videos from ᖴK21 ᖴIᒪᗰՏ 🎬 (@fk21films)",
-    "instagramFollowers": "331",
-    "facebookUrl": null,
-    "twitterUrl": null,
-    "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": "939-222-8251",
-    "emailPatterns": null,
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "pagesScanned": 14,
-        "personalEmails": [
-          "fk21films@gmail.com"
-        ],
-        "genericEmails": [],
-        "phones": [
-          "939-222-8251"
-        ],
-        "name": null,
-        "social": {
-          "instagram": "https://instagram.com/fk21films?r=nametag",
-          "facebook": null,
-          "twitter": null,
-          "youtube": null,
-          "vimeo": null,
-          "instagramScore": 3
-        }
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": "https://instagram.com/fk21films?r=nametag",
-        "igHandle": "fk21films?r=nametag",
-        "igFollowers": "331",
-        "socialEmail": null,
-        "socialPhone": null
-      },
-      {
-        "step": "founder_recovery",
-        "started": true,
-        "name": "(none)"
-      },
-      {
-        "step": "founder_recovery",
-        "company_ig_tagged": [
-          "fk21films"
-        ]
-      },
-      {
-        "step": "founder_recovery",
-        "dm": {
-          "handle": "fk21films",
-          "email": null,
-          "phone": null,
-          "needsManual": true
-        }
-      },
-      {
-        "step": "founder_recovery",
-        "final": {
-          "email": "fk21films@gmail.com",
-          "additional": 1,
-          "upgraded": false
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "additionalContacts": [
-      {
-        "instagramHandle": "fk21films",
-        "instagramUrl": "https://www.instagram.com/fk21films/",
-        "contactTitle": null,
-        "contactEmail": null,
-        "contactPhone": null,
-        "contactSource": "founder_ig_profile",
-        "needsManualContactButtonCheck": true,
-        "igIsPrivate": false,
-        "context": "m photos and videos from ᖴK21 ᖴIᒪᗰՏ 🎬 (@fk21films"
-      }
-    ],
-    "manualNote": "Founder IG(s) identified (@fk21films) — check IG Contact button manually for direct email + phone.",
-    "contactPath": "company_fallback",
-    "tier": "tier3",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-15",
-    "approved": false
-  },
-  {
-    "companyName": "SUMMIT",
-    "website": "https://summitvideoandaudio.com",
-    "country": "Puerto Rico",
-    "industry": "film",
-    "searchQuery": "productora audiovisual Puerto Rico",
-    "summary": "www.summitvideoandaudio.com Video Corporativo Profesional, Producción audiovisual para empresas. Contacto Whatsapp mensaje: 📞 +1 (787) 628‑2578",
-    "notableClients": [
-      "Lionsgate",
-      "Facebook"
-    ],
-    "recentProjects": [
-      "de video corporativo profesional desde la"
-    ],
-    "estimatedSize": "small",
-    "unabaseScore": 5,
+    "estimatedSize": "large",
+    "unabaseScore": 8,
     "scopeVerified": true,
     "scopeSignals": 5,
     "scopeLabel": "entertainment",
@@ -360,33 +23,34 @@
     "ejeSignals": [],
     "companyBrief": null,
     "approachAngle": null,
-    "pitchEmailES": "hola — vi que SUMMIT trabaja cine para marcas como Lionsgate y Facebook.\n\n¿cómo cuadran presupuesto, cronograma y reportes cuando un largo lleva meses en producción?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailES": "hola Alejandro — vi que en DVL Film House manejan producción end-to-end de video para marcas y agencias en toda Norteamérica, con base nearshore en México.\n\n¿cómo controlan presupuestos y la coordinación de cada producción cuando varios proyectos cruzan clientes y fronteras al mismo tiempo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\n\n\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
-    "fitSignals": 2,
+    "fitSignals": 4,
     "fitReasons": [
-      "premium_clients",
+      "multiple_projects",
+      "large_team",
       "high_ent_signals"
     ],
     "ejeScores": null,
     "scoringPass": true,
     "scoringReason": "scoring_not_configured",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "summitcotiza@gmail.com",
-    "contactLinkedIn": null,
+    "contactName": "Alejandro Mendivil",
+    "contactTitle": "CEO & Executive Producer",
+    "contactEmail": "info@dvlfilmhouse.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/alejandro-mendivil-8611a058",
     "contactConfidence": "website_direct",
-    "contactSource": "website",
+    "contactSource": "deep_rescue",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/summitvideoandaudio",
-    "instagramHandle": "summitvideoandaudio",
-    "instagramBio": "See Instagram photos and videos from SummitStudio Photography (@summitstudio)",
-    "instagramFollowers": "121",
-    "facebookUrl": "https://www.facebook.com/1715724775319943",
+    "instagramUrl": "https://www.instagram.com/dvlfilmhouse/",
+    "instagramHandle": "dvlfilmhouse",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/dvlfilmhouse",
     "twitterUrl": null,
-    "youtubeUrl": "https://www.youtube.com/channel/UCUVWh0wDeASvTRBPbk9JeKg/videos?view_as=subscriber",
-    "vimeoUrl": null,
-    "contactPhone": "+1 (787) 628-2578",
+    "youtubeUrl": "https://www.youtube.com/@dvlfilmhouse5676",
+    "vimeoUrl": "https://vimeo.com/dvlfilmhouse",
+    "contactPhone": "+1 602 738 7619",
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -396,17 +60,11 @@
       },
       {
         "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
+        "found": "name+email",
+        "name": "Alejandro Mendivil",
+        "title": "CEO & Executive Producer",
+        "email": "a.mendivil@dvl.com.mx",
+        "linkedin": "http://www.linkedin.com/in/alejandro-mendivil-8611a058"
       },
       {
         "step": 3,
@@ -415,22 +73,21 @@
       },
       {
         "step": 3,
-        "pagesScanned": 16,
-        "personalEmails": [
-          "summitcotiza@gmail.com",
-          "summithillsstudiopr@gmail.com"
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@dvlfilmhouse.com"
         ],
-        "genericEmails": [],
         "phones": [
-          "+1 (787) 628-2578"
+          "+1 602 738 7619"
         ],
         "name": null,
         "social": {
-          "instagram": "https://www.instagram.com/summitvideoandaudio",
-          "facebook": "https://www.facebook.com/1715724775319943",
+          "instagram": "https://www.instagram.com/dvlfilmhouse/",
+          "facebook": "https://www.facebook.com/dvlfilmhouse",
           "twitter": null,
-          "youtube": "https://www.youtube.com/channel/UCUVWh0wDeASvTRBPbk9JeKg/videos?view_as=subscriber",
-          "vimeo": null,
+          "youtube": "https://www.youtube.com/@dvlfilmhouse5676",
+          "vimeo": "https://vimeo.com/dvlfilmhouse",
           "instagramScore": 3
         }
       },
@@ -441,35 +98,71 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/summitvideoandaudio",
-        "igHandle": "summitvideoandaudio",
-        "igFollowers": "121",
-        "socialEmail": "info@summitvideoandaudio.com",
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
         "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_email": "info@dvlfilmhouse.com",
+        "pages_crawled": 0
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/dvlfilmhouse/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
       },
       {
         "step": "founder_recovery",
         "started": true,
-        "name": "(none)"
+        "name": "Alejandro Mendivil"
       },
       {
         "step": "founder_recovery",
         "company_ig_tagged": []
       },
       {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/dvlfilmhouse"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
         "step": "founder_recovery",
         "final": {
-          "email": "summitcotiza@gmail.com",
+          "email": "info@dvlfilmhouse.com",
           "additional": 0,
           "upgraded": false
         }
       }
     ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/summit-search-group",
-    "apolloCompanyPhone": "+1 403-303-2727",
-    "apolloEmployeeCount": 49,
-    "contactPath": "company_fallback",
-    "tier": "tier3",
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "whoisCheckPending": true,
+    "_companyNameSource": "domain_canonical",
+    "contactPath": "decision_maker_email",
+    "tier": "tier2",
     "instagramDM": null,
     "readyToSend": false,
     "contactDecisionPower": null,
@@ -486,7 +179,7 @@
     "keyInsight": null,
     "_aiFailReason": "ai_timeout",
     "_aiApiMsg": "canceled",
-    "source_date": "2026-05-15",
+    "source_date": "2026-05-16",
     "approved": false
   }
 ]
