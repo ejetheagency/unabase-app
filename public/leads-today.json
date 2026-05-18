@@ -1,67 +1,329 @@
 [
   {
-    "companyName": "Mouse Interactivo",
-    "website": "https://mouseinteractivo.com",
-    "country": "Colombia",
-    "industry": "commercial",
-    "searchQuery": "productora de comerciales Colombia",
-    "summary": "Transforma tu marca con nuestra agencia creativa digital. Ofrecemos diseño web, marketing digital y estrategias creativas para impulsar tu marca.",
+    "companyName": "Gorky Films",
+    "website": "https://www.gorkyfilms.com.ar",
+    "country": "Argentina",
+    "industry": "film",
+    "searchQuery": "estudio de colorimetria cine Argentina",
+    "summary": "Gorky Films - Postproducción audiovisual",
     "notableClients": [
-      "Facebook"
+      "Facebook",
+      "Modelo"
     ],
-    "recentProjects": [
-      "que desarrollamos en Mouse Interactivo cu",
-      "MERCY CORPS COLOMBIA Mercy Corps Colombia",
-      "TAKTIKUS Taktikus Acompañamos a Taktikus",
-      "NATURA AVON Natura Avon Durante más de 8",
-      "BANCOLDEX Bancoldex Diseñamos el Reporte",
-      "CONSEJO NORUEGO PARA REFUEGIADOS Consejo",
-      "PANAMERICANA Panamericana Conmemoración d",
-      "FED Producción de Videos Comerciales para"
-    ],
-    "estimatedSize": "large",
-    "unabaseScore": 8,
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
     "scopeVerified": true,
-    "scopeSignals": 5,
+    "scopeSignals": 4,
     "scopeLabel": "entertainment",
     "entertainmentVerified": true,
-    "entertainmentSignals": 5,
+    "entertainmentSignals": 4,
     "nicheVerified": true,
     "nicheReason": "niche_confirmed",
     "ejeSignals": [],
     "companyBrief": null,
     "approachAngle": null,
-    "pitchEmailES": "hola equipo Mouse Interactivo — vi que producen videos comerciales para marcas grandes como Natura Avon y Bancóldex, varios proyectos a la vez.\n\ncon ese volumen de clientes, cómo llevan hoy el control de presupuestos y avances de cada proyecto — en hojas de cálculo y cadenas de correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailES": "hola equipo Gorky Films — vi que hacen postproducción y colorimetría para cine, con varios proyectos audiovisuales en paralelo.\n\ncon esa carga de trabajo, cómo llevan hoy el control de presupuestos y avances de cada proyecto — en hojas de cálculo y cadenas de correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
-    "fitSignals": 5,
+    "fitSignals": 2,
     "fitReasons": [
-      "multiple_projects",
       "premium_clients",
-      "large_team",
-      "high_ent_signals"
+      "mid_size_team"
     ],
     "ejeScores": null,
     "scoringPass": true,
     "scoringReason": "scoring_not_configured",
-    "_companyNameSource": "domain_canonical",
     "contactName": null,
     "contactTitle": null,
-    "contactEmail": "mouse@mouseinteractivo.com",
+    "contactEmail": "info@gorkyfilms.com.ar",
     "contactLinkedIn": null,
-    "contactConfidence": "confirmed",
-    "contactSource": "ddg_email",
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/mouseinteractivo/?hl=es",
-    "instagramHandle": "mouseinteractivo",
-    "instagramBio": null,
-    "instagramFollowers": "1,015",
-    "facebookUrl": "https://es-la.facebook.com/MouseInteractivo/",
+    "instagramUrl": "https://www.instagram.com/gorkyfilms/",
+    "instagramHandle": "gorkyfilms",
+    "instagramBio": "See Instagram photos and videos from Gorky Films (@gorkyfilms)",
+    "instagramFollowers": "1,541",
+    "facebookUrl": null,
     "twitterUrl": null,
     "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": null,
-    "emailPatterns": null,
+    "vimeoUrl": "https://vimeo.com/user44413091",
+    "contactPhone": "+54 911 4191-9348",
+    "emailPatterns": [
+      "monica@gorkyfilms.com.ar",
+      "monica.esterroza@gorkyfilms.com.ar",
+      "m.esterroza@gorkyfilms.com.ar"
+    ],
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "found": "nothing",
+        "emailsChecked": 1
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@gorkyfilms.com.ar"
+        ],
+        "phones": [
+          "+54 911 4191-9348",
+          "+54 911 4191-0789"
+        ],
+        "name": null,
+        "social": {
+          "instagram": null,
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": "Mónica Ester Roza",
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/gorkyfilms/",
+        "igHandle": "gorkyfilms",
+        "igFollowers": "17",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "D",
+        "name": "Name→Email",
+        "started": true
+      },
+      {
+        "step": "D",
+        "patterns": [
+          "monica@gorkyfilms.com.ar",
+          "monica.esterroza@gorkyfilms.com.ar",
+          "m.esterroza@gorkyfilms.com.ar"
+        ],
+        "via": "pattern"
+      },
+      {
+        "step": 9,
+        "name": "Hunter Find",
+        "started": true
+      },
+      {
+        "step": 9,
+        "error": "timeout of 10000ms exceeded"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "gorkyfilms",
+        "followers": "1,541",
+        "email": null,
+        "phone": null,
+        "triedHandles": 13
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+54 911 4191-9348",
+          "+54 911 4191-0789"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Mónica Ester Roza"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/user44413091"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@gorkyfilms.com.ar",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactVenues": 3,
+    "whoisCheckPending": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": null,
+    "readyToSend": false,
+    "contactDecisionPower": null,
+    "whyThisLead": null,
+    "actionBlock": null,
+    "conversationAngle": null,
+    "channelPriority": null,
+    "emailCercana": null,
+    "emailFormal": null,
+    "instagramPlaybook": null,
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": null,
+    "keyInsight": null,
+    "_aiFailReason": "ai_timeout",
+    "_aiApiMsg": "canceled",
+    "source_date": "2026-05-18",
+    "approved": false
+  },
+  {
+    "companyName": "Maple Films",
+    "website": "https://themaplefilms.com",
+    "country": "Mexico",
+    "industry": "music",
+    "searchQuery": "casa productora videoclips Monterrey",
+    "summary": "Maple Films is a production company.",
+    "notableClients": [
+      "Marvel"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 5,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": null,
+    "approachAngle": null,
+    "pitchEmailES": "hola Dustin — vi que en Maple Films producen videoclips y contenido audiovisual para varias marcas y artistas a la vez.\n\ncon ese ritmo de producciones, cómo llevan hoy el control de presupuestos y avances de cada proyecto — en hojas de cálculo y cadenas de correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "premium_clients",
+      "mid_size_team"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": "Dustin Lee",
+    "contactTitle": "Owner",
+    "contactEmail": null,
+    "contactLinkedIn": null,
+    "contactConfidence": "not_found",
+    "contactSource": null,
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/maplefilms/",
+    "instagramHandle": "maplefilms",
+    "instagramBio": "See Instagram photos and videos from Maple Films (@maplefilms) Log In",
+    "instagramFollowers": "595",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/maplefilmsweddings",
+    "contactPhone": "01 55) 5397-1759",
+    "emailPatterns": [
+      "dustin@themaplefilms.com",
+      "dustin.lee@themaplefilms.com",
+      "d.lee@themaplefilms.com"
+    ],
     "scoutLog": [
       {
         "step": 1,
@@ -89,23 +351,17 @@
       },
       {
         "step": 3,
-        "pagesScanned": 16,
+        "pagesScanned": 14,
         "personalEmails": [],
-        "genericEmails": [
-          "ventas@mouseinteractivo.com"
-        ],
-        "phones": [
-          "+57 314 239 6916",
-          "57) 321 399"
-        ],
+        "genericEmails": [],
+        "phones": [],
         "name": null,
         "social": {
-          "instagram": "https://www.instagram.com/mouseinteractivo/?hl=es",
-          "facebook": "https://es-la.facebook.com/MouseInteractivo/",
+          "instagram": null,
+          "facebook": null,
           "twitter": null,
           "youtube": null,
-          "vimeo": null,
-          "instagramScore": 3
+          "vimeo": null
         }
       },
       {
@@ -135,7 +391,7 @@
       {
         "step": 6,
         "emails": [
-          "mouse@mouseinteractivo.com"
+          "mfl2003@rediffmail.com"
         ]
       },
       {
@@ -155,7 +411,7 @@
       },
       {
         "step": "B",
-        "name": null,
+        "name": "Dustin Lee",
         "emails": []
       },
       {
@@ -165,10 +421,10 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/mouseinteractivo/?hl=es",
-        "igHandle": "mouseinteractivo",
-        "igFollowers": "1,015",
-        "socialEmail": "ventas@mouseinteractivo.com",
+        "igUrl": "https://www.instagram.com/maplefilms/",
+        "igHandle": "maplefilms",
+        "igFollowers": "595",
+        "socialEmail": null,
         "socialPhone": null
       },
       {
@@ -179,57 +435,107 @@
       {
         "step": "C",
         "tiktokEmail": null,
-        "waPhone": "+5719201432",
-        "gmbPhone": "+57 314 2396916",
+        "waPhone": null,
+        "gmbPhone": null,
         "gmbOwner": null
       },
       {
-        "step": "name_derive",
-        "email": "mouse@mouseinteractivo.com"
+        "step": "D",
+        "name": "Name→Email",
+        "started": true
+      },
+      {
+        "step": "D",
+        "patterns": [
+          "dustin@themaplefilms.com",
+          "dustin.lee@themaplefilms.com",
+          "d.lee@themaplefilms.com"
+        ],
+        "via": "pattern"
+      },
+      {
+        "step": 9,
+        "name": "Hunter Find",
+        "started": true
+      },
+      {
+        "step": 9,
+        "error": "Request failed with status code 429"
       },
       {
         "step": "ig_exhaustive",
-        "handle": "mouseinteractivo",
-        "followers": "1,015",
+        "handle": "maplefilms",
+        "followers": "595",
         "email": null,
         "phone": null,
-        "triedHandles": 7
+        "triedHandles": 13
       },
       {
         "step": "phone_exhaustive",
-        "found": [
-          "+57 314 239 6916",
-          "57) 321 399",
-          "+5719201432",
-          "+57 314 2396916",
-          "314 2396916",
-          "300 4301850"
-        ]
+        "found": []
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "email_error": "net::ERR_TOO_MANY_REDIRECTS at https://themaplefilms.com"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "01 55) 5397-1759"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": false,
+          "ig": true,
+          "phone": true
+        }
       },
       {
         "step": "founder_recovery",
         "started": true,
-        "name": "(none)"
+        "name": "Dustin Lee"
       },
       {
         "step": "founder_recovery",
         "company_ig_tagged": []
       },
       {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "blog_error": "net::ERR_TOO_MANY_REDIRECTS at https://themaplefilms.com"
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/maplefilmsweddings"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
         "step": "founder_recovery",
         "final": {
-          "email": "mouse@mouseinteractivo.com",
+          "email": null,
           "additional": 0,
           "upgraded": false
         }
       }
     ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/mouse-interactivo",
-    "apolloCompanyPhone": "+57 314 2396916",
-    "apolloEmployeeCount": 18,
-    "contactVenues": 3,
-    "contactPath": "company_fallback",
-    "tier": "tier2",
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/maple-films",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 3,
+    "contactVenues": 1,
+    "whoisCheckPending": true,
+    "contactPath": "ig_only",
+    "tier": "tier3",
     "instagramDM": null,
     "readyToSend": false,
     "contactDecisionPower": null,
@@ -246,23 +552,20 @@
     "keyInsight": null,
     "_aiFailReason": "ai_timeout",
     "_aiApiMsg": "canceled",
-    "source_date": "2026-05-17",
+    "source_date": "2026-05-18",
     "approved": false
   },
   {
-    "companyName": "Qué Estudio",
-    "website": "https://questudioo.com",
+    "companyName": "La Tina",
+    "website": "https://la-tina.co",
     "country": "Colombia",
-    "industry": "commercial",
-    "searchQuery": "estudio creativo produccion Colombia",
-    "summary": "Somos un estudio creativo que desarrolla proyectos creativos para artistas, instituciones culturales y marcas.Trabajamos en la intersección entre arte, comunicación y cultura contemporánea, combinando dirección creativa, investigación visual y producción. Cada proyecto se desarrolla desde una mirada estratégica, estética y narrativa, buscando construir identidades culturales con sentido y coherencia.",
+    "industry": "film",
+    "searchQuery": "estudio de posproduccion Bogota",
+    "summary": "ESP ENG WE ARE an audio post production and film scoring studio exporting services globally since 2010. We work with a wide range of clients from OTT VOD platforms to springing independent production companies and everyone in between. Our mission is to help you create an experience that will deeply move people.",
     "notableClients": [],
-    "recentProjects": [
-      "by RTR Media",
-      "cultural"
-    ],
+    "recentProjects": [],
     "estimatedSize": "mid",
-    "unabaseScore": 8,
+    "unabaseScore": 5,
     "scopeVerified": true,
     "scopeSignals": 10,
     "scopeLabel": "entertainment",
@@ -273,12 +576,11 @@
     "ejeSignals": [],
     "companyBrief": null,
     "approachAngle": null,
-    "pitchEmailES": "hola equipo Qué Estudio — vi que desarrollan proyectos creativos para artistas, instituciones culturales y marcas, cada uno con su dirección y producción propia.\n\ncuando tienen varios proyectos abiertos a la vez, cómo controlan hoy presupuestos y entregables de cada uno — en archivos sueltos y correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailES": "hola Andres — vi que en La Tina hacen post de sonido y musicalización para cine, trabajando con plataformas OTT y productoras de varios países.\n\ncon ese flujo de clientes internacionales, cómo llevan hoy el control de presupuestos y avances de cada proyecto — en hojas de cálculo y cadenas de correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
-    "fitSignals": 3,
+    "fitSignals": 2,
     "fitReasons": [
-      "multiple_projects",
       "mid_size_team",
       "high_ent_signals"
     ],
@@ -286,183 +588,22 @@
     "scoringPass": true,
     "scoringReason": "scoring_not_configured",
     "_companyNameSource": "domain_canonical",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "queestudiocolombia@gmail.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": null,
-    "instagramHandle": null,
-    "instagramBio": null,
-    "instagramFollowers": null,
-    "facebookUrl": "https://www.facebook.com/questudioo/",
-    "twitterUrl": "https://twitter.com/MundoWix",
-    "youtubeUrl": "https://www.youtube.com/@QueEstudioCol",
-    "vimeoUrl": "https://vimeo.com/queestudio",
-    "contactPhone": "+57-3227981914",
-    "emailPatterns": null,
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "warn": "IG handle @queestudiocol does not match domain \"questudioo\" — may be wrong company"
-      },
-      {
-        "step": 3,
-        "pagesScanned": 14,
-        "personalEmails": [
-          "queestudiocolombia@gmail.com"
-        ],
-        "genericEmails": [
-          "info@misitio.com"
-        ],
-        "phones": [
-          "+57-3227981914"
-        ],
-        "name": null,
-        "social": {
-          "instagram": "https://www.instagram.com/queestudiocol/",
-          "facebook": "https://www.facebook.com/questudioo/",
-          "twitter": "https://twitter.com/MundoWix",
-          "youtube": "https://www.youtube.com/@QueEstudioCol",
-          "vimeo": "https://vimeo.com/queestudio",
-          "instagramScore": 0
-        }
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": null,
-        "igHandle": null,
-        "igFollowers": null,
-        "socialEmail": "andresgcreative@gmail.com",
-        "socialPhone": null
-      },
-      {
-        "step": "deep_rescue",
-        "started": true
-      },
-      {
-        "step": "deep_rescue",
-        "found_ig": "https://www.instagram.com/qustodio/"
-      },
-      {
-        "step": "deep_rescue",
-        "final": {
-          "email": true,
-          "ig": true,
-          "phone": true
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactPath": "email_only",
-    "tier": "tier2",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-17",
-    "approved": false
-  },
-  {
-    "companyName": "Producción Aparte",
-    "website": "https://produccionaparte.com",
-    "country": "Colombia",
-    "industry": "commercial",
-    "searchQuery": "productora de contenido educativo Colombia",
-    "summary": "Somos una Productora Integral y Versátil que Crea Contenidos Audiovisuales de Calidad para Todo Tipo de Proyecto.",
-    "notableClients": [
-      "TikTok"
-    ],
-    "recentProjects": [
-      "Producción Aparte",
-      "Producción Aparte."
-    ],
-    "estimatedSize": "mid",
-    "unabaseScore": 6,
-    "scopeVerified": true,
-    "scopeSignals": 5,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 5,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola Salomon — vi que en Producción Aparte manejan contenido audiovisual para todo tipo de proyecto, desde corporativo hasta TikTok.\n\ncon esa variedad de producciones en paralelo, cómo llevas hoy el control de presupuestos y plazos de cada una — en Excel y WhatsApp?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 4,
-    "fitReasons": [
-      "multiple_projects",
-      "premium_clients",
-      "mid_size_team",
-      "high_ent_signals"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "contactName": "Salomon Marun Helo",
-    "contactTitle": "General Manager",
-    "contactEmail": "salomon@produccionaparte.com",
-    "contactLinkedIn": "http://www.linkedin.com/in/josemarun",
+    "contactName": "Andres Silva",
+    "contactTitle": "Founder / General Manager / Sound Supervisor",
+    "contactEmail": "andres@la-tina.co",
+    "contactLinkedIn": "http://www.linkedin.com/in/andres-silva-5bb7721a7",
     "contactConfidence": "confirmed",
     "contactSource": "apollo",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/produccionaparte/",
-    "instagramHandle": "produccionaparte",
+    "instagramUrl": "https://www.instagram.com/latinasoundandmusic/",
+    "instagramHandle": "latinasoundandmusic",
     "instagramBio": null,
     "instagramFollowers": null,
-    "facebookUrl": null,
-    "twitterUrl": null,
-    "youtubeUrl": "https://www.youtube.com/channel/UCLTMySNtCKwqYUDa2F7gA7w",
+    "facebookUrl": "https://www.facebook.com/LaTinaSoundDesignAndFilmScoring",
+    "twitterUrl": "https://twitter.com/LaTinaSonido",
+    "youtubeUrl": null,
     "vimeoUrl": null,
-    "contactPhone": "+57 3174386515",
+    "contactPhone": null,
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -473,10 +614,10 @@
       {
         "step": 1,
         "found": "name+email",
-        "name": "Salomon Marun Helo",
-        "title": "General Manager",
-        "email": "salomon@produccionaparte.com",
-        "linkedin": "http://www.linkedin.com/in/josemarun"
+        "name": "Andres Silva",
+        "title": "Founder / General Manager / Sound Supervisor",
+        "email": "andres@la-tina.co",
+        "linkedin": "http://www.linkedin.com/in/andres-silva-5bb7721a7"
       },
       {
         "step": 3,
@@ -485,27 +626,20 @@
       },
       {
         "step": 3,
-        "pagesScanned": 16,
-        "personalEmails": [
-          "josemarun@produccionaparte.com",
-          "samirmarun@produccionaparte.com"
-        ],
+        "pagesScanned": 14,
+        "personalEmails": [],
         "genericEmails": [
-          "info@produccionaparte.com"
+          "info@la-tina.co"
         ],
-        "phones": [
-          "+57 3174386515",
-          "+57 313 2844591",
-          "+57 312 5090296"
-        ],
-        "name": "Saffron Allwood",
+        "phones": [],
+        "name": "Sound Designer",
         "social": {
-          "instagram": "https://instagram.com/produccionaparte",
-          "facebook": null,
-          "twitter": null,
-          "youtube": "https://www.youtube.com/channel/UCLTMySNtCKwqYUDa2F7gA7w",
+          "instagram": "https://www.instagram.com/latinasoundandmusic/",
+          "facebook": "https://www.facebook.com/LaTinaSoundDesignAndFilmScoring",
+          "twitter": "https://twitter.com/LaTinaSonido",
+          "youtube": null,
           "vimeo": null,
-          "instagramScore": 3
+          "instagramScore": 2
         }
       },
       {
@@ -515,32 +649,16 @@
       },
       {
         "step": 8,
-        "igUrl": null,
-        "igHandle": null,
-        "igFollowers": null,
-        "socialEmail": null,
+        "igUrl": "https://www.instagram.com/latina/",
+        "igHandle": "latina",
+        "igFollowers": "546K",
+        "socialEmail": "info@la-tina.co",
         "socialPhone": null
-      },
-      {
-        "step": "deep_rescue",
-        "started": true
-      },
-      {
-        "step": "deep_rescue",
-        "found_ig": "https://www.instagram.com/produccionaparte/"
-      },
-      {
-        "step": "deep_rescue",
-        "final": {
-          "email": true,
-          "ig": true,
-          "phone": true
-        }
       },
       {
         "step": "founder_recovery",
         "started": true,
-        "name": "Salomon Marun Helo"
+        "name": "Andres Silva"
       },
       {
         "step": "founder_recovery",
@@ -549,16 +667,15 @@
       {
         "step": "founder_recovery",
         "final": {
-          "email": "salomon@produccionaparte.com",
+          "email": "andres@la-tina.co",
           "additional": 0,
           "upgraded": false
         }
       }
     ],
-    "apolloCompanyLinkedIn": null,
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/la-tina-sonido",
     "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "_companyNameSource": "domain_canonical",
+    "apolloEmployeeCount": 29,
     "contactPath": "decision_maker_email",
     "tier": "tier1",
     "instagramDM": null,
@@ -577,161 +694,7 @@
     "keyInsight": null,
     "_aiFailReason": "ai_timeout",
     "_aiApiMsg": "canceled",
-    "source_date": "2026-05-17",
-    "approved": false
-  },
-  {
-    "companyName": "Tanaka Producciones",
-    "website": "https://tanakaproducciones.com",
-    "country": "Mexico",
-    "industry": "commercial",
-    "searchQuery": "productora de eventos corporativos Mexico",
-    "summary": "TANAKA PRODUCCIONES | Casa productora de eventos Corporativos, Empresariales, Deportivos, Masivos y Gubernamentales, Renta de audio e iluminación, Renta de pantallas de leds, Ground support y escenarios, Efectos especiales, Renta de camionetas, Contratación de talento artístico.",
-    "notableClients": [
-      "Facebook"
-    ],
-    "recentProjects": [],
-    "estimatedSize": "mid",
-    "unabaseScore": 6,
-    "scopeVerified": true,
-    "scopeSignals": 5,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 5,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola equipo Tanaka Producciones — vi que producen eventos corporativos y masivos con renta de audio, iluminación, pantallas LED y escenarios.\n\ncon tantos recursos y proveedores por evento, cómo controlan hoy presupuestos y logística de cada producción — en hojas de cálculo y correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 3,
-    "fitReasons": [
-      "premium_clients",
-      "mid_size_team",
-      "high_ent_signals"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "mtanaka@tanakaproducciones.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/tanaka.producciones/?utm_source=qr&igsh=MXU5d2R0ZHh1cDhxaA%3D%3D",
-    "instagramHandle": "tanaka.producciones",
-    "instagramBio": "See Instagram photos and videos from Tanaka Producciones (@tanaka.producciones)",
-    "instagramFollowers": "103",
-    "facebookUrl": "https://www.facebook.com/profile.php?id=100001184654633",
-    "twitterUrl": "https://x.com/TanakaProd?t=5QlMQkIgRSCZxkCBn3YXIQ&s=09",
-    "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": "55-2080-6431",
-    "emailPatterns": null,
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "pagesScanned": 16,
-        "personalEmails": [
-          "mtanaka@tanakaproducciones.com"
-        ],
-        "genericEmails": [
-          "ventas@tanakaproducciones.com"
-        ],
-        "phones": [
-          "55-2080-6431"
-        ],
-        "name": null,
-        "social": {
-          "instagram": "https://www.instagram.com/tanaka.producciones/?utm_source=qr&igsh=MXU5d2R0ZHh1cDhxaA%3D%3D",
-          "facebook": "https://www.facebook.com/profile.php?id=100001184654633",
-          "twitter": "https://x.com/TanakaProd?t=5QlMQkIgRSCZxkCBn3YXIQ&s=09",
-          "youtube": null,
-          "vimeo": null,
-          "instagramScore": 3
-        }
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": "https://www.instagram.com/tanaka.producciones/?utm_source=qr&igsh=MXU5d2R0ZHh1cDhxaA%3D%3D",
-        "igHandle": "tanaka.producciones",
-        "igFollowers": "103",
-        "socialEmail": null,
-        "socialPhone": null
-      },
-      {
-        "step": "founder_recovery",
-        "started": true,
-        "name": "(none)"
-      },
-      {
-        "step": "founder_recovery",
-        "company_ig_tagged": []
-      },
-      {
-        "step": "founder_recovery",
-        "final": {
-          "email": "mtanaka@tanakaproducciones.com",
-          "additional": 0,
-          "upgraded": false
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "isAdjacent": true,
-    "adjacentIndustry": "corporate",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-17",
+    "source_date": "2026-05-18",
     "approved": false
   }
 ]
