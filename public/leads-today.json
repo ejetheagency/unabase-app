@@ -1,18 +1,19 @@
 [
   {
-    "companyName": "Gorky Films",
-    "website": "https://www.gorkyfilms.com.ar",
-    "country": "Argentina",
-    "industry": "film",
-    "searchQuery": "estudio de colorimetria cine Argentina",
-    "summary": "Gorky Films - Postproducción audiovisual",
+    "companyName": "El Studio Films",
+    "website": "https://elstudiofilms.com",
+    "country": "Guatemala",
+    "industry": "commercial",
+    "summary": "elStudioFilms es una productora audiovisual ubicada en la Ciudad de Guatemala, enfocada en la creación de materiales. Nuestra estrategia se basa en crear contenido de calidad,enfocado en satisfacer las necesidades de los clientes.",
     "notableClients": [
-      "Facebook",
-      "Modelo"
+      "Facebook"
     ],
-    "recentProjects": [],
+    "recentProjects": [
+      "Jingle",
+      "necesita"
+    ],
     "estimatedSize": "mid",
-    "unabaseScore": 9,
+    "unabaseScore": 8,
     "scopeVerified": true,
     "scopeSignals": 4,
     "scopeLabel": "entertainment",
@@ -20,310 +21,34 @@
     "entertainmentSignals": 4,
     "nicheVerified": true,
     "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
+    "companyBrief": "elStudioFilms es una productora audiovisual en Ciudad de Guatemala enfocada en contenido comercial de calidad. Trabajan con clientes como Facebook creando jingles y material publicitario.",
     "approachAngle": null,
-    "pitchEmailES": "hola equipo Gorky Films — vi que hacen postproducción y colorimetría para cine, con varios proyectos audiovisuales en paralelo.\n\ncon esa carga de trabajo, cómo llevan hoy el control de presupuestos y avances de cada proyecto — en hojas de cálculo y cadenas de correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailES": "hola equipo de El Studio Films — vi que producen desde jingles hasta campañas publicitarias completas para marcas grandes\n\n¿cómo llevan el control de presupuestos cuando cada formato tiene tiempos y costos tan distintos corriendo a la vez?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
-    "fitSignals": 2,
+    "fitSignals": 3,
     "fitReasons": [
+      "multiple_projects",
       "premium_clients",
       "mid_size_team"
     ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
     "contactName": null,
     "contactTitle": null,
-    "contactEmail": "info@gorkyfilms.com.ar",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/gorkyfilms/",
-    "instagramHandle": "gorkyfilms",
-    "instagramBio": "See Instagram photos and videos from Gorky Films (@gorkyfilms)",
-    "instagramFollowers": "1,541",
-    "facebookUrl": null,
-    "twitterUrl": null,
-    "youtubeUrl": null,
-    "vimeoUrl": "https://vimeo.com/user44413091",
-    "contactPhone": "+54 911 4191-9348",
-    "emailPatterns": [
-      "monica@gorkyfilms.com.ar",
-      "monica.esterroza@gorkyfilms.com.ar",
-      "m.esterroza@gorkyfilms.com.ar"
-    ],
-    "scoutLog": [
-      {
-        "step": 1,
-        "name": "Apollo Pro",
-        "started": true
-      },
-      {
-        "step": 1,
-        "found": "org_only",
-        "name": null
-      },
-      {
-        "step": 2,
-        "name": "Hunter.io",
-        "started": true
-      },
-      {
-        "step": 2,
-        "found": "nothing",
-        "emailsChecked": 1
-      },
-      {
-        "step": 3,
-        "name": "Website Crawl",
-        "started": true
-      },
-      {
-        "step": 3,
-        "pagesScanned": 14,
-        "personalEmails": [],
-        "genericEmails": [
-          "info@gorkyfilms.com.ar"
-        ],
-        "phones": [
-          "+54 911 4191-9348",
-          "+54 911 4191-0789"
-        ],
-        "name": null,
-        "social": {
-          "instagram": null,
-          "facebook": null,
-          "twitter": null,
-          "youtube": null,
-          "vimeo": null
-        }
-      },
-      {
-        "step": 4,
-        "name": "News/Press",
-        "started": true
-      },
-      {
-        "step": 4,
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": 5,
-        "name": "LinkedIn DDG",
-        "started": true
-      },
-      {
-        "step": 5,
-        "found": "nothing"
-      },
-      {
-        "step": 6,
-        "name": "DDG Email",
-        "started": true
-      },
-      {
-        "step": 6,
-        "emails": []
-      },
-      {
-        "step": "A",
-        "name": "Industry DBs",
-        "started": true
-      },
-      {
-        "step": "A",
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": "B",
-        "name": "Press/Awards",
-        "started": true
-      },
-      {
-        "step": "B",
-        "name": "Mónica Ester Roza",
-        "emails": []
-      },
-      {
-        "step": 8,
-        "name": "Social Scan",
-        "started": true
-      },
-      {
-        "step": 8,
-        "igUrl": "https://www.instagram.com/gorkyfilms/",
-        "igHandle": "gorkyfilms",
-        "igFollowers": "17",
-        "socialEmail": null,
-        "socialPhone": null
-      },
-      {
-        "step": "C",
-        "name": "Extra Social",
-        "started": true
-      },
-      {
-        "step": "C",
-        "tiktokEmail": null,
-        "waPhone": null,
-        "gmbPhone": null,
-        "gmbOwner": null
-      },
-      {
-        "step": "D",
-        "name": "Name→Email",
-        "started": true
-      },
-      {
-        "step": "D",
-        "patterns": [
-          "monica@gorkyfilms.com.ar",
-          "monica.esterroza@gorkyfilms.com.ar",
-          "m.esterroza@gorkyfilms.com.ar"
-        ],
-        "via": "pattern"
-      },
-      {
-        "step": 9,
-        "name": "Hunter Find",
-        "started": true
-      },
-      {
-        "step": 9,
-        "error": "timeout of 10000ms exceeded"
-      },
-      {
-        "step": "ig_exhaustive",
-        "handle": "gorkyfilms",
-        "followers": "1,541",
-        "email": null,
-        "phone": null,
-        "triedHandles": 13
-      },
-      {
-        "step": "phone_exhaustive",
-        "found": [
-          "+54 911 4191-9348",
-          "+54 911 4191-0789"
-        ]
-      },
-      {
-        "step": "founder_recovery",
-        "started": true,
-        "name": "Mónica Ester Roza"
-      },
-      {
-        "step": "founder_recovery",
-        "company_ig_tagged": []
-      },
-      {
-        "step": "alt_paths",
-        "started": true
-      },
-      {
-        "step": "alt_paths",
-        "vimeo": "https://vimeo.com/user44413091"
-      },
-      {
-        "step": "alt_paths",
-        "done": true,
-        "additional_found": 0
-      },
-      {
-        "step": "founder_recovery",
-        "final": {
-          "email": "info@gorkyfilms.com.ar",
-          "additional": 0,
-          "upgraded": false
-        }
-      }
-    ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactVenues": 3,
-    "whoisCheckPending": true,
-    "contactPath": "company_fallback",
-    "tier": "tier2",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-18",
-    "approved": false
-  },
-  {
-    "companyName": "Maple Films",
-    "website": "https://themaplefilms.com",
-    "country": "Mexico",
-    "industry": "music",
-    "searchQuery": "casa productora videoclips Monterrey",
-    "summary": "Maple Films is a production company.",
-    "notableClients": [
-      "Marvel"
-    ],
-    "recentProjects": [],
-    "estimatedSize": "mid",
-    "unabaseScore": 5,
-    "scopeVerified": true,
-    "scopeSignals": 3,
-    "scopeLabel": "entertainment",
-    "entertainmentVerified": true,
-    "entertainmentSignals": 3,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailES": "hola Dustin — vi que en Maple Films producen videoclips y contenido audiovisual para varias marcas y artistas a la vez.\n\ncon ese ritmo de producciones, cómo llevan hoy el control de presupuestos y avances de cada proyecto — en hojas de cálculo y cadenas de correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 2,
-    "fitReasons": [
-      "premium_clients",
-      "mid_size_team"
-    ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "contactName": "Dustin Lee",
-    "contactTitle": "Owner",
     "contactEmail": null,
     "contactLinkedIn": null,
-    "contactConfidence": "not_found",
+    "contactConfidence": null,
     "contactSource": null,
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/maplefilms/",
-    "instagramHandle": "maplefilms",
-    "instagramBio": "See Instagram photos and videos from Maple Films (@maplefilms) Log In",
-    "instagramFollowers": "595",
-    "facebookUrl": null,
+    "instagramUrl": "https://www.instagram.com/elstudiofilms/",
+    "instagramHandle": "elstudiofilms",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/ElStudioFilms/",
     "twitterUrl": null,
-    "youtubeUrl": null,
-    "vimeoUrl": "https://vimeo.com/maplefilmsweddings",
-    "contactPhone": "01 55) 5397-1759",
-    "emailPatterns": [
-      "dustin@themaplefilms.com",
-      "dustin.lee@themaplefilms.com",
-      "d.lee@themaplefilms.com"
-    ],
+    "youtubeUrl": "https://www.youtube.com/channel/UCb3hNmuJy4eWIiZzE-PF9uw",
+    "vimeoUrl": null,
+    "contactPhone": "00.0000000",
+    "emailPatterns": null,
     "scoutLog": [
       {
         "step": 1,
@@ -352,67 +77,20 @@
       {
         "step": 3,
         "pagesScanned": 14,
-        "personalEmails": [],
+        "personalEmails": [
+          "alberto.sazo@elstudiogt.com"
+        ],
         "genericEmails": [],
         "phones": [],
         "name": null,
         "social": {
-          "instagram": null,
-          "facebook": null,
+          "instagram": "https://www.instagram.com/elstudiofilms/",
+          "facebook": "https://www.facebook.com/ElStudioFilms/",
           "twitter": null,
-          "youtube": null,
-          "vimeo": null
+          "youtube": "https://www.youtube.com/channel/UCb3hNmuJy4eWIiZzE-PF9uw",
+          "vimeo": null,
+          "instagramScore": 3
         }
-      },
-      {
-        "step": 4,
-        "name": "News/Press",
-        "started": true
-      },
-      {
-        "step": 4,
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": 5,
-        "name": "LinkedIn DDG",
-        "started": true
-      },
-      {
-        "step": 5,
-        "found": "nothing"
-      },
-      {
-        "step": 6,
-        "name": "DDG Email",
-        "started": true
-      },
-      {
-        "step": 6,
-        "emails": [
-          "mfl2003@rediffmail.com"
-        ]
-      },
-      {
-        "step": "A",
-        "name": "Industry DBs",
-        "started": true
-      },
-      {
-        "step": "A",
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": "B",
-        "name": "Press/Awards",
-        "started": true
-      },
-      {
-        "step": "B",
-        "name": "Dustin Lee",
-        "emails": []
       },
       {
         "step": 8,
@@ -421,75 +99,33 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/maplefilms/",
-        "igHandle": "maplefilms",
-        "igFollowers": "595",
-        "socialEmail": null,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": "alberto.sazo@elstudiogt.com",
         "socialPhone": null
       },
       {
-        "step": "C",
-        "name": "Extra Social",
-        "started": true
-      },
-      {
-        "step": "C",
-        "tiktokEmail": null,
-        "waPhone": null,
-        "gmbPhone": null,
-        "gmbOwner": null
-      },
-      {
-        "step": "D",
-        "name": "Name→Email",
-        "started": true
-      },
-      {
-        "step": "D",
-        "patterns": [
-          "dustin@themaplefilms.com",
-          "dustin.lee@themaplefilms.com",
-          "d.lee@themaplefilms.com"
-        ],
-        "via": "pattern"
-      },
-      {
-        "step": 9,
-        "name": "Hunter Find",
-        "started": true
-      },
-      {
-        "step": 9,
-        "error": "Request failed with status code 429"
-      },
-      {
-        "step": "ig_exhaustive",
-        "handle": "maplefilms",
-        "followers": "595",
-        "email": null,
-        "phone": null,
-        "triedHandles": 13
-      },
-      {
-        "step": "phone_exhaustive",
-        "found": []
-      },
-      {
         "step": "deep_rescue",
         "started": true
       },
       {
         "step": "deep_rescue",
-        "email_error": "net::ERR_TOO_MANY_REDIRECTS at https://themaplefilms.com"
+        "found_email": "alberto.sazo@elstudiogt.com",
+        "pages_crawled": 0
       },
       {
         "step": "deep_rescue",
-        "found_phone": "01 55) 5397-1759"
+        "found_ig": "https://www.instagram.com/elstudiofilms/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "00.0000000"
       },
       {
         "step": "deep_rescue",
         "final": {
-          "email": false,
+          "email": true,
           "ig": true,
           "phone": true
         }
@@ -497,7 +133,7 @@
       {
         "step": "founder_recovery",
         "started": true,
-        "name": "Dustin Lee"
+        "name": "(none)"
       },
       {
         "step": "founder_recovery",
@@ -506,14 +142,6 @@
       {
         "step": "alt_paths",
         "started": true
-      },
-      {
-        "step": "alt_paths",
-        "blog_error": "net::ERR_TOO_MANY_REDIRECTS at https://themaplefilms.com"
-      },
-      {
-        "step": "alt_paths",
-        "vimeo": "https://vimeo.com/maplefilmsweddings"
       },
       {
         "step": "alt_paths",
@@ -529,81 +157,102 @@
         }
       }
     ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/maple-films",
+    "apolloCompanyLinkedIn": null,
     "apolloCompanyPhone": null,
-    "apolloEmployeeCount": 3,
-    "contactVenues": 1,
+    "apolloEmployeeCount": null,
     "whoisCheckPending": true,
     "contactPath": "ig_only",
     "tier": "tier3",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
+    "instagramDM": "Hola! Soy Scarlett de una startup que ayuda a productoras como la suya. Vi que trabajan con Facebook y me llamó la atención cómo manejan proyectos tan diversos. ¿Tienen un minuto para platicar de herramientas operativas?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Sin datos del contacto específico, pero cualquier decision maker en una productora mid-size puede aprobar herramientas operativas.",
+    "whyThisLead": [
+      "Productora comercial con múltiples formatos (jingles, publicidad) que requiere presupuestación específica por proyecto",
+      "Clientes premium como Facebook indican volumen de trabajo y necesidad de profesionalización",
+      "Tamaño mid sugiere crecimiento donde Excel ya no escala para múltiples proyectos"
+    ],
+    "actionBlock": [
+      "Contactar vía Instagram para establecer conexión inicial",
+      "Usar Instagram como canal primario por presencia activa",
+      "Tono casual y directo, enfoque en eficiencia operativa"
+    ],
+    "conversationAngle": "Productoras comerciales como ustedes con clientes premium necesitan herramientas que escalen con el crecimiento - especialmente cuando manejan formatos distintos como jingles vs campañas completas.",
+    "channelPriority": {
+      "primario": "Instagram",
+      "secundario": "WhatsApp",
+      "opcional": "Email directo"
+    },
+    "specificLine": "Vimos que trabajan con Facebook y manejan desde jingles hasta campañas completas - ¿cómo organizan presupuestos cuando cada formato tiene ritmos de caja tan distintos?",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de El Studio Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en El Studio Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVimos que trabajan con Facebook y manejan desde jingles hasta campañas completas - ¿cómo organizan presupuestos cuando cada formato tiene ritmos de caja tan distintos?\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVimos que trabajan con Facebook y manejan desde jingles hasta campañas completas - ¿cómo organizan presupuestos cuando cada formato tiene ritmos de caja tan distintos?\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @elstudiofilms",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Excelente trabajo con estos comerciales! Se ve la calidad en cada frame'",
+      "dm": "Hola! Soy Scarlett de una startup que ayuda a productoras como la suya. Vi que trabajan con Facebook y me llamó la atención cómo manejan proyectos tan diversos. ¿Tienen un minuto para platicar de herramientas operativas?"
+    },
+    "whatsappMessage": "Hola! Soy Scarlett, trabajo con productoras audiovisuales en LATAM. Vi que elStudio maneja desde jingles hasta campañas para Facebook. Me encantaría platicar sobre herramientas que están usando para escalar. ¿Tienes 10 min esta semana?",
     "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-18",
+    "outreachSequence": [
+      "Dia 1: Seguir y engagement en Instagram",
+      "Dia 2: DM casual en Instagram",
+      "Dia 4: WhatsApp de seguimiento si no responde IG",
+      "Dia 7: Email formal con propuesta específica si no hay respuesta"
+    ],
+    "keyInsight": "Productora comercial con cliente premium que maneja múltiples formatos - exactamente el perfil que más sufre con Excel para presupuestación.",
+    "source_date": "2026-05-19",
     "approved": false
   },
   {
-    "companyName": "La Tina",
-    "website": "https://la-tina.co",
-    "country": "Colombia",
+    "companyName": "SJ Motion Pictures",
+    "website": "https://sjmotionpictures.com",
+    "country": "Dominican Republic",
     "industry": "film",
-    "searchQuery": "estudio de posproduccion Bogota",
-    "summary": "ESP ENG WE ARE an audio post production and film scoring studio exporting services globally since 2010. We work with a wide range of clients from OTT VOD platforms to springing independent production companies and everyone in between. Our mission is to help you create an experience that will deeply move people.",
-    "notableClients": [],
-    "recentProjects": [],
-    "estimatedSize": "mid",
-    "unabaseScore": 5,
+    "summary": "Productora audiovisual especializada en cine, videos musicales y contenido para marcas. Producción cinematográfica profesional en República Dominicana.",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [
+      "audiovisual al siguiente nivel"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 7,
     "scopeVerified": true,
-    "scopeSignals": 10,
+    "scopeSignals": 7,
     "scopeLabel": "entertainment",
     "entertainmentVerified": true,
-    "entertainmentSignals": 10,
+    "entertainmentSignals": 7,
     "nicheVerified": true,
     "nicheReason": "niche_confirmed",
-    "ejeSignals": [],
-    "companyBrief": null,
+    "companyBrief": "Productora audiovisual dominicana especializada en cine, videos musicales y contenido para marcas. Trabajan con clientes como Facebook y se enfocan en llevar la producción audiovisual al siguiente nivel.",
     "approachAngle": null,
-    "pitchEmailES": "hola Andres — vi que en La Tina hacen post de sonido y musicalización para cine, trabajando con plataformas OTT y productoras de varios países.\n\ncon ese flujo de clientes internacionales, cómo llevan hoy el control de presupuestos y avances de cada proyecto — en hojas de cálculo y cadenas de correos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailES": "hola equipo de SJ Motion Pictures — vi que manejan desde producción cinematográfica hasta contenido para redes — formatos con estructuras de presupuesto muy distintas\n\n¿cómo organizan los presupuestos cuando tienen proyectos de escalas tan diferentes corriendo en paralelo?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
     "fitSignals": 2,
     "fitReasons": [
-      "mid_size_team",
+      "premium_clients",
       "high_ent_signals"
     ],
-    "ejeScores": null,
-    "scoringPass": true,
-    "scoringReason": "scoring_not_configured",
-    "_companyNameSource": "domain_canonical",
-    "contactName": "Andres Silva",
-    "contactTitle": "Founder / General Manager / Sound Supervisor",
-    "contactEmail": "andres@la-tina.co",
-    "contactLinkedIn": "http://www.linkedin.com/in/andres-silva-5bb7721a7",
-    "contactConfidence": "confirmed",
-    "contactSource": "apollo",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "alianzas@sjmotionpictures.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/latinasoundandmusic/",
-    "instagramHandle": "latinasoundandmusic",
+    "instagramUrl": "https://www.instagram.com/sjmotionpictures/",
+    "instagramHandle": "sjmotionpictures",
     "instagramBio": null,
     "instagramFollowers": null,
-    "facebookUrl": "https://www.facebook.com/LaTinaSoundDesignAndFilmScoring",
-    "twitterUrl": "https://twitter.com/LaTinaSonido",
-    "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": null,
+    "facebookUrl": "https://www.facebook.com/SJMotionPictures",
+    "twitterUrl": null,
+    "youtubeUrl": "https://youtube.com/@sjmotionpicture-s",
+    "vimeoUrl": "https://vimeo.com/user37593905",
+    "contactPhone": "+1 (849) 514-1070",
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -613,11 +262,206 @@
       },
       {
         "step": 1,
-        "found": "name+email",
-        "name": "Andres Silva",
-        "title": "Founder / General Manager / Sound Supervisor",
-        "email": "andres@la-tina.co",
-        "linkedin": "http://www.linkedin.com/in/andres-silva-5bb7721a7"
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "alianzas@sjmotionpictures.com"
+        ],
+        "genericEmails": [
+          "info@sjmotionpictures.com"
+        ],
+        "phones": [
+          "+1 (849) 514-1070"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/sjmotionpictures",
+          "facebook": "https://www.facebook.com/SJMotionPictures",
+          "twitter": null,
+          "youtube": "https://youtube.com/@sjmotionpicture-s",
+          "vimeo": "https://vimeo.com/user37593905",
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/sjmotionpictures/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "alianzas@sjmotionpictures.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "¡Hola! Scarlett desde UnaBase. Me encanta la diversidad de proyectos que manejan - desde cine hasta contenido para Facebook. ¿Cómo organizan los presupuestos entre formatos tan diferentes?",
+    "readyToSend": true,
+    "contactDecisionPower": "Medio",
+    "contactWhyThisPerson": "El email de alianzas sugiere que maneja partnerships y decisiones estratégicas de la productora.",
+    "whyThisLead": [
+      "Manejan múltiples formatos (cine, videos musicales, contenido de marca) que requieren estructuras de presupuesto diferentes",
+      "Trabajan con clientes premium como Facebook, indicando proyectos de presupuestos considerables",
+      "Productora en crecimiento que busca profesionalizar sus procesos para competir a nivel internacional"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su diversidad de formatos",
+      "Canal primario: email alianzas@sjmotionpictures.com",
+      "Tono profesional pero cercano, enfocado en eficiencia operativa"
+    ],
+    "conversationAngle": "Como productora que maneja desde largometrajes hasta contenido para Facebook, deben estar enfrentando el desafío de organizar presupuestos completamente diferentes en cada proyecto.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram DM",
+      "opcional": "WhatsApp"
+    },
+    "specificLine": "Vimos que manejan desde producción cinematográfica hasta contenido para Facebook - formatos que requieren estructuras de presupuesto completamente diferentes.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Sjmotionpictures! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Sjmotionpictures y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVimos que manejan desde producción cinematográfica hasta contenido para Facebook - formatos que requieren estructuras de presupuesto completamente diferentes.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVimos que manejan desde producción cinematográfica hasta contenido para Facebook - formatos que requieren estructuras de presupuesto completamente diferentes.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @sjmotionpictures",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo sobre la calidad visual de su último proyecto",
+      "dm": "¡Hola! Scarlett desde UnaBase. Me encanta la diversidad de proyectos que manejan - desde cine hasta contenido para Facebook. ¿Cómo organizan los presupuestos entre formatos tan diferentes?"
+    },
+    "whatsappMessage": "Hola! Soy Scarlett de UnaBase. Vi que Sjmotion maneja desde largometrajes hasta contenido para Facebook. ¿Cómo hacen para organizar presupuestos tan diferentes entre proyectos? Nos especializamos justo en ese tema.",
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Email personalizado sobre diversidad de formatos",
+      "Dia 2: Instagram follow + engagement en posts recientes",
+      "Dia 4: WhatsApp follow-up casual",
+      "Dia 7: Instagram DM final si no hay respuesta por email"
+    ],
+    "keyInsight": "Productora diversificada con cliente premium confirmado que enfrenta exactamente el dolor que UnaBase resuelve: múltiples formatos con estructuras de presupuesto diferentes.",
+    "source_date": "2026-05-19",
+    "approved": false
+  },
+  {
+    "companyName": "Acoustic Comunicación",
+    "website": "https://acousticcomunicacion.com",
+    "country": "Guatemala",
+    "industry": "commercial",
+    "summary": "Acoustic Comunicación: Videos Documentales y Animados 2D Educativos y para Capacitar, eventos, jingles y spots, streaming HD y doblaje.",
+    "notableClients": [
+      "Google"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "large",
+    "unabaseScore": 7,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "companyBrief": "Acoustic Comunicación produce videos documentales, animados 2D educativos, spots publicitarios y maneja streaming HD y doblaje desde Guatemala. Trabajan con Google y manejan múltiples formatos desde jingles hasta documentales.",
+    "approachAngle": null,
+    "pitchEmailES": "hola equipo de Acoustic Comunicación — vi que producen documentales, animación 2D, spots y contenido para streaming, todo en paralelo\n\n¿cómo controlan los presupuestos cuando cada formato tiene ritmos de caja y costos completamente distintos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "premium_clients",
+      "large_team",
+      "high_ent_signals"
+    ],
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "info@acousticcomunicacion.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "social_only",
+    "contactSource": "social",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/acousticcomunicacion/?hl=es-la",
+    "instagramHandle": "acousticcomunicacion",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://es-la.facebook.com/acousticcomunicacion/",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/379478900",
+    "contactPhone": "+50233747060",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
       },
       {
         "step": 3,
@@ -629,18 +473,66 @@
         "pagesScanned": 14,
         "personalEmails": [],
         "genericEmails": [
-          "info@la-tina.co"
+          "info@acousticcomunicacion.com"
         ],
         "phones": [],
-        "name": "Sound Designer",
+        "name": null,
         "social": {
-          "instagram": "https://www.instagram.com/latinasoundandmusic/",
-          "facebook": "https://www.facebook.com/LaTinaSoundDesignAndFilmScoring",
-          "twitter": "https://twitter.com/LaTinaSonido",
+          "instagram": "https://www.instagram.com/acousticcomunicacion/?hl=es-la",
+          "facebook": "https://es-la.facebook.com/acousticcomunicacion/",
+          "twitter": null,
           "youtube": null,
           "vimeo": null,
-          "instagramScore": 2
+          "instagramScore": 3
         }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
       },
       {
         "step": 8,
@@ -649,52 +541,122 @@
       },
       {
         "step": 8,
-        "igUrl": "https://www.instagram.com/latina/",
-        "igHandle": "latina",
-        "igFollowers": "546K",
-        "socialEmail": "info@la-tina.co",
+        "igUrl": "https://www.instagram.com/acousticcomunicacion/?hl=es-la",
+        "igHandle": "acousticcomunicacion",
+        "igFollowers": null,
+        "socialEmail": "info@acousticcomunicacion.com",
         "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": "+50233747060",
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "acousticcomunicacion",
+        "followers": null,
+        "email": null,
+        "phone": null,
+        "triedHandles": 6
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "+50233747060",
+          "+502 66106000"
+        ]
       },
       {
         "step": "founder_recovery",
         "started": true,
-        "name": "Andres Silva"
+        "name": "(none)"
       },
       {
         "step": "founder_recovery",
         "company_ig_tagged": []
       },
       {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/379478900"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
         "step": "founder_recovery",
         "final": {
-          "email": "andres@la-tina.co",
+          "email": "info@acousticcomunicacion.com",
           "additional": 0,
           "upgraded": false
         }
       }
     ],
-    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/la-tina-sonido",
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": 29,
-    "contactPath": "decision_maker_email",
-    "tier": "tier1",
-    "instagramDM": null,
-    "readyToSend": false,
-    "contactDecisionPower": null,
-    "whyThisLead": null,
-    "actionBlock": null,
-    "conversationAngle": null,
-    "channelPriority": null,
-    "emailCercana": null,
-    "emailFormal": null,
-    "instagramPlaybook": null,
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
-    "outreachSequence": null,
-    "keyInsight": null,
-    "_aiFailReason": "ai_timeout",
-    "_aiApiMsg": "canceled",
-    "source_date": "2026-05-18",
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/acoustic-comunicaci-n-s-a-",
+    "apolloCompanyPhone": "+502 6664 2754",
+    "apolloEmployeeCount": 4,
+    "contactVenues": 3,
+    "manualNote": "Email generico (info@acousticcomunicacion.com) — contactar tambien por Instagram @acousticcomunicacion",
+    "whoisCheckPending": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": "Hola! Vi su trabajo de animación 2D y documentales - súper profesional. Me imagino que manejar presupuestos entre formatos tan distintos debe ser complejo. ¿Cómo lo organizan?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Email general de la empresa, probablemente llegue a administración o dirección que puede conectar con el decisor final.",
+    "whyThisLead": [
+      "Manejan múltiples formatos (documentales, animación 2D, spots, streaming) con presupuestos muy diferentes",
+      "Cliente premium Google indica capacidad de pago y proyectos de escala",
+      "Productora multi-formato necesita organizar presupuestos complejos entre proyectos simultáneos"
+    ],
+    "actionBlock": [
+      "Enviar email específico mencionando los múltiples formatos",
+      "Email como canal primario al info@",
+      "Tono profesional pero directo, enfocado en la complejidad operativa"
+    ],
+    "conversationAngle": "Con documentales, animación 2D, spots y streaming corriendo al mismo tiempo, cada formato tiene ritmos de caja completamente distintos - especialmente trabajando para clientes como Google.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram",
+      "opcional": "WhatsApp"
+    },
+    "specificLine": "Con documentales, animación 2D, spots y streaming corriendo simultáneamente, cada formato tiene ritmos de presupuesto y caja completamente distintos.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Acousticcomunicacion! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Acousticcomunicacion y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon documentales, animación 2D, spots y streaming corriendo simultáneamente, cada formato tiene ritmos de presupuesto y caja completamente distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon documentales, animación 2D, spots y streaming corriendo simultáneamente, cada formato tiene ritmos de presupuesto y caja completamente distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @acousticcomunicacion",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo específico sobre la calidad de su trabajo de animación 2D o documentales",
+      "dm": "Hola! Vi su trabajo de animación 2D y documentales - súper profesional. Me imagino que manejar presupuestos entre formatos tan distintos debe ser complejo. ¿Cómo lo organizan?"
+    },
+    "whatsappMessage": "Hola desde EJE! Vimos su trabajo con Google y los múltiples formatos que manejan. Me imagino que cuadrar presupuestos entre documentales, animación y spots debe ser todo un reto. ¿Tienen 15 min para platicar?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola, trabajo con productoras multi-formato en Latinoamérica",
+      "followUp": "Hola! Vi que manejan desde documentales hasta animación 2D para clientes como Google. Me encantaría conocer cómo organizan los presupuestos entre formatos tan distintos."
+    },
+    "outreachSequence": [
+      "Dia 1: Email específico al info@ mencionando múltiples formatos",
+      "Dia 2: Follow en Instagram + likes a posts recientes",
+      "Dia 4: DM en Instagram preguntando por organización de presupuestos",
+      "Dia 7: WhatsApp final ofreciendo llamada de 15 minutos"
+    ],
+    "keyInsight": "Productora multi-formato con cliente premium que necesariamente enfrenta el dolor de presupuestos complejos entre documentales, animación y comerciales.",
+    "source_date": "2026-05-19",
     "approved": false
   }
 ]
