@@ -1,6 +1,361 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-05-19",
+      "source_date": "2026-05-19",
+      "file": "leads-2026-05-19.json",
+      "lead_count": 8,
+      "approved": true,
+      "approved_at": "2026-05-19T23:47:46.559Z",
+      "status": "active",
+      "supply_metrics": {
+        "valid_leads": 6,
+        "reserve_pool_size": 28,
+        "seen_domains": 907,
+        "total_query_pool": 281,
+        "estimated_days_supply": 83
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-18",
+      "source_date": "2026-05-18",
+      "file": "leads-2026-05-18.json",
+      "lead_count": 3,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 3,
+        "reserve_pool_size": 27,
+        "seen_domains": 647,
+        "total_query_pool": 281,
+        "estimated_days_supply": 252
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-17",
+      "source_date": "2026-05-17",
+      "file": "leads-2026-05-17.json",
+      "lead_count": 4,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 4,
+        "reserve_pool_size": 27,
+        "seen_domains": 628,
+        "total_query_pool": 281,
+        "estimated_days_supply": 194
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-16",
+      "source_date": "2026-05-16",
+      "file": "leads-2026-05-16.json",
+      "lead_count": 1,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 1,
+        "reserve_pool_size": 26,
+        "seen_domains": 603,
+        "total_query_pool": 281,
+        "estimated_days_supply": 802
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-15",
+      "source_date": "2026-05-15",
+      "file": "leads-2026-05-15.json",
+      "lead_count": 3,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 3,
+        "reserve_pool_size": 29,
+        "seen_domains": 584,
+        "total_query_pool": 281,
+        "estimated_days_supply": 273
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-13",
+      "source_date": "2026-05-13",
+      "file": "leads-2026-05-13.json",
+      "lead_count": 6,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 6,
+        "reserve_pool_size": 29,
+        "seen_domains": 567,
+        "total_query_pool": 281,
+        "estimated_days_supply": 139
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-07",
+      "source_date": "2026-05-07",
+      "file": "leads-2026-05-07.json",
+      "lead_count": 5,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 5,
+        "reserve_pool_size": 28,
+        "seen_domains": 545,
+        "total_query_pool": 281,
+        "estimated_days_supply": 172
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-06",
+      "source_date": "2026-05-06",
+      "file": "leads-2026-05-06.json",
+      "lead_count": 2,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 2,
+        "reserve_pool_size": 27,
+        "seen_domains": 519,
+        "total_query_pool": 281,
+        "estimated_days_supply": 443
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-05",
+      "source_date": "2026-05-05",
+      "file": "leads-2026-05-05.json",
+      "lead_count": 1,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 1,
+        "reserve_pool_size": 26,
+        "seen_domains": 501,
+        "total_query_pool": 281,
+        "estimated_days_supply": 904
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-04",
+      "source_date": "2026-05-04",
+      "file": "leads-2026-05-04.json",
+      "lead_count": 8,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "reserve_pool_size": 25,
+        "seen_domains": 476,
+        "total_query_pool": 281,
+        "estimated_days_supply": 116
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-05-01",
+      "source_date": "2026-05-01",
+      "file": "leads-2026-05-01.json",
+      "lead_count": 7,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 7,
+        "reserve_pool_size": 22,
+        "seen_domains": 445,
+        "total_query_pool": 281,
+        "estimated_days_supply": 137
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-30",
+      "source_date": "2026-04-30",
+      "file": "leads-2026-04-30.json",
+      "lead_count": 3,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 3,
+        "reserve_pool_size": 19,
+        "seen_domains": 413,
+        "total_query_pool": 281,
+        "estimated_days_supply": 330
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-29",
+      "source_date": "2026-04-29",
+      "file": "leads-2026-04-29.json",
+      "lead_count": 5,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 5,
+        "reserve_pool_size": 19,
+        "seen_domains": 397,
+        "total_query_pool": 281,
+        "estimated_days_supply": 201
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-28",
+      "source_date": "2026-04-28",
+      "file": "leads-2026-04-28.json",
+      "lead_count": 0,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 0,
+        "reserve_pool_size": 16,
+        "seen_domains": 364,
+        "total_query_pool": 281,
+        "estimated_days_supply": 1041
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-27",
+      "source_date": "2026-04-27",
+      "file": "leads-2026-04-27.json",
+      "lead_count": 7,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 7,
+        "reserve_pool_size": 24,
+        "seen_domains": 323,
+        "total_query_pool": 281,
+        "estimated_days_supply": 154
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-25",
+      "source_date": "2026-04-25",
+      "file": "leads-2026-04-25.json",
+      "lead_count": 6,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 6,
+        "reserve_pool_size": 23,
+        "seen_domains": 293,
+        "total_query_pool": 281,
+        "estimated_days_supply": 185
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-24",
+      "source_date": "2026-04-24",
+      "file": "leads-2026-04-24.json",
+      "lead_count": 1,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 1,
+        "reserve_pool_size": 20,
+        "seen_domains": 248,
+        "total_query_pool": 281,
+        "estimated_days_supply": 1157
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-23",
+      "source_date": "2026-04-23",
+      "file": "leads-2026-04-23.json",
+      "lead_count": 7,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 7,
+        "reserve_pool_size": 28,
+        "seen_domains": 233,
+        "total_query_pool": 281,
+        "estimated_days_supply": 167
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-22",
+      "source_date": "2026-04-22",
+      "file": "leads-2026-04-22.json",
+      "lead_count": 8,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "reserve_pool_size": 27,
+        "seen_domains": 206,
+        "total_query_pool": 281,
+        "estimated_days_supply": 149
+      },
+      "workspace": "unabase_default"
+    },
+    {
+      "batch_id": "batch-2026-04-21",
+      "source_date": "2026-04-21",
+      "file": "leads-2026-04-21.json",
+      "lead_count": 9,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 9,
+        "reserve_pool_size": 25,
+        "seen_domains": 168,
+        "total_query_pool": 281,
+        "estimated_days_supply": 137
+      }
+    },
+    {
+      "batch_id": "batch-2026-04-20",
+      "source_date": "2026-04-20",
+      "file": "leads-2026-04-20.json",
+      "lead_count": 8,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "reserve_pool_size": 22,
+        "seen_domains": 128,
+        "total_query_pool": 281,
+        "estimated_days_supply": 159
+      }
+    },
+    {
       "batch_id": "batch-2026-04-17",
       "source_date": "2026-04-17",
       "file": "leads-2026-04-17.json",
@@ -68,6 +423,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-04-17",
+  "active_batch_id": "batch-2026-05-19",
   "timezone": "America/New_York"
 }
