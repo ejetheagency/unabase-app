@@ -1011,15 +1011,28 @@ function refresh(){renderDay();if(typeof renderAccionAhora==='function')renderAc
 function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}ejeClassifyAll(TL);merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
 // ═══ DATE-GATING: Timezone-aware activation (America/New_York) ═══
 function gateLeads(leads){
+  // V4.1 gate doctrine (operator-set 2026-05-20):
+  //   - Today's leads → ALWAYS shown (no time-of-day gate).
+  //   - Future-dated leads → blocked (data integrity).
+  //   - Unapproved leads → blocked (operator hasn't OK'd).
+  //   - PAST-dated leads → shown UNLESS marked done (status in SEQ_STOPS:
+  //     replied, meeting, closed, skip). "Done" = reached out + closed loop.
   const nowET=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'}));
   const todayET=nowET.toISOString().slice(0,10);
   // Safety: ensure every lead has source_date. Missing → default to today ET.
   leads.forEach(l=>{if(!l.source_date)l.source_date=todayET;});
-  const hourET=nowET.getHours();
+  const D=db();
   return leads.filter(l=>{
     if(l.source_date&&l.source_date>todayET){console.warn('[GATE] Blocked future lead:',l.companyName,l.source_date);return false}
-    if(l.source_date===todayET&&hourET<8){console.warn('[GATE] Blocked pre-8AM-ET lead:',l.companyName);return false}
     if(l.approved===false){console.warn('[GATE] Blocked unapproved lead:',l.companyName);return false}
+    if(l.source_date&&l.source_date<todayET){
+      const id=dom(l.website);
+      const rec=id?D[id]:null;
+      if(rec&&SEQ_STOPS.includes(rec.st)){
+        console.warn('[GATE] Blocked past lead marked done:',l.companyName,'('+rec.st+', source_date '+l.source_date+')');
+        return false;
+      }
+    }
     return true;
   });
 }
