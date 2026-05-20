@@ -1,6 +1,23 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-05-20",
+      "source_date": "2026-05-20",
+      "file": "leads-seeds-2026-05-20.json",
+      "lead_count": 8,
+      "approved": true,
+      "approved_at": "2026-05-20T03:36:53.601Z",
+      "status": "active",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "reserve_pool_size": 0,
+        "seen_domains": 11,
+        "total_query_pool": 0,
+        "estimated_days_supply": -2
+      },
+      "workspace": "unabase_seeds"
+    },
+    {
       "batch_id": "batch-2026-05-19",
       "source_date": "2026-05-19",
       "file": "leads-2026-05-19.json",
@@ -426,6 +443,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-05-19",
+  "active_batch_id": "batch-2026-05-20",
   "timezone": "America/New_York"
 }
