@@ -4,7 +4,7 @@
       "batch_id": "batch-2026-05-19",
       "source_date": "2026-05-19",
       "file": "leads-2026-05-19.json",
-      "lead_count": 8,
+      "lead_count": 1,
       "approved": true,
       "approved_at": "2026-05-19T23:47:46.559Z",
       "status": "active",
@@ -15,7 +15,9 @@
         "total_query_pool": 281,
         "estimated_days_supply": 83
       },
-      "workspace": "unabase_default"
+      "workspace": "unabase_default",
+      "rolled_back_at": "2026-05-20T00:14:20.133Z",
+      "rollback_reason": "governance-fail-spot-check"
     },
     {
       "batch_id": "batch-2026-05-18",
