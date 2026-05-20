@@ -217,8 +217,8 @@
     "contactConfidence": "confirmed",
     "contactSource": "apollo",
     "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/tis_studios/",
-    "instagramHandle": "tis_studios",
+    "instagramUrl": "https://www.instagram.com/tis__studios/",
+    "instagramHandle": "tis__studios",
     "instagramBio": "See Instagram photos and videos from TIS Studios (@tis__studios)",
     "instagramFollowers": "95K",
     "facebookUrl": "https://www.facebook.com/TISStudios",
@@ -374,7 +374,9 @@
     "approved": true,
     "approved_at": "2026-05-20T00:22:31.933Z",
     "_igVerifiedManually": true,
-    "_igVerifiedSource": "operator-spot-check-2026-05-19"
+    "_igVerifiedSource": "operator-spot-check-2026-05-19",
+    "_igVerified": true,
+    "_igVerificationReason": "operator-verified-correction"
   },
   {
     "companyName": "KOKALEKA",
@@ -414,10 +416,10 @@
     "_companyNameSource": "domain_canonical",
     "contactName": null,
     "contactTitle": null,
-    "contactEmail": null,
+    "contactEmail": "info@kokaleka.com.do",
     "contactLinkedIn": null,
-    "contactConfidence": "not_found",
-    "contactSource": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "operator-verified",
     "instagramUrl": "https://www.instagram.com/kokalekard/",
     "instagramHandle": "kokalekard",
     "instagramBio": null,
@@ -437,8 +439,7 @@
     "scoutPartial": true,
     "scoutPartialReason": "scout_timeout_partial",
     "contactPath": "company_fallback",
-    "contactPathLabel": "manual/social contact path (IG + LinkedIn + phone)",
-    "tier": "tier3",
+    "tier": "tier2",
     "instagramDM": null,
     "readyToSend": true,
     "contactDecisionPower": "Bajo",
@@ -481,6 +482,13 @@
     "approved": true,
     "approved_at": "2026-05-20T00:22:31.933Z",
     "_igVerifiedManually": true,
-    "_igVerifiedSource": "operator-spot-check-2026-05-19"
+    "_igVerifiedSource": "operator-spot-check-2026-05-19",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin",
+      "phone"
+    ],
+    "_streamCount": 4
   }
 ]
