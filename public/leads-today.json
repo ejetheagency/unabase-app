@@ -171,6 +171,316 @@
     "keyInsight": "Productora de 660 empleados con broadcasters globales tiene complejidad operacional que justifica invertir en herramientas especializadas.",
     "source_date": "2026-05-19",
     "approved": true,
-    "approved_at": "2026-05-19T23:47:46.559Z"
+    "approved_at": "2026-05-20T00:22:31.933Z"
+  },
+  {
+    "companyName": "Tisproductions",
+    "website": "https://tisproductions.com",
+    "country": "Colombia",
+    "industry": "tv",
+    "searchQuery": "casa productora series web Colombia",
+    "summary": "estudio líder regional en la producción de series premium, teleseries, realities y películas, así como contenido de deportes en vivo",
+    "notableClients": [
+      "Paramount",
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "TisProductions es un estudio líder regional en Colombia que produce series premium, teleseries, realities y películas para clientes como Paramount. Con 420 empleados, manejan múltiples formatos de contenido simultáneamente desde deportes en vivo hasta producciones cinematográficas.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Samuel! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Tisproductions y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon la variedad de formatos que manejan, desde series premium hasta deportes en vivo, imagino que cuadrar presupuestos entre proyectos tan distintos debe ser un rompecabezas constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "_companyNameSource": "domain_canonical",
+    "contactName": "Samuel Duque",
+    "contactTitle": "President",
+    "contactEmail": "samuel.duque@tisproductions.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/samuel-duque-duque-7372a0111",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/tis_studios/",
+    "instagramHandle": "tis_studios",
+    "instagramBio": "See Instagram photos and videos from TIS Studios (@tis__studios)",
+    "instagramFollowers": "95K",
+    "facebookUrl": "https://www.facebook.com/TISStudios",
+    "twitterUrl": "https://x.com/TIS_Studios",
+    "youtubeUrl": "https://www.youtube.com/@TIS_StudiosTV",
+    "vimeoUrl": null,
+    "contactPhone": "860.063.869",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Samuel Duque",
+        "title": "President",
+        "email": "samuel.duque@tisproductions.com",
+        "linkedin": "http://www.linkedin.com/in/samuel-duque-duque-7372a0111"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "warn": "IG handle @tisstudios does not match domain \"tisproductions\" — may be wrong company"
+      },
+      {
+        "step": 3,
+        "pagesScanned": 15,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@tisproductions.com",
+          "info@tisproductions.com"
+        ],
+        "phones": [
+          "55 5025 3954"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/tis__studios/",
+          "facebook": "https://www.facebook.com/TISStudios",
+          "twitter": "https://x.com/TIS_Studios",
+          "youtube": "https://www.youtube.com/@TIS_StudiosTV",
+          "vimeo": null,
+          "instagramScore": 0
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/tis__studios/",
+        "igHandle": "tis__studios",
+        "igFollowers": "95K",
+        "socialEmail": "mf.mendez@tisproductions.com",
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/tisproductions/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "860.063.869"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Samuel Duque"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "samuel.duque@tisproductions.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/tisstudios",
+    "apolloCompanyPhone": "+44 20 7739 9130",
+    "apolloEmployeeCount": 420,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "instagramDM": "¡Hola Samuel! Increíble el nivel de producción que manejan con Paramount. Me imagino que coordinar presupuestos entre tantos formatos debe ser intenso. ¿Tienes 15 min esta semana para platicar?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como President, Samuel tiene autoridad total sobre decisiones operativas y tecnológicas del estudio.",
+    "whyThisLead": [
+      "Manejan múltiples formatos (series, realities, películas, deportes) con estructuras de costos completamente distintas",
+      "420 empleados y clientes premium como Paramount indican volumen alto de proyectos simultáneos",
+      "Estudios regionales líderes necesitan control financiero preciso para competir con majors"
+    ],
+    "actionBlock": [
+      "Enviar email específico sobre gestión de presupuestos multi-formato",
+      "Canal primario: email directo",
+      "Tono profesional pero directo, nivel C-suite"
+    ],
+    "conversationAngle": "Cómo están manejando los presupuestos cuando tienen una teleserie, un reality y contenido deportivo corriendo al mismo tiempo - cada uno con flujos de caja totalmente distintos.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "LinkedIn",
+      "opcional": "Instagram"
+    },
+    "specificLine": "Con la variedad de formatos que manejan, desde series premium hasta deportes en vivo, imagino que cuadrar presupuestos entre proyectos tan distintos debe ser un rompecabezas constante.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola Samuel! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Tisproductions y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon la variedad de formatos que manejan, desde series premium hasta deportes en vivo, imagino que cuadrar presupuestos entre proyectos tan distintos debe ser un rompecabezas constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado/a Samuel,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon la variedad de formatos que manejan, desde series premium hasta deportes en vivo, imagino que cuadrar presupuestos entre proyectos tan distintos debe ser un rompecabezas constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @tisproductions",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar algo específico sobre la calidad de producción o un proyecto reciente",
+      "dm": "¡Hola Samuel! Increíble el nivel de producción que manejan con Paramount. Me imagino que coordinar presupuestos entre tantos formatos debe ser intenso. ¿Tienes 15 min esta semana para platicar?"
+    },
+    "whatsappMessage": "Hola Samuel, soy Scarlett de UnaBase. Vimos el trabajo que hacen con Paramount - impresionante nivel. Me imagino que manejar presupuestos entre series, realities y deportes debe ser complejo. ¿Tienes 15 min esta semana?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Samuel, admiro el trabajo de TisProductions con Paramount",
+      "followUp": "Samuel, con la variedad de formatos que producen, me imagino que organizar presupuestos entre proyectos debe ser todo un desafío. Me encantaría platicar 15 min sobre cómo otros estudios lo están resolviendo."
+    },
+    "outreachSequence": [
+      "Día 1: Email específico sobre gestión multi-formato",
+      "Día 2: LinkedIn connection con mensaje personalizado",
+      "Día 4: Instagram engagement + DM casual",
+      "Día 7: WhatsApp directo si no hay respuesta en otros canales"
+    ],
+    "keyInsight": "Estudio regional líder con clientes majors necesita herramientas de nivel internacional para competir - pain point directo de UnaBase.",
+    "source_date": "2026-05-19",
+    "approved": true,
+    "approved_at": "2026-05-20T00:22:31.933Z",
+    "_igVerifiedManually": true,
+    "_igVerifiedSource": "operator-spot-check-2026-05-19"
+  },
+  {
+    "companyName": "KOKALEKA",
+    "website": "https://kokaleka.com.do",
+    "country": "Dominican Republic",
+    "industry": "film",
+    "searchQuery": "productora audiovisual Santo Domingo",
+    "summary": "Somos una casa productora audiovisual radicada en Santo Domingo, República Dominicana con más de 20 años de experiencia.",
+    "notableClients": [
+      "Universal",
+      "Toyota"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 6,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Casa productora audiovisual dominicana con 20+ años de experiencia. Trabajan con clientes internacionales como Universal y Toyota.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de KOKALEKA! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en KOKALEKA y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años como casa productora audiovisual, seguramente manejan presupuestos de diferentes escalas corriendo simultáneamente.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "premium_clients",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "_companyNameSource": "domain_canonical",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": null,
+    "contactLinkedIn": null,
+    "contactConfidence": "not_found",
+    "contactSource": null,
+    "instagramUrl": "https://www.instagram.com/kokalekard/",
+    "instagramHandle": "kokalekard",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "contactPhone": "809-908-2871",
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/kokaleka-film-post",
+    "apolloCompanyPhone": "+1 809-908-2871",
+    "apolloEmployeeCount": 7,
+    "scoutLog": [
+      {
+        "step": "aborted",
+        "reason": "timeout",
+        "salvaged": true
+      }
+    ],
+    "_scoutAborted": "timeout",
+    "scoutPartial": true,
+    "scoutPartialReason": "scout_timeout_partial",
+    "contactPath": "company_fallback",
+    "contactPathLabel": "manual/social contact path (IG + LinkedIn + phone)",
+    "tier": "tier3",
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Sin contacto identificado, necesitamos encontrar al CEO o Director de Producción.",
+    "whyThisLead": [
+      "20 años de experiencia indica múltiples proyectos simultáneos",
+      "Clientes premium como Universal y Toyota sugieren presupuestos complejos",
+      "Productora consolidada que maneja formatos diversos (cine, publicidad)"
+    ],
+    "actionBlock": [
+      "Llamar al 809-908-2871 para identificar decisor",
+      "LinkedIn para mapear equipo directivo",
+      "Tono profesional pero directo"
+    ],
+    "conversationAngle": "Con clientes como Universal, seguramente manejan presupuestos de diferentes escalas simultáneamente - ¿cómo organizan los números cuando tienen proyectos de cine y publicidad corriendo en paralelo?",
+    "channelPriority": {
+      "primario": "teléfono",
+      "secundario": "LinkedIn",
+      "opcional": "email una vez identificado contacto"
+    },
+    "specificLine": "Con más de 20 años como casa productora audiovisual, seguramente manejan presupuestos de diferentes escalas corriendo simultáneamente.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de KOKALEKA! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en KOKALEKA y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años como casa productora audiovisual, seguramente manejan presupuestos de diferentes escalas corriendo simultáneamente.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años como casa productora audiovisual, seguramente manejan presupuestos de diferentes escalas corriendo simultáneamente.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Hola! Vimos que trabajan con clientes como Universal - con 20 años en el mercado seguro manejan varios proyectos a la vez. ¿Cómo organizan los presupuestos cuando tienen cine y publicidad corriendo simultáneamente?",
+    "linkedinPlaybook": {
+      "connectionNote": "Productora con gran trayectoria - me interesa conocer más sobre sus proyectos",
+      "followUp": "Con Universal y Toyota como clientes, seguramente manejan presupuestos complejos en paralelo. ¿Cómo organizan los números entre proyectos de diferentes formatos?"
+    },
+    "outreachSequence": [
+      "Dia 1: Llamar para identificar decisor + revisar LinkedIn de la empresa",
+      "Dia 2: Conectar en LinkedIn con contacto identificado",
+      "Dia 4: Enviar mensaje directo mencionando clientes premium",
+      "Dia 7: Llamada final ofreciendo demo rápida de 15 minutos"
+    ],
+    "keyInsight": "Productora establecida con clientes premium que definitivamente maneja presupuestos complejos simultáneos.",
+    "source_date": "2026-05-19",
+    "approved": true,
+    "approved_at": "2026-05-20T00:22:31.933Z",
+    "_igVerifiedManually": true,
+    "_igVerifiedSource": "operator-spot-check-2026-05-19"
   }
 ]
