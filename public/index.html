@@ -1307,8 +1307,20 @@ function computeExecutionCycle(rec, lead) {
   let channel = fu.step.channel;
   const emailUsable = !!(lead.contactEmail && String(lead.contactEmail).trim());
   const hasIg = !!(lead.instagramUrl || lead.instagramHandle);
-  // R2 — pivot
-  if (channel === 'email' && !emailUsable && hasIg) channel = 'ig';
+  const hasPhone = !!(lead.contactPhone || lead.apolloCompanyPhone);
+  // R2 — pivot (operator-doctrine 2026-05-21):
+  // When the lead has no usable email, the pivot order is:
+  //   1. mainChannel === 'phone_whatsapp' + hasPhone → WhatsApp (operator
+  //      exception path; used when operator manually approved a lead w/o
+  //      email and provided a direct WhatsApp contact, e.g. Cinepantera).
+  //   2. hasIg → IG DM (default email-less fallback).
+  if (channel === 'email' && !emailUsable) {
+    if ((lead.mainChannel === 'phone_whatsapp' || lead.mainChannel === 'whatsapp') && hasPhone) {
+      channel = 'wa';
+    } else if (hasIg) {
+      channel = 'ig';
+    }
+  }
   const isFollowUp = fu.cycle >= 2;
   const ig = lead.instagramHandle || (lead.instagramUrl ? (lead.instagramUrl.match(/instagram\.com\/([^/]+)/) || [])[1] : null);
   const phone = lead.contactPhone || lead.apolloCompanyPhone;
@@ -1426,7 +1438,10 @@ function computeExecutionCycle(rec, lead) {
   const paso2Body = day23 || (
     paso1.channelKey === 'email' ? 'Follow-up corto por el mismo canal si no hubo respuesta.' :
     paso1.channelKey === 'ig' ? 'Segundo DM breve referenciando el primero.' :
-    paso1.channelKey === 'wa' ? 'Segundo WhatsApp breve referenciando el primero.' : ''
+    // For WhatsApp-primary leads (operator exception), the second touch is IG DM
+    // when available (operator-doctrine: IG is the secondary channel for these).
+    // Falls back to a second WhatsApp only if no IG exists.
+    paso1.channelKey === 'wa' ? (hasIg ? 'DM Instagram breve referenciando el WhatsApp inicial (canal secundario).' : 'Segundo WhatsApp breve referenciando el primero.') : ''
   );
   const paso2 = { body: paso2Body, when: '48h', conditional: true };
 
