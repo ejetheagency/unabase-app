@@ -997,7 +997,7 @@
     "tier": "tier3_exception",
     "contactPath": "phone_whatsapp_operator_exception",
     "contactName": "Ariel Blasco",
-    "contactTitle": null,
+    "contactTitle": "Productor",
     "contactEmail": null,
     "contactPhone": "+54 9 2616 40-0262",
     "instagramUrl": "https://www.instagram.com/panteracine",
@@ -1009,22 +1009,28 @@
     "_operatorRecovered": true,
     "_supportingProfileUrl": "https://www.screenglobalproduction.com/country/mexico/profile/cinepantera",
     "source_date": "2026-05-21",
-    "manualNote": "EMAIL PENDING — operator must add contactEmail before send. Phone, IG, name operator-verified. Directory profile at supportingProfileUrl shows phone only (email gated). Christian Valdelièvre is the producer.",
+    "manualNote": "Canal principal: WhatsApp a Ariel Blasco (+54 9 2616 40-0262). IG @panteracine como secundario. Sin email — excepcion operativa por debajo del minimo de 8 leads. NO usar email.",
     "companyBrief": "Cinepantera — productora cinematográfica con contacto principal Ariel Blasco (+54 9 2616 40-0262, WhatsApp). IG: @panteracine. Información de contacto verificada manualmente por operador. Web cinepantera.com en construcción al momento del enriquecimiento; perfil de respaldo en Screen Global Production.",
-    "pitchEmailES": null,
-    "emailCercana": null,
+    "pitchEmailES": "Hola Ariel! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Cinepantera y nos llamo la atencion como manejan su pipeline de proyectos.\n\nTrabajamos con mas de 300 productoras ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion — especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region. Cuando te queda mejor esta semana?\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Ariel! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Cinepantera y nos llamo la atencion como manejan su pipeline de proyectos.\n\nTrabajamos con mas de 300 productoras ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion — especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region. Cuando te queda mejor esta semana?\n\nSaludos,\nScarlett",
     "emailFormal": null,
     "readyToSend": true,
     "apolloCompanyPhone": "+52 555 574 5243",
     "mainChannel": "phone_whatsapp",
     "_deployExceptionReason": "No email recovered from cinepantera.com (Coming Soon page) or directory profile. Operator exception: outreach via Ariel Blasco WhatsApp +54 9 2616 40-0262. Mexico company phone retained as secondary. Single-batch exception, NOT a doctrine change.",
-    "whatsappMessage": "Hola Ariel! Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Cinepantera y nos llamó la atención cómo manejan su pipeline de proyectos.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción — especialmente cuando hay múltiples proyectos en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras de la región. Cuándo te queda mejor esta semana?\n\nSaludos,\nScarlett",
+    "whatsappMessage": "Hola Ariel! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Cinepantera y nos llamo la atencion como manejan su pipeline de proyectos.\n\nTrabajamos con mas de 300 productoras ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion — especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region. Cuando te queda mejor esta semana?\n\nSaludos,\nScarlett",
     "channelPriority": {
       "primario": "WhatsApp",
       "secundario": "Instagram DM",
-      "opcional": "email cuando aparezca"
+      "opcional": "IG follow"
     },
-    "approved": true
+    "approved": true,
+    "instagramDM": "Hola Ariel! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Cinepantera y nos llamo la atencion. Trabajamos con 300+ productoras ordenando presupuestos de produccion sin friccion.\n\nTe muestro en 10 min como lo usan otras de la region — cuando te queda mejor?",
+    "outreachSequence": [
+      "Dia 1: WhatsApp a Ariel Blasco (+54 9 2616 40-0262) con el mensaje arriba",
+      "Dia 3: IG DM a @panteracine si no hay respuesta",
+      "Dia 7: Re-engage WhatsApp con angle diferente"
+    ]
   },
   {
     "companyName": "K&S Films",
