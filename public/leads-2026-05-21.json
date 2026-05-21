@@ -293,7 +293,7 @@
     ],
     "keyInsight": "Los eventos corporativos requieren presupuestación multi-formato (producción + logística + tech) que es exactamente el dolor que UnaBase resuelve.",
     "source_date": "2026-05-21",
-    "approved": false
+    "approved": true
   },
   {
     "companyName": "Alto Films",
@@ -492,7 +492,7 @@
     ],
     "keyInsight": "Productora pequeña con cliente enterprise que maneja dos formatos de producción muy distintos - el dolor de presupuestación es real y urgente.",
     "source_date": "2026-05-21",
-    "approved": false
+    "approved": true
   },
   {
     "companyName": "Elote Films",
@@ -716,7 +716,7 @@
     ],
     "keyInsight": "Productora establecida con equipo de tamaño perfecto para tener el problema (múltiples proyectos) pero no la solución (software especializado).",
     "source_date": "2026-05-21",
-    "approved": false,
+    "approved": true,
     "_operatorRecovered": true
   },
   {
@@ -985,7 +985,7 @@
     ],
     "keyInsight": "Equipo ultra-compacto (3 personas) manejando largometrajes complejos indica alta necesidad de automatización en procesos administrativos para mantener foco creativo.",
     "source_date": "2026-05-21",
-    "approved": false,
+    "approved": true,
     "_sourceWorkspace": "unabase_mx_test",
     "_fromYesterdayValidation": true
   },
@@ -1023,7 +1023,8 @@
       "primario": "WhatsApp",
       "secundario": "Instagram DM",
       "opcional": "email cuando aparezca"
-    }
+    },
+    "approved": true
   },
   {
     "companyName": "K&S Films",
@@ -1370,6 +1371,7 @@
       "primario": "email",
       "secundario": "LinkedIn",
       "opcional": "Instagram DM"
-    }
+    },
+    "approved": true
   }
 ]
