@@ -1,6 +1,23 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-05-21",
+      "source_date": "2026-05-21",
+      "file": "leads-mx-v1-2026-05-21.json",
+      "lead_count": 6,
+      "approved": false,
+      "approved_at": null,
+      "status": "draft",
+      "supply_metrics": {
+        "valid_leads": 6,
+        "reserve_pool_size": 0,
+        "seen_domains": 7,
+        "total_query_pool": 0,
+        "estimated_days_supply": -2
+      },
+      "workspace": "unabase_mx_v1"
+    },
+    {
       "batch_id": "batch-2026-05-20",
       "source_date": "2026-05-20",
       "file": "leads-seeds-2026-05-20.json",

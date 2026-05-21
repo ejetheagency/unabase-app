@@ -1,0 +1,2188 @@
+[
+  {
+    "companyName": "Frame",
+    "website": "https://frame.com.ar",
+    "country": "Argentina",
+    "industry": "commercial",
+    "searchQuery": "productora de contenido digital Argentina",
+    "summary": "FRAME Somos una productora de contenido y servicios audiovisuales líder, de trayectoria y reconocimiento internacional. Cubrimos de forma integral todas las necesidades de la industria: Desarrollo y guion. Servicios de producción.",
+    "notableClients": [],
+    "recentProjects": [
+      "work for major leading global broadcaster"
+    ],
+    "estimatedSize": "large",
+    "unabaseScore": 6,
+    "scopeVerified": true,
+    "scopeSignals": 10,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 10,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Frame es una productora audiovisual argentina líder con 660 empleados que ofrece servicios integrales desde desarrollo hasta producción. Trabajan para broadcasters globales importantes y mantienen presencia internacional con clientes premium.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Andrea! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Frame y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVimos que trabajan con broadcasters globales importantes y manejan múltiples producciones simultáneas - la mayoría de productoras de su escala nos cuentan que coordinar presupuestos entre proyectos paralelos en Excel se vuelve un dolor de cabeza.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "large_team",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": "Andrea Quinteiro",
+    "contactTitle": "Executive Producer",
+    "contactEmail": "andrea.quinteiro@frame.com.ar",
+    "contactLinkedIn": "http://www.linkedin.com/in/andrea-quinteiro-16555ba",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/frame.productora/?hl=es-la",
+    "instagramHandle": "frame.productora",
+    "instagramBio": null,
+    "instagramFollowers": "3,280",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@frame.productora",
+    "vimeoUrl": "https://vimeo.com/framezero",
+    "contactPhone": "+54 911 5581-3642",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Andrea Quinteiro",
+        "title": "Executive Producer",
+        "email": "andrea.quinteiro@frame.com.ar",
+        "linkedin": "http://www.linkedin.com/in/andrea-quinteiro-16555ba"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@frame.com.ar"
+        ],
+        "phones": [
+          "+54 911 5581-3642",
+          "+54 011 4553-7188"
+        ],
+        "name": "Andrea Quinteiro",
+        "social": {
+          "instagram": "https://www.instagram.com/frame.productora/?hl=es-la",
+          "facebook": null,
+          "twitter": null,
+          "youtube": "https://www.youtube.com/@frame.productora",
+          "vimeo": "https://vimeo.com/framezero",
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/frame.productora/?hl=es-la",
+        "igHandle": "frame.productora",
+        "igFollowers": "3,280",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Andrea Quinteiro"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "andrea.quinteiro@frame.com.ar",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/frame-denim",
+    "apolloCompanyPhone": "+1 424-400-2256",
+    "apolloEmployeeCount": 660,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "instagramDM": "Hola! Vi el contenido que producen para broadcasters globales - debe ser complejo coordinar tantos proyectos. Te mando algo que te puede interesar para optimizar esa parte operativa.",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como Executive Producer, Andrea toma decisiones sobre herramientas y procesos de producción que impactan directamente los presupuestos.",
+    "whyThisLead": [
+      "Productora con múltiples proyectos simultáneos para broadcasters globales requiere control presupuestario sofisticado",
+      "660 empleados indica operación compleja con múltiples formatos y flujos de presupuesto",
+      "Productoras de este tamaño típicamente luchan con Excel para coordinar presupuestos entre proyectos paralelos"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su trabajo con broadcasters globales",
+      "Email como canal primario, Instagram como seguimiento",
+      "Tono profesional pero directo, enfocado en eficiencia operacional"
+    ],
+    "conversationAngle": "Cómo coordinan presupuestos cuando manejan múltiples producciones para broadcasters globales simultáneamente - la mayoría de productoras de su escala luchan con Excel para esto.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram",
+      "opcional": "WhatsApp"
+    },
+    "specificLine": "Vimos que trabajan con broadcasters globales importantes y manejan múltiples producciones simultáneas - la mayoría de productoras de su escala nos cuentan que coordinar presupuestos entre proyectos paralelos en Excel se vuelve un dolor de cabeza.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola Andrea! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Frame y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVimos que trabajan con broadcasters globales importantes y manejan múltiples producciones simultáneas - la mayoría de productoras de su escala nos cuentan que coordinar presupuestos entre proyectos paralelos en Excel se vuelve un dolor de cabeza.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado/a Andrea,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVimos que trabajan con broadcasters globales importantes y manejan múltiples producciones simultáneas - la mayoría de productoras de su escala nos cuentan que coordinar presupuestos entre proyectos paralelos en Excel se vuelve un dolor de cabeza.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atenta,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @frame.productora",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar algo específico sobre su trabajo con broadcasters: 'Increíble el nivel de producción que manejan 👏'",
+      "dm": "Hola! Vi el contenido que producen para broadcasters globales - debe ser complejo coordinar tantos proyectos. Te mando algo que te puede interesar para optimizar esa parte operativa."
+    },
+    "whatsappMessage": "Hola Andrea! Soy Scarlett de UnaBase. Vi que Frame maneja producciones para broadcasters globales importantes. Desarrollamos algo específico para productoras que coordinan múltiples proyectos - ¿te interesa una demo rápida?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Andrea, me interesa conocer más sobre la operación de Frame con broadcasters globales",
+      "followUp": "Gracias por conectar Andrea. Vi que manejan múltiples producciones simultáneas - desarrollamos algo específico para optimizar la coordinación presupuestaria en productoras de su escala."
+    },
+    "outreachSequence": [
+      "Día 1: Email personalizado mencionando broadcasters globales",
+      "Día 2: Seguir en Instagram y engagement con posts recientes",
+      "Día 4: WhatsApp de seguimiento casual",
+      "Día 7: LinkedIn connection con mensaje final si no hay respuesta"
+    ],
+    "keyInsight": "Productora de 660 empleados con broadcasters globales tiene complejidad operacional que justifica invertir en herramientas especializadas.",
+    "source_date": "2026-05-19",
+    "approved": true,
+    "approved_at": "2026-05-20T00:22:31.933Z"
+  },
+  {
+    "companyName": "Tisproductions",
+    "website": "https://tisproductions.com",
+    "country": "Colombia",
+    "industry": "tv",
+    "searchQuery": "casa productora series web Colombia",
+    "summary": "estudio líder regional en la producción de series premium, teleseries, realities y películas, así como contenido de deportes en vivo",
+    "notableClients": [
+      "Paramount",
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "TisProductions es un estudio líder regional en Colombia que produce series premium, teleseries, realities y películas para clientes como Paramount. Con 420 empleados, manejan múltiples formatos de contenido simultáneamente desde deportes en vivo hasta producciones cinematográficas.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Samuel! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Tisproductions y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon la variedad de formatos que manejan, desde series premium hasta deportes en vivo, imagino que cuadrar presupuestos entre proyectos tan distintos debe ser un rompecabezas constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 3,
+    "fitReasons": [
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "_companyNameSource": "domain_canonical",
+    "contactName": "Samuel Duque",
+    "contactTitle": "President",
+    "contactEmail": "samuel.duque@tisproductions.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/samuel-duque-duque-7372a0111",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/tis__studios/",
+    "instagramHandle": "tis__studios",
+    "instagramBio": "See Instagram photos and videos from TIS Studios (@tis__studios)",
+    "instagramFollowers": "95K",
+    "facebookUrl": "https://www.facebook.com/TISStudios",
+    "twitterUrl": "https://x.com/TIS_Studios",
+    "youtubeUrl": "https://www.youtube.com/@TIS_StudiosTV",
+    "vimeoUrl": null,
+    "contactPhone": "860.063.869",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "name+email",
+        "name": "Samuel Duque",
+        "title": "President",
+        "email": "samuel.duque@tisproductions.com",
+        "linkedin": "http://www.linkedin.com/in/samuel-duque-duque-7372a0111"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "warn": "IG handle @tisstudios does not match domain \"tisproductions\" — may be wrong company"
+      },
+      {
+        "step": 3,
+        "pagesScanned": 15,
+        "personalEmails": [],
+        "genericEmails": [
+          "contacto@tisproductions.com",
+          "info@tisproductions.com"
+        ],
+        "phones": [
+          "55 5025 3954"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/tis__studios/",
+          "facebook": "https://www.facebook.com/TISStudios",
+          "twitter": "https://x.com/TIS_Studios",
+          "youtube": "https://www.youtube.com/@TIS_StudiosTV",
+          "vimeo": null,
+          "instagramScore": 0
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/tis__studios/",
+        "igHandle": "tis__studios",
+        "igFollowers": "95K",
+        "socialEmail": "mf.mendez@tisproductions.com",
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/tisproductions/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "860.063.869"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Samuel Duque"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "samuel.duque@tisproductions.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/tisstudios",
+    "apolloCompanyPhone": "+44 20 7739 9130",
+    "apolloEmployeeCount": 420,
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "instagramDM": "¡Hola Samuel! Increíble el nivel de producción que manejan con Paramount. Me imagino que coordinar presupuestos entre tantos formatos debe ser intenso. ¿Tienes 15 min esta semana para platicar?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como President, Samuel tiene autoridad total sobre decisiones operativas y tecnológicas del estudio.",
+    "whyThisLead": [
+      "Manejan múltiples formatos (series, realities, películas, deportes) con estructuras de costos completamente distintas",
+      "420 empleados y clientes premium como Paramount indican volumen alto de proyectos simultáneos",
+      "Estudios regionales líderes necesitan control financiero preciso para competir con majors"
+    ],
+    "actionBlock": [
+      "Enviar email específico sobre gestión de presupuestos multi-formato",
+      "Canal primario: email directo",
+      "Tono profesional pero directo, nivel C-suite"
+    ],
+    "conversationAngle": "Cómo están manejando los presupuestos cuando tienen una teleserie, un reality y contenido deportivo corriendo al mismo tiempo - cada uno con flujos de caja totalmente distintos.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "LinkedIn",
+      "opcional": "Instagram"
+    },
+    "specificLine": "Con la variedad de formatos que manejan, desde series premium hasta deportes en vivo, imagino que cuadrar presupuestos entre proyectos tan distintos debe ser un rompecabezas constante.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola Samuel! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Tisproductions y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon la variedad de formatos que manejan, desde series premium hasta deportes en vivo, imagino que cuadrar presupuestos entre proyectos tan distintos debe ser un rompecabezas constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado/a Samuel,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon la variedad de formatos que manejan, desde series premium hasta deportes en vivo, imagino que cuadrar presupuestos entre proyectos tan distintos debe ser un rompecabezas constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @tisproductions",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar algo específico sobre la calidad de producción o un proyecto reciente",
+      "dm": "¡Hola Samuel! Increíble el nivel de producción que manejan con Paramount. Me imagino que coordinar presupuestos entre tantos formatos debe ser intenso. ¿Tienes 15 min esta semana para platicar?"
+    },
+    "whatsappMessage": "Hola Samuel, soy Scarlett de UnaBase. Vimos el trabajo que hacen con Paramount - impresionante nivel. Me imagino que manejar presupuestos entre series, realities y deportes debe ser complejo. ¿Tienes 15 min esta semana?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Samuel, admiro el trabajo de TisProductions con Paramount",
+      "followUp": "Samuel, con la variedad de formatos que producen, me imagino que organizar presupuestos entre proyectos debe ser todo un desafío. Me encantaría platicar 15 min sobre cómo otros estudios lo están resolviendo."
+    },
+    "outreachSequence": [
+      "Día 1: Email específico sobre gestión multi-formato",
+      "Día 2: LinkedIn connection con mensaje personalizado",
+      "Día 4: Instagram engagement + DM casual",
+      "Día 7: WhatsApp directo si no hay respuesta en otros canales"
+    ],
+    "keyInsight": "Estudio regional líder con clientes majors necesita herramientas de nivel internacional para competir - pain point directo de UnaBase.",
+    "source_date": "2026-05-19",
+    "approved": true,
+    "approved_at": "2026-05-20T00:22:31.933Z",
+    "_igVerifiedManually": true,
+    "_igVerifiedSource": "operator-spot-check-2026-05-19",
+    "_igVerified": true,
+    "_igVerificationReason": "operator-verified-correction"
+  },
+  {
+    "companyName": "KOKALEKA",
+    "website": "https://kokaleka.com.do",
+    "country": "Dominican Republic",
+    "industry": "film",
+    "searchQuery": "productora audiovisual Santo Domingo",
+    "summary": "Somos una casa productora audiovisual radicada en Santo Domingo, República Dominicana con más de 20 años de experiencia.",
+    "notableClients": [
+      "Universal",
+      "Toyota"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 6,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Casa productora audiovisual dominicana con 20+ años de experiencia. Trabajan con clientes internacionales como Universal y Toyota.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de KOKALEKA! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en KOKALEKA y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años como casa productora audiovisual, seguramente manejan presupuestos de diferentes escalas corriendo simultáneamente.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "premium_clients",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "_companyNameSource": "domain_canonical",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "info@kokaleka.com.do",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "operator-verified",
+    "instagramUrl": "https://www.instagram.com/kokalekard/",
+    "instagramHandle": "kokalekard",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "contactPhone": "809-908-2871",
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/kokaleka-film-post",
+    "apolloCompanyPhone": "+1 809-908-2871",
+    "apolloEmployeeCount": 7,
+    "scoutLog": [
+      {
+        "step": "aborted",
+        "reason": "timeout",
+        "salvaged": true
+      }
+    ],
+    "_scoutAborted": "timeout",
+    "scoutPartial": true,
+    "scoutPartialReason": "scout_timeout_partial",
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Sin contacto identificado, necesitamos encontrar al CEO o Director de Producción.",
+    "whyThisLead": [
+      "20 años de experiencia indica múltiples proyectos simultáneos",
+      "Clientes premium como Universal y Toyota sugieren presupuestos complejos",
+      "Productora consolidada que maneja formatos diversos (cine, publicidad)"
+    ],
+    "actionBlock": [
+      "Llamar al 809-908-2871 para identificar decisor",
+      "LinkedIn para mapear equipo directivo",
+      "Tono profesional pero directo"
+    ],
+    "conversationAngle": "Con clientes como Universal, seguramente manejan presupuestos de diferentes escalas simultáneamente - ¿cómo organizan los números cuando tienen proyectos de cine y publicidad corriendo en paralelo?",
+    "channelPriority": {
+      "primario": "teléfono",
+      "secundario": "LinkedIn",
+      "opcional": "email una vez identificado contacto"
+    },
+    "specificLine": "Con más de 20 años como casa productora audiovisual, seguramente manejan presupuestos de diferentes escalas corriendo simultáneamente.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de KOKALEKA! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en KOKALEKA y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años como casa productora audiovisual, seguramente manejan presupuestos de diferentes escalas corriendo simultáneamente.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años como casa productora audiovisual, seguramente manejan presupuestos de diferentes escalas corriendo simultáneamente.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Hola! Vimos que trabajan con clientes como Universal - con 20 años en el mercado seguro manejan varios proyectos a la vez. ¿Cómo organizan los presupuestos cuando tienen cine y publicidad corriendo simultáneamente?",
+    "linkedinPlaybook": {
+      "connectionNote": "Productora con gran trayectoria - me interesa conocer más sobre sus proyectos",
+      "followUp": "Con Universal y Toyota como clientes, seguramente manejan presupuestos complejos en paralelo. ¿Cómo organizan los números entre proyectos de diferentes formatos?"
+    },
+    "outreachSequence": [
+      "Dia 1: Llamar para identificar decisor + revisar LinkedIn de la empresa",
+      "Dia 2: Conectar en LinkedIn con contacto identificado",
+      "Dia 4: Enviar mensaje directo mencionando clientes premium",
+      "Dia 7: Llamada final ofreciendo demo rápida de 15 minutos"
+    ],
+    "keyInsight": "Productora establecida con clientes premium que definitivamente maneja presupuestos complejos simultáneos.",
+    "source_date": "2026-05-19",
+    "approved": true,
+    "approved_at": "2026-05-20T00:22:31.933Z",
+    "_igVerifiedManually": true,
+    "_igVerifiedSource": "operator-spot-check-2026-05-19",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin",
+      "phone"
+    ],
+    "_streamCount": 4
+  },
+  {
+    "companyName": "Septima Films",
+    "website": "https://septimafilms.com",
+    "country": "Colombia",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "operator-verified",
+    "searchQuery": "SEED:Septima Films",
+    "summary": "El realizador interpreta lo que ve mientras revisita su propia vida en la que sufrió falta de acceso a necesidades básicas y violencia. Un día, inesperadamente recibe la visita de su hijo, ahora llamada Priscila, una prostituta transgénero que busca un lugar para esconderse. Él le permite quedarse a pesar de su constante rechazo.",
+    "notableClients": [
+      "Facebook",
+      "Modelo",
+      "Santander"
+    ],
+    "recentProjects": [
+      "DOCUMENTAL PREMIOS MACONDO 2024 Estreno F",
+      "misma como catarsis"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 9,
+    "scopeVerified": true,
+    "scopeSignals": 6,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 6,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Productora colombiana especializada en contenido documental premiado y comerciales para marcas corporativas. Trabajaron con marcas reconocidas, Modelo y Santander, y tuvieron reconocimiento en Premios Macondo 2024.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Septima Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Septima Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan producción documental premiada con comerciales para marcas corporativas, dos formatos con ritmos de financiación y caja completamente distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "administracion@septimafilms.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/septima_films/",
+    "instagramHandle": "septima_films",
+    "instagramBio": "See Instagram photos and videos from SEP7IMA (@septimafilms) Meta",
+    "instagramFollowers": "169",
+    "facebookUrl": "https://www.facebook.com/SeptimaFilms/?hc_ref=PAGES_TIMELINE",
+    "twitterUrl": "https://twitter.com/septimafilms",
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/user4009488",
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [
+          "administracion@septimafilms.com",
+          "produccion@septimafilms.com"
+        ],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/septima_films/",
+          "facebook": "https://www.facebook.com/SeptimaFilms/?hc_ref=PAGES_TIMELINE",
+          "twitter": "https://twitter.com/septimafilms",
+          "youtube": null,
+          "vimeo": "https://vimeo.com/user4009488",
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/septima_films/",
+        "igHandle": "septima_films",
+        "igFollowers": "169",
+        "socialEmail": "administracion@septimafilms.com",
+        "socialPhone": null
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "administracion@septimafilms.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "administracion@septimafilms.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "administracion@septimafilms.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "_igVerified": true,
+    "_igVerificationEvidence": [
+      "website-linked"
+    ],
+    "_igVerificationReason": "operator-verified-seed",
+    "_igVerifiedManually": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email"
+    ],
+    "_streamCount": 2,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,firstword-in-domain,5char-prefix-match",
+    "instagramDM": "Hola! Vi su trabajo documental y los comerciales que hacen. Me imagino que manejar presupuestos entre formatos tan distintos debe ser complejo. ¿Usan algo específico para organizarse?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Es el contacto administrativo que maneja las operaciones y presupuestos de la productora.",
+    "whyThisLead": [
+      "Combinan producción documental premiada con comerciales corporativos, formatos con ritmos de caja completamente distintos",
+      "Cartera de clientes corporativos establecida (, Modelo, Santander) indica volumen constante de proyectos",
+      "Productora mid-size que maneja múltiples formatos simultáneamente, perfil ideal para necesitar organización presupuestaria"
+    ],
+    "actionBlock": [
+      "Enviar email directo hoy a administracion@septimafilms.com",
+      "Seguir en @septima_films como backup",
+      "Tono profesional pero directo, enfocado en el dolor operacional"
+    ],
+    "conversationAngle": "Cómo están organizando presupuestos cuando manejan documentales (con financiación y tiempos largos) junto con comerciales corporativos (pagos rápidos, ciclos cortos) al mismo tiempo.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": null
+    },
+    "specificLine": "Vimos que combinan producción documental premiada con comerciales para marcas corporativas, dos formatos con ritmos de financiación y caja completamente distintos.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Septima Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Septima Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan producción documental premiada con comerciales para marcas corporativas, dos formatos con ritmos de financiación y caja completamente distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan producción documental premiada con comerciales para marcas corporativas, dos formatos con ritmos de financiación y caja completamente distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @septima_films",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo sobre su enfoque documental o reconocimiento en premios",
+      "dm": "Hola! Vi su trabajo documental y los comerciales que hacen. Me imagino que manejar presupuestos entre formatos tan distintos debe ser complejo. ¿Usan algo específico para organizarse?"
+    },
+    "whatsappMessage": null,
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Email directo con specificLine",
+      "Dia 2: Seguir en y engagement",
+      "Dia 4: DM casual sobre organización presupuestaria",
+      "Dia 7: Email de seguimiento enfocado en el dolor específico documental vs comercial"
+    ],
+    "keyInsight": "Productora con mix documental/comercial establecida necesita herramientas para manejar dos modelos financieros opuestos simultáneamente.",
+    "source_date": "2026-05-20",
+    "approved": true,
+    "approved_at": "2026-05-20T03:36:53.601Z"
+  },
+  {
+    "companyName": "Aleph Cine",
+    "website": "https://alephcine.com",
+    "country": "Argentina",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "operator-verified",
+    "searchQuery": "SEED:Aleph Cine",
+    "summary": "Aleph Cine, es una destacada productora de cine argentina con mas de 30 años de trayectoria. Produce largometrajes de ficción, animación y documentales.",
+    "notableClients": [
+      "Netflix",
+      "Prime Video",
+      "Disney"
+    ],
+    "recentProjects": [
+      "more than 60 fiction feature films -most",
+      "original de TNT y Flow producida por Alep",
+      "que reconstruye el ataque terrorista de H"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 8,
+    "scopeVerified": true,
+    "scopeSignals": 8,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 8,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Productora de cine argentina con 30+ años produciendo largometrajes de ficción, animación y documentales para Netflix, Prime Video y Disney. Han completado más de 60 films de ficción combinando múltiples formatos con diferentes estructuras presupuestarias.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Fernando! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Aleph Cine y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon 30+ años produciendo ficción, animación y documentales para plataformas premium, manejar presupuestos de formatos tan distintos en Excel debe ser un rompecabezas logístico constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 4,
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": "Fernando Sokolowicz",
+    "contactTitle": "Fundador",
+    "contactEmail": "info@alephcine.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "social_only",
+    "contactSource": "social",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/aleph_ok/",
+    "instagramHandle": "aleph_ok",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/alephcineproducciones",
+    "twitterUrl": "https://www.netflix.com/title/81023638",
+    "youtubeUrl": "https://www.youtube.com/channel/UCYrD6wBLzMHDCQvk4Mh7wVw/videos",
+    "vimeoUrl": "https://vimeo.com/157943844",
+    "contactPhone": "011 4779-2397",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://instagram.com/aleph_ok",
+          "facebook": "https://www.facebook.com/alephcineproducciones",
+          "twitter": "https://www.netflix.com/title/81023638",
+          "youtube": "https://www.youtube.com/channel/UCYrD6wBLzMHDCQvk4Mh7wVw/videos",
+          "vimeo": "https://vimeo.com/user13205232",
+          "instagramScore": 1
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": "Fernando Sokolowicz",
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://instagram.com/aleph_ok",
+        "igHandle": "aleph_ok",
+        "igFollowers": "2,856",
+        "socialEmail": "info@alephcine.com",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": "011 4779-2397",
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": null,
+        "followers": null,
+        "email": null,
+        "phone": null,
+        "triedHandles": 15
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "011 4779-2397"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Fernando Sokolowicz"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "aleph_ok"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "aleph_ok",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/157943844"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 1
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@alephcine.com",
+          "additional": 1,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Fernando Sokolowicz"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "aleph_ok"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "aleph_ok",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/157943844"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 2
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@alephcine.com",
+          "additional": 2,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Fernando Sokolowicz"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "aleph_ok"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "aleph_ok",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/157943844"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 3
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@alephcine.com",
+          "additional": 3,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Fernando Sokolowicz"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "aleph_ok"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "aleph_ok",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/157943844"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 4
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "info@alephcine.com",
+          "additional": 4,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/aleph-cine",
+    "apolloCompanyPhone": "+1 276-531-9260",
+    "apolloEmployeeCount": 9,
+    "contactVenues": 3,
+    "_igVerified": true,
+    "_igVerificationEvidence": [
+      "bio:brand-word"
+    ],
+    "_igVerificationReason": "operator-verified-seed",
+    "additionalContacts": [
+      {
+        "instagramHandle": "aleph_ok",
+        "instagramUrl": "https://www.instagram.com/aleph_ok/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "Instagram photos and videos from ALEPH (@aleph_ok"
+      },
+      {
+        "instagramHandle": "aleph_ok",
+        "instagramUrl": "https://www.instagram.com/aleph_ok/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "Instagram photos and videos from ALEPH (@aleph_ok"
+      },
+      {
+        "instagramHandle": "aleph_ok",
+        "instagramUrl": "https://www.instagram.com/aleph_ok/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "Instagram photos and videos from ALEPH (@aleph_ok"
+      },
+      {
+        "instagramHandle": "aleph_ok",
+        "instagramUrl": "https://www.instagram.com/aleph_ok/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "Instagram photos and videos from ALEPH (@aleph_ok"
+      }
+    ],
+    "manualNote": "Founder IG(s) identified (@aleph_ok) — check IG Contact button manually for direct email + phone.",
+    "whoisCheckPending": true,
+    "_igVerifiedManually": true,
+    "contactPath": "decision_maker_email",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin"
+    ],
+    "_streamCount": 3,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,firstword-in-domain,5char-prefix-match",
+    "instagramDM": "Hola Fernando! Vi el trabajo de Aleph en ficción y documentales - debe ser complejo coordinar presupuestos entre formatos tan distintos. ¿Charlamos 10 min sobre cómo optimizar eso?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como fundador de Aleph Cine, Fernando toma decisiones sobre herramientas operativas y presupuestación para la productora.",
+    "whyThisLead": [
+      "Producen múltiples formatos (ficción, animación, documentales) con ritmos de caja completamente distintos",
+      "Portfolio premium con Netflix, Prime Video y Disney indica volumen y complejidad presupuestaria alta",
+      "30+ años de experiencia con 60+ films sugiere procesos maduros que necesitan optimización tecnológica"
+    ],
+    "actionBlock": [
+      "Contactar hoy vía email con approach específico sobre gestión multi-formato",
+      "Usar email como canal primario por ser fundador",
+      "Tono profesional pero directo, enfocado en eficiencia operativa"
+    ],
+    "conversationAngle": "¿Cómo están manejando los presupuestos cuando producen ficción, animación y documentales simultáneamente? Cada formato tiene ritmos de caja totalmente distintos y coordinarlos en Excel debe ser un dolor de cabeza logístico.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "LinkedIn",
+      "opcional": "Instagram"
+    },
+    "specificLine": "Con 30+ años produciendo ficción, animación y documentales para plataformas premium, manejar presupuestos de formatos tan distintos en Excel debe ser un rompecabezas logístico constante.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola Fernando! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Aleph Cine y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon 30+ años produciendo ficción, animación y documentales para plataformas premium, manejar presupuestos de formatos tan distintos en Excel debe ser un rompecabezas logístico constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado/a Fernando,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon 30+ años produciendo ficción, animación y documentales para plataformas premium, manejar presupuestos de formatos tan distintos en Excel debe ser un rompecabezas logístico constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @aleph_ok",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar algo específico sobre la diversidad de sus proyectos de ficción y documentales",
+      "dm": "Hola Fernando! Vi el trabajo de Aleph en ficción y documentales - debe ser complejo coordinar presupuestos entre formatos tan distintos. ¿Charlamos 10 min sobre cómo optimizar eso?"
+    },
+    "whatsappMessage": "Hola Fernando, soy Scarlett de EJE. Vi que Aleph maneja ficción, animación y documentales simultáneamente. ¿Cómo coordinan presupuestos entre formatos tan distintos? Tengo algo que puede simplificar mucho esa operativa.",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Fernando, me interesa el modelo multi-formato de Aleph combinando ficción y documentales",
+      "followUp": "Gracias por conectar Fernando. Con la experiencia de Aleph en múltiples formatos, ¿cómo manejan la complejidad presupuestaria entre ficción, animación y documentales? Debe ser todo un desafío logístico."
+    },
+    "outreachSequence": [
+      "Día 1: Email con approach específico sobre gestión multi-formato",
+      "Día 2: Like y follow en @aleph_ok",
+      "Día 4: LinkedIn connection con nota personalizada",
+      "Día 7: final si no hay respuesta por otros canales"
+    ],
+    "keyInsight": "Productora establecida con portfolio premium que maneja múltiples formatos complejos - dolor presupuestario evidente y poder de decisión.",
+    "source_date": "2026-05-20",
+    "approved": true,
+    "approved_at": "2026-05-20T03:36:53.601Z"
+  },
+  {
+    "companyName": "64A Films",
+    "website": "https://64afilms.com",
+    "country": "Colombia",
+    "industry": "commercial",
+    "_seedSource": true,
+    "_seedConfidence": "operator-verified",
+    "searchQuery": "SEED:64-A Films",
+    "summary": "CONOCE MÁS SERVICIOS DE PRODUCCIÓN Somos expertos en servicios de producción para proyectos internacionales de cine y televisión accediendo exitosamente a los incentivos que ofrece el gobierno Colombiano. CONOCE MÁS 64A Writers Room es nuestro cuarto de escritores, una alianza entre 64A Films y 5 escritores profesionales con muchos años de experiencia para el desarrollo de propiedad intelectual para cine, televisión y branded content. CONOCE MÁS Hacemos parte de: ® by 64A Films info@64afilms.com",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [
+      "by 64A Films"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 6,
+    "scopeVerified": true,
+    "scopeSignals": 7,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 7,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Productora comercial colombiana especializada en servicios de producción internacional con Writers Room propio. Trabajan con marcas reconocidas y ofrecen acceso a incentivos gubernamentales colombianos.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Nancy! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en 64A Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan servicios de producción internacional con desarrollo de IP en su Writers Room, dos modelos de negocio con ritmos de presupuestación muy distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "premium_clients",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": "Nancy Fernández",
+    "contactTitle": "Gerente General / Managing Director - Co-CEO",
+    "contactEmail": "nancy@64afilms.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "social_only",
+    "contactSource": "social",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/64afilms/",
+    "instagramHandle": "64afilms",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/64afilms",
+    "twitterUrl": "https://twitter.com/64aFilms",
+    "youtubeUrl": "https://www.youtube.com/c/64afilms1",
+    "vimeoUrl": null,
+    "contactPhone": "900336421",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@64afilms.com"
+        ],
+        "phones": [],
+        "name": "Nancy Fernández",
+        "social": {
+          "instagram": "https://instagram.com/64afilms",
+          "facebook": "https://www.facebook.com/64afilms",
+          "twitter": "https://twitter.com/64aFilms",
+          "youtube": "https://www.youtube.com/c/64afilms1",
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": "reverse",
+        "name": "Reverse Lookup",
+        "started": true,
+        "targetName": "Nancy Fernández"
+      },
+      {
+        "step": "reverse",
+        "hunter_error": "Request failed with status code 429"
+      },
+      {
+        "step": "reverse",
+        "found": "nothing"
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": "nancy@64afilms.com",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": "900336421",
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": null,
+        "followers": null,
+        "email": null,
+        "phone": null,
+        "triedHandles": 14
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "900336421"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Nancy Fernández"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "64afilms"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "64afilms",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "nancy@64afilms.com",
+          "additional": 1,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/64afilms",
+    "apolloCompanyPhone": "+1 571-765-7333",
+    "apolloEmployeeCount": 32,
+    "contactVenues": 3,
+    "_igVerified": true,
+    "_igVerificationEvidence": [
+      "bio:brand-word",
+      "bio:domain-base"
+    ],
+    "_igVerificationReason": "operator-verified-seed",
+    "additionalContacts": [
+      {
+        "instagramHandle": "64afilms",
+        "instagramUrl": "https://www.instagram.com/64afilms/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "agram photos and videos from 64A Films (@64afilms"
+      }
+    ],
+    "manualNote": "Founder IG(s) identified (@64afilms) — check IG Contact button manually for direct email + phone.",
+    "contactPath": "decision_maker_email",
+    "tier": "tier1",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin"
+    ],
+    "_streamCount": 3,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,5char-prefix-match",
+    "instagramDM": "¡Hola! Scarlett de UnaBase. Veo que manejan tanto servicios internacionales como Writers Room - me imagino que coordinar presupuestos entre esos formatos debe ser todo un reto. ¿Podríamos charlar 10 min sobre cómo lo están resolviendo?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como Co-CEO y Managing Director, Nancy toma decisiones sobre herramientas operacionales y gestión de múltiples proyectos.",
+    "whyThisLead": [
+      "Combinan producción comercial con desarrollo de IP y servicios internacionales - formatos con ritmos de presupuestación distintos",
+      "32 empleados con clientes internacionales como indica volumen de proyectos simultáneos",
+      "Writers Room + servicios de producción requiere coordinación financiera entre diferentes tipos de contenido"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su combinación de servicios comerciales + IP",
+      "Email como canal primario, como seguimiento",
+      "Tono profesional pero directo - hablar de eficiencia operacional"
+    ],
+    "conversationAngle": "Cómo están organizando los presupuestos cuando manejan servicios de producción internacional, desarrollo de IP en Writers Room y proyectos comerciales simultáneamente - cada uno con flujos de caja diferentes.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram",
+      "opcional": "LinkedIn"
+    },
+    "specificLine": "Vimos que combinan servicios de producción internacional con desarrollo de IP en su Writers Room - dos modelos de negocio con ritmos de presupuestación muy distintos.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola Nancy! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en 64A Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan servicios de producción internacional con desarrollo de IP en su Writers Room, dos modelos de negocio con ritmos de presupuestación muy distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado/a Nancy,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan servicios de producción internacional con desarrollo de IP en su Writers Room, dos modelos de negocio con ritmos de presupuestación muy distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @64afilms",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo sobre la calidad de su producción comercial o contenido del Writers Room",
+      "dm": "¡Hola! Scarlett de UnaBase. Veo que manejan tanto servicios internacionales como Writers Room - me imagino que coordinar presupuestos entre esos formatos debe ser todo un reto. ¿Podríamos charlar 10 min sobre cómo lo están resolviendo?"
+    },
+    "whatsappMessage": "Hola Nancy, soy Scarlett de UnaBase. Vi que en 64A Films combinan servicios de producción internacional con su Writers Room - me imagino que coordinar presupuestos entre esos formatos diferentes debe ser complejo. ¿Podrías contarme cómo lo están manejando actualmente?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Nancy, me interesa conocer más sobre el modelo de 64A Films combinando servicios internacionales + Writers Room",
+      "followUp": "Gracias por conectar, Nancy. Me llamó la atención cómo combinan servicios de producción internacional con desarrollo de IP. ¿Podrías contarme cómo organizan los presupuestos cuando manejan ambos formatos simultáneamente?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email personalizado mencionando su modelo dual de servicios + IP",
+      "Dia 2: Seguir en y dar engagement a sus posts",
+      "Dia 4: DM de marcas reconocidas casual preguntando sobre coordinación de presupuestos",
+      "Dia 7: Email de seguimiento enfocado en eficiencia para servicios internacionales"
+    ],
+    "keyInsight": "Modelo dual (servicios internacionales + Writers Room) requiere gestión compleja de presupuestos con ritmos diferentes - dolor directo que UnaBase resuelve.",
+    "source_date": "2026-05-20",
+    "approved": true,
+    "_igVerifiedManually": true,
+    "approved_at": "2026-05-20T03:36:53.601Z"
+  },
+  {
+    "companyName": "Rei Cine",
+    "website": "https://reicine.com.ar",
+    "country": "Argentina",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "operator-verified",
+    "searchQuery": "SEED:Rei Cine",
+    "summary": "Skip to content Rei Pictures Film Television Interactive About Shop eng esp Selected works Nuestra Tierra feature Magic Farm feature Kill the Jockey feature The Settlers feature The Rescue feature",
+    "notableClients": [],
+    "recentProjects": [
+      "by Rei Cine"
+    ],
+    "estimatedSize": "mid",
+    "unabaseScore": 5,
+    "scopeVerified": true,
+    "scopeSignals": 4,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Rei Cine es una productora argentina mid-size que combina largometrajes (features) con contenido audiovisual diverso según su portafolio web. Con 10 empleados y presencia significativa en (24K seguidores), manejan múltiples proyectos cinematográficos en paralelo.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Rei Cine! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Rei Cine y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que tienen varios features corriendo en paralelo, exactamente el escenario donde coordinar presupuestos entre largometrajes en Excel se vuelve un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 1,
+    "fitReasons": [
+      "mid_size_team"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "bd@reicine.com.ar",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "ddg_email",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/rei___pictures/",
+    "instagramHandle": "rei___pictures",
+    "instagramBio": "See Instagram photos and videos from Rei Pictures (@rei___pictures)",
+    "instagramFollowers": "24K",
+    "facebookUrl": null,
+    "twitterUrl": "https://x.com/Rei___pictures",
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "011 4555-1077",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "warn": "IG handle @reipictures does not match domain \"reicine\" — may be wrong company"
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [
+          "info@reipictures.com"
+        ],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/rei___pictures/",
+          "facebook": null,
+          "twitter": "https://x.com/Rei___pictures",
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 0
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": [
+          "bd@reicine.com.ar",
+          "smg@reicine.com.ar"
+        ]
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/rei___pictures/",
+        "igHandle": "rei___pictures",
+        "igFollowers": "24K",
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "name_derive",
+        "email": "bd@reicine.com.ar"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "rei___pictures",
+        "followers": "24K",
+        "email": null,
+        "phone": null,
+        "triedHandles": 15
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": [
+          "011 4555-1077",
+          "30711687951"
+        ]
+      },
+      {
+        "step": "ig_verify",
+        "handle": "rei___pictures",
+        "verified": true,
+        "reason": "website-linked"
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/reicinebr/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "bd@reicine.com.ar",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "bd@reicine.com.ar",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "bd@reicine.com.ar",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "bd@reicine.com.ar",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/molinsfilmfestival",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 10,
+    "contactVenues": 3,
+    "_igVerified": true,
+    "_igVerificationEvidence": [
+      "website-linked"
+    ],
+    "_igVerificationReason": "operator-verified-seed",
+    "_igVerifiedManually": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin"
+    ],
+    "_streamCount": 3,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,5char-prefix-match",
+    "instagramDM": "Hola! Soy Scarlett, vi el portfolio de features que manejan. Nosotros ayudamos a productoras como Rei a organizar presupuestos cuando tienen varios largometrajes corriendo al mismo tiempo. ¿Te suena familiar el caos de Excel? 😅",
+    "readyToSend": true,
+    "contactDecisionPower": "Medio",
+    "contactWhyThisPerson": "Email de business development indica que maneja decisiones comerciales y operacionales de la productora.",
+    "whyThisLead": [
+      "Productora con múltiples features en desarrollo simultáneo requiere control presupuestario por proyecto",
+      "Mid-size con 10 empleados y portfolio diverso indica volumen suficiente para justificar herramientas profesionales",
+      "Combinación de largometrajes y otros formatos audiovisuales genera complejidad presupuestaria típica del target de UnaBase"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su portfolio de features y la complejidad de manejar múltiples largometrajes",
+      "Usar email como canal primario (bd@reicine.com.ar)",
+      "Tono profesional pero directo, enfocado en el dolor operacional real"
+    ],
+    "conversationAngle": "Rei Cine maneja varios largometrajes simultáneamente según su portfolio - exactamente el escenario donde los Excel se vuelven un laberinto y cada proyecto necesita su propio ritmo presupuestario.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram DM",
+      "opcional": "WhatsApp"
+    },
+    "specificLine": "Vimos que tienen varios features corriendo en paralelo - exactamente el escenario donde coordinar presupuestos entre largometrajes en Excel se vuelve un dolor de cabeza constante.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Rei Cine! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Rei Cine y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que tienen varios features corriendo en paralelo, exactamente el escenario donde coordinar presupuestos entre largometrajes en Excel se vuelve un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que tienen varios features corriendo en paralelo, exactamente el escenario donde coordinar presupuestos entre largometrajes en Excel se vuelve un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @rei___pictures",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar algo específico sobre su proceso de producción o algún behind the scenes",
+      "dm": "Hola! Soy Scarlett, vi el portfolio de features que manejan. Nosotros ayudamos a productoras como Rei a organizar presupuestos cuando tienen varios largometrajes corriendo al mismo tiempo. ¿Te suena familiar el caos de Excel? 😅"
+    },
+    "whatsappMessage": "Hola! Soy Scarlett de UnaBase. Vi que Rei Cine maneja varios largometrajes simultáneamente - exactamente el tipo de complejidad presupuestaria que resolvemos. ¿Cómo están organizando los presupuestos entre proyectos actualmente?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola, trabajo con productoras que manejan múltiples features como Rei Cine",
+      "followUp": "Gracias por conectar! Vi el portfolio de largometrajes de Rei - nosotros ayudamos a productoras a organizar presupuestos cuando tienen varios features corriendo al mismo tiempo. ¿Les resuena el tema de coordinación entre proyectos?"
+    },
+    "outreachSequence": [
+      "Día 1: Enviar email personalizado mencionando portfolio de features",
+      "Día 2: Seguir en y dar engagement orgánico",
+      "Día 4: DM casual en si no hay respuesta al email",
+      "Día 7: directo mencionando complejidad de múltiples largometrajes"
+    ],
+    "keyInsight": "Productora con múltiples features activos es exactamente el perfil que más sufre con Excel para presupuestos complejos.",
+    "source_date": "2026-05-20",
+    "approved": true,
+    "approved_at": "2026-05-20T03:36:53.601Z"
+  },
+  {
+    "companyName": "Burning Blue",
+    "website": "https://burning.com.co",
+    "country": "Colombia",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "operator-verified",
+    "searchQuery": "SEED:Burning Blue",
+    "summary": "Welcome to Burning Blue Music We are a full-service entertainment company specializing in Creative Consulting, Production and Artist Development & Management. Burning Blue | Production Services | Bogota | Screen Global Production. Company & contact details for Burning Blue - Production Services in Cr 16 # 82-24 Of.",
+    "notableClients": [],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 5,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Burning Blue es una productora de entretenimiento full-service en Bogotá que combina consultoría creativa, producción y desarrollo de artistas. Operan tanto en música como en servicios de producción audiovisual con presencia regional.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Burning Blue! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Burning Blue y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que manejan un modelo full-service combinando producción musical, audiovisual y consultoría creativa, tres líneas de negocio con estructuras de costos y ritmos de caja completamente distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 1,
+    "fitReasons": [
+      "mid_size_team"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "gerencia@burning.com.co",
+    "contactLinkedIn": null,
+    "contactConfidence": "social_only",
+    "contactSource": "social",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/burningcolombia/",
+    "instagramHandle": "burningcolombia",
+    "instagramBio": "See Instagram photos and videos from Burning (@burningcolombia)",
+    "instagramFollowers": "7,456",
+    "facebookUrl": "https://www.facebook.com/BurningColombia",
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/user109249694",
+    "contactPhone": null,
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/burningcolombia/",
+          "facebook": "https://www.facebook.com/BurningColombia",
+          "twitter": null,
+          "youtube": null,
+          "vimeo": "https://vimeo.com/user109249694",
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": []
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": "Jorge Forero",
+        "emails": []
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": "https://www.instagram.com/burningcolombia/",
+        "igHandle": "burningcolombia",
+        "igFollowers": "7,456",
+        "socialEmail": "gerencia@burning.com.co",
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "burningcolombia",
+        "followers": "7,456",
+        "email": null,
+        "phone": null,
+        "triedHandles": 14
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": []
+      },
+      {
+        "step": "mismatch_check",
+        "name": "Jorge Forero",
+        "email": "gerencia@burning.com.co",
+        "result": "MISMATCH — clearing name"
+      },
+      {
+        "step": "ig_verify",
+        "handle": "burningcolombia",
+        "verified": true,
+        "reason": "website-linked"
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "gerencia@burning.com.co",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "gerencia@burning.com.co",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "gerencia@burning.com.co",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/burning-blue-aviation-gifts",
+    "apolloCompanyPhone": "+44 152 635 4167",
+    "apolloEmployeeCount": null,
+    "contactVenues": 2,
+    "_igVerified": true,
+    "_igVerificationEvidence": [
+      "website-linked"
+    ],
+    "_igVerificationReason": "operator-verified-seed",
+    "_igVerifiedManually": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin"
+    ],
+    "_streamCount": 3,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,firstword-in-domain,5char-prefix-match",
+    "instagramDM": "Hola! Soy Scarlett de UnaBase. Vi su trabajo combinando música y producción audiovisual - debe ser todo un reto organizar presupuestos entre formatos tan distintos. ¿Cómo lo están manejando?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Email de gerencia indica rol ejecutivo con poder de decisión sobre herramientas operacionales y presupuestos de producción.",
+    "whyThisLead": [
+      "Productora full-service que maneja múltiples líneas de negocio (música, audiovisual, consultoría) con diferentes estructuras de costos",
+      "Empresa establecida con presencia regional y diversificación de servicios",
+      "Modelo híbrido requiere control presupuestario cruzado entre proyectos de entretenimiento"
+    ],
+    "actionBlock": [
+      "Enviar email personalizado mencionando su modelo full-service",
+      "Usar email como canal primario (gerencia@burning.com.co)",
+      "Tono profesional pero directo, enfocado en eficiencia operacional"
+    ],
+    "conversationAngle": "Cómo están organizando presupuestos cuando manejan proyectos de música, audiovisual y consultoría al mismo tiempo - cada uno con ritmos de caja y estructuras de costos completamente diferentes.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "instagram",
+      "opcional": "whatsapp"
+    },
+    "specificLine": "Vimos que manejan un modelo full-service combinando producción musical, audiovisual y consultoría creativa - tres líneas de negocio con estructuras de costos y ritmos de caja completamente distintos.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Burning Blue! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Burning Blue y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que manejan un modelo full-service combinando producción musical, audiovisual y consultoría creativa, tres líneas de negocio con estructuras de costos y ritmos de caja completamente distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que manejan un modelo full-service combinando producción musical, audiovisual y consultoría creativa, tres líneas de negocio con estructuras de costos y ritmos de caja completamente distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @burningcolombia",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Increíble la diversidad de proyectos que manejan 🔥'",
+      "dm": "Hola! Soy Scarlett de UnaBase. Vi su trabajo combinando música y producción audiovisual - debe ser todo un reto organizar presupuestos entre formatos tan distintos. ¿Cómo lo están manejando?"
+    },
+    "whatsappMessage": "Hola! Soy Scarlett de UnaBase. Vimos el trabajo de Burning Blue combinando producción musical y audiovisual - debe ser complejo manejar presupuestos entre formatos tan distintos. ¿Tienen 15 min para una demo rápida?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola! Me interesa conocer más sobre el modelo full-service de Burning Blue",
+      "followUp": "Gracias por conectar! Vi que manejan música, audiovisual y consultoría - debe ser todo un reto organizar presupuestos entre formatos tan diversos. ¿Cómo lo están resolviendo actualmente?"
+    },
+    "outreachSequence": [
+      "Dia 1: Email personalizado mencionando modelo full-service",
+      "Dia 2: Follow en + engagement con posts recientes",
+      "Dia 4: directo si no hay respuesta al email",
+      "Dia 7: LinkedIn connection request como último recurso"
+    ],
+    "keyInsight": "Modelo full-service con múltiples líneas de entretenimiento genera complejidad presupuestaria natural que UnaBase resuelve directamente.",
+    "source_date": "2026-05-20",
+    "approved": true,
+    "approved_at": "2026-05-20T03:36:53.601Z"
+  }
+]

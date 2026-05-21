@@ -1,0 +1,1848 @@
+[
+  {
+    "companyName": "Pirexia",
+    "website": "https://pirexia.com",
+    "country": "Mexico",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "unverified",
+    "_deepScrapedPaths": [],
+    "searchQuery": "SEED:Pirexia",
+    "summary": "Pirexia is a production company.",
+    "notableClients": [],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 3,
+    "scopeVerified": true,
+    "scopeSignals": 3,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 3,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Pirexia es una productora audiovisual pequeña con 2 personas en México, enfocada en producción de contenido cinematográfico. Opera con estructura lean típica de productoras boutique.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola Pirexia! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Pirexia y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nComo productora cinematográfica small-scale con estructura de 2 personas, imagino que manejar múltiples presupuestos de proyectos en paralelo requiere máxima eficiencia operacional.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": false,
+    "fitSignals": 0,
+    "fitReasons": [],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "pirexia@pirexia.com",
+    "contactLinkedIn": null,
+    "contactConfidence": null,
+    "contactSource": "p4_email_retry",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/pirexia_/",
+    "instagramHandle": "pirexia_",
+    "instagramBio": "See Instagram photos and videos from PIREXIA (@pirexia_) Log In",
+    "instagramFollowers": "668",
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": "https://vimeo.com/1188102366",
+    "contactPhone": "5523350180",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "ig_fallback": "used_search",
+        "query": "\"pirexia\" site:instagram.com",
+        "picked": "pirexia",
+        "score": 3
+      },
+      {
+        "step": 3,
+        "pagesScanned": 14,
+        "personalEmails": [],
+        "genericEmails": [],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/pirexia_/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 4,
+        "name": "News/Press",
+        "started": true
+      },
+      {
+        "step": 4,
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": 5,
+        "name": "LinkedIn DDG",
+        "started": true
+      },
+      {
+        "step": 5,
+        "found": "nothing"
+      },
+      {
+        "step": 6,
+        "name": "DDG Email",
+        "started": true
+      },
+      {
+        "step": 6,
+        "emails": [
+          "pirexia@pirexia.com",
+          "pirexia.club@gmail.com",
+          "produccionejecutivamexico@gmail.com"
+        ]
+      },
+      {
+        "step": "A",
+        "name": "Industry DBs",
+        "started": true
+      },
+      {
+        "step": "A",
+        "name": null,
+        "emails": []
+      },
+      {
+        "step": "B",
+        "name": "Press/Awards",
+        "started": true
+      },
+      {
+        "step": "B",
+        "name": null,
+        "emails": [
+          "pirexia@pirexia.com"
+        ]
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "C",
+        "name": "Extra Social",
+        "started": true
+      },
+      {
+        "step": "C",
+        "tiktokEmail": null,
+        "waPhone": null,
+        "gmbPhone": null,
+        "gmbOwner": null
+      },
+      {
+        "step": "name_derive",
+        "email": "pirexia@pirexia.com"
+      },
+      {
+        "step": "name_confirm",
+        "confirmed": "Pirexia Films",
+        "via": "prefix_match"
+      },
+      {
+        "step": "ig_exhaustive",
+        "handle": "pirexia_",
+        "followers": "668",
+        "email": "pirexia.club@gmail.com",
+        "phone": null,
+        "triedHandles": 7
+      },
+      {
+        "step": "phone_exhaustive",
+        "found": []
+      },
+      {
+        "step": "ig_verify",
+        "handle": "pirexia_",
+        "verified": true,
+        "reason": "website-linked"
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Pirexia Films"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": [
+          "rattlesnakke",
+          "kmila__x",
+          "sukubratz",
+          "gmail.com"
+        ]
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "rattlesnakke",
+          "email": "allen@awesome-agency.com",
+          "phone": null,
+          "needsManual": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "kmila__x",
+          "email": "kmila.bookings@gmail.com",
+          "phone": null,
+          "needsManual": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "sukubratz",
+          "email": "mark@poing-rotterdam.nl",
+          "phone": null,
+          "needsManual": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "dm": {
+          "handle": "gmail.com",
+          "email": null,
+          "phone": null,
+          "needsManual": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "allen@awesome-agency.com",
+          "additional": 3,
+          "upgraded": true
+        }
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "email_error": "net::ERR_CERT_DATE_INVALID at https://pirexia.com"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "5523350180"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": false,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "Pirexia Films"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "blog_error": "net::ERR_CERT_DATE_INVALID at https://pirexia.com"
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/1188102366"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 3
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": null,
+          "additional": 3,
+          "upgraded": true
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/pirexiafilms",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 2,
+    "manualNote": "Nombre derivado del email (pirexia@pirexia.com) — verificar antes de enviar si es posible",
+    "contactVenues": 2,
+    "_igVerified": true,
+    "_igVerificationEvidence": [
+      "website-linked"
+    ],
+    "_igVerificationReason": "website-linked",
+    "previousContactEmail": "pirexia@pirexia.com",
+    "founderInstagramHandle": "rattlesnakke",
+    "founderInstagramUrl": "https://www.instagram.com/rattlesnakke/",
+    "additionalContacts": [
+      {
+        "instagramHandle": "kmila__x",
+        "instagramUrl": "https://www.instagram.com/kmila__x/",
+        "contactTitle": null,
+        "contactEmail": "kmila.bookings@gmail.com",
+        "contactPhone": null,
+        "contactSource": "founder_ig_bio",
+        "needsManualContactButtonCheck": false,
+        "igIsPrivate": false,
+        "context": "s 41 following PIREXIA By @rattlesnakke @kmila__x"
+      },
+      {
+        "instagramHandle": "sukubratz",
+        "instagramUrl": "https://www.instagram.com/sukubratz/",
+        "contactTitle": null,
+        "contactEmail": "mark@poing-rotterdam.nl",
+        "contactPhone": null,
+        "contactSource": "founder_ig_bio",
+        "needsManualContactButtonCheck": false,
+        "igIsPrivate": false,
+        "context": "wing PIREXIA By @rattlesnakke @kmila__x @sukubratz"
+      },
+      {
+        "instagramHandle": "gmail.com",
+        "instagramUrl": "https://www.instagram.com/gmail.com/",
+        "contactTitle": null,
+        "contactEmail": null,
+        "contactPhone": null,
+        "contactSource": "founder_ig_profile",
+        "needsManualContactButtonCheck": true,
+        "igIsPrivate": false,
+        "context": "snakke @kmila__x @sukubratz Pirexia.club@gmail.com"
+      }
+    ],
+    "_retryPassesUsed": [
+      {
+        "pass": 1,
+        "fired": [
+          "email"
+        ],
+        "missingBefore": [
+          "email"
+        ]
+      }
+    ],
+    "_websitePagesScraped": [],
+    "_sourcesUsed": [
+      "google-indexed",
+      "ddg-indexed"
+    ],
+    "_enrichmentCompletenessScore": 100,
+    "_missingCriticalFields": [],
+    "_operatorSearchStatus": "already_found",
+    "_emailSearchStatus": "found:ddg-indexed",
+    "_socialSearchStatus": "already_found",
+    "_coherenceStatus": "email_domain=match;linkedin_slug=match",
+    "whoisCheckPending": true,
+    "_retryTiming": {
+      "email_hunter": 657,
+      "email": 6216
+    },
+    "_duplicatePathsSkipped": 0,
+    "contactPath": "company_fallback",
+    "tier": "tier1",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin",
+      "phone"
+    ],
+    "_streamCount": 4,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,firstword-in-domain,5char-prefix-match",
+    "instagramDM": "Hola! Vimos Pirexia y nos llamó la atención su enfoque cinematográfico. Como productora small-scale, ¿cómo manejan los presupuestos cuando tienen varios proyectos corriendo? -Scarlett",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como contacto principal de una productora de 2 personas, tiene poder de decisión total sobre herramientas y presupuestos.",
+    "whyThisLead": [
+      "Productora small-scale con múltiples proyectos en paralelo que requiere control granular de presupuestos",
+      "Estructura de 2 personas indica necesidad de eficiencia operacional máxima",
+      "Perfil de productora cinematográfica con presupuestos complejos y necesidad de tracking detallado"
+    ],
+    "actionBlock": [
+      "Contactar hoy via email con enfoque en eficiencia operacional",
+      "Usar como canal de warming y seguimiento",
+      "Tono profesional pero directo, enfocado en productividad"
+    ],
+    "conversationAngle": "Como productora small-scale, cada proyecto requiere máximo control de presupuesto y tiempo. La pregunta clave es cómo están organizando múltiples presupuestos cinematográficos simultáneos sin perder visibilidad financiera.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram DM",
+      "opcional": "WhatsApp"
+    },
+    "specificLine": "Como productora cinematográfica small-scale con estructura de 2 personas, imagino que manejar múltiples presupuestos de proyectos en paralelo requiere máxima eficiencia operacional.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola Pirexia! Como estas? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Pirexia y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nComo productora cinematográfica small-scale con estructura de 2 personas, imagino que manejar múltiples presupuestos de proyectos en paralelo requiere máxima eficiencia operacional.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado/a Pirexia,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nComo productora cinematográfica small-scale con estructura de 2 personas, imagino que manejar múltiples presupuestos de proyectos en paralelo requiere máxima eficiencia operacional.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atenta,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @pirexia_",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Excelente trabajo en post-producción, se nota la atención al detalle'",
+      "dm": "Hola! Vimos Pirexia y nos llamó la atención su enfoque cinematográfico. Como productora small-scale, ¿cómo manejan los presupuestos cuando tienen varios proyectos corriendo? -Scarlett"
+    },
+    "whatsappMessage": "Hola! Somos UnaBase, vimos Pirexia Films y nos interesó su modelo de producción cinematográfica. Como productora de 2 personas, ¿cómo organizan presupuestos cuando manejan múltiples proyectos? Te mando info por email.",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola! Me interesa conectar con productoras cinematográficas independientes como Pirexia.",
+      "followUp": "Gracias por conectar! Vimos el trabajo de Pirexia y nos llamó la atención su enfoque cinematográfico. ¿Cómo manejan la organización de presupuestos con múltiples proyectos activos?"
+    },
+    "outreachSequence": [
+      "Dia 1: Email inicial con specificLine + seguir en",
+      "Dia 2: Dar likes y comentar post reciente en",
+      "Dia 4: DM casual preguntando por presupuestos",
+      "Dia 7: de cierre si no hay respuesta"
+    ],
+    "keyInsight": "Productora ultra-lean de 2 personas necesita máxima eficiencia en control de presupuestos para sobrevivir operacionalmente.",
+    "source_date": "2026-05-21",
+    "approved": false,
+    "_sourceWorkspace": "unabase_mx_test",
+    "_fromYesterdayValidation": true
+  },
+  {
+    "companyName": "5 a 7 Films",
+    "website": "https://5a7films.com",
+    "country": "Mexico",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "unverified",
+    "_deepScrapedPaths": [],
+    "searchQuery": "SEED:5 a 7 Films",
+    "summary": "L'Espèce explosive à la Quinzaine des cinéastes à Cannes Le film L'espèce explosive de Sarah Arnold a été sélectionné à la 58e édition de la Quinzaine des cinéastes à Cannes. EN SAVOIR PLUS contact@5a7films.com Siège : 7 Rue Saint Gerbold 14000 Caen Etablissement secondaire : 20 rue Louis Blanc 93310 Le Pré Saint Gervais © 5A7 FILMS 2025 MENTION LÉGALES POLITIQUE DE CONFIDENTIALITÉ",
+    "notableClients": [],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 5,
+    "scopeVerified": false,
+    "scopeSignals": 1,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": false,
+    "entertainmentSignals": 1,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "5 a 7 Films es una productora cinematográfica con presencia en Francia y México, enfocada en proyectos autorales con distribución internacional. Acaban de tener una selección en Cannes con 'L'espèce explosive', lo que indica producción activa y crecimiento.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de 5 a 7 Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en 5 a 7 Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que operan entre Francia y México con proyectos que van desde desarrollo hasta distribución internacional, manejar presupuestos en múltiples mercados y monedas desde Excel debe ser un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 1,
+    "fitReasons": [
+      "mid_size_team"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "contact@5a7films.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "instagramUrl": "https://www.instagram.com/5a7films/",
+    "instagramHandle": "5a7films",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "contactPhone": null,
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/5-a-7-films",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 1,
+    "scoutLog": [
+      {
+        "step": "aborted",
+        "reason": "timeout",
+        "salvaged": true
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/5a7films/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "00.0000000"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "vimeo": "https://vimeo.com/981185080"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "contact@5a7films.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "_scoutAborted": "timeout",
+    "scoutPartial": true,
+    "scoutPartialReason": "scout_timeout_partial",
+    "_retryPassesUsed": [
+      {
+        "pass": 1,
+        "fired": [
+          "operator"
+        ],
+        "missingBefore": [
+          "operator"
+        ]
+      },
+      {
+        "pass": 2,
+        "fired": [
+          "operator_skipped_pass>1"
+        ],
+        "missingBefore": [
+          "operator"
+        ]
+      }
+    ],
+    "_websitePagesScraped": [
+      "/team#operator",
+      "/equipo#operator",
+      "/personas#operator"
+    ],
+    "_sourcesUsed": [],
+    "_enrichmentCompletenessScore": 80,
+    "_missingCriticalFields": [
+      "operator"
+    ],
+    "_operatorSearchStatus": "capped_at_25s",
+    "_emailSearchStatus": "already_found",
+    "_socialSearchStatus": "already_found",
+    "_coherenceStatus": "email_domain=match;linkedin_slug=weak:5-a-7-films",
+    "_retryTiming": {
+      "operator": 43798
+    },
+    "_duplicatePathsSkipped": 1,
+    "vimeoUrl": "https://vimeo.com/981185080",
+    "whoisCheckPending": true,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin"
+    ],
+    "_streamCount": 3,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,5char-prefix-match",
+    "instagramDM": "¡Hola! Scarlett desde México. Vi lo de Cannes, qué orgullo. Trabajo con productoras que manejan proyectos internacionales y siempre me da curiosidad cómo organizan los números entre países. ¿Tienes 5 min para platicar?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Al ser una empresa de 1 empleado, esta persona es el decision maker directo para herramientas operacionales.",
+    "whyThisLead": [
+      "Productora con operación internacional (Francia-México) que requiere control de presupuestos en múltiples mercados",
+      "Tamaño mid con crecimiento evidente (selección en festival importante)",
+      "Modelo lean que necesita eficiencia operacional para escalar sin agregar overhead administrativo"
+    ],
+    "actionBlock": [
+      "Contactar hoy via email con enfoque en gestión de presupuestos internacionales",
+      "Canal primario: email directo",
+      "Tono profesional pero accesible, reconociendo su éxito reciente"
+    ],
+    "conversationAngle": "Con operación en dos países y proyectos que van desde desarrollo hasta distribución internacional, el control de presupuestos se vuelve crítico para mantener márgenes saludables.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram",
+      "opcional": "LinkedIn"
+    },
+    "specificLine": "Vimos que operan entre Francia y México con proyectos que van desde desarrollo hasta distribución internacional - manejar presupuestos en múltiples mercados y monedas desde Excel debe ser un dolor de cabeza constante.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de 5 a 7 Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en 5 a 7 Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que operan entre Francia y México con proyectos que van desde desarrollo hasta distribución internacional, manejar presupuestos en múltiples mercados y monedas desde Excel debe ser un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que operan entre Francia y México con proyectos que van desde desarrollo hasta distribución internacional, manejar presupuestos en múltiples mercados y monedas desde Excel debe ser un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @5a7films",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: '¡Felicitaciones por Cannes! Tremendo logro para el cine independiente'",
+      "dm": "¡Hola! Scarlett desde México. Vi lo de Cannes, qué orgullo. Trabajo con productoras que manejan proyectos internacionales y siempre me da curiosidad cómo organizan los números entre países. ¿Tienes 5 min para platicar?"
+    },
+    "whatsappMessage": "Hola! Soy Scarlett, trabajo con productoras internacionales. Vi que operan entre Francia y México - me da mucha curiosidad cómo manejan presupuestos con esa complejidad. ¿Podríamos platicar 5 min?",
+    "linkedinPlaybook": {
+      "connectionNote": "Felicitaciones por la selección en Cannes, tremendo logro",
+      "followUp": "Gracias por conectar. Trabajo con productoras que operan internacionalmente y siempre me interesa conocer cómo resuelven el tema de control financiero entre países. ¿Te interesaría una plática rápida?"
+    },
+    "outreachSequence": [
+      "Dia 1: Email personalizado mencionando operación internacional",
+      "Dia 2: Follow en + like a posts recientes",
+      "Dia 4: DM en con enfoque casual",
+      "Dia 7: Email final con caso de uso específico para productoras internacionales"
+    ],
+    "keyInsight": "Operación lean con complejidad internacional necesita herramientas que simplifiquen sin agregar overhead - fit perfecto para UnaBase.",
+    "source_date": "2026-05-21",
+    "approved": false,
+    "_operatorCleanup": "00.0000000_phone_nulled"
+  },
+  {
+    "companyName": "Tres Mares",
+    "website": "https://tres-mares.com",
+    "country": "Mexico",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "unverified",
+    "_deepScrapedPaths": [],
+    "searchQuery": "SEED:Tres Mares",
+    "summary": "Tres Mares is a production company.",
+    "notableClients": [],
+    "recentProjects": [],
+    "estimatedSize": "mid",
+    "unabaseScore": 5,
+    "scopeVerified": false,
+    "scopeSignals": 2,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": false,
+    "entertainmentSignals": 2,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Tres Mares es una productora audiovisual mexicana de tamaño medio con 17 empleados enfocada en producción cinematográfica. Operan desde México desarrollando proyectos de film con un equipo compacto.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Tres Mares! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Tres Mares y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que se especializan en producción cinematográfica, donde los presupuestos de film tienen estructuras de financiamiento y cronogramas de gasto muy específicos que Excel no maneja bien cuando se ejecutan varios proyectos en paralelo.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 1,
+    "fitReasons": [
+      "mid_size_team"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "enio.mejia@tres-mares.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "p4_email_retry",
+    "instagramUrl": "https://www.instagram.com/_tresmares/",
+    "instagramHandle": "_tresmares",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "contactPhone": "55 5533 6886",
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/tres-mares1",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 17,
+    "scoutLog": [
+      {
+        "step": "aborted",
+        "reason": "timeout",
+        "salvaged": false
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/_tresmares/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "55 5533 6886"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "enio.mejia@tres-mares.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "_scoutAborted": "timeout",
+    "scoutPartial": false,
+    "scoutPartialReason": null,
+    "_retryPassesUsed": [
+      {
+        "pass": 1,
+        "fired": [
+          "operator"
+        ],
+        "missingBefore": [
+          "operator"
+        ]
+      },
+      {
+        "pass": 2,
+        "fired": [
+          "operator_skipped_pass>1"
+        ],
+        "missingBefore": [
+          "operator"
+        ]
+      }
+    ],
+    "_websitePagesScraped": [],
+    "_sourcesUsed": [],
+    "_enrichmentCompletenessScore": 80,
+    "_missingCriticalFields": [
+      "operator"
+    ],
+    "_operatorSearchStatus": "capped_at_25s",
+    "_emailSearchStatus": "already_found",
+    "_socialSearchStatus": "already_found",
+    "_coherenceStatus": "email_domain=match;linkedin_slug=match",
+    "_retryTiming": {
+      "operator": 27137
+    },
+    "_duplicatePathsSkipped": 0,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin"
+    ],
+    "_streamCount": 3,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,firstword-in-domain,5char-prefix-match",
+    "instagramDM": "¡Hola! Soy Scarlett de UnaBase. Vi el trabajo que hacen en Tres Mares y me preguntaba cómo organizan los presupuestos cuando tienen varios films en diferentes etapas. ¿Podrías conectarme con quien maneja esa parte?",
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Email corporativo indica rol operacional, posible acceso directo a decisores en empresa de 17 personas.",
+    "whyThisLead": [
+      "Productora de film con múltiples proyectos requiere control presupuestario por formato",
+      "Tamaño medio (17 empleados) indica volumen suficiente para justificar herramienta especializada",
+      "Industria film mexicana en crecimiento necesita profesionalizar gestión financiera"
+    ],
+    "actionBlock": [
+      "Enviar email directo mencionando desafíos específicos de presupuestación en film",
+      "Canal primario: email corporativo",
+      "Tono profesional pero accesible para mercado mexicano"
+    ],
+    "conversationAngle": "Cómo están organizando los presupuestos de producción cuando manejan varios proyectos de film simultáneamente con diferentes fases de financiamiento y cronogramas de gasto.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "instagram",
+      "opcional": "whatsapp"
+    },
+    "specificLine": "Vimos que se especializan en producción cinematográfica, donde los presupuestos de film tienen estructuras de financiamiento y cronogramas de gasto muy específicos que Excel no maneja bien cuando se ejecutan varios proyectos en paralelo.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Tres Mares! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Tres Mares y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que se especializan en producción cinematográfica, donde los presupuestos de film tienen estructuras de financiamiento y cronogramas de gasto muy específicos que Excel no maneja bien cuando se ejecutan varios proyectos en paralelo.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que se especializan en producción cinematográfica, donde los presupuestos de film tienen estructuras de financiamiento y cronogramas de gasto muy específicos que Excel no maneja bien cuando se ejecutan varios proyectos en paralelo.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @_tresmares",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar: 'Increíble la calidad de producción que manejan'",
+      "dm": "¡Hola! Soy Scarlett de UnaBase. Vi el trabajo que hacen en Tres Mares y me preguntaba cómo organizan los presupuestos cuando tienen varios films en diferentes etapas. ¿Podrías conectarme con quien maneja esa parte?"
+    },
+    "whatsappMessage": "Hola, soy Scarlett de UnaBase. Trabajo con productoras como Tres Mares ayudándolas a organizar presupuestos de film de manera más eficiente que Excel. ¿Te interesaría una demo rápida?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola, trabajo con productoras audiovisuales mexicanas",
+      "followUp": "Gracias por conectar. Ayudamos a productoras como Tres Mares a organizar presupuestos de film más eficientemente. ¿Cómo manejan actualmente los presupuestos de múltiples proyectos?"
+    },
+    "outreachSequence": [
+      "Dia 1: Enviar email con specificLine + pregunta sobre organización presupuestaria",
+      "Dia 2: Follow up en con engagement orgánico",
+      "Dia 4: directo mencionando tema específico de presupuestos film",
+      "Dia 7: Email final con caso de uso específico de productora similar"
+    ],
+    "keyInsight": "Productora especializada en film con equipo de tamaño ideal para adoptar herramientas profesionales de presupuestación.",
+    "source_date": "2026-05-21",
+    "approved": false
+  },
+  {
+    "companyName": "Mostro Films",
+    "website": "https://mostro.tv",
+    "country": "Mexico",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "unverified",
+    "_deepScrapedPaths": [],
+    "searchQuery": "SEED:Mostro Films",
+    "summary": "En Mostro.tv, somos expertos en producción de eventos corporativos que marcan la diferencia. Transformamos cada evento en una experiencia única, combinando tecnología avanzada y creatividad para ga...",
+    "notableClients": [
+      "Facebook"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 4,
+    "scopeVerified": false,
+    "scopeSignals": 2,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": false,
+    "entertainmentSignals": 2,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Mostro Films es una productora mexicana especializada en eventos corporativos que combina tecnología avanzada y creatividad. Han trabajado con marcas reconocidas y se enfocan en transformar eventos corporativos en experiencias únicas.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Mostro Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Mostro Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que se especializan en eventos corporativos con componentes tecnológicos complejos, un formato que combina producción audiovisual con logística de evento, cada uno con ritmos de caja muy distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 1,
+    "fitReasons": [
+      "premium_clients"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "ezequiel@mostro.tv",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/mostrofilms/",
+    "instagramHandle": "mostrofilms",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": null,
+    "twitterUrl": null,
+    "youtubeUrl": null,
+    "vimeoUrl": null,
+    "contactPhone": "55 6220 6490",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "ezequiel@mostro.tv",
+          "joel@mostro.tv",
+          "tomas@mostro.tv"
+        ],
+        "genericEmails": [],
+        "phones": [
+          "9 11 3403 2052",
+          "9 341 6552 186",
+          "9 11 5483 4493"
+        ],
+        "name": null,
+        "social": {
+          "instagram": "https://www.instagram.com/mostro.tv/",
+          "facebook": null,
+          "twitter": null,
+          "youtube": null,
+          "vimeo": null,
+          "instagramScore": 2
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": null,
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/mostrofilms/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "55 6220 6490"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "ezequiel@mostro.tv",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/mostrofilms/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "55 6220 6490"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "ezequiel@mostro.tv",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": null,
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": null,
+    "_retryPassesUsed": [
+      {
+        "pass": 1,
+        "fired": [
+          "operator",
+          "linkedin"
+        ],
+        "missingBefore": [
+          "operator",
+          "linkedin"
+        ]
+      },
+      {
+        "pass": 2,
+        "fired": [
+          "operator_skipped_pass>1",
+          "linkedin"
+        ],
+        "missingBefore": [
+          "operator",
+          "linkedin"
+        ]
+      }
+    ],
+    "_websitePagesScraped": [
+      "/team#operator",
+      "/staff#operator",
+      "/personas#operator"
+    ],
+    "_sourcesUsed": [],
+    "_enrichmentCompletenessScore": 70,
+    "_missingCriticalFields": [
+      "operator",
+      "linkedin"
+    ],
+    "_operatorSearchStatus": "capped_at_25s",
+    "_emailSearchStatus": "already_found",
+    "_socialSearchStatus": "already_found",
+    "_coherenceStatus": "email_domain=match",
+    "_retryTiming": {
+      "linkedin": 4727,
+      "operator": 55767
+    },
+    "_duplicatePathsSkipped": 1,
+    "_igVerificationFailedHandle": "mostrofilms",
+    "_igVerificationFailedReason": "no_match",
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email"
+    ],
+    "_streamCount": 2,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,firstword-in-domain,5char-prefix-match",
+    "instagramDM": "Hola! Vi el trabajo que hacen en eventos corporativos, se ve muy profesional el setup técnico. ¿Cómo organizan todos los números cuando tienen varios eventos corriendo? Soy Scarlett de una herramienta que ayuda con eso.",
+    "readyToSend": true,
+    "contactDecisionPower": "Medio",
+    "contactWhyThisPerson": "Como contacto directo de la empresa, probablemente tiene decisión sobre herramientas de producción y manejo de presupuestos.",
+    "whyThisLead": [
+      "Producen eventos corporativos con componentes técnicos complejos que requieren presupuestación detallada",
+      "Trabajan con clientes corporativos grandes como que demandan control presupuestario estricto",
+      "Su enfoque en tecnología avanzada indica sofisticación operacional y apertura a herramientas especializadas"
+    ],
+    "actionBlock": [
+      "Contactar hoy vía email con enfoque en manejo de presupuestos para eventos corporativos",
+      "Usar como canal secundario por ser México",
+      "Tono profesional pero directo, enfocado en eficiencia operacional"
+    ],
+    "conversationAngle": "Los eventos corporativos tienen presupuestos complejos con múltiples partidas técnicas y logísticas. ¿Cómo organizan los números cuando manejan varios eventos simultáneamente?",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "WhatsApp",
+      "opcional": "Instagram"
+    },
+    "specificLine": "Vimos que se especializan en eventos corporativos con componentes tecnológicos complejos - un formato que combina producción audiovisual con logística de evento, cada uno con ritmos de caja muy distintos.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Mostro Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Mostro Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que se especializan en eventos corporativos con componentes tecnológicos complejos, un formato que combina producción audiovisual con logística de evento, cada uno con ritmos de caja muy distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que se especializan en eventos corporativos con componentes tecnológicos complejos, un formato que combina producción audiovisual con logística de evento, cada uno con ritmos de caja muy distintos.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @mostrofilms",
+      "paso2": "Dar like a sus ultimos 3 posts",
+      "paso3": "Comentar algo sobre la producción técnica de algún evento que muestren",
+      "dm": "Hola! Vi el trabajo que hacen en eventos corporativos, se ve muy profesional el setup técnico. ¿Cómo organizan todos los números cuando tienen varios eventos corriendo? Soy Scarlett de una herramienta que ayuda con eso."
+    },
+    "whatsappMessage": "Hola Ezequiel! Vi el trabajo de Mostro en eventos corporativos, muy impresionante el nivel técnico. Soy Scarlett y trabajo con productoras que manejan presupuestos complejos. ¿Tienes 15 min para platicar sobre cómo organizan los números cuando tienen varios proyectos corriendo?",
+    "linkedinPlaybook": null,
+    "outreachSequence": [
+      "Dia 1: Email inicial con specificLine sobre eventos corporativos",
+      "Dia 2: de seguimiento casual mencionando el setup técnico",
+      "Dia 4: Email corto preguntando sobre manejo de múltiples presupuestos",
+      "Dia 7: Último ofreciendo demo rápida de 10 minutos"
+    ],
+    "keyInsight": "Los eventos corporativos requieren presupuestación multi-formato (producción + logística + tech) que es exactamente el dolor que UnaBase resuelve.",
+    "source_date": "2026-05-21",
+    "approved": false
+  },
+  {
+    "companyName": "Alto Films",
+    "website": "https://altofilms.com",
+    "country": "Mexico",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "unverified",
+    "_deepScrapedPaths": [
+      "/about",
+      "/about-us",
+      "/nosotros",
+      "/quienes-somos",
+      "/team",
+      "/equipo",
+      "/sobre-nosotros"
+    ],
+    "searchQuery": "SEED:Alto Films",
+    "summary": "Welcome to Alto Films An independent UK production company creating documentary films and educational content in the fields of health and the environment. DOCUMENTARIESEDUCATIONAL Get in touch As we’re practicing social distancing at the moment, we seized the opportunity to do some construction work on the site. But please stay in contact by sending us a message here.",
+    "notableClients": [
+      "Meta"
+    ],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 3,
+    "scopeVerified": true,
+    "scopeSignals": 4,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 4,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Alto Films es una productora independiente mexicana de 2 personas especializada en documentales y contenido educativo en salud y medio ambiente. Trabajan con Meta y se enfocan en producción documental con componente educativo.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Alto Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Alto Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan documentales con contenido educativo para salud y medio ambiente, dos formatos con estructuras de presupuesto y ritmos de caja completamente distintos. ¿Cómo están organizando eso cuando el documental puede tardar meses pero el contenido educativo necesita ser más ágil?\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 1,
+    "fitReasons": [
+      "premium_clients"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "jane@altofilms.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "ddg_email",
+    "instagramUrl": "https://www.instagram.com/alto.films/",
+    "instagramHandle": "alto.films",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "contactPhone": null,
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/alto-films-ltd",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 2,
+    "scoutLog": [
+      {
+        "step": "aborted",
+        "reason": "timeout",
+        "salvaged": true
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/alto.films/"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "jane@altofilms.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "_scoutAborted": "timeout",
+    "scoutPartial": true,
+    "scoutPartialReason": "scout_timeout_partial",
+    "_retryPassesUsed": [
+      {
+        "pass": 1,
+        "fired": [
+          "operator"
+        ],
+        "missingBefore": [
+          "operator"
+        ]
+      },
+      {
+        "pass": 2,
+        "fired": [
+          "operator_skipped_pass>1"
+        ],
+        "missingBefore": [
+          "operator"
+        ]
+      }
+    ],
+    "_websitePagesScraped": [
+      "/team#operator",
+      "/our-team#operator"
+    ],
+    "_sourcesUsed": [],
+    "_enrichmentCompletenessScore": 80,
+    "_missingCriticalFields": [
+      "operator"
+    ],
+    "_operatorSearchStatus": "capped_at_25s",
+    "_emailSearchStatus": "already_found",
+    "_socialSearchStatus": "already_found",
+    "_coherenceStatus": "email_domain=match;linkedin_slug=weak:alto-films-ltd",
+    "_retryTiming": {
+      "operator": 25863
+    },
+    "_duplicatePathsSkipped": 6,
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin"
+    ],
+    "_streamCount": 3,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,firstword-in-domain,5char-prefix-match",
+    "instagramDM": "Hola! Vi su trabajo en documentales sobre salud y medio ambiente - súper interesante la combinación. ¿Cómo manejan los presupuestos entre proyectos tan distintos? Debe ser un rompecabezas logístico.",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Como contacto directo de una productora de 2 personas, Jane tiene poder de decisión total sobre herramientas y presupuestos.",
+    "whyThisLead": [
+      "Combinan documentales y contenido educativo, dos formatos con estructuras de presupuesto y ritmos de caja completamente distintos",
+      "Productora pequeña pero con cliente enterprise (Meta), indicando crecimiento y necesidad de profesionalizar procesos",
+      "Tamaño perfecto para UnaBase: suficientemente pequeños para decidir rápido, suficientemente serios para pagar por organización"
+    ],
+    "actionBlock": [
+      "Enviar email con línea específica sobre documentales vs contenido educativo",
+      "Canal primario: email directo a jane@altofilms.com",
+      "Tono profesional pero directo, enfocado en eficiencia operacional"
+    ],
+    "conversationAngle": "¿Cómo manejan los presupuestos cuando alternan entre documentales (con timeline largo) y contenido educativo (más ágil)? Son dos bestias completamente diferentes en términos de flujo de caja.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "instagram",
+      "opcional": "linkedin"
+    },
+    "specificLine": "Vimos que combinan documentales con contenido educativo para salud y medio ambiente - dos formatos con estructuras de presupuesto y ritmos de caja completamente distintos. ¿Cómo están organizando eso cuando el documental puede tardar meses pero el contenido educativo necesita ser más ágil?",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Alto Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Alto Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan documentales con contenido educativo para salud y medio ambiente, dos formatos con estructuras de presupuesto y ritmos de caja completamente distintos. ¿Cómo están organizando eso cuando el documental puede tardar meses pero el contenido educativo necesita ser más ágil?\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que combinan documentales con contenido educativo para salud y medio ambiente, dos formatos con estructuras de presupuesto y ritmos de caja completamente distintos. ¿Cómo están organizando eso cuando el documental puede tardar meses pero el contenido educativo necesita ser más ágil?\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @alto.films",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar algo específico sobre su trabajo documental o contenido educativo",
+      "dm": "Hola! Vi su trabajo en documentales sobre salud y medio ambiente - súper interesante la combinación. ¿Cómo manejan los presupuestos entre proyectos tan distintos? Debe ser un rompecabezas logístico."
+    },
+    "whatsappMessage": null,
+    "linkedinPlaybook": {
+      "connectionNote": "Interesante trabajo en documentales de salud y medio ambiente",
+      "followUp": "Hola Jane, me llamó la atención su enfoque combinando documentales y contenido educativo. ¿Cómo organizan los presupuestos cuando manejan formatos tan distintos? Debe ser complejo coordinar timelines y flujos de caja tan diferentes."
+    },
+    "outreachSequence": [
+      "Día 1: Enviar email con línea específica sobre documentales vs contenido educativo",
+      "Día 2: Seguir en y dar likes",
+      "Día 4: DM en mencionando su nicho específico",
+      "Día 7: Mensaje final por LinkedIn si no hay respuesta"
+    ],
+    "keyInsight": "Productora pequeña con cliente enterprise que maneja dos formatos de producción muy distintos - el dolor de presupuestación es real y urgente.",
+    "source_date": "2026-05-21",
+    "approved": false
+  },
+  {
+    "companyName": "Elote Films",
+    "website": "https://elotefilms.com",
+    "country": "Mexico",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "unverified",
+    "_deepScrapedPaths": [
+      "/about",
+      "/about-us",
+      "/nosotros",
+      "/quienes-somos",
+      "/team",
+      "/equipo",
+      "/sobre-nosotros"
+    ],
+    "searchQuery": "SEED:Elote Films",
+    "summary": "Elote Films - LinkedIn. Elote Films es una casa productora que abrió sus servicios en el 2001. Elote Films - Crunchbase Company Profile & Funding.",
+    "notableClients": [],
+    "recentProjects": [],
+    "estimatedSize": "small",
+    "unabaseScore": 3,
+    "scopeVerified": true,
+    "scopeSignals": 8,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 8,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Elote Films es una productora mexicana establecida en 2001 con 23 empleados, enfocada en producción audiovisual. Casa productora de tamaño mediano con más de 20 años de experiencia en el mercado mexicano.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Elote Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Elote Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años produciendo y un equipo de 23 personas, seguramente están manejando varios proyectos en paralelo donde cuadrar presupuestos en Excel se vuelve un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 1,
+    "fitReasons": [
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "edu@elotefilms.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "confirmed",
+    "contactSource": "operator_manual_recovery",
+    "instagramUrl": "https://www.instagram.com/elotefilms/",
+    "instagramHandle": "elotefilms",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "contactPhone": "+52 55 1291 6198",
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/elote-films",
+    "apolloCompanyPhone": "+52 866 672 9637",
+    "apolloEmployeeCount": 23,
+    "scoutLog": [
+      {
+        "step": "aborted",
+        "reason": "timeout",
+        "salvaged": true
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "email_error": "net::ERR_ABORTED at https://elotefilms.com"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": false,
+          "ig": false,
+          "phone": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "alt_paths",
+        "started": true
+      },
+      {
+        "step": "alt_paths",
+        "blog_error": "net::ERR_ABORTED at https://elotefilms.com"
+      },
+      {
+        "step": "alt_paths",
+        "directory_error": "net::ERR_ABORTED at https://html.duckduckgo.com/html/?q=%22Elote%20Films%22%20site%3Amadridfilmoffice.com%20OR%20site%3Amadrid.org%2Ffilmmadrid"
+      },
+      {
+        "step": "alt_paths",
+        "done": true,
+        "additional_found": 0
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": null,
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "_scoutAborted": "timeout",
+    "scoutPartial": true,
+    "scoutPartialReason": "scout_timeout_partial",
+    "_retryPassesUsed": [
+      {
+        "pass": 1,
+        "fired": [
+          "email",
+          "socials",
+          "operator"
+        ],
+        "missingBefore": [
+          "ig",
+          "email",
+          "operator",
+          "streams"
+        ]
+      },
+      {
+        "pass": 2,
+        "fired": [
+          "email",
+          "socials",
+          "operator_skipped_pass>1"
+        ],
+        "missingBefore": [
+          "ig",
+          "email",
+          "operator",
+          "streams"
+        ]
+      }
+    ],
+    "_websitePagesScraped": [
+      "/legal"
+    ],
+    "_sourcesUsed": [
+      "google-indexed",
+      "google-indexed"
+    ],
+    "_enrichmentCompletenessScore": 25,
+    "_missingCriticalFields": [
+      "ig",
+      "email",
+      "operator",
+      "streams"
+    ],
+    "_operatorSearchStatus": "not_found",
+    "_emailSearchStatus": "not_found",
+    "_socialSearchStatus": "found",
+    "_coherenceStatus": "linkedin_slug=weak:elote-films",
+    "_retryTiming": {
+      "email_hunter": 420,
+      "email": 23476,
+      "socials": 9357,
+      "operator": 10198
+    },
+    "_duplicatePathsSkipped": 52,
+    "whoisCheckPending": true,
+    "contactPath": "company_fallback",
+    "contactPathLabel": "manual/social contact path (LinkedIn + phone)",
+    "tier": "tier2",
+    "_streams": [
+      "linkedin",
+      "phone"
+    ],
+    "_streamCount": 2,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,firstword-in-domain,5char-prefix-match",
+    "instagramDM": null,
+    "readyToSend": true,
+    "contactDecisionPower": "Bajo",
+    "contactWhyThisPerson": "Sin contacto identificado, necesario encontrar al fundador o director de producción para decisiones de software operacional.",
+    "whyThisLead": [
+      "Productora establecida con 23 empleados indica múltiples proyectos simultáneos",
+      "20+ años en el mercado sugiere cartera diversa de clientes y formatos",
+      "Tamaño mediano perfecto para necesitar organización de presupuestos pero aún usando Excel"
+    ],
+    "actionBlock": [
+      "Investigar fundador/director en LinkedIn de Elote Films",
+      "Usar LinkedIn para contacto inicial",
+      "Tono profesional pero directo, enfocado en eficiencia operacional"
+    ],
+    "conversationAngle": "Con 20+ años en producción y un equipo de 23 personas, seguramente manejan varios proyectos simultáneamente con presupuestos complejos que requieren mejor organización que Excel.",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "telefono"
+    },
+    "specificLine": "Con más de 20 años produciendo y un equipo de 23 personas, seguramente están manejando varios proyectos en paralelo donde cuadrar presupuestos en Excel se vuelve un dolor de cabeza constante.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Elote Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Elote Films y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años produciendo y un equipo de 23 personas, seguramente están manejando varios proyectos en paralelo donde cuadrar presupuestos en Excel se vuelve un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nCon más de 20 años produciendo y un equipo de 23 personas, seguramente están manejando varios proyectos en paralelo donde cuadrar presupuestos en Excel se vuelve un dolor de cabeza constante.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": null,
+    "whatsappMessage": "Hola! Vi que Elote Films lleva 20+ años produciendo con un equipo sólido de 23 personas. ¿Cómo están organizando los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo? Tenemos algo que podría ayudar.",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola, me interesa conocer más sobre la operación de Elote Films y sus procesos de producción.",
+      "followUp": "Gracias por conectar. Con la experiencia y escala de Elote Films, me imagino que manejar presupuestos de múltiples proyectos debe ser todo un reto. ¿Cómo están organizando esa parte operacional actualmente?"
+    },
+    "outreachSequence": [
+      "Dia 1: Llamada telefónica directa al número disponible",
+      "Dia 2: LinkedIn connection con fundador/director si se identifica",
+      "Dia 4: Follow up por LinkedIn si acepta conexión",
+      "Dia 7: Email de cierre si se consigue contacto directo"
+    ],
+    "keyInsight": "Productora establecida con equipo de tamaño perfecto para tener el problema (múltiples proyectos) pero no la solución (software especializado).",
+    "source_date": "2026-05-21",
+    "approved": false,
+    "_operatorRecovered": true
+  },
+  {
+    "companyName": "Cine Caníbal",
+    "website": "https://cinecanibal.com",
+    "country": "Mexico",
+    "industry": "film",
+    "_seedSource": true,
+    "_seedConfidence": "unverified",
+    "_deepScrapedPaths": [],
+    "searchQuery": "SEED:Cine Caníbal",
+    "summary": "X Click aquí Menu LA LADRONA DEL TIEMPO Mayo 28 UNDERTONE FRECUENCIA MALDITA Cartelera LEVITICUS Junio 18 CineCaníbal© 2026",
+    "notableClients": [],
+    "recentProjects": [
+      "Miss Bala",
+      "Abel"
+    ],
+    "estimatedSize": "small",
+    "unabaseScore": 6,
+    "scopeVerified": true,
+    "scopeSignals": 5,
+    "scopeLabel": "entertainment",
+    "entertainmentVerified": true,
+    "entertainmentSignals": 5,
+    "nicheVerified": true,
+    "nicheReason": "niche_confirmed",
+    "ejeSignals": [],
+    "companyBrief": "Cinecanibal es una productora mexicana boutique especializada en contenido cinematográfico. Con solo 3 empleados, manejan proyectos como Miss Bala y Abel, operando como un equipo compacto en múltiples producciones.",
+    "approachAngle": null,
+    "pitchEmailES": "Hola equipo de Cinecanibal! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Cinecanibal y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que manejan múltiples largometrajes como Miss Bala y Abel con un equipo compacto de 3 personas, algo que requiere control presupuestario quirúrgico sin procesos que frenen la agilidad creativa.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "pitchEmailEN": null,
+    "fitVerified": true,
+    "fitSignals": 2,
+    "fitReasons": [
+      "multiple_projects",
+      "high_ent_signals"
+    ],
+    "ejeScores": null,
+    "scoringPass": true,
+    "scoringReason": "scoring_not_configured",
+    "_companyNameSource": "domain_canonical",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "andy@cinecanibal.com",
+    "contactLinkedIn": null,
+    "contactConfidence": "website_direct",
+    "contactSource": "website",
+    "contactStatus": null,
+    "instagramUrl": "https://www.instagram.com/cinecanibal/",
+    "instagramHandle": "cinecanibal",
+    "instagramBio": null,
+    "instagramFollowers": null,
+    "facebookUrl": "https://www.facebook.com/pages/cine-CANIBAL/242106995812690",
+    "twitterUrl": "https://twitter.com/cineCANIBAL",
+    "youtubeUrl": "https://www.youtube.com/user/CANIBALNETWORKS",
+    "vimeoUrl": "https://vimeo.com/cinecanibal/vod_pages/page:1/sort:date",
+    "contactPhone": "52-55) 5448 5339",
+    "emailPatterns": null,
+    "scoutLog": [
+      {
+        "step": 1,
+        "name": "Apollo Pro",
+        "started": true
+      },
+      {
+        "step": 1,
+        "found": "org_only",
+        "name": null
+      },
+      {
+        "step": 2,
+        "name": "Hunter.io",
+        "started": true
+      },
+      {
+        "step": 2,
+        "error": "Request failed with status code 429"
+      },
+      {
+        "step": 3,
+        "name": "Website Crawl",
+        "started": true
+      },
+      {
+        "step": 3,
+        "pagesScanned": 16,
+        "personalEmails": [
+          "andy@cinecanibal.com"
+        ],
+        "genericEmails": [
+          "prensa@cinecanibal.com"
+        ],
+        "phones": [],
+        "name": null,
+        "social": {
+          "instagram": "https://instagram.com/cinecanibal",
+          "facebook": "https://www.facebook.com/pages/cine-CANIBAL/242106995812690",
+          "twitter": "https://twitter.com/cineCANIBAL",
+          "youtube": "https://www.youtube.com/user/CANIBALNETWORKS",
+          "vimeo": "https://vimeo.com/cinecanibal/vod_pages/page:1/sort:date",
+          "instagramScore": 3
+        }
+      },
+      {
+        "step": 8,
+        "name": "Social Scan",
+        "started": true
+      },
+      {
+        "step": 8,
+        "igUrl": null,
+        "igHandle": null,
+        "igFollowers": null,
+        "socialEmail": "andy@cinecanibal.com",
+        "socialPhone": null
+      },
+      {
+        "step": "deep_rescue",
+        "started": true
+      },
+      {
+        "step": "deep_rescue",
+        "found_ig": "https://www.instagram.com/cinecanibal/"
+      },
+      {
+        "step": "deep_rescue",
+        "found_phone": "52-55) 5448 5339"
+      },
+      {
+        "step": "deep_rescue",
+        "final": {
+          "email": true,
+          "ig": true,
+          "phone": true
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "andy@cinecanibal.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      },
+      {
+        "step": "founder_recovery",
+        "started": true,
+        "name": "(none)"
+      },
+      {
+        "step": "founder_recovery",
+        "company_ig_tagged": []
+      },
+      {
+        "step": "founder_recovery",
+        "final": {
+          "email": "andy@cinecanibal.com",
+          "additional": 0,
+          "upgraded": false
+        }
+      }
+    ],
+    "apolloCompanyLinkedIn": "http://www.linkedin.com/company/cine-canibal",
+    "apolloCompanyPhone": null,
+    "apolloEmployeeCount": 3,
+    "_retryPassesUsed": [
+      {
+        "pass": 1,
+        "fired": [
+          "operator"
+        ],
+        "missingBefore": [
+          "operator"
+        ]
+      }
+    ],
+    "_websitePagesScraped": [
+      "/team#operator"
+    ],
+    "_sourcesUsed": [],
+    "_enrichmentCompletenessScore": 80,
+    "_missingCriticalFields": [
+      "operator"
+    ],
+    "_operatorSearchStatus": "not_found",
+    "_emailSearchStatus": "already_found",
+    "_socialSearchStatus": "already_found",
+    "_coherenceStatus": "email_domain=match;linkedin_slug=weak:cine-canibal",
+    "_retryTiming": {
+      "operator": 62851
+    },
+    "_duplicatePathsSkipped": 6,
+    "_igVerified": true,
+    "_igVerificationEvidence": [
+      "bio:brand",
+      "bio:domain-base",
+      "title:brand"
+    ],
+    "_igVerificationReason": "matched:bio:brand,bio:domain-base,title:brand",
+    "contactPath": "company_fallback",
+    "tier": "tier2",
+    "_streams": [
+      "ig",
+      "email",
+      "linkedin",
+      "phone"
+    ],
+    "_streamCount": 4,
+    "_credibilitySignals": [
+      "operator-seed"
+    ],
+    "_credibilityPass": true,
+    "_credibilityReason": "seed_bypass",
+    "_domainCoherent": true,
+    "_domainCoherenceReason": "matched:domain-in-brand,brand-in-domain,firstword-in-domain,5char-prefix-match",
+    "instagramDM": "Hola! Vimos el trabajo que hacen en Miss Bala y Abel. Como productora boutique deben tener desafíos únicos organizando presupuestos entre proyectos. ¿Te interesa conocer cómo otros estudios pequeños lo resuelven?",
+    "readyToSend": true,
+    "contactDecisionPower": "Alto",
+    "contactWhyThisPerson": "Email andy@ sugiere rol de decisión financiera/operativa en una productora de 3 personas donde cada decisión pasa por los fundadores.",
+    "whyThisLead": [
+      "Productora boutique manejando múltiples proyectos cinematográficos simultáneamente con equipo reducido",
+      "Equipo de 3 personas indica necesidad crítica de herramientas que optimicen procesos administrativos",
+      "Proyectos como Miss Bala requieren presupuestación profesional que Excel no puede manejar eficientemente"
+    ],
+    "actionBlock": [
+      "Contactar vía email con enfoque en eficiencia operativa para equipos pequeños",
+      "Email como canal primario, como seguimiento",
+      "Tono profesional pero directo, reconociendo su tamaño boutique como fortaleza"
+    ],
+    "conversationAngle": "Cómo una productora de 3 personas optimiza el control presupuestario entre múltiples largometrajes sin perder agilidad creativa - especialmente cuando cada proyecto tiene timing y flujo de caja diferentes.",
+    "channelPriority": {
+      "primario": "Email",
+      "secundario": "Instagram",
+      "opcional": "WhatsApp"
+    },
+    "specificLine": "Vimos que manejan múltiples largometrajes como Miss Bala y Abel con un equipo compacto de 3 personas - algo que requiere control presupuestario quirúrgico sin procesos que frenen la agilidad creativa.",
+    "observation": null,
+    "relevance": null,
+    "emailCercana": "Hola equipo de Cinecanibal! Como estan? Soy Scarlett del equipo de UnaBase.\n\nEstabamos viendo el trabajo que hacen en Cinecanibal y conectamos.\n\nTrabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que manejan múltiples largometrajes como Miss Bala y Abel con un equipo compacto de 3 personas, algo que requiere control presupuestario quirúrgico sin procesos que frenen la agilidad creativa.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett\nEquipo UnaBase",
+    "emailFormal": "Estimado equipo,\n\nSoy Scarlett del equipo de UnaBase. Trabajamos con más de 300 empresas en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de producción sin fricción, para productoras con múltiples proyectos en paralelo.\n\nVi que manejan múltiples largometrajes como Miss Bala y Abel con un equipo compacto de 3 personas, algo que requiere control presupuestario quirúrgico sin procesos que frenen la agilidad creativa.\n\nte muestro en 10 min cómo lo están usando otras productoras.\n\nQuedo atento,\nScarlett\nEquipo UnaBase",
+    "instagramPlaybook": {
+      "paso1": "Seguir @cinecanibal",
+      "paso2": "Dar like a sus últimos 3 posts",
+      "paso3": "Comentar algo específico sobre la calidad visual de sus proyectos recientes",
+      "dm": "Hola! Vimos el trabajo que hacen en Miss Bala y Abel. Como productora boutique deben tener desafíos únicos organizando presupuestos entre proyectos. ¿Te interesa conocer cómo otros estudios pequeños lo resuelven?"
+    },
+    "whatsappMessage": "Hola Andy! Somos UnaBase, vimos que en Cinecanibal manejan proyectos como Miss Bala con equipo compacto. Nos especializamos en presupuestación para productoras boutique. ¿5 min para mostrarles algo interesante?",
+    "linkedinPlaybook": {
+      "connectionNote": "Hola Andy, me interesa conocer más sobre la operación de productoras boutique como Cinecanibal",
+      "followUp": "Gracias por conectar! Vimos los proyectos de Cinecanibal y nos llamó la atención cómo optimizan procesos con equipo tan compacto. Nos especializamos en herramientas para productoras como ustedes."
+    },
+    "outreachSequence": [
+      "Día 1: Email principal con specificLine sobre eficiencia operativa",
+      "Día 2: follow + engagement en posts recientes",
+      "Día 4: directo mencionando proyectos específicos",
+      "Día 7: Email final con caso de estudio de productora similar"
+    ],
+    "keyInsight": "Equipo ultra-compacto (3 personas) manejando largometrajes complejos indica alta necesidad de automatización en procesos administrativos para mantener foco creativo.",
+    "source_date": "2026-05-21",
+    "approved": false,
+    "_sourceWorkspace": "unabase_mx_test",
+    "_fromYesterdayValidation": true
+  }
+]
