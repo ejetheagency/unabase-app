@@ -41,7 +41,13 @@
       "secundario": "Instagram DM",
       "opcional": "LinkedIn"
     },
-    "unabaseScore": 8
+    "unabaseScore": 8,
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ]
   },
   {
     "companyName": "Cobra Films",
@@ -82,7 +88,13 @@
       "secundario": "Instagram DM",
       "opcional": "LinkedIn"
     },
-    "unabaseScore": 8
+    "unabaseScore": 8,
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ]
   },
   {
     "companyName": "Panorámica Films",
@@ -113,7 +125,13 @@
       "secundario": "Instagram DM",
       "opcional": "LinkedIn"
     },
-    "unabaseScore": 8
+    "unabaseScore": 8,
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ]
   },
   {
     "companyName": "Exodo Animation Studios",
@@ -143,7 +161,13 @@
       "secundario": "Instagram DM",
       "opcional": "LinkedIn"
     },
-    "unabaseScore": 8
+    "unabaseScore": 8,
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ]
   },
   {
     "companyName": "Estudios Gabriel García Márquez",
@@ -152,118 +176,175 @@
     "industry": "film",
     "tier": "tier2",
     "contactPath": "company_fallback",
-    "contactName": null,
-    "contactTitle": null,
+    "contactName": "Luigi Juárez",
+    "contactTitle": "Gerente Comercial y de Marketing",
     "contactEmail": "marketing@estudiosggm.com",
     "instagramUrl": "https://www.instagram.com/estudiosggm",
     "instagramHandle": "estudiosggm",
     "apolloCompanyLinkedIn": "https://www.linkedin.com/company/estudiosggm/",
     "companyBrief": "Estudio de produccion mexicano con multiples creditos en series de TV y peliculas. Direccion: Emilio Cardenas 205, Centro Industrial Tlalnepantla, EDOMEX.",
-    "pitchEmailES": "Hola equipo de Estudios GGM! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos los creditos de produccion que tienen — series de TV + peliculas — y nos llamo la atencion como manejan tanto volumen desde Tlalnepantla.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "pitchEmailES": "Hola Luigi! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos los creditos de produccion de Estudios GGM — series de TV y peliculas desde Tlalnepantla — y nos llamo la atencion el volumen que manejan.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "source_date": "2026-05-22",
     "approved": true,
     "readyToSend": true,
     "contactConfidence": "confirmed",
-    "contactSource": "apollo_discovery_webfetch_extraction",
+    "contactSource": "apollo_people_match_revealed",
     "_discoveryMethod": "apollo_/organizations/search + webfetch /llm-extraction",
     "_operatorVerified": false,
-    "emailCercana": "Hola equipo de Estudios GGM! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos los creditos de produccion que tienen — series de TV + peliculas — y nos llamo la atencion como manejan tanto volumen desde Tlalnepantla.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Luigi! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos los creditos de produccion de Estudios GGM — series de TV y peliculas desde Tlalnepantla — y nos llamo la atencion el volumen que manejan.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "channelPriority": {
       "primario": "email",
       "secundario": "Instagram DM",
       "opcional": "LinkedIn"
     },
-    "unabaseScore": 8
+    "unabaseScore": 8,
+    "contactLinkedIn": "http://www.linkedin.com/in/luigi-ju%c3%a1rez-b692a9213",
+    "_roleEmailNote": "marketing@estudiosggm.com is the role-based commercial email — Luigi Juárez (Commercial & Marketing Manager) is the named recipient.",
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ]
   },
   {
     "companyName": "Molvo Films",
     "website": "https://www.molvofilms.com",
     "country": "Mexico",
     "industry": "film",
-    "tier": "tier2",
-    "contactPath": "company_fallback",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "hola@molvofilms.com",
+    "tier": "tier1",
+    "contactPath": "decision_maker_email",
+    "contactName": "Mauricio Fajardo",
+    "contactTitle": "Creative Director",
+    "contactEmail": "mauricio@molvofilms.com",
     "contactPhone": "+52 55 2334 7599",
     "instagramUrl": "https://www.instagram.com/molvofilms",
     "instagramHandle": "molvofilms",
     "companyBrief": "Productora mexicana especializada en marcas de lujo. Servicios: fotografia, produccion audiovisual, interior design videography, producto, editorial y eventos. Tagline: \"Create to Inspire\".",
-    "pitchEmailES": "Hola equipo de Molvo Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen — produccion audiovisual para marcas de lujo, interior design, producto, editorial — y nos llamo la atencion el rango de formatos que manejan.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples formatos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "pitchEmailES": "Hola Mauricio! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen en Molvo Films — produccion audiovisual para marcas de lujo, mix entre fotografia, video, editorial — y nos llamo la atencion el rango de formatos que manejan desde Creative Direction.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples formatos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "source_date": "2026-05-22",
     "approved": true,
     "readyToSend": true,
     "contactConfidence": "confirmed",
-    "contactSource": "apollo_discovery_webfetch_extraction",
+    "contactSource": "apollo_people_match_revealed",
     "_discoveryMethod": "apollo_/organizations/search + webfetch /llm-extraction",
     "_operatorVerified": false,
-    "emailCercana": "Hola equipo de Molvo Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen — produccion audiovisual para marcas de lujo, interior design, producto, editorial — y nos llamo la atencion el rango de formatos que manejan.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples formatos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Mauricio! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen en Molvo Films — produccion audiovisual para marcas de lujo, mix entre fotografia, video, editorial — y nos llamo la atencion el rango de formatos que manejan desde Creative Direction.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples formatos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "channelPriority": {
       "primario": "email",
       "secundario": "Instagram DM",
       "opcional": "LinkedIn"
     },
-    "unabaseScore": 8
+    "unabaseScore": 8,
+    "contactLinkedIn": "http://www.linkedin.com/in/mauricio-fajardo",
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ]
   },
   {
     "companyName": "Fantasma Films",
     "website": "https://www.fantasmafilms.com",
     "country": "Mexico",
     "industry": "film",
-    "tier": "tier2",
-    "contactPath": "company_fallback",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "info@fantasmafilms.com",
+    "tier": "tier1",
+    "contactPath": "decision_maker_email",
+    "contactName": "Oscar Adrian Gonzalez",
+    "contactTitle": "Co-Founder, Producer & Director",
+    "contactEmail": "oscar@fantasmafilms.com",
     "contactPhone": "+52 81 8272 5146",
     "instagramUrl": "https://www.instagram.com/fantasmafilms",
     "instagramHandle": "fantasmafilms",
     "apolloCompanyLinkedIn": "https://mx.linkedin.com/company/fantasma-films",
     "companyBrief": "Productora audiovisual con operaciones en Monterrey y CDMX. Servicios: film, music, commercial production.",
-    "pitchEmailES": "Hola equipo de Fantasma Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen entre Monterrey y CDMX — film + music + comerciales — y nos llamo la atencion como manejan tantos proyectos entre dos sedes.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo entre ciudades.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "pitchEmailES": "Hola Oscar! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen en Fantasma Films entre Monterrey y CDMX — film + music + comerciales — y nos llamo la atencion como manejan tantos proyectos entre dos sedes con todo el equipo (vos, Viin, Ricardo, Sofia).\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo entre ciudades.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "source_date": "2026-05-22",
     "approved": true,
     "readyToSend": true,
     "contactConfidence": "confirmed",
-    "contactSource": "apollo_discovery_webfetch_extraction",
+    "contactSource": "apollo_people_match_revealed",
     "_discoveryMethod": "apollo_/organizations/search + webfetch /llm-extraction",
     "_operatorVerified": false,
-    "emailCercana": "Hola equipo de Fantasma Films! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen entre Monterrey y CDMX — film + music + comerciales — y nos llamo la atencion como manejan tantos proyectos entre dos sedes.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo entre ciudades.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Oscar! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen en Fantasma Films entre Monterrey y CDMX — film + music + comerciales — y nos llamo la atencion como manejan tantos proyectos entre dos sedes con todo el equipo (vos, Viin, Ricardo, Sofia).\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo entre ciudades.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "channelPriority": {
       "primario": "email",
       "secundario": "Instagram DM",
       "opcional": "LinkedIn"
     },
-    "unabaseScore": 8
+    "unabaseScore": 8,
+    "contactLinkedIn": "http://www.linkedin.com/in/oscar-adri%c3%a1n-gonz%c3%a1lez-369b6040",
+    "additionalContacts": [
+      {
+        "name": "Viin Angelini",
+        "title": "Business Owner",
+        "email": "viin@fantasmafilms.com",
+        "linkedin": "http://www.linkedin.com/in/viin-angelini-6846121a7"
+      },
+      {
+        "name": "Ricardo Mansilla Tijerina",
+        "title": "Director",
+        "email": "ricky@fantasmafilms.com",
+        "linkedin": "http://www.linkedin.com/in/ricardo-mansilla-tijerina-77a682194"
+      },
+      {
+        "name": "Sofia Hasbun",
+        "title": "First Assistant Director",
+        "email": "sofia@fantasmafilms.com",
+        "linkedin": "http://www.linkedin.com/in/sofiahasbunc"
+      }
+    ],
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ]
   },
   {
     "companyName": "Cinética Studio",
     "website": "https://www.cinetica.studio",
     "country": "Mexico",
     "industry": "film",
-    "tier": "tier2",
-    "contactPath": "company_fallback",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "info@cinetica.studio",
+    "tier": "tier1",
+    "contactPath": "decision_maker_email",
+    "contactName": "Lionelle Mehraban",
+    "contactTitle": "Chief Executive Officer",
+    "contactEmail": "lio@cinetica.studio",
     "instagramUrl": "https://www.instagram.com/cinetica.studio",
     "instagramHandle": "cinetica.studio",
     "apolloCompanyLinkedIn": "https://www.linkedin.com/company/cinetica.studio",
     "companyBrief": "Estudio digital e inmersivo premiado, fundado en 2019 en CDMX.",
-    "pitchEmailES": "Hola equipo de Cinetica Studio! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen en Cinetica — produccion digital e inmersiva premiada — y nos llamo la atencion el portafolio de proyectos que han construido desde 2019.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples formatos digitales en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "pitchEmailES": "Hola Lionelle! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Cinetica Studio — produccion digital e inmersiva premiada — y nos llamo la atencion el portafolio de proyectos que han construido junto a Santiago desde 2019.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples formatos digitales en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "source_date": "2026-05-22",
     "approved": true,
     "readyToSend": true,
     "contactConfidence": "confirmed",
-    "contactSource": "apollo_discovery_webfetch_extraction",
+    "contactSource": "apollo_people_match_revealed",
     "_discoveryMethod": "apollo_/organizations/search + webfetch /llm-extraction",
     "_operatorVerified": false,
-    "emailCercana": "Hola equipo de Cinetica Studio! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen en Cinetica — produccion digital e inmersiva premiada — y nos llamo la atencion el portafolio de proyectos que han construido desde 2019.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples formatos digitales en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Lionelle! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Cinetica Studio — produccion digital e inmersiva premiada — y nos llamo la atencion el portafolio de proyectos que han construido junto a Santiago desde 2019.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples formatos digitales en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "channelPriority": {
       "primario": "email",
       "secundario": "Instagram DM",
       "opcional": "LinkedIn"
     },
-    "unabaseScore": 8
+    "unabaseScore": 8,
+    "contactLinkedIn": "http://www.linkedin.com/in/lionelle-mehraban-6530331b5",
+    "additionalContacts": [
+      {
+        "name": "Santiago Gatica Betancourt",
+        "title": "Creative / Art Director",
+        "email": "santiago@cinetica.studio",
+        "linkedin": "http://www.linkedin.com/in/santiago-gatica-betancourt-90a575156"
+      }
+    ],
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ]
   }
 ]
