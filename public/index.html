@@ -1148,7 +1148,64 @@ async function autoLoad(){
         const active=manifest.batches.find(b=>b.batch_id===manifest.active_batch_id);
         if(active&&active.file){
           const lr=await fetch('./'+active.file+cb);
-          if(lr.ok){TL=gateLeads(await lr.json());if(TL.length){ejeClassifyAll(TL);merge(TL);renderDay();return}}
+          if(lr.ok){
+            let raw=await lr.json();
+            // ── DOCTRINE 2026-05-22 — UNCONTACTED CARRY-FORWARD ─────────
+            // Every lead that hasn't been contacted yet stays in "Hoy"
+            // regardless of date. The lifecycle clock only starts when a
+            // lead receives its first outreach message.
+            //
+            // Walk the previous 5 batches in the manifest. For each lead
+            // that doesn't appear in the active batch AND whose Supabase
+            // status is 'none' (or whose row simply doesn't exist yet),
+            // bump its source_date to today and merge into the active set.
+            // Dedup by domain (active batch wins). Cap at 30 carries.
+            //
+            // We query Supabase directly here (not local db()) because the
+            // local cache isn't hydrated until merge() runs LATER. We want
+            // the truth before deciding what to carry forward.
+            try {
+              const todayET=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})).toISOString().slice(0,10);
+              const seenDomains=new Set(raw.map(l=>{try{return new URL(l.website).hostname.replace(/^www\./,'').toLowerCase();}catch{return null;}}).filter(Boolean));
+
+              // Fetch Supabase status snapshot for this client (one cheap query)
+              const sbStatusMap=new Map();
+              try{
+                const{data:sbRows}=await sb.from('leads').select('id,status').eq('client_id',CLIENT_ID).limit(2000);
+                (sbRows||[]).forEach(r=>{ if(r.id) sbStatusMap.set(r.id.toLowerCase(),r.status||'none'); });
+              }catch(e){console.warn('[carry-forward] supabase snapshot err:',e.message);}
+
+              const prevBatches=manifest.batches.filter(b=>b.batch_id!==manifest.active_batch_id&&b.file).slice(0,5);
+              const carries=[];
+              for(const pb of prevBatches){
+                if(carries.length>=30)break;
+                try{
+                  const pr=await fetch('./'+pb.file+cb);
+                  if(!pr.ok)continue;
+                  const parr=await pr.json();
+                  if(!Array.isArray(parr))continue;
+                  for(const pl of parr){
+                    if(carries.length>=30)break;
+                    let pdom=null;try{pdom=new URL(pl.website).hostname.replace(/^www\./,'').toLowerCase();}catch{}
+                    if(!pdom||seenDomains.has(pdom))continue;
+                    // Uncontacted = Supabase status is 'none' or row missing
+                    const sbSt=sbStatusMap.get(pdom);
+                    const contacted=!!sbSt && sbSt!=='none';
+                    if(contacted)continue;
+                    // Bump source_date so today's "Hoy" gate keeps it visible
+                    const carried={...pl,source_date:todayET,_carriedForwardFrom:pb.batch_id,_originallySourceDate:pl.source_date||pb.source_date};
+                    carries.push(carried);
+                    seenDomains.add(pdom);
+                  }
+                }catch{}
+              }
+              if(carries.length){
+                console.log('[carry-forward] '+carries.length+' uncontacted leads pulled from '+prevBatches.length+' previous batch(es)');
+                raw=[...raw,...carries];
+              }
+            }catch(e){console.warn('[carry-forward] err:',e.message);}
+            TL=gateLeads(raw);if(TL.length){ejeClassifyAll(TL);merge(TL);renderDay();return}
+          }
         }
       }
     }catch{}
