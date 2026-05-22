@@ -4,12 +4,12 @@
       "batch_id": "batch-2026-05-22",
       "source_date": "2026-05-22",
       "file": "leads-2026-05-22.json",
-      "lead_count": 8,
+      "lead_count": 16,
       "approved": true,
       "approved_at": "2026-05-21T23:55:28.107Z",
       "status": "active",
       "workspace": "apollo_webfetch_methodology",
-      "note": "8 Mexican productoras discovered via Apollo /organizations/search + verified/extracted via WebFetch LLM comprehension. 3 T1 (named DMs), 5 T2. All email-valid, all pre-flighted active, all fresh (Apollo dedup against 1036-domain identity index).",
+      "note": "8 Mexican productoras discovered via Apollo /organizations/search + verified/extracted via WebFetch LLM comprehension. 3 T1 (named DMs), 5 T2. All email-valid, all pre-flighted active, all fresh (Apollo dedup against 1036-domain identity index). | 2026-05-22T02:52: rolled-forward 8 uncontacted May 21 leads into Hoy view",
       "supply_metrics": {
         "valid_leads": 8,
         "methodology": "apollo_discovery+llm_extraction"
