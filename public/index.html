@@ -499,7 +499,10 @@ console.log('[workspace] client_id='+CLIENT_ID+' | source='+ (_urlClient?'url':(
   <div class="n-brand"><span id="cN"></span></div>
   <div class="n-sep"></div>
   <div class="n-date" id="nD"></div>
-  <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:2px 8px;border-radius:3px" id="wsTag"></div>
+  <div class="n-ws" style="position:relative">
+    <button id="wsTag" style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:3px 9px;border-radius:4px;border:0;cursor:pointer;color:#fff;background:#444;display:none" onclick="event.stopPropagation();document.getElementById('wsDD').classList.toggle('open')"></button>
+    <div class="n-udd" id="wsDD" style="min-width:220px"></div>
+  </div>
   <div class="n-tabs">
     <button class="n-tab on" onclick="showV('today')">Hoy</button>
     <button class="n-tab" onclick="showV('now')">Acción Ahora</button>
@@ -2040,19 +2043,30 @@ function renderAccionAhora(){
 
 document.getElementById('cN').textContent=CLIENT.name;
 document.getElementById('nD').textContent=new Date().toISOString().slice(0,10);
-// Workspace tag
-// Workspace badge — driven by the WORKSPACES registry above. Default client
-// renders no badge; every other workspace gets its configured color + the
-// CLIENT_ID as the badge text so there's never confusion about which
-// workspace is active.
+// Workspace tag + switcher — ALWAYS render a clickable badge so the operator
+// can see which workspace they're in AND switch to another in one click.
+// Previously the badge was hidden for unabase_default and there was no UI
+// way to switch workspaces — combined with sticky localStorage this could
+// silently trap the operator in the wrong workspace per-device.
 const wsEl=document.getElementById('wsTag');
-if(WS.badgeColor){
-  wsEl.textContent=CLIENT_ID;
-  wsEl.style.background=WS.badgeColor;
-  wsEl.style.color='#fff';
-}else{
-  wsEl.style.display='none';
+const wsDD=document.getElementById('wsDD');
+wsEl.style.display='inline-block';
+wsEl.textContent=(WS.userLabel||WS.brand||CLIENT_ID)+' / '+CLIENT_ID+' ▾';
+wsEl.style.background=WS.badgeColor || '#555';
+if(wsDD){
+  wsDD.innerHTML=Object.entries(WORKSPACES).map(([id,ws])=>{
+    const isActive=id===CLIENT_ID;
+    return '<a href="#" onclick="switchWorkspace(\''+id+'\');return false" style="'+(isActive?'background:rgba(212,160,23,0.12);font-weight:700;color:var(--ac)':'')+'">'+(isActive?'✓ ':'  ')+id+' — '+(ws.userLabel||ws.brand)+'</a>';
+  }).join('');
 }
+window.switchWorkspace=function(id){
+  document.getElementById('wsDD').classList.remove('open');
+  if(id===CLIENT_ID)return;
+  const u=new URL(window.location.href);
+  u.searchParams.set('client',id);
+  localStorage.setItem('unabase_active_client',id);  // re-pin sticky to the new choice
+  window.location.href=u.toString();
+};
 document.documentElement.style.setProperty('--accent',CLIENT.accent);
 // Top-right user-identity label: driven by WORKSPACES[CLIENT_ID].userLabel so
 // EJE shows "Emiliano", operator shows "Operator", UnaBase shows "Scarlett".
@@ -2060,7 +2074,10 @@ document.documentElement.style.setProperty('--accent',CLIENT.accent);
 // workspaces. Falls back to CLIENT.name (brand) if userLabel is undefined.
 const userBtn=document.getElementById('userBtn');
 if(userBtn){userBtn.textContent=(WS.userLabel||CLIENT.name||'User')+' \u25BE'}
-document.addEventListener('click',e=>{if(!e.target.closest('.n-user'))document.querySelector('.n-udd')?.classList.remove('open')});
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.n-user'))document.querySelector('.n-user .n-udd')?.classList.remove('open');
+  if(!e.target.closest('.n-ws'))document.querySelector('.n-ws .n-udd')?.classList.remove('open');
+});
 document.getElementById('pbO').addEventListener('click',e=>{if(e.target===document.getElementById('pbO'))closePB()});
 // Init: load Supabase + past leads (PL feeds awareness indicator + Acción Ahora) + autoLoad today
 // Default landing tab = Hoy. autoLoad calls renderDay which now also computes the awareness indicator.
