@@ -1230,6 +1230,15 @@ function renderDay(){
       if(isActionable(gr(dd),l).ok)pending++;
     });
     indEl.innerHTML=pending>0?`<div class="hoy-pending" onclick="showV('now')"><span>⚠️</span><strong>${pending}</strong> ${pending===1?'acción pendiente':'acciones pendientes'} en Acción Ahora</div>`:'';
+    // Diagnostic / verification toggle — show every lead in today's deck
+    // regardless of cycle state. Useful when localStorage state diverges
+    // across devices (phone vs desktop), or when verifying IG/email links
+    // on every card before sending.
+    const showAll=!!window.__hoyShowAll;
+    const hiddenCount=TL.filter(l=>{const d=dom(l.website);const rec=gr(d);return((rec.msgs||[]).length>0)||SEQ_STOPS.includes(rec.st||'none');}).length;
+    if(TL.length>0&&hiddenCount>0){
+      indEl.innerHTML+=`<div class="hoy-pending" style="background:rgba(212,160,23,0.08);border:1px solid rgba(212,160,23,0.3);color:var(--ac);cursor:pointer;margin-top:6px" onclick="window.__hoyShowAll=${showAll?'false':'true'};renderDay()"><span>${showAll?'👁️':'⊕'}</span> ${showAll?'Ocultar los ya iniciados ('+hiddenCount+')':'Mostrar TODOS los leads de hoy ('+TL.length+' incl. '+hiddenCount+' en ciclo)'}</div>`;
+    }
   }
   // TAB SEPARATION RULE — Hoy vs Acción Ahora are mutually exclusive:
   //   • Hoy     = fresh leads with no sent-message anchor yet (first contact).
@@ -1238,7 +1247,11 @@ function renderDay(){
   //   • Stopped leads (replied/meeting/closed/skip) live in Historial only.
   // This filter enforces the Hoy side of the rule. Acción Ahora has the
   // mirrored filter on its render function.
+  // Bypass the msg-filter when window.__hoyShowAll is true — lets the operator
+  // see every lead in today's deck (incl. ones marked sent) without bouncing
+  // between Hoy and Acción Ahora. Toggle via the "Mostrar todos" button below.
   const freshOnly=TL.filter(l=>{
+    if(window.__hoyShowAll)return true;
     const d=dom(l.website);const rec=gr(d);
     if(SEQ_STOPS.includes(rec.st||'none'))return false;
     if((rec.msgs||[]).length>0)return false;
@@ -1988,11 +2001,14 @@ function renderAccionAhora(){
     if(ca!==cb)return ca-cb;
     return (a.fu.dueMs||0)-(b.fu.dueMs||0);
   });
-  // Cap visible at 4 urgent + preview of upcoming. Rest counted as queued.
+  // Cap visible at 30 urgent + 30 upcoming (effectively unbounded for normal
+  // daily decks). Previously hard-capped at 4 visible total, which silently
+  // hid most in-cycle leads behind a "queued" counter — bad for verifying a
+  // full 10–12-lead batch and confused the desktop vs phone display.
   const urgent=items.filter(i=>i.fu.color==='red'||i.fu.color==='yellow');
   const upcoming=items.filter(i=>i.fu.color==='green');
-  const visibleUrgent=urgent.slice(0,4);
-  const visibleUpcoming=urgent.length<4?upcoming.slice(0,4-urgent.length):[];
+  const visibleUrgent=urgent.slice(0,30);
+  const visibleUpcoming=urgent.length<30?upcoming.slice(0,30-urgent.length):[];
   const visible=[...visibleUrgent,...visibleUpcoming];
   const queued=items.length-visible.length;
   if(!visible.length){
