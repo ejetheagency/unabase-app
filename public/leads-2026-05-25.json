@@ -310,7 +310,7 @@
     "contactEmail": "zamora@tonka.co",
     "instagramUrl": "https://www.instagram.com/tonkafilmmakers",
     "instagramHandle": "tonkafilmmakers",
-    "instagramFollowers": null,
+    "instagramFollowers": 5691,
     "apolloCompanyLinkedIn": "https://www.linkedin.com/company/tonkafilmmakers",
     "additionalContacts": [
       {
@@ -346,14 +346,13 @@
     },
     "unabaseScore": 9,
     "_igVerified": true,
-    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationReason": "search-confirmed-handle-matches",
     "_igVerificationEvidence": [
       "extracted-from-company-website",
-      "handle-matches-company-name"
+      "web-search-confirmed",
+      "google-snippet-shows-5691-followers"
     ],
-    "_prestigeFlags": [
-      "ig_followers_unverified_auth_wall"
-    ]
+    "_prestigeFlags": []
   },
   {
     "companyName": "Loymark",
