@@ -1,19 +1,35 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-05-24",
+      "source_date": "2026-05-24",
+      "file": "leads-2026-05-24.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-05-25T01:35:47.236Z",
+      "status": "active",
+      "workspace": "premium_v2.1_first_validated_run",
+      "note": "10 LATAM productoras — MX:3/AR:2/CO:1/CR:1/PA:1/PE:2 (PE = experimental new-country seed for pipeline longevity). 9 T1 / 1 T2 (Forja company-email). 2 animation (Estudio Shout + Forja Studios) at cap. Built with premium-v2.1 profile: niche-exclusion filter + thin-market fallback + canonical-domain re-dedup — all three fixes worked structurally on first shadow run (caught Videocine, Cantoalegre, Televital, Aurea-redirect; filled Panama; TBWA-class added to filter mid-run). Hand-cherry-picked from v2.1 dossier + surgical Apollo unlocks for backup candidates (no full re-runs).",
+      "supply_metrics": {
+        "valid_leads": 10,
+        "methodology": "premium-v2.1+surgical_unlock+webfetch"
+      }
+    },
+    {
       "batch_id": "batch-2026-05-22b",
       "source_date": "2026-05-22",
       "file": "leads-2026-05-22b.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-05-22T15:53:21.611Z",
-      "status": "active",
+      "status": "archived",
       "workspace": "apollo_webfetch_premium_rebalance",
       "note": "10 LATAM productoras — MX:5/AR:2/CO:1/CR:1/PA:1, 8 T1 / 2 T2, 0 animation studios. Apollo /mixed_companies/search + /people/match + WebFetch LLM enrichment, hand-rebalanced for ICP (casas productoras over VFX/animation studios), IG follower audit on every card. Named batch-2026-05-22b because the batch-2026-05-22 id was already taken by V1 (calendar drift: V1 = the May-21 batch launched post-midnight). V1 leads already contacted, archived cleanly.",
       "supply_metrics": {
         "valid_leads": 10,
         "methodology": "apollo_discovery+llm_extraction+hand_rebalance"
-      }
+      },
+      "archived_at": "2026-05-25T01:35:47.230Z"
     },
     {
       "batch_id": "batch-2026-05-22",
@@ -492,6 +508,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-05-22b",
+  "active_batch_id": "batch-2026-05-24",
   "timezone": "America/New_York"
 }
