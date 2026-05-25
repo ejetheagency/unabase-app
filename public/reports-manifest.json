@@ -1,19 +1,35 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-05-25",
+      "source_date": "2026-05-25",
+      "file": "leads-2026-05-25.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-05-25T19:03:04.324Z",
+      "status": "active",
+      "workspace": "premium_v2.2_expanded_discovery",
+      "note": "10 LATAM productoras — MX:4/AR:2/CO:1/CR:1/PE:2. 9 T1 / 1 T2. 2 animation (Huevocartoon, Zeppelin) at cap, both marquee (552K + 7.8K followers, Snoop Dogg/Adult Swim/Marvel-tier credits). Premium-v2.2 discovery expansion (20 keywords + pages=2 + employees=1-500) grew the pool 10.8x (323→3,504 candidates) — addresses operator-flagged exhaustion misdiagnosis. New tool: tools/unlock-domains.js (surgical Apollo /people/match for backup-pool candidates without full re-discovery). All 10 picks have named DMs with verified titles + emails (most personal); all 10 have IG verified. 22+ named DMs total across deck. Headliners: Huevocartoon (Riva Palacio brothers — Una Pelicula de Huevos legend), Loymark (Tim Hortons/Canon/Meta/Mercedes-Benz, 8-office network), HUINCA CINE (4 EPs, global offices). archive: batch-2026-05-24.",
+      "supply_metrics": {
+        "valid_leads": 10,
+        "methodology": "premium-v2.2+surgical_unlock+webfetch+contact_recovery"
+      }
+    },
+    {
       "batch_id": "batch-2026-05-24",
       "source_date": "2026-05-24",
       "file": "leads-2026-05-24.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-05-25T01:35:47.236Z",
-      "status": "active",
+      "status": "archived",
       "workspace": "premium_v2.1_first_validated_run",
       "note": "10 LATAM productoras — MX:3/AR:2/CO:1/CR:1/PA:1/PE:2 (PE = experimental new-country seed for pipeline longevity). 9 T1 / 1 T2 (Forja company-email). 2 animation (Estudio Shout + Forja Studios) at cap. Built with premium-v2.1 profile: niche-exclusion filter + thin-market fallback + canonical-domain re-dedup — all three fixes worked structurally on first shadow run (caught Videocine, Cantoalegre, Televital, Aurea-redirect; filled Panama; TBWA-class added to filter mid-run). Hand-cherry-picked from v2.1 dossier + surgical Apollo unlocks for backup candidates (no full re-runs).",
       "supply_metrics": {
         "valid_leads": 10,
         "methodology": "premium-v2.1+surgical_unlock+webfetch"
-      }
+      },
+      "archived_at": "2026-05-25T19:03:04.315Z"
     },
     {
       "batch_id": "batch-2026-05-22b",
@@ -508,6 +524,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-05-24",
+  "active_batch_id": "batch-2026-05-25",
   "timezone": "America/New_York"
 }
