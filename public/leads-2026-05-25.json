@@ -310,7 +310,7 @@
     "contactEmail": "zamora@tonka.co",
     "instagramUrl": "https://www.instagram.com/tonkafilmmakers",
     "instagramHandle": "tonkafilmmakers",
-    "instagramFollowers": 5691,
+    "instagramFollowers": null,
     "apolloCompanyLinkedIn": "https://www.linkedin.com/company/tonkafilmmakers",
     "additionalContacts": [
       {
@@ -346,13 +346,16 @@
     },
     "unabaseScore": 9,
     "_igVerified": true,
-    "_igVerificationReason": "search-confirmed-handle-matches",
+    "_igVerificationReason": "website-linked-but-account-state-uncertain",
     "_igVerificationEvidence": [
-      "extracted-from-company-website",
-      "web-search-confirmed",
-      "google-snippet-shows-5691-followers"
+      "extracted-from-tonka.co-footer",
+      "google-snippet-shows-5691-followers",
+      "BUT-operator-reports-404-on-click"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [
+      "ig_account_state_uncertain_operator_reports_404",
+      "followers_unverified"
+    ]
   },
   {
     "companyName": "Loymark",
@@ -421,9 +424,9 @@
     "contactName": "Nelson Wissar",
     "contactTitle": "Co-Founder & CEO",
     "contactEmail": "nelson@zeppelin.com.pe",
-    "instagramUrl": "https://www.instagram.com/zeppelin_animation",
-    "instagramHandle": "zeppelin_animation",
-    "instagramFollowers": 7857,
+    "instagramUrl": "https://www.instagram.com/zeppelin_lima",
+    "instagramHandle": "zeppelin_lima",
+    "instagramFollowers": null,
     "apolloCompanyLinkedIn": "https://www.linkedin.com/company/zeppelin-creative-studio",
     "additionalContacts": [
       {
@@ -449,12 +452,15 @@
     },
     "unabaseScore": 9,
     "_igVerified": true,
-    "_igVerificationReason": "search-confirmed-handle-matches",
+    "_igVerificationReason": "website-linked-and-handle-matches",
     "_igVerificationEvidence": [
-      "web-search-confirmed",
-      "handle-matches-company-name"
+      "extracted-from-company-website-footer",
+      "tonka.co_style_canonical_source"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [
+      "ig_followers_unverified_auth_wall",
+      "ig_handle_corrected_from_zeppelin_animation_to_canonical_zeppelin_lima"
+    ]
   },
   {
     "companyName": "Seniors Agencia",
