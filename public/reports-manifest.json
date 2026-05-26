@@ -4,12 +4,12 @@
       "batch_id": "batch-2026-05-25",
       "source_date": "2026-05-25",
       "file": "leads-2026-05-25.json",
-      "lead_count": 10,
+      "lead_count": 12,
       "approved": true,
       "approved_at": "2026-05-25T19:03:04.324Z",
       "status": "active",
       "workspace": "premium_v2.2_expanded_discovery",
-      "note": "10 LATAM productoras — MX:4/AR:2/CO:1/CR:1/PE:2. 9 T1 / 1 T2. 2 animation (Huevocartoon, Zeppelin) at cap, both marquee (552K + 7.8K followers, Snoop Dogg/Adult Swim/Marvel-tier credits). Premium-v2.2 discovery expansion (20 keywords + pages=2 + employees=1-500) grew the pool 10.8x (323→3,504 candidates) — addresses operator-flagged exhaustion misdiagnosis. New tool: tools/unlock-domains.js (surgical Apollo /people/match for backup-pool candidates without full re-discovery). All 10 picks have named DMs with verified titles + emails (most personal); all 10 have IG verified. 22+ named DMs total across deck. Headliners: Huevocartoon (Riva Palacio brothers — Una Pelicula de Huevos legend), Loymark (Tim Hortons/Canon/Meta/Mercedes-Benz, 8-office network), HUINCA CINE (4 EPs, global offices). archive: batch-2026-05-24.",
+      "note": "12 LATAM productoras — MX:4/AR:3/CO:1/CR:2/PE:2 (added Rebolucion AR + Nosotros Films CR mid-day). 11 T1 / 1 T2. 2 animation (Huevocartoon, Zeppelin) at cap, both marquee (552K + 7.8K followers, Snoop Dogg/Adult Swim/Marvel-tier credits). Premium-v2.2 discovery expansion (20 keywords + pages=2 + employees=1-500) grew the pool 10.8x (323→3,504 candidates) — addresses operator-flagged exhaustion misdiagnosis. New tool: tools/unlock-domains.js (surgical Apollo /people/match for backup-pool candidates without full re-discovery). All 10 picks have named DMs with verified titles + emails (most personal); all 10 have IG verified. 22+ named DMs total across deck. Headliners: Huevocartoon (Riva Palacio brothers — Una Pelicula de Huevos legend), Loymark (Tim Hortons/Canon/Meta/Mercedes-Benz, 8-office network), HUINCA CINE (4 EPs, global offices). archive: batch-2026-05-24.",
       "supply_metrics": {
         "valid_leads": 10,
         "methodology": "premium-v2.2+surgical_unlock+webfetch+contact_recovery"
