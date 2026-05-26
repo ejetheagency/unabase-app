@@ -1,19 +1,35 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-05-26",
+      "source_date": "2026-05-26",
+      "file": "leads-2026-05-26.json",
+      "lead_count": 8,
+      "approved": true,
+      "approved_at": "2026-05-26T22:04:36.643Z",
+      "status": "active",
+      "workspace": "premium_v2.2_focused_commercial_publicity",
+      "note": "8 premium LATAM+Spain productoras focused on commercial/publicity/fashion brief. MX:1/AR:1/CO:1/CR:2/PA:1/ES:2. 7 T1 + 1 T2 (Manglar humanitarian disclosure). 0 animation. 10/10 personal DM emails, 17 additional named contacts. Anchor: Rebolucion (Cannes Lions Palme d'Or 2023, Armando Bo Oscar-winner founder). Other standouts: Colombo Films (One Show + Effie, virtual production + AI), LCA Productions (Apple Music/IKEA/Sony/Bacardi/Vogue clients), IRALTA (Virtual Production pioneer 21yr Repsol/Honda/Iberia), 2Cilindros (Repsol/Pepsi/Zara/Santander). Borderlines disclosed: Lomas Post (post-production not front-end), Manglar Films (humanitarian focus). Built mid-day, archived batch-2026-05-25. Infrastructure fixes shipped today (cache, niche-patch, rejected-list, backup-unlock flag) will compound on next morning's run.",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "methodology": "premium-v2.2 + surgical Apollo unlock + WebFetch enrichment + Spain micro-discovery"
+      }
+    },
+    {
       "batch_id": "batch-2026-05-25",
       "source_date": "2026-05-25",
       "file": "leads-2026-05-25.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-05-25T19:03:04.324Z",
-      "status": "active",
+      "status": "archived",
       "workspace": "premium_v2.2_expanded_discovery",
       "note": "10 LATAM productoras — MX:4/AR:2/CO:1/CR:1/PE:2 (Rebolucion AR + Nosotros Films CR added mid-day then pulled back, staged for batch-2026-05-26). 9 T1 / 1 T2. 2 animation (Huevocartoon, Zeppelin) at cap, both marquee (552K + 7.8K followers, Snoop Dogg/Adult Swim/Marvel-tier credits). Premium-v2.2 discovery expansion (20 keywords + pages=2 + employees=1-500) grew the pool 10.8x (323→3,504 candidates) — addresses operator-flagged exhaustion misdiagnosis. New tool: tools/unlock-domains.js (surgical Apollo /people/match for backup-pool candidates without full re-discovery). All 10 picks have named DMs with verified titles + emails (most personal); all 10 have IG verified. 22+ named DMs total across deck. Headliners: Huevocartoon (Riva Palacio brothers — Una Pelicula de Huevos legend), Loymark (Tim Hortons/Canon/Meta/Mercedes-Benz, 8-office network), HUINCA CINE (4 EPs, global offices). archive: batch-2026-05-24.",
       "supply_metrics": {
         "valid_leads": 10,
         "methodology": "premium-v2.2+surgical_unlock+webfetch+contact_recovery"
-      }
+      },
+      "archived_at": "2026-05-26T22:04:36.638Z"
     },
     {
       "batch_id": "batch-2026-05-24",
@@ -524,6 +540,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-05-25",
+  "active_batch_id": "batch-2026-05-26",
   "timezone": "America/New_York"
 }
