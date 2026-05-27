@@ -702,9 +702,9 @@
     "industry": "film",
     "tier": "tier1",
     "contactPath": "decision_maker_email",
-    "contactName": "Brian Koziner",
-    "contactTitle": "Director y Productor Creativo",
-    "contactEmail": "brian@iconica.tv",
+    "contactName": "Equipo Iconica",
+    "contactTitle": "Contacto general (email corporativo)",
+    "contactEmail": "hola@iconica.tv",
     "instagramUrl": "https://www.instagram.com/iconicaproduce",
     "instagramHandle": "iconicaproduce",
     "instagramFollowers": 639,
@@ -716,13 +716,18 @@
         "email": "santiago@iconica.tv (bounced/no responde)"
       },
       {
+        "name": "Brian Koziner",
+        "title": "Director y Productor Creativo (TÍTULO EXCLUIDO — Creative Director derivado)",
+        "email": "brian@iconica.tv (no usar como primario)"
+      },
+      {
         "name": "Julián Sarracino",
-        "title": "Creative Director & Cinematographer (no usar como primario — título excluido)",
-        "email": "julian@iconica.tv"
+        "title": "Creative Director & Cinematographer (TÍTULO EXCLUIDO)",
+        "email": "julian@iconica.tv (no usar como primario)"
       }
     ],
     "companyBrief": "Productora audiovisual argentina especializada en contenido deportivo y de marca, fundada en 2018. Clientes: PUMA Argentina, KAPPA, Umbro, Speedo, Boca Juniors (gaming/esports), McDonalds Argentina. Contacto: Santiago Prieto (Audiovisual Director).",
-    "pitchEmailES": "Hola Santiago! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Iconica — produccion audiovisual deportiva para PUMA, KAPPA, Umbro y Boca Juniors desde Argentina — y nos llamo la atencion como sostienen ese volumen entre clubes y marcas.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples clientes simultaneos.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region.\n\nSaludos,\nScarlett",
+    "pitchEmailES": "Hola equipo de Iconica! Cómo están? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Iconica — produciendo contenido audiovisual con un equipo creativo entre Argentina y los mercados internacionales — y nos llamó la atención el caliber de proyectos.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples lineas corriendo en paralelo.\n\nMe encantaría conectarme con la persona del equipo que maneja producción / EP. ¿A quién me sugieren contactar para una llamada de 10 min?\n\nSaludos,\nScarlett",
     "source_date": "2026-05-27",
     "approved": true,
     "readyToSend": true,
@@ -730,7 +735,7 @@
     "contactSource": "apollo_discovery_webfetch_extraction",
     "_discoveryMethod": "apollo_/mixed_companies/search + /people/match + webfetch /llm-extraction (profile: premium-v2.1)",
     "_operatorVerified": true,
-    "emailCercana": "Hola Santiago! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Iconica — produccion audiovisual deportiva para PUMA, KAPPA, Umbro y Boca Juniors desde Argentina — y nos llamo la atencion como sostienen ese volumen entre clubes y marcas.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples clientes simultaneos.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola equipo de Iconica! Cómo están? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Iconica — produciendo contenido audiovisual con un equipo creativo entre Argentina y los mercados internacionales — y nos llamó la atención el caliber de proyectos.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples lineas corriendo en paralelo.\n\nMe encantaría conectarme con la persona del equipo que maneja producción / EP. ¿A quién me sugieren contactar para una llamada de 10 min?\n\nSaludos,\nScarlett",
     "channelPriority": {
       "primario": "email",
       "secundario": "Instagram DM",
@@ -744,10 +749,11 @@
       "handle-matches-company-name"
     ],
     "_prestigeFlags": [
-      "recovered_primary_borderline_title_director_y_productor_creativo"
+      "primary_is_generic_company_email_no_named_dm_yet"
     ],
-    "_recoveredFrom": "2026-05-25 — Santiago Prieto email bounced",
-    "_recoveryReason": "primary_email_invalid"
+    "_recoveredFrom": "2026-05-25 — Santiago bounced; los 2 alternativos en Apollo son Creative Directors (excluido per rules)",
+    "_recoveryReason": "primary_email_invalid_and_no_clean_alternate_in_apollo",
+    "_primaryIsGenericEmail": true
   },
   {
     "companyName": "Panorámica Films",
