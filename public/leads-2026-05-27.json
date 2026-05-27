@@ -646,5 +646,161 @@
       "handle-matches-company-name"
     ],
     "_prestigeFlags": []
+  },
+  {
+    "companyName": "Fósforo Cinema",
+    "website": "https://fosforo.video",
+    "country": "Mexico",
+    "industry": "film",
+    "tier": "tier1",
+    "contactPath": "decision_maker_email",
+    "contactName": "Fernando Escalante Villaseño",
+    "contactTitle": "Director General",
+    "contactEmail": "fernando@fosforo.video",
+    "contactPhone": "+52 81 8365 6064",
+    "instagramUrl": "https://www.instagram.com/fosforocinema",
+    "instagramHandle": "fosforocinema",
+    "instagramFollowers": 967,
+    "apolloCompanyLinkedIn": "https://www.linkedin.com/company/fosforo-cinema",
+    "additionalContacts": [
+      {
+        "name": "Carlos Padilla",
+        "title": "Director General (email anterior INVÁLIDO)",
+        "email": "carlos@fosforo.video (bounced/no responde)"
+      }
+    ],
+    "companyBrief": "Casa productora de video en Monterrey enfocada en contenido estrategico para marcas. Clientes: CEMEX, OXXO, Tec de Monterrey, Qualitia, Criotec. Contacto: Carlos Padilla (Director General).",
+    "pitchEmailES": "Hola Carlos! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Fosforo Cinema — contenido estrategico para marcas como CEMEX, OXXO y el Tec de Monterrey — y nos llamo la atencion como sostienen ese nivel de produccion desde Monterrey.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay varios clientes grandes en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "source_date": "2026-05-27",
+    "approved": true,
+    "readyToSend": true,
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo_discovery_webfetch_extraction",
+    "_discoveryMethod": "apollo_/mixed_companies/search + /people/match + webfetch /llm-extraction",
+    "_operatorVerified": true,
+    "emailCercana": "Hola Carlos! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Fosforo Cinema — contenido estrategico para marcas como CEMEX, OXXO y el Tec de Monterrey — y nos llamo la atencion como sostienen ese nivel de produccion desde Monterrey.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay varios clientes grandes en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "LinkedIn"
+    },
+    "unabaseScore": 8,
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ],
+    "_prestigeFlags": [],
+    "_recoveredFrom": "2026-05-22 — Carlos Padilla email bounced",
+    "_recoveryReason": "primary_email_invalid"
+  },
+  {
+    "companyName": "Iconica",
+    "website": "https://iconica.tv",
+    "country": "Argentina",
+    "industry": "film",
+    "tier": "tier1",
+    "contactPath": "decision_maker_email",
+    "contactName": "Brian Koziner",
+    "contactTitle": "Director y Productor Creativo",
+    "contactEmail": "brian@iconica.tv",
+    "instagramUrl": "https://www.instagram.com/iconicaproduce",
+    "instagramHandle": "iconicaproduce",
+    "instagramFollowers": 639,
+    "apolloCompanyLinkedIn": "https://www.linkedin.com/company/iconica-tv",
+    "additionalContacts": [
+      {
+        "name": "Santiago Prieto",
+        "title": "Audiovisual Director (email anterior INVÁLIDO)",
+        "email": "santiago@iconica.tv (bounced/no responde)"
+      },
+      {
+        "name": "Julián Sarracino",
+        "title": "Creative Director & Cinematographer (no usar como primario — título excluido)",
+        "email": "julian@iconica.tv"
+      }
+    ],
+    "companyBrief": "Productora audiovisual argentina especializada en contenido deportivo y de marca, fundada en 2018. Clientes: PUMA Argentina, KAPPA, Umbro, Speedo, Boca Juniors (gaming/esports), McDonalds Argentina. Contacto: Santiago Prieto (Audiovisual Director).",
+    "pitchEmailES": "Hola Santiago! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Iconica — produccion audiovisual deportiva para PUMA, KAPPA, Umbro y Boca Juniors desde Argentina — y nos llamo la atencion como sostienen ese volumen entre clubes y marcas.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples clientes simultaneos.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region.\n\nSaludos,\nScarlett",
+    "source_date": "2026-05-27",
+    "approved": true,
+    "readyToSend": true,
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo_discovery_webfetch_extraction",
+    "_discoveryMethod": "apollo_/mixed_companies/search + /people/match + webfetch /llm-extraction (profile: premium-v2.1)",
+    "_operatorVerified": true,
+    "emailCercana": "Hola Santiago! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Iconica — produccion audiovisual deportiva para PUMA, KAPPA, Umbro y Boca Juniors desde Argentina — y nos llamo la atencion como sostienen ese volumen entre clubes y marcas.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples clientes simultaneos.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region.\n\nSaludos,\nScarlett",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "LinkedIn"
+    },
+    "unabaseScore": 8,
+    "_igVerified": true,
+    "_igVerificationReason": "search-confirmed-handle-matches",
+    "_igVerificationEvidence": [
+      "web-search-confirmed",
+      "handle-matches-company-name"
+    ],
+    "_prestigeFlags": [
+      "recovered_primary_borderline_title_director_y_productor_creativo"
+    ],
+    "_recoveredFrom": "2026-05-25 — Santiago Prieto email bounced",
+    "_recoveryReason": "primary_email_invalid"
+  },
+  {
+    "companyName": "Panorámica Films",
+    "website": "https://www.panoramicafilms.com",
+    "country": "Mexico",
+    "industry": "film",
+    "tier": "tier1",
+    "contactPath": "decision_maker_email",
+    "contactName": "Christian Lara Renteria",
+    "contactTitle": "Owner",
+    "contactEmail": "christian@panoramicafilms.com.mx",
+    "contactPhone": "+52 332 927 1688",
+    "instagramUrl": "https://www.instagram.com/panoramicafilms",
+    "instagramHandle": "panoramicafilms",
+    "contactLinkedIn": "https://linkedin.com/in/christianlararenteria/",
+    "companyBrief": "Productora creativa fundada en 2007, basada en Guadalajara. Director: Christian Lara. Servicios: video, fotografia, branded content y estrategia para marcas.",
+    "pitchEmailES": "Hola Christian! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Panoramica Films — branded content y produccion creativa desde Guadalajara desde 2007 — y nos llamo la atencion como manejan el mix entre video, foto y estrategia.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "source_date": "2026-05-27",
+    "approved": true,
+    "readyToSend": true,
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo_discovery_webfetch_extraction",
+    "_discoveryMethod": "apollo_/organizations/search + webfetch /llm-extraction",
+    "_operatorVerified": false,
+    "emailCercana": "Hola Christian! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Panoramica Films — branded content y produccion creativa desde Guadalajara desde 2007 — y nos llamo la atencion como manejan el mix entre video, foto y estrategia.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "LinkedIn"
+    },
+    "unabaseScore": 8,
+    "_igVerified": true,
+    "_igVerificationReason": "website-linked-and-handle-matches",
+    "_igVerificationEvidence": [
+      "extracted-from-company-website",
+      "handle-matches-company-name"
+    ],
+    "additionalContacts": [
+      {
+        "name": "Christian Lara",
+        "title": "Director (email anterior INVÁLIDO — era genérico contact@)",
+        "email": "contact@panoramicafilms.com (bounced/no responde)"
+      },
+      {
+        "name": "Alejandro Loubet Camarena",
+        "title": "Director",
+        "email": null
+      }
+    ],
+    "_recoveredFrom": "2026-05-22 — Christian Lara email genérico (contact@) no respondió",
+    "_recoveryReason": "primary_email_invalid_was_generic",
+    "_prestigeFlags": [
+      "recovered_owner_email_via_apollo_com_mx_tld"
+    ]
   }
 ]
