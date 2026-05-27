@@ -23480,21 +23480,42 @@
     "_reactivationApolloSwapped": true
   },
   {
-    "source_date": "2026-04-17",
+    "country": "Argentina",
+    "website": "https://www.zetapositivo.com.ar",
     "approved": true,
     "batch_id": "batch-2026-04-17",
-    "contactConfidence": "confirmed",
-    "entertainmentVerified": true,
-    "fitVerified": true,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyName": "Zeta Positivo Animation Studio",
-    "website": "https://www.zetapositivo.com.ar",
-    "country": "Argentina",
+    "dataGaps": "Emails masked (no accionables) · Sin LinkedIn personal para Maximiliano / Sergio · Sin IG personal · Sin teléfono",
     "industry": "animation",
-    "estimatedSize": "mid",
-    "unabaseScore": 8,
+    "vimeoUrl": "https://vimeo.com/zetapositivo",
+    "fitReasons": [
+      "blue_chip_clients",
+      "multi_brand_parallel",
+      "long_tenure",
+      "b2b_studio"
+    ],
+    "fitSignals": 5,
+    "companyName": "Zeta Positivo Animation Studio",
+    "contactName": "Maximiliano Gaspar",
+    "emailStatus": "Masked",
+    "facebookUrl": "https://www.facebook.com/zetapositivoanimationstudio/",
+    "fitVerified": true,
+    "nicheReason": "niche_confirmed",
+    "source_date": "2026-05-27",
     "companyBrief": "Zeta Positivo es un estudio argentino de animación 3D, VFX y motion graphics fundado en 2008 por los hermanos Maximiliano Gaspar (Owner) y Sergio Gaspar (Director de Animación). Ubicado en Garín (Buenos Aires). Especializados en TV spots, branded content, series animadas y colecciones NFT. Cartera de marcas blue-chip: Coca-Cola, Pepsi, Fanta, Nestlé, Eco de los Andes, Claro, Sancor, Raid, Glade, Lysoform, Off, Baygon.",
+    "contactEmail": null,
+    "contactPhone": null,
+    "contactTitle": "Owner",
+    "emailCercana": "Hola Maximiliano! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Zeta Positivo Animation Studio, su trabajo para marcas como Coca-Cola, y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
+    "instagramUrl": "https://www.instagram.com/zeta.positivo.animation.studio/",
+    "recoveryNote": "Tier 1 en fit comercial. 12+ marcas blue-chip paralelas. Emails masked (no accionables). IG es único canal actionable — LinkedIn de empresa no se usa para outreach personal. Desde 2008.",
+    "unabaseScore": 8,
+    "contactSource": "registry_plus_directory",
+    "estimatedSize": "mid",
+    "nicheVerified": true,
+    "executionCycle": {
+      "day0": "Instagram DM a @zeta.positivo.animation.studio — versión corta del email (primer párrafo + CTA de 15 min)",
+      "day23": "Segundo Instagram DM: referencia al primero + pedir canal alternativo (mail o teléfono de oficina)"
+    },
     "notableClients": [
       "Coca-Cola",
       "Pepsi",
@@ -23515,44 +23536,38 @@
       "NFT Collections",
       "Motion graphics broadcast"
     ],
-    "contactName": "Maximiliano Gaspar",
-    "contactTitle": "Owner",
-    "contactEmail": null,
-    "contactPhone": null,
     "contactLinkedIn": null,
-    "apolloCompanyLinkedIn": "https://ar.linkedin.com/company/zetapositivo",
-    "instagramUrl": "https://www.instagram.com/zeta.positivo.animation.studio/",
+    "contactStrength": "B",
     "instagramHandle": "zeta.positivo.animation.studio",
-    "facebookUrl": "https://www.facebook.com/zetapositivoanimationstudio/",
-    "vimeoUrl": "https://vimeo.com/zetapositivo",
-    "contactSource": "registry_plus_directory",
-    "entertainmentSignals": 11,
-    "fitSignals": 5,
-    "fitReasons": [
-      "blue_chip_clients",
-      "multi_brand_parallel",
-      "long_tenure",
-      "b2b_studio"
-    ],
+    "linkedinMessage": null,
+    "contactConfidence": "confirmed",
     "additionalContacts": [
       {
-        "contactName": "Sergio Gaspar",
-        "contactTitle": "Director de Animación",
+        "note": "Hermano de Maximiliano. Co-lidera operación creativa.",
         "role": "co_lead",
-        "note": "Hermano de Maximiliano. Co-lidera operación creativa."
+        "contactName": "Sergio Gaspar",
+        "contactTitle": "Director de Animación"
       }
     ],
-    "recoveryNote": "Tier 1 en fit comercial. 12+ marcas blue-chip paralelas. Emails masked (no accionables). IG es único canal actionable — LinkedIn de empresa no se usa para outreach personal. Desde 2008.",
-    "contactStrength": "B",
-    "emailStatus": "Masked",
     "primaryContactPath": "Instagram DM a @zeta.positivo.animation.studio (único canal accionable — emails masked no se usan y el LinkedIn de empresa no aplica para outreach personal)",
-    "dataGaps": "Emails masked (no accionables) · Sin LinkedIn personal para Maximiliano / Sergio · Sin IG personal · Sin teléfono",
-    "emailCercana": "Asunto: Doce marcas blue-chip en una sola pipeline\n\nMaxi,\n\nEstuve mirando el portfolio de Zeta Positivo y la lista de clientes impone. Coca, Pepsi, Fanta, Nestlé, Claro, Sancor, Raid, Glade. Son doce marcas blue-chip compartiendo una sola pipeline de VFX, animación y spots. Cada una con su propia agencia, su calendario y su formato de cotización.\n\nLa pregunta honesta que vengo haciendo a estudios en ese rango: ¿cómo están presupuestando un spot de Coca y una serie animada para Pepsi en paralelo sin que el equipo administrativo pase el 30% del tiempo reformateando cotizaciones por cliente?\n\nUnaBase resuelve la capa de presupuestación multi-cliente. un solo backend, formatos de export por cliente.\n\n¿15 min esta semana? Vale la pena verlo.\n\nScarlett",
-    "linkedinMessage": null,
-    "executionCycle": {
-      "day0": "Instagram DM a @zeta.positivo.animation.studio — versión corta del email (primer párrafo + CTA de 15 min)",
-      "day23": "Segundo Instagram DM: referencia al primero + pedir canal alternativo (mail o teléfono de oficina)"
-    }
+    "entertainmentSignals": 11,
+    "apolloCompanyLinkedIn": "https://ar.linkedin.com/company/zetapositivo",
+    "entertainmentVerified": true,
+    "tier": "tier3",
+    "contactPath": "pilot_revival",
+    "readyToSend": true,
+    "_revivedFromPilot": true,
+    "_pilotRevivalReason": "pre-may-19 cohort never contacted. basic ICP-validated + kept existing primary",
+    "_revivedAt": "2026-05-27T20:39:29.063Z",
+    "pitchEmailES": "Hola Maximiliano! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Zeta Positivo Animation Studio, su trabajo para marcas como Coca-Cola, y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "LinkedIn"
+    },
+    "_prestigeFlags": [
+      "revived_pilot_lead_basic_icp_only"
+    ]
   },
   {
     "country": "Argentina",
@@ -23637,98 +23652,55 @@
     "_reactivationApolloSwapped": true
   },
   {
-    "companyName": "House of Brands",
-    "website": "https://housebrands.es",
     "country": "Spain",
     "summary": "REPRODUCIR #PLAYSTATION HAS SIDO TÚ Te presentamos un nuevo juego. REPRODUCIR #CULTURA INQUIETA# IQOS IQOS_SMOTHIE IQOS nos trae la mejor receta para un smothie. REPRODUCIR #CULTURA INQUIETA FILMS# DISNEY CHANNEL SANDRA PELUSA - TODOS LOS DÍAS Alimenta tu imaginación con Sandra Pelusa.",
-    "notableClients": [
-      "Disney",
-      "Fox",
-      "Facebook"
-    ],
-    "recentProjects": [
-      "Playfriends",
-      "Telejuegos",
-      "de humor",
-      "COMPLETA CAPÍTULO 5 CERVEZA A nuestro Ser"
-    ],
-    "estimatedSize": "mid",
-    "unabaseScore": 9,
-    "entertainmentVerified": true,
-    "entertainmentSignals": 4,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 3,
-    "fitReasons": [
-      "multiple_projects",
-      "premium_clients",
-      "mid_size_team"
-    ],
-    "contactName": "Javi Clarke",
-    "contactTitle": "Co-Founder & Creative Manager",
-    "contactEmail": "javi@housebrands.es",
-    "contactLinkedIn": "http://www.linkedin.com/in/javiclarke",
-    "contactConfidence": "confirmed",
-    "contactSource": "apollo",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/houseofbrands_es/",
-    "instagramHandle": "houseofbrands_es",
-    "instagramBio": "See Instagram photos and videos from House of Brands (@houseofbrands_es)",
-    "instagramFollowers": "618",
-    "facebookUrl": "https://es-la.facebook.com/BrandedContentHouse/",
-    "twitterUrl": "https://twitter.com/brandshouse",
-    "youtubeUrl": null,
-    "vimeoUrl": null,
-    "contactPhone": "87506812",
-    "emailPatterns": null,
+    "website": "https://housebrands.es",
+    "approved": true,
+    "batch_id": "batch-2026-04-16",
     "scoutLog": [
       {
-        "step": 1,
         "name": "Apollo Pro",
+        "step": 1,
         "started": true
       },
       {
-        "step": 1,
-        "found": "name+email",
         "name": "Javi Clarke",
-        "title": "Innovation and Creative Manager. Co-founder.",
+        "step": 1,
         "email": "javi@housebrands.es",
+        "found": "name+email",
+        "title": "Innovation and Creative Manager. Co-founder.",
         "linkedin": "http://www.linkedin.com/in/javiclarke"
       },
       {
-        "step": 3,
         "name": "Website Crawl",
+        "step": 3,
         "started": true
       },
       {
+        "name": "Javi Clarke",
         "step": 3,
-        "pagesScanned": 16,
-        "personalEmails": [
-          "javi@housebrands.es"
-        ],
-        "genericEmails": [
-          "info@housebrands.es"
-        ],
         "phones": [
           "87506812"
         ],
-        "name": "Javi Clarke",
         "social": {
-          "instagram": "https://www.instagram.com/houseofbrands_es/",
-          "facebook": "https://es-la.facebook.com/BrandedContentHouse/",
+          "vimeo": null,
           "twitter": "https://twitter.com/brandshouse",
           "youtube": null,
-          "vimeo": null,
+          "facebook": "https://es-la.facebook.com/BrandedContentHouse/",
+          "instagram": "https://www.instagram.com/houseofbrands_es/",
           "instagramScore": 1
-        }
+        },
+        "pagesScanned": 16,
+        "genericEmails": [
+          "info@housebrands.es"
+        ],
+        "personalEmails": [
+          "javi@housebrands.es"
+        ]
       },
       {
-        "step": 8,
         "name": "Social Scan",
+        "step": 8,
         "started": true
       },
       {
@@ -23740,12 +23712,73 @@
         "socialPhone": null
       }
     ],
-    "apolloCompanyLinkedIn": null,
+    "vimeoUrl": null,
+    "_batchDate": "2026-04-16",
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team"
+    ],
+    "fitSignals": 3,
+    "twitterUrl": "https://twitter.com/brandshouse",
+    "youtubeUrl": null,
+    "companyName": "House of Brands",
+    "contactName": "Javi Clarke",
+    "facebookUrl": "https://es-la.facebook.com/BrandedContentHouse/",
+    "fitVerified": true,
+    "nicheReason": "niche_confirmed",
+    "source_date": "2026-05-27",
+    "companyBrief": null,
+    "contactEmail": "javi@housebrands.es",
+    "contactPhone": "87506812",
+    "contactTitle": "Co-Founder & Creative Manager",
+    "instagramBio": "See Instagram photos and videos from House of Brands (@houseofbrands_es)",
+    "instagramUrl": "https://www.instagram.com/houseofbrands_es/",
+    "pitchEmailEN": null,
+    "unabaseScore": 9,
+    "approachAngle": null,
+    "contactSource": "apollo",
+    "contactStatus": null,
+    "emailPatterns": null,
+    "estimatedSize": "mid",
+    "nicheVerified": true,
+    "notableClients": [
+      "Disney",
+      "Fox",
+      "Facebook"
+    ],
+    "recentProjects": [
+      "Playfriends",
+      "Telejuegos",
+      "de humor",
+      "COMPLETA CAPÍTULO 5 CERVEZA A nuestro Ser"
+    ],
+    "contactLinkedIn": "http://www.linkedin.com/in/javiclarke",
+    "instagramHandle": "houseofbrands_es",
+    "contactConfidence": "confirmed",
     "apolloCompanyPhone": null,
+    "instagramFollowers": "618",
     "apolloEmployeeCount": null,
-    "source_date": "2026-04-16",
-    "approved": true,
-    "batch_id": "batch-2026-04-16"
+    "entertainmentSignals": 4,
+    "apolloCompanyLinkedIn": null,
+    "entertainmentVerified": true,
+    "industry": "film",
+    "tier": "tier3",
+    "contactPath": "pilot_revival",
+    "readyToSend": true,
+    "_revivedFromPilot": true,
+    "_pilotRevivalReason": "pre-may-19 cohort never contacted. basic ICP-validated + kept existing primary",
+    "_revivedAt": "2026-05-27T20:39:29.063Z",
+    "pitchEmailES": "Hola Javi! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de House of Brands y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Javi! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de House of Brands y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "LinkedIn"
+    },
+    "_prestigeFlags": [
+      "revived_pilot_lead_basic_icp_only"
+    ]
   },
   {
     "country": "Argentina",
@@ -23951,61 +23984,25 @@
     "_reactivationApolloSwapped": true
   },
   {
-    "companyName": "Caudiovisual",
-    "website": "https://caudiovisual.com",
     "country": "Spain",
     "summary": "Productora audiovisual en Valencia y Madrid. Creamos vídeos que cuentan historias, atraen clientes y hacen crecer tu marca. Sin foto o vídeo, no existes.",
-    "notableClients": [],
-    "recentProjects": [
-      "sigue",
-      "AUDIOVISUAL"
-    ],
-    "estimatedSize": "mid",
-    "unabaseScore": 8,
-    "entertainmentVerified": true,
-    "entertainmentSignals": 3,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 2,
-    "fitReasons": [
-      "multiple_projects",
-      "mid_size_team"
-    ],
-    "contactName": "Carlos Llorca Garcia",
-    "contactTitle": "Fundador",
-    "contactEmail": "contacto@caudiovisual.com",
-    "contactLinkedIn": "https://www.linkedin.com/in/carlos-llorca/",
-    "contactConfidence": "confirmed",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "https://www.instagram.com/caudiovisualcom/",
-    "instagramHandle": null,
-    "instagramBio": null,
-    "instagramFollowers": null,
-    "facebookUrl": null,
-    "twitterUrl": null,
-    "youtubeUrl": "https://www.youtube.com/@Caudiovisualcom",
-    "vimeoUrl": null,
-    "contactPhone": "+34614233945",
-    "emailPatterns": null,
+    "website": "https://caudiovisual.com",
+    "approved": true,
+    "batch_id": "batch-2026-04-16",
     "scoutLog": [
       {
-        "step": 1,
         "name": "Apollo Pro",
+        "step": 1,
         "started": true
       },
       {
+        "name": null,
         "step": 1,
-        "found": "org_only",
-        "name": null
+        "found": "org_only"
       },
       {
-        "step": 2,
         "name": "Hunter.io",
+        "step": 2,
         "started": true
       },
       {
@@ -24013,41 +24010,41 @@
         "error": "Request failed with status code 429"
       },
       {
-        "step": 3,
         "name": "Website Crawl",
+        "step": 3,
         "started": true
       },
       {
+        "name": null,
         "step": 3,
+        "phones": [],
+        "social": {
+          "vimeo": null,
+          "twitter": null,
+          "youtube": "https://www.youtube.com/@Caudiovisualcom",
+          "facebook": null,
+          "instagram": "https://www.instagram.com/caudiovisualcom/",
+          "instagramScore": 2
+        },
         "pagesScanned": 15,
-        "personalEmails": [],
         "genericEmails": [
           "contacto@caudiovisual.com"
         ],
-        "phones": [],
-        "name": null,
-        "social": {
-          "instagram": "https://www.instagram.com/caudiovisualcom/",
-          "facebook": null,
-          "twitter": null,
-          "youtube": "https://www.youtube.com/@Caudiovisualcom",
-          "vimeo": null,
-          "instagramScore": 2
-        }
+        "personalEmails": []
       },
       {
-        "step": 4,
         "name": "News/Press",
+        "step": 4,
         "started": true
       },
       {
-        "step": 4,
         "name": null,
+        "step": 4,
         "emails": []
       },
       {
-        "step": 5,
         "name": "LinkedIn DDG",
+        "step": 5,
         "started": true
       },
       {
@@ -24055,8 +24052,8 @@
         "found": "nothing"
       },
       {
-        "step": 6,
         "name": "DDG Email",
+        "step": 6,
         "started": true
       },
       {
@@ -24064,28 +24061,28 @@
         "emails": []
       },
       {
-        "step": "A",
         "name": "Industry DBs",
-        "started": true
-      },
-      {
         "step": "A",
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": "B",
-        "name": "Press/Awards",
         "started": true
       },
       {
-        "step": "B",
         "name": null,
+        "step": "A",
         "emails": []
       },
       {
-        "step": 8,
+        "name": "Press/Awards",
+        "step": "B",
+        "started": true
+      },
+      {
+        "name": null,
+        "step": "B",
+        "emails": []
+      },
+      {
         "name": "Social Scan",
+        "step": 8,
         "started": true
       },
       {
@@ -24097,23 +24094,23 @@
         "socialPhone": null
       },
       {
-        "step": "C",
         "name": "Extra Social",
+        "step": "C",
         "started": true
       },
       {
         "step": "C",
-        "tiktokEmail": null,
         "waPhone": "+34614233945",
+        "gmbOwner": null,
         "gmbPhone": null,
-        "gmbOwner": null
+        "tiktokEmail": null
       },
       {
         "step": "ig_exhaustive",
-        "handle": null,
-        "followers": null,
         "email": null,
         "phone": null,
+        "handle": null,
+        "followers": null,
         "triedHandles": 15
       },
       {
@@ -24123,15 +24120,69 @@
         ]
       }
     ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactVenues": 3,
+    "vimeoUrl": null,
+    "_batchDate": "2026-04-16",
+    "fitReasons": [
+      "multiple_projects",
+      "mid_size_team"
+    ],
+    "fitSignals": 2,
     "manualNote": "Email generico (contacto@caudiovisual.com) — contactar tambien por Instagram @",
-    "source_date": "2026-04-16",
-    "approved": true,
-    "batch_id": "batch-2026-04-16",
-    "recoveryNote": "Added Carlos Llorca personal LinkedIn via name-search. Personal email not publicly listed; contacto@ retained as primary."
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/@Caudiovisualcom",
+    "companyName": "Caudiovisual",
+    "contactName": "Carlos Llorca Garcia",
+    "facebookUrl": null,
+    "fitVerified": true,
+    "nicheReason": "niche_confirmed",
+    "source_date": "2026-05-27",
+    "companyBrief": "Caudiovisual [Pilot revival web-enrich: Toys R Us, SEAT, CUPRA, Westin Valencia, Valencia C.F., Skoda]",
+    "contactEmail": "contacto@caudiovisual.com",
+    "contactPhone": "+34614233945",
+    "contactTitle": "Fundador",
+    "instagramBio": null,
+    "instagramUrl": "https://www.instagram.com/caudiovisualcom",
+    "pitchEmailEN": null,
+    "recoveryNote": "Added Carlos Llorca personal LinkedIn via name-search. Personal email not publicly listed; contacto@ retained as primary.",
+    "unabaseScore": 8,
+    "approachAngle": null,
+    "contactSource": "website",
+    "contactStatus": null,
+    "contactVenues": 3,
+    "emailPatterns": null,
+    "estimatedSize": "mid",
+    "nicheVerified": true,
+    "notableClients": [],
+    "recentProjects": [
+      "sigue",
+      "AUDIOVISUAL"
+    ],
+    "contactLinkedIn": "https://www.linkedin.com/in/carlos-llorca/",
+    "instagramHandle": "caudiovisualcom",
+    "contactConfidence": "confirmed",
+    "apolloCompanyPhone": null,
+    "instagramFollowers": null,
+    "apolloEmployeeCount": null,
+    "entertainmentSignals": 3,
+    "apolloCompanyLinkedIn": null,
+    "entertainmentVerified": true,
+    "industry": "film",
+    "tier": "tier3",
+    "contactPath": "pilot_revival",
+    "readyToSend": true,
+    "_revivedFromPilot": true,
+    "_pilotRevivalReason": "pre-may-19 cohort never contacted. basic ICP-validated + kept existing primary",
+    "_revivedAt": "2026-05-27T20:39:29.063Z",
+    "pitchEmailES": "Hola Carlos! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Caudiovisual y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Carlos! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Caudiovisual y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "LinkedIn"
+    },
+    "_prestigeFlags": [
+      "revived_pilot_lead_basic_icp_only"
+    ]
   },
   {
     "country": "Colombia",
@@ -24285,67 +24336,25 @@
     ]
   },
   {
-    "companyName": "Voilà Estudios",
-    "website": "https://www.voilaestudios.com",
     "country": "Chile",
     "summary": "Aunque tenemos base en Santiago de Chile, trabajamos a nivel global. Contamos con tecnología de vanguardia y un equipo humano de primer nivel. Para nosotros, no hay nada imposible.",
-    "notableClients": [
-      "P&G"
-    ],
-    "recentProjects": [
-      "by ALVARO PRUNEDA N",
-      "en desarrollo Voilà Estudios Escrito y di",
-      "en búsqueda de financiamiento",
-      "Horror 2022 00:58 Olimpia Artificial Inte"
-    ],
-    "estimatedSize": "mid",
-    "unabaseScore": 9,
-    "entertainmentVerified": true,
-    "entertainmentSignals": 7,
-    "nicheVerified": true,
-    "nicheReason": "niche_confirmed",
-    "companyBrief": null,
-    "approachAngle": null,
-    "pitchEmailEN": null,
-    "fitVerified": true,
-    "fitSignals": 4,
-    "fitReasons": [
-      "multiple_projects",
-      "premium_clients",
-      "mid_size_team",
-      "high_ent_signals"
-    ],
-    "contactName": "Álvaro Pruneda",
-    "contactTitle": "Director",
-    "contactEmail": "contacto@voilaestudios.com",
-    "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
-    "contactStatus": null,
-    "instagramUrl": "http://www.instagram.com/voilaestudios",
-    "instagramHandle": "voilaestudios",
-    "instagramBio": "See Instagram photos and videos from Voilà Estudios (@voilaestudios)",
-    "instagramFollowers": "4,546",
-    "facebookUrl": null,
-    "twitterUrl": null,
-    "youtubeUrl": "https://www.youtube.com/channel/UCvqdqF0N8nmwWRBLvNeg8Wg",
-    "vimeoUrl": null,
-    "contactPhone": "76.772.947",
-    "emailPatterns": null,
+    "website": "https://www.voilaestudios.com",
+    "approved": true,
+    "batch_id": "batch-2026-04-16",
     "scoutLog": [
       {
-        "step": 1,
         "name": "Apollo Pro",
+        "step": 1,
         "started": true
       },
       {
+        "name": null,
         "step": 1,
-        "found": "org_only",
-        "name": null
+        "found": "org_only"
       },
       {
-        "step": 2,
         "name": "Hunter.io",
+        "step": 2,
         "started": true
       },
       {
@@ -24353,43 +24362,43 @@
         "error": "Request failed with status code 429"
       },
       {
-        "step": 3,
         "name": "Website Crawl",
+        "step": 3,
         "started": true
       },
       {
+        "name": null,
         "step": 3,
-        "pagesScanned": 14,
-        "personalEmails": [],
-        "genericEmails": [
-          "contacto@voilaestudios.com"
-        ],
         "phones": [
           "76.772.947"
         ],
-        "name": null,
         "social": {
-          "instagram": "http://www.instagram.com/voilaestudios",
-          "facebook": null,
+          "vimeo": null,
           "twitter": null,
           "youtube": "https://www.youtube.com/channel/UCvqdqF0N8nmwWRBLvNeg8Wg",
-          "vimeo": null,
+          "facebook": null,
+          "instagram": "http://www.instagram.com/voilaestudios",
           "instagramScore": 3
-        }
+        },
+        "pagesScanned": 14,
+        "genericEmails": [
+          "contacto@voilaestudios.com"
+        ],
+        "personalEmails": []
       },
       {
-        "step": 4,
         "name": "News/Press",
+        "step": 4,
         "started": true
       },
       {
-        "step": 4,
         "name": null,
+        "step": 4,
         "emails": []
       },
       {
-        "step": 5,
         "name": "LinkedIn DDG",
+        "step": 5,
         "started": true
       },
       {
@@ -24397,8 +24406,8 @@
         "found": "nothing"
       },
       {
-        "step": 6,
         "name": "DDG Email",
+        "step": 6,
         "started": true
       },
       {
@@ -24406,28 +24415,28 @@
         "emails": []
       },
       {
-        "step": "A",
         "name": "Industry DBs",
-        "started": true
-      },
-      {
         "step": "A",
-        "name": null,
-        "emails": []
-      },
-      {
-        "step": "B",
-        "name": "Press/Awards",
         "started": true
       },
       {
-        "step": "B",
         "name": null,
+        "step": "A",
         "emails": []
       },
       {
-        "step": 8,
+        "name": "Press/Awards",
+        "step": "B",
+        "started": true
+      },
+      {
+        "name": null,
+        "step": "B",
+        "emails": []
+      },
+      {
         "name": "Social Scan",
+        "step": 8,
         "started": true
       },
       {
@@ -24439,23 +24448,23 @@
         "socialPhone": null
       },
       {
-        "step": "C",
         "name": "Extra Social",
+        "step": "C",
         "started": true
       },
       {
         "step": "C",
-        "tiktokEmail": null,
         "waPhone": null,
+        "gmbOwner": null,
         "gmbPhone": null,
-        "gmbOwner": null
+        "tiktokEmail": null
       },
       {
         "step": "ig_exhaustive",
-        "handle": "voilaestudios",
-        "followers": "4,546",
         "email": null,
         "phone": null,
+        "handle": "voilaestudios",
+        "followers": "4,546",
         "triedHandles": 14
       },
       {
@@ -24465,14 +24474,75 @@
         ]
       }
     ],
-    "apolloCompanyLinkedIn": null,
-    "apolloCompanyPhone": null,
-    "apolloEmployeeCount": null,
-    "contactVenues": 3,
+    "vimeoUrl": null,
+    "_batchDate": "2026-04-16",
+    "fitReasons": [
+      "multiple_projects",
+      "premium_clients",
+      "mid_size_team",
+      "high_ent_signals"
+    ],
+    "fitSignals": 4,
     "manualNote": "Email generico (contacto@voilaestudios.com) — contactar tambien por Instagram @voilaestudios",
-    "source_date": "2026-04-16",
-    "approved": true,
-    "batch_id": "batch-2026-04-16"
+    "twitterUrl": null,
+    "youtubeUrl": "https://www.youtube.com/channel/UCvqdqF0N8nmwWRBLvNeg8Wg",
+    "companyName": "Voilà Estudios",
+    "contactName": "Alvaro Pruneda Negrete",
+    "facebookUrl": null,
+    "fitVerified": true,
+    "nicheReason": "niche_confirmed",
+    "source_date": "2026-05-27",
+    "companyBrief": null,
+    "contactEmail": "alvaro@voilaestudios.com",
+    "contactPhone": "76.772.947",
+    "contactTitle": "Director de Voilà Estudios",
+    "instagramBio": "See Instagram photos and videos from Voilà Estudios (@voilaestudios)",
+    "instagramUrl": "http://www.instagram.com/voilaestudios",
+    "pitchEmailEN": null,
+    "unabaseScore": 9,
+    "approachAngle": null,
+    "contactSource": "website",
+    "contactStatus": null,
+    "contactVenues": 3,
+    "emailPatterns": null,
+    "estimatedSize": "mid",
+    "nicheVerified": true,
+    "notableClients": [
+      "P&G"
+    ],
+    "recentProjects": [
+      "by ALVARO PRUNEDA N",
+      "en desarrollo Voilà Estudios Escrito y di",
+      "en búsqueda de financiamiento",
+      "Horror 2022 00:58 Olimpia Artificial Inte"
+    ],
+    "contactLinkedIn": null,
+    "instagramHandle": "voilaestudios",
+    "contactConfidence": "website_direct",
+    "apolloCompanyPhone": null,
+    "instagramFollowers": "4,546",
+    "apolloEmployeeCount": null,
+    "entertainmentSignals": 7,
+    "apolloCompanyLinkedIn": null,
+    "entertainmentVerified": true,
+    "additionalContacts": [],
+    "industry": "film",
+    "tier": "tier3",
+    "contactPath": "pilot_revival",
+    "readyToSend": true,
+    "_revivedFromPilot": true,
+    "_pilotRevivalReason": "pre-may-19 cohort never contacted. basic ICP-validated + Apollo DM swap",
+    "_revivedAt": "2026-05-27T20:39:29.063Z",
+    "pitchEmailES": "Hola Alvaro! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Voilà Estudios y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Alvaro! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Voilà Estudios y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
+    "channelPriority": {
+      "primario": "email",
+      "secundario": "Instagram DM",
+      "opcional": "LinkedIn"
+    },
+    "_prestigeFlags": [
+      "revived_pilot_lead_basic_icp_only"
+    ]
   },
   {
     "companyName": "Container Films DVA",
