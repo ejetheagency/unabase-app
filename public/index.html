@@ -105,10 +105,13 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .aa-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.5)}
 .aa-card.fu-red{border-color:var(--rd);background:#120808;box-shadow:0 0 18px rgba(239,68,68,.18)}
 .aa-card.fu-yellow{border-color:var(--am);background:#12100a;box-shadow:0 0 14px rgba(245,158,11,.15)}
+.aa-card.fu-blue{border-color:#3b82f6;background:#0a1224;box-shadow:0 0 16px rgba(59,130,246,.20)}
+.aa-card.fu-blue .aa-time{color:#93c5fd}
 .aa-urgency{position:absolute;top:14px;right:14px;font-size:9px;font-weight:900;padding:4px 10px;border-radius:5px;letter-spacing:1.5px}
 .aa-urgency.red{background:var(--rd);color:#fff;animation:fupulse 1s infinite}
 .aa-urgency.yellow{background:var(--am);color:#0a0a0f}
 .aa-urgency.green{background:rgba(0,200,80,0.15);color:var(--gr);border:1px solid rgba(0,200,80,0.35)}
+.aa-urgency.blue{background:rgba(59,130,246,.18);color:#93c5fd;border:1px solid rgba(59,130,246,.5)}
 .aa-company{font-size:22px;font-weight:800;color:#fff;margin-top:24px;letter-spacing:-.3px;line-height:1.2}
 .aa-action{font-size:13px;color:var(--t2);font-weight:600;margin-top:4px}
 .aa-time{font-size:15px;font-weight:800;letter-spacing:.3px;margin-top:2px}
@@ -2042,15 +2045,39 @@ function renderAccionAhora(){
   const pool=[...TL,...PL];
   const seen=new Set();
   const deduped=pool.filter(l=>{const dd=dom(l.website);if(!dd||seen.has(dd))return false;seen.add(dd);return true});
-  const COLOR_PRI={red:0,yellow:1,green:2};
+  // BLUE = reactivation mode (forgotten pilot leads). Sort priority: RED→YELLOW→
+  // GREEN→BLUE. BLUE sits at the bottom so it doesn't compete with leads in their
+  // natural cycle — they're background work the operator should chip through over
+  // time, not urgent.
+  const COLOR_PRI={red:0,yellow:1,green:2,blue:3};
   const items=deduped.map(l=>{
     const dd=dom(l.website);const rec=gr(dd);
-    // Must be in cycle
+    // ── REACTIVATION MODE OVERRIDE ──
+    // A lead is "in reactivation" if lead_data marks it AND no new message has
+    // been logged since reactivation was activated. Once the operator sends the
+    // soft "did you see my email?" template, this branch fails on the next render
+    // and the normal cycle resumes (with anchor at that fresh message).
+    if(l._reactivationMode && l._reactivationActivatedAt){
+      const activatedMs=new Date(l._reactivationActivatedAt).getTime();
+      const newerMsg=(rec.msgs||[]).some(m=>{
+        const t=new Date(m.ts).getTime();
+        return !isNaN(t)&&t>=activatedMs;
+      });
+      if(!newerMsg && !SEQ_STOPS.includes(rec.st||'none')){
+        return {
+          lead:l,rec,d:dd,
+          fu:{
+            active:true,color:'blue',cycle:0,
+            step:{id:'reactivate',label:'Email reactivación',channel:'email',msg:l._reactivationEmailES||''},
+            state:'reactivation_pending',timeStr:'reactivar',dueMs:Date.now(),
+          },
+          _reactivation:true,
+        };
+      }
+    }
+    // Must be in cycle (normal path)
     if((rec.msgs||[]).length===0)return null;
-    // Must not be in a terminal state
     if(SEQ_STOPS.includes(rec.st||'none'))return null;
-    // Compute follow-up state — if engine says inactive (shouldn't happen
-    // for in-cycle leads but just in case), skip.
     const fu=getFollowUp(rec,l,lead=>lead&&lead._batchDate?'past':'hoy');
     if(!fu.active||!fu.step)return null;
     return {lead:l,rec,d:dd,fu};
@@ -2084,9 +2111,10 @@ function renderAccionAhora(){
   visible.forEach(({lead:l,d,fu})=>{
     const urgency=fu.color==='red'?'<div class="aa-urgency red">VENCIDO</div>'
                  :fu.color==='yellow'?'<div class="aa-urgency yellow">PRONTO</div>'
+                 :fu.color==='blue'?'<div class="aa-urgency blue">REACTIVAR</div>'
                  :'<div class="aa-urgency green">EN CICLO</div>';
-    const actType=actionTypeLabel(fu);
-    const adjT=adjustTimeStr(fu,l.country);
+    const actType=fu.color==='blue'?'Email reactivación · piloto':actionTypeLabel(fu);
+    const adjT=fu.color==='blue'?'Lead olvidado · soft re-igniter':adjustTimeStr(fu,l.country);
     html+=`<div class="aa-card fu-${fu.color}" onclick="openPB('${d}')">
       ${urgency}
       <div class="aa-company">${esc(l.companyName)}</div>
