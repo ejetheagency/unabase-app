@@ -347,6 +347,7 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .hi-st.contacted{background:#0a142e;color:#93c5fd}
 .hi-st.partial{background:#1f130a;color:#fb923c}
 .hi-st.closed{background:#150a28;color:#d8b4fe}
+.hi-st.reactivation{background:rgba(59,130,246,.18);color:#93c5fd;border:1px solid rgba(59,130,246,.5)}
 .hi-a{color:var(--mt);font-size:9px}
 .hi-d{color:var(--dm);font-size:9px;font-family:ui-monospace,monospace}
 
@@ -1287,6 +1288,12 @@ function renderDay(){
     if(window.__hoyShowAll)return true;
     const d=dom(l.website);const rec=gr(d);
     if(SEQ_STOPS.includes(rec.st||'none'))return false;
+    // _revivedFromPilot override: pilot revivals always render in Hoy even if
+    // they have residual messages_sent from a stale prior attempt. Operator's
+    // explicit rule: "if they have never been contacted we run them through
+    // leads hoy." We trust the build-time bucketing (status=='none') over the
+    // local msgs cache that may be stale.
+    if(l._revivedFromPilot)return true;
     if((rec.msgs||[]).length>0)return false;
     return true;
   });
@@ -1963,7 +1970,12 @@ function rHist(q){
       const m=(r.msgs||[]).filter(x=>x.tx!==AUTO_ANCHOR_TX).length;
       const st=cSt(r);
       const stBadge=st==='none'?'':`<span class="hi-st ${st}">${STATUS_LABEL[st]||st}</span>`;
-      h+=`<div class="hi" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}${stBadge}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`;
+      // Reactivation badge — surface forgotten-pilot leads at-a-glance without
+      // changing their current status badge. The blue chip mirrors the BLUE
+      // REACTIVAR card in Acción Ahora so the operator can spot them anywhere.
+      const lead=leadByDom.get(r.id);
+      const reactBadge=(lead&&lead._reactivationMode)?'<span class="hi-st reactivation">REACTIVAR</span>':'';
+      h+=`<div class="hi" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}${reactBadge}${stBadge}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`;
     });
     h+='</div></div>';
   });
@@ -2045,11 +2057,10 @@ function renderAccionAhora(){
   const pool=[...TL,...PL];
   const seen=new Set();
   const deduped=pool.filter(l=>{const dd=dom(l.website);if(!dd||seen.has(dd))return false;seen.add(dd);return true});
-  // BLUE = reactivation mode (forgotten pilot leads). Sort priority: RED→YELLOW→
-  // GREEN→BLUE. BLUE sits at the bottom so it doesn't compete with leads in their
-  // natural cycle — they're background work the operator should chip through over
-  // time, not urgent.
-  const COLOR_PRI={red:0,yellow:1,green:2,blue:3};
+  // BLUE = reactivation mode (forgotten pilot leads). Surfaces FIRST per operator
+  // directive so the soft re-igniter queue is the operator's first focus when
+  // they open Acción Ahora; natural-cycle reds/yellows follow.
+  const COLOR_PRI={blue:0,red:1,yellow:2,green:3};
   const items=deduped.map(l=>{
     const dd=dom(l.website);const rec=gr(dd);
     // ── REACTIVATION MODE OVERRIDE ──
