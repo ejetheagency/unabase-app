@@ -311,14 +311,33 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .hs{width:100%;background:var(--card);border:1px solid var(--bd);color:var(--tx);padding:8px 14px;border-radius:6px;font-size:12px;margin-bottom:12px}
 .hs:focus{border-color:var(--ac);outline:none}
 .hs::placeholder{color:#30304a}
-.hg{margin-bottom:16px}
-.hg-t{font-size:10px;font-weight:700;color:var(--mt);text-transform:uppercase;letter-spacing:.4px;margin-bottom:5px;display:flex;align-items:center;gap:5px}
-.hg-c{background:var(--bd);color:var(--ac);padding:1px 7px;border-radius:6px;font-size:9px}
-.hi{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:8px 12px;margin-bottom:3px;cursor:pointer;display:flex;align-items:center;gap:6px}
-.hi:hover{background:var(--sf)}
-.hi-n{font-weight:600;font-size:11px;flex:1;color:#fff}
+.hg{margin-bottom:10px;border:1px solid var(--bd);border-radius:8px;background:var(--card);overflow:hidden}
+.hg-t{font-size:11px;font-weight:700;color:#fff;letter-spacing:.3px;padding:10px 12px;display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;transition:.15s}
+.hg-t:hover{background:var(--sf)}
+.hg-t::before{content:'▼';font-size:9px;color:var(--mt);transition:transform .2s;display:inline-block;width:10px}
+.hg.collapsed .hg-t::before{transform:rotate(-90deg)}
+.hg-date{font-family:ui-monospace,monospace;color:var(--ac);font-size:11px}
+.hg-c{background:var(--bd);color:var(--ac);padding:1px 7px;border-radius:6px;font-size:9px;margin-left:4px}
+.hg-stats{margin-left:auto;font-size:9px;font-weight:600;color:var(--mt);text-transform:none;letter-spacing:0;display:flex;gap:6px}
+.hg-stat{padding:1px 6px;border-radius:4px;background:var(--bd)}
+.hg-stat.replied{background:#0a1f12;color:var(--gn2)}
+.hg-stat.meeting{background:#1f1a0a;color:#fbbf24}
+.hg-stat.contacted{background:#0a142e;color:#93c5fd}
+.hg-stat.partial{background:#1f130a;color:#fb923c}
+.hg-stat.closed{background:#150a28;color:#d8b4fe}
+.hg-body{padding:4px 8px 10px;border-top:1px solid var(--bd)}
+.hg.collapsed .hg-body{display:none}
+.hi{background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:8px 12px;margin-top:4px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:.15s}
+.hi:hover{background:var(--sf);border-color:var(--ac)}
+.hi-n{font-weight:600;font-size:11px;flex:1;color:#fff;display:flex;align-items:center;gap:6px}
+.hi-st{font-size:8px;font-weight:700;padding:1px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:.3px;background:var(--bd);color:var(--mt)}
+.hi-st.replied{background:#0a1f12;color:var(--gn2)}
+.hi-st.meeting{background:#1f1a0a;color:#fbbf24}
+.hi-st.contacted{background:#0a142e;color:#93c5fd}
+.hi-st.partial{background:#1f130a;color:#fb923c}
+.hi-st.closed{background:#150a28;color:#d8b4fe}
 .hi-a{color:var(--mt);font-size:9px}
-.hi-d{color:var(--dm);font-size:9px}
+.hi-d{color:var(--dm);font-size:9px;font-family:ui-monospace,monospace}
 
 .empty{text-align:center;padding:50px 20px}
 .empty-i{font-size:32px;margin-bottom:8px;opacity:.25}
@@ -1882,29 +1901,60 @@ function rM(){
 }
 
 // ═══ HISTORY ═══
+// Date-grouped collapsible view. Every lead from every shipped batch lives here,
+// grouped by source_date (most recent first). Today's active batch opens expanded;
+// all past batches collapse to a one-line summary with per-status counts. Click
+// header to toggle. Click any lead to open its detail playbook.
+//
+// APPROVED-ONLY GATE: only leads that came through an approved batch (TL = today's
+// active batch, PL = leads-past.json, SEED_PAST = first-run seed) appear here.
+// Raw Supabase discovery rows stay invisible until approved.
+const STATUS_LABEL={none:'Sin contactar',partial:'Parcial',contacted:'Contactado',replied:'Respondió',meeting:'Reunión',closed:'Cerrado',skip:'Omitido'};
 function rHist(q){
-  // APPROVED-ONLY GATE: Historial must only show leads that entered "the system"
-  // via an approved batch (current Hoy batch, any archived batch in leads-past.json,
-  // or the first-run SEED_PAST). Raw Supabase records from discovery/enrichment runs
-  // stay in the memory pool (Supabase) and are invisible here until approved.
   const approved=new Set();
-  TL.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
-  PL.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
-  if(typeof SEED_PAST!=='undefined'&&SEED_PAST)SEED_PAST.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
+  const leadByDom=new Map();
+  const consider=(arr)=>arr.forEach(l=>{const d=dom(l.website);if(d){approved.add(d);if(!leadByDom.has(d))leadByDom.set(d,l)}});
+  consider(TL);consider(PL);
+  if(typeof SEED_PAST!=='undefined'&&SEED_PAST)consider(SEED_PAST);
+
   const all=allR().filter(r=>approved.has(r.id));
   const f=q?all.filter(r=>r.co.toLowerCase().includes(q.toLowerCase())):all;
-  // Show all status groups (including uncontacted) — except "skip" (omitir/descartar).
-  const groups={none:[],partial:[],contacted:[],replied:[],meeting:[],closed:[]};
-  f.forEach(r=>{const s=cSt(r);if(s==='skip')return;if(groups[s])groups[s].push(r)});
+
+  // Group by source_date (the date the lead's batch shipped). Hide "skip" leads.
+  // For leads carried-forward, prefer _originallySourceDate so they group with
+  // their ORIGINAL batch, not the day they were bumped into Hoy.
+  const byDate={};
+  f.forEach(r=>{
+    const st=cSt(r);if(st==='skip')return;
+    const l=leadByDom.get(r.id)||{};
+    const date=l._originallySourceDate||l.source_date||l._batchDate||'(sin fecha)';
+    if(!byDate[date])byDate[date]=[];
+    byDate[date].push(r);
+  });
+
+  // Active batch source_date — open by default, all others collapsed
+  const activeDate=TL.length&&TL[0]?(TL[0].source_date||TL[0]._batchDate):null;
+  const dates=Object.keys(byDate).sort((a,b)=>b.localeCompare(a));
+
   let h='';
-  [['none','Sin contactar'],['partial','En progreso'],['contacted','Contactados'],['replied','Respondieron'],['meeting','Reunión'],['closed','Cerrados']].forEach(([k,label])=>{
-    const items=groups[k]||[];if(!items.length)return;
-    // Sort by most recent activity (up timestamp) desc
+  dates.forEach(date=>{
+    const items=byDate[date];
     items.sort((a,b)=>new Date(b.up||0)-new Date(a.up||0));
-    h+=`<div class="hg"><div class="hg-t">${label}<span class="hg-c">${items.length}</span></div>`;
-    items.forEach(r=>{const a=(r.acts||[]).length;const m=(r.msgs||[]).filter(x=>x.tx!==AUTO_ANCHOR_TX).length;
-      h+=`<div class="hi" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`});
-    h+='</div>';
+    // Per-status counts
+    const counts={};
+    items.forEach(r=>{const s=cSt(r);counts[s]=(counts[s]||0)+1;});
+    const order=['replied','meeting','contacted','partial','closed','none'];
+    const statChips=order.filter(k=>counts[k]).map(k=>`<span class="hg-stat ${k}">${counts[k]} ${STATUS_LABEL[k].toLowerCase()}</span>`).join('');
+    const collapsedClass=(date===activeDate)?'':' collapsed';
+    h+=`<div class="hg${collapsedClass}"><div class="hg-t" onclick="this.parentElement.classList.toggle('collapsed')"><span class="hg-date">${date}</span><span class="hg-c">${items.length}</span><span class="hg-stats">${statChips}</span></div><div class="hg-body">`;
+    items.forEach(r=>{
+      const a=(r.acts||[]).length;
+      const m=(r.msgs||[]).filter(x=>x.tx!==AUTO_ANCHOR_TX).length;
+      const st=cSt(r);
+      const stBadge=st==='none'?'':`<span class="hi-st ${st}">${STATUS_LABEL[st]||st}</span>`;
+      h+=`<div class="hi" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}${stBadge}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`;
+    });
+    h+='</div></div>';
   });
   if(!h)h='<div style="text-align:center;color:var(--dm);padding:40px;font-size:12px">No hay leads en memoria todavía.</div>';
   document.getElementById('histL').innerHTML=h;
@@ -2004,16 +2054,13 @@ function renderAccionAhora(){
     if(ca!==cb)return ca-cb;
     return (a.fu.dueMs||0)-(b.fu.dueMs||0);
   });
-  // Cap visible at 30 urgent + 30 upcoming (effectively unbounded for normal
-  // daily decks). Previously hard-capped at 4 visible total, which silently
-  // hid most in-cycle leads behind a "queued" counter — bad for verifying a
-  // full 10–12-lead batch and confused the desktop vs phone display.
-  const urgent=items.filter(i=>i.fu.color==='red'||i.fu.color==='yellow');
-  const upcoming=items.filter(i=>i.fu.color==='green');
-  const visibleUrgent=urgent.slice(0,30);
-  const visibleUpcoming=urgent.length<30?upcoming.slice(0,30-urgent.length):[];
-  const visible=[...visibleUrgent,...visibleUpcoming];
-  const queued=items.length-visible.length;
+  // UNCAPPED — every in-cycle lead must stay visible so Scarlett can complete
+  // each cycle's tasks. Previously capped at 30 (and before that, 4), which
+  // hid most active leads behind a "queued" counter and broke cycle continuity
+  // when the deck grew past the cap. Sort already places RED→YELLOW→GREEN
+  // so the most urgent always render first.
+  const visible=items;
+  const queued=0;
   if(!visible.length){
     el.innerHTML='<div class="aa-empty"><div class="aa-empty-icon">✓</div>No hay leads en ciclo todavía. Contactá a los de Hoy para arrancar.</div>';
     return;
