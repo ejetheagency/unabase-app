@@ -1292,12 +1292,13 @@ function renderDay(){
     if(window.__hoyShowAll)return true;
     const d=dom(l.website);const rec=gr(d);
     if(SEQ_STOPS.includes(rec.st||'none'))return false;
-    // _revivedFromPilot override: pilot revivals always render in Hoy even if
-    // they have residual messages_sent from a stale prior attempt. Operator's
-    // explicit rule: "if they have never been contacted we run them through
-    // leads hoy." We trust the build-time bucketing (status=='none') over the
-    // local msgs cache that may be stale.
-    if(l._revivedFromPilot)return true;
+    // Patched-lead override: pilot revivals (_revivedFromPilot) AND recovery
+    // patches (_recoveredFrom) always render in Hoy even if they have residual
+    // messages_sent from a stale prior attempt. Operator's explicit rule: "if
+    // they have never been contacted we run them through leads hoy." We trust
+    // the build-time bucketing (Supabase status=='none' + msgs deleted) over
+    // the local msgs cache that may be stale until next sbLoadAll() sync.
+    if(l._revivedFromPilot||l._recoveredFrom)return true;
     if((rec.msgs||[]).length>0)return false;
     return true;
   });
