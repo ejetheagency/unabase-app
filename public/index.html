@@ -135,6 +135,14 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
   .hoy-done-cta::after{content:' →'}
 }
 .aa-queue-info{text-align:center;color:var(--dm);font-size:11px;margin-top:24px;letter-spacing:.5px;text-transform:uppercase}
+.aa-pager{display:flex;align-items:center;justify-content:center;gap:14px;margin:24px auto 0;padding:12px 18px;background:var(--card);border:1px solid var(--bd);border-radius:10px;max-width:520px}
+.aa-pager-btn{background:var(--bd);color:var(--tx);border:none;padding:7px 16px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;transition:.15s;letter-spacing:.2px}
+.aa-pager-btn:hover:not(:disabled){background:var(--ac);color:#0a0a0f}
+.aa-pager-btn:disabled{opacity:.25;cursor:not-allowed}
+.aa-pager-info{font-size:11px;color:var(--mt);font-weight:600;letter-spacing:.3px;text-align:center;flex:1;min-width:0}
+.aa-pager-info .aa-pager-page{color:#fff;font-weight:700}
+.aa-pager-info .aa-pager-total{color:var(--ac);margin-left:4px}
+@media(max-width:600px){.aa-pager{gap:8px;padding:10px}.aa-pager-btn{padding:6px 10px;font-size:11px}.aa-pager-info{font-size:10px}}
 /* NEXT ACTION block — single source of truth in playbook */
 .next-action{background:linear-gradient(135deg,rgba(212,160,23,.04),rgba(255,255,255,.01));border:1px solid var(--bd2);border-radius:10px;padding:14px;margin-top:10px}
 .na-title{font-size:14px;font-weight:700;color:var(--tx);margin:4px 0 10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
@@ -2054,17 +2062,24 @@ function renderAccionAhora(){
     if(ca!==cb)return ca-cb;
     return (a.fu.dueMs||0)-(b.fu.dueMs||0);
   });
-  // UNCAPPED — every in-cycle lead must stay visible so Scarlett can complete
-  // each cycle's tasks. Previously capped at 30 (and before that, 4), which
-  // hid most active leads behind a "queued" counter and broke cycle continuity
-  // when the deck grew past the cap. Sort already places RED→YELLOW→GREEN
-  // so the most urgent always render first.
-  const visible=items;
-  const queued=0;
-  if(!visible.length){
+  // QUEUE-UNCAPPED + PAGINATED 4-at-a-time. Sort already places RED→YELLOW→
+  // GREEN so the most urgent surface first; pagination just controls how many
+  // cards render at once so Scarlett can focus 4 leads at a time. Page state
+  // lives on window (survives re-renders triggered by status updates); auto-
+  // clamps to last page if the queue shrinks past the current page.
+  if(!items.length){
     el.innerHTML='<div class="aa-empty"><div class="aa-empty-icon">✓</div>No hay leads en ciclo todavía. Contactá a los de Hoy para arrancar.</div>';
+    window.__aaPage=0;
     return;
   }
+  const PAGE_SIZE=4;
+  const totalPages=Math.max(1,Math.ceil(items.length/PAGE_SIZE));
+  if(typeof window.__aaPage!=='number'||window.__aaPage<0)window.__aaPage=0;
+  if(window.__aaPage>=totalPages)window.__aaPage=totalPages-1;
+  const page=window.__aaPage;
+  const start=page*PAGE_SIZE;
+  const visible=items.slice(start,start+PAGE_SIZE);
+
   let html='<div class="aa-grid">';
   visible.forEach(({lead:l,d,fu})=>{
     const urgency=fu.color==='red'?'<div class="aa-urgency red">VENCIDO</div>'
@@ -2081,9 +2096,18 @@ function renderAccionAhora(){
     </div>`;
   });
   html+='</div>';
-  if(queued>0)html+=`<div class="aa-queue-info">+${queued} en cola</div>`;
+  // Pager only renders once the queue is bigger than one page
+  if(items.length>PAGE_SIZE){
+    const prevDis=page===0?'disabled':'';
+    const nextDis=page>=totalPages-1?'disabled':'';
+    html+=`<div class="aa-pager"><button class="aa-pager-btn" ${prevDis} onclick="aaPrev()">← anterior</button><div class="aa-pager-info">Página <span class="aa-pager-page">${page+1}</span> de ${totalPages}<span class="aa-pager-total">· ${items.length} en cola</span></div><button class="aa-pager-btn" ${nextDis} onclick="aaNext()">siguiente →</button></div>`;
+  }
   el.innerHTML=html;
 }
+// Pager navigation — page index persists on window so Scarlett stays on the
+// same set of 4 across action completions, unless the queue shrinks past it.
+function aaPrev(){if((window.__aaPage||0)>0){window.__aaPage--;renderAccionAhora();}}
+function aaNext(){window.__aaPage=(window.__aaPage||0)+1;renderAccionAhora();}
 
 // renderPast() removed — Leads Anteriores tab no longer exists.
 // loadPast() and PL still used: PL feeds Acción Ahora (which aggregates today + past).
