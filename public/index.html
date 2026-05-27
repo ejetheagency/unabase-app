@@ -764,14 +764,18 @@ async function sbLoadAll(){
       msgs.forEach(m=>{
         if(!D[m.lead_id])return;
         if(!sbMsgsByLead[m.lead_id])sbMsgsByLead[m.lead_id]=[];
-        // Skip if we already have this exact sent_at (server-side duplicates)
         if(!sbMsgsByLead[m.lead_id].find(x=>x.ts===m.sent_at)){
           sbMsgsByLead[m.lead_id].push({ch:m.channel,tx:m.message_text,ts:m.sent_at});
         }
       });
-      // Replace local msgs with authoritative Supabase data
-      Object.entries(sbMsgsByLead).forEach(([id,sbMsgs])=>{
-        D[id].msgs=sbMsgs;
+      // Replace local msgs with authoritative Supabase data — including
+      // EMPTY arrays when Supabase has zero messages for a lead. Previously
+      // only iterated leads with messages in Supabase, leaving local stale
+      // msgs in place after server-side deletes (broke the freshOnly filter
+      // in Hoy when recovery patches deleted msgs but localStorage retained
+      // them).
+      Object.keys(D).forEach(id=>{
+        D[id].msgs=sbMsgsByLead[id]||[];
       });
     }
     // Load notes — filtered by client_id
@@ -1358,6 +1362,13 @@ function renderDay(){
     let fu=getFollowUp(rec,l,'hoy');
     // Safety net (no-op now since getFollowUp always returns active for non-stopped leads)
     if(!fu.active&&fu.reason==='no_outreach'){fu={active:true,color:'green',step:{label:'Email inicial'},state:'waiting',timeStr:'ahora'};}
+    // REVIVAL OVERRIDE: pilot revivals + recovery-patched leads are treated as
+    // fresh first-contact in Hoy regardless of historical msgs. Any old timestamps
+    // would make the follow-up engine compute RED (overdue) and visually mark the
+    // card as urgent, which contradicts the "fresh lead" UX the operator wants.
+    if(l._revivedFromPilot||l._recoveredFrom){
+      fu={active:true,color:'green',step:{label:'Email inicial'},state:'waiting',timeStr:'ahora'};
+    }
     const fuCls=fu.active&&fu.color?'fu-'+fu.color:'';
     const adjTime=adjustTimeStr(fu,l.country);
     const fuTag=fu.active&&fu.state?`<div class="fu-tag ${fu.color}">${fu.step.label} · ${adjTime}</div>`:'';
