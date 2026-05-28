@@ -88,6 +88,64 @@ Rollback: `git -C unabase-app checkout -- public/leads-2026-05-27.json public/le
 ### Still NOT applied (await operator, per-group)
 A2 (2, contactEmail fill — Zeta dup), B1 (15 fallbacks), B2 (14 Apollo), C1 (4 triage + channelPriority caveat), D1 (no-op).
 
+### Hybrid enrichment review (report-only, 2026-05-28) — NOTHING applied
+Scope = unresolved only: A2(2 Zeta dup), B2(14), C1(4) + flagged-still-unresolved
+VPro(no_email_use_whatsapp), Aqua(domain_rebranded), Grappi(no_verified_email).
+Habanero RESOLVED (website_published contact@habanerofilms.com). Other 5 flagged verified.
+Free steps done: cache pool checked = NO Apollo people/email data anywhere (research-cache
++ discovery caches are company-level only); website inspection already in sweep report.
+Apollo people/match (step 4) NOT run — ~17 unique domains > 15 pre-flight threshold (Enrichment credits). Awaiting operator approval to spend.
+Suspect wrong-domain (Habanero-style): Underground@nbcuni.com (NBCUniversal — almost
+certainly wrong), Brodaju rene@brodaju.com vs site brodaju.com.co, Aqua (rebranded).
+Freemail-but-likely-valid: La Villa juliopachongonzalez@yahoo.com (known recovered), Misil gmail.
+
+### Suspect-only Apollo run DONE (operator-approved, 3 domains, 2026-05-28) — report-only
+- undergroundproducciones.com → VERIFIED DM: Pablo Culell Ok (VP Original Content, NBCUni),
+  pablo.culell@nbcuni.com [verified] + LinkedIn. ⚠️ ICP flag: NBCUniversal exec, not a boutique
+  productora — possible mis-scope. Current underground@nbcuni.com is a non-person generic addr.
+- vprovideo.com → person found (Osiel Hernández, Cámaras) but NO email (unavailable) → keep WhatsApp.
+- grappi.cl → 0 DMs / 0 emails → needs manual WebFetch (grappi.cl/contacto).
+NOTHING applied (no contactEmail change, no Supabase, no push).
+DECISION (operator, 2026-05-28): RE-SCOPE Underground — do NOT wire in pablo.culell@nbcuni.com.
+Underground Producciones reads as NBCUniversal-affiliated (verified DM = NBCUni VP), inconsistent
+with the boutique-productora ICP. Flagged for operator ICP review (exclude / reclassify / keep-as-misfit).
+contactEmail left as underground@nbcuni.com (unverified, untouched). No lead-file mutation made for this flag.
+
+### Grappi WebFetch DONE (free, report-only, 2026-05-28)
+grappi.cl / /contacto / /about / /nosotros are JS-rendered — static fetch returns only the
+title ("Grappi - Productora Audiovisual Santiago"). No email, DM, IG, team, or clients extractable.
+Apollo also returned 0. contacto@grappi.cl exists ONLY in embedded SEED_PAST (not in leads-past.json,
+not confirmed on live site) — role inbox, domain-consistent, UNVERIFIED. IG @grappifilming also from
+SEED_PAST, canonical not confirmable. Lifecycle: BLUE Acción Ahora (_reactivationMode, already-cycled).
+Verdict: no verified DM; contacto@grappi.cl acceptable only as low-confidence fallback; needs a
+human browser check (JS site). → MANUAL-REVIEW. No mutation made.
+
+### Cycle-2 deep website scrape DONE (operator-approved, report-only, 2026-05-28)
+4 parallel read-only agents deep-crawled 19 unresolved sites (every tab + footer + curl for JS sites).
+Findings saved → scripts/enrichment-cycle2-findings.md. NOTHING applied.
+Big wins: new DMs (Intelygente full team, Magma Gugliotta+Videla, Doin CEO Carolina Guerrero, Happy
+Monster 6 directors, Misil/La Villa co-founders), new IGs (HUAU @be_huau, Doin, CBRA, Mun, Brodaju),
+new emails (Zeta info@, HUAU hola@, Doin david@, Magma juanpablo@, Grappi contacto@, La Villa gmail).
+Key flags: New Walk IG typo (should be newwalkproductions); several "personal" emails (pau@,fernando@,
+david@,cristobal@,rene@) NOT on site = unconfirmed; Aqua REBRANDED→Anchoita Films (anchoitafilms.com.ar);
+GEO/ICP: Morena+Mun = Spain, Torneos = sports conglomerate, Kuarzo site DOWN(503).
+### Cycle-2 SAFE enrichment APPLIED (files-only, NOT committed yet, 2026-05-28)
+Tool: scripts/apply-cycle2-safe.js --apply (guarded, idempotent). Touched ONLY instagramHandle,
+instagramUrl, additionalContacts[], _cycle2Context/_cycle2ScrapedAt on 18 lead entries in
+leads-2026-05-27 + leads-past. Applied: 6 IG fixes (incl New Walk typo→newwalkproductions), 22 new
+DMs into additionalContacts, 18 context notes. VERIFIED: 0 protected fields changed, 0 non-SAFE changed
+(deep-compare vs HEAD). The "contactName" lines in git diff are nested DM entries, not lead-level.
+leads-2026-05-28 untouched. NOT committed, no Supabase, no push. Rollback: git checkout -- those 2 files.
+NEXT: email/name/identity plan below awaits per-group approval; then commit.
+
+### Remaining-unresolved grouping (report-only, NOTHING applied)
+- SAFE keep (13, email present/likely-valid): B2 same-domain DMs ×10 (Fósforo, Mun, Kuarzo, Minded
+  Factory, Torneos, Morena, HUAU, CBRA, Doin, Magma) + Misil(gmail) + La Villa(yahoo recovered) + Brodaju.
+- SAFE-FIX pending approval (1): Zeta Positivo — fill info@zetapositivo.com.ar (empty now) + DEDUP (-27 & past).
+- MANUAL-REVIEW (6): C1 role inboxes New Walk/Happy Monster/Cinebrand/Intelygente + Grappi(JS site) + Aqua(rebranded domain hunt).
+- BLOCKED/NO-EMAIL (1): VPro (WhatsApp only; Apollo person, no email).
+- ICP-MISFIT (1): Underground (NBCUniversal-affiliated; re-scope, do not wire pablo.culell@nbcuni.com).
+
 ### Next (separate): today's held batch (leads-2026-05-28) deployment.
 
 ### Prior (now SUSPENDED) task

@@ -13623,7 +13623,9 @@
       "forgotten_pilot_lead_reactivated"
     ],
     "_emailStatus": "no_deliverable_email_domain_rebranded",
-    "_emailFixNote": "aquafilms.com.ar ahora redirige a Anchoíta Films (@volareshumano) — dominio cambió de dueño, sin email válido"
+    "_emailFixNote": "aquafilms.com.ar ahora redirige a Anchoíta Films (@volareshumano) — dominio cambió de dueño, sin email válido",
+    "_cycle2Context": "REBRANDED to Anchoita Films — new domain anchoitafilms.com.ar (both live). Buenos Aires + Madrid; fiction/doc/theater. No email on site. IG @volareshumano confirmed. NOTE: website/domain change is in the email/identity plan (changes lead id).",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "companyName": "Videos corporativos en México",
@@ -17206,7 +17208,35 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "additionalContacts": [
+      {
+        "contactName": "Facundo Salomón",
+        "contactTitle": "Founder, Casting Director/Producer",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Ezequiel Rossi",
+        "contactTitle": "Director & Producer",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Lucho Terranegra",
+        "contactTitle": "AD/Editor",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Zoe Montagna",
+        "contactTitle": "Producer & Comms",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      }
+    ],
+    "_cycle2Context": "Buenos Aires, Argentina; fiction/brand content. Site has NO email (WhatsApp +54 11 4064-4356 only); current gmail not on site (see plan).",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "companyName": "Haikuaudiovisual",
@@ -23300,7 +23330,7 @@
     "contactPhone": null,
     "contactTitle": null,
     "emailCercana": "Hola equipo de New Walk Productions! Soy Scarlett del equipo de UnaBase.\n\n¿Lograron ver el correo que les envié? Si es que no, les mando un resumen.\n\nSaludos,\nScarlett",
-    "instagramUrl": "https://www.instagram.com/newwalkproduction/",
+    "instagramUrl": "https://www.instagram.com/newwalkproductions/",
     "recoveryNote": "Fallback: productora hondureña con un cliente enterprise (Facebook). Decision-maker no en web público — outreach role-based a info@. Considerar LinkedIn manual search como paso futuro.",
     "unabaseScore": 6,
     "contactSource": "deep_rescue",
@@ -23316,7 +23346,7 @@
     "recentProjects": [],
     "contactLinkedIn": null,
     "contactStrength": "C",
-    "instagramHandle": "newwalkproduction",
+    "instagramHandle": "newwalkproductions",
     "linkedinMessage": null,
     "contactConfidence": "confirmed",
     "primaryContactPath": "Multi-channel: email info@newwalkproductions.com (pitch dirigido a \"productor/a general\") → Instagram DM @newwalkproduction como seguimiento tras 48h",
@@ -23331,7 +23361,9 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "_cycle2Context": "San Pedro Sula, Honduras. IG corrected from newwalkproduction→newwalkproductions. Also TikTok/YT/X @newwalkproductions(hn).",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Colombia",
@@ -23599,7 +23631,9 @@
     },
     "_prestigeFlags": [
       "revived_pilot_lead_basic_icp_only"
-    ]
+    ],
+    "_cycle2Context": "Garín, Buenos Aires, Argentina; 3D animation/VFX/motion. Verified clients: Cheetos, Raid, Banco Familiar (current Coca-Cola/Pepsi/Fanta unconfirmed). Site email info@zetapositivo.com.ar (empty now — see email plan). Maximiliano Gaspar not verifiable on site.",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Argentina",
@@ -24347,6 +24381,12 @@
         "contactSource": "company_ig_bio_tag",
         "instagramHandle": "edwin2005co",
         "needsManualContactButtonCheck": true
+      },
+      {
+        "contactName": "Julio César Pachón González",
+        "contactTitle": "CEO & Co-founder",
+        "source": "cycle2-website-scrape",
+        "verified": false
       }
     ],
     "apolloCompanyPhone": null,
@@ -24369,7 +24409,9 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "_cycle2Context": "Bogotá, Colombia; film/series/music video. Site email lavillaproduccionescolombia@gmail.com (see plan); current yahoo from prior recovery.",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Chile",
@@ -25930,7 +25972,9 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "_cycle2Context": "MADRID, SPAIN — geo/ICP flag (not LATAM). Feature/content producer; Milton Maestas not verifiable on site. IG/email confirmed.",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Mexico",
@@ -26139,7 +26183,41 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "additionalContacts": [
+      {
+        "contactName": "Rafa Delgado \"El Turco\"",
+        "contactTitle": "Film Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Ayesha Fernández",
+        "contactTitle": "Film Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Kevin de la Isla O’Neill",
+        "contactTitle": "Film Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Daniel Pérez",
+        "contactTitle": "Film Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Ken Arthur",
+        "contactTitle": "Film Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      }
+    ],
+    "_cycle2Context": "CDMX, Mexico; creative production house. Phone +52 55 3988-3925, WhatsApp +52 55 5500-7533. No single founder surfaced; 6 directors.",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Spain",
@@ -26382,7 +26460,9 @@
       "secundario": "LinkedIn",
       "opcional": "email"
     },
-    "pitchEmailES": "Hola equipo de Grappi Multimedia! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Grappi Multimedia y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares. Te escribo por acá ya que es el canal más directo que encontré.\n\nSaludos,\nScarlett"
+    "pitchEmailES": "Hola equipo de Grappi Multimedia! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Grappi Multimedia y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares. Te escribo por acá ya que es el canal más directo que encontré.\n\nSaludos,\nScarlett",
+    "_cycle2Context": "Santiago, Chile. JS-rendered site; raw HTML exposed contacto@grappi.cl (see email plan). No IG/DM surfaced. Client Sony unconfirmed on site.",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Chile",
@@ -26410,7 +26490,11 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "instagramHandle": "be_huau",
+    "instagramUrl": "https://www.instagram.com/be_huau/",
+    "_cycle2Context": "Santiago, Chile; full-service AV + creative. Verified clients: Netflix, Hyundai, Nissan, Pepsi, Claro, Santander, Puma. Extra email hola@huau.cl on site (see email plan).",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Chile",
@@ -26433,7 +26517,11 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "instagramHandle": "cbrafilms",
+    "instagramUrl": "https://www.instagram.com/cbrafilms/",
+    "_cycle2Context": "Santiago, Chile; advertising/corporate + 8x8 studio rental. Site email contacto@cbrafilms.com; cristobal@ not on site (see email plan).",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Chile",
@@ -26499,7 +26587,32 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "instagramHandle": "doinmedia",
+    "instagramUrl": "https://www.instagram.com/doinmedia/",
+    "additionalContacts": [
+      {
+        "contactName": "Carolina Guerrero",
+        "contactTitle": "CEO",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "David",
+        "contactTitle": "Creative Producer",
+        "instagram": "davidricardogg",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Hernando",
+        "contactTitle": "CFO",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      }
+    ],
+    "_cycle2Context": "Bogotá, Colombia. Verified clients: Novo Nordisk, Save the Children, World Vision, DHL, GeoPark, UNODC (current Amazon/Facebook unconfirmed).",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Chile",
@@ -26549,6 +26662,36 @@
         "name": "Carlos Díaz",
         "title": "Post-Production Director",
         "email": null
+      },
+      {
+        "contactName": "Pablo Castro",
+        "contactTitle": "Founder, Strategy & Direction",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Toña González",
+        "contactTitle": "Creative Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Andrés Beltrán",
+        "contactTitle": "Production Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Carlos Díaz",
+        "contactTitle": "Post-Production Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Jorge Ariza",
+        "contactTitle": "Administrative Director",
+        "source": "cycle2-website-scrape",
+        "verified": false
       }
     ],
     "tier": "tier3",
@@ -26561,7 +26704,9 @@
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
     ],
-    "_reactivationAsksForByName": "Pablo Castro"
+    "_reactivationAsksForByName": "Pablo Castro",
+    "_cycle2Context": "Bogotá, Colombia; video + commercial photo + digital. Verified clients: Google, Intel, Getty, Chevrolet, ExxonMobil, Liberty, UN. WhatsApp +57 312 380 8677. Founder Pablo Castro confirmed.",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Colombia",
@@ -26583,7 +26728,11 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "instagramHandle": "brodajucolombia",
+    "instagramUrl": "https://www.instagram.com/brodajucolombia/",
+    "_cycle2Context": "Bogotá (+Medellín, Barranquilla), Colombia. Canonical domain .com.co; site email info@brodaju.com.co. current rene@brodaju.com + Rene Martinez NOT on site (see plan). Clients: Migración Colombia, OIM, UNODC, UNFPA.",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Argentina",
@@ -27162,7 +27311,23 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "additionalContacts": [
+      {
+        "contactName": "Juan Pablo Gugliotta",
+        "contactTitle": "Co-founder & Producer",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      },
+      {
+        "contactName": "Nathalia Videla Peña",
+        "contactTitle": "Co-founder & Producer",
+        "source": "cycle2-website-scrape",
+        "verified": false
+      }
+    ],
+    "_cycle2Context": "Buenos Aires, Argentina; feature/series/doc. Clients Netflix, Amazon, Fox, Movistar, Participant. 2nd domain email juanpablo@magmacine.com.ar (see email plan).",
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
   },
   {
     "country": "Argentina",
