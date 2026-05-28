@@ -136,7 +136,22 @@ leads-2026-05-27 + leads-past. Applied: 6 IG fixes (incl New Walk typo→newwalk
 DMs into additionalContacts, 18 context notes. VERIFIED: 0 protected fields changed, 0 non-SAFE changed
 (deep-compare vs HEAD). The "contactName" lines in git diff are nested DM entries, not lead-level.
 leads-2026-05-28 untouched. NOT committed, no Supabase, no push. Rollback: git checkout -- those 2 files.
-NEXT: email/name/identity plan below awaits per-group approval; then commit.
+SAFE committed locally as 287fccc (ahead 2, not pushed).
+
+### Group A (minus Grappi) APPLIED + verified (files-only, 2026-05-28)
+Tool: scripts/apply-groupA.js --apply (guarded). Verified vs HEAD:
+- Zeta Positivo: DEDUP (removed identical dup from leads-2026-05-27 → 29→28; kept always-loaded
+  past copy) + filled contactEmail=info@zetapositivo.com.ar [website_published].
+- Doin Media → contactName Carolina Guerrero / CEO. Intelygente → Pablo Castro / Founder.
+  Magma Cine → Juan Pablo Gugliotta / Co-founder. (names only set where previously empty.)
+Only intended fields on 4 leads changed; Zeta removed from -27 only. No Supabase, not pushed.
+
+### STILL PENDING (no action): 
+- Grappi contacto@grappi.cl fill (operator skipped this round).
+- Group B identity: Aqua→Anchoita rebrand (changes lead id), Brodaju rene@ vs info@brodaju.com.co, Mun name Moragues vs Ardèvol.
+- Group C unconfirmed personal emails (pau@/fernando@/david@/cristobal@/misil gmail/rene@) — keep vs Apollo-verify.
+- Group D ICP/geo: Morena+Mun (Spain), Torneos (sports), Underground (NBCUni) — disposition.
+- Kuarzo site down (recrawl). VPro WhatsApp-only.
 
 ### Remaining-unresolved grouping (report-only, NOTHING applied)
 - SAFE keep (13, email present/likely-valid): B2 same-domain DMs ×10 (Fósforo, Mun, Kuarzo, Minded
