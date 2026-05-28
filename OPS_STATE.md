@@ -213,13 +213,26 @@ Operator directive: treat all recovered as NEW (bounce = no contact landed); era
 make them part of today's report. FIX: scripts/apply-hoy-recovery.js promoted the 7 non-Mariachi
 recovered leads INTO leads-2026-05-28.json (source_date=today, _recoveredFrom, old reactivation/revival
 tags stripped) and removed them from -27 (28→25) and past (186→182). 05-28 batch: 9→16. Mariachi already in 28.
-SUPABASE STATUS RESET DONE (operator-approved: bounced=never-contacted): scripts/reset-bounced-status.js
---apply reset all 8 recovered leads to status=none (was 6 contacted + 2 partial). Targeted (id+client_id,
-status field only; action/message history left intact). Lifecycle restarts when re-contacted. This was the
-session's first Supabase write — explicitly authorized ("if emails bounced they need to be updated to
-never contacted"). Result: the 8 now show as sin-contactar/new in Hoy with working channels.
+SUPABASE STATUS RESET DONE (operator-approved: bounced=never-contacted): reset-bounced-status.js set
+status=none (was 6 contacted + 2 partial). But badge still showed "1/1 contactado" because it derives from
+action/message ROWS, not just status. FULL RESET (reset-bounced-full.js --apply): cleared actions +
+messages_sent + status_history for all 8 + status=none. Verified acts=0/msgs=0/status=none for all 8.
+Safeguard: checked status_history for replied/meeting/closed (genuine contact) — NONE found, so none
+removed from batch. Backend now truly never-contacted. Pushed 251547b.
+CLIENT-SIDE NOTE: operator's browser localStorage may still cache old "1/1 contactado" — hard-refresh
+(Cmd+Shift+R) to re-sync from Supabase (now clean) → should show 0/1 sin-contactar.
 
-### NEXT TASK (2): audit leads-2026-05-28 (now 16 leads) for quality. (verification of original 8 done — /tmp/evidence-todaybatch.log; evidence/*.json)
+### TASK 2 DONE — today's batch processed + system safety sweep (2026-05-28)
+Verification scrape of original 8 batch domains: ALL current emails are Apollo-VERIFIED DMs
+(Fight rodolphe@, Woo ptoro@mrwoo.tv [verified parent-brand Mr Woo — NOT a bad mismatch],
+Unlimited jorge@, Mango eduardo@, Cactus seba@, Altana pedro@, Traziende monica@, Sur andreas@).
+→ stamped _emailStatus=verified (apply-batch-verified-stamps.js). No email changes needed.
+Grappi was missing IG → added canonical grappifilming (footer) from evidence.
+SAFETY SWEEP (all ✅): JSON valid (28=16, 27=25, past=182, manifest ok); manifest active=batch-2026-05-28
+exists; NO duplicate domains across 28/27/past; all 16 leads have company+website+IG+channel+_emailStatus.
+Batch _emailStatus: 11 verified, 4 website_published, 1 no_deliverable_email_use_linkedin (ChileRayo).
+Today's report = 16 consolidated leads (9 original verified + 7 recovered as new). All bounced leads reset
+to never-contacted earlier. System integrity confirmed.
 
 ### STILL PENDING (no action): 
 - Grappi contacto@grappi.cl fill (operator skipped this round).

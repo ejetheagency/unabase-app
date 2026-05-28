@@ -54,7 +54,10 @@
     ],
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall"
-    ]
+    ],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T22:02:44.473Z",
+    "_emailVerificationSource": "apollo-verified:batch-audit-2026-05-28"
   },
   {
     "companyName": "Woo Films",
@@ -104,7 +107,10 @@
       "web-search-confirmed",
       "handle-matches-company-name"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T22:02:44.473Z",
+    "_emailVerificationSource": "apollo-verified:batch-audit-2026-05-28"
   },
   {
     "companyName": "Unlimited Films",
@@ -152,7 +158,10 @@
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall",
       "ig_handle_pending_direct_verification"
-    ]
+    ],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T22:02:44.473Z",
+    "_emailVerificationSource": "apollo-verified:batch-audit-2026-05-28"
   },
   {
     "companyName": "Mango Films",
@@ -204,7 +213,10 @@
     ],
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall"
-    ]
+    ],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T22:02:44.473Z",
+    "_emailVerificationSource": "apollo-verified:batch-audit-2026-05-28"
   },
   {
     "companyName": "Cactus Cine",
@@ -262,7 +274,10 @@
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall",
       "contact_title_includes_creative_producer_borderline_but_director_owner_dominates"
-    ]
+    ],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T22:02:44.473Z",
+    "_emailVerificationSource": "apollo-verified:batch-audit-2026-05-28"
   },
   {
     "companyName": "Altana Films",
@@ -311,7 +326,10 @@
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall",
       "single_personal_email_owner_listed_no_email_in_apollo"
-    ]
+    ],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T22:02:44.473Z",
+    "_emailVerificationSource": "apollo-verified:batch-audit-2026-05-28"
   },
   {
     "companyName": "Traziende Films",
@@ -358,7 +376,10 @@
     ],
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall"
-    ]
+    ],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T22:02:44.473Z",
+    "_emailVerificationSource": "apollo-verified:batch-audit-2026-05-28"
   },
   {
     "companyName": "Mariachi Films",
@@ -469,7 +490,10 @@
     ],
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall"
-    ]
+    ],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T22:02:44.473Z",
+    "_emailVerificationSource": "apollo-verified:batch-audit-2026-05-28"
   },
   {
     "country": "Spain",
@@ -1313,7 +1337,9 @@
     "_emailVerificationSource": "cycle2-deep-scrape:website-mailto",
     "source_date": "2026-05-28",
     "_promotedToTodayAt": "2026-05-28T21:48:31.877Z",
-    "_promotedReason": "bounced-email recovery — treated as new (no contact landed)"
+    "_promotedReason": "bounced-email recovery — treated as new (no contact landed)",
+    "instagramHandle": "grappifilming",
+    "instagramUrl": "https://www.instagram.com/grappifilming/"
   },
   {
     "country": "Chile",
