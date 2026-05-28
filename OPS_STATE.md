@@ -198,7 +198,25 @@ unexpected field changes. NOT deployed (Mariachi rides the 2026-05-28 batch depl
 - Mariachi: agonzalez@ bounced → mariachifilms@gmail.com (published gmail, only alt; in 28 batch)
 - ChileRayo: contacto@ bounced, NO deliverable email → email CLEARED, channel=LinkedIn (Leonardo Oyarzun, Director), _emailStatus=no_deliverable_email_use_linkedin
 PROBLEM PERSISTS? No — all 8 now have a working channel (7 email, ChileRayo LinkedIn worst-case).
-All DM LinkedIns captured in evidence as backups. NEXT TASK (2): audit leads-2026-05-28 → deploy.
+All DM LinkedIns captured in evidence as backups.
+
+### DEPLOYED (operator-approved, 2026-05-28): pushed 514f8f3..edfe36e to origin/main.
+All 5 local commits now live (A1 stamps, cycle-2 SAFE enrichment, Group A, evidence tooling, bounced
+recovery). Today's batch (leads-2026-05-28) was already on origin; only change to it was Mariachi recovery.
+Branch in sync with origin. Vercel auto-deploys. Recovered leads now visible in Hoy for Scarlett.
+
+### HOY-VISIBILITY FIX (2026-05-28): recovered leads weren't rendering in Hoy.
+Root cause: Hoy renders TL = active batch + carry-forward (gated on Supabase status='none');
+leads-past.json never loads into TL. 4 recovered leads (Aqua/StoryLab/Grappi/ChileRayo) were past-only
+→ never in Hoy; Sunomono/Linkvids/VPro in -27 carry-forward only if status none.
+Operator directive: treat all recovered as NEW (bounce = no contact landed); erase old-batch register;
+make them part of today's report. FIX: scripts/apply-hoy-recovery.js promoted the 7 non-Mariachi
+recovered leads INTO leads-2026-05-28.json (source_date=today, _recoveredFrom, old reactivation/revival
+tags stripped) and removed them from -27 (28→25) and past (186→182). 05-28 batch: 9→16. Mariachi already in 28.
+PENDING: Supabase status for the previously-contacted ones (reactivation set + Mariachi) still reads
+stale (contactado/respondió) → needs targeted status→none reset for a clean "new" badge (operator OK pending).
+
+### NEXT TASK (2): audit leads-2026-05-28 (now 16 leads) for quality. (verification of original 8 done — /tmp/evidence-todaybatch.log; evidence/*.json)
 
 ### STILL PENDING (no action): 
 - Grappi contacto@grappi.cl fill (operator skipped this round).
