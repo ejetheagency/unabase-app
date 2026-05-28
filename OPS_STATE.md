@@ -234,6 +234,17 @@ Batch _emailStatus: 11 verified, 4 website_published, 1 no_deliverable_email_use
 Today's report = 16 consolidated leads (9 original verified + 7 recovered as new). All bounced leads reset
 to never-contacted earlier. System integrity confirmed.
 
+### ICONICA ANOMALY FIXED + Hoy stale-badge cleanup (2026-05-28)
+Iconica showed "contactado" but stayed in Hoy = it's a _recoveredFrom lead (status none) with leftover
+action/message ROWS (recovery reset status but not rows). Same for 3 other in-Hoy revival leads.
+Cleared actions+messages+status_history (status already none) for: iconica.tv, fosforo.video,
+housebrands.es, panoramicafilms.com → now show sin-contactar in Hoy. (None had replied/meeting/closed.)
+Hoy now = 16 (28 batch) + 4 revival recoveries = ~20, all fresh.
+MAY-28 REVIVAL SET (14 in -27): 4 above are fresh-in-Hoy; the OTHER 10 (2btube, Gen Contenido,
+Underground, Apima, Mun, Kuarzo, Minded, Torneos, Voilà, Caudiovisual) are genuinely partial/contacted
+(NOT in operator's bounced list) → in Acción Ahora cycle, NOT reset. Pending operator call on whether
+those 10 should also be treated-as-new + pushed to Hoy. Client must hard-refresh to see cleared badges.
+
 ### STILL PENDING (no action): 
 - Grappi contacto@grappi.cl fill (operator skipped this round).
 - Group B identity: Aqua→Anchoita rebrand (changes lead id), Brodaju rene@ vs info@brodaju.com.co, Mun name Moragues vs Ardèvol.
