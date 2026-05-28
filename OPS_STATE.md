@@ -185,6 +185,21 @@ stored evidence (no Apollo re-spend): area@/dfernandez@ → DERIVED. Note: evide
 pre-fix tiers (append-only; proposals were unaffected since VERIFIED outranks); next run writes correct tiers.
 Tier model now: VERIFIED(apollo) > PUBLISHED(site mailto/jsonld, domain-match) > CORROBORATED(≥2 sources) > FREEMAIL > DERIVED(guess/single-visible).
 
+### BOUNCED-EMAIL RECOVERY APPLIED (files-only, NOT deployed, 2026-05-28)
+The 8 leads whose client outreach BOUNCED, recovered via deep collector (puppeteer+Apollo+LinkedIn).
+Tool: scripts/apply-bounced-recovery.js --apply. Tagged _recoveredFrom → surfaces in Hoy. Verified 0
+unexpected field changes. NOT deployed (Mariachi rides the 2026-05-28 batch deploy = task 2).
+- Sunomono: produccion@→ yun@sunomonofilms.com (VERIFIED DM Yun Mateo Palos)
+- StoryLab: nv@→ paulap@storylab.com.ar (VERIFIED DM Paula Perez)
+- Linkvids: martin.pons@→ laura.casadiego@linkvids.io (VERIFIED DM Laura Casadiego)
+- Aqua: (empty)→ produccion@anchoitafilms.com.ar (rebrand to Anchoita)
+- Grappi: (empty)→ contacto@grappi.cl (role, published)
+- VPro: (empty)→ sofia.ventas@vprovideo.com (published)
+- Mariachi: agonzalez@ bounced → mariachifilms@gmail.com (published gmail, only alt; in 28 batch)
+- ChileRayo: contacto@ bounced, NO deliverable email → email CLEARED, channel=LinkedIn (Leonardo Oyarzun, Director), _emailStatus=no_deliverable_email_use_linkedin
+PROBLEM PERSISTS? No — all 8 now have a working channel (7 email, ChileRayo LinkedIn worst-case).
+All DM LinkedIns captured in evidence as backups. NEXT TASK (2): audit leads-2026-05-28 → deploy.
+
 ### STILL PENDING (no action): 
 - Grappi contacto@grappi.cl fill (operator skipped this round).
 - Group B identity: Aqua→Anchoita rebrand (changes lead id), Brodaju rene@ vs info@brodaju.com.co, Mun name Moragues vs Ardèvol.

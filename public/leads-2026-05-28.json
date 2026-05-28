@@ -369,7 +369,7 @@
     "contactPath": "decision_maker_email",
     "contactName": "Alan Gonzalez",
     "contactTitle": "Director C19",
-    "contactEmail": "agonzalez@mariachifilms.com",
+    "contactEmail": "mariachifilms@gmail.com",
     "instagramUrl": "https://www.instagram.com/mariachifilms",
     "instagramHandle": "mariachifilms",
     "instagramFollowers": null,
@@ -416,8 +416,13 @@
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall"
     ],
-    "_emailStatus": "verified",
-    "_emailVerifiedAt": "2026-05-28T16:57:19.460Z"
+    "_emailStatus": "website_published",
+    "_emailVerifiedAt": "2026-05-28T21:25:56.064Z",
+    "_recoveredFrom": "agonzalez@mariachifilms.com",
+    "_recoveredAt": "2026-05-28T21:25:56.064Z",
+    "_recoveryNote": "corp agonzalez@ bounced; published gmail is only deliverable alt (in 2026-05-28 batch)",
+    "_emailReplaced": "agonzalez@mariachifilms.com",
+    "_emailVerificationSource": "cycle2-deep-scrape:website-published-gmail"
   },
   {
     "companyName": "Sur Film",
