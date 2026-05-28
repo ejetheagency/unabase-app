@@ -234,16 +234,13 @@ Batch _emailStatus: 11 verified, 4 website_published, 1 no_deliverable_email_use
 Today's report = 16 consolidated leads (9 original verified + 7 recovered as new). All bounced leads reset
 to never-contacted earlier. System integrity confirmed.
 
-### ICONICA ANOMALY FIXED + Hoy stale-badge cleanup (2026-05-28)
-Iconica showed "contactado" but stayed in Hoy = it's a _recoveredFrom lead (status none) with leftover
-action/message ROWS (recovery reset status but not rows). Same for 3 other in-Hoy revival leads.
-Cleared actions+messages+status_history (status already none) for: iconica.tv, fosforo.video,
-housebrands.es, panoramicafilms.com → now show sin-contactar in Hoy. (None had replied/meeting/closed.)
-Hoy now = 16 (28 batch) + 4 revival recoveries = ~20, all fresh.
-MAY-28 REVIVAL SET (14 in -27): 4 above are fresh-in-Hoy; the OTHER 10 (2btube, Gen Contenido,
-Underground, Apima, Mun, Kuarzo, Minded, Torneos, Voilà, Caudiovisual) are genuinely partial/contacted
-(NOT in operator's bounced list) → in Acción Ahora cycle, NOT reset. Pending operator call on whether
-those 10 should also be treated-as-new + pushed to Hoy. Client must hard-refresh to see cleared badges.
+### HOY SCOPED TO TODAY'S 16 (2026-05-28) — operator: Hoy = bounced + May-28 report, nothing else
+Iconica/Fósforo/Panorámica/House of Brands were OLD pilot-revival carry-forward leads (not bounced, not in
+the May-28 report) cluttering Hoy via the _recoveredFrom/_revivedFromPilot override. Set their Supabase
+status=skip (a SEQ_STOP) → excluded from Hoy (index.html:901,1294). NON-destructive/reversible (leads remain
+in -27; set status back to none to restore). Result: Hoy = exactly the 16 in leads-2026-05-28.json
+(8 fresh productoras + 8 bounced-recovered, Mariachi overlaps). The 10 genuinely-contacted pilot leads stay
+in Acción Ahora. Client hard-refresh to see clean Hoy.
 
 ### STILL PENDING (no action): 
 - Grappi contacto@grappi.cl fill (operator skipped this round).
