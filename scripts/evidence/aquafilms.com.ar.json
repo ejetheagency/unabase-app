@@ -1,0 +1,157 @@
+{
+  "domain": "aquafilms.com.ar",
+  "runs": [
+    {
+      "collectedAt": "2026-05-28T20:28:48.669Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://aquafilms.com.ar",
+        "https://aquafilms.com.ar/contacto",
+        "https://aquafilms.com.ar/contact",
+        "https://aquafilms.com.ar/contact-us",
+        "https://aquafilms.com.ar/nosotros",
+        "https://aquafilms.com.ar/about",
+        "https://aquafilms.com.ar/about-us",
+        "https://aquafilms.com.ar/equipo",
+        "https://aquafilms.com.ar/team",
+        "https://aquafilms.com.ar/quienes-somos",
+        "https://aquafilms.com.ar/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "produccion@anchoitafilms.com.ar",
+            "tier": "CORROBORATED",
+            "isRole": false,
+            "domainMatch": false,
+            "sources": [
+              "https://aquafilms.com.ar/contacto",
+              "https://aquafilms.com.ar/contact"
+            ]
+          }
+        ],
+        "igs": [
+          {
+            "handle": "volareshumano",
+            "tier": "PUBLISHED",
+            "footerCanonical": false,
+            "sources": [
+              "https://aquafilms.com.ar",
+              "https://aquafilms.com.ar/contacto",
+              "https://aquafilms.com.ar/contact",
+              "https://aquafilms.com.ar/contact-us",
+              "https://aquafilms.com.ar/nosotros",
+              "https://aquafilms.com.ar/about",
+              "https://aquafilms.com.ar/about-us",
+              "https://aquafilms.com.ar/equipo",
+              "https://aquafilms.com.ar/team",
+              "https://aquafilms.com.ar/quienes-somos",
+              "https://aquafilms.com.ar/somos"
+            ]
+          }
+        ],
+        "linkedins": [],
+        "phones": [],
+        "dms": []
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "produccion@anchoitafilms.com.ar",
+          "tier": "CORROBORATED",
+          "role": false
+        },
+        "canonicalIG": "volareshumano",
+        "additionalContacts": [],
+        "vsCurrent": {
+          "current_contactEmail": null,
+          "current_contactName": null,
+          "current_ig": "volareshumano",
+          "current_status": "no_deliverable_email_domain_rebranded"
+        }
+      }
+    },
+    {
+      "collectedAt": "2026-05-28T20:46:28.801Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://aquafilms.com.ar",
+        "https://aquafilms.com.ar/contacto",
+        "https://aquafilms.com.ar/contact",
+        "https://aquafilms.com.ar/contact-us",
+        "https://aquafilms.com.ar/nosotros",
+        "https://aquafilms.com.ar/about",
+        "https://aquafilms.com.ar/about-us",
+        "https://aquafilms.com.ar/equipo",
+        "https://aquafilms.com.ar/team",
+        "https://aquafilms.com.ar/quienes-somos",
+        "https://aquafilms.com.ar/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "produccion@aquafilms.com",
+            "tier": "CORROBORATED",
+            "isRole": false,
+            "domainMatch": false,
+            "methods": [
+              "visible"
+            ],
+            "pages": 2
+          },
+          {
+            "email": "produccion@anchoitafilms.com.ar",
+            "tier": "CORROBORATED",
+            "isRole": false,
+            "domainMatch": false,
+            "methods": [
+              "visible"
+            ],
+            "pages": 2
+          }
+        ],
+        "igs": [
+          {
+            "handle": "volareshumano",
+            "tier": "PUBLISHED",
+            "footerCanonical": false,
+            "sources": [
+              "https://aquafilms.com.ar",
+              "https://aquafilms.com.ar/contacto",
+              "https://aquafilms.com.ar/contact",
+              "https://aquafilms.com.ar/contact-us",
+              "https://aquafilms.com.ar/nosotros",
+              "https://aquafilms.com.ar/about",
+              "https://aquafilms.com.ar/about-us",
+              "https://aquafilms.com.ar/equipo",
+              "https://aquafilms.com.ar/team",
+              "https://aquafilms.com.ar/quienes-somos",
+              "https://aquafilms.com.ar/somos"
+            ]
+          }
+        ],
+        "linkedins": [],
+        "phones": [],
+        "dms": []
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "produccion@aquafilms.com",
+          "tier": "CORROBORATED",
+          "role": false
+        },
+        "canonicalIG": "volareshumano",
+        "additionalContacts": [],
+        "vsCurrent": {
+          "current_contactEmail": null,
+          "current_contactName": null,
+          "current_ig": "volareshumano",
+          "current_status": "no_deliverable_email_domain_rebranded"
+        }
+      }
+    }
+  ]
+}

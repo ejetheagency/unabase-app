@@ -1,0 +1,225 @@
+{
+  "domain": "grappi.cl",
+  "runs": [
+    {
+      "collectedAt": "2026-05-28T20:28:23.178Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://grappi.cl",
+        "https://grappi.cl/contacto",
+        "https://grappi.cl/contact",
+        "https://grappi.cl/contact-us",
+        "https://grappi.cl/nosotros",
+        "https://grappi.cl/about",
+        "https://grappi.cl/about-us",
+        "https://grappi.cl/equipo",
+        "https://grappi.cl/team",
+        "https://grappi.cl/quienes-somos",
+        "https://grappi.cl/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "contacto@grappi.cl",
+            "tier": "PUBLISHED",
+            "isRole": true,
+            "domainMatch": true,
+            "sources": [
+              "https://grappi.cl#mailto",
+              "https://grappi.cl",
+              "jsonld",
+              "https://grappi.cl/contacto#mailto",
+              "https://grappi.cl/contacto",
+              "https://grappi.cl/contact",
+              "https://grappi.cl/contact-us",
+              "https://grappi.cl/nosotros",
+              "https://grappi.cl/about",
+              "https://grappi.cl/about-us",
+              "https://grappi.cl/equipo",
+              "https://grappi.cl/team",
+              "https://grappi.cl/quienes-somos",
+              "https://grappi.cl/somos"
+            ]
+          },
+          {
+            "email": "chilecontacto@grappi.cls",
+            "tier": "CORROBORATED",
+            "isRole": false,
+            "domainMatch": false,
+            "sources": [
+              "https://grappi.cl",
+              "https://grappi.cl/contacto"
+            ]
+          },
+          {
+            "email": "emailcontacto@grappi.clenviar",
+            "tier": "DERIVED",
+            "isRole": false,
+            "domainMatch": false,
+            "sources": [
+              "https://grappi.cl"
+            ]
+          },
+          {
+            "email": "chileemailcontacto@grappi.clhorario",
+            "tier": "DERIVED",
+            "isRole": false,
+            "domainMatch": false,
+            "sources": [
+              "https://grappi.cl/contacto"
+            ]
+          }
+        ],
+        "igs": [
+          {
+            "handle": "grappifilming",
+            "tier": "PUBLISHED",
+            "footerCanonical": true,
+            "sources": [
+              "https://grappi.cl",
+              "jsonld",
+              "https://grappi.cl/contacto"
+            ]
+          }
+        ],
+        "linkedins": [
+          "linkedin.com/company/grappi"
+        ],
+        "phones": [
+          {
+            "phone": "+56900000000",
+            "kind": "jsonld",
+            "sources": [
+              "jsonld"
+            ]
+          }
+        ],
+        "dms": [
+          {
+            "name": "Productora Audiovisual Líder",
+            "title": "Productor",
+            "source": "https://grappi.cl"
+          },
+          {
+            "name": "Productora Audiovisualen Santiago",
+            "title": "Productor",
+            "source": "https://grappi.cl"
+          },
+          {
+            "name": "Productora Audiovisual",
+            "title": "Productor",
+            "source": "https://grappi.cl"
+          }
+        ]
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "contacto@grappi.cl",
+          "tier": "PUBLISHED",
+          "role": true
+        },
+        "canonicalIG": "grappifilming",
+        "additionalContacts": [
+          {
+            "name": "Productora Audiovisual Líder",
+            "title": "Productor",
+            "source": "https://grappi.cl"
+          },
+          {
+            "name": "Productora Audiovisualen Santiago",
+            "title": "Productor",
+            "source": "https://grappi.cl"
+          },
+          {
+            "name": "Productora Audiovisual",
+            "title": "Productor",
+            "source": "https://grappi.cl"
+          }
+        ],
+        "vsCurrent": {
+          "current_contactEmail": null,
+          "current_contactName": null,
+          "current_ig": null,
+          "current_status": "no_verified_email"
+        }
+      }
+    },
+    {
+      "collectedAt": "2026-05-28T20:46:04.125Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://grappi.cl",
+        "https://grappi.cl/contacto",
+        "https://grappi.cl/contact",
+        "https://grappi.cl/contact-us",
+        "https://grappi.cl/nosotros",
+        "https://grappi.cl/about",
+        "https://grappi.cl/about-us",
+        "https://grappi.cl/equipo",
+        "https://grappi.cl/team",
+        "https://grappi.cl/quienes-somos",
+        "https://grappi.cl/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "contacto@grappi.cl",
+            "tier": "PUBLISHED",
+            "isRole": true,
+            "domainMatch": true,
+            "methods": [
+              "mailto",
+              "visible",
+              "jsonld"
+            ],
+            "pages": 11
+          }
+        ],
+        "igs": [
+          {
+            "handle": "grappifilming",
+            "tier": "PUBLISHED",
+            "footerCanonical": true,
+            "sources": [
+              "https://grappi.cl",
+              "jsonld",
+              "https://grappi.cl/contacto"
+            ]
+          }
+        ],
+        "linkedins": [
+          "linkedin.com/company/grappi"
+        ],
+        "phones": [
+          {
+            "phone": "+56900000000",
+            "kind": "jsonld",
+            "sources": [
+              "jsonld"
+            ]
+          }
+        ],
+        "dms": []
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "contacto@grappi.cl",
+          "tier": "PUBLISHED",
+          "role": true
+        },
+        "canonicalIG": "grappifilming",
+        "additionalContacts": [],
+        "vsCurrent": {
+          "current_contactEmail": null,
+          "current_contactName": null,
+          "current_ig": null,
+          "current_status": "no_verified_email"
+        }
+      }
+    }
+  ]
+}

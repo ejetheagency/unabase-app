@@ -1,0 +1,376 @@
+{
+  "domain": "mariachifilms.com",
+  "runs": [
+    {
+      "collectedAt": "2026-05-28T20:30:07.812Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://mariachifilms.com",
+        "https://mariachifilms.com/contacto",
+        "https://mariachifilms.com/contact",
+        "https://mariachifilms.com/contact-us",
+        "https://mariachifilms.com/nosotros",
+        "https://mariachifilms.com/about",
+        "https://mariachifilms.com/about-us",
+        "https://mariachifilms.com/equipo",
+        "https://mariachifilms.com/team",
+        "https://mariachifilms.com/quienes-somos",
+        "https://mariachifilms.com/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "agonzalez@mariachifilms.com",
+            "tier": "VERIFIED",
+            "isRole": false,
+            "domainMatch": true,
+            "sources": [
+              "apollo"
+            ]
+          },
+          {
+            "email": "mariachifilms@gmail.com",
+            "tier": "CORROBORATED",
+            "isRole": false,
+            "domainMatch": false,
+            "sources": [
+              "https://mariachifilms.com#mailto",
+              "https://mariachifilms.com/contacto#mailto",
+              "https://mariachifilms.com/contact#mailto",
+              "https://mariachifilms.com/contact-us#mailto",
+              "https://mariachifilms.com/nosotros#mailto",
+              "https://mariachifilms.com/about#mailto",
+              "https://mariachifilms.com/about-us#mailto",
+              "https://mariachifilms.com/equipo#mailto",
+              "https://mariachifilms.com/team#mailto",
+              "https://mariachifilms.com/quienes-somos#mailto",
+              "https://mariachifilms.com/somos#mailto"
+            ]
+          },
+          {
+            "email": "area@mariachifilms.com",
+            "tier": "DERIVED",
+            "isRole": false,
+            "domainMatch": true,
+            "sources": [
+              "apollo"
+            ]
+          },
+          {
+            "email": "dfernandez@mariachifilms.com",
+            "tier": "DERIVED",
+            "isRole": false,
+            "domainMatch": true,
+            "sources": [
+              "apollo"
+            ]
+          }
+        ],
+        "igs": [
+          {
+            "handle": "mariachifilms",
+            "tier": "PUBLISHED",
+            "footerCanonical": true,
+            "sources": [
+              "https://mariachifilms.com",
+              "https://mariachifilms.com/contacto",
+              "https://mariachifilms.com/contact",
+              "https://mariachifilms.com/contact-us",
+              "https://mariachifilms.com/nosotros",
+              "https://mariachifilms.com/about",
+              "https://mariachifilms.com/about-us",
+              "https://mariachifilms.com/equipo",
+              "https://mariachifilms.com/team",
+              "https://mariachifilms.com/quienes-somos",
+              "https://mariachifilms.com/somos"
+            ]
+          }
+        ],
+        "linkedins": [],
+        "phones": [
+          {
+            "phone": "5519986139",
+            "kind": "tel",
+            "sources": [
+              "https://mariachifilms.com/contact"
+            ]
+          },
+          {
+            "phone": "5524548836",
+            "kind": "tel",
+            "sources": [
+              "https://mariachifilms.com/contact"
+            ]
+          }
+        ],
+        "dms": [
+          {
+            "name": "Mariachi Mexico",
+            "title": "Company Owner",
+            "email": null,
+            "email_status": "unavailable",
+            "linkedin": "http://www.linkedin.com/in/mariachi-voces-de-mexico-834836179",
+            "source": "apollo"
+          },
+          {
+            "name": "Alberto Rea",
+            "title": "Director",
+            "email": "area@mariachifilms.com",
+            "email_status": "extrapolated",
+            "linkedin": "http://www.linkedin.com/in/alberto-rea-56658135",
+            "source": "apollo"
+          },
+          {
+            "name": "Alan Gonzalez",
+            "title": "Director C19",
+            "email": "agonzalez@mariachifilms.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/alanskyo",
+            "source": "apollo"
+          },
+          {
+            "name": "Dario Fernandez",
+            "title": "Associate Director",
+            "email": "dfernandez@mariachifilms.com",
+            "email_status": "extrapolated",
+            "linkedin": "http://www.linkedin.com/in/dario-fernandez-a17b8b73",
+            "source": "apollo"
+          }
+        ]
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "agonzalez@mariachifilms.com",
+          "tier": "VERIFIED",
+          "role": false
+        },
+        "canonicalIG": "mariachifilms",
+        "additionalContacts": [
+          {
+            "name": "Mariachi Mexico",
+            "title": "Company Owner",
+            "email": null,
+            "email_status": "unavailable",
+            "linkedin": "http://www.linkedin.com/in/mariachi-voces-de-mexico-834836179",
+            "source": "apollo"
+          },
+          {
+            "name": "Alberto Rea",
+            "title": "Director",
+            "email": "area@mariachifilms.com",
+            "email_status": "extrapolated",
+            "linkedin": "http://www.linkedin.com/in/alberto-rea-56658135",
+            "source": "apollo"
+          },
+          {
+            "name": "Alan Gonzalez",
+            "title": "Director C19",
+            "email": "agonzalez@mariachifilms.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/alanskyo",
+            "source": "apollo"
+          },
+          {
+            "name": "Dario Fernandez",
+            "title": "Associate Director",
+            "email": "dfernandez@mariachifilms.com",
+            "email_status": "extrapolated",
+            "linkedin": "http://www.linkedin.com/in/dario-fernandez-a17b8b73",
+            "source": "apollo"
+          }
+        ],
+        "vsCurrent": {
+          "current_contactEmail": "agonzalez@mariachifilms.com",
+          "current_contactName": "Alan Gonzalez",
+          "current_ig": "mariachifilms",
+          "current_status": "verified"
+        }
+      }
+    },
+    {
+      "collectedAt": "2026-05-28T20:47:47.414Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://mariachifilms.com",
+        "https://mariachifilms.com/contacto",
+        "https://mariachifilms.com/contact",
+        "https://mariachifilms.com/contact-us",
+        "https://mariachifilms.com/nosotros",
+        "https://mariachifilms.com/about",
+        "https://mariachifilms.com/about-us",
+        "https://mariachifilms.com/equipo",
+        "https://mariachifilms.com/team",
+        "https://mariachifilms.com/quienes-somos",
+        "https://mariachifilms.com/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "agonzalez@mariachifilms.com",
+            "tier": "VERIFIED",
+            "isRole": false,
+            "domainMatch": true,
+            "methods": [
+              "apollo"
+            ],
+            "pages": 0
+          },
+          {
+            "email": "area@mariachifilms.com",
+            "tier": "PUBLISHED",
+            "isRole": false,
+            "domainMatch": true,
+            "methods": [
+              "apollo"
+            ],
+            "pages": 0
+          },
+          {
+            "email": "dfernandez@mariachifilms.com",
+            "tier": "PUBLISHED",
+            "isRole": false,
+            "domainMatch": true,
+            "methods": [
+              "apollo"
+            ],
+            "pages": 0
+          },
+          {
+            "email": "mariachifilms@gmail.com",
+            "tier": "CORROBORATED",
+            "isRole": false,
+            "domainMatch": false,
+            "methods": [
+              "mailto",
+              "visible"
+            ],
+            "pages": 11
+          }
+        ],
+        "igs": [
+          {
+            "handle": "mariachifilms",
+            "tier": "PUBLISHED",
+            "footerCanonical": true,
+            "sources": [
+              "https://mariachifilms.com",
+              "https://mariachifilms.com/contacto",
+              "https://mariachifilms.com/contact",
+              "https://mariachifilms.com/contact-us",
+              "https://mariachifilms.com/nosotros",
+              "https://mariachifilms.com/about",
+              "https://mariachifilms.com/about-us",
+              "https://mariachifilms.com/equipo",
+              "https://mariachifilms.com/team",
+              "https://mariachifilms.com/quienes-somos",
+              "https://mariachifilms.com/somos"
+            ]
+          }
+        ],
+        "linkedins": [],
+        "phones": [
+          {
+            "phone": "5519986139",
+            "kind": "tel",
+            "sources": [
+              "https://mariachifilms.com/contact"
+            ]
+          },
+          {
+            "phone": "5524548836",
+            "kind": "tel",
+            "sources": [
+              "https://mariachifilms.com/contact"
+            ]
+          }
+        ],
+        "dms": [
+          {
+            "name": "Mariachi Mexico",
+            "title": "Company Owner",
+            "email": null,
+            "email_status": "unavailable",
+            "linkedin": "http://www.linkedin.com/in/mariachi-voces-de-mexico-834836179",
+            "source": "apollo"
+          },
+          {
+            "name": "Alberto Rea",
+            "title": "Director",
+            "email": "area@mariachifilms.com",
+            "email_status": "extrapolated",
+            "linkedin": "http://www.linkedin.com/in/alberto-rea-56658135",
+            "source": "apollo"
+          },
+          {
+            "name": "Alan Gonzalez",
+            "title": "Director C19",
+            "email": "agonzalez@mariachifilms.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/alanskyo",
+            "source": "apollo"
+          },
+          {
+            "name": "Dario Fernandez",
+            "title": "Associate Director",
+            "email": "dfernandez@mariachifilms.com",
+            "email_status": "extrapolated",
+            "linkedin": "http://www.linkedin.com/in/dario-fernandez-a17b8b73",
+            "source": "apollo"
+          }
+        ]
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "agonzalez@mariachifilms.com",
+          "tier": "VERIFIED",
+          "role": false
+        },
+        "canonicalIG": "mariachifilms",
+        "additionalContacts": [
+          {
+            "name": "Mariachi Mexico",
+            "title": "Company Owner",
+            "email": null,
+            "email_status": "unavailable",
+            "linkedin": "http://www.linkedin.com/in/mariachi-voces-de-mexico-834836179",
+            "source": "apollo"
+          },
+          {
+            "name": "Alberto Rea",
+            "title": "Director",
+            "email": "area@mariachifilms.com",
+            "email_status": "extrapolated",
+            "linkedin": "http://www.linkedin.com/in/alberto-rea-56658135",
+            "source": "apollo"
+          },
+          {
+            "name": "Alan Gonzalez",
+            "title": "Director C19",
+            "email": "agonzalez@mariachifilms.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/alanskyo",
+            "source": "apollo"
+          },
+          {
+            "name": "Dario Fernandez",
+            "title": "Associate Director",
+            "email": "dfernandez@mariachifilms.com",
+            "email_status": "extrapolated",
+            "linkedin": "http://www.linkedin.com/in/dario-fernandez-a17b8b73",
+            "source": "apollo"
+          }
+        ],
+        "vsCurrent": {
+          "current_contactEmail": "agonzalez@mariachifilms.com",
+          "current_contactName": "Alan Gonzalez",
+          "current_ig": "mariachifilms",
+          "current_status": "verified"
+        }
+      }
+    }
+  ]
+}

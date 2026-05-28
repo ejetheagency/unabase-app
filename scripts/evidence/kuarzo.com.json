@@ -1,0 +1,278 @@
+{
+  "domain": "kuarzo.com",
+  "runs": [
+    {
+      "collectedAt": "2026-05-28T20:29:38.864Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://kuarzo.com",
+        "https://kuarzo.com/contacto",
+        "https://kuarzo.com/contact",
+        "https://kuarzo.com/contact-us",
+        "https://kuarzo.com/nosotros",
+        "https://kuarzo.com/about",
+        "https://kuarzo.com/about-us",
+        "https://kuarzo.com/equipo",
+        "https://kuarzo.com/team",
+        "https://kuarzo.com/quienes-somos",
+        "https://kuarzo.com/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "fcastro@kuarzo.com",
+            "tier": "VERIFIED",
+            "isRole": false,
+            "domainMatch": true,
+            "sources": [
+              "apollo"
+            ]
+          },
+          {
+            "email": "claudiob@kuarzo.com",
+            "tier": "VERIFIED",
+            "isRole": false,
+            "domainMatch": true,
+            "sources": [
+              "apollo"
+            ]
+          },
+          {
+            "email": "fsala@kuarzo.com",
+            "tier": "VERIFIED",
+            "isRole": false,
+            "domainMatch": true,
+            "sources": [
+              "apollo"
+            ]
+          }
+        ],
+        "igs": [],
+        "linkedins": [],
+        "phones": [],
+        "dms": [
+          {
+            "name": "Fernando Castro",
+            "title": "Executive Producer",
+            "email": "fcastro@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/fernando-castro-47b5036",
+            "source": "apollo"
+          },
+          {
+            "name": "Claudio Adrian Brusca",
+            "title": "Executive Producer",
+            "email": "claudiob@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/claudio-adri%c3%a1n-brusca-b1a29417a",
+            "source": "apollo"
+          },
+          {
+            "name": "Fernando Sala",
+            "title": "Executive Producer",
+            "email": "fsala@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/fernando-sala-8b960a1a",
+            "source": "apollo"
+          },
+          {
+            "name": "Jose Barrientos",
+            "title": "Executive Producer",
+            "email": null,
+            "email_status": "unavailable",
+            "linkedin": "http://www.linkedin.com/in/jos%c3%a9-barrientos-ig-josebarrilete-a0570a128",
+            "source": "apollo"
+          }
+        ]
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "fcastro@kuarzo.com",
+          "tier": "VERIFIED",
+          "role": false
+        },
+        "canonicalIG": null,
+        "additionalContacts": [
+          {
+            "name": "Fernando Castro",
+            "title": "Executive Producer",
+            "email": "fcastro@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/fernando-castro-47b5036",
+            "source": "apollo"
+          },
+          {
+            "name": "Claudio Adrian Brusca",
+            "title": "Executive Producer",
+            "email": "claudiob@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/claudio-adri%c3%a1n-brusca-b1a29417a",
+            "source": "apollo"
+          },
+          {
+            "name": "Fernando Sala",
+            "title": "Executive Producer",
+            "email": "fsala@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/fernando-sala-8b960a1a",
+            "source": "apollo"
+          },
+          {
+            "name": "Jose Barrientos",
+            "title": "Executive Producer",
+            "email": null,
+            "email_status": "unavailable",
+            "linkedin": "http://www.linkedin.com/in/jos%c3%a9-barrientos-ig-josebarrilete-a0570a128",
+            "source": "apollo"
+          }
+        ],
+        "vsCurrent": {
+          "current_contactEmail": "ffalce@kuarzo.com",
+          "current_contactName": null,
+          "current_ig": "canalkzo",
+          "current_status": null
+        }
+      }
+    },
+    {
+      "collectedAt": "2026-05-28T20:47:18.813Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://kuarzo.com",
+        "https://kuarzo.com/contacto",
+        "https://kuarzo.com/contact",
+        "https://kuarzo.com/contact-us",
+        "https://kuarzo.com/nosotros",
+        "https://kuarzo.com/about",
+        "https://kuarzo.com/about-us",
+        "https://kuarzo.com/equipo",
+        "https://kuarzo.com/team",
+        "https://kuarzo.com/quienes-somos",
+        "https://kuarzo.com/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "fcastro@kuarzo.com",
+            "tier": "VERIFIED",
+            "isRole": false,
+            "domainMatch": true,
+            "methods": [
+              "apollo"
+            ],
+            "pages": 0
+          },
+          {
+            "email": "claudiob@kuarzo.com",
+            "tier": "VERIFIED",
+            "isRole": false,
+            "domainMatch": true,
+            "methods": [
+              "apollo"
+            ],
+            "pages": 0
+          },
+          {
+            "email": "fsala@kuarzo.com",
+            "tier": "VERIFIED",
+            "isRole": false,
+            "domainMatch": true,
+            "methods": [
+              "apollo"
+            ],
+            "pages": 0
+          }
+        ],
+        "igs": [],
+        "linkedins": [],
+        "phones": [],
+        "dms": [
+          {
+            "name": "Fernando Castro",
+            "title": "Executive Producer",
+            "email": "fcastro@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/fernando-castro-47b5036",
+            "source": "apollo"
+          },
+          {
+            "name": "Claudio Adrian Brusca",
+            "title": "Executive Producer",
+            "email": "claudiob@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/claudio-adri%c3%a1n-brusca-b1a29417a",
+            "source": "apollo"
+          },
+          {
+            "name": "Fernando Sala",
+            "title": "Executive Producer",
+            "email": "fsala@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/fernando-sala-8b960a1a",
+            "source": "apollo"
+          },
+          {
+            "name": "Jose Barrientos",
+            "title": "Executive Producer",
+            "email": null,
+            "email_status": "unavailable",
+            "linkedin": "http://www.linkedin.com/in/jos%c3%a9-barrientos-ig-josebarrilete-a0570a128",
+            "source": "apollo"
+          }
+        ]
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "fcastro@kuarzo.com",
+          "tier": "VERIFIED",
+          "role": false
+        },
+        "canonicalIG": null,
+        "additionalContacts": [
+          {
+            "name": "Fernando Castro",
+            "title": "Executive Producer",
+            "email": "fcastro@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/fernando-castro-47b5036",
+            "source": "apollo"
+          },
+          {
+            "name": "Claudio Adrian Brusca",
+            "title": "Executive Producer",
+            "email": "claudiob@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/claudio-adri%c3%a1n-brusca-b1a29417a",
+            "source": "apollo"
+          },
+          {
+            "name": "Fernando Sala",
+            "title": "Executive Producer",
+            "email": "fsala@kuarzo.com",
+            "email_status": "verified",
+            "linkedin": "http://www.linkedin.com/in/fernando-sala-8b960a1a",
+            "source": "apollo"
+          },
+          {
+            "name": "Jose Barrientos",
+            "title": "Executive Producer",
+            "email": null,
+            "email_status": "unavailable",
+            "linkedin": "http://www.linkedin.com/in/jos%c3%a9-barrientos-ig-josebarrilete-a0570a128",
+            "source": "apollo"
+          }
+        ],
+        "vsCurrent": {
+          "current_contactEmail": "ffalce@kuarzo.com",
+          "current_contactName": null,
+          "current_ig": "canalkzo",
+          "current_status": null
+        }
+      }
+    }
+  ]
+}

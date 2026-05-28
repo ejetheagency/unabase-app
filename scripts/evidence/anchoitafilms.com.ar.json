@@ -1,0 +1,147 @@
+{
+  "domain": "anchoitafilms.com.ar",
+  "runs": [
+    {
+      "collectedAt": "2026-05-28T20:29:12.761Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://anchoitafilms.com.ar",
+        "https://anchoitafilms.com.ar/contacto",
+        "https://anchoitafilms.com.ar/contact",
+        "https://anchoitafilms.com.ar/contact-us",
+        "https://anchoitafilms.com.ar/nosotros",
+        "https://anchoitafilms.com.ar/about",
+        "https://anchoitafilms.com.ar/about-us",
+        "https://anchoitafilms.com.ar/equipo",
+        "https://anchoitafilms.com.ar/team",
+        "https://anchoitafilms.com.ar/quienes-somos",
+        "https://anchoitafilms.com.ar/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "produccion@anchoitafilms.com.ar",
+            "tier": "PUBLISHED",
+            "isRole": false,
+            "domainMatch": true,
+            "sources": [
+              "https://anchoitafilms.com.ar/contacto",
+              "https://anchoitafilms.com.ar/contact"
+            ]
+          }
+        ],
+        "igs": [
+          {
+            "handle": "volareshumano",
+            "tier": "PUBLISHED",
+            "footerCanonical": false,
+            "sources": [
+              "https://anchoitafilms.com.ar",
+              "https://anchoitafilms.com.ar/contacto",
+              "https://anchoitafilms.com.ar/contact",
+              "https://anchoitafilms.com.ar/contact-us",
+              "https://anchoitafilms.com.ar/nosotros",
+              "https://anchoitafilms.com.ar/about",
+              "https://anchoitafilms.com.ar/about-us",
+              "https://anchoitafilms.com.ar/equipo",
+              "https://anchoitafilms.com.ar/team",
+              "https://anchoitafilms.com.ar/quienes-somos",
+              "https://anchoitafilms.com.ar/somos"
+            ]
+          }
+        ],
+        "linkedins": [],
+        "phones": [],
+        "dms": []
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "produccion@anchoitafilms.com.ar",
+          "tier": "PUBLISHED",
+          "role": false
+        },
+        "canonicalIG": "volareshumano",
+        "additionalContacts": [],
+        "vsCurrent": null
+      }
+    },
+    {
+      "collectedAt": "2026-05-28T20:46:52.238Z",
+      "method": "puppeteer+cheerio",
+      "apollo": true,
+      "pagesVisited": [
+        "https://anchoitafilms.com.ar",
+        "https://anchoitafilms.com.ar/contacto",
+        "https://anchoitafilms.com.ar/contact",
+        "https://anchoitafilms.com.ar/contact-us",
+        "https://anchoitafilms.com.ar/nosotros",
+        "https://anchoitafilms.com.ar/about",
+        "https://anchoitafilms.com.ar/about-us",
+        "https://anchoitafilms.com.ar/equipo",
+        "https://anchoitafilms.com.ar/team",
+        "https://anchoitafilms.com.ar/quienes-somos",
+        "https://anchoitafilms.com.ar/somos"
+      ],
+      "candidates": {
+        "emails": [
+          {
+            "email": "produccion@aquafilms.com",
+            "tier": "CORROBORATED",
+            "isRole": false,
+            "domainMatch": false,
+            "methods": [
+              "visible"
+            ],
+            "pages": 2
+          },
+          {
+            "email": "produccion@anchoitafilms.com.ar",
+            "tier": "CORROBORATED",
+            "isRole": false,
+            "domainMatch": true,
+            "methods": [
+              "visible"
+            ],
+            "pages": 2
+          }
+        ],
+        "igs": [
+          {
+            "handle": "volareshumano",
+            "tier": "PUBLISHED",
+            "footerCanonical": false,
+            "sources": [
+              "https://anchoitafilms.com.ar",
+              "https://anchoitafilms.com.ar/contacto",
+              "https://anchoitafilms.com.ar/contact",
+              "https://anchoitafilms.com.ar/contact-us",
+              "https://anchoitafilms.com.ar/nosotros",
+              "https://anchoitafilms.com.ar/about",
+              "https://anchoitafilms.com.ar/about-us",
+              "https://anchoitafilms.com.ar/equipo",
+              "https://anchoitafilms.com.ar/team",
+              "https://anchoitafilms.com.ar/quienes-somos",
+              "https://anchoitafilms.com.ar/somos"
+            ]
+          }
+        ],
+        "linkedins": [],
+        "phones": [],
+        "dms": []
+      },
+      "proposal": {
+        "note": "REPORT-ONLY — not applied. Requires safety-gate approval.",
+        "primaryEmailCandidate": {
+          "email": "produccion@aquafilms.com",
+          "tier": "CORROBORATED",
+          "role": false
+        },
+        "canonicalIG": "volareshumano",
+        "additionalContacts": [],
+        "vsCurrent": null
+      }
+    }
+  ]
+}

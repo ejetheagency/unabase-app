@@ -146,6 +146,45 @@ Tool: scripts/apply-groupA.js --apply (guarded). Verified vs HEAD:
   Magma Cine → Juan Pablo Gugliotta / Co-founder. (names only set where previously empty.)
 Only intended fields on 4 leads changed; Zeta removed from -27 only. No Supabase, not pushed.
 
+### Enrichment-capability audit DONE (read-only, 2026-05-28) → scripts/enrichment-capability-audit.md
+Verdict: peak engine NOT degraded — BYPASSED. unabasi-leads/enrichment/contactHunter.js (3082 lines,
+puppeteer headless hunter, founderDeepRecovery, IG-bio/LinkedIn/phone, hydrateScroll, JSON-LD) is wired
+in index.js (huntContacts) but was never run during remediation. My sweep-unverified-emails.js is static
+fetch()+regex (no JS/DOM/IG/DM/confidence) — below both historical tiers. apollo.js (main path) lacks
+email_status capture (only unlock-domains.js has it). Rich evidence/confidence model already exists in
+lead data (contactConfidence/Strength/Source, additionalContacts, etc.). Recovery plan = re-wire the
+puppeteer hunter as a READ-ONLY evidence collector → provenance ledger → confidence scoring → safe
+mutation gate (PROTECTED denylist + --apply + deep-compare). Proposed only; NOT built. No mutation.
+
+### Evidence-collector PROTOTYPE built + run (read-only, 2026-05-28)
+Script: unabasi-leads/tools/collect-evidence.js (puppeteer + cheerio + hydrateScroll + multi-page +
+JSON-LD + Apollo email_status). Writes ONLY append-only unabase-app/scripts/evidence/<domain>.json.
+Verified: lead files CLEAN, no Supabase/manifest/push. PROVES recovery:
+- grappi.cl (JS site static methods FAILED on) → puppeteer cracked it: contacto@grappi.cl [PUBLISHED] + IG grappifilming(footer).
+- kuarzo.com (was 503/blocked) → recrawl OK + Apollo 3 VERIFIED DMs (fcastro@, claudiob@, fsala@ — Exec Producers). Current ffalce@kuarzo.com not returned by Apollo (likely stale).
+- aqua/anchoita → produccion@anchoitafilms.com.ar [PUBLISHED/CORROBORATED] on both domains (rebrand confirmed; earlier methods found NO email).
+- mariachifilms.com (control) → VERIFIED agonzalez@mariachifilms.com = current value (collector agrees w/ known-good).
+PROTOTYPE BUGS (honest): visible-text email regex glues adjacent words (grappi DERIVED junk like
+"chilecontacto@grappi.cls"); DOM DM heuristic produces false positives (taglines as "DMs"). BUT
+confidence tiering quarantines all noise as DERIVED — proposals only ever pick VERIFIED/PUBLISHED, so
+the safety gate already filters it. Next hardening: tighten visible-email regex + use JSON-LD+Apollo only for DMs.
+Proposals are REPORT-ONLY (not applied). No lead/lifecycle/Supabase mutation.
+
+### Collector HARDENED + validated (read-only, 2026-05-28)
+Patched tools/collect-evidence.js: (1) email extraction now boundary-safe from RAW HTML +
+VALID_TLD allowlist + method tracking (mailto/visible/jsonld/apollo) — kills glued artifacts;
+(2) removed broad DOM role-keyword DM heuristic; DMs now only from Apollo + JSON-LD Person +
+validated structured team-cards (isPersonName gate, company/tagline denylist).
+Before→after (run[0]→run[1]): Grappi emails 4→1 (3 glued junk GONE), Grappi tagline DMs 3→0,
+Kuarzo 3 VERIFIED DMs preserved, Mariachi control primary still agonzalez@ VERIFIED, visible-only
+emails correctly held at CORROBORATED (below PUBLISHED).
+Found+fixed a NEW tier bug: apollo was wrongly in the PUBLISHED 'structured' set → apollo-extrapolated
+emails (Mariachi area@/dfernandez@) mis-tiered PUBLISHED. Fixed: PUBLISHED = mailto/jsonld only;
+apollo grants VERIFIED only (else falls to CORROBORATED/DERIVED). Proven via read-only re-tier of
+stored evidence (no Apollo re-spend): area@/dfernandez@ → DERIVED. Note: evidence run[1] still stores
+pre-fix tiers (append-only; proposals were unaffected since VERIFIED outranks); next run writes correct tiers.
+Tier model now: VERIFIED(apollo) > PUBLISHED(site mailto/jsonld, domain-match) > CORROBORATED(≥2 sources) > FREEMAIL > DERIVED(guess/single-visible).
+
 ### STILL PENDING (no action): 
 - Grappi contacto@grappi.cl fill (operator skipped this round).
 - Group B identity: Aqua→Anchoita rebrand (changes lead id), Brodaju rene@ vs info@brodaju.com.co, Mun name Moragues vs Ardèvol.
