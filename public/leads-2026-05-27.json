@@ -753,7 +753,11 @@
     ],
     "_recoveredFrom": "2026-05-25. Santiago bounced; los 2 alternativos en Apollo son Creative Directors (excluido per rules)",
     "_recoveryReason": "primary_email_invalid_and_no_clean_alternate_in_apollo",
-    "_primaryIsGenericEmail": true
+    "_primaryIsGenericEmail": true,
+    "_emailStatus": "website_published",
+    "_emailVerifiedAt": "2026-05-28T18:46:02.794Z",
+    "_emailVerificationSource": "website:confirmed",
+    "_emailSweepNote": "Existing email confirmed published on company site (A1 stamp 2026-05-28)."
   },
   {
     "companyName": "Panorámica Films",
@@ -1254,7 +1258,11 @@
     "_revivedAt": "2026-05-27T20:39:29.062Z",
     "_prestigeFlags": [
       "revived_pilot_lead_basic_icp_only"
-    ]
+    ],
+    "_emailStatus": "website_published",
+    "_emailVerifiedAt": "2026-05-28T18:46:02.794Z",
+    "_emailVerificationSource": "website:confirmed",
+    "_emailSweepNote": "Existing email confirmed published on company site (A1 stamp 2026-05-28)."
   },
   {
     "tier": "tier2",
@@ -1693,7 +1701,11 @@
     "_revivedAt": "2026-05-27T20:39:29.062Z",
     "_prestigeFlags": [
       "revived_pilot_lead_basic_icp_only"
-    ]
+    ],
+    "_emailStatus": "website_published",
+    "_emailVerifiedAt": "2026-05-28T18:46:02.794Z",
+    "_emailVerificationSource": "website:confirmed",
+    "_emailSweepNote": "Existing email confirmed published on company site (A1 stamp 2026-05-28)."
   },
   {
     "tier": "tier1",
@@ -2971,7 +2983,11 @@
     },
     "_prestigeFlags": [
       "revived_pilot_lead_basic_icp_only"
-    ]
+    ],
+    "_emailStatus": "website_published",
+    "_emailVerifiedAt": "2026-05-28T18:46:02.794Z",
+    "_emailVerificationSource": "website:confirmed",
+    "_emailSweepNote": "Existing email confirmed published on company site (A1 stamp 2026-05-28)."
   },
   {
     "country": "Argentina",

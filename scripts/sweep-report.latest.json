@@ -1,0 +1,639 @@
+{
+  "at": "2026-05-28T18:27:44.375Z",
+  "mode": {
+    "MODE_WEB": true,
+    "MODE_APPLY": false,
+    "MODE_APOLLO": false,
+    "MAX_UNLOCKS": 15,
+    "LIMIT": null
+  },
+  "summary": {
+    "swept": 56,
+    "alreadyProcessed": 7,
+    "replaced": 2,
+    "websitePublished": 16,
+    "namedKept": 15,
+    "namedUnverified": 14,
+    "apolloVerified": 0,
+    "noVerifiedEmail": 4,
+    "errors": 0
+  },
+  "report": [
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Fósforo Cinema",
+      "domain": "fosforo.video",
+      "before": "fernando@fosforo.video",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_recoveredFrom"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Iconica",
+      "domain": "iconica.tv",
+      "before": "hola@iconica.tv",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_recoveredFrom"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Panorámica Films",
+      "domain": "panoramicafilms.com",
+      "before": "christian@panoramicafilms.com.mx",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_recoveredFrom"
+      ],
+      "result": "kept_existing(fallback=contact@panoramicafilms.com)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "2btube",
+      "domain": "2btube.com",
+      "before": "fabienne@2btube.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(fallback=info@2btube.com)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Sunomono Films",
+      "domain": "sunomonofilms.com",
+      "before": "produccion@sunomonofilms.com",
+      "currentStatus": "verified",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "already_processed:verified"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Gen Contenido",
+      "domain": "gencontenido.com",
+      "before": "laura@gencontenido.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Underground Producciones",
+      "domain": "undergroundproducciones.com",
+      "before": "underground@nbcuni.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "LINKVIDS",
+      "domain": "linkvids.io",
+      "before": "martin.pons@linkvids.io",
+      "currentStatus": "verified",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "already_processed:verified"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Apima",
+      "domain": "apima.com.ar",
+      "before": "distrbucionapima@gmail.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Mun Films",
+      "domain": "munfilms.com",
+      "before": "pau@munfilms.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Kuarzo",
+      "domain": "kuarzo.com",
+      "before": "ffalce@kuarzo.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "VPro Video",
+      "domain": "vprovideo.com",
+      "before": null,
+      "currentStatus": "no_email_use_whatsapp",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "already_processed:no_email_use_whatsapp"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Minded Factory",
+      "domain": "mindedfactory.com",
+      "before": "david@mindedfactory.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Torneos",
+      "domain": "torneos.com",
+      "before": "maximiliano.cabrera@torneos.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Voilà Estudios",
+      "domain": "voilaestudios.com",
+      "before": "alvaro@voilaestudios.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(fallback=contacto@voilaestudios.com)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "House of Brands",
+      "domain": "housebrands.es",
+      "before": "javi@housebrands.es",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(fallback=info@housebrands.es)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Caudiovisual",
+      "domain": "caudiovisual.com",
+      "before": "contacto@caudiovisual.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-2026-05-27.json",
+      "company": "Zeta Positivo Animation Studio",
+      "domain": "zetapositivo.com.ar",
+      "before": null,
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "website_published(set):info@zetapositivo.com.ar"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Aqua Films",
+      "domain": "aquafilms.com.ar",
+      "before": null,
+      "currentStatus": "no_deliverable_email_domain_rebranded",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "already_processed:no_deliverable_email_domain_rebranded"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "1813 Estudio",
+      "domain": "1813estudio.com",
+      "before": "info@1813estudio.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "LaGallera",
+      "domain": "lagallera.ec",
+      "before": "produccion@lagallera.ec",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=valeria@lagallera.ec)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Misil Producciones",
+      "domain": "misilproducciones.com",
+      "before": "misilproducciones@gmail.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Sinapsis Producción",
+      "domain": "sinapsisproduccion.com",
+      "before": "info@sinapsisproduccion.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Nitido Productora Audiovisual",
+      "domain": "nitidoproductora.com",
+      "before": "guillermo@nitidoproductora.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=contacto@nitidoproductora.com)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Buena Movida",
+      "domain": "buenamovida.com",
+      "before": "produccion@buenamovida.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=plannermanager@buenamovida.com)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Fábrica Visual",
+      "domain": "fabricavisual.com.mx",
+      "before": "eduardo@fabricavisual.com.mx",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Thau Honduras",
+      "domain": "thauhonduras.com",
+      "before": "thaudesignhn@gmail.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Audioenlace Producciones",
+      "domain": "audioenlacepro.com",
+      "before": "aoviedo@audioenlacepro.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=info@audioenlacepro.com)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "New Walk Productions",
+      "domain": "newwalkproductions.com",
+      "before": "info@newwalkproductions.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "no_verified_email"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Paranova Films",
+      "domain": "paranovafilms.com",
+      "before": "paranovafilms@gmail.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "StoryLab Argentina",
+      "domain": "storylab.com.ar",
+      "before": "nv@storylab.com.ar",
+      "currentStatus": "verified",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "already_processed:verified"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Zeta Positivo Animation Studio",
+      "domain": "zetapositivo.com.ar",
+      "before": null,
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "website_published(set):info@zetapositivo.com.ar"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Media Branders",
+      "domain": "mediabranders.com",
+      "before": "sebastian@mediabranders.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=info@mediabranders.com)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "House of Brands",
+      "domain": "housebrands.es",
+      "before": "javi@housebrands.es",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(fallback=info@housebrands.es)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Martillo Media",
+      "domain": "martillomedia.com",
+      "before": "pmuniz@martillomedia.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=contacto@martillomedia.com)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Caudiovisual",
+      "domain": "caudiovisual.com",
+      "before": "contacto@caudiovisual.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "La Villa Producciones",
+      "domain": "lavillaproducciones.com",
+      "before": "juliopachongonzalez@yahoo.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Voilà Estudios",
+      "domain": "voilaestudios.com",
+      "before": "alvaro@voilaestudios.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_revivedFromPilot"
+      ],
+      "result": "kept_existing(fallback=contacto@voilaestudios.com)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Red Noise Films",
+      "domain": "rednoisefilms.com",
+      "before": "info@rednoisefilms.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Estudio Diverge",
+      "domain": "estudiodiverge.com",
+      "before": "contacto@estudiodiverge.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "PáramoFilms",
+      "domain": "paramofilms.co",
+      "before": "direccion@paramofilms.co",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Buenavida Films",
+      "domain": "buenavidafilms.com",
+      "before": "buenavidapro@gmail.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "website_published(confirmed)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Morena Films",
+      "domain": "morenafilms.com",
+      "before": "morenafilms@morenafilms.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Happy Monster",
+      "domain": "ahappymonster.com",
+      "before": "hola@ahappymonster.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "no_verified_email"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Cinebrand",
+      "domain": "cinebrand.es",
+      "before": "contacto@cinebrand.es",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "no_verified_email"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Grappi Multimedia",
+      "domain": "grappi.cl",
+      "before": null,
+      "currentStatus": "no_verified_email",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "already_processed:no_verified_email"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "HUAU",
+      "domain": "huau.cl",
+      "before": "arturo@huau.cl",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "CBRA Films",
+      "domain": "cbrafilms.com",
+      "before": "cristobal@cbrafilms.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "ChileRayo",
+      "domain": "chilerayo.com",
+      "before": "contacto@chilerayo.com",
+      "currentStatus": "website_published",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "already_processed:website_published"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Doin Media",
+      "domain": "doinmedia.com",
+      "before": "carolina.guerrero@doinmedia.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Intelygente",
+      "domain": "intelygente.net",
+      "before": "info@intelygente.net",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "no_verified_email"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Brodaju",
+      "domain": "brodaju.com.co",
+      "before": "rene@brodaju.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Cinematres",
+      "domain": "cinematres.com.ar",
+      "before": "pablomeza@cinematres.com.ar",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=info@cinematres.com.ar)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Haddock Films",
+      "domain": "haddockfilms.com",
+      "before": "vanessa.ragone@haddockfilms.com",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=info@haddockfilms.com)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Magma Cine",
+      "domain": "magmacine.com.ar",
+      "before": "nat@magmacine.com.ar",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(unverified)"
+    },
+    {
+      "file": "leads-past.json",
+      "company": "Pampa Films",
+      "domain": "pampafilms.com.ar",
+      "before": "cabe.bossi@pampafilms.com.ar",
+      "currentStatus": "(none)",
+      "cohortTags": [
+        "_reactivationMode"
+      ],
+      "result": "kept_existing(fallback=info@pampafilms.com.ar)"
+    }
+  ]
+}
