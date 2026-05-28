@@ -322,3 +322,10 @@ git -C unabase-app reset --hard 514f8f3   # destructive — operator approval on
 - [ ] Commit patched files locally (rule 6) — explicit filenames only.
 - [ ] (HELD) Patch matching Supabase rows — needs operator OK.
 - [ ] (HELD) Deploy today's batch / push — needs operator OK after enrichment confirmed.
+
+### ALL 16 RESET TO FRESH (2026-05-28) — operator decision
+The 8 productoras (Fight/Woo/Unlimited/Mango/Cactus/Altana/Traziende/Sur) had been manually marked-sent
+("[Marcado como enviado]" placeholder, ~00:08-00:35 today) — operator said treat as fresh. Cleared their
+actions+messages+status_history + status=none (none were replied/meeting). Combined with the 8 recovered:
+VERIFIED all 16 today-batch leads = status none + 0 actions = sin-contactar. Also changed index.html so Hoy
+shows the full day deck by default (__hoyShowAll default true). Today batch = 16 fresh, all visible in Hoy.
