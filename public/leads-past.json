@@ -13560,14 +13560,14 @@
       "Productora mid-size que necesita herramientas profesionales sin complejidad enterprise"
     ],
     "companyBrief": "Aqua Films es una productora de cine y teatro de Buenos Aires especializada en desarrollo, producción y post producción de largometrajes. Han trabajado con clientes como Facebook.",
-    "contactEmail": "silvina@aquafilms.com.ar",
+    "contactEmail": null,
     "contactPhone": null,
     "contactTitle": null,
-    "emailCercana": "Hola equipo de Aqua Films! Soy Scarlett del equipo de UnaBase.\n\n¿Lograron ver el correo que les envié? Si es que no, les mando un resumen.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola equipo de Aqua Films! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Aqua Films y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares. Te escribo por acá ya que es el canal más directo que encontré.\n\nSaludos,\nScarlett",
     "instagramBio": null,
-    "instagramUrl": "https://www.instagram.com/aquafilmsproductora/",
+    "instagramUrl": "https://www.instagram.com/volareshumano",
     "pitchEmailEN": null,
-    "pitchEmailES": "hola equipo de Aqua Films. vi que Aqua Films produce cine y teatro desde Buenos Aires, con clientes como Facebook.\n\ncómo manejan los presupuestos entre las producciones cinematográficas y las teatrales?\n\nen UnaBase vemos este tipo de operación todo el tiempo. hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación. lo vemos 10 min?\n\nScarlett",
+    "pitchEmailES": "Hola equipo de Aqua Films! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Aqua Films y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares. Te escribo por acá ya que es el canal más directo que encontré.\n\nSaludos,\nScarlett",
     "replyTrigger": [
       "Gestión compleja de contactos en proyectos audiovisuales",
       "Necesidad de centralización cuando trabajas con clientes grandes como Facebook",
@@ -13587,12 +13587,12 @@
     ],
     "recentProjects": [],
     "channelPriority": {
-      "opcional": "investigar LinkedIn personal",
-      "primario": "email",
-      "secundario": "llamada telefonica"
+      "primario": "Instagram DM",
+      "secundario": "LinkedIn",
+      "opcional": "email"
     },
     "contactLinkedIn": null,
-    "instagramHandle": "aquafilmsproductora",
+    "instagramHandle": "volareshumano",
     "whatsappMessage": null,
     "linkedinPlaybook": null,
     "outreachSequence": [
@@ -13621,7 +13621,9 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "_emailStatus": "no_deliverable_email_domain_rebranded",
+    "_emailFixNote": "aquafilms.com.ar ahora redirige a Anchoíta Films (@volareshumano) — dominio cambió de dueño, sin email válido"
   },
   {
     "companyName": "Videos corporativos en México",
@@ -21960,16 +21962,16 @@
     "nicheReason": "niche_confirmed",
     "companyBrief": "Habanero Films es una productora mexicana con 15 años de experiencia creando contenido televisivo, documentales y largometrajes en México y Latinoamérica. Operan desde Roma Sur con presencia digital activa en Instagram.",
     "approachAngle": null,
-    "pitchEmailES": "Hola Anders! Como estas? Soy Scarlett de parte del Anders",
+    "pitchEmailES": "Hola equipo de Habanero Films! Como están? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Habanero Films y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nMe encantaría conectar con la persona que maneja producción. ¿A quién me sugieren contactar para una llamada de 10 min?\n\nSaludos,\nScarlett",
     "pitchEmailEN": null,
     "fitVerified": true,
     "fitSignals": 2,
     "fitReasons": [
       "large_team"
     ],
-    "contactName": "Anders Ehrnberg",
-    "contactTitle": null,
-    "contactEmail": "anders@habanerofilms.co",
+    "contactName": "Equipo Habanero Films",
+    "contactTitle": "Contacto general (email corporativo)",
+    "contactEmail": "contact@habanerofilms.com",
     "contactLinkedIn": null,
     "contactConfidence": "name_from_email",
     "contactSource": "press",
@@ -22164,6 +22166,11 @@
     "contactVenues": 3,
     "additionalContacts": [
       {
+        "name": "Anders Ehrnberg",
+        "title": "Producer (pedirlo por nombre)",
+        "email": null
+      },
+      {
         "instagramHandle": "nektarconk",
         "instagramUrl": "https://www.instagram.com/nektarconk/",
         "contactTitle": null,
@@ -22197,7 +22204,7 @@
       "secundario": "WhatsApp",
       "opcional": "Instagram DM"
     },
-    "emailCercana": "Hola Anders! Como estas? Soy Scarlett de parte del Anders",
+    "emailCercana": "Hola equipo de Habanero Films! Como están? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Habanero Films y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nMe encantaría conectar con la persona que maneja producción. ¿A quién me sugieren contactar para una llamada de 10 min?\n\nSaludos,\nScarlett",
     "emailFormal": "Estimado Anders,\n\nSoy Scarlett del equipo de UnaBase. Hemos trabajado con más de 300 empresas en la industria creativa optimizando la gestión de presupuestos.\n\nViendo la trayectoria de 15 años de Habanero Films produciendo contenido tan diverso desde documentales hasta largometrajes en México y Latinoamérica, creo que nuestra plataforma podría ser muy valiosa para ustedes.\n\n¿Tendría disponibilidad para una demo rápida esta semana?\n\nQuedo atenta.\nScarlett\nEquipo UnaBase",
     "instagramPlaybook": {
       "paso1": "Seguir @habanero_films",
@@ -22218,7 +22225,10 @@
     ],
     "keyInsight": "15 años de experiencia y diversidad de formatos indica procesos maduros que se beneficiarían de optimización digital.",
     "source_date": "2026-04-20",
-    "approved": false
+    "approved": false,
+    "_emailStatus": "website_published",
+    "_emailVerifiedAt": "2026-05-28T16:57:19.466Z",
+    "_emailFixNote": "email anterior anders@habanerofilms.co tenía TLD equivocado (.co en vez de .com) — corregido al email corporativo publicado"
   },
   {
     "companyName": "Who we are",
@@ -23380,7 +23390,7 @@
     "twitterUrl": "https://x.com/storylabarg",
     "youtubeUrl": "https://youtube.com/@storylabargentina.oficial",
     "companyName": "StoryLab Argentina",
-    "contactName": "Bruquetas Lorena",
+    "contactName": "Nacho Viale",
     "emailStatus": "Generic",
     "facebookUrl": "https://www.facebook.com/StoryLabArg/",
     "fitVerified": true,
@@ -23388,9 +23398,9 @@
     "source_date": "2026-04-17",
     "companyBrief": "StoryLab Argentina es una productora de contenido audiovisual premium fundada en 2013 por Nacho Viale (CEO) y Diego Palacio (CCO). Oficinas en Argentina, Uruguay y EE.UU. Producen para Netflix (Estocolmo), DirecTV (La Casa del Mar. nominada al Emmy 2016), Canal 13 (Almorzando con Mirtha Legrand, La Noche de Mirtha), Telefe (La dueña), FLOW (Último Primer Día, Frágiles, Nieve Roja 2025).",
     "companyPhone": "+598 2900 9029",
-    "contactEmail": "bruquetasl@storylab.com.ar",
+    "contactEmail": "nv@storylab.com.ar",
     "contactPhone": "+54 5272 0400",
-    "contactTitle": "Executive Producer",
+    "contactTitle": "Managing Director",
     "emailCercana": "Hola Bruquetas! Soy Scarlett del equipo de UnaBase.\n\n¿Lograron ver el correo que les envié? Si es que no, les mando un resumen.\n\nSaludos,\nScarlett",
     "instagramUrl": "https://www.instagram.com/storylabarg/",
     "recoveryNote": "Top-priority Tier 1. CEO (Nacho Viale, grandson of Mirtha Legrand) con LinkedIn verificado. Equipo completo en /about-us. IG 13K followers. Multi-territorio + multi-network + Emmy-level production = máximo fit UnaBase.",
@@ -23424,6 +23434,11 @@
     "contactConfidence": "confirmed",
     "additionalContacts": [
       {
+        "name": "Bruquetas Lorena",
+        "title": "Executive Producer (email anterior INVÁLIDO - extrapolated)",
+        "email": "bruquetasl@storylab.com.ar (bounced)"
+      },
+      {
         "name": "Luz Gago",
         "title": "Executive Producer",
         "email": "luzg@storylab.com.ar"
@@ -23432,11 +23447,6 @@
         "name": "Paula Perez",
         "title": "Commercial Director",
         "email": "paulap@storylab.com.ar"
-      },
-      {
-        "name": "Nacho Viale",
-        "title": "Managing Director",
-        "email": "nv@storylab.com.ar"
       },
       {
         "note": "Chief Creative Officer, cofundador.",
@@ -23477,7 +23487,9 @@
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
     ],
-    "_reactivationApolloSwapped": true
+    "_reactivationApolloSwapped": true,
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T16:57:19.466Z"
   },
   {
     "country": "Argentina",
@@ -26307,8 +26319,8 @@
     "industry": "commercial",
     "companyName": "Grappi Multimedia",
     "companyBrief": "Videos corporativos y animación para Sony.",
-    "contactEmail": "info@grappi.cl",
-    "emailCercana": "Hola equipo de Grappi Multimedia! Soy Scarlett del equipo de UnaBase.\n\n¿Lograron ver el correo que les envié? Si es que no, les mando un resumen.\n\nSaludos,\nScarlett",
+    "contactEmail": null,
+    "emailCercana": "Hola equipo de Grappi Multimedia! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Grappi Multimedia y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares. Te escribo por acá ya que es el canal más directo que encontré.\n\nSaludos,\nScarlett",
     "unabaseScore": 8,
     "notableClients": [
       "Sony"
@@ -26322,7 +26334,15 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "_emailStatus": "no_verified_email",
+    "_emailFixNote": "info@grappi.cl rebotó; sin email verificable en Apollo ni web — cambiar a DM/LinkedIn",
+    "channelPriority": {
+      "primario": "Instagram DM",
+      "secundario": "LinkedIn",
+      "opcional": "email"
+    },
+    "pitchEmailES": "Hola equipo de Grappi Multimedia! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Grappi Multimedia y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares. Te escribo por acá ya que es el canal más directo que encontré.\n\nSaludos,\nScarlett"
   },
   {
     "country": "Chile",
@@ -26381,15 +26401,20 @@
     "industry": "commercial",
     "companyName": "ChileRayo",
     "companyBrief": "Productora boutique chilena. 8K seguidores como @morfina.cl.",
-    "contactEmail": "leonardo@chilerayo.com",
+    "contactEmail": "contacto@chilerayo.com",
     "contactPhone": "+569 5759 4998",
-    "emailCercana": "Hola Leonardo! Soy Scarlett del equipo de UnaBase.\n\n¿Lograron ver el correo que les envié? Si es que no, les mando un resumen.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola equipo de ChileRayo! Como están? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de ChileRayo y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nMe encantaría conectar con la persona que maneja producción. ¿A quién me sugieren contactar para una llamada de 10 min?\n\nSaludos,\nScarlett",
     "instagramUrl": "https://www.instagram.com/morfina.cl/",
     "unabaseScore": 6,
     "instagramHandle": "morfina.cl",
-    "contactName": "Leonardo Oyarzun Ramirez",
-    "contactTitle": "Director",
+    "contactName": "Equipo ChileRayo",
+    "contactTitle": "Contacto general (email corporativo)",
     "additionalContacts": [
+      {
+        "name": "Leonardo Oyarzun Ramirez",
+        "title": "Director (email personal no verificado - extrapolated)",
+        "email": "leonardo@chilerayo.com (sin verificar)"
+      },
       {
         "name": "Jona Fuenzalida",
         "title": "Director",
@@ -26406,7 +26431,10 @@
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
     ],
-    "_reactivationApolloSwapped": true
+    "_reactivationApolloSwapped": true,
+    "_emailStatus": "website_published",
+    "_emailVerifiedAt": "2026-05-28T16:57:19.466Z",
+    "pitchEmailES": "Hola equipo de ChileRayo! Como están? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de ChileRayo y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nMe encantaría conectar con la persona que maneja producción. ¿A quién me sugieren contactar para una llamada de 10 min?\n\nSaludos,\nScarlett"
   },
   {
     "country": "Colombia",

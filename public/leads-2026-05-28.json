@@ -367,18 +367,18 @@
     "industry": "film",
     "tier": "tier2",
     "contactPath": "decision_maker_email",
-    "contactName": "Alberto Rea",
-    "contactTitle": "Director / Realizador",
-    "contactEmail": "area@mariachifilms.com",
+    "contactName": "Alan Gonzalez",
+    "contactTitle": "Director C19",
+    "contactEmail": "agonzalez@mariachifilms.com",
     "instagramUrl": "https://www.instagram.com/mariachifilms",
     "instagramHandle": "mariachifilms",
     "instagramFollowers": null,
     "apolloCompanyLinkedIn": "https://www.linkedin.com/company/mariachi-films",
     "additionalContacts": [
       {
-        "name": "Alan Gonzalez",
-        "title": "Director C19",
-        "email": "agonzalez@mariachifilms.com"
+        "name": "Alberto Rea",
+        "title": "Director / Realizador (email anterior INVÁLIDO - extrapolated)",
+        "email": "area@mariachifilms.com (bounced)"
       },
       {
         "name": "Dario Fernandez",
@@ -392,7 +392,7 @@
       }
     ],
     "companyBrief": "Casa productora en Ciudad de México con 25 empleados. Especializados en contenido visual cinemático y proyectos artísticos para diversos clientes (negocios y creativos individuales). Roster de 3 directores con email personal (Realizador, Director C19, Associate Director) más Line Producer identificada. Servicios: demos creativos, dirección artística, producción film+video. Foco en storytelling de impacto y expresión artística. Contacto: Alberto Rea (Director / Realizador).",
-    "pitchEmailES": "Hola Alberto! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Mariachi Films, equipo de 25 personas en CDMX con un roster sólido de directores y producción artística, y nos llamó la atención cómo combinan storytelling cinemático con proyectos creativos para distintos tipos de marcas.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos en pipeline con distintos directores.\n\nTe muestro en 10 min cómo lo están usando otras casas productoras mexicanas similares.\n\nSaludos,\nScarlett",
+    "pitchEmailES": "Hola Alan! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Mariachi Films y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
     "source_date": "2026-05-28",
     "approved": true,
     "readyToSend": true,
@@ -400,7 +400,7 @@
     "contactSource": "apollo_surgical_unlock_webfetch_extraction",
     "_discoveryMethod": "premium-v2.2 cache mine + tools/unlock-domains.js surgical + WebFetch + WebSearch",
     "_operatorVerified": false,
-    "emailCercana": "Hola Alberto! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Mariachi Films, equipo de 25 personas en CDMX con un roster sólido de directores y producción artística, y nos llamó la atención cómo combinan storytelling cinemático con proyectos creativos para distintos tipos de marcas.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos en pipeline con distintos directores.\n\nTe muestro en 10 min cómo lo están usando otras casas productoras mexicanas similares.\n\nSaludos,\nScarlett",
+    "emailCercana": "Hola Alan! Como estás? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Mariachi Films y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras en la industria creativa, ayudándoles a ordenar y visualizar presupuestos de producción sin fricción, especialmente cuando hay múltiples proyectos corriendo en paralelo.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares.\n\nSaludos,\nScarlett",
     "channelPriority": {
       "primario": "email",
       "secundario": "Instagram DM",
@@ -415,7 +415,9 @@
     ],
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall"
-    ]
+    ],
+    "_emailStatus": "verified",
+    "_emailVerifiedAt": "2026-05-28T16:57:19.460Z"
   },
   {
     "companyName": "Sur Film",
