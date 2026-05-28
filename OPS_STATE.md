@@ -213,8 +213,11 @@ Operator directive: treat all recovered as NEW (bounce = no contact landed); era
 make them part of today's report. FIX: scripts/apply-hoy-recovery.js promoted the 7 non-Mariachi
 recovered leads INTO leads-2026-05-28.json (source_date=today, _recoveredFrom, old reactivation/revival
 tags stripped) and removed them from -27 (28→25) and past (186→182). 05-28 batch: 9→16. Mariachi already in 28.
-PENDING: Supabase status for the previously-contacted ones (reactivation set + Mariachi) still reads
-stale (contactado/respondió) → needs targeted status→none reset for a clean "new" badge (operator OK pending).
+SUPABASE STATUS RESET DONE (operator-approved: bounced=never-contacted): scripts/reset-bounced-status.js
+--apply reset all 8 recovered leads to status=none (was 6 contacted + 2 partial). Targeted (id+client_id,
+status field only; action/message history left intact). Lifecycle restarts when re-contacted. This was the
+session's first Supabase write — explicitly authorized ("if emails bounced they need to be updated to
+never contacted"). Result: the 8 now show as sin-contactar/new in Hoy with working channels.
 
 ### NEXT TASK (2): audit leads-2026-05-28 (now 16 leads) for quality. (verification of original 8 done — /tmp/evidence-todaybatch.log; evidence/*.json)
 
