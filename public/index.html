@@ -1258,10 +1258,6 @@ async function autoLoad(){
 
 function renderDay(){
   document.getElementById('emptyS').style.display='none';
-  // Default Hoy to show ALL of today's deck (fresh + already-contacted) so the
-  // full batch is visible at a glance. Operator can still fold the in-cycle ones
-  // via the "Ocultar los ya iniciados" toggle (sets __hoyShowAll=false).
-  if(window.__hoyShowAll===undefined)window.__hoyShowAll=true;
   // Awareness indicator — uses shared isActionable() so counter matches Acción Ahora exactly
   const indEl=document.getElementById('hoyIndicator');
   if(indEl){

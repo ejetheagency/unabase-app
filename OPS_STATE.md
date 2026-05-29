@@ -329,3 +329,8 @@ The 8 productoras (Fight/Woo/Unlimited/Mango/Cactus/Altana/Traziende/Sur) had be
 actions+messages+status_history + status=none (none were replied/meeting). Combined with the 8 recovered:
 VERIFIED all 16 today-batch leads = status none + 0 actions = sin-contactar. Also changed index.html so Hoy
 shows the full day deck by default (__hoyShowAll default true). Today batch = 16 fresh, all visible in Hoy.
+
+### HOY back to fresh-only (2026-05-29): reverted __hoyShowAll=true default in index.html + stripped
+_recoveredFrom/_revivedFromPilot override tags from the 16 today-batch leads. Now contacted leads leave Hoy
+→ Acción Ahora (normal flow). State: 15/16 now contacted (Scarlett worked the batch overnight), 1 sin-contactar
+remains in Hoy. NOT reset (operator wanted them OUT of Hoy, not made fresh). Bounced-email record preserved in _emailReplaced/_recoveryNote.
