@@ -1,13 +1,29 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-05-29",
+      "source_date": "2026-05-29",
+      "file": "leads-2026-05-29.json",
+      "lead_count": 9,
+      "approved": true,
+      "approved_at": "2026-05-29T00:00:00.000Z",
+      "status": "active",
+      "workspace": "premium_v2.2_puppeteer_verified",
+      "note": "9 verified productoras LATAM. MX:5 + CO:2 + AR:2. All passed activity-probe + canonical-IG audit. Method: cached discovery (HIT, 0 re-discovery spend) → activity-probe drop-dead-sites → WebFetch deep-scrape → Apollo /people/match (17 unlocks total) → contactHunter puppeteer 14-step (captured 3 LinkedIn URLs + 7 IG bios + 4 phones that WebFetch couldn't extract) → canonical-IG audit (cleared 5 Cuerdas, resolved Dual name conflict, swapped out La Productora Audiovisual for PESCA because no canonical IG on own site). Doctrine filters applied: dropped Valeria Jaramillo (Creative Director banned), Diana Montoya (Post Producer borderline), Manuel Cortés (CFO not in accepted list), and entire Dripper Media Group lead (name/email mismatch: Alejandro≠audrey@ + hunter timed out + IG unverified). Avg score 8.0/10. Anchors: LAMUVI Films (Partner-led CO, Club Colombia/Dove), Árbol Media (MX+UY 2007, EP/Partner Pedro Lafferranderie + 2 add'l), Viernes Media (Netflix/Spotify/Adidas/Pepsi/KFC/Starbucks, CEO Hiram + LinkedIn + phone), Televital (TV Azteca/Fox/ESPN/Televisa/Bloomberg/Sky, Managing Dir Moriel + LinkedIn + phone). Mid: KÖHLER Studio (Corona/Coca-Cola/Toyota/BBVA/MercadoLibre), Ucronia (150+ projects, CEO Abril Gonzalez + LinkedIn, full hunter chain), Dual Productora (Grupo Éxito/Sura/Nutresa/ISA/ONU, Juan Musan Director). B-tier: PESCA Productora Audiovisual (canonical IG, swap-in), 5 Cuerdas (commercials/fashion). Email verification: Hunter.io rate-limited this session — Apollo email_status: confirmed is the verification signal for 4 leads (Hiram, Moriel, Lafferranderie, Köhler). Site-published emails for the rest (Robledo, Gonzalez, Musan, role inboxes).",
+      "supply_metrics": {
+        "valid_leads": 9,
+        "methodology": "cache-mine premium-v2.2 + activity-probe + WebFetch + Apollo /people/match x17 + contactHunter puppeteer 14-step + canonical-IG audit"
+      }
+    },
+    {
       "batch_id": "batch-2026-05-28",
       "source_date": "2026-05-28",
       "file": "leads-2026-05-28.json",
       "lead_count": 9,
       "approved": true,
       "approved_at": "2026-05-28T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
+      "archived_at": "2026-05-29T00:00:00.000Z",
       "workspace": "premium_v2.2_latam_heavy_mx_ar",
       "note": "9 elite productoras LATAM-heavy. MX:5 + AR:3 + ES:1. Doctrine #9 PASS (8/9 priority). 0 animation, 0 marketing, 0 events. Avg score 9.11/10. Anchors: Fight Films (40yr, 11 countries, Coca-Cola/Vogue/Samsung/Toyota), Woo Films (Netflix House of Flowers/Pedro Páramo + Disney Onyx Collective first-look), Unlimited Films (43yr Guadalajara since 1982, Tequila San Matías). Mid: Mango Films (25yr, 3 offices CDMX/GDL/Brooklyn, Eduardo Avila CEO), Cactus Cine (Netflix/Red Bull/Amex), Altana Films (32yr, BA/Stgo/MVD, Heineken/Air NZ/Lipton), Traziende Films (23yr, Cada minuto cuenta Prime Video). Backup: Mariachi Films (25 empleados CDMX), Sur Film (production services ES+PT, 3 oficinas Tenerife/BCN/Lisboa). All have personal email primary + IG verified. 23 total emails (avg 2.6/lead). 20 Apollo unlocks (~150 credits, well within subscription headroom). 11 dead-ends archived to rejected.json (now 95).",
       "supply_metrics": {
