@@ -371,10 +371,10 @@
     "_companyNameSource": "domain_canonical",
     "contactName": null,
     "contactTitle": null,
-    "contactEmail": "andy@cinecanibal.com",
+    "contactEmail": null,
     "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
+    "contactConfidence": "no_verified_email",
+    "contactSource": "bounce_recovery_2026-06-01",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/cinecanibal/",
     "instagramHandle": "cinecanibal",
@@ -536,7 +536,7 @@
       "title:brand"
     ],
     "_igVerificationReason": "matched:bio:brand,bio:domain-base,title:brand",
-    "contactPath": "company_fallback",
+    "contactPath": "instagram",
     "tier": "tier2",
     "_streams": [
       "ig",
@@ -596,7 +596,13 @@
     ],
     "keyInsight": "Equipo ultra-compacto (3 personas) manejando largometrajes complejos indica alta necesidad de automatización en procesos administrativos para mantener foco creativo.",
     "source_date": "2026-05-21",
-    "approved": false
+    "approved": false,
+    "_emailStatus": "no_verified_email_available",
+    "additionalContacts": [],
+    "_bouncedEmails": [
+      "andy@cinecanibal.com"
+    ],
+    "_bounceRecoveryNote": "Apollo 0 DMs on cinecanibal.com + cinecanibal.net. Founder Geminiano Pineda on LinkedIn but no email surfaced. Pivots to IG @cinecanibal."
   },
   {
     "companyName": "Animal de Luz",

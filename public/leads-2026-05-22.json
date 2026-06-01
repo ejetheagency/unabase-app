@@ -6,33 +6,20 @@
     "industry": "film",
     "tier": "tier1",
     "contactPath": "decision_maker_email",
-    "contactName": "Vanessa Medrano",
-    "contactTitle": "Director",
-    "contactEmail": "hello@aurea.film",
+    "contactName": "Ariana Laborin Jimenez",
+    "contactTitle": "Film Director",
+    "contactEmail": "ariana@aurea.film",
     "contactPhone": "+52 33 1724 8611",
     "instagramUrl": "https://www.instagram.com/aureafilm",
     "instagramHandle": "aureafilm",
-    "additionalContacts": [
-      {
-        "name": "Antonio Sáizar",
-        "title": "Director"
-      },
-      {
-        "name": "Ariana Laborín",
-        "title": "Director"
-      },
-      {
-        "name": "Teddy Vela",
-        "title": "Director"
-      }
-    ],
+    "additionalContacts": [],
     "companyBrief": "Productora audiovisual con oficinas en CDMX, Los Angeles y Guadalajara. Especializada en producción comercial, campañas digitales y fotografía. 4 directores: Vanessa Medrano, Antonio Sáizar, Ariana Laborín, Teddy Vela.",
     "pitchEmailES": "Hola equipo de Aurea Film! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen entre CDMX, LA y Guadalajara — produccion comercial + campañas digitales — y nos llamo la atencion como manejan tantos proyectos en paralelo entre tres oficinas.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
     "source_date": "2026-05-22",
     "approved": true,
     "readyToSend": true,
     "contactConfidence": "confirmed",
-    "contactSource": "apollo_discovery_webfetch_extraction",
+    "contactSource": "apollo_verified_bounce_recovery_2026-06-01",
     "_discoveryMethod": "apollo_/organizations/search + webfetch /llm-extraction",
     "_operatorVerified": false,
     "emailCercana": "Hola equipo de Aurea Film! Como estan? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo que hacen entre CDMX, LA y Guadalajara — produccion comercial + campañas digitales — y nos llamo la atencion como manejan tantos proyectos en paralelo entre tres oficinas.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay multiples proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de Mexico.\n\nSaludos,\nScarlett",
@@ -47,6 +34,11 @@
     "_igVerificationEvidence": [
       "extracted-from-company-website",
       "handle-matches-company-name"
+    ],
+    "contactLinkedIn": "http://www.linkedin.com/in/ariana-laborin-jimenez-7b158023a",
+    "_emailStatus": "apollo_verified",
+    "_bouncedEmails": [
+      "hello@aurea.film"
     ]
   },
   {
@@ -1117,10 +1109,10 @@
     "_companyNameSource": "domain_canonical",
     "contactName": null,
     "contactTitle": null,
-    "contactEmail": "andy@cinecanibal.com",
+    "contactEmail": null,
     "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
+    "contactConfidence": "no_verified_email",
+    "contactSource": "bounce_recovery_2026-06-01",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/cinecanibal/",
     "instagramHandle": "cinecanibal",
@@ -1282,7 +1274,7 @@
       "title:brand"
     ],
     "_igVerificationReason": "matched:bio:brand,bio:domain-base,title:brand",
-    "contactPath": "company_fallback",
+    "contactPath": "instagram",
     "tier": "tier2",
     "_streams": [
       "ig",
@@ -1347,7 +1339,13 @@
     "_fromYesterdayValidation": true,
     "_rolled_from": "2026-05-21",
     "_rolled_at": "2026-05-22T02:52:34.257Z",
-    "_rolledReason": "Pushed forward into today's Hoy view — was not contacted on original deploy date"
+    "_rolledReason": "Pushed forward into today's Hoy view — was not contacted on original deploy date",
+    "_emailStatus": "no_verified_email_available",
+    "additionalContacts": [],
+    "_bouncedEmails": [
+      "andy@cinecanibal.com"
+    ],
+    "_bounceRecoveryNote": "Apollo 0 DMs on cinecanibal.com + cinecanibal.net. Founder Geminiano Pineda on LinkedIn but no email surfaced. Pivots to IG @cinecanibal."
   },
   {
     "companyName": "Cinepantera",
@@ -1437,12 +1435,12 @@
     "_igVerifiedManually": true,
     "_igVerified": true,
     "_igVerificationReason": "operator-approved",
-    "contactName": "Oscar Kramer",
-    "contactTitle": "Cofundador",
-    "contactEmail": "okramer@ks-films.com",
-    "contactLinkedIn": "https://ar.linkedin.com/in/mat%C3%ADas-mosteirin-41388726",
+    "contactName": "Matias Mosteirin",
+    "contactTitle": "Director General",
+    "contactEmail": "mmosteirin@ks-films.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/mat%c3%adas-mosteirin-41388726",
     "contactConfidence": "confirmed",
-    "contactSource": "ddg_email",
+    "contactSource": "apollo_verified_bounce_recovery_2026-06-01",
     "contactStatus": null,
     "instagramBio": null,
     "instagramFollowers": null,
@@ -1744,7 +1742,25 @@
     "approved": true,
     "_rolled_from": "2026-05-21",
     "_rolled_at": "2026-05-22T02:52:34.257Z",
-    "_rolledReason": "Pushed forward into today's Hoy view — was not contacted on original deploy date"
+    "_rolledReason": "Pushed forward into today's Hoy view — was not contacted on original deploy date",
+    "_emailStatus": "apollo_verified",
+    "additionalContacts": [
+      {
+        "name": "Rodrigo Cala",
+        "title": "Production Director",
+        "email": "rcala@ks-films.com",
+        "linkedin": "http://www.linkedin.com/in/rodrigo-cala-a591a638"
+      },
+      {
+        "name": "Analia Castro",
+        "title": "Production Director",
+        "email": "acastro@ks-films.com",
+        "linkedin": "http://www.linkedin.com/in/anal%c3%ada-castro-3b4b07133"
+      }
+    ],
+    "_bouncedEmails": [
+      "okramer@ks-films.com"
+    ]
   },
   {
     "companyName": "Bengala Films",

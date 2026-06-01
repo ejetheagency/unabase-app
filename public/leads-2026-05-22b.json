@@ -268,43 +268,22 @@
     "country": "Argentina",
     "industry": "film",
     "tier": "tier1",
-    "contactPath": "decision_maker_email",
-    "contactName": "Rubén Viñoles",
-    "contactTitle": "Executive Producer",
-    "contactEmail": "ruben@subterraneafilms.com.ar",
+    "contactPath": "instagram",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": null,
     "instagramUrl": "https://www.instagram.com/subterraneafilms",
     "instagramHandle": "subterraneafilms",
     "instagramFollowers": 1194,
     "apolloCompanyLinkedIn": "https://www.linkedin.com/company/subterranea-films-s.r.l",
-    "additionalContacts": [
-      {
-        "name": "Christoph Behl",
-        "title": "Director",
-        "email": null
-      },
-      {
-        "name": "Diego Lublinsky",
-        "title": "Director",
-        "email": null
-      },
-      {
-        "name": "Julieta Barrientos",
-        "title": "Director",
-        "email": null
-      },
-      {
-        "name": "David Nazareno",
-        "title": "Director",
-        "email": null
-      }
-    ],
+    "additionalContacts": [],
     "companyBrief": "Productora audiovisual en Buenos Aires fundada en 2002. Cine, television, publicidad y proyectos de tecnologia experiencial. Clientes: BBVA, Banco Provincia, Aerolineas Argentinas, Gobierno de la Ciudad de Buenos Aires. Contacto: Ruben Viñoles (Executive Producer).",
     "pitchEmailES": "Hola Ruben! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Subterranea Films — mas de 20 años produciendo cine, TV y publicidad para clientes como BBVA y Aerolineas Argentinas — y nos llamo la atencion como sostienen ese volumen entre formatos tan distintos.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay varios proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region.\n\nSaludos,\nScarlett",
     "source_date": "2026-05-22",
     "approved": true,
     "readyToSend": true,
-    "contactConfidence": "confirmed",
-    "contactSource": "apollo_discovery_webfetch_extraction",
+    "contactConfidence": "no_verified_email",
+    "contactSource": "bounce_recovery_2026-06-01",
     "_discoveryMethod": "apollo_/mixed_companies/search + /people/match + webfetch /llm-extraction",
     "_operatorVerified": true,
     "emailCercana": "Hola Ruben! Como estas? Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Subterranea Films — mas de 20 años produciendo cine, TV y publicidad para clientes como BBVA y Aerolineas Argentinas — y nos llamo la atencion como sostienen ese volumen entre formatos tan distintos.\n\nTrabajamos con mas de 300 productoras en la industria creativa, ayudandoles a ordenar y visualizar presupuestos de produccion sin friccion, especialmente cuando hay varios proyectos en paralelo.\n\nTe muestro en 10 min como lo estan usando otras productoras de la region.\n\nSaludos,\nScarlett",
@@ -320,7 +299,12 @@
       "extracted-from-company-website",
       "handle-matches-company-name"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [],
+    "_emailStatus": "no_verified_email_available",
+    "_bouncedEmails": [
+      "ruben@subterraneafilms.com.ar"
+    ],
+    "_bounceRecoveryNote": "Apollo only returned ruben@ as extrapolated (the bouncing email). Site has no email — only a contact form. Pivots to IG @subterraneafilms."
   },
   {
     "companyName": "Humans Films",

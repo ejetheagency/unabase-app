@@ -10,7 +10,31 @@
     "linkedin": "in/matías-mosteirin-41388726 (Mosteirin — likely real co-founder)",
     "phone": "+54 (11) 4872 1400",
     "action": "Verify okramer@ks-films.com still active. Find Oscar Kramer or Hugo Sigman as named contact.",
-    "note": "Established Argentine productora (Hugo Sigman + Oscar Kramer); already in operator-verified seed list with @kramersigmanfilms IG."
+    "note": "Established Argentine productora (Hugo Sigman + Oscar Kramer); already in operator-verified seed list with @kramersigmanfilms IG.",
+    "contactName": "Matias Mosteirin",
+    "contactTitle": "Director General",
+    "contactEmail": "mmosteirin@ks-films.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/mat%c3%adas-mosteirin-41388726",
+    "contactConfidence": "confirmed",
+    "contactSource": "apollo_verified_bounce_recovery_2026-06-01",
+    "_emailStatus": "apollo_verified",
+    "additionalContacts": [
+      {
+        "name": "Rodrigo Cala",
+        "title": "Production Director",
+        "email": "rcala@ks-films.com",
+        "linkedin": "http://www.linkedin.com/in/rodrigo-cala-a591a638"
+      },
+      {
+        "name": "Analia Castro",
+        "title": "Production Director",
+        "email": "acastro@ks-films.com",
+        "linkedin": "http://www.linkedin.com/in/anal%c3%ada-castro-3b4b07133"
+      }
+    ],
+    "_bouncedEmails": [
+      "okramer@ks-films.com"
+    ]
   },
   {
     "rank": 2,

@@ -760,10 +760,10 @@
     "_companyNameSource": "domain_canonical",
     "contactName": null,
     "contactTitle": null,
-    "contactEmail": "andy@cinecanibal.com",
+    "contactEmail": null,
     "contactLinkedIn": null,
-    "contactConfidence": "website_direct",
-    "contactSource": "website",
+    "contactConfidence": "no_verified_email",
+    "contactSource": "bounce_recovery_2026-06-01",
     "contactStatus": null,
     "instagramUrl": "https://www.instagram.com/cinecanibal/",
     "instagramHandle": "cinecanibal",
@@ -925,7 +925,7 @@
       "title:brand"
     ],
     "_igVerificationReason": "matched:bio:brand,bio:domain-base,title:brand",
-    "contactPath": "company_fallback",
+    "contactPath": "instagram",
     "tier": "tier2",
     "_streams": [
       "ig",
@@ -987,7 +987,13 @@
     "source_date": "2026-05-21",
     "approved": true,
     "_sourceWorkspace": "unabase_mx_test",
-    "_fromYesterdayValidation": true
+    "_fromYesterdayValidation": true,
+    "_emailStatus": "no_verified_email_available",
+    "additionalContacts": [],
+    "_bouncedEmails": [
+      "andy@cinecanibal.com"
+    ],
+    "_bounceRecoveryNote": "Apollo 0 DMs on cinecanibal.com + cinecanibal.net. Founder Geminiano Pineda on LinkedIn but no email surfaced. Pivots to IG @cinecanibal."
   },
   {
     "companyName": "Cinepantera",
@@ -1074,12 +1080,12 @@
     "_igVerifiedManually": true,
     "_igVerified": true,
     "_igVerificationReason": "operator-approved",
-    "contactName": "Oscar Kramer",
-    "contactTitle": "Cofundador",
-    "contactEmail": "okramer@ks-films.com",
-    "contactLinkedIn": "https://ar.linkedin.com/in/mat%C3%ADas-mosteirin-41388726",
+    "contactName": "Matias Mosteirin",
+    "contactTitle": "Director General",
+    "contactEmail": "mmosteirin@ks-films.com",
+    "contactLinkedIn": "http://www.linkedin.com/in/mat%c3%adas-mosteirin-41388726",
     "contactConfidence": "confirmed",
-    "contactSource": "ddg_email",
+    "contactSource": "apollo_verified_bounce_recovery_2026-06-01",
     "contactStatus": null,
     "instagramBio": null,
     "instagramFollowers": null,
@@ -1378,7 +1384,25 @@
       "secundario": "LinkedIn",
       "opcional": "Instagram DM"
     },
-    "approved": true
+    "approved": true,
+    "_emailStatus": "apollo_verified",
+    "additionalContacts": [
+      {
+        "name": "Rodrigo Cala",
+        "title": "Production Director",
+        "email": "rcala@ks-films.com",
+        "linkedin": "http://www.linkedin.com/in/rodrigo-cala-a591a638"
+      },
+      {
+        "name": "Analia Castro",
+        "title": "Production Director",
+        "email": "acastro@ks-films.com",
+        "linkedin": "http://www.linkedin.com/in/anal%c3%ada-castro-3b4b07133"
+      }
+    ],
+    "_bouncedEmails": [
+      "okramer@ks-films.com"
+    ]
   },
   {
     "companyName": "Bengala Films",
