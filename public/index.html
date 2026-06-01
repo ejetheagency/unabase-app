@@ -1470,9 +1470,13 @@ function computeExecutionCycle(rec, lead) {
     paso1.targetKind = 'Instagram DM';
     paso1.targetLabel = '@' + handle;
     paso1.targetLineHTML = `Instagram DM → <strong>@${esc(handle)}</strong>`;
+    // Locked DM copy (2026-06-01 fix): plural voice, references the prior
+    // mail touch. NEVER fall back to lead.emailCercana — emailCercana IS the
+    // first-touch initial pitch; reusing it on a second main channel sends
+    // the same cold-pitch text twice. Per operator-doctrine 2026-06-01,
+    // a second main-channel reach-out is always the follow-up draft.
     paso1.message = (lead.instagramDM && !hasPriorMsg) ? lead.instagramDM
-      : (lead.emailCercana && !hasPriorMsg) ? lead.emailCercana
-      : `Hola, ¿cómo están? Soy ${SENDER} de ${PRODUCT}.\nLes escribimos por Instagram porque les enviamos un mail hace un par de días desde ${PRODUCT} y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.`;
+      : `Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde ${PRODUCT} y queríamos asegurarnos de que no se perdiera 🙌\nSi quieren, se los contamos por acá.`;
   } else if (channel === 'wa' || channel === 'whatsapp') {
     paso1.channelKey = 'wa';
     paso1.title = 'Enviar WhatsApp ahora';
@@ -1481,8 +1485,9 @@ function computeExecutionCycle(rec, lead) {
     paso1.targetKind = 'WhatsApp';
     paso1.targetLabel = phone || '';
     paso1.targetLineHTML = `WhatsApp → <strong>${esc(phone || '')}</strong>`;
+    // Same plural-voice locked copy for IG and WhatsApp per doctrine
     paso1.message = (lead.whatsappMessage && !hasPriorMsg) ? lead.whatsappMessage
-      : `Hola, ¿cómo están? Soy ${SENDER} de ${PRODUCT}.\nLes escribimos por WhatsApp porque les enviamos un mail hace un par de días desde ${PRODUCT} y quería asegurarme de que lo hayan visto.\n\nSi prefieren, les resumo todo por acá sin problema.`;
+      : `Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde ${PRODUCT} y queríamos asegurarnos de que no se perdiera 🙌\nSi quieren, se los contamos por acá.`;
   } else {
     paso1.channelKey = 'email';
     paso1.title = 'Enviar email ahora';
@@ -1505,28 +1510,33 @@ function computeExecutionCycle(rec, lead) {
     else if (hasName && isGeneric) greeting = '¿Es esta la mejor manera de contactar a ' + lead.contactName + '?';
     else greeting = 'Hola equipo de ' + lead.companyName + ',';
     if (isFollowUp) {
-      // Cycle 2+ follow-up. ALWAYS prefer the lead's own emailCercana if present
-      // (it carries the workspace-correct sender + signature). Only when the
-      // lead has no body do we fall back to a workspace-driven generic.
-      // Previously this branch had a UnaBase/Scarlett hardcoded literal that
-      // leaked into EJE follow-ups — now driven by WS.copy.
-      if (lead.emailCercana) {
-        paso1.message = lead.emailCercana;
-      } else {
-        paso1.message = `${greeting}\n\nTe escribí hace unos días sobre ${PRODUCT}. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min.\n\n${SENDER}`;
-      }
+      // Cycle 2+ follow-up (2026-06-01 fix): NEVER reuse lead.emailCercana.
+      // emailCercana IS the first-touch initial pitch; reusing it on cycle 2+
+      // sends the same cold-pitch text twice, which is exactly the bug the
+      // operator flagged. Always use the dedicated short follow-up template.
+      paso1.message = `${greeting}\n\nTe escribí hace unos días sobre ${PRODUCT}. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min.\n\n${SENDER}`;
     } else if (lead.emailCercana) {
       paso1.message = lead.emailCercana;
     } else {
-      // First-touch fallback — only fires when the lead has no AI-rendered email.
-      // For UnaBase this preserves the original budgeting/Excel pitch; for any
-      // other workspace it now uses WS.copy.productDescription instead of the
-      // hardcoded UnaBase pitch. Workspaces should still aim to ship every lead
-      // with lead.emailCercana populated; this is a last-resort safety net.
-      const productDesc = (typeof WS !== 'undefined' && WS.kind === 'client')
-        ? 'En UnaBase armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.'
-        : `${SENDER} del equipo de ${PRODUCT}.`;
-      paso1.message = `Asunto: Una pregunta rápida\n\n${greeting}\n\nEstuve viendo ${lead.companyName}.\n\n${productDesc}\n\n${SENDER}`;
+      // First-touch fallback (2026-06-01 fix): expanded from a 4-line stub
+      // to the FULL locked initial template per doctrine — greeting +
+      // observation + question + pain line + soft pitch + CTA + signoff.
+      // Previously the stub rendered a broken email like the Laberintosfilms
+      // screenshot ("Estuve viendo X. En UnaBase armamos... Scarlett") which
+      // the operator could not send. Only the workspace-correct sender +
+      // product names are interpolated; the rest is the locked copy.
+      const productLine = (typeof WS !== 'undefined' && WS.kind === 'client')
+        ? `En ${PRODUCT} armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.`
+        : `En ${PRODUCT} armamos un sistema justamente para eso.`;
+      paso1.message = `Asunto: Una pregunta rápida sobre cómo manejan presupuestos\n\n`
+        + `${greeting}\n\n`
+        + `Estuve viendo ${lead.companyName} y el tipo de proyectos que manejan.\n\n`
+        + `Te hago una pregunta rápida.\n`
+        + `¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\n`
+        + `Lo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\n`
+        + `${productLine}\n\n`
+        + `Si te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\n`
+        + `${SENDER}`;
     }
   }
   paso1.isDone = (rec.acts || []).includes(paso1.channelKey);
