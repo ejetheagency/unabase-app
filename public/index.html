@@ -1673,7 +1673,19 @@ function openPB(d){
   // Additional decision makers (multi-CEO companies like La Villa).
   // Rendered right after the primary contact so the operator sees the whole
   // leadership surface at a glance, not buried in metadata.
-  const addHtml=(l.additionalContacts||[]).length?`<div class="sec" style="margin-top:10px"><div class="sl">Otros decisores</div>${l.additionalContacts.map(dm=>{
+  const addHtml=(l.additionalContacts||[]).length?`<div class="sec" style="margin-top:10px"><div class="sl">Otros decisores</div>${l.additionalContacts.map(dm0=>{
+    // Field-name normalization — historical batches ship additional contacts
+    // with {name, title, email, linkedin} while newer code expected
+    // {contactName, contactTitle, contactEmail, contactLinkedIn}. Accept BOTH
+    // so every past-batch additional contact renders correctly (was showing
+    // "?" with no email since at least 2026-05-19).
+    const dm = Object.assign({}, dm0, {
+      contactName: dm0.contactName || dm0.name || '',
+      contactTitle: dm0.contactTitle || dm0.title || dm0.role || '',
+      contactEmail: dm0.contactEmail || dm0.email || '',
+      contactPhone: dm0.contactPhone || dm0.phone || '',
+      contactLinkedIn: dm0.contactLinkedIn || dm0.linkedin || dm0.linkedIn || '',
+    });
     let dmChs='';
     if(dm.contactEmail)dmChs+=`<a href="mailto:${esc(dm.contactEmail)}" class="ch ce">${esc(dm.contactEmail)}</a>`;
     const dmIgUrl=dm.instagramUrl||(dm.instagramHandle?`https://www.instagram.com/${dm.instagramHandle}/`:'');
@@ -1689,7 +1701,24 @@ function openPB(d){
     // Suppress the IG Contact-button warning when the profile is private —
     // point to the actionable alternate path instead.
     const manualFlag=(dm.needsManualContactButtonCheck&&!dm.igIsPrivate)?'<div class="dm-flag">⚠️ Revisar botón Contact en IG móvil para email/tel directo</div>':(dm.igIsPrivate?`<div class="dm-flag" style="color:var(--mt)">IG privado${dm.actionablePath?' — '+esc(dm.actionablePath):''}</div>`:'');
-    return `<div class="dm-card"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(dm.contactName||'?')}</strong>${dm.contactTitle?` · <span style="color:var(--pp)">${esc(dm.contactTitle)}</span>`:''}</div><div class="chs" style="margin-top:4px">${dmChs}</div>${manualFlag}</div>`;
+    // Follow-up email draft — when reaching a SECOND contact at the same
+    // company, NEVER use the first-touch initial pitch (the primary already
+    // got that). Generate a short follow-up referencing the prior touch to
+    // the primary. Operator clicks "copiar" to paste into Gmail.
+    const _SENDER = (typeof WS !== 'undefined' && WS.senderName) ? WS.senderName : 'Scarlett';
+    const _PRODUCT = (typeof WS !== 'undefined' && WS.productName) ? WS.productName : 'UnaBase';
+    const dmFirst = (dm.contactName||'').split(/\s+/)[0] || 'equipo';
+    const primaryFirst = l.contactName ? l.contactName.split(/\s+/)[0] : '';
+    const refTo = primaryFirst ? primaryFirst : 'tu equipo';
+    const followUpDraft = dm.contactEmail ? (
+      `Hola ${dmFirst},\n\n`
+      + `Hace unos días le escribí a ${refTo} sobre ${l.companyName || ''} y quería también acercarme directamente a ti.\n\n`
+      + `En ${_PRODUCT} armamos un sistema para ordenar y visualizar presupuestos de producción sin fricción, sobre todo cuando hay varios proyectos y socios firmando decisiones en paralelo.\n\n`
+      + `Si te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\n`
+      + `Saludos,\n${_SENDER}`
+    ) : '';
+    const followUpHtml = followUpDraft ? `<div class="dm-fu" style="margin-top:8px;position:relative;background:#0f0f17;border:1px solid #2a2a3e;border-radius:6px;padding:8px 36px 8px 10px;font-size:11px"><div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--pp);margin-bottom:4px">Follow-up email (segundo contacto)</div><pre style="white-space:pre-wrap;margin:0;font-family:inherit;color:var(--tx)">${esc(followUpDraft)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)" style="top:8px;right:8px">copiar</button></div>` : '';
+    return `<div class="dm-card"><div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(dm.contactName||'?')}</strong>${dm.contactTitle?` · <span style="color:var(--pp)">${esc(dm.contactTitle)}</span>`:''}</div><div class="chs" style="margin-top:4px">${dmChs}</div>${manualFlag}${followUpHtml}</div>`;
   }).join('')}</div>`:'';
 
   // Strategy block — renders only if the lead carries the outreach-strategy
