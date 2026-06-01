@@ -1510,21 +1510,18 @@ function computeExecutionCycle(rec, lead) {
     else if (hasName && isGeneric) greeting = '¿Es esta la mejor manera de contactar a ' + lead.contactName + '?';
     else greeting = 'Hola equipo de ' + lead.companyName + ',';
     if (isFollowUp) {
-      // Cycle 2+ follow-up (2026-06-01 fix): NEVER reuse lead.emailCercana.
-      // emailCercana IS the first-touch initial pitch; reusing it on cycle 2+
-      // sends the same cold-pitch text twice, which is exactly the bug the
-      // operator flagged. Always use the dedicated short follow-up template.
+      // Cycle 2+ follow-up: NEVER reuse lead.emailCercana (which IS the
+      // first-touch initial pitch). Always use the short follow-up template.
       paso1.message = `${greeting}\n\nTe escribí hace unos días sobre ${PRODUCT}. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min.\n\n${SENDER}`;
-    } else if (lead.emailCercana) {
-      paso1.message = lead.emailCercana;
     } else {
-      // First-touch fallback (2026-06-01 fix): expanded from a 4-line stub
-      // to the FULL locked initial template per doctrine — greeting +
-      // observation + question + pain line + soft pitch + CTA + signoff.
-      // Previously the stub rendered a broken email like the Laberintosfilms
-      // screenshot ("Estuve viendo X. En UnaBase armamos... Scarlett") which
-      // the operator could not send. Only the workspace-correct sender +
-      // product names are interpolated; the rest is the locked copy.
+      // First-touch email — ALWAYS use the LOCKED simple template per
+      // operator-doctrine 2026-06-01. The verbose AI-generated emailCercana
+      // bodies that some recent batches shipped (rich client-list pitches
+      // like "Vimos el trabajo de Primo Content produciendo para Apple,
+      // Google, Nike, Levi's...") are too tedious — the operator wants the
+      // short locked template every time. lead.emailCercana is no longer
+      // consulted on cycle 1; the rendered email is deterministic from
+      // {greeting, companyName, PRODUCT, SENDER} only.
       const productLine = (typeof WS !== 'undefined' && WS.kind === 'client')
         ? `En ${PRODUCT} armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.`
         : `En ${PRODUCT} armamos un sistema justamente para eso.`;
