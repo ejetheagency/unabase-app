@@ -1196,6 +1196,33 @@ async function autoLoad(){
       const mr=await fetch('./reports-manifest.json'+cb);
       if(mr.ok){
         const manifest=await mr.json();
+        // 2026-06-02 fix — build the AUTHORITATIVE domain→batch_date map by
+        // walking every batch's lead file. Used by rHist to group leads by
+        // their true deploy date (not the drift-prone lead.source_date).
+        // Phantom dates that aren't in the manifest cannot appear in Historial.
+        try {
+          window._DOMAIN_TO_BATCH_DATE = new Map();
+          for (const b of manifest.batches) {
+            if (!b.file || !b.source_date) continue;
+            try {
+              const lr = await fetch('./' + b.file + cb);
+              if (!lr.ok) continue;
+              const arr = await lr.json();
+              if (!Array.isArray(arr)) continue;
+              arr.forEach(l => {
+                try {
+                  const d = new URL(l.website).hostname.replace(/^www\./, '').toLowerCase();
+                  // First manifest batch wins (most recent — preserves bounce-
+                  // recovery + carry-forward to their CURRENT batch, not their
+                  // original. If the operator wants original, change to: only
+                  // set if !map.has(d).)
+                  if (!window._DOMAIN_TO_BATCH_DATE.has(d)) window._DOMAIN_TO_BATCH_DATE.set(d, b.source_date);
+                } catch {}
+              });
+            } catch {}
+          }
+          console.log('[manifest-date-map] populated for ' + window._DOMAIN_TO_BATCH_DATE.size + ' domains across ' + manifest.batches.length + ' batches');
+        } catch (e) { console.warn('[manifest-date-map] err:', e.message); }
         const active=manifest.batches.find(b=>b.batch_id===manifest.active_batch_id);
         if(active&&active.file){
           const lr=await fetch('./'+active.file+cb);
@@ -2011,14 +2038,33 @@ function rHist(q){
   const all=allR().filter(r=>approved.has(r.id));
   const f=q?all.filter(r=>r.co.toLowerCase().includes(q.toLowerCase())):all;
 
-  // Group by source_date (the date the lead's batch shipped). Hide "skip" leads.
-  // For leads carried-forward, prefer _originallySourceDate so they group with
-  // their ORIGINAL batch, not the day they were bumped into Hoy.
+  // 2026-06-02 fix — date drift / phantom reports / Historial misalignment.
+  // Previously the group date was `l._originallySourceDate || l.source_date`,
+  // which drifts when:
+  //   (a) carry-forward bumps source_date to "today" (in-memory only — but
+  //       localStorage could persist old in-memory state from yesterday's load)
+  //   (b) bounce-recovery patches set source_date to today's recovery date
+  //       (which may not be a real deploy date)
+  //   (c) leads imported with no source_date default to today (gateLeads:1061)
+  // Result: operator saw phantom "reports" (e.g. 2026-06-01) on dates we
+  // never deployed.
+  //
+  // Fix: build a manifest-driven domain→batch_date map ONCE per render, using
+  // _DOMAIN_TO_BATCH_DATE (populated at autoLoad time from manifest.batches +
+  // each batch's leads-*.json). This is the AUTHORITATIVE deploy date for
+  // each lead — it doesn't drift. Fall through to _originallySourceDate /
+  // source_date only when the lead isn't in any manifest batch (rare).
+  const manifestDates = (typeof _DOMAIN_TO_BATCH_DATE !== 'undefined') ? _DOMAIN_TO_BATCH_DATE : null;
   const byDate={};
   f.forEach(r=>{
     const st=cSt(r);if(st==='skip')return;
     const l=leadByDom.get(r.id)||{};
-    const date=l._originallySourceDate||l.source_date||l._batchDate||'(sin fecha)';
+    let date;
+    if (manifestDates && manifestDates.has(r.id)) {
+      date = manifestDates.get(r.id);
+    } else {
+      date = l._originallySourceDate || l.source_date || l._batchDate || '(sin fecha)';
+    }
     if(!byDate[date])byDate[date]=[];
     byDate[date].push(r);
   });
