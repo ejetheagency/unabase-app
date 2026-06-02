@@ -870,7 +870,20 @@ function ago(t){if(!t)return'';const d=Date.now()-new Date(t).getTime();if(d<600
 function cSt(rec){
   if(['replied','meeting','closed','skip'].includes(rec.st))return rec.st;
   const a=rec.acts||[];
-  if(!a.length)return'none';
+  // 2026-06-02 fix — orphaned-actions leak: previously this returned 'none'
+  // when rec.acts was empty, even if messages had been sent. ~31% of recent
+  // sends were creating messages_sent rows without matching actions rows
+  // (action-insert silently failing on phone). This caused contacted leads
+  // to re-appear as "sin contactar" in Hoy/Acción Ahora/Historial. Fix:
+  // count any non-anchor message as proof of contact, then derive a synthetic
+  // action set from msg channels so the playbook-coverage check below works.
+  const realMsgs=(rec.msgs||[]).filter(x=>x.tx!==AUTO_ANCHOR_TX);
+  if(!a.length&&!realMsgs.length)return'none';
+  // Union of channels seen in actions OR messages — both are valid signals
+  const channelsSeen=new Set([
+    ...a,
+    ...realMsgs.map(m=>m.ch||m.channel).filter(Boolean),
+  ]);
   const l=rec.lead;
   // No lead data OR new runtime-template leads (no pre-generated playbook fields) → any action = contacted
   if(!l)return'contacted';
@@ -881,7 +894,7 @@ function cSt(rec){
   if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))av.push('li');
   // If no pre-generated playbook (new runtime-template system), any action = contacted
   if(!av.length)return'contacted';
-  return av.every(x=>a.includes(x))?'contacted':'partial';
+  return av.every(x=>channelsSeen.has(x))?'contacted':'partial';
 }
 function getSteps(l){const s=[];const first=l.contactName?l.contactName.split(/\s+/)[0]:'Equipo';const ig=l.instagramHandle||(l.instagramUrl?(l.instagramUrl.match(/instagram\.com\/([^/]+)/)||[])[1]:null);if(l.emailCercana)s.push({id:'email',label:'Email a '+first,msg:l.emailCercana,ch:'email'});if(l.whatsappMessage&&(l.contactPhone||l.apolloCompanyPhone))s.push({id:'wa',label:'WhatsApp',msg:l.whatsappMessage,ch:'wa'});if(l.instagramDM&&ig)s.push({id:'ig',label:'DM @'+ig,msg:l.instagramDM,ch:'ig'});if(l.linkedinPlaybook&&(l.contactLinkedIn||l.apolloCompanyLinkedIn))s.push({id:'li',label:'LinkedIn',msg:l.linkedinPlaybook.connectionNote||'',ch:'li'});return s}
 
@@ -1495,7 +1508,13 @@ function computeExecutionCycle(rec, lead) {
     paso1.doneLabel = 'Email enviado';
     paso1.targetKind = 'Email';
     paso1.targetLabel = lead.contactEmail || '';
-    const GENERIC_RE = /^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos)@/i;
+    // Generic role-inbox prefixes — these trigger the route-finding greeting
+    // "¿Es esta la mejor manera de contactar a [Full Name]?" instead of the
+    // personal "Hola [First]" greeting. Expanded 2026-06-02 to cover creative
+    // agency role inboxes (video@, ideas@, casting@) and Spanish-language
+    // role naming (cuentas, proyectos, creativo) that earlier batches mis-
+    // routed to personal greeting.
+    const GENERIC_RE = /^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos|video|ideas|casting|rrss|social|proyectos|projects|cuentas|accounts|creativo|creativa|creative|account|operaciones|operations|finance|finanzas|hello\.|hola\.|info\.|contact\.)@/i;
     const fullEmail = (lead.contactEmail || '').toLowerCase();
     const localPart = fullEmail.split('@')[0] || '';
     const isFreeProvider = /@(gmail|hotmail|yahoo|outlook|icloud|live)\./i.test(fullEmail);
@@ -1905,13 +1924,19 @@ async function sM(d,aid,ch){
     msgs.push({ch,tx:msgText,ts});
     tl.push({tp:'msg',desc:'Mensaje por '+ch,ts});
     // CRITICAL: saving a message IS completing the action for that channel
-    let actAdded=false;
-    if(!acts.includes(ch)){acts.push(ch);actAdded=true;tl.push({tp:'act',desc:'Completó: '+ch,ts});}
+    if(!acts.includes(ch)){acts.push(ch);tl.push({tp:'act',desc:'Completó: '+ch,ts});}
     const newSt=cSt({...rec,acts,msgs});
     ur(d,{msgs,tl,acts,st:newSt});ta.value='';
-    // Persist to Supabase with error visibility
+    // Persist to Supabase with error visibility.
+    // 2026-06-02 fix — orphaned-actions leak: previously the action insert was
+    // gated on `actAdded` (i.e. only fired the first time per channel). But
+    // local-state and Supabase can diverge (page refresh while offline, race
+    // with self-heal, etc.), and skipping the insert meant ~31% of recent
+    // sends had no action row, breaking cSt() → status looked like 'sin
+    // contactar'. Always-call sbLogAction is idempotent (it deletes-then-
+    // inserts in Supabase) so retries are safe.
     const msgOk=await sbLogMessage(d,ch,msgText,ts);
-    let actOk=true;if(actAdded)actOk=await sbLogAction(d,ch,true);
+    const actOk=await sbLogAction(d,ch,true);
     console.log(`[${debugId}] DONE`,{d,ch,msgOk,actOk,actAdded,finalMsgCount:(gr(d).msgs||[]).length});
     toast((msgOk&&actOk)?'Mensaje guardado ✓':'⚠️ Guardado local OK, error en Supabase — revisa consola');
     refresh();
