@@ -949,12 +949,12 @@
     "twitterUrl": null,
     "youtubeUrl": null,
     "companyName": "VPro Video",
-    "contactName": "Pedro Villarreal",
+    "contactName": null,
     "facebookUrl": "https://www.facebook.com/vprovideo",
     "companyBrief": "Skip links Skip to primary navigation Skip to content Toggle navigation Más de 25 años contando historias en video Somos una casa productora especializada en crear contenido audiovisual y streaming. Cada proyecto es único, y por eso diseñamos experiencias visuales que hablan el idioma de tu marca y conectan con tu público. + 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 Proyectos + 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 Clientes + 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 Ciudades Testimonios Lic. [Pilot revival web-enrich: Televisa, TV Azteca, Coppel, Bayer, Chevron, Gob. Sinaloa (150+ clientes, 25yr)]",
     "contactEmail": "sofia.ventas@vprovideo.com",
     "contactPhone": "+52 667 698 2799",
-    "contactTitle": "Director General",
+    "contactTitle": null,
     "emailCercana": "Hola Pedro! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de VPro Video y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares. Te escribo por WhatsApp ya que es el canal más directo que vi.\n\nSaludos,\nScarlett",
     "instagramBio": null,
     "instagramUrl": "https://www.instagram.com/vprovideo",
@@ -1011,7 +1011,8 @@
     "_emailVerifiedAt": "2026-05-28T21:25:56.064Z",
     "_emailVerificationSource": "cycle2-deep-scrape:website-mailto",
     "_promotedToTodayAt": "2026-05-28T21:48:31.875Z",
-    "_promotedReason": "bounced-email recovery — treated as new (no contact landed)"
+    "_promotedReason": "bounced-email recovery — treated as new (no contact landed)",
+    "_draftFix_2026_06_02": "cleared contactName — sofia.ventas@ is a different person than the assigned Pedro Villarreal"
   },
   {
     "country": "Argentina",
@@ -1102,7 +1103,7 @@
       "Productora mid-size que necesita herramientas profesionales sin complejidad enterprise"
     ],
     "companyBrief": "Aqua Films es una productora de cine y teatro de Buenos Aires especializada en desarrollo, producción y post producción de largometrajes. Han trabajado con clientes como Facebook.",
-    "contactEmail": "produccion@anchoitafilms.com.ar",
+    "contactEmail": null,
     "contactPhone": null,
     "contactTitle": null,
     "emailCercana": "Hola equipo de Aqua Films! Soy Scarlett del equipo de UnaBase.\n\nVimos el trabajo de Aqua Films y nos llamó la atención el caliber del trabajo audiovisual.\n\nTrabajamos con más de 300 productoras ayudándoles a ordenar y visualizar presupuestos de producción sin fricción.\n\nTe muestro en 10 min cómo lo están usando otras productoras similares. Te escribo por acá ya que es el canal más directo que encontré.\n\nSaludos,\nScarlett",
@@ -1155,7 +1156,7 @@
     "apolloCompanyLinkedIn": null,
     "entertainmentVerified": true,
     "tier": "tier3",
-    "contactPath": "pilot_revival",
+    "contactPath": "instagram",
     "_originalPitchEmailES": "hola equipo de Aqua Films. vi que Aqua Films produce cine y teatro desde Buenos Aires, con clientes como Facebook.\n\ncómo manejan los presupuestos entre las producciones cinematográficas y las teatrales?\n\nen UnaBase vemos este tipo de operación todo el tiempo. hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación. lo vemos 10 min?\n\nScarlett",
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
@@ -1170,7 +1171,8 @@
     "_emailVerifiedAt": "2026-05-28T21:25:56.064Z",
     "_emailVerificationSource": "cycle2-deep-scrape:website-rebrand",
     "_promotedToTodayAt": "2026-05-28T21:48:31.876Z",
-    "_promotedReason": "bounced-email recovery — treated as new (no contact landed)"
+    "_promotedReason": "bounced-email recovery — treated as new (no contact landed)",
+    "_draftFix_2026_06_02": "dropped email — anchoitafilms.com.ar is a different brand from aquafilms; no Apollo DMs available; pivots to IG channel"
   },
   {
     "country": "Argentina",

@@ -701,8 +701,8 @@
       "premium_clients",
       "mid_size_team"
     ],
-    "contactName": "Milton Maestas",
-    "contactTitle": "CEO",
+    "contactName": null,
+    "contactTitle": null,
     "contactEmail": "morenafilms@morenafilms.com",
     "contactLinkedIn": "http://www.linkedin.com/in/milton-maestas",
     "contactConfidence": "website_direct",
@@ -781,7 +781,8 @@
     "source_date": "2026-04-15",
     "approved": true,
     "batch_id": "batch-2026-04-15",
-    "emailCercana": "Hola, esta es la mejor forma de contactar a Milton Maestas?\n\nvi que Morena Films produce largometrajes, documentales y series de TV desde España.\n\ncon tres formatos distintos simultáneos, cómo coordinan los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo, hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación, lo vemos 10 min?\n\nScarlett"
+    "emailCercana": "Hola, esta es la mejor forma de contactar a Milton Maestas?\n\nvi que Morena Films produce largometrajes, documentales y series de TV desde España.\n\ncon tres formatos distintos simultáneos, cómo coordinan los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo, hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación, lo vemos 10 min?\n\nScarlett",
+    "_draftFix_2026_06_02": "cleared contactName — morenafilms@ is a company role inbox, Milton would not receive it"
   },
   {
     "companyName": "Happy Monster",

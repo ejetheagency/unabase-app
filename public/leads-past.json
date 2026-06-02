@@ -11827,8 +11827,8 @@
       "premium_clients",
       "high_ent_signals"
     ],
-    "contactName": "Silver Producciones\nTuve",
-    "contactTitle": "Productor Ejecutivo",
+    "contactName": null,
+    "contactTitle": null,
     "contactEmail": "daniel@latidoproducciones.com",
     "contactLinkedIn": null,
     "contactConfidence": "website_direct",
@@ -11945,7 +11945,8 @@
     "_aiFailReason": "ai_timeout",
     "_aiApiMsg": "canceled",
     "source_date": "2026-05-01",
-    "approved": false
+    "approved": false,
+    "_draftFix_2026_06_02": "cleared contactName — was multi-line corrupted string"
   },
   {
     "companyName": "Mansionstudiofilms",
@@ -18389,7 +18390,7 @@
     ],
     "contactName": "Juan José Borja",
     "contactTitle": "director general",
-    "contactEmail": "%20info@qualia.com.ec",
+    "contactEmail": "info@qualia.com.ec",
     "contactLinkedIn": null,
     "contactConfidence": "website_direct",
     "contactSource": "website",
@@ -18523,10 +18524,11 @@
     ],
     "keyInsight": "13 años de experiencia + cliente Facebook indica volumen de proyectos que requiere organización profesional de presupuestos.",
     "source_date": "2026-04-22",
-    "approved": false
+    "approved": false,
+    "_draftFix_2026_06_02": "stripped leading %20 (URL-encoded space) from email"
   },
   {
-    "companyName": "Publicidad",
+    "companyName": "35mm Publicidad",
     "website": "https://35mm.com.ec",
     "country": "Ecuador",
     "industry": "commercial",
@@ -18554,7 +18556,7 @@
       "premium_clients",
       "high_ent_signals"
     ],
-    "contactName": "Msc. Jonathan Basurto López",
+    "contactName": "Jonathan Basurto López",
     "contactTitle": "Managing Director",
     "contactEmail": "ideas@35mm.com.ec",
     "contactLinkedIn": null,
@@ -18693,7 +18695,8 @@
     ],
     "keyInsight": "Agencia consolidada con cliente premium (Facebook) indica necesidad de herramientas profesionales para manejar presupuestos complejos.",
     "source_date": "2026-04-22",
-    "approved": false
+    "approved": false,
+    "_draftFix_2026_06_02": "renamed company from \"Publicidad\" → \"35mm Publicidad\"; stripped \"Msc.\" academic prefix from name"
   },
   {
     "companyName": "Proshow",
@@ -20048,7 +20051,7 @@
     "approved": false
   },
   {
-    "companyName": "#Inicio ‣ Phototaxia Pictures",
+    "companyName": "Phototaxia Pictures",
     "website": "https://phototaxia.com",
     "country": "Mexico",
     "industry": "film",
@@ -20214,7 +20217,8 @@
     ],
     "keyInsight": "CEO joven de productora en crecimiento con múltiples proyectos premium simultáneos - perfil ideal para adoptar tecnología que le ahorre tiempo operativo.",
     "source_date": "2026-04-21",
-    "approved": false
+    "approved": false,
+    "_draftFix_2026_06_02": "cleaned companyName — removed CMS prefix \"#Inicio ‣ \""
   },
   {
     "companyName": "Portalestudios",
@@ -21677,8 +21681,8 @@
       "multiple_projects",
       "premium_clients"
     ],
-    "contactName": "Main Architect\nAustin",
-    "contactTitle": "CEO",
+    "contactName": null,
+    "contactTitle": null,
     "contactEmail": "inf@vertizedigital.com",
     "contactLinkedIn": null,
     "contactConfidence": "website_direct",
@@ -21822,7 +21826,8 @@
     ],
     "keyInsight": "Cliente de Facebook indica solvencia económica y necesidad de herramientas profesionales para manejar presupuestos de proyectos complejos.",
     "source_date": "2026-04-20",
-    "approved": false
+    "approved": false,
+    "_draftFix_2026_06_02": "cleared contactName — was a title with newline, not a person name"
   },
   {
     "companyName": "Habanero Films",
@@ -25651,7 +25656,7 @@
     "twitterUrl": "https://twitter.com/morenafilms",
     "youtubeUrl": "https://www.youtube.com/user/morenafilmscine",
     "companyName": "Morena Films",
-    "contactName": "Milton Maestas",
+    "contactName": null,
     "facebookUrl": "https://facebook.com/morenafilms",
     "fitVerified": true,
     "nicheReason": "niche_confirmed",
@@ -25659,7 +25664,7 @@
     "companyBrief": null,
     "contactEmail": "morenafilms@morenafilms.com",
     "contactPhone": "(+34) 91 700 27 80",
-    "contactTitle": "CEO",
+    "contactTitle": null,
     "emailCercana": "Hola Milton! Soy Scarlett del equipo de UnaBase.\n\n¿Lograron ver el correo que les envié? Si es que no, les mando un resumen.\n\nSaludos,\nScarlett",
     "instagramBio": "See Instagram photos and videos from Morena Films (@morenafilms)",
     "instagramUrl": "https://www.instagram.com/morenafilms/",
@@ -25703,7 +25708,8 @@
       "forgotten_pilot_lead_reactivated"
     ],
     "_cycle2Context": "MADRID, SPAIN — geo/ICP flag (not LATAM). Feature/content producer; Milton Maestas not verifiable on site. IG/email confirmed.",
-    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z",
+    "_draftFix_2026_06_02": "cleared contactName — morenafilms@ is a company role inbox, Milton would not receive it"
   },
   {
     "country": "Mexico",
@@ -26888,7 +26894,7 @@
       "Canal backup: WhatsApp al número argentino en 48h con mensaje directo"
     ],
     "companyName": "Magma Cine",
-    "contactName": "Juan Pablo Gugliotta",
+    "contactName": null,
     "emailFormal": "Hola Juan,\n\nVi que Magma lleva más de 38 films con Netflix y Amazon.\n\nCómo hacen para no perderse con tantos proyectos a la vez?\n\nEn UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nTe puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett - UnaBase",
     "facebookUrl": null,
     "instagramDM": null,
@@ -26902,7 +26908,7 @@
     "companyBrief": "Magma Cine es una casa productora argentina con más de 30 largos y series, especializada en coproducciones internacionales y búsqueda de financiación. Trabajan con clientes premium como Netflix, Amazon, Fox y han coproducido con países clave del mercado audiovisual mundial.",
     "contactEmail": "nat@magmacine.com.ar",
     "contactPhone": "9 (11) 3782 6354",
-    "contactTitle": "Co-founder & Producer",
+    "contactTitle": null,
     "emailCercana": "Hola equipo de Magma Cine! Soy Scarlett del equipo de UnaBase.\n\n¿Lograron ver el correo que les envié? Si es que no, les mando un resumen.\n\nSaludos,\nScarlett",
     "instagramBio": null,
     "instagramUrl": "https://www.instagram.com/magma.cine/",
@@ -26939,7 +26945,7 @@
       "primario": "email",
       "secundario": "LinkedIn"
     },
-    "contactLinkedIn": "http://www.linkedin.com/in/juan-martin-arauz-9b8198177",
+    "contactLinkedIn": null,
     "instagramHandle": "magma.cine",
     "whatsappMessage": "Juan — vi que Magma lleva más de 38 films con Netflix y Amazon. cómo hacen para no perderse con tantos proyectos a la vez?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
     "linkedinPlaybook": {
@@ -26988,7 +26994,8 @@
       }
     ],
     "_cycle2Context": "Buenos Aires, Argentina; feature/series/doc. Clients Netflix, Amazon, Fox, Movistar, Participant. 2nd domain email juanpablo@magmacine.com.ar (see email plan).",
-    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z"
+    "_cycle2ScrapedAt": "2026-05-28T19:40:46.962Z",
+    "_draftFix_2026_06_02": "cleared contactName — nat@ inbox does not belong to assigned Juan Pablo"
   },
   {
     "country": "Argentina",
