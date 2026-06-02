@@ -1196,33 +1196,36 @@ async function autoLoad(){
       const mr=await fetch('./reports-manifest.json'+cb);
       if(mr.ok){
         const manifest=await mr.json();
-        // 2026-06-02 fix — build the AUTHORITATIVE domain→batch_date map by
-        // walking every batch's lead file. Used by rHist to group leads by
-        // their true deploy date (not the drift-prone lead.source_date).
-        // Phantom dates that aren't in the manifest cannot appear in Historial.
+        // 2026-06-02 fix — build the AUTHORITATIVE manifest-driven pools:
+        //   _DOMAIN_TO_BATCH_DATE: domain → batch's source_date (deploy date)
+        //   _ALL_BATCH_LEADS: domain → full lead object (from its batch file)
+        // Walk EVERY manifest batch's lead file. This makes Historial show all
+        // leads from all batches (contacted + uncontacted) grouped under the
+        // correct deploy date. Phantom dates that aren't in the manifest cannot
+        // appear; missing contacted leads from past batches are now loadable.
+        //
+        // Loads in parallel (~36 small JSON files) so initial render isn't slow.
         try {
           window._DOMAIN_TO_BATCH_DATE = new Map();
-          for (const b of manifest.batches) {
-            if (!b.file || !b.source_date) continue;
-            try {
-              const lr = await fetch('./' + b.file + cb);
-              if (!lr.ok) continue;
-              const arr = await lr.json();
-              if (!Array.isArray(arr)) continue;
-              arr.forEach(l => {
-                try {
-                  const d = new URL(l.website).hostname.replace(/^www\./, '').toLowerCase();
-                  // First manifest batch wins (most recent — preserves bounce-
-                  // recovery + carry-forward to their CURRENT batch, not their
-                  // original. If the operator wants original, change to: only
-                  // set if !map.has(d).)
-                  if (!window._DOMAIN_TO_BATCH_DATE.has(d)) window._DOMAIN_TO_BATCH_DATE.set(d, b.source_date);
-                } catch {}
-              });
-            } catch {}
+          window._ALL_BATCH_LEADS = new Map();
+          const batchFetches = manifest.batches
+            .filter(b => b.file && b.source_date)
+            .map(b => fetch('./' + b.file + cb).then(r => r.ok ? r.json() : null).then(arr => ({ b, arr })).catch(() => ({ b, arr: null })));
+          const results = await Promise.all(batchFetches);
+          for (const { b, arr } of results) {
+            if (!Array.isArray(arr)) continue;
+            arr.forEach(l => {
+              try {
+                const d = new URL(l.website).hostname.replace(/^www\./, '').toLowerCase();
+                if (!window._DOMAIN_TO_BATCH_DATE.has(d)) {
+                  window._DOMAIN_TO_BATCH_DATE.set(d, b.source_date);
+                  window._ALL_BATCH_LEADS.set(d, l);
+                }
+              } catch {}
+            });
           }
-          console.log('[manifest-date-map] populated for ' + window._DOMAIN_TO_BATCH_DATE.size + ' domains across ' + manifest.batches.length + ' batches');
-        } catch (e) { console.warn('[manifest-date-map] err:', e.message); }
+          console.log('[manifest-load] populated ' + window._DOMAIN_TO_BATCH_DATE.size + ' lead→date entries across ' + manifest.batches.length + ' batches');
+        } catch (e) { console.warn('[manifest-load] err:', e.message); }
         const active=manifest.batches.find(b=>b.batch_id===manifest.active_batch_id);
         if(active&&active.file){
           const lr=await fetch('./'+active.file+cb);
@@ -2032,11 +2035,31 @@ function rHist(q){
   const approved=new Set();
   const leadByDom=new Map();
   const consider=(arr)=>arr.forEach(l=>{const d=dom(l.website);if(d){approved.add(d);if(!leadByDom.has(d))leadByDom.set(d,l)}});
+  // Include EVERY lead from EVERY manifest batch — not just TL (current) and
+  // PL (leads-past.json). Previously contacted leads from recent batches
+  // weren't in PL at all, so Historial showed only the carried-forward
+  // (uncontacted) subset. With _ALL_BATCH_LEADS populated at autoLoad time,
+  // every deployed lead is now visible in Historial.
+  if (typeof window._ALL_BATCH_LEADS !== 'undefined' && window._ALL_BATCH_LEADS) {
+    for (const [d, l] of window._ALL_BATCH_LEADS) { approved.add(d); if (!leadByDom.has(d)) leadByDom.set(d, l); }
+  }
   consider(TL);consider(PL);
   if(typeof SEED_PAST!=='undefined'&&SEED_PAST)consider(SEED_PAST);
 
-  const all=allR().filter(r=>approved.has(r.id));
-  const f=q?all.filter(r=>r.co.toLowerCase().includes(q.toLowerCase())):all;
+  // Build items from leadByDom (every approved manifest lead) instead of
+  // allR() (which only includes leads with localStorage records). Past-batch
+  // leads that were never touched on this device wouldn't be in allR() and
+  // would silently disappear from Historial. Now they show with default
+  // record fields (acts/msgs from Supabase via sbLoadAll fold in if present).
+  const all = [];
+  for (const [d, l] of leadByDom) {
+    const r = { ...gr(d) }; // gr returns default-empty record if not in DB
+    if (!r.co) r.co = l.companyName || '';
+    if (!r.id) r.id = d;
+    if (!r.lead) r.lead = l;
+    all.push(r);
+  }
+  const f=q?all.filter(r=>(r.co||'').toLowerCase().includes(q.toLowerCase())):all;
 
   // 2026-06-02 fix — date drift / phantom reports / Historial misalignment.
   // Previously the group date was `l._originallySourceDate || l.source_date`,
