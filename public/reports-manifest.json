@@ -1,19 +1,35 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-06-03",
+      "source_date": "2026-06-03",
+      "file": "leads-2026-06-03.json",
+      "lead_count": 6,
+      "approved": true,
+      "approved_at": "2026-06-03T00:00:00.000Z",
+      "status": "active",
+      "workspace": "premium_v2.2_apollo_verified_only",
+      "note": "6 verified productoras LATAM avg 8.58/10. MX:5 + AR:1 (Pegasus AR+London). Method: cache-mine premium-v2.2 + refined activity-probe (Televital-pattern filter) + WebFetch x30 candidates + Apollo /people/match x14 VERIFIED-ONLY per bounce-recovery doctrine + WebSearch IG fallback + IG follower scrape. Anchors: Jade & Quetzal (CDMX 2 Apollo verified Cofundadores Jesus Silva + Ivonne Lopez Monroy, clientes BYD/Adidas/Smirnoff/Santander/Corona Capital — 9/10), Rodada Films (Ivan Couttolenc EP verified + WebSearch-recovered IG @rodadafilms, clientes ELITE Coca-Cola/KFC/Rappi/Disney/Xbox/Unilever/OPPO/Honor/Bonafont/Tec de Monterrey — 9/10), Pegasus Content (BA+London, Nicolas Dal Farra Co-Founder + Clara Daray Managing Partner Apollo verified — 8.5/10), Atman Producciones (CDMX, Maribel Vivanco CEO verified, 6.6k IG followers el más alto — 8.5/10), Jakob Studio (CDMX, company info@ + Apollo 0 DMs PERO cliente list ad-agency elite Ogilvy/DDB/Publicis/Havas/Wunderman/McDonalds/Toyota/AT&T/Modelo Especial — 8.5/10), Camus Films (Monterrey, Mariale Espinoza EP/Guionista Apollo verified, clientes Gonher/XIGNUX/SP Garza García — 8/10). Apollo total: 14 unlocks (within 15 budget). Doctrine compliance: all 6 named DM accepted-title OR company_email-with-elite-clients, all 6 mandatory IG verified + follower count, zero extrapolated emails per post-bounce doctrine.",
+      "supply_metrics": {
+        "valid_leads": 6,
+        "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY x14 + WebSearch IG fallback + IG follower scrape"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-02",
       "source_date": "2026-06-02",
       "file": "leads-2026-06-02.json",
       "lead_count": 7,
       "approved": true,
       "approved_at": "2026-06-02T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "workspace": "premium_v2.2_apollo_verified_only",
       "note": "7 verified productoras LATAM. AR:5 + MX:2. Average 8.57/10. Method: cache-mine premium-v2.2 (HIT, 0 re-discovery) → refined activity-probe (Televital-pattern filter) → WebFetch x30 candidates → Apollo /people/match x8 unlocks VERIFIED-ONLY per bounce-recovery doctrine → contactHunter puppeteer (7/8 ✓, Mostra timeout — site data used instead) → IG follower scrape. Anchors: Lungo Films (multi-country AR/CO/CL/CR/ES/PE, 4 site DMs + 2 Apollo verified, clients BCP/Pilsen/Tecate/KFC/Zalando/Nicki Nicole/Paulo Londra/Lit Killah/Milo J/Cristal/iPlan/Interbank, 8 directors roster — 9.5/10), CONTROL Studio (Buenos Aires VFX/3D/animation, Nicolas Gonzalez Owner + Pablo Accame EP both Apollo verified, clients K&S/Netflix/Fábula — 9/10), Hippie House Studio (Buenos Aires animation 18yr, Ignacio Sandoval Director Apollo verified, clients Apple/AMC/McDonalds/UNICEF/Banco Macro/LinkedIn/YPF — 9/10), Mostra Cine (Buenos Aires, 2 Managing Directors site-published, Netflix + Martin Scorsese exec credit, 9.3k followers — 8.5/10), Gallo Pinto Films (Mexico, Warner Bros/Adidas/AT&T/Microsoft/Audi/Bimbo/Uber Eats clients, company_email — 8.5/10). Mid: La Perla Cine (Rodrigo Pico Estrada Apollo verified, Jeep/DJI clients — 8/10), Monteroca Producciones (Mexico Querétaro, Enrique Montoya Director — 7.5/10). Dropped from pipeline: Makers Film (7/10 — first-name-only DM weakened it below target). Apollo budget: 8 unlocks (within 15 budget). Doctrine compliance: all 7 named DM with accepted titles, all 7 with mandatory IG verified + follower count, all 7 with verified email source (Apollo verified or website_direct — zero extrapolated emails per the post-bounce doctrine).",
       "supply_metrics": {
         "valid_leads": 7,
         "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY + contactHunter puppeteer + IG follower scrape"
-      }
+      },
+      "archived_at": "2026-06-03T00:00:00.000Z"
     },
     {
       "batch_id": "batch-2026-06-01",
@@ -622,6 +638,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-06-02",
+  "active_batch_id": "batch-2026-06-03",
   "timezone": "America/New_York"
 }
