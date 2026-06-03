@@ -1,19 +1,35 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-06-02",
+      "source_date": "2026-06-02",
+      "file": "leads-2026-06-02.json",
+      "lead_count": 7,
+      "approved": true,
+      "approved_at": "2026-06-02T00:00:00.000Z",
+      "status": "active",
+      "workspace": "premium_v2.2_apollo_verified_only",
+      "note": "7 verified productoras LATAM. AR:5 + MX:2. Average 8.57/10. Method: cache-mine premium-v2.2 (HIT, 0 re-discovery) → refined activity-probe (Televital-pattern filter) → WebFetch x30 candidates → Apollo /people/match x8 unlocks VERIFIED-ONLY per bounce-recovery doctrine → contactHunter puppeteer (7/8 ✓, Mostra timeout — site data used instead) → IG follower scrape. Anchors: Lungo Films (multi-country AR/CO/CL/CR/ES/PE, 4 site DMs + 2 Apollo verified, clients BCP/Pilsen/Tecate/KFC/Zalando/Nicki Nicole/Paulo Londra/Lit Killah/Milo J/Cristal/iPlan/Interbank, 8 directors roster — 9.5/10), CONTROL Studio (Buenos Aires VFX/3D/animation, Nicolas Gonzalez Owner + Pablo Accame EP both Apollo verified, clients K&S/Netflix/Fábula — 9/10), Hippie House Studio (Buenos Aires animation 18yr, Ignacio Sandoval Director Apollo verified, clients Apple/AMC/McDonalds/UNICEF/Banco Macro/LinkedIn/YPF — 9/10), Mostra Cine (Buenos Aires, 2 Managing Directors site-published, Netflix + Martin Scorsese exec credit, 9.3k followers — 8.5/10), Gallo Pinto Films (Mexico, Warner Bros/Adidas/AT&T/Microsoft/Audi/Bimbo/Uber Eats clients, company_email — 8.5/10). Mid: La Perla Cine (Rodrigo Pico Estrada Apollo verified, Jeep/DJI clients — 8/10), Monteroca Producciones (Mexico Querétaro, Enrique Montoya Director — 7.5/10). Dropped from pipeline: Makers Film (7/10 — first-name-only DM weakened it below target). Apollo budget: 8 unlocks (within 15 budget). Doctrine compliance: all 7 named DM with accepted titles, all 7 with mandatory IG verified + follower count, all 7 with verified email source (Apollo verified or website_direct — zero extrapolated emails per the post-bounce doctrine).",
+      "supply_metrics": {
+        "valid_leads": 7,
+        "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY + contactHunter puppeteer + IG follower scrape"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-01",
       "source_date": "2026-06-01",
       "file": "leads-2026-06-01.json",
       "lead_count": 13,
       "approved": true,
       "approved_at": "2026-06-01T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "workspace": "premium_v2.2_recovery_full_chain",
       "note": "9 verified productoras LATAM. AR:4 + MX:4 + CR:1. All 9 with named decision-maker accepted-title, all 9 with mandatory IG verified (2 dead-handle saves via canonical-IG audit: Magnética @magnetica_producciones→@magneticalatam 8.3k, Expansión @expansioncr→@expansiondigitaloficial 2.1k — same pattern as LAMUVI fix from 2026-05-29), all 9 with personal LinkedIn. Method: cached premium-v2.2 (HIT, 0 re-discovery) → refined activity-probe with NEW Televital-pattern filter (drops _oficial IG, broadcast-vendor, equipment-rental hybrid; relaxed niche to allow medios/audio/fotograf) → WebFetch x14 candidates → Apollo /people/match 13 unlocks → contactHunter puppeteer 14-step + founderDeepRecovery → WebSearch LinkedIn fallback (the gold path: filled gaps Apollo missed) → puppeteer IG meta scrape for follower counts → canonical-IG dead-link audit. Anchors: Primo Content (8 offices BA/BCN/Madrid/Stgo/CDMX/SP/Bogotá, 5 Apollo-verified DMs Jaime Vidal Managing Partner + Nicolas Pacheco EP + Cora Rodriguez Lacueva Managing Director + Francesca Gaidolfi Head of Production + Gina Medina Director, clients Apple/Google/Nike/Levi's/Armani/Renault, 34k followers, Cannes/D&AD/One Show Best Production winner), VATO (4 offices, films 15+ countries, CEO Juano Alvarez Apollo verified, clients Coca-Cola/Amazon/Adidas/Telefónica/Dell, 7.8k), VDM Casa Productora (CDMX, Patricio Cutler Director with patricio@ name-match + Andrés Cruz + Emiliano Menéndez Directors per Mexican Film Commission registry, clients Volkswagen/Levi's/Adidas Originals/Oreo, 15k). Mid: La Tuna Group (Monterrey+CDMX 20yr, Alejandro Ochoa EP + Adriana Mendivil Production Director Apollo verified, 9.1k), Magnética Producciones (AR/MX/PY, Martin Repetto Production Director, PepsiCo/Nestlé/Quilmes, 8.3k), Musgo Cine (Mar del Plata + BA, Nicolas Werner Presidente/EP, Netflix-tier Elena Sabe + La Mujer de la Fila + Menem Vuelve). Smaller-but-named: Groncho (Rocio Pichirili Productora Ejecutiva, cine independiente, 2.6k), Expansión Digital Productora (CR, Javier Raaz Head of Production via doctrine recovery — was 'no DM' until WebSearch surfaced him, 2.1k), Atemporall Casa Productora (Alejandra Díaz Co-Fundadora, Sony Music/Nespresso/IQOS/Zona Maco, gmail email = weak signal accepted as fallback, 359). Doctrine filters dropped: 3 Creative/Art Directors banned per title rules (Cynthia Lara + Lola Robledo @La Tuna; Fernando Rodriguez @Magnética), 9 leads dropped at WebFetch stage (HACCE U events, Duck Studios agency-hybrid, DECA events, Kamel Media + TFG Panama agency-hybrids, Sonder + Kligger IG-only no-email, Creax placeholder, FilmFlow DIT vendor), Buenatoma late-dropped (no IG handle exists anywhere). Apollo total: 13 unlocks (within 15 budget). Independent SMTP verify still 0/9 — Hunter.io rate-limited.",
       "supply_metrics": {
         "valid_leads": 9,
         "methodology": "cache-mine premium-v2.2 + refined activity-probe (Televital-pattern filter) + WebFetch + Apollo /people/match x13 + contactHunter puppeteer 14-step + founderDeepRecovery + WebSearch LinkedIn fallback + canonical-IG dead-link audit + puppeteer IG follower scrape"
-      }
+      },
+      "archived_at": "2026-06-02T00:00:00.000Z"
     },
     {
       "batch_id": "batch-2026-05-29",
@@ -606,6 +622,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-06-01",
+  "active_batch_id": "batch-2026-06-02",
   "timezone": "America/New_York"
 }

@@ -586,11 +586,17 @@ function merge(leads){
     const id=dom(l.website);if(!id)return;
     if(!D[id]){
       D[id]={id,co:l.companyName,cn:l.contactName||'',st:'none',acts:[],msgs:[],tl:[],notes:'',lead:l,up:new Date().toISOString()};
-      // Upsert lead to Supabase
-      sbUpsertLead(id,l,false);
     } else {
       D[id].lead=l;D[id].co=l.companyName;if(l.contactName)D[id].cn=l.contactName;
     }
+    // 2026-06-02 fix — ALWAYS upsert to Supabase, not just on first localStorage
+    // insert. The bug: if a device had a lead in localStorage from a prior
+    // session but Supabase never had the row (network error / RLS / etc), the
+    // upsert never fired again and every subsequent action checkbox / message
+    // failed silently with an FK violation. Audit found 8 of 10 active-batch
+    // leads were NEVER in Supabase, causing Scarlett's contacts to land
+    // nowhere. sbUpsertLead uses ON CONFLICT(id) so repeats are cheap.
+    sbUpsertLead(id,l,false);
   });
   sdb(D);
 }
@@ -610,7 +616,7 @@ async function sbUpsertLead(id,l,isHist){
   try{await sb.from('leads').upsert({
     id,company:l.companyName||'',contact_name:l.contactName||null,contact_email:l.contactEmail||null,
     contact_phone:l.contactPhone||null,country:l.country||null,industry:l.industry||null,
-    score:l.unabaseScore||0,source_date:new Date().toISOString().slice(0,10),
+    score:Math.round(l.unabaseScore||0),source_date:new Date().toISOString().slice(0,10),
     is_historical:!!isHist,lead_data:l,updated_at:new Date().toISOString(),
     client_id:CLIENT_ID
   },{onConflict:'id'})}catch(e){console.warn('sb upsert lead:',e.message)}
