@@ -1544,6 +1544,16 @@ function computeExecutionCycle(rec, lead) {
     paso1.doneLabel = 'Email enviado';
     paso1.targetKind = 'Email';
     paso1.targetLabel = lead.contactEmail || '';
+    // 2026-06-03 — CC-the-company modality (operator doctrine):
+    // When the primary contactEmail is personal (e.g., nicolas@brand.com)
+    // and the lead also exposes a company role inbox (info@/contacto@/
+    // hello@/hola@/...), include the company inbox as CC so the brand is
+    // looped in. lead.companyEmail is populated by the build script when
+    // both addresses exist. Renderer surfaces them as Para / CC chips.
+    const ccEmail = lead.companyEmail
+      && lead.companyEmail.toLowerCase() !== (lead.contactEmail || '').toLowerCase()
+      ? lead.companyEmail : null;
+    paso1.ccEmail = ccEmail;
     // Generic role-inbox prefixes — these trigger the route-finding greeting
     // "¿Es esta la mejor manera de contactar a [Full Name]?" instead of the
     // personal "Hola [First]" greeting. Expanded 2026-06-02 to cover creative
@@ -1559,7 +1569,9 @@ function computeExecutionCycle(rec, lead) {
     const isGeneric = !fullEmail || GENERIC_RE.test(fullEmail) || (isFreeProvider && !nameInLocal);
     const hasName = !!lead.contactName;
     const who = (hasName && !isGeneric) ? first : 'equipo';
-    paso1.targetLineHTML = `Email → <strong>${esc(lead.contactEmail || '')}</strong> <span class="step-who">(${esc(who)})</span>`;
+    paso1.targetLineHTML = ccEmail
+      ? `Para: <strong>${esc(lead.contactEmail || '')}</strong> <span class="step-who">(${esc(who)})</span><br><span style="font-size:11px;color:var(--mt)">CC: <strong style="color:var(--tx)">${esc(ccEmail)}</strong> <span class="step-who">(empresa)</span></span>`
+      : `Email → <strong>${esc(lead.contactEmail || '')}</strong> <span class="step-who">(${esc(who)})</span>`;
     let greeting;
     if (hasName && !isGeneric) greeting = isFollowUp ? 'Hola ' + first + ',' : 'Hola ' + first + ', ¿cómo estás?';
     else if (hasName && isGeneric) greeting = '¿Es esta la mejor manera de contactar a ' + lead.contactName + '?';
@@ -1649,7 +1661,14 @@ function openPB(d){
   const scCls=done===total?'sc-done':'sc-none';
 
   let chs='';
-  if(l.contactEmail)chs+=`<a href="mailto:${esc(l.contactEmail)}" class="ch ce">${esc(l.contactEmail)}</a>`;
+  if(l.contactEmail)chs+=`<a href="mailto:${esc(l.contactEmail)}${l.companyEmail&&l.companyEmail.toLowerCase()!==(l.contactEmail||'').toLowerCase()?'?cc='+encodeURIComponent(l.companyEmail):''}" class="ch ce">${esc(l.contactEmail)}</a>`;
+  // 2026-06-03 — CC-the-company modality: when the lead exposes a company role
+  // inbox (info@/contacto@/hello@) separate from the personal primary email,
+  // render it as a CC chip so the operator can copy it into Gmail's CC field
+  // and keep the company looped in.
+  if(l.companyEmail&&l.companyEmail.toLowerCase()!==(l.contactEmail||'').toLowerCase()){
+    chs+=`<a href="mailto:${esc(l.companyEmail)}" class="ch ce" style="opacity:0.85" title="CC empresa">CC: ${esc(l.companyEmail)}</a>`;
+  }
   if(ig)chs+=`<a href="${esc(l.instagramUrl||'')}" target="_blank" class="ch ci">@${esc(ig)}</a>`;
   if(l.founderInstagramHandle&&l.founderInstagramHandle!==ig)chs+=`<a href="${esc(l.founderInstagramUrl||('https://www.instagram.com/'+l.founderInstagramHandle+'/'))}" target="_blank" class="ch ci">@${esc(l.founderInstagramHandle)}</a>`;
   if(l.contactPhone||l.apolloCompanyPhone)chs+=`<span class="ch cph">${esc(l.contactPhone||l.apolloCompanyPhone)}</span>`;
