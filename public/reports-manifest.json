@@ -1,13 +1,29 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-06-04",
+      "source_date": "2026-06-04",
+      "file": "leads-2026-06-04.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-06-04T00:00:00.000Z",
+      "status": "active",
+      "workspace": "premium_v2.2_apollo_verified_only_1k_ig_floor",
+      "note": "10 verified productoras avg 8.60/10. MX:7 + ES:2 (Del Barrio + Microfilm.pro) + CR:1 (Anagram). Method: cache-mine premium-v2.2 + cache-mine spain + refined activity-probe + WebFetch x35 candidates + Apollo /people/match VERIFIED-ONLY x35 + WebSearch IG canonical fallback (Doctrine #1 dead-handle saves) + IG follower scrape x4 batches. NEW CRITERION: 1k IG followers minimum unless insane non-IG social proof — applied to Balassa (320 IG + HBO/Mujeres Asesinas/Intl Emmy nom) and Anagram (864 IG + Apple/DJI/Microsoft 365 clients). CC-the-company modality applied: 5 leads with same-domain role inbox (Del Barrio producciones@, Violeta hola@, Anagram info@, Filmosaurio info@, Microfilm info@). Anchors: Draco Films (Francisco Gonzalez Compean CEO Apollo verified, Amores Perros producer legend — 10/10), Terciopelo Films (7 site-direct DMs, Renne Sotelo Dir of Production Apollo verified — 9.5/10), Del Barrio Productores Spain (Victor Morilla Rivas Head of Dev+EP Apollo verified, clientes HBO Max/Netflix/Disney+/Movistar+/RTVE/La Sexta — shows Lo de Évole/Salvados/No me llame Ternera, 43k IG — 9/10), Violeta Films (Constanza Perez Carrillo Co-Founder Apollo verified + Ana Cardona Managing Partner verified, clientes Doja Cat/Kali Uchis/Danna Paola, 7.9k IG — 9/10), Balassa Films (Alex Balassa CEO + Marisol Mijares EP Apollo verified, HBO/Mujeres Asesinas/Intl Emmy nom — 9/10), Anagram Agency Costa Rica (Diego Luque Founder/CEO + Tomas Portal Managing Director ambos Apollo verified, clientes ELITE Apple/DJI/Microsoft 365/White Claw/Jameson — 8.5/10). Mid: BOBO Producciones (169K IG, ex-OV7 Ari Borovoy founder, company_email fallback — 8/10), Filmosaurio (Ismael Capistran Company Owner Apollo verified — 8/10). Tail: Microfilm.pro Valencia (Toni Puertes Marzal EP Apollo verified, regional CV clients — 7.5/10), INFANTERIA Films Monterrey (10yr/100 proyectos/70 clientes, Apollo banned-titles → company_email — 7.5/10). MALO Casa Productora explored as 11th lead but dropped at audit-gate (jp@malo.film Apollo verified BUT name/email mismatch — Apollo returned 'Juan Justel Seguy' which doesn't match 'jp' localpart and Apollo LinkedIn URL was Esteban Justel, name guess banned per doctrine). Apollo total: ~35 unlocks. Doctrine compliance: 6 named DM accepted-title (Draco/Terciopelo/Del Barrio/Violeta/Balassa/Anagram+Filmosaurio/Microfilm) + 2 company_email fallback (BOBO/INFANTERIA), all 10 mandatory IG verified + follower count, zero extrapolated emails, audit-gate 0/0/0.",
+      "supply_metrics": {
+        "valid_leads": 10,
+        "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY + WebSearch IG canonical fallback + IG follower scrape + 1k-IG-floor with insane-non-IG-proof exception + CC-the-company same-domain role inbox capture"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-03",
       "source_date": "2026-06-03",
       "file": "leads-2026-06-03.json",
       "lead_count": 8,
       "approved": true,
       "approved_at": "2026-06-03T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
+      "archived_at": "2026-06-04T00:00:00.000Z",
       "workspace": "premium_v2.2_apollo_verified_only",
       "note": "6 verified productoras LATAM avg 8.58/10. MX:5 + AR:1 (Pegasus AR+London). Method: cache-mine premium-v2.2 + refined activity-probe (Televital-pattern filter) + WebFetch x30 candidates + Apollo /people/match x14 VERIFIED-ONLY per bounce-recovery doctrine + WebSearch IG fallback + IG follower scrape. Anchors: Jade & Quetzal (CDMX 2 Apollo verified Cofundadores Jesus Silva + Ivonne Lopez Monroy, clientes BYD/Adidas/Smirnoff/Santander/Corona Capital — 9/10), Rodada Films (Ivan Couttolenc EP verified + WebSearch-recovered IG @rodadafilms, clientes ELITE Coca-Cola/KFC/Rappi/Disney/Xbox/Unilever/OPPO/Honor/Bonafont/Tec de Monterrey — 9/10), Pegasus Content (BA+London, Nicolas Dal Farra Co-Founder + Clara Daray Managing Partner Apollo verified — 8.5/10), Atman Producciones (CDMX, Maribel Vivanco CEO verified, 6.6k IG followers el más alto — 8.5/10), Jakob Studio (CDMX, company info@ + Apollo 0 DMs PERO cliente list ad-agency elite Ogilvy/DDB/Publicis/Havas/Wunderman/McDonalds/Toyota/AT&T/Modelo Especial — 8.5/10), Camus Films (Monterrey, Mariale Espinoza EP/Guionista Apollo verified, clientes Gonher/XIGNUX/SP Garza García — 8/10). Apollo total: 14 unlocks (within 15 budget). Doctrine compliance: all 6 named DM accepted-title OR company_email-with-elite-clients, all 6 mandatory IG verified + follower count, zero extrapolated emails per post-bounce doctrine.",
       "supply_metrics": {
@@ -638,6 +654,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-06-03",
+  "active_batch_id": "batch-2026-06-04",
   "timezone": "America/New_York"
 }
