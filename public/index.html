@@ -551,7 +551,7 @@ console.log('[workspace] client_id='+CLIENT_ID+' | source='+ (_urlClient?'url':(
 <div class="wrap">
   <div class="view on" id="v-today">
     <div id="hoyIndicator"></div>
-    <div id="leadL"></div>
+    <div id="leadL"><div class="hoy-loading" style="padding:32px 16px;text-align:center;color:var(--md);font-size:13px;opacity:.7">Cargando leads&hellip;</div></div>
     <div class="empty" id="emptyS" style="display:none"><div class="empty-i">&#9993;</div><div class="empty-t">Listo para ejecutar</div><div class="empty-d">Importa el informe diario.</div><label class="empty-b" style="cursor:pointer">Importar<input type="file" accept=".json" onchange="loadFile(event)" style="display:none"></label></div>
   </div>
   <div class="view" id="v-now"><div id="nowL"></div></div>
@@ -1062,7 +1062,7 @@ function getFollowUp(rec,lead,context){
 }
 
 let PL=[];// past leads
-function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');localStorage.setItem('unabase_active_tab',v);if(v==='hist')loadPast().then(()=>rHist(''));if(v==='now')loadPast().then(()=>renderAccionAhora())}
+function showV(v){document.querySelectorAll('.n-tab').forEach(t=>t.classList.remove('on'));document.querySelectorAll('.view').forEach(e=>e.classList.remove('on'));document.querySelector(`.n-tab[onclick*="${v}"]`).classList.add('on');document.getElementById('v-'+v).classList.add('on');localStorage.setItem('unabase_active_tab',v);if(v==='hist')loadPast().then(()=>rHist(''));if(v==='now')loadPast().then(()=>renderAccionAhora());if(v==='today')renderDay()}
 // Centralized re-render after any state change. Updates all visible action surfaces.
 function refresh(){renderDay();if(typeof renderAccionAhora==='function')renderAccionAhora();}
 function loadFile(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{let raw=JSON.parse(ev.target.result);TL=gateLeads(raw);if(!TL.length&&raw.length){alert('Todas las leads fueron bloqueadas (fecha futura o no aprobadas)');return}ejeClassifyAll(TL);merge(TL);renderDay()}catch(err){alert(err.message)}};r.readAsText(f);e.target.value=''}
