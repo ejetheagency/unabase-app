@@ -1251,6 +1251,17 @@ async function autoLoad(){
             // We query Supabase directly here (not local db()) because the
             // local cache isn't hydrated until merge() runs LATER. We want
             // the truth before deciding what to carry forward.
+            //
+            // ── PATCH 2026-06-08 — PER-BATCH SUPPRESSION FLAG ─────────────
+            // If the active batch entry in manifest has disable_carry_forward:true,
+            // skip the entire carry-forward block. Used when the operator wants
+            // a CLEAN deck (only active-batch leads in Hoy, no spillover from
+            // prior batches). Prior-batch uncontacted leads still surface in
+            // Historial; they just don't crowd Hoy.
+            const suppressCarry = !!active.disable_carry_forward;
+            if (suppressCarry) {
+              console.log('[carry-forward] suppressed via manifest disable_carry_forward flag — clean deck mode');
+            } else
             try {
               const todayET=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})).toISOString().slice(0,10);
               const seenDomains=new Set(raw.map(l=>{try{return new URL(l.website).hostname.replace(/^www\./,'').toLowerCase();}catch{return null;}}).filter(Boolean));
