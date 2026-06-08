@@ -1,13 +1,29 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-06-08",
+      "source_date": "2026-06-08",
+      "file": "leads-2026-06-08.json",
+      "lead_count": 9,
+      "approved": true,
+      "approved_at": "2026-06-08T00:00:00.000Z",
+      "status": "active",
+      "workspace": "premium_v2.2_apollo_verified_only_1k_ig_floor",
+      "note": "9 verified productoras avg 8.50/10 — PRE-BUILT FOR MONDAY 2026-06-08, NOT YET ACTIVE. ES:5 + MX:1 + AR:1 + CR:1 + CO:1. Heavily Spain-weighted because cache-mine spain surfaced 590 untouched candidates and the awards-tier ES productoras dominated. Method: cache-mine premium-v2.2 + cache-mine spain + Apollo /people/match VERIFIED-ONLY x5 rounds (~70 unlocks total) + WebFetch winners + IG follower scrape x3 batches. Anchors: Inicia Films Barcelona (Valerie Delpierre EP, Sundance/Silver Bear/Goya/Cannes Semaine de la Critique tier — 10/10), Seven Islands Film Canary+BCN (Michael Friedl CEO, clientes CBS/Paramount/NCIS/Jack Ryan/Porsche/IKEA/Renault — 9/10), Zebra Producciones (Sara Fernandez-Velasco CEO, TV+cine+teatro 25yr vet, 9.4k IG — 9/10), Pensilvania Films BA (Nicolas Muenzel CEO+EP, 17+ films + 12+ docs — 8.5/10), Lúdica Films CDMX (Cristina Adame EP, clientes Telcel/Pepsi/Nissan/Grupo Modelo/Bancomer — 8.5/10). Mid: Pecado Films Madrid+Málaga (Jose Alba CEO/Producer — 8/10), Citric Box Films CR (Sofi Munoz EP, clientes Red Bull/Pizza Hut/BP — 8/10), Nanouk Films Catalonia (Sergi Cameron EP + Ventura Durall Director — 8/10). Tail: Chirimoya Films CO (Alexandra Yepes Co-Founder/CEO, cine de autor — 7.5/10). CC-the-company modality applied: 4 leads with same-domain role inbox (Lúdica info@, Pecado pecado@, Citric Box produccion@, Chirimoya contacto@). Doctrine compliance: all 9 named DM accepted-title, all 9 mandatory IG verified + follower count ≥1k, zero extrapolated emails. Status=scheduled — operator promotes to active on Monday 2026-06-08.",
+      "supply_metrics": {
+        "valid_leads": 9,
+        "methodology": "cache-mine premium-v2.2 + cache-mine spain + Apollo /people/match VERIFIED-ONLY x70 + WebFetch + IG follower scrape + 1k-IG-floor + CC-the-company same-domain"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-04",
       "source_date": "2026-06-04",
       "file": "leads-2026-06-04.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-04T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
+      "archived_at": "2026-06-08T00:00:00.000Z",
       "workspace": "premium_v2.2_apollo_verified_only_1k_ig_floor",
       "note": "10 verified productoras avg 8.60/10. MX:7 + ES:2 (Del Barrio + Microfilm.pro) + CR:1 (Anagram). Method: cache-mine premium-v2.2 + cache-mine spain + refined activity-probe + WebFetch x35 candidates + Apollo /people/match VERIFIED-ONLY x35 + WebSearch IG canonical fallback (Doctrine #1 dead-handle saves) + IG follower scrape x4 batches. NEW CRITERION: 1k IG followers minimum unless insane non-IG social proof — applied to Balassa (320 IG + HBO/Mujeres Asesinas/Intl Emmy nom) and Anagram (864 IG + Apple/DJI/Microsoft 365 clients). CC-the-company modality applied: 5 leads with same-domain role inbox (Del Barrio producciones@, Violeta hola@, Anagram info@, Filmosaurio info@, Microfilm info@). Anchors: Draco Films (Francisco Gonzalez Compean CEO Apollo verified, Amores Perros producer legend — 10/10), Terciopelo Films (7 site-direct DMs, Renne Sotelo Dir of Production Apollo verified — 9.5/10), Del Barrio Productores Spain (Victor Morilla Rivas Head of Dev+EP Apollo verified, clientes HBO Max/Netflix/Disney+/Movistar+/RTVE/La Sexta — shows Lo de Évole/Salvados/No me llame Ternera, 43k IG — 9/10), Violeta Films (Constanza Perez Carrillo Co-Founder Apollo verified + Ana Cardona Managing Partner verified, clientes Doja Cat/Kali Uchis/Danna Paola, 7.9k IG — 9/10), Balassa Films (Alex Balassa CEO + Marisol Mijares EP Apollo verified, HBO/Mujeres Asesinas/Intl Emmy nom — 9/10), Anagram Agency Costa Rica (Diego Luque Founder/CEO + Tomas Portal Managing Director ambos Apollo verified, clientes ELITE Apple/DJI/Microsoft 365/White Claw/Jameson — 8.5/10). Mid: BOBO Producciones (169K IG, ex-OV7 Ari Borovoy founder, company_email fallback — 8/10), Filmosaurio (Ismael Capistran Company Owner Apollo verified — 8/10). Tail: Microfilm.pro Valencia (Toni Puertes Marzal EP Apollo verified, regional CV clients — 7.5/10), INFANTERIA Films Monterrey (10yr/100 proyectos/70 clientes, Apollo banned-titles → company_email — 7.5/10). MALO Casa Productora explored as 11th lead but dropped at audit-gate (jp@malo.film Apollo verified BUT name/email mismatch — Apollo returned 'Juan Justel Seguy' which doesn't match 'jp' localpart and Apollo LinkedIn URL was Esteban Justel, name guess banned per doctrine). Apollo total: ~35 unlocks. Doctrine compliance: 6 named DM accepted-title (Draco/Terciopelo/Del Barrio/Violeta/Balassa/Anagram+Filmosaurio/Microfilm) + 2 company_email fallback (BOBO/INFANTERIA), all 10 mandatory IG verified + follower count, zero extrapolated emails, audit-gate 0/0/0.",
       "supply_metrics": {
@@ -654,6 +670,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-06-04",
+  "active_batch_id": "batch-2026-06-08",
   "timezone": "America/New_York"
 }
