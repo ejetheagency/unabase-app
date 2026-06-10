@@ -8,7 +8,7 @@
       "approved": true,
       "approved_at": "2026-06-10T00:00:00.000Z",
       "status": "active",
-      "disable_carry_forward": true,
+      "carry_forward_only_from": ["batch-2026-06-09"],
       "workspace": "pool_dispatch_a_tier",
       "note": "10 ELITE productoras LATAM+ES avg 9.70/10 — DISPATCHED FROM POOL pool-a-tier.json. CL:2 + CO:2 + MX:2 + AR:1 + ES:3. Fabula (CL) swapped out pre-deploy at dedup check (already shipped batch-2026-04-15) and replaced with Buendía Estudios ES. Anchors: Buendía Estudios ES (Atresmedia + Movistar+ JV, #1 fiction series producer Spain 2024 — 10/10), Dynamo CO (Netflix Narcos + 100 Years of Solitude — 10/10), Ciudad Lunar CO (Ciro Guerra Embrace of the Serpent Oscar nom — Colombia's first Oscar nom — 10/10), Caponeto MX (Netflix Desenfrenadas + Tengo Miedo Torero Venice — 10/10), Kapow AR (Netflix Envidiosa global hit — 10/10), Tornasol Media ES (10 Goya 2019 + Oscar co-prod — 10/10). Mid: Forastero CL (Sundance Grand Jury Prize La Nana — 9.5/10), Quijote CL (Cannes Un Certain Regard The Settlers — 9.5/10). Tail: Lopez-li Films ES (Goya documentary auteur — 9/10), The Lift MX (Hollywood production services CDMX — 9/10). Pool dispatch — pool-a-tier.json marked 10 leads as dispatched.",
       "supply_metrics": {

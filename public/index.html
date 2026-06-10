@@ -1258,7 +1258,16 @@ async function autoLoad(){
             // a CLEAN deck (only active-batch leads in Hoy, no spillover from
             // prior batches). Prior-batch uncontacted leads still surface in
             // Historial; they just don't crowd Hoy.
+            //
+            // ── PATCH 2026-06-10 — CARRY-FORWARD WHITELIST ────────────────
+            // If the active batch entry has carry_forward_only_from: [batch_id, ...],
+            // carry-forward runs but ONLY pulls from the whitelisted prior batches.
+            // Used when the operator wants a SPECIFIC missed batch's leads to
+            // surface in Hoy alongside the active deck (e.g. yesterday's batch
+            // was deployed late, today's view should show both days). The
+            // standard 30-lead cap still applies.
             const suppressCarry = !!active.disable_carry_forward;
+            const carryWhitelist = Array.isArray(active.carry_forward_only_from) ? active.carry_forward_only_from : null;
             if (suppressCarry) {
               console.log('[carry-forward] suppressed via manifest disable_carry_forward flag — clean deck mode');
             } else
@@ -1273,7 +1282,12 @@ async function autoLoad(){
                 (sbRows||[]).forEach(r=>{ if(r.id) sbStatusMap.set(r.id.toLowerCase(),r.status||'none'); });
               }catch(e){console.warn('[carry-forward] supabase snapshot err:',e.message);}
 
-              const prevBatches=manifest.batches.filter(b=>b.batch_id!==manifest.active_batch_id&&b.file).slice(0,5);
+              let prevBatches=manifest.batches.filter(b=>b.batch_id!==manifest.active_batch_id&&b.file);
+              if (carryWhitelist && carryWhitelist.length) {
+                prevBatches = prevBatches.filter(b => carryWhitelist.includes(b.batch_id));
+                console.log('[carry-forward] whitelist active — only pulling from:', carryWhitelist.join(', '));
+              }
+              prevBatches = prevBatches.slice(0,5);
               const carries=[];
               for(const pb of prevBatches){
                 if(carries.length>=30)break;
