@@ -1,13 +1,30 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-06-11",
+      "source_date": "2026-06-11",
+      "file": "leads-2026-06-11.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-06-11T00:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "10 ELITE productoras balanced ES/LATAM avg 9.15/10 — DISPATCHED FROM POOL pool-a-tier.json. ES:6 + MX:2 + CL:1 + AR:1. Anchors: Mediapro Studio ES (Spain's biggest, 3 EPs Apollo verified at @mediapro.tv — 10/10), Secuoya Studios ES (Brendan Fitzgerald CEO + 3 EPs, Netflix Élite/KAOS/Berlín/Society of the Snow — 10/10), Portocabo ES (Alfonso Blanco Director General, Movistar+ Hierro/Rapa + Apple TV+ Los Enviados — 10/10), La Claqueta PC ES (Olmo Figueredo founder, 32 Goya noms + Oscar selection La Trinchera Infinita + HBO/Netflix/Disney+/Amazon distribution — 9/10), JW Productions ES (Justin Webster + Sumpta Ayuso EP, Netflix Nisman + The End of ETA + Nazi Cartel docs — 9/10), Storyboard Media CL (Gabriela Sandoval + Carlos Núñez founders, SANFIC creator — 9/10), Avalon Cine ES (Madrid arthouse distributor, 46k IG, catálogo 2026 incluye Couture/Alice Winocour — 9/10). Mid: Sopa de Piedra Films MX (José Luis Isoard Arrubarrena Director, Cannes Semaine de la Critique + Morelia + Vancouver festival auteur — 8.5/10), Patagonik Film Group AR (Pablo Bossi founder, Clarín Group + Disney stakeholders, 21k IG — 8.5/10), Invicta Films MX (Javier Gonzalez-Rubio Founder/Managing Partner/EP — 8.5/10). Pool dispatch — pool-a-tier.json marked 10 leads as dispatched. Pre-deploy dedup audit: Aleph Cine (pool-038) flagged as already-shipped May 20 and swapped pre-deploy for JW Productions ES. Pool now: 8 remaining truly-available + 2 already-shipped marked + 30 dispatched.",
+      "supply_metrics": {
+        "valid_leads": 10,
+        "methodology": "pool dispatch from staging/pool-a-tier.json with pre-deploy dedup audit (Aleph Cine flagged as already-shipped and swapped for JW Productions)"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-10",
       "source_date": "2026-06-10",
       "file": "leads-2026-06-10.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-10T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
+      "archived_at": "2026-06-11T00:00:00.000Z",
       "carry_forward_only_from": ["batch-2026-06-09"],
       "workspace": "pool_dispatch_a_tier",
       "note": "10 ELITE productoras LATAM+ES avg 9.70/10 — DISPATCHED FROM POOL pool-a-tier.json. CL:2 + CO:2 + MX:2 + AR:1 + ES:3. Fabula (CL) swapped out pre-deploy at dedup check (already shipped batch-2026-04-15) and replaced with Buendía Estudios ES. Anchors: Buendía Estudios ES (Atresmedia + Movistar+ JV, #1 fiction series producer Spain 2024 — 10/10), Dynamo CO (Netflix Narcos + 100 Years of Solitude — 10/10), Ciudad Lunar CO (Ciro Guerra Embrace of the Serpent Oscar nom — Colombia's first Oscar nom — 10/10), Caponeto MX (Netflix Desenfrenadas + Tengo Miedo Torero Venice — 10/10), Kapow AR (Netflix Envidiosa global hit — 10/10), Tornasol Media ES (10 Goya 2019 + Oscar co-prod — 10/10). Mid: Forastero CL (Sundance Grand Jury Prize La Nana — 9.5/10), Quijote CL (Cannes Un Certain Regard The Settlers — 9.5/10). Tail: Lopez-li Films ES (Goya documentary auteur — 9/10), The Lift MX (Hollywood production services CDMX — 9/10). Pool dispatch — pool-a-tier.json marked 10 leads as dispatched.",
@@ -705,6 +722,6 @@
       "supply_metrics": null
     }
   ],
-  "active_batch_id": "batch-2026-06-10",
+  "active_batch_id": "batch-2026-06-11",
   "timezone": "America/New_York"
 }
