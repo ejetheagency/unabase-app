@@ -580,6 +580,54 @@ function ur(id,u){
 
 function allR(){return Object.values(db()).filter(r=>r.co)}
 
+// ═══ PHASE A 2026-06-12 — MARK CHANNEL INVALID ═══
+// Operator-flagged channels (wrong account / bounced / blocked / etc) get
+// stored on the lead record so the cycle engine (getFollowUp) skips them
+// in future steps. localStorage-only for v1 — per-device, no Supabase
+// schema migration required. Reversible: unmkInvalid removes the flag.
+//
+// Storage shape: rec.invalidChannels = [{channel:'ig', reason:'wrong-account', ts:'2026-06-12...'}]
+function mkInvalid(domId, channel, reason){
+  const D=db(); const r=D[domId]; if(!r)return;
+  r.invalidChannels = (r.invalidChannels||[]).filter(x=>x.channel!==channel);
+  r.invalidChannels.push({channel, reason: reason||'sin-detalle', ts: new Date().toISOString()});
+  r.up = new Date().toISOString();
+  D[domId]=r; sdb(D);
+  console.log('[mkInvalid] '+domId+' channel='+channel+' reason='+reason);
+}
+function unmkInvalid(domId, channel){
+  const D=db(); const r=D[domId]; if(!r)return;
+  r.invalidChannels = (r.invalidChannels||[]).filter(x=>x.channel!==channel);
+  r.up = new Date().toISOString();
+  D[domId]=r; sdb(D);
+}
+function isChannelInvalid(rec, channel){
+  return !!(rec && (rec.invalidChannels||[]).some(x=>x.channel===channel));
+}
+function promptMarkInvalid(domId, channel){
+  const labels={email:'Email', ig:'Instagram DM', wa:'WhatsApp', li:'LinkedIn'};
+  const chLabel = labels[channel] || channel;
+  const reasons = {
+    'wrong-account':'Cuenta equivocada / no es la empresa',
+    'no-dms':'No acepta DMs / privado',
+    'bounced':'Email rebotó',
+    'blocked':'Bloqueado por el usuario',
+    'unreachable':'Contacto inalcanzable',
+    'other':'Otro'
+  };
+  const reasonKey = prompt('¿Por qué marcar '+chLabel+' como inválido?\n\nEscribe una de estas:\n'+Object.entries(reasons).map(([k,v])=>`  ${k} — ${v}`).join('\n'));
+  if (!reasonKey) return;
+  mkInvalid(domId, channel, reasons[reasonKey.trim()] || reasonKey.trim());
+  if (typeof openPB === 'function') openPB(domId);
+  if (typeof refresh === 'function') refresh();
+}
+function clearInvalid(domId, channel){
+  if (!confirm('¿Volver a habilitar este canal?')) return;
+  unmkInvalid(domId, channel);
+  if (typeof openPB === 'function') openPB(domId);
+  if (typeof refresh === 'function') refresh();
+}
+
 function merge(leads){
   const D=db();
   leads.forEach(l=>{
@@ -1014,13 +1062,17 @@ function getFollowUp(rec,lead,context){
     // Cycle 1: IG at +48h (only if handle exists), then main email at +168h
     const igDone=msgs.some(m=>m.ch==='ig'||m.ch==='instagram');
     const hasIg=!!(lead&&(lead.instagramHandle||lead.instagramUrl));
-    if(!igDone&&hasIg){nextStep='DM Instagram';channel='ig';dueMs=anchorTs+ALT_DELAY;}
+    // PHASE A 2026-06-12: skip IG if operator marked it invalid (wrong account / no DMs / etc)
+    const igInvalid=isChannelInvalid(rec,'ig');
+    if(!igDone&&hasIg&&!igInvalid){nextStep='DM Instagram';channel='ig';dueMs=anchorTs+ALT_DELAY;}
     else{nextStep='Follow-up email (ciclo 2)';channel='email';dueMs=anchorTs+CYCLE_LEN;}
   }else if(cycleNum===2){
     // Cycle 2: WhatsApp at +48h (only if phone exists), then main email at +168h
     const waDone=msgs.some(m=>(m.ch==='wa'||m.ch==='whatsapp')&&new Date(m.ts).getTime()>=lastMainTs);
     const hasPhone=!!(lead&&(lead.contactPhone||lead.apolloCompanyPhone));
-    if(!waDone&&hasPhone){nextStep='WhatsApp';channel='wa';dueMs=lastMainTs+ALT_DELAY;}
+    // PHASE A 2026-06-12: skip WhatsApp if operator marked invalid
+    const waInvalid=isChannelInvalid(rec,'wa');
+    if(!waDone&&hasPhone&&!waInvalid){nextStep='WhatsApp';channel='wa';dueMs=lastMainTs+ALT_DELAY;}
     else{nextStep='Follow-up email (ciclo 3)';channel='email';dueMs=lastMainTs+CYCLE_LEN;}
   }else if(cycleNum<=4){
     // Cycles 3-4: only main every 7 days
@@ -1686,7 +1738,16 @@ function openPB(d){
   const scCls=done===total?'sc-done':'sc-none';
 
   let chs='';
-  if(l.contactEmail)chs+=`<a href="mailto:${esc(l.contactEmail)}${l.companyEmail&&l.companyEmail.toLowerCase()!==(l.contactEmail||'').toLowerCase()?'?cc='+encodeURIComponent(l.companyEmail):''}" class="ch ce">${esc(l.contactEmail)}</a>`;
+  // PHASE A 2026-06-12: render Invalid-channel markers next to each chip.
+  // Operator clicks the small ✕ to flag a channel as bad. Cycle engine
+  // (getFollowUp) skips invalidated channels going forward.
+  const _chBadge = (ch) => isChannelInvalid(rec, ch)
+    ? `<span class="ch-inv-flag" onclick="event.stopPropagation();clearInvalid('${d}','${ch}')" title="Canal marcado inválido — clic para reactivar" style="display:inline-block;margin-left:4px;padding:1px 5px;background:rgba(239,68,68,0.15);color:var(--rd);border-radius:3px;font-size:10px;cursor:pointer;border:1px solid rgba(239,68,68,0.3)">✗ inválido</span>`
+    : `<button onclick="event.stopPropagation();promptMarkInvalid('${d}','${ch}')" title="Marcar este canal como inválido" style="background:transparent;border:none;color:var(--md);opacity:.4;cursor:pointer;padding:0 4px;margin-left:2px;font-size:10px">✕</button>`;
+  const _chWrap = (ch, chipHtml) => isChannelInvalid(rec, ch)
+    ? `<span style="opacity:0.45;text-decoration:line-through">${chipHtml}</span>${_chBadge(ch)}`
+    : `${chipHtml}${_chBadge(ch)}`;
+  if(l.contactEmail)chs+=_chWrap('email',`<a href="mailto:${esc(l.contactEmail)}${l.companyEmail&&l.companyEmail.toLowerCase()!==(l.contactEmail||'').toLowerCase()?'?cc='+encodeURIComponent(l.companyEmail):''}" class="ch ce">${esc(l.contactEmail)}</a>`);
   // 2026-06-03 — CC-the-company modality: when the lead exposes a company role
   // inbox (info@/contacto@/hello@) separate from the personal primary email,
   // render it as a CC chip so the operator can copy it into Gmail's CC field
@@ -1694,10 +1755,10 @@ function openPB(d){
   if(l.companyEmail&&l.companyEmail.toLowerCase()!==(l.contactEmail||'').toLowerCase()){
     chs+=`<a href="mailto:${esc(l.companyEmail)}" class="ch ce" style="opacity:0.85" title="CC empresa">CC: ${esc(l.companyEmail)}</a>`;
   }
-  if(ig)chs+=`<a href="${esc(l.instagramUrl||'')}" target="_blank" class="ch ci">@${esc(ig)}</a>`;
+  if(ig)chs+=_chWrap('ig',`<a href="${esc(l.instagramUrl||'')}" target="_blank" class="ch ci">@${esc(ig)}</a>`);
   if(l.founderInstagramHandle&&l.founderInstagramHandle!==ig)chs+=`<a href="${esc(l.founderInstagramUrl||('https://www.instagram.com/'+l.founderInstagramHandle+'/'))}" target="_blank" class="ch ci">@${esc(l.founderInstagramHandle)}</a>`;
-  if(l.contactPhone||l.apolloCompanyPhone)chs+=`<span class="ch cph">${esc(l.contactPhone||l.apolloCompanyPhone)}</span>`;
-  if(l.contactLinkedIn||l.apolloCompanyLinkedIn)chs+=`<a href="${esc(l.contactLinkedIn||l.apolloCompanyLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`;
+  if(l.contactPhone||l.apolloCompanyPhone)chs+=_chWrap('wa',`<span class="ch cph">${esc(l.contactPhone||l.apolloCompanyPhone)}</span>`);
+  if(l.contactLinkedIn||l.apolloCompanyLinkedIn)chs+=_chWrap('li',`<a href="${esc(l.contactLinkedIn||l.apolloCompanyLinkedIn)}" target="_blank" class="ch cl">LinkedIn</a>`);
   // If primary needs a manual Contact-button check (no personal email/phone surfaced yet),
   // flag it inline. BUT if the IG profile is private (igIsPrivate), the Contact
   // button path is unreachable — suppress the warning and point to LinkedIn/press.
