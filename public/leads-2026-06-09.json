@@ -352,9 +352,9 @@
     "contactTitle": "Owner",
     "contactEmail": "acastro@magoofilms.com",
     "companyEmail": "info@magoofilms.com",
-    "instagramUrl": "https://www.instagram.com/magoofilms/",
-    "instagramHandle": "magoofilms",
-    "instagramFollowers": 114,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramFollowers": null,
     "apolloCompanyLinkedIn": null,
     "additionalContacts": [],
     "companyBrief": "Casa productora costarricense fundada 2011. Adolfo Castro Castro Owner con email personal Apollo verified. CC role inbox info@magoofilms.com (same domain ✓). Servicios full-stack: producción audiovisual, rodaje, edición + postproducción, fotografía, gestión de redes sociales. Clientes BLUE-CHIP INSANE: Forbes (global media), ESPN (deportes global), Banco LAFISE (banca regional CR/CA), MSD (pharma), Promerica, INS, UNED, Sinart, Florex, Total Green, Veromatic, Almacenes El Rey, PNG, Zoom, Química Verde. Phone +506 8694-6031 + WhatsApp +506 7253-5613. IG @magoofilms 114 followers (sub-1k aceptado vía Forbes/ESPN/Banco LAFISE insane non-IG proof exception — tier client list compensa IG bajo).",
@@ -370,6 +370,12 @@
     "contactPhone": "+506 8694 6031",
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-09"
+    "_dispatched_batch_id": "batch-2026-06-09",
+    "_priorInstagram": {
+      "handle": "magoofilms",
+      "url": "https://www.instagram.com/magoofilms/",
+      "followers": 114,
+      "reason": "IG audit 2026-06-12: account confirmed company-owned but 0 posts = placeholder, not DM-receivable. Strip to skip IG cycle step."
+    }
   }
 ]

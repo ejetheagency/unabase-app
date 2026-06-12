@@ -267,9 +267,9 @@
     "contactName": null,
     "contactTitle": null,
     "contactEmail": "tornasol@tornasolmedia.com",
-    "instagramUrl": "https://www.instagram.com/tornasolmedia/",
-    "instagramHandle": "tornasolmedia",
-    "instagramFollowers": 6,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramFollowers": null,
     "apolloCompanyLinkedIn": null,
     "additionalContacts": [
       {
@@ -301,7 +301,13 @@
     "contactPhone": "+34 911 023 024",
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-10"
+    "_dispatched_batch_id": "batch-2026-06-10",
+    "_priorInstagram": {
+      "handle": "tornasolmedia",
+      "url": "https://www.instagram.com/tornasolmedia/",
+      "followers": 6,
+      "reason": "IG audit 2026-06-12: account confirmed company-owned but 0 posts = placeholder, not DM-receivable. Strip to skip IG cycle step."
+    }
   },
   {
     "companyName": "López-li Films",
