@@ -1656,7 +1656,11 @@ function computeExecutionCycle(rec, lead) {
     if (isFollowUp) {
       // Cycle 2+ follow-up: NEVER reuse lead.emailCercana (which IS the
       // first-touch initial pitch). Always use the short follow-up template.
-      paso1.message = `${greeting}\n\nTe escribí hace unos días sobre ${PRODUCT}. Quería ver si tuviste chance de revisarlo.\n\nSi prefieres, podemos hacer una llamada rápida de 10 min.\n\n${SENDER}`;
+      // PHASE B 2026-06-12 — operator-doctrine: locked casual follow-up copy.
+      // Verbatim from operator (exact wording she wants to send):
+      //   "hey, te habla scarlett desde una base solo pasaba para preguntarte
+      //    que pensaste del email que te enviamos. quedo atenta"
+      paso1.message = `${greeting}\n\nTe habla ${SENDER} desde ${PRODUCT}, solo pasaba para preguntarte qué pensaste del email que te enviamos.\n\nQuedo atenta.\n\n${SENDER}`;
     } else {
       // First-touch email — ALWAYS use the LOCKED simple template per
       // operator-doctrine 2026-06-01. The verbose AI-generated emailCercana
