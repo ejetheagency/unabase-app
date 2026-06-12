@@ -205,8 +205,18 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 
 .sec{margin-bottom:12px}
 .sl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--dm);margin-bottom:4px}
-.chs{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px}
+.chs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px;align-items:center}
 .ch{font-size:10px;padding:3px 10px;border-radius:10px;font-weight:600}
+/* Phase A — discoverable "mark bad" affordance on every contact chip */
+.ch-wrap{display:inline-flex;align-items:center;gap:4px;padding:2px;border-radius:12px;transition:background .15s}
+.ch-wrap:hover{background:rgba(239,68,68,.06)}
+.ch-strike{display:inline-flex;align-items:center;gap:4px;opacity:.5;text-decoration:line-through}
+.ch-mark-bad{font-size:10px;padding:3px 8px;border-radius:10px;font-weight:600;background:rgba(239,68,68,.08);color:#f87171;border:1px solid rgba(239,68,68,.32);cursor:pointer;letter-spacing:.2px;transition:.15s}
+.ch-mark-bad:hover{background:rgba(239,68,68,.18);color:#fca5a5;border-color:rgba(239,68,68,.55);transform:translateY(-1px)}
+.ch-inv-flag{display:inline-block;font-size:10px;padding:3px 8px;border-radius:10px;font-weight:600;background:rgba(239,68,68,.18);color:#f87171;border:1px solid rgba(239,68,68,.4);cursor:pointer;letter-spacing:.2px}
+.ch-inv-flag:hover{background:rgba(239,68,68,.28);color:#fca5a5}
+.ch-bad-hint{font-size:10px;color:var(--mt);margin-bottom:8px;letter-spacing:.2px;padding:6px 9px;background:rgba(239,68,68,.04);border:1px dashed rgba(239,68,68,.18);border-radius:6px}
+.ch-bad-hint strong{color:#f87171;font-weight:700}
 .ce{background:#0a1f12;color:var(--gn2);border:1px solid #166534}
 .ci{background:#150a28;color:#d8b4fe;border:1px solid #6d28d9}
 .cw{background:#0a1f12;color:var(--teal);border:1px solid #0d9488}
@@ -1794,15 +1804,17 @@ function openPB(d){
   const scCls=done===total?'sc-done':'sc-none';
 
   let chs='';
-  // PHASE A 2026-06-12: render Invalid-channel markers next to each chip.
-  // Operator clicks the small ✕ to flag a channel as bad. Cycle engine
-  // (getFollowUp) skips invalidated channels going forward.
+  // PHASE A 2026-06-12 (revised PM): render Invalid-channel markers next to
+  // each chip. Operator clicks the visible "✗ Marcar mal" pill to flag a
+  // channel as bad — clear discoverable button, not a subtle hover-only ✕
+  // that the operator couldn't find. Cycle engine (getFollowUp) skips
+  // invalidated channels going forward.
   const _chBadge = (ch) => isChannelInvalid(rec, ch)
-    ? `<span class="ch-inv-flag" onclick="event.stopPropagation();clearInvalid('${d}','${ch}')" title="Canal marcado inválido — clic para reactivar" style="display:inline-block;margin-left:4px;padding:1px 5px;background:rgba(239,68,68,0.15);color:var(--rd);border-radius:3px;font-size:10px;cursor:pointer;border:1px solid rgba(239,68,68,0.3)">✗ inválido</span>`
-    : `<button onclick="event.stopPropagation();promptMarkInvalid('${d}','${ch}')" title="Marcar este canal como inválido" style="background:transparent;border:none;color:var(--md);opacity:.4;cursor:pointer;padding:0 4px;margin-left:2px;font-size:10px">✕</button>`;
+    ? `<span class="ch-inv-flag" onclick="event.stopPropagation();clearInvalid('${d}','${ch}')" title="Canal marcado inválido — clic para reactivar">✗ inválido · reactivar</span>`
+    : `<button class="ch-mark-bad" onclick="event.stopPropagation();promptMarkInvalid('${d}','${ch}')" title="Marcar este contacto como incorrecto / no responde">✗ marcar mal</button>`;
   const _chWrap = (ch, chipHtml) => isChannelInvalid(rec, ch)
-    ? `<span style="opacity:0.45;text-decoration:line-through">${chipHtml}</span>${_chBadge(ch)}`
-    : `${chipHtml}${_chBadge(ch)}`;
+    ? `<span class="ch-strike">${chipHtml}</span>${_chBadge(ch)}`
+    : `<span class="ch-wrap">${chipHtml}${_chBadge(ch)}</span>`;
   if(l.contactEmail)chs+=_chWrap('email',`<a href="mailto:${esc(l.contactEmail)}${l.companyEmail&&l.companyEmail.toLowerCase()!==(l.contactEmail||'').toLowerCase()?'?cc='+encodeURIComponent(l.companyEmail):''}" class="ch ce">${esc(l.contactEmail)}</a>`);
   // 2026-06-03 — CC-the-company modality: when the lead exposes a company role
   // inbox (info@/contacto@/hello@) separate from the personal primary email,
@@ -1985,8 +1997,11 @@ function openPB(d){
 
   // Contact accordion body — moved from top-of-card to collapsed accordion so
   // it stops competing visually with the action.
+  // PHASE A hint (2026-06-12 PM): operator missed the small ✕ on each chip,
+  // so surface an explicit hint right above the chips explaining the affordance.
   const contactoAccBody=`<div class="acc-body">
     <div class="lh-sub" style="text-align:left;font-size:12px"><strong>${esc(name)}</strong>${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
+    <div class="ch-bad-hint" style="margin-top:8px">¿Algún contacto está incorrecto, no responde, o es la cuenta equivocada? Tocá <strong>✗ marcar mal</strong> al lado del chip → el sistema lo descarta del ciclo.</div>
     <div class="chs" style="margin-top:6px">${chs}</div>
     ${primaryManualFlag}
     ${addHtml||''}
