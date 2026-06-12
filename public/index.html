@@ -146,6 +146,24 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .aa-pager-info .aa-pager-page{color:#fff;font-weight:700}
 .aa-pager-info .aa-pager-total{color:var(--ac);margin-left:4px}
 @media(max-width:600px){.aa-pager{gap:8px;padding:10px}.aa-pager-btn{padding:6px 10px;font-size:11px}.aa-pager-info{font-size:10px}}
+/* Loading state — shows while leads fetch from manifest/Supabase so the
+   operator knows the empty grid is loading, not a bug. */
+.hoy-loading,.aa-loading{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:80px 20px;color:var(--mt);font-size:13px;letter-spacing:.3px;grid-column:1/-1}
+.spinner{width:36px;height:36px;border:3px solid rgba(212,160,23,.18);border-top-color:var(--ac);border-radius:50%;animation:spin .85s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* Anchor-uncertain calibration step — replaces paso1's first-touch pitch
+   when operator marked email as sent but the cycle has no timestamp to
+   compute follow-ups from. One-click resolution surfaces the cycle. */
+.cal-step{border:1px solid rgba(245,158,11,.45);background:linear-gradient(180deg,rgba(245,158,11,.05),rgba(245,158,11,.02));border-radius:10px;padding:14px 16px;margin:0 0 14px}
+.cal-step-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.cal-step-icon{font-size:18px}
+.cal-step-title{font-size:13px;font-weight:700;color:var(--t);letter-spacing:-.1px}
+.cal-step-desc{font-size:12px;color:var(--md);line-height:1.5;margin-bottom:12px}
+.cal-btns{display:flex;gap:7px;flex-wrap:wrap}
+.cal-btn{background:rgba(212,160,23,.12);color:var(--ac);border:1px solid rgba(212,160,23,.3);padding:7px 12px;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer;transition:.15s}
+.cal-btn:hover{background:rgba(212,160,23,.22);transform:translateY(-1px)}
+.cal-btn.cal-undo{background:transparent;color:var(--mt);border-color:rgba(255,255,255,.1)}
+.cal-btn.cal-undo:hover{background:rgba(239,68,68,.1);color:#f87171;border-color:rgba(239,68,68,.3)}
 /* NEXT ACTION block — single source of truth in playbook */
 .next-action{background:linear-gradient(135deg,rgba(212,160,23,.04),rgba(255,255,255,.01));border:1px solid var(--bd2);border-radius:10px;padding:14px;margin-top:10px}
 .na-title{font-size:14px;font-weight:700;color:var(--tx);margin:4px 0 10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
@@ -551,10 +569,10 @@ console.log('[workspace] client_id='+CLIENT_ID+' | source='+ (_urlClient?'url':(
 <div class="wrap">
   <div class="view on" id="v-today">
     <div id="hoyIndicator"></div>
-    <div id="leadL"><div class="hoy-loading" style="padding:32px 16px;text-align:center;color:var(--md);font-size:13px;opacity:.7">Cargando leads&hellip;</div></div>
+    <div id="leadL"><div class="hoy-loading"><div class="spinner"></div><div>Cargando leads&hellip;</div></div></div>
     <div class="empty" id="emptyS" style="display:none"><div class="empty-i">&#9993;</div><div class="empty-t">Listo para ejecutar</div><div class="empty-d">Importa el informe diario.</div><label class="empty-b" style="cursor:pointer">Importar<input type="file" accept=".json" onchange="loadFile(event)" style="display:none"></label></div>
   </div>
-  <div class="view" id="v-now"><div id="nowL"></div></div>
+  <div class="view" id="v-now"><div id="nowL"><div class="aa-loading"><div class="spinner"></div><div>Cargando acciones&hellip;</div></div></div></div>
   <div class="view" id="v-hist"><input class="hs" placeholder="Buscar empresa..." oninput="rHist(this.value)"><div id="histL"></div></div>
 </div>
 <div class="toast" id="toast"></div>
@@ -603,6 +621,40 @@ function unmkInvalid(domId, channel){
 }
 function isChannelInvalid(rec, channel){
   return !!(rec && (rec.invalidChannels||[]).some(x=>x.channel===channel));
+}
+// ═══ 2026-06-12 ANCHOR CALIBRATION ═══
+// When rec.acts contains a channel but rec.msgs has no anchor for it (legacy
+// localStorage state from before AUTO_ANCHOR_TX existed, or sbLoadAll heal
+// flagged it _anchorUncertain because neither Supabase nor tl had a real
+// timestamp), getFollowUp falls into its !allTs.length branch and returns
+// {cycle:0, channel:'email', state:'due'} forever — so computeExecutionCycle
+// keeps rendering the first-touch pitch as paso1 even though the operator
+// already checked "Email enviado". The doctrine forbids silent fabrication of
+// the anchor (would offset +48h/+168h math), so we ask the operator to confirm
+// when the channel was sent and stamp the anchor explicitly.
+function calibrateAnchor(domId, channel, offsetHours){
+  const D=db(); const r=D[domId]; if(!r)return;
+  if(!Array.isArray(r.msgs))r.msgs=[];
+  r.msgs=r.msgs.filter(m=>!(m.ch===channel && m.tx===AUTO_ANCHOR_TX));
+  const ts=new Date(Date.now()-(offsetHours||0)*3600000).toISOString();
+  r.msgs.push({ch:channel,tx:AUTO_ANCHOR_TX,ts});
+  if(!Array.isArray(r.tl))r.tl=[];
+  r.tl.push({tp:'msg',desc:'Anclaje calibrado ('+channel+') -'+offsetHours+'h',ts:new Date().toISOString()});
+  r.up=new Date().toISOString();
+  delete r._anchorUncertain;
+  if(Array.isArray(r._anchorUncertainChannels)){
+    r._anchorUncertainChannels=r._anchorUncertainChannels.filter(c=>c!==channel);
+    if(!r._anchorUncertainChannels.length)delete r._anchorUncertainChannels;
+  }
+  D[domId]=r; sdb(D);
+  if(typeof sbLogMessage==='function')sbLogMessage(domId,channel,AUTO_ANCHOR_TX,ts).catch(()=>{});
+  console.log('[calibrate] '+domId+' ch='+channel+' -'+offsetHours+'h ts='+ts);
+  toast('Ancla guardada — ciclo activado');
+  openPB(domId);
+}
+function missingAnchorChannels(rec){
+  const acts=rec.acts||[]; const msgs=rec.msgs||[];
+  return acts.filter(ch=>!msgs.some(m=>m.ch===ch));
 }
 function promptMarkInvalid(domId, channel){
   const labels={email:'Email', ig:'Instagram DM', wa:'WhatsApp', li:'LinkedIn'};
@@ -1775,9 +1827,34 @@ function openPB(d){
   const cycle = computeExecutionCycle(rec, l);
   const phonePB=l.contactPhone||l.apolloCompanyPhone;   // used by legacy strategy/accordion blocks
   const firstPB=l.contactName?l.contactName.split(/\s+/)[0]:null;
+  // 2026-06-12 — anchor-uncertain detection. If the operator marked a channel
+  // as sent (via legacy state where AUTO_ANCHOR_TX didn't exist, or via the
+  // checkbox before this fix shipped) but there's no anchor msg, the cycle
+  // can't advance. Surface a calibration step in place of paso1 so one click
+  // resolves it. Keeps the timestamp-integrity doctrine: anchor is stamped by
+  // the operator's explicit confirmation, not silent load-time fabrication.
+  const _missingAnchors = missingAnchorChannels(rec);
 
   let actionSection='';
-  if(cycle.paso1){
+  if(_missingAnchors.length){
+    const chLabels = {email:'Email', ig:'DM Instagram', wa:'WhatsApp', li:'LinkedIn'};
+    const ch = _missingAnchors[0];
+    const chLabel = chLabels[ch] || ch;
+    actionSection = `<div class="cal-step">
+      <div class="cal-step-head">
+        <div class="cal-step-icon">⏱️</div>
+        <div class="cal-step-title">Confirma cuándo enviaste el ${esc(chLabel)}</div>
+      </div>
+      <div class="cal-step-desc">Marcaste este canal como enviado pero falta la fecha exacta — sin ella el ciclo de follow-ups no avanza. Selecciona cuándo lo enviaste para activar el siguiente paso:</div>
+      <div class="cal-btns">
+        <button class="cal-btn" onclick="event.stopPropagation();calibrateAnchor('${d}','${ch}',1)">Hoy (hace 1h)</button>
+        <button class="cal-btn" onclick="event.stopPropagation();calibrateAnchor('${d}','${ch}',24)">Ayer</button>
+        <button class="cal-btn" onclick="event.stopPropagation();calibrateAnchor('${d}','${ch}',72)">Hace 3 días</button>
+        <button class="cal-btn" onclick="event.stopPropagation();calibrateAnchor('${d}','${ch}',168)">Hace 7 días</button>
+        <button class="cal-btn cal-undo" onclick="event.stopPropagation();tA('${d}','${ch}','${ch}');setTimeout(()=>openPB('${d}'),120)">Borrar marca</button>
+      </div>
+    </div>`;
+  } else if(cycle.paso1){
     const p1=cycle.paso1;
     const adjustedTime=adjustTimeStr({color:p1.color,timeStr:p1.time},l.country);
     const ck=p1.channelKey;
@@ -1803,7 +1880,7 @@ function openPB(d){
   }
 
   let refuerzoSection='';
-  if(cycle.refuerzo){
+  if(cycle.refuerzo && !_missingAnchors.length){
     const r=cycle.refuerzo;
     const doneClass=r.isDone?' step-done':'';
     const checkLabel=r.isDone?`✓ ${r.doneLabel}`:r.actionLabel;
@@ -1822,7 +1899,7 @@ function openPB(d){
   }
 
   let paso2Section='';
-  if(cycle.paso2){
+  if(cycle.paso2 && !_missingAnchors.length){
     paso2Section=`<div class="step step-secondary">
       <div class="step-head">
         <div class="step-num">Paso 2</div>
