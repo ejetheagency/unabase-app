@@ -730,7 +730,7 @@
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-12T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
       "note": "10 productoras MX-heavy avg 9.5/10 — DISPATCHED FROM POOL pool-a-tier.json. MX 4 / BR 2 / ES 2 / CO 1 / AR 1. Anchors: Mar Abierto MX (Robert Iskandarani 10/10), Globo Filmes BR (Matheus Pereira 10/10), Zeta Studios ES (Xavi Toll 10/10), Caracol Televisión CO (Manuel Penaloza 10/10), Telefé AR (Hernan Rodrigo Luna 10/10). Mid (9/10): Perro Azul MX, Mandarina Cine MX, Cinema226 MX, Buriti Filmes BR, Cuarzo Producciones ES. All verified-only Apollo emails or website-direct role inboxes. Pool now: 21 available + 2 already-shipped marked + 40 dispatched.",
@@ -738,9 +738,25 @@
         "valid_leads": 10,
         "methodology": "pool dispatch from staging/pool-a-tier.json with strict 9.0+ floor per individual lead and MX-priority demographic balance"
       }
+    },
+    {
+      "batch_id": "batch-2026-06-15",
+      "source_date": "2026-06-15",
+      "file": "leads-2026-06-15.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-06-15T00:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "10 productoras MX-heavy avg 9.3/10 — DISPATCHED FROM POOL pool-a-tier.json. MX 4 (drained) / BR 2 / ES 2 / CO 1 / PE 1. Anchors: Rhayuela CO (Federico Duran 10/10), Tondero PE (Miguel Valladares 10/10), Gullane Filmes BR (Pablo Torrecillas 10/10), O2 Filmes BR (Andre Gustavo 10/10). MX (all 9 or 8.5): Península Films, Producciones Oxígeno, Chulada Films, Selva Studio. ES (9): Ficción Producciones, Diamond Films Spain. All verified-only Apollo emails or website-direct role inboxes. Pool now: 11 available + 2 already-shipped + 50 dispatched.",
+      "supply_metrics": {
+        "valid_leads": 10,
+        "methodology": "pool dispatch from staging/pool-a-tier.json with strict 8.5+ floor and MX-priority demographic balance (drained all MX — next batch needs mining)"
+      }
     }
   ],
-  "active_batch_id": "batch-2026-06-12",
+  "active_batch_id": "batch-2026-06-15",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-12T13:43:10.868Z"
+  "last_updated": "2026-06-15T06:55:54.071Z"
 }
