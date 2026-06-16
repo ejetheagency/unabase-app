@@ -765,10 +765,10 @@
       "status": "active",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
-      "note": "8 freshly mined LATAM productoras avg 8.94/10 — DISPATCHED FROM POOL pool-a-tier.json same day they were mined. MX 3 / BR 2 / AR 1 / CL 1 / CO 1. Anchors at 10: Piano MX (Cannes 3x 2021, Apollo verified Monica Moreno). 9s: Reserva Films MX, Zola Filmes BR (Bom Dia Verônica Netflix), Pensa & Rocca AR, Juntos Films CL (2 Apollo verified DMs). Mid: Pavoreal CO, Rio Cinema Digital BR, La Casa de Cine MX (no IG, ships email-only). 5 Apollo verified DMs + 3 website-direct role inboxes. WebFetch + strict IG verify applied to all 8. Pool now: 11 available + 2 already-shipped + 58 dispatched.",
+      "note": "8 productoras LATAM avg 9.13/10 — NO BRAZIL per operator doctrine (2026-06-16). Geo: MX 2 / AR 2 / UY 1 / ES 1 / CL 1 / CO 1 (6 countries, max diversity). Anchors at 10: Piano MX (Cannes 3x, Apollo verified Monica Moreno), Oriental Films UY. 9s: Reserva Films MX (Sitges horror), Pensa & Rocca AR (Daniel Pensa CAIC president), Polar Star Films ES, Juntos Films CL (2 Apollo verified DMs). Mid: Pavoreal CO (Apollo verified Luis Villegas), Frontera Films AR. All 8 have strict-IG verified handles (8/8 IG coverage).",
       "supply_metrics": {
         "valid_leads": 8,
-        "methodology": "fresh LATAM mining session: WebFetch every company + Apollo verified-only + strict IG verify + 8.5+ floor + dedup against 340+ tracked domains"
+        "methodology": "fresh LATAM mining + same-day swap to remove BR + ensure 8/8 IG: WebFetch + Apollo verified-only + strict IG verify + dedup against 340+ tracked domains"
       }
     }
   ],
