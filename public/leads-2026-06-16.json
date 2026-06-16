@@ -1,0 +1,327 @@
+[
+  {
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "_discoveryMethod": "WebFetch every company (doctrine) + Apollo /people/match verified-only + strict IG verify (posts >= 10) — 2026-06-16 LATAM mining session",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "companyName": "Piano",
+    "website": "https://somospiano.com",
+    "country": "Mexico",
+    "contactPath": "decision_maker_email",
+    "contactName": "Monica Moreno",
+    "contactTitle": "Production Director",
+    "contactEmail": "monica@somospiano.com",
+    "companyEmail": "info@somospiano.com",
+    "instagramUrl": "https://www.instagram.com/somospiano/",
+    "instagramHandle": "somospiano",
+    "instagramFollowers": 23000,
+    "additionalContacts": [
+      {
+        "name": "Julio Chavezmontes",
+        "title": "CEO / Co-Founder / Producer",
+        "email": null
+      },
+      {
+        "name": "Sebastián Hofmann",
+        "title": "Creative Director / Co-Founder",
+        "email": null
+      },
+      {
+        "name": "Carolina Pérez Costamagna",
+        "title": "COO",
+        "email": null
+      }
+    ],
+    "companyBrief": "Casa productora mexicana de élite — CDMX, fundada 2011 por Julio Chavezmontes (CEO) + Sebastián Hofmann (Creative Director). PRIMERA productora mexicana en competir Cannes con 3 películas simultáneas (74ª edición — Annette, Memoria, Bergmansland). Catálogo: Apichatpong Weerasethakul, Léos Carax, Abel Ferrara, Mia Hansen-Løve + Reygadas/Escalante via Mantarraya. Oficinas México + Alemania + Colombia. IG @somospiano 23k followers + 1297 posts ✓ strict-verified. monica@somospiano.com Apollo verified + info@ role inbox.",
+    "unabaseScore": 10,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "source_date": "2026-06-16",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-16"
+  },
+  {
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "_discoveryMethod": "WebFetch every company (doctrine) + Apollo /people/match verified-only + strict IG verify (posts >= 10) — 2026-06-16 LATAM mining session",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "companyName": "Reserva Films",
+    "website": "https://reservafilms.com",
+    "country": "Mexico",
+    "contactPath": "decision_maker_email",
+    "contactName": "Fabio Colonna",
+    "contactTitle": "Director / Founder",
+    "contactEmail": "colonna@reservafilms.com",
+    "companyEmail": "contacto@reservafilms.com",
+    "instagramUrl": "https://www.instagram.com/reservafilms/",
+    "instagramHandle": "reservafilms",
+    "instagramFollowers": 2911,
+    "additionalContacts": [
+      {
+        "name": "Regina F. Guizar",
+        "title": "Co-founder, Producer/Cinematographer",
+        "email": "regina@reservafilms.com"
+      },
+      {
+        "name": "Arantxa Suárez",
+        "title": "Partner, Producer",
+        "email": "ara@reservafilms.com"
+      }
+    ],
+    "companyBrief": "Casa productora mexicana de horror — fundada 2014 CDMX por Fabio Colonna (Director). 4 socios + 20+ proyectos. Especialidad: horror cinema (cortos, antologías, web series, co-producciones). Festivales: Sitges, Filmquest, ScreamFest, Atlanta Horror, Chicago IFF, Macabro + 14 más. Clientes premium: Aruba, El Palacio de Hierro, Gucci, National Geographic, OCESA, MAPFRE. IG @reservafilms 2.9k followers + 364 posts ✓ strict-verified. colonna@reservafilms.com Apollo verified + contacto@ role inbox.",
+    "unabaseScore": 9,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "source_date": "2026-06-16",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-16"
+  },
+  {
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "_discoveryMethod": "WebFetch every company (doctrine) + Apollo /people/match verified-only + strict IG verify (posts >= 10) — 2026-06-16 LATAM mining session",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "companyName": "Pensa & Rocca Cine",
+    "website": "https://pensarocca.com.ar",
+    "country": "Argentina",
+    "contactPath": "company_email",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "cine@pensarocca.com.ar",
+    "companyEmail": null,
+    "instagramUrl": "https://www.instagram.com/pensayrocca/",
+    "instagramHandle": "pensayrocca",
+    "instagramFollowers": 3876,
+    "additionalContacts": [
+      {
+        "name": "Daniel Pensa",
+        "title": "Co-Founder / Presidente CAIC (Cámara Argentina Industria Cinematográfica)",
+        "email": null
+      },
+      {
+        "name": "Miguel Ángel Rocca",
+        "title": "Co-Founder / Productor / Guionista / Director",
+        "email": null
+      }
+    ],
+    "companyBrief": "Casa productora argentina — Buenos Aires (Av. Elcano 4020). Fundada 2001 por Daniel Pensa (Presidente de la CAIC) + Miguel Ángel Rocca (productor/guionista/director). 35+ producciones audiovisuales: largometrajes ficción + documentales + series + cortometrajes. Trayectoria internacional. Recientes: La Burbuja (2023), Martina Chapanay: Mujer de Cinco Mil Batallas (2023), Maracaibo (2017). IG @pensayrocca 3.9k followers + 93 posts ✓ strict-verified. cine@pensarocca.com.ar role inbox website-direct.",
+    "unabaseScore": 9,
+    "contactSource": "website_direct",
+    "contactConfidence": "website_direct",
+    "source_date": "2026-06-16",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-16"
+  },
+  {
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "_discoveryMethod": "WebFetch every company (doctrine) + Apollo /people/match verified-only + strict IG verify (posts >= 10) — 2026-06-16 LATAM mining session",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "companyName": "Zola Filmes",
+    "website": "https://www.zola.pro.br",
+    "country": "Brazil",
+    "contactPath": "decision_maker_email",
+    "contactName": "Fernanda Laignier",
+    "contactTitle": "Film Executive Producer",
+    "contactEmail": "fernanda@zola.pro.br",
+    "companyEmail": "zola@zola.pro.br",
+    "instagramUrl": "https://www.instagram.com/zolafilmes/",
+    "instagramHandle": "zolafilmes",
+    "instagramFollowers": 11000,
+    "additionalContacts": [
+      {
+        "name": "José Henrique Fonseca",
+        "title": "Director / Producer / Co-Owner (also co-founded Conspiração Filmes)",
+        "email": null
+      }
+    ],
+    "companyBrief": "Productora brasileña — Rio de Janeiro. José Henrique Fonseca (Director/Producer) co-owner + co-fundador histórico de Conspiração Filmes. Catálogo Netflix Brasil: Bom Dia, Verônica (3 temporadas, Netflix Original), Mandrake (HBO), Valentins, Heleno, Espinosa, Lúcia McCartney, Arquitetura da Cor. Fernanda Laignier Executive Producer. IG @zolafilmes 11k followers + 374 posts ✓ strict-verified. fernanda@zola.pro.br Apollo verified + zola@ role inbox.",
+    "unabaseScore": 9,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "source_date": "2026-06-16",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-16"
+  },
+  {
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "_discoveryMethod": "WebFetch every company (doctrine) + Apollo /people/match verified-only + strict IG verify (posts >= 10) — 2026-06-16 LATAM mining session",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "companyName": "Juntos Films",
+    "website": "https://juntosfilms.cl",
+    "country": "Chile",
+    "contactPath": "decision_maker_email",
+    "contactName": "Maria Karla Falcon",
+    "contactTitle": "Executive Producer",
+    "contactEmail": "karla@juntosfilms.cl",
+    "companyEmail": "info@juntosfilms.cl",
+    "instagramUrl": "https://www.instagram.com/juntoscine/",
+    "instagramHandle": "juntoscine",
+    "instagramFollowers": 19000,
+    "additionalContacts": [
+      {
+        "name": "Francisco Hervé",
+        "title": "Owner / Co-Founder (also founder of Panchito Films)",
+        "email": "francisco@juntosfilms.cl"
+      },
+      {
+        "name": "Monica Cabrera Agudo",
+        "title": "Co-fundadora y Directora Creativa",
+        "email": null
+      },
+      {
+        "name": "Moisés Sepúlveda",
+        "title": "Co-Founder (Madriguera Films)",
+        "email": null
+      },
+      {
+        "name": "Daniela Raviola",
+        "title": "Co-Founder",
+        "email": null
+      }
+    ],
+    "companyBrief": "Casa productora chilena — Santiago (Valenzuela Castillo 1078, Providencia). Fundada 2019 por Francisco Hervé (Panchito Films) + Moisés Sepúlveda (Madriguera Films) + Daniela Raviola + Monica Cabrera Agudo. Foco: cine de género (thriller, comedia) + documental con perspectiva realista. Berlinale 2023 (22 productoras chilenas + Juntos entre ellas). Catálogo: 4 largometrajes (Oro Amargo, Inmersión, La Fabulosa Máquina de Cosechar Oro) + 8 documentales. Maria Karla Falcon + Francisco Hervé Apollo verified. IG @juntoscine 19k followers + 178 posts ✓ strict-verified. karla@ + francisco@ Apollo verified + info@ role inbox.",
+    "unabaseScore": 9,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "source_date": "2026-06-16",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-16"
+  },
+  {
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "_discoveryMethod": "WebFetch every company (doctrine) + Apollo /people/match verified-only + strict IG verify (posts >= 10) — 2026-06-16 LATAM mining session",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "companyName": "La Casa de Cine",
+    "website": "https://lacasadecine.com",
+    "country": "Mexico",
+    "contactPath": "company_email",
+    "contactName": "Mónica",
+    "contactTitle": "Equipo La Casa de Cine",
+    "contactEmail": "monica@lacasadecine.com",
+    "companyEmail": null,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramFollowers": null,
+    "additionalContacts": [
+      {
+        "name": "Chisco Laresgoiti",
+        "title": "Co-Founder",
+        "email": null
+      },
+      {
+        "name": "Jordi Mariscal",
+        "title": "Co-Founder",
+        "email": null
+      }
+    ],
+    "companyBrief": "Casa productora mexicana — CDMX (Coyoacán, Eleuterio Méndez 11). Fundada 2007 por Chisco Laresgoiti + Jordi Mariscal. Toronto IFF Kids Award por Cinnamon (2012) + Berlin IFF + Mérida + Yucatán festivales. Catálogo: 2033 (sci-fi 2009), Fog of Guilt (2018), Black Days (2021), Green Heroes (2024 doc), Atalaya (2024 archeology doc). Foco en documentales de conservación ambiental y temas históricos. monica@lacasadecine.com website-direct.",
+    "unabaseScore": 8.5,
+    "contactSource": "website_direct",
+    "contactConfidence": "website_direct",
+    "source_date": "2026-06-16",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-16"
+  },
+  {
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "_discoveryMethod": "WebFetch every company (doctrine) + Apollo /people/match verified-only + strict IG verify (posts >= 10) — 2026-06-16 LATAM mining session",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "companyName": "Pavoreal Films",
+    "website": "https://www.pavoreal.co",
+    "country": "Colombia",
+    "contactPath": "decision_maker_email",
+    "contactName": "Luis Villegas",
+    "contactTitle": "Content Director / 'Green' Filmmaker / Founder",
+    "contactEmail": "luis@pavoreal.co",
+    "companyEmail": "info@pavoreal.co",
+    "contactPhone": "+57 310 4584144",
+    "instagramUrl": "https://www.instagram.com/pavorealfilms/",
+    "instagramHandle": "pavorealfilms",
+    "instagramFollowers": 1909,
+    "additionalContacts": [
+      {
+        "name": "Jack Farine",
+        "title": "Executive Producer / Manager",
+        "email": null
+      },
+      {
+        "name": "Lina Betancour",
+        "title": "Director / Creative Producer",
+        "email": null
+      },
+      {
+        "name": "Carlos García",
+        "title": "Creative Director / Designer",
+        "email": null
+      }
+    ],
+    "companyBrief": "Casa productora colombiana — Bogotá. Luis Villegas Content Director + founder (\"green\" filmmaker). 4 socios identificados. Documentalistas: Expedición Tribugá, Coraltheca, Somos Ballenas, Nuestras Voces Nuestra Paz. Premios Fondo de Cine + festivales nacionales/internacionales. Clientes: Discovery Channel, National Geographic + grandes orgs colombianas. 3 líneas de negocio: cine, comercial, videografía (Moviola subsidiary). IG @pavorealfilms 1.9k followers + 807 posts ✓ strict-verified. luis@pavoreal.co Apollo verified + info@ role inbox.",
+    "unabaseScore": 8.5,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "source_date": "2026-06-16",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-16"
+  },
+  {
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "_discoveryMethod": "WebFetch every company (doctrine) + Apollo /people/match verified-only + strict IG verify (posts >= 10) — 2026-06-16 LATAM mining session",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "companyName": "Rio Cinema Digital",
+    "website": "https://www.riocinemadigital.com.br",
+    "country": "Brazil",
+    "contactPath": "decision_maker_email",
+    "contactName": "Gabriel Mellin",
+    "contactTitle": "Director / Producer / Screenwriter / Founder",
+    "contactEmail": "gabriel@riocinemadigital.com.br",
+    "companyEmail": "contato@riocinemadigital.com.br",
+    "instagramUrl": "https://www.instagram.com/riocinemadigital/",
+    "instagramHandle": "riocinemadigital",
+    "instagramFollowers": 6038,
+    "additionalContacts": [],
+    "companyBrief": "Productora brasileña — Rio de Janeiro (Ipanema). Fundada ~2013 por Gabriel Mellin (Director/Producer/Screenwriter). 11+ años de mercado, 500+ proyectos audiovisuales (cine, televisión, advertising, branded content). Catálogo destacado: A Menina e o Mar (90+ festival noms + 35+ awards), Por Trás da Canção (Multishow/Bis), Rio Mumbai, Vestidas de Amor (GloboPlay), Encontros Orquestrados (música). IG @riocinemadigital 6k followers + 521 posts ✓ strict-verified. gabriel@ + contato@ website-direct.",
+    "unabaseScore": 8.5,
+    "contactSource": "website_direct",
+    "contactConfidence": "website_direct",
+    "source_date": "2026-06-16",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-16"
+  }
+]

@@ -746,7 +746,7 @@
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-15T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
       "note": "10 productoras MX-heavy avg 9.3/10 — DISPATCHED FROM POOL pool-a-tier.json. MX 4 (drained) / BR 2 / ES 2 / CO 1 / PE 1. Anchors: Rhayuela CO (Federico Duran 10/10), Tondero PE (Miguel Valladares 10/10), Gullane Filmes BR (Pablo Torrecillas 10/10), O2 Filmes BR (Andre Gustavo 10/10). MX (all 9 or 8.5): Península Films, Producciones Oxígeno, Chulada Films, Selva Studio. ES (9): Ficción Producciones, Diamond Films Spain. All verified-only Apollo emails or website-direct role inboxes. Pool now: 11 available + 2 already-shipped + 50 dispatched.",
@@ -754,9 +754,25 @@
         "valid_leads": 10,
         "methodology": "pool dispatch from staging/pool-a-tier.json with strict 8.5+ floor and MX-priority demographic balance (drained all MX — next batch needs mining)"
       }
+    },
+    {
+      "batch_id": "batch-2026-06-16",
+      "source_date": "2026-06-16",
+      "file": "leads-2026-06-16.json",
+      "lead_count": 8,
+      "approved": true,
+      "approved_at": "2026-06-16T00:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "8 freshly mined LATAM productoras avg 8.94/10 — DISPATCHED FROM POOL pool-a-tier.json same day they were mined. MX 3 / BR 2 / AR 1 / CL 1 / CO 1. Anchors at 10: Piano MX (Cannes 3x 2021, Apollo verified Monica Moreno). 9s: Reserva Films MX, Zola Filmes BR (Bom Dia Verônica Netflix), Pensa & Rocca AR, Juntos Films CL (2 Apollo verified DMs). Mid: Pavoreal CO, Rio Cinema Digital BR, La Casa de Cine MX (no IG, ships email-only). 5 Apollo verified DMs + 3 website-direct role inboxes. WebFetch + strict IG verify applied to all 8. Pool now: 11 available + 2 already-shipped + 58 dispatched.",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "methodology": "fresh LATAM mining session: WebFetch every company + Apollo verified-only + strict IG verify + 8.5+ floor + dedup against 340+ tracked domains"
+      }
     }
   ],
-  "active_batch_id": "batch-2026-06-15",
+  "active_batch_id": "batch-2026-06-16",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-15T06:55:54.071Z"
+  "last_updated": "2026-06-16T20:06:21.077Z"
 }
