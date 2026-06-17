@@ -775,16 +775,16 @@
       "batch_id": "batch-2026-06-17",
       "source_date": "2026-06-17",
       "file": "leads-2026-06-17.json",
-      "lead_count": 5,
+      "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-17T00:00:00.000Z",
       "status": "active",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
-      "note": "5 productoras avg 8.60/10 — ES 4 + CO 1. NO BRAZIL per operator doctrine. Anchor: 64A Films CO (9/10, Nancy Fernandez Apollo verified Gerente y Socia, @64afilms 9.9k IG). 4 ES at 8.5: Nakamura Films, A Contracorriente Films, Brother's Films, Arena Comunicación Audiovisual — all from pool-a-tier reserves. All 5 leads strict-IG verified (5/5 IG coverage). Mining session for 2026-06-17 hit Apollo wall on indie LATAM productoras; operator approved smaller batch over forced quantity.",
+      "note": "10 productoras LATAM/ES avg 8.75/10 — ME 3 / CO 1 / AR 2 / SP 4. 5 from pool reserves (4 ES + 1 fresh CO mined today: 64A Films Nancy Fernandez Apollo verified) + 5 BOUNCE-RECOVERED with alternate emails (per operator request 2026-06-17): Lemon Studios MX (alejandro@lemonfilms.com Apollo Alejandro Lozano Director, parent group domain), Argentina Cine AR (sandra@argentinacine.com Apollo Sandra Sbarra EP alternate), Magnética AR (fernando@magnetica.com.ar Apollo Fernando Rodriguez Creative Director, alternate corp domain), VDM MX (info@vdm.la website-direct role inbox), Lucaproductora MX (contacto@lucaproductora.com.mx website-direct role inbox at corp domain — original was gmail typo). 2 leads DROPPED for no alternate email surface: Laberintos PA (only bounced gmail listed) + Buriti Filmes BR (no role inbox + cert error on site). Each recovered lead carries _bouncedEmail + _bounceRecoveredAt for audit trail.",
       "supply_metrics": {
         "valid_leads": 5,
-        "methodology": "pool dispatch + fresh CO mining: Apollo /people/match verified-only + WebFetch every company + strict IG verify + dedup against 340+ tracked domains"
+        "methodology": "pool dispatch + fresh CO mining + bounce-recovery batch with alternate email surfacing (Apollo re-unlock at alternate domains + WebFetch role inbox extraction)"
       }
     }
   ],

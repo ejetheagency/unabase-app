@@ -1,5 +1,53 @@
 [
   {
+    "companyName": "Lemon Studios",
+    "website": "https://www.thelemonstudios.com",
+    "country": "Mexico",
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "contactPath": "decision_maker_email",
+    "contactName": "Alejandro Lozano",
+    "contactTitle": "Director / Head Creative Director (Lemon Studios)",
+    "contactEmail": "alejandro@lemonfilms.com",
+    "companyEmail": null,
+    "contactPhone": "+52 55 5551 5865",
+    "instagramUrl": "https://www.instagram.com/thelemonstudios/",
+    "instagramHandle": "thelemonstudios",
+    "instagramFollowers": 28000,
+    "additionalContacts": [
+      {
+        "name": "Billy Rovzar",
+        "title": "Founder and CEO",
+        "email": null
+      },
+      {
+        "name": "Fernando Rovzar",
+        "title": "Founder and Creative Director",
+        "email": null
+      },
+      {
+        "name": "Erica Sánchez",
+        "title": "Vice President of Production",
+        "email": null
+      }
+    ],
+    "companyBrief": "Casa productora mexicana ELITE — CDMX, fundada 2003 por hermanos Billy + Fernando Rovzar. 17+ películas premiadas + 10+ series TV. Catálogo Netflix: Control Z, Monarca; HBO: Sr. Ávila (International Emmy); Apple TV: Las Azules; otros: After Lucía (Cannes), Matando Cabos, KM. 31. Alejandro Lozano Director (Head Creative) Apollo verified en lemonfilms.com (parent group domain). IG @thelemonstudios 28k followers + 591 posts ✓ strict-verified. BOUNCE RECOVERY 2026-06-17: archie@thelemonstudios.com bounced → alejandro@lemonfilms.com Apollo re-verified.",
+    "unabaseScore": 10,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "_bouncedEmail": "archie@thelemonstudios.com",
+    "_bounceRecoveredAt": "2026-06-17T20:19:33.304Z",
+    "_discoveryMethod": "bounce recovery 2026-06-17: Apollo re-unlock at parent domain lemonfilms.com",
+    "source_date": "2026-06-17",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-17"
+  },
+  {
     "industry": "film",
     "tier": "tier1",
     "channelPriority": "email",
@@ -30,6 +78,102 @@
     "unabaseScore": 9,
     "contactSource": "apollo_verified",
     "contactConfidence": "confirmed",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-17"
+  },
+  {
+    "companyName": "Argentina Cine",
+    "website": "https://argentinacine.com",
+    "country": "Argentina",
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "contactPath": "decision_maker_email",
+    "contactName": "Sandra Sbarra",
+    "contactTitle": "Executive Producer",
+    "contactEmail": "sandra@argentinacine.com",
+    "companyEmail": "productora@argentinacine.com",
+    "contactPhone": "+54 11 5368 5860",
+    "instagramUrl": "https://www.instagram.com/argentinacine/",
+    "instagramHandle": "argentinacine",
+    "instagramFollowers": 17000,
+    "additionalContacts": [
+      {
+        "name": "Diego Gonzalez Sureda",
+        "title": "Executive Producer (bounced — replaced)",
+        "email": null
+      },
+      {
+        "name": "Rosario Caprarulo",
+        "title": "Executive Producer",
+        "email": "rosario@argentinacine.com"
+      },
+      {
+        "name": "Georgina Orellana",
+        "title": "Executive Producer",
+        "email": null
+      }
+    ],
+    "companyBrief": "Productora argentina top-5 — Buenos Aires, fundada 1999. Producción integral de cine + advertising. Sandra Sbarra Executive Producer Apollo verified (alternate DM tras bounce de diego@). Rosario Caprarulo + Georgina Orellana additional EPs. IG @argentinacine 17k followers + 365 posts ✓ strict-verified. BOUNCE RECOVERY 2026-06-17: diego@argentinacine.com bounced → sandra@argentinacine.com Apollo verified (alternate EP, same corporate domain).",
+    "unabaseScore": 9,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "_bouncedEmail": "diego@argentinacine.com",
+    "_bounceRecoveredAt": "2026-06-17T20:19:33.304Z",
+    "_discoveryMethod": "bounce recovery 2026-06-17: Apollo re-unlock surfaced alternate EP at same domain",
+    "source_date": "2026-06-17",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-17"
+  },
+  {
+    "companyName": "Magnética Producciones",
+    "website": "https://magneticalatam.com",
+    "country": "Argentina",
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "contactPath": "decision_maker_email",
+    "contactName": "Fernando Rodriguez",
+    "contactTitle": "Creative Director",
+    "contactEmail": "fernando@magnetica.com.ar",
+    "companyEmail": null,
+    "contactPhone": "+54 11 4777 0717",
+    "instagramUrl": "https://www.instagram.com/magneticalatam/",
+    "instagramHandle": "magneticalatam",
+    "instagramFollowers": 8392,
+    "additionalContacts": [
+      {
+        "name": "Martin Alejandro Repetto",
+        "title": "Production Director (bounced — alt email at magneticalatam.com)",
+        "email": null
+      },
+      {
+        "name": "Rosario Narvaja",
+        "title": "Creative Director",
+        "email": null
+      },
+      {
+        "name": "Nicolas Lattansio",
+        "title": "Director del Area de Creatividad",
+        "email": null
+      }
+    ],
+    "companyBrief": "Productora argentina LATAM — Buenos Aires (Magnética). Fernando Rodriguez Creative Director Apollo verified en magnetica.com.ar (dominio principal alterno a magneticalatam.com). Equipo: Rosario Narvaja, Nicolas Lattansio additionalContacts. IG @magneticalatam 8.4k followers + 316 posts ✓ strict-verified. BOUNCE RECOVERY 2026-06-17: martin.repetto@magneticalatam.com bounced → fernando@magnetica.com.ar Apollo verified (different DM + diferente dominio corporativo).",
+    "unabaseScore": 9,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "_bouncedEmail": "martin.repetto@magneticalatam.com",
+    "_bounceRecoveredAt": "2026-06-17T20:19:33.304Z",
+    "_discoveryMethod": "bounce recovery 2026-06-17: Apollo re-unlock surfaced alternate DM at alternate corporate domain",
+    "source_date": "2026-06-17",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
     "pitchEmailES": "",
     "emailCercana": "",
     "_dispatched_batch_id": "batch-2026-06-17"
@@ -169,6 +313,88 @@
     "channelPriority": "email",
     "unabaseScore": 8.5,
     "source_date": "2026-06-17",
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-17"
+  },
+  {
+    "companyName": "VDM Casa Productora",
+    "website": "https://vdm.la",
+    "country": "Mexico",
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "contactPath": "company_email",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "info@vdm.la",
+    "companyEmail": null,
+    "contactPhone": "+52 55 5584 2074",
+    "instagramUrl": "https://www.instagram.com/vdmcasaproductora/",
+    "instagramHandle": "vdmcasaproductora",
+    "instagramFollowers": 15000,
+    "additionalContacts": [
+      {
+        "name": "Patricio Cutler",
+        "title": "Director (bounced personal email)",
+        "email": null
+      }
+    ],
+    "companyBrief": "Casa productora mexicana — CDMX (Michoacán 20, Colonia Condesa). Equipo de guionistas, productores, directores de contenido y editores. Patricio Cutler Director (su email personal patricio@vdm.la rebotó). Rol inbox info@vdm.la activo y verificado website-direct. IG @vdmcasaproductora 15k followers + 356 posts ✓ strict-verified. BOUNCE RECOVERY 2026-06-17: patricio@vdm.la bounced → info@vdm.la role inbox website-direct (Apollo 0 DMs en vdm.la).",
+    "unabaseScore": 8.5,
+    "contactSource": "website_direct",
+    "contactConfidence": "website_direct",
+    "_bouncedEmail": "patricio@vdm.la",
+    "_bounceRecoveredAt": "2026-06-17T20:19:33.304Z",
+    "_discoveryMethod": "bounce recovery 2026-06-17: WebFetch surfaced info@ role inbox after Apollo 0 DMs",
+    "source_date": "2026-06-17",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-17"
+  },
+  {
+    "companyName": "Lucaproductora",
+    "website": "https://lucaproductora.com.mx",
+    "country": "Mexico",
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "contactPath": "decision_maker_email",
+    "contactName": "Carlos Rosas",
+    "contactTitle": "CEO / Founder",
+    "contactEmail": "contacto@lucaproductora.com.mx",
+    "companyEmail": null,
+    "contactPhone": "+52 222 555 3468",
+    "instagramUrl": "https://www.instagram.com/lucaproductora/",
+    "instagramHandle": "lucaproductora",
+    "instagramFollowers": 6,
+    "additionalContacts": [
+      {
+        "name": "Carlos Rosas Jr.",
+        "title": "VFX Post-Production Specialist",
+        "email": null
+      },
+      {
+        "name": "Laura Barrientos",
+        "title": "Designer",
+        "email": null
+      }
+    ],
+    "_caveat": "Original email karlosjrc@gmail.com (free-provider, parsing error) was the bounced; corporate domain lucaproductora.com.mx surfaces real role inbox contacto@. IG @lucaproductora has only 6 followers — DOES NOT meet strict IG verify floor (would fail posts/followers check). Email-only viable.",
+    "companyBrief": "Productora audiovisual mexicana — Puebla. 20+ años de experiencia. Carlos Rosas CEO/Founder + Carlos Rosas Jr. VFX + Laura Barrientos Designer. Enfoque: audiovisual para empresas, comercio, industrias. Rol inbox contacto@lucaproductora.com.mx website-direct (corporate domain), no Apollo DMs. BOUNCE RECOVERY 2026-06-17: karlosjrc@gmail.com (gmail typo) rebotó → contacto@lucaproductora.com.mx role inbox del dominio corporativo. IG @lucaproductora 6 followers — sub-floor pero email es el canal principal.",
+    "unabaseScore": 8,
+    "contactSource": "website_direct",
+    "contactConfidence": "website_direct",
+    "_bouncedEmail": "karlosjrc@gmail.com",
+    "_bounceRecoveredAt": "2026-06-17T20:19:33.304Z",
+    "_discoveryMethod": "bounce recovery 2026-06-17: WebSearch + WebFetch surfaced corporate domain lucaproductora.com.mx (different from previous gmail)",
+    "source_date": "2026-06-17",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
     "pitchEmailES": "",
     "emailCercana": "",
     "_dispatched_batch_id": "batch-2026-06-17"
