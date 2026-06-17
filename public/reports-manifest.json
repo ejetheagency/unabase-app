@@ -762,7 +762,7 @@
       "lead_count": 8,
       "approved": true,
       "approved_at": "2026-06-16T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
       "note": "8 productoras LATAM avg 9.13/10 — NO BRAZIL per operator doctrine (2026-06-16). Geo: MX 2 / AR 2 / UY 1 / ES 1 / CL 1 / CO 1 (6 countries, max diversity). Anchors at 10: Piano MX (Cannes 3x, Apollo verified Monica Moreno), Oriental Films UY. 9s: Reserva Films MX (Sitges horror), Pensa & Rocca AR (Daniel Pensa CAIC president), Polar Star Films ES, Juntos Films CL (2 Apollo verified DMs). Mid: Pavoreal CO (Apollo verified Luis Villegas), Frontera Films AR. All 8 have strict-IG verified handles (8/8 IG coverage).",
@@ -770,9 +770,25 @@
         "valid_leads": 8,
         "methodology": "fresh LATAM mining + same-day swap to remove BR + ensure 8/8 IG: WebFetch + Apollo verified-only + strict IG verify + dedup against 340+ tracked domains"
       }
+    },
+    {
+      "batch_id": "batch-2026-06-17",
+      "source_date": "2026-06-17",
+      "file": "leads-2026-06-17.json",
+      "lead_count": 5,
+      "approved": true,
+      "approved_at": "2026-06-17T00:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "5 productoras avg 8.60/10 — ES 4 + CO 1. NO BRAZIL per operator doctrine. Anchor: 64A Films CO (9/10, Nancy Fernandez Apollo verified Gerente y Socia, @64afilms 9.9k IG). 4 ES at 8.5: Nakamura Films, A Contracorriente Films, Brother's Films, Arena Comunicación Audiovisual — all from pool-a-tier reserves. All 5 leads strict-IG verified (5/5 IG coverage). Mining session for 2026-06-17 hit Apollo wall on indie LATAM productoras; operator approved smaller batch over forced quantity.",
+      "supply_metrics": {
+        "valid_leads": 5,
+        "methodology": "pool dispatch + fresh CO mining: Apollo /people/match verified-only + WebFetch every company + strict IG verify + dedup against 340+ tracked domains"
+      }
     }
   ],
-  "active_batch_id": "batch-2026-06-16",
+  "active_batch_id": "batch-2026-06-17",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-16T20:06:21.077Z"
+  "last_updated": "2026-06-17T20:03:10.108Z"
 }
