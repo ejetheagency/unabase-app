@@ -45,7 +45,8 @@
     "_operatorVerified": false,
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-17"
+    "_dispatched_batch_id": "batch-2026-06-17",
+    "_recoveredFrom": "bounce_2026-06-17"
   },
   {
     "industry": "film",
@@ -128,7 +129,8 @@
     "_operatorVerified": false,
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-17"
+    "_dispatched_batch_id": "batch-2026-06-17",
+    "_recoveredFrom": "bounce_2026-06-17"
   },
   {
     "companyName": "Magnética Producciones",
@@ -176,7 +178,8 @@
     "_operatorVerified": false,
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-17"
+    "_dispatched_batch_id": "batch-2026-06-17",
+    "_recoveredFrom": "bounce_2026-06-17"
   },
   {
     "companyName": "Nakamura Films",
@@ -353,7 +356,8 @@
     "_operatorVerified": false,
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-17"
+    "_dispatched_batch_id": "batch-2026-06-17",
+    "_recoveredFrom": "bounce_2026-06-17"
   },
   {
     "companyName": "Lucaproductora",
@@ -397,6 +401,7 @@
     "_operatorVerified": false,
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-17"
+    "_dispatched_batch_id": "batch-2026-06-17",
+    "_recoveredFrom": "bounce_2026-06-17"
   }
 ]
