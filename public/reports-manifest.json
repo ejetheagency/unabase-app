@@ -778,7 +778,7 @@
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-17T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
       "note": "10 productoras LATAM/ES avg 8.75/10 — ME 3 / CO 1 / AR 2 / SP 4. 5 from pool reserves (4 ES + 1 fresh CO mined today: 64A Films Nancy Fernandez Apollo verified) + 5 BOUNCE-RECOVERED with alternate emails (per operator request 2026-06-17): Lemon Studios MX (alejandro@lemonfilms.com Apollo Alejandro Lozano Director, parent group domain), Argentina Cine AR (sandra@argentinacine.com Apollo Sandra Sbarra EP alternate), Magnética AR (fernando@magnetica.com.ar Apollo Fernando Rodriguez Creative Director, alternate corp domain), VDM MX (info@vdm.la website-direct role inbox), Lucaproductora MX (contacto@lucaproductora.com.mx website-direct role inbox at corp domain — original was gmail typo). 2 leads DROPPED for no alternate email surface: Laberintos PA (only bounced gmail listed) + Buriti Filmes BR (no role inbox + cert error on site). Each recovered lead carries _bouncedEmail + _bounceRecoveredAt for audit trail.",
@@ -786,9 +786,25 @@
         "valid_leads": 5,
         "methodology": "pool dispatch + fresh CO mining + bounce-recovery batch with alternate email surfacing (Apollo re-unlock at alternate domains + WebFetch role inbox extraction)"
       }
+    },
+    {
+      "batch_id": "batch-2026-06-18",
+      "source_date": "2026-06-18",
+      "file": "leads-2026-06-18.json",
+      "lead_count": 6,
+      "approved": true,
+      "approved_at": "2026-06-18T00:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "6 corporate-tier LATAM productoras avg 9.33/10 — FRESH MINING 2026-06-18. NO BRAZIL per operator doctrine. Geo: MX 3 / CO 3. Anchors at 10: Habitant Productions CO (HQ Bogotá + MX/UY, Zara/Airbnb/Lenny Kravitz clients, 3 Apollo verified DMs Ignacio Betancourt + Ana Gaxiola + Matias Martinez Godoy), BTF Media MX (Francisco Cordero Co-Founder & CEO + Ricardo Coeto + 4 Apollo verified DMs, founded 2010). 9s: Romero&Braas MX (Paul Krauskopf Founder, Netflix/Warner/LucasFilm clients), Jaguar Bite CO (Simon Beltran CEO, Treadstone Amazon + Running with the Devil Nicolas Cage, 4 Apollo verified DMs), WhereNext CO (Stephan Schier Director Global Ops, Netflix 100 Years of Solitude soundscape, Cannes-winning Colombia tourism), Exile Content MX (Nando Vila Head of Studio, Sundance Grand Jury 2024 In the Summers + HBO Vgly, Candle Media). 17 Apollo verified DMs total across the 6 leads. All 6 strict-IG verified. Methodology: WebFetch every company (mandatory) + Apollo /people/match verified-only + strict IG verify + 8.5+ floor + dedup against 348+ tracked domains. 10 Apollo bulk rounds across 80+ candidate domains; mining hit Apollo wall on indie/auteur productoras — corporate-tier with LinkedIn presence yielded the verified DMs.",
+      "supply_metrics": {
+        "valid_leads": 6,
+        "methodology": "corporate-tier LATAM mining: WebFetch every company + Apollo /people/match verified-only + strict IG verify + 8.5+ floor + dedup against 348+ tracked domains"
+      }
     }
   ],
-  "active_batch_id": "batch-2026-06-17",
+  "active_batch_id": "batch-2026-06-18",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-17T20:03:10.108Z"
+  "last_updated": "2026-06-18T16:42:50.680Z"
 }
