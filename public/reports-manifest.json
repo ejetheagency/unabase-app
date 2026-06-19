@@ -794,7 +794,7 @@
       "lead_count": 6,
       "approved": true,
       "approved_at": "2026-06-18T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
       "note": "6 corporate-tier LATAM productoras avg 9.33/10 — FRESH MINING 2026-06-18. NO BRAZIL per operator doctrine. Geo: MX 3 / CO 3. Anchors at 10: Habitant Productions CO (HQ Bogotá + MX/UY, Zara/Airbnb/Lenny Kravitz clients, 3 Apollo verified DMs Ignacio Betancourt + Ana Gaxiola + Matias Martinez Godoy), BTF Media MX (Francisco Cordero Co-Founder & CEO + Ricardo Coeto + 4 Apollo verified DMs, founded 2010). 9s: Romero&Braas MX (Paul Krauskopf Founder, Netflix/Warner/LucasFilm clients), Jaguar Bite CO (Simon Beltran CEO, Treadstone Amazon + Running with the Devil Nicolas Cage, 4 Apollo verified DMs), WhereNext CO (Stephan Schier Director Global Ops, Netflix 100 Years of Solitude soundscape, Cannes-winning Colombia tourism), Exile Content MX (Nando Vila Head of Studio, Sundance Grand Jury 2024 In the Summers + HBO Vgly, Candle Media). 17 Apollo verified DMs total across the 6 leads. All 6 strict-IG verified. Methodology: WebFetch every company (mandatory) + Apollo /people/match verified-only + strict IG verify + 8.5+ floor + dedup against 348+ tracked domains. 10 Apollo bulk rounds across 80+ candidate domains; mining hit Apollo wall on indie/auteur productoras — corporate-tier with LinkedIn presence yielded the verified DMs.",
@@ -802,9 +802,25 @@
         "valid_leads": 6,
         "methodology": "corporate-tier LATAM mining: WebFetch every company + Apollo /people/match verified-only + strict IG verify + 8.5+ floor + dedup against 348+ tracked domains"
       }
+    },
+    {
+      "batch_id": "batch-2026-06-19",
+      "source_date": "2026-06-19",
+      "file": "leads-2026-06-19.json",
+      "lead_count": 5,
+      "approved": true,
+      "approved_at": "2026-06-19T00:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "5 productoras avg 9.00/10 — MX-heavy per operator doctrine. Geo: MX 4 / ES 1. NO BRAZIL. Anchors at 10: Anima Estudios MX (LARGEST LATAM animation studio, Jose Garcia De Letona COO Apollo verified). 9s: Mantarraya MX (auteur giant — Reygadas + Escalante home productora, Quetzalli Medrano Head Production Apollo verified — email-only), Latido Films ES (Antonio Saura Medrano Director General Apollo verified, Cannes 2026 presence). 8.5s: Undertk Studio MX (digital content, Renata Torrescano Creative Director Apollo verified), La Casa de Cine MX (Toronto Kids Award, monica@ website-direct, from pool — email-only). 4 Apollo verified DMs + 1 website-direct. Mining context: 10 Apollo bulk rounds across 100+ candidate domains; corporate-tier yielded the verified DMs as indie/auteur productoras hit Apollo wall.",
+      "supply_metrics": {
+        "valid_leads": 5,
+        "methodology": "corporate-tier LATAM mining + pool inventory: WebFetch every company + Apollo verified-only + strict IG verify + 8.5+ floor + dedup against 350+ tracked domains"
+      }
     }
   ],
-  "active_batch_id": "batch-2026-06-18",
+  "active_batch_id": "batch-2026-06-19",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-18T16:42:50.680Z"
+  "last_updated": "2026-06-19T17:53:48.887Z"
 }
