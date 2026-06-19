@@ -807,20 +807,20 @@
       "batch_id": "batch-2026-06-19",
       "source_date": "2026-06-19",
       "file": "leads-2026-06-19.json",
-      "lead_count": 5,
+      "lead_count": 8,
       "approved": true,
       "approved_at": "2026-06-19T00:00:00.000Z",
       "status": "active",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
-      "note": "5 productoras avg 9.00/10 — MX-heavy per operator doctrine. Geo: MX 4 / ES 1. NO BRAZIL. Anchors at 10: Anima Estudios MX (LARGEST LATAM animation studio, Jose Garcia De Letona COO Apollo verified). 9s: Mantarraya MX (auteur giant — Reygadas + Escalante home productora, Quetzalli Medrano Head Production Apollo verified — email-only), Latido Films ES (Antonio Saura Medrano Director General Apollo verified, Cannes 2026 presence). 8.5s: Undertk Studio MX (digital content, Renata Torrescano Creative Director Apollo verified), La Casa de Cine MX (Toronto Kids Award, monica@ website-direct, from pool — email-only). 4 Apollo verified DMs + 1 website-direct. Mining context: 10 Apollo bulk rounds across 100+ candidate domains; corporate-tier yielded the verified DMs as indie/auteur productoras hit Apollo wall.",
+      "note": "8 LATAM productoras avg 8.94/10 — ALL WITH FULL CONTACT METHODS (email + IG + phone/WhatsApp + LinkedIn). Geo: MX 7 / ES 1 (87.5% MX-heavy per operator). NO BRAZIL. Anchor at 10: Anima Estudios MX (LARGEST animation studio in LATAM, Jose Garcia De Letona Co-Founder/COO Apollo verified + +52 55 5202 6858). 9s: Latido Films ES (Antonio Saura Director General Apollo verified + +34 915 488 877), Art Kingdom MX (3 Apollo verified DMs + WhatsApp +52 155 227 21510 + Cinépolis/Videocine clients), MODE MEDIA MX (Georgie Uris Founder Apollo verified + +52 55 4047 5427 + H&M/Visa/MasterCard clients), The Motion Lab MX (Rodrigo Maldonado Founder Apollo verified + +52 55 2322 8493 + RED BULL/NIKE/NETFLIX/AMAZON clients). 8.5s: Undertk Studio MX (Renata Torrescano Creative Director Apollo verified + 3 phones MX/CA/UK), La Habichuela Mágica MX (Luis Angel Gonzalez + Elias Tapia Apollo verified + +52 81 1507 1255), Ocelote Films MX (Luis Perez EP Apollo verified + WhatsApp). 14 Apollo verified DMs across the 8 leads. All 8 strict-IG verified. All 8 have direct phone/WhatsApp. All 8 have LinkedIn for the primary DM. Mining context: 19 Apollo bulk rounds across 200+ candidate domains + phone enrichment via WebFetch + targeted WebSearch.",
       "supply_metrics": {
-        "valid_leads": 5,
-        "methodology": "corporate-tier LATAM mining + pool inventory: WebFetch every company + Apollo verified-only + strict IG verify + 8.5+ floor + dedup against 350+ tracked domains"
+        "valid_leads": 8,
+        "methodology": "corporate-tier LATAM mining + phone enrichment: WebFetch every company + Apollo verified-only + strict IG verify + phone via website/WebSearch + LinkedIn from Apollo + 8.5+ floor + dedup against 350+ tracked domains"
       }
     }
   ],
   "active_batch_id": "batch-2026-06-19",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-19T17:53:48.887Z"
+  "last_updated": "2026-06-19T18:41:35.255Z"
 }
