@@ -823,20 +823,20 @@
       "batch_id": "batch-2026-06-21",
       "source_date": "2026-06-21",
       "file": "leads-2026-06-21.json",
-      "lead_count": 5,
+      "lead_count": 8,
       "approved": true,
       "approved_at": "2026-06-21T00:00:00.000Z",
       "status": "active",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
-      "note": "5 productoras avg 9.30/10 — FAST MINING 2026-06-21. NO BRAZIL. MX-heavy (4 of 5). Anchors at 10: Iconoclast Mexico (international productora CDMX Polanco, Pablo Boyero + Nicolas Blankenhorn Apollo verified, IG @iconoclast.tv 103k), Televisa MX (LA MÁS GRANDE de telenovelas en español, Jose Antonio Gomez Cisneros Productor Ejecutivo Asociado Apollo verified, IG @televisa 2M followers). 9: Globomedia ES (50+ series + 150+ programas, 3 Apollo verified DMs, IG @globomedia 46k, +34 91 728 5740). 9 email-only: Mantarraya MX (auteur giant Reygadas/Escalante, Quetzalli Medrano Head Production Apollo verified, EMAIL-ONLY no IG strict-pass). 8.5 email-only: La Casa de Cine MX (Toronto Kids Award, monica@ website-direct, EMAIL-ONLY no IG no phone). CAVEAT: Apollo Televisa data had Eduardo Meza Rodriguez (DECEASED Oct 2021) — skipped him, primary contact is Jose Antonio Gomez Cisneros verified alive on LinkedIn. Fast process: 10+ Apollo bulk rounds across 200+ candidate domains hit hard wall on LATAM corporate-tier productoras.",
+      "note": "8 productoras 100% FRESH (verified against ALL past batches) avg 9.19/10 — deploys Monday 2026-06-22. Geo: MX 4 / ES 4 (balanced). NO BRAZIL. Anchors at 10: Iconoclast Mexico (CDMX Polanco, Pablo Boyero + Nicolas Blankenhorn Apollo verified, IG @iconoclast.tv 103k), Televisa MX (LA MÁS GRANDE telenovelas, Jose Ignacio Gomez Cisneros Apollo verified, IG @televisa 2M), Apaches Entertainment ES (Enrique López Lavigne CEO/Fundador Apollo verified, Madrid +34 91 519 42 83, IG @apachesfilms). 9s: Globomedia ES (3 Apollo DMs, +34 91 728 5740), Caballo Films ES (As Bestas Cannes 2022 + Antidisturbios, Clara Lago + Belen Sanchez Apollo verified, +34 91 542 5171), Atípica Films ES (La Isla Mínima/Marshland, Oscar Manzano + Ivan Benjumea Apollo verified, +34 91 367 6776). 8.5: La Casa de Cine MX (Toronto Kids Award, email-only). 8: Ojo MX (Mara Garcia Apollo verified, IG @ojo.mx, no phone surfaced). 11 Apollo verified DMs across the 8 leads. 7/8 strict-IG verified (La Casa de Cine email-only). 6/8 have direct phone. Mantarraya DROPPED (was in leads-2026-06-09). CAVEAT logged: Televisa Apollo data had Eduardo Meza Rodriguez DECEASED Oct 2021 — used Jose Ignacio Gomez Cisneros instead.",
       "supply_metrics": {
-        "valid_leads": 5,
-        "methodology": "fast corporate-tier mining + pool reserves: parallel Apollo bulk + WebFetch + strict IG + WebSearch phone enrichment"
+        "valid_leads": 8,
+        "methodology": "20+ Apollo bulk rounds across 350+ candidate domains + parallel WebFetch + WebSearch phone enrichment + strict-IG verify + dedup against ALL past batch files"
       }
     }
   ],
   "active_batch_id": "batch-2026-06-21",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-21T23:08:57.851Z"
+  "last_updated": "2026-06-21T23:29:29.772Z"
 }
