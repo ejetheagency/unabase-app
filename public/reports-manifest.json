@@ -1,6 +1,22 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-06-24",
+      "source_date": "2026-06-24",
+      "file": "leads-2026-06-24.json",
+      "lead_count": 8,
+      "approved": true,
+      "approved_at": "2026-06-24T21:56:59.063Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "fresh_mine_precise",
+      "note": "8 productoras 100% FRESH avg 8.89/10 — client geo mix MX 5 / AR 2 / CO 1 (priority-tier, NO BRAZIL). PROCESS NOTE: pool-a-tier.json was dry (6 BR banned + Mantarraya burned) so this was a fresh-mine day. Initial batch-builder keyword discovery (Apollo /mixed_companies/search) returned heavy agency/ecommerce noise; pivoted to PRECISE sourcing (WebSearch named productoras + Apollo /people/match verified-only + Hunter recovery) which restored clean ICP yield. Anchors at 9+: Catatonia MX (Hari Sama founder, 5x Ariel 2025 noms for Un Actor Malo, Cine/TV/Publicidad/Distribución, Apollo-verified DMs aranza@/jano@, IG @catatonia.prod 10k — 9.3), Magic Hammer Studio MX (Carlos Castro Co-Founder, Bronze Cannes Lion, Coca-Cola/Audi/Bimbo, phone, IG 5.9k — 9.0), Filmadora MX (Ramiro Ruiz Partner/Producer, La Cocina 5 Ariel 2025 + Netflix + first Amazon Prime LatAm series, Hunter-sourced email, IG @filmadoramx 10k — 9.0), Poster Films AR (Mariano Echarri Co-Founder/MD, Mercado Libre/P&G/Amazon, BA/Madrid/CDMX/NY, phone, email-only — 9.0), Plenty AR (Hernán Estévez Partner, HBO/Fox/NatGeo, IG @plenty.tv 33k — 9.0). 8.5-8.8: No Ficción MX (Daniela Alatorre founder, Midnight Family Oscar shortlist + Netflix docs, info@ published — 8.8), Anemona Studio MX (Henedy Avendaño CEO Founder, Movistar/Greenpeace, Apollo email + CC role inbox, IG 1.7k — 8.5), Dirty Kitchen CO (Juan Camilo Rodríguez CEO, Gran Effie Latam 2021, Bancolombia/Avianca, phone, IG @dirtykitchenvideo 6.5k — 8.5). All 8 email-bearing; 7/8 strict-IG verified (Poster email-only, no site IG); 4/8 phone. 100% dedup-verified vs ALL 441 past-shipped companies.",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "methodology": "fresh-mine: batch-builder keyword discovery (noisy) pivoted to precise WebSearch-named-productora sourcing + Apollo /people/match verified-only + Hunter email recovery + WebFetch every company + strict IG verify + dedup vs all past batches"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-11",
       "source_date": "2026-06-11",
       "file": "leads-2026-06-11.json",
@@ -842,17 +858,18 @@
       "lead_count": 8,
       "approved": true,
       "approved_at": "2026-06-23T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
       "note": "8 productoras 100% FRESH avg 8.88/10. Geo: ES 5 / MX 2 / AR 1. NO BRAZIL. Anchors at 10: Pokeepsie Films ES (Alex de la Iglesia + Carolina Bang founders, Banijay Iberia equity, HBO Max/Netflix/Amazon/Disney+, IG @pokeepsie_films 31k), Nostromo Pictures ES (Adrián Guerra + Núria Valls founders, 40+ films Russell Crowe/Johnny Depp/Penélope Cruz, BBC Night Manager S2, Netflix trilogy A través de mi ventana, +34 93 368 1985, IG @nostromopictures 11k). 9s: Arcadia Motion Pictures ES (Barcelona, HBO Max/Netflix/MAX, +34 93 414 3071), MOD Producciones ES (Madrid, Helen Marti Donoghue EP, IG @mod_producciones 14k). 8.5s: Mulata Films AR (Maite Echave Cofundadora, email-only), Encinta MX (Daniel Alejandre Director, email-only), Home Films MX (Fredy Wollenstein AMC CEO, IG @homefilms). 7.5 BORDERLINE: Vertigo Films Spain (Spanish subsidiary of UK Vertigo, Tomas Garcia Post-Production Supervisor, email-only). 13 Apollo verified DMs across the 8 leads. 4/8 strict-IG verified. 3/8 have phone. Mining context: 40+ Apollo bulk rounds across 500+ candidate domains; corporate-tier ES yielded the major hits. Mantarraya lesson: 100% dedup-verified against ALL past batch files.",
       "supply_metrics": {
         "valid_leads": 8,
         "methodology": "fast corporate-tier mining: 40+ Apollo bulk rounds + parallel WebFetch + WebSearch phone enrichment + strict IG verify + dedup against ALL past batches"
-      }
+      },
+      "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-06-23",
+  "active_batch_id": "batch-2026-06-24",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-24T02:14:41.203Z"
+  "last_updated": "2026-06-24T21:56:59.063Z"
 }
