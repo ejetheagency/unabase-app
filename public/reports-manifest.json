@@ -826,7 +826,7 @@
       "lead_count": 8,
       "approved": true,
       "approved_at": "2026-06-21T00:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
       "note": "8 productoras 100% FRESH (verified against ALL past batches) avg 9.19/10 — deploys Monday 2026-06-22. Geo: MX 4 / ES 4 (balanced). NO BRAZIL. Anchors at 10: Iconoclast Mexico (CDMX Polanco, Pablo Boyero + Nicolas Blankenhorn Apollo verified, IG @iconoclast.tv 103k), Televisa MX (LA MÁS GRANDE telenovelas, Jose Ignacio Gomez Cisneros Apollo verified, IG @televisa 2M), Apaches Entertainment ES (Enrique López Lavigne CEO/Fundador Apollo verified, Madrid +34 91 519 42 83, IG @apachesfilms). 9s: Globomedia ES (3 Apollo DMs, +34 91 728 5740), Caballo Films ES (As Bestas Cannes 2022 + Antidisturbios, Clara Lago + Belen Sanchez Apollo verified, +34 91 542 5171), Atípica Films ES (La Isla Mínima/Marshland, Oscar Manzano + Ivan Benjumea Apollo verified, +34 91 367 6776). 8.5: La Casa de Cine MX (Toronto Kids Award, email-only). 8: Ojo MX (Mara Garcia Apollo verified, IG @ojo.mx, no phone surfaced). 11 Apollo verified DMs across the 8 leads. 7/8 strict-IG verified (La Casa de Cine email-only). 6/8 have direct phone. Mantarraya DROPPED (was in leads-2026-06-09). CAVEAT logged: Televisa Apollo data had Eduardo Meza Rodriguez DECEASED Oct 2021 — used Jose Ignacio Gomez Cisneros instead.",
@@ -834,9 +834,25 @@
         "valid_leads": 8,
         "methodology": "20+ Apollo bulk rounds across 350+ candidate domains + parallel WebFetch + WebSearch phone enrichment + strict-IG verify + dedup against ALL past batch files"
       }
+    },
+    {
+      "batch_id": "batch-2026-06-23",
+      "source_date": "2026-06-23",
+      "file": "leads-2026-06-23.json",
+      "lead_count": 8,
+      "approved": true,
+      "approved_at": "2026-06-23T00:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "8 productoras 100% FRESH avg 8.88/10. Geo: ES 5 / MX 2 / AR 1. NO BRAZIL. Anchors at 10: Pokeepsie Films ES (Alex de la Iglesia + Carolina Bang founders, Banijay Iberia equity, HBO Max/Netflix/Amazon/Disney+, IG @pokeepsie_films 31k), Nostromo Pictures ES (Adrián Guerra + Núria Valls founders, 40+ films Russell Crowe/Johnny Depp/Penélope Cruz, BBC Night Manager S2, Netflix trilogy A través de mi ventana, +34 93 368 1985, IG @nostromopictures 11k). 9s: Arcadia Motion Pictures ES (Barcelona, HBO Max/Netflix/MAX, +34 93 414 3071), MOD Producciones ES (Madrid, Helen Marti Donoghue EP, IG @mod_producciones 14k). 8.5s: Mulata Films AR (Maite Echave Cofundadora, email-only), Encinta MX (Daniel Alejandre Director, email-only), Home Films MX (Fredy Wollenstein AMC CEO, IG @homefilms). 7.5 BORDERLINE: Vertigo Films Spain (Spanish subsidiary of UK Vertigo, Tomas Garcia Post-Production Supervisor, email-only). 13 Apollo verified DMs across the 8 leads. 4/8 strict-IG verified. 3/8 have phone. Mining context: 40+ Apollo bulk rounds across 500+ candidate domains; corporate-tier ES yielded the major hits. Mantarraya lesson: 100% dedup-verified against ALL past batch files.",
+      "supply_metrics": {
+        "valid_leads": 8,
+        "methodology": "fast corporate-tier mining: 40+ Apollo bulk rounds + parallel WebFetch + WebSearch phone enrichment + strict IG verify + dedup against ALL past batches"
+      }
     }
   ],
-  "active_batch_id": "batch-2026-06-21",
+  "active_batch_id": "batch-2026-06-23",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-21T23:29:29.772Z"
+  "last_updated": "2026-06-24T02:14:41.203Z"
 }
