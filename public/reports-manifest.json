@@ -4,16 +4,16 @@
       "batch_id": "batch-2026-06-24",
       "source_date": "2026-06-24",
       "file": "leads-2026-06-24.json",
-      "lead_count": 8,
+      "lead_count": 10,
       "approved": true,
-      "approved_at": "2026-06-24T21:56:59.063Z",
+      "approved_at": "2026-06-24T23:12:01.660Z",
       "status": "active",
       "disable_carry_forward": true,
-      "workspace": "fresh_mine_precise",
-      "note": "8 productoras 100% FRESH avg 8.89/10 — client geo mix MX 5 / AR 2 / CO 1 (priority-tier, NO BRAZIL). PROCESS NOTE: pool-a-tier.json was dry (6 BR banned + Mantarraya burned) so this was a fresh-mine day. Initial batch-builder keyword discovery (Apollo /mixed_companies/search) returned heavy agency/ecommerce noise; pivoted to PRECISE sourcing (WebSearch named productoras + Apollo /people/match verified-only + Hunter recovery) which restored clean ICP yield. Anchors at 9+: Catatonia MX (Hari Sama founder, 5x Ariel 2025 noms for Un Actor Malo, Cine/TV/Publicidad/Distribución, Apollo-verified DMs aranza@/jano@, IG @catatonia.prod 10k — 9.3), Magic Hammer Studio MX (Carlos Castro Co-Founder, Bronze Cannes Lion, Coca-Cola/Audi/Bimbo, phone, IG 5.9k — 9.0), Filmadora MX (Ramiro Ruiz Partner/Producer, La Cocina 5 Ariel 2025 + Netflix + first Amazon Prime LatAm series, Hunter-sourced email, IG @filmadoramx 10k — 9.0), Poster Films AR (Mariano Echarri Co-Founder/MD, Mercado Libre/P&G/Amazon, BA/Madrid/CDMX/NY, phone, email-only — 9.0), Plenty AR (Hernán Estévez Partner, HBO/Fox/NatGeo, IG @plenty.tv 33k — 9.0). 8.5-8.8: No Ficción MX (Daniela Alatorre founder, Midnight Family Oscar shortlist + Netflix docs, info@ published — 8.8), Anemona Studio MX (Henedy Avendaño CEO Founder, Movistar/Greenpeace, Apollo email + CC role inbox, IG 1.7k — 8.5), Dirty Kitchen CO (Juan Camilo Rodríguez CEO, Gran Effie Latam 2021, Bancolombia/Avianca, phone, IG @dirtykitchenvideo 6.5k — 8.5). All 8 email-bearing; 7/8 strict-IG verified (Poster email-only, no site IG); 4/8 phone. 100% dedup-verified vs ALL 441 past-shipped companies.",
+      "workspace": "precise_top10_deploy",
+      "note": "10 productoras PRESTIGE-tier avg 9.32/10 — strongest complete picks (email + strict-IG-verified handle w/ follower count + named DM). Client geo MX 5 / ES 2 / PE 1 / AR 1 / CO 1 (7 priority-tier, NO BRAZIL). Replaces the initial 8-lead 06-24 set after operator chose the 10 strongest from the precise-sourcing refill (the 8 went to the pool). Method: 6 parallel WebSearch+WebFetch discovery agents (MX auteur+commercial, AR, CO, CL+PE, ES) → Apollo/Hunter email recovery → strict IG verify (posts>=10 + name-match + follower count) → dedup vs all 457 shipped/in-pool. Anchors at 9.5: El Deseo ES (Almodóvar, 2 Oscars, esther@ Hunter, IG @eldeseo_ 101k), Pacha Films PE (4x Emmy doc, Netflix/NatGeo/Disney+, IG 3.7k), The Maestros MX (Cannes-tier spots Mercedes/Nike/Dior, IG 14k), CMO swapped→Casa Tarántula. 9.3: Catatonia MX (5x Ariel 2025), El Estudio MX (Zama/Miss Bala/Luis Miguel), Suma Content ES (Los Javis, IG 44k), Maravillacine AR (Fipresci Berlinale 2025), Madrefoca MX (premiada, Nissan/Uber). 9.2 Varios Lobos MX (Selva Trágica Netflix). 9.0 Casa Tarántula CO (ALIS Berlinale Crystal Bear). All 10 email-bearing + all 10 strict-IG verified with follower counts + 4/10 phone.",
       "supply_metrics": {
-        "valid_leads": 8,
-        "methodology": "fresh-mine: batch-builder keyword discovery (noisy) pivoted to precise WebSearch-named-productora sourcing + Apollo /people/match verified-only + Hunter email recovery + WebFetch every company + strict IG verify + dedup vs all past batches"
+        "valid_leads": 10,
+        "methodology": "precise WebSearch-named-productora sourcing + Apollo/Hunter email recovery + strict IG verify w/ follower counts + dedup vs all past batches; top-10 by score with complete channels"
       }
     },
     {
@@ -871,5 +871,5 @@
   ],
   "active_batch_id": "batch-2026-06-24",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-24T21:56:59.063Z"
+  "last_updated": "2026-06-24T23:12:01.660Z"
 }
