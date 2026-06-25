@@ -25,8 +25,14 @@
     "instagramUrl": "https://www.instagram.com/magichammerstudio/",
     "instagramHandle": "magichammerstudio",
     "instagramFollowers": 5952,
-    "additionalContacts": [],
-    "companyBrief": "Animación/VFX/post — Mérida. Bronze Cannes Lion; Coca-Cola/Audi/Bimbo. IG 6k strict-verified.",
+    "additionalContacts": [
+      {
+        "name": "Sergio Maceda",
+        "title": "Producer",
+        "email": "s.maceda@magichammer.com.mx"
+      }
+    ],
+    "companyBrief": "Casa de animación y VFX / post-producción — Mérida, Yucatán (10+ años). Producer full-service de VFX, animación y post para publicidad. Bronze Cannes Lion (Winis Font). Roster: Coca-Cola, Audi, Bimbo, Snickers, Doritos, Hersheys, Bayer, Jeep, Jumex. Rep en EE.UU. (alcance internacional). Carlos Castro Co-Founder/Head of Production + Sergio Maceda Producer. IG @magichammerstudio 5.9k ✓ strict-verified (60 posts).",
     "unabaseScore": 9
   },
   {
@@ -60,9 +66,14 @@
         "name": "Marco Polo Constandse",
         "title": "Director / Producer",
         "email": "marcopolo@filmadora.mx"
+      },
+      {
+        "name": "José Nacif",
+        "title": "Partner / Producer",
+        "email": null
       }
     ],
-    "companyBrief": "Cine de prestigio — MX. La Cocina (5 Ariel 2025); Netflix; primera serie Amazon Prime LatAm. IG 10k strict-verified.",
+    "companyBrief": "Productora de cine de prestigio — CDMX. Alianza de tres productores reconocidos: Ramiro Ruiz, Marco Polo Constandse (Dir/Prod, 35+ films) y José Nacif. \"La Cocina\" ganó 5 premios Ariel 2025; \"Loco por ella\" (Netflix); primera serie original de Amazon Prime en LatAm. Email ramiro@filmadora.mx (patrón {first}@ confirmado). IG @filmadoramx 10k ✓ strict-verified (971 posts).",
     "unabaseScore": 9
   },
   {
@@ -91,8 +102,34 @@
     "instagramUrl": "https://www.instagram.com/centralfilms/",
     "instagramHandle": "centralfilms",
     "instagramFollowers": 14000,
-    "additionalContacts": [],
-    "companyBrief": "Comerciales cross-border (6 países) — Polanco, CDMX. Tecate, Heineken, Jumex Sport.",
+    "additionalContacts": [
+      {
+        "name": "Raúl García",
+        "title": "Executive Producer (España)",
+        "email": "raulgarcia@centralfilms.net"
+      },
+      {
+        "name": "Flor R. Veidez",
+        "title": "Executive Producer (España)",
+        "email": "flor@centralfilms.net"
+      },
+      {
+        "name": "Christian Espinoza",
+        "title": "Executive Producer (Perú)",
+        "email": "christian@centralfilms.net"
+      },
+      {
+        "name": "Carla Catrileo",
+        "title": "Executive Producer (Chile)",
+        "email": "carla@centralfilms.net"
+      },
+      {
+        "name": "José Barake",
+        "title": "Executive Producer (Chile)",
+        "email": "jose@centralfilms.net"
+      }
+    ],
+    "companyBrief": "Productora de comerciales cross-border con Productores Ejecutivos en 6 países (México, España, Perú, Chile, USA) — sede Polanco, CDMX. Equipo EP: Mauricio Francini (MX/CO), Raúl García + Flor R. Veidez (ES), Christian Espinoza (PE), Carla Catrileo + José Barake (CL). Spots para Tecate, Heineken, Jumex Sport; uno de los productores top de MX/LatAm. Email mfrancini@centralfilms.net + tel +52 55 5562 8740. IG @centralfilms 14k ✓ strict-verified (99 posts).",
     "unabaseScore": 9
   },
   {
@@ -113,7 +150,7 @@
     "website": "https://carcavacine.mx",
     "country": "Mexico",
     "contactName": "Fernanda de la Peza",
-    "contactTitle": "Producer",
+    "contactTitle": "Socia Fundadora / Directora General",
     "contactEmail": "fernanda@carcavacine.mx",
     "companyEmail": null,
     "contactPhone": null,
@@ -126,9 +163,14 @@
         "name": "Joaquín del Paso",
         "title": "Founder / Director",
         "email": null
+      },
+      {
+        "name": "Daniela Maung",
+        "title": "Productora",
+        "email": "daniela@carcavacine.mx"
       }
     ],
-    "companyBrief": "Cine de autor — CDMX. Manto de Gemas (Oso de Plata Berlinale 2022), The Untamed.",
+    "companyBrief": "Productora de cine de autor — CDMX. Fundada por Joaquín del Paso (Dir) + Fernanda de la Peza (Prod). \"Manto de Gemas / Robe of Gems\" (Oso de Plata Gran Premio del Jurado, Berlinale 2022), \"The Untamed\" (Amat Escalante), \"The Garden We Dreamed\". Email fernanda@carcavacine.mx. IG @carcavacine 643 ✓ strict-verified (76 posts).",
     "unabaseScore": 9
   },
   {
@@ -157,8 +199,19 @@
     "instagramUrl": "https://www.instagram.com/mut.mx/",
     "instagramHandle": "mut.mx",
     "instagramFollowers": 9079,
-    "additionalContacts": [],
-    "companyBrief": "Comerciales — Guadalajara (2015). The North Face, Volvo, Puma, Chivas. IG 9k. DM nominado pendiente.",
+    "additionalContacts": [
+      {
+        "name": "María S",
+        "title": "Producer",
+        "email": "maria@mut.mx"
+      },
+      {
+        "name": "Alexis López",
+        "title": "Director",
+        "email": "alexis@mut.mx"
+      }
+    ],
+    "companyBrief": "Productora de comerciales — Guadalajara (desde 2015). Co-Founder Pablo Garcilita + Producer María S + Director Alexis López. Spots para The North Face, Volvo, Puma, Skechers, Omnilife, Chivas, Tequila Siete Leguas. Email pablo@mut.mx. IG @mut.mx 9k ✓ strict-verified (425 posts).",
     "unabaseScore": 8.8
   },
   {
@@ -188,7 +241,7 @@
     "instagramHandle": "anemonaanimationstudio",
     "instagramFollowers": 1757,
     "additionalContacts": [],
-    "companyBrief": "Animación — CDMX + Toronto. Movistar, Greenpeace. IG 1.7k strict-verified.",
+    "companyBrief": "Casa productora de animación — CDMX (también Toronto), ~15 años. Produce animación 2D/3D, motion graphics, animatics e infografía como productora. Clientes: Movistar, Greenpeace, Thomson Reuters, bineo, Plantival. CEO/Founder Henedy Avendaño. Email henedy@anemonastudio.com; CC rol contact@anemonastudio.com (publicado). IG @anemonaanimationstudio 1.7k ✓ strict-verified (108 posts).",
     "unabaseScore": 8.5
   },
   {
@@ -219,12 +272,17 @@
     "instagramFollowers": 33000,
     "additionalContacts": [
       {
+        "name": "Mariano Farías",
+        "title": "CEO",
+        "email": "mariano@plenty.tv"
+      },
+      {
         "name": "Gladys Esquivel",
         "title": "Executive Producer",
         "email": "gla@plenty.tv"
       }
     ],
-    "companyBrief": "Motion/animación — BA (2010). HBO/Fox/NatGeo/Nickelodeon. IG @plenty.tv 33k strict-verified.",
+    "companyBrief": "Estudio de motion/animación productora — Buenos Aires/Vicente López (también Barcelona), desde 2010. Produce identidades animadas, personajes y contenido híbrido live-action/CG/AI. Roster broadcast/marcas elite: HBO, Fox, Nat Geo, Nickelodeon, MTV, Canal+, Discovery, Coca-Cola, Doritos, VW, Mercado Libre. Premiada en 4 continentes. Motion Director/Partner Hernán Estévez + CEO Mariano Farías + EP Gladys Esquivel. IG @plenty.tv 33k ✓ strict-verified (249 posts).",
     "unabaseScore": 9
   },
   {
@@ -239,15 +297,15 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "hunter",
+    "contactConfidence": "likely",
     "companyName": "Vaca Films",
     "website": "https://vacafilms.com",
     "country": "Spain",
     "contactName": "Emma Lustres",
     "contactTitle": "Founder / Producer",
-    "contactEmail": "info@vacafilms.com",
-    "companyEmail": null,
+    "contactEmail": "emmal@vacafilms.com",
+    "companyEmail": "info@vacafilms.com",
     "contactPhone": "+34 881 917 566",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/vacafilms_productora/",
@@ -257,10 +315,10 @@
       {
         "name": "Borja Pena",
         "title": "Founder / Producer",
-        "email": null
+        "email": "borjapena@vacafilms.com"
       }
     ],
-    "companyBrief": "Cine y ficción TV — A Coruña (2003). Celda 211, El Niño, Clanes (Netflix). IG 24k.",
+    "companyBrief": "Productora de cine y ficción TV — A Coruña, Galicia (desde 2003; Vaca TV para streamers). Founders Emma Lustres + Borja Pena. Celda 211, El Niño, El Desconocido, Cien años de perdón, Quien a hierro mata, La Unidad; series Clanes (Netflix), El desorden que dejas. Email emmal@vacafilms.com + tel +34 881 917 566. IG @vacafilms_productora 24k ✓ strict-verified (1173 posts).",
     "unabaseScore": 9
   },
   {
@@ -276,12 +334,12 @@
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
     "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactConfidence": "medium",
     "companyName": "Guarango Cine y Video",
     "website": "https://guarango.pe",
     "country": "Peru",
-    "contactName": "Stefan Kaspar",
-    "contactTitle": "Founder",
+    "contactName": "Ernesto Cabellos",
+    "contactTitle": "President / Co-Founder (Director)",
     "contactEmail": "info@guarango.pe",
     "companyEmail": null,
     "contactPhone": "+51 1 460 1135",
@@ -289,8 +347,19 @@
     "instagramUrl": "https://www.instagram.com/guarangofilms/",
     "instagramHandle": "guarangofilms",
     "instagramFollowers": 2074,
-    "additionalContacts": [],
-    "companyBrief": "Documental + post — Lima (1994). Hija de la Laguna; 150+ festivales; Netflix/Amazon. IG 1.9k.",
+    "additionalContacts": [
+      {
+        "name": "Ricardo Cabellos",
+        "title": "Executive Producer / Post-Production Director",
+        "email": null
+      },
+      {
+        "name": "Fabricio Deza",
+        "title": "Post-Production Supervisor",
+        "email": "fdeza@guarango.pe"
+      }
+    ],
+    "companyBrief": "Productora + post de documental — Jesús María, Lima (30 años, fundada 1994; co-fundador Stefan Kaspar †). Dirigida por Ernesto Cabellos (President/Director). \"Hija de la Laguna\", \"Choropampa\", \"De Ollas y Sueños\"; 5 largometrajes doc, 100+ films post-producidos, 150+ selecciones de festival; títulos en Netflix/Amazon. Email info@guarango.pe + tel +51 1 460 1135. IG @guarangofilms 2.1k ✓ strict-verified (115 posts).",
     "unabaseScore": 8.8
   },
   {
@@ -324,9 +393,14 @@
         "name": "Iván Mejía",
         "title": "Partner / CCO",
         "email": "ivan@dirtykitchen.co"
+      },
+      {
+        "name": "Erika Piragauta",
+        "title": "Executive Producer",
+        "email": "erikapiragauta@dirtykitchen.co"
       }
     ],
-    "companyBrief": "Branded content/influtainment — Bogotá + CDMX. Gran Effie Latam 2021. IG 6.5k strict-verified.",
+    "companyBrief": "Casa productora de branded content / influtainment — Bogotá + CDMX (12 años). Produce series audiovisuales y animación para marcas (serie animada \"Extintos de Póker\": 68 artistas, ~14k dibujos). Roster: Bancolombia, Cerveza Póker, Alpina, Avianca, AB InBev, Homecenter, Miniso. Gran Effie Latam 2021 + múltiples Effie Colombia oro. CEO Juan Camilo Rodríguez + Partner/CCO Iván Mejía + EP Erika Piragauta. Email juancamilo@dirtykitchen.co; CC cocinaconnosotros@. IG @dirtykitchenvideo 6.5k ✓ strict-verified (552 posts).",
     "unabaseScore": 8.5
   }
 ]
