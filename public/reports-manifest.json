@@ -1,20 +1,37 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-06-25",
+      "source_date": "2026-06-25",
+      "file": "leads-2026-06-25.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-06-25T13:32:10.507Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "10 productoras POOL DISPATCH (first clean dispatch since the 2026-06-24 precise refill) avg 8.86/10. Geo Mexico:6 / Argentina:1 / Spain:1 / Peru:1 / Colombia:1 (8 priority-tier, MX plurality, NO BRAZIL). All 10 email-bearing + all 10 strict-IG verified with follower counts + 5/10 phone. Picks: Magic Hammer MX (Bronze Cannes Lion, IG 6k), Filmadora MX (La Cocina 5 Ariel, IG 10k), Central Films MX (Tecate/Heineken, IG 14k), Cárcava MX (Berlinale Silver Bear, IG 643), MUT MX (North Face/Volvo, Pablo Garcilita Co-Founder via Hunter, IG 9k), Anemona MX (Movistar/Greenpeace, IG 1.7k), Plenty AR (HBO/Fox/NatGeo, IG 33k), Vaca Films ES (Celda 211/Clanes Netflix, IG 24k), Guarango PE (Hija de la Laguna, IG 2.1k), Dirty Kitchen CO (Gran Effie Latam, IG 6.5k). Dispatched from staging/pool-a-tier.json (pool remaining 25).",
+      "supply_metrics": {
+        "valid_leads": 10,
+        "methodology": "pool dispatch from staging/pool-a-tier.json (precise-sourced, strict-IG re-verified at dispatch w/ follower counts, MUT DM via Hunter)"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-24",
       "source_date": "2026-06-24",
       "file": "leads-2026-06-24.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-24T23:12:01.660Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "precise_top10_deploy",
       "note": "10 productoras PRESTIGE-tier avg 9.32/10 — strongest complete picks (email + strict-IG-verified handle w/ follower count + named DM). Client geo MX 5 / ES 2 / PE 1 / AR 1 / CO 1 (7 priority-tier, NO BRAZIL). Replaces the initial 8-lead 06-24 set after operator chose the 10 strongest from the precise-sourcing refill (the 8 went to the pool). Method: 6 parallel WebSearch+WebFetch discovery agents (MX auteur+commercial, AR, CO, CL+PE, ES) → Apollo/Hunter email recovery → strict IG verify (posts>=10 + name-match + follower count) → dedup vs all 457 shipped/in-pool. Anchors at 9.5: El Deseo ES (Almodóvar, 2 Oscars, esther@ Hunter, IG @eldeseo_ 101k), Pacha Films PE (4x Emmy doc, Netflix/NatGeo/Disney+, IG 3.7k), The Maestros MX (Cannes-tier spots Mercedes/Nike/Dior, IG 14k), CMO swapped→Casa Tarántula. 9.3: Catatonia MX (5x Ariel 2025), El Estudio MX (Zama/Miss Bala/Luis Miguel), Suma Content ES (Los Javis, IG 44k), Maravillacine AR (Fipresci Berlinale 2025), Madrefoca MX (premiada, Nissan/Uber). 9.2 Varios Lobos MX (Selva Trágica Netflix). 9.0 Casa Tarántula CO (ALIS Berlinale Crystal Bear). All 10 email-bearing + all 10 strict-IG verified with follower counts + 4/10 phone.",
       "supply_metrics": {
         "valid_leads": 10,
         "methodology": "precise WebSearch-named-productora sourcing + Apollo/Hunter email recovery + strict IG verify w/ follower counts + dedup vs all past batches; top-10 by score with complete channels"
-      }
+      },
+      "archived_at": "2026-06-25T13:32:10.507Z"
     },
     {
       "batch_id": "batch-2026-06-11",
@@ -869,7 +886,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-06-24",
+  "active_batch_id": "batch-2026-06-25",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-24T23:12:01.660Z"
+  "last_updated": "2026-06-25T13:32:10.507Z"
 }
