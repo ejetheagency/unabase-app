@@ -11,28 +11,38 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "hunter",
+    "contactConfidence": "verified",
     "companyName": "CMO Producciones",
     "website": "https://cmo.com.co",
     "country": "Colombia",
     "contactName": "Ana Barreto",
-    "contactTitle": "CEO",
+    "contactTitle": "CEO / Director General",
     "contactEmail": "abarreto@cmo.com.co",
-    "companyEmail": null,
+    "companyEmail": "info@cmo.com.co",
     "contactPhone": null,
     "contactLinkedIn": null,
-    "instagramUrl": null,
-    "instagramHandle": null,
-    "instagramFollowers": null,
+    "instagramUrl": "https://www.instagram.com/cmoproduccionessas/",
+    "instagramHandle": "cmoproduccionessas",
+    "instagramFollowers": 18000,
     "additionalContacts": [
       {
-        "name": "Clara María Ochoa",
+        "name": "Clara María Ochoa Domínguez",
         "title": "Founder / President",
+        "email": null
+      },
+      {
+        "name": "Johanna Gutiérrez",
+        "title": "Director of Original Content",
+        "email": null
+      },
+      {
+        "name": "Catalina Espinal",
+        "title": "General Production Director",
         "email": null
       }
     ],
-    "companyBrief": "Productora cine/TV/streaming — Bogotá. Pálpito (#1 Netflix global), La venganza de Analía, Pasión de Gavilanes 2. IG handle no confirmado (recuperar en dispatch).",
+    "companyBrief": "Productora de cine y TV — Bogotá, Colombia (1999). Desarrolla y distribuye películas y series en 190+ territorios; certificada ISO 9001 y Great Place to Work 2025. Créditos: Pálpito (#1 Netflix global), La venganza de Analía, Pasión de Gavilanes 2, Perfil Falso, El Bronx, Amar y Vivir. DMs: Clara María Ochoa (Fundadora/Presidenta), Ana Barreto (CEO), Johanna Gutiérrez (Dir. Contenido Original). IG @cmoproduccionessas ≈18k ✓.",
     "unabaseScore": 9.5
   },
   {
@@ -47,28 +57,33 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "website",
+    "contactConfidence": "role_inbox",
     "companyName": "Matanza Cine",
     "website": "https://matanzacine.com.ar",
     "country": "Argentina",
     "contactName": null,
     "contactTitle": null,
     "contactEmail": "recepcion@matanzacine.com.ar",
-    "companyEmail": "recepcion@matanzacine.com.ar",
+    "companyEmail": "produccion@matanzacine.com.ar",
     "contactPhone": "+54 11 4554 3556",
     "contactLinkedIn": null,
-    "instagramUrl": null,
-    "instagramHandle": null,
-    "instagramFollowers": null,
+    "instagramUrl": "https://www.instagram.com/matanzacine/",
+    "instagramHandle": "matanzacine",
+    "instagramFollowers": 1915,
     "additionalContacts": [
       {
         "name": "Pablo Trapero",
-        "title": "Director / Founder",
+        "title": "Co-Founder / Director",
+        "email": null
+      },
+      {
+        "name": "Martina Gusman",
+        "title": "Co-Founder / Producer",
         "email": null
       }
     ],
-    "companyBrief": "Prestigio — CABA (2002). Carancho, Elefante Blanco, La Quietud (Venecia). X @MatanzaCine (IG no confirmado).",
+    "companyBrief": "Productora de prestigio — CABA, Argentina (2002), fundada por el director Pablo Trapero y la actriz-productora Martina Gusman (debutó con El Bonaerense). Ficción y documental con gran proyección internacional. Créditos: Carancho, Elefante Blanco, La Quietud (Venecia). DMs: Pablo Trapero (Co-Fundador/Director), Martina Gusman (Co-Fundadora/Productora). IG @matanzacine 1.9k ✓ (361 posts, strict-verified). Inbox: recepción + producción.",
     "unabaseScore": 9.2
   },
   {
@@ -83,8 +98,8 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "apollo_verified",
-    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactConfidence": "verified",
     "companyName": "Mantarraya",
     "website": "https://mantarraya.com",
     "country": "Mexico",
@@ -94,11 +109,27 @@
     "companyEmail": null,
     "contactPhone": null,
     "contactLinkedIn": null,
-    "instagramUrl": null,
-    "instagramHandle": null,
-    "instagramFollowers": null,
-    "additionalContacts": [],
-    "companyBrief": "Productora mexicana ELITE de cine de autor — Mantarraya Producciones, hogar de Carlos Reygadas (Silent Light, Cannes Jury Prize 2007 + Post Tenebras Lux, Cannes Best Director 2012) y Amat Escalante (Heli, Cannes Best Director 2013; The Untamed, Venice Silver Lion 2016). Quetzalli Medrano Head of Production/Distribution Apollo verified. Co-productora histórica con Piano (Julio Chavezmontes/Sebastián Hofmann). NO tiene IG con presencia validable — ship EMAIL-ONLY (quetzalli@mantarraya.com).",
+    "instagramUrl": "https://www.instagram.com/ndmantarraya/",
+    "instagramHandle": "ndmantarraya",
+    "instagramFollowers": 7519,
+    "additionalContacts": [
+      {
+        "name": "Jaime Romandía",
+        "title": "Founder / Director General",
+        "email": null
+      },
+      {
+        "name": "Pablo Aldrete",
+        "title": "Co-Founder / Partner",
+        "email": null
+      },
+      {
+        "name": "Carlos Reygadas",
+        "title": "Partner / Director",
+        "email": null
+      }
+    ],
+    "companyBrief": "Productora y distribuidora de cine de autor — CDMX (1998), la casa mexicana con más premios internacionales en 50 años. Hogar de Carlos Reygadas (Silent Light, Post Tenebras Lux) y Amat Escalante (Heli, The Untamed). Opera el sello ND Mantarraya y coproduce con Piano. DMs: Jaime Romandía (Fundador/Dir. General), Pablo Aldrete (Co-Fundador), Quetzalli Medrano (Head of Production), Carlos Reygadas (Socio). IG @ndmantarraya 7.5k ✓ (616 posts).",
     "unabaseScore": 9
   },
   {
@@ -113,15 +144,15 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "apollo",
+    "contactConfidence": "verified",
     "companyName": "La Ventana Cine",
     "website": "https://laventanacine.com",
     "country": "Chile",
     "contactName": "Carola Fuentes",
-    "contactTitle": "CEO / Producer",
-    "contactEmail": "contacto@laventanacine.com",
-    "companyEmail": null,
+    "contactTitle": "CEO / Producer / Co-Founder",
+    "contactEmail": "carola@laventanacine.com",
+    "companyEmail": "contacto@laventanacine.com",
     "contactPhone": null,
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/laventanacine/",
@@ -130,11 +161,11 @@
     "additionalContacts": [
       {
         "name": "Rafa Valdeavellano",
-        "title": "COO / Director",
-        "email": null
+        "title": "COO / Director / Co-Founder",
+        "email": "rafa@laventanacine.com"
       }
     ],
-    "companyBrief": "Documental social, B Corp — Santiago (2006). Chicago Boys; Sheffield DocFest. IG 4.7k.",
+    "companyBrief": "Productora documental de impacto social, empresa B — Santiago, Chile (2006), fundada por Carola Fuentes y Rafael Valdeavellano. Investiga, produce y distribuye historias con impacto en Chile, Latam, EE.UU., Canadá y Europa. Créditos: Chicago Boys (Mejor Director SANFIC 2016; Sheffield DocFest), Breaking the Brick. DMs: Carola Fuentes (CEO/Productora), Rafa Valdeavellano (COO/Director). IG @laventanacine 4.7k ✓.",
     "unabaseScore": 9
   },
   {
@@ -150,7 +181,7 @@
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
     "contactSource": "apollo",
-    "contactConfidence": "likely",
+    "contactConfidence": "verified",
     "companyName": "Poster Films",
     "website": "https://posterfilms.com",
     "country": "Argentina",
@@ -165,12 +196,32 @@
     "instagramFollowers": null,
     "additionalContacts": [
       {
-        "name": "Paula Sousa",
+        "name": "Ale Ruax",
+        "title": "Founder / Creative Director",
+        "email": "aleruax@posterfilms.com"
+      },
+      {
+        "name": "José Bustos",
         "title": "Executive Producer",
-        "email": "paula@posterfilms.com"
+        "email": "jose@posterfilms.com"
+      },
+      {
+        "name": "Lucia Lamboley",
+        "title": "Film + TV Executive Producer",
+        "email": "lucia@posterfilms.com"
+      },
+      {
+        "name": "Asori Soto",
+        "title": "Executive Producer (New York)",
+        "email": "asori@posterfilms.com"
+      },
+      {
+        "name": "Viridiana Guadarrama",
+        "title": "Producer (Mexico City)",
+        "email": "viri@posterfilms.com"
       }
     ],
-    "companyBrief": "Boutique intl — BA/Madrid/CDMX/NY. Mercado Libre, P&G, Amazon. Email-first (sin IG en sitio).",
+    "companyBrief": "Productora boutique internacional — fundada en Argentina por Mariano Echarri y el director Ale Ruax, con oficinas en Buenos Aires, Nueva York, CDMX y São Paulo. Produce publicidad, contenido TV, documental y videoclips. Clientes: Mercado Libre, P&G, Amazon, Don Julio, McDonald's, OnePlus. DMs: Mariano Echarri (Co-Fundador/MD), Ale Ruax (Fundador/Dir. Creativo), José Bustos + Lucía Lamboley (Productores Ejecutivos). Email-first (sin IG en sitio).",
     "unabaseScore": 9
   },
   {
@@ -185,19 +236,19 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "website",
+    "contactConfidence": "role_inbox",
     "companyName": "No Ficción",
     "website": "https://noficcion.mx",
     "country": "Mexico",
     "contactName": "Daniela Alatorre",
     "contactTitle": "Founder & Director",
     "contactEmail": "info@noficcion.mx",
-    "companyEmail": "info@noficcion.mx",
+    "companyEmail": null,
     "contactPhone": null,
     "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/no.ficcion/",
-    "instagramHandle": "no.ficcion",
+    "instagramUrl": "https://www.instagram.com/noficcionmx/",
+    "instagramHandle": "noficcionmx",
     "instagramFollowers": null,
     "additionalContacts": [
       {
@@ -206,7 +257,7 @@
         "email": null
       }
     ],
-    "companyBrief": "Documental — CDMX. Midnight Family (shortlist Oscar), Netflix docs.",
+    "companyBrief": "Productora independiente de documental — CDMX (2017), fundada por Daniela Alatorre y Elena Fortes (en alianza con Cinépolis). No ficción de alto perfil y tema social para cine y streaming; Fortes co-fundó el festival Ambulante con Gael García Bernal y Diego Luna. Créditos: Midnight Family (shortlist Oscar 2020), Vivos (Ai Weiwei), Una película de policías (Netflix). DMs: Daniela Alatorre (Fundadora/Directora), Elena Fortes (Co-Fundadora). IG @noficcionmx ✓ (handle verificado; conteo pendiente).",
     "unabaseScore": 8.8
   },
   {
@@ -221,28 +272,43 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "website",
+    "contactConfidence": "verified",
     "companyName": "Gusano Films",
     "website": "https://gusano.org",
     "country": "Colombia",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "gusano@gusano.org",
-    "companyEmail": null,
+    "contactName": "Jorge Caballero",
+    "contactTitle": "Founder / Producer / Director",
+    "contactEmail": "jcaballeroramos@gmail.com",
+    "companyEmail": "gusano@gusano.org",
     "contactPhone": null,
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/gusanofilms.cine/",
     "instagramHandle": "gusanofilms.cine",
-    "instagramFollowers": null,
+    "instagramFollowers": 2163,
     "additionalContacts": [
       {
-        "name": "Jorge Caballero",
-        "title": "Founder / Producer / Director",
-        "email": "gusano@gusano.org"
+        "name": "Anna Giralt Gris",
+        "title": "Producer / Director",
+        "email": "anna@gusano.org"
+      },
+      {
+        "name": "Adriana Bernal",
+        "title": "Producer",
+        "email": "adriana@gusano.org"
+      },
+      {
+        "name": "Gustavo León",
+        "title": "Producer",
+        "email": "gustavo@gusano.org"
+      },
+      {
+        "name": "Yaiza de Lamo",
+        "title": "Producer",
+        "email": "yaiza@gusano.org"
       }
     ],
-    "companyBrief": "Documental + nuevos formatos — Barcelona + Bogotá (2008). 2x Premio Nacional Documental; IDFA/Tribeca/Visions du Réel.",
+    "companyBrief": "Productora de documental y nuevos formatos — Bogotá + Barcelona (2008), fundada por Jorge Caballero (2x Premio Nacional de Documental). Explora el cruce entre documental y tecnología (interactivo, inmersivo). Películas: Paciente, Bagatela, Nacer — en IDFA, Tribeca, BAFICI, Guadalajara, L'Alternativa. DMs: Jorge Caballero (Fundador/Productor/Director), Anna Giralt Gris, Adriana Bernal, Gustavo León (Productores). IG @gusanofilms.cine 2.2k ✓ (334 posts).",
     "unabaseScore": 8.7
   },
   {
@@ -257,28 +323,28 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "hunter",
-    "contactConfidence": "likely",
+    "contactSource": "apollo",
+    "contactConfidence": "verified",
     "companyName": "Mezcla",
     "website": "https://mezcla.mx",
     "country": "Mexico",
     "contactName": "Laura Woldenberg",
-    "contactTitle": "Executive Producer",
+    "contactTitle": "Founder / Executive Producer",
     "contactEmail": "laura@mezcla.mx",
-    "companyEmail": null,
+    "companyEmail": "oficina@mezcla.mx",
     "contactPhone": null,
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/__mezcla/",
     "instagramHandle": "__mezcla",
-    "instagramFollowers": null,
+    "instagramFollowers": 2620,
     "additionalContacts": [
       {
-        "name": "Marcela Zamora",
-        "title": "Founder / EP",
+        "name": "Ivonne Gutiérrez",
+        "title": "Head of Production",
         "email": null
       }
     ],
-    "companyBrief": "Documental — CDMX. Juan Gabriel doc; Marisela Escobedo + 1994 (Netflix). Email Hunter 99%.",
+    "companyBrief": "Productora independiente de documental — CDMX (2021), fundada por Laura Woldenberg (ex socia fundadora de VICE México). Investigación periodística + narrativa documental de autor. Créditos: Juan Gabriel: Debo, puedo y quiero (Netflix), La dama del silencio: El caso Mataviejitas (nominada al Ariel), El portal: Zona Divas (Netflix 2024). DMs: Laura Woldenberg (Fundadora/EP), Ivonne Gutiérrez (Jefa de Producción). IG @__mezcla 2.6k ✓ (108 posts).",
     "unabaseScore": 8.7
   },
   {
@@ -293,8 +359,8 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "website",
+    "contactConfidence": "verified",
     "companyName": "Oria Films",
     "website": "https://oriafilms.es",
     "country": "Spain",
@@ -314,7 +380,7 @@
         "email": null
       }
     ],
-    "companyBrief": "Cine independiente — Madrid (1999). Obaba; Tú no eres especial (Netflix).",
+    "companyBrief": "Productora de cine independiente — Madrid, España (1999), fundada por la productora Puy Oria y el director Montxo Armendáriz. Largometrajes y TV de autor. Créditos: Silencio Roto (2001), Obaba (2005), De tu ventana a la mía (2011), No tengas miedo (2011); Puy Oria es productora ejecutiva de la serie Netflix Tú no eres especial (2022). DMs: Puy Oria (Fundadora/Productora Ejecutiva), Montxo Armendáriz (Fundador/Director). Email-first (sin IG).",
     "unabaseScore": 8.7
   },
   {
@@ -329,22 +395,33 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "hunter",
+    "contactConfidence": "verified",
     "companyName": "García Bross",
     "website": "https://garciabross.com",
     "country": "Mexico",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "correo@garciabross.com",
-    "companyEmail": null,
+    "contactName": "Juan García",
+    "contactTitle": "Co-Founder / Director",
+    "contactEmail": "juan@garciabross.com",
+    "companyEmail": "correo@garciabross.com",
     "contactPhone": "+52 55 2623 0380",
     "contactLinkedIn": null,
     "instagramUrl": null,
     "instagramHandle": null,
     "instagramFollowers": null,
-    "additionalContacts": [],
-    "companyBrief": "Productora publicidad — CDMX (1993). VW, McDonald's, Colgate, Bayer. Simón Bross: Cannes Lions/Clio. Sin IG confirmado.",
+    "additionalContacts": [
+      {
+        "name": "Simón Bross",
+        "title": "Founder / Director / Executive Producer",
+        "email": "simon@garciabross.com"
+      },
+      {
+        "name": "Alberto Bross",
+        "title": "Director",
+        "email": "alberto@garciabross.com"
+      }
+    ],
+    "companyBrief": "Productora de publicidad y audiovisual — CDMX (1993). Comerciales, documental y largometraje. Co-fundada por el director Simón Bross, de los más premiados de la publicidad iberoamericana (Cannes Lions, Clio, FIAP); con Grey México ganó 4 Cannes Lions por 'Paper Glasses' (2016). Clientes: VW, McDonald's, Colgate, Bayer. DMs: Juan García (Co-Fundador/Director), Simón Bross (Fundador/Director), Alberto Bross. Email-first (sin IG).",
     "unabaseScore": 8.6
   }
 ]

@@ -10,10 +10,14 @@
       "status": "active",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
-      "note": "10 productoras POOL DISPATCH (clean A-tier dispatch) avg 8.92/10. Geo Mexico:4 / Argentina:2 / Colombia:2 / Chile:1 / Spain:1 (8 priority-tier MX/AR/CO, MX plurality, NO BRAZIL). All 10 email-bearing. Picks: CMO Producciones CO (Palpito #1 Netflix global, Ana Barreto CEO), Matanza Cine AR (Trapero/Gusman, Carancho/Elefante Blanco, Venecia), Mantarraya MX (Reygadas+Escalante, Cannes/Venice, EMAIL-ONLY elite), La Ventana Cine CL (Chicago Boys, B Corp, IG 4.7k), Poster Films AR (Mercado Libre/P&G/Amazon, BA/Madrid/CDMX/NY), No Ficcion MX (Midnight Family Oscar shortlist, Daniela Alatorre), Gusano Films CO (2x Premio Nacional Documental, IDFA/Tribeca), Mezcla MX (Juan Gabriel/Marisela Escobedo Netflix), Oria Films ES (Obaba, Montxo Armendariz), Garcia Bross MX (VW/McDonalds, Simon Bross Cannes Lions). Dispatched from staging/pool-a-tier.json (pool remaining 15).",
+      "note": "10 productoras POOL DISPATCH — FULLY ENRICHED to V1 standard, avg 8.92/10. Geo MX4/AR2/CO2/CL1/ES1 (8 priority-tier, MX plurality, NO BRAZIL). All 10 email-bearing; 8 named-DM primary + 2 role-inbox (Matanza team-greet). Briefs 300-500 chars w/ DM rosters. IG: 6 strict-verified w/ follower counts (Matanza @matanzacine 1.9k/361posts, Mantarraya @ndmantarraya 7.5k/616, Gusano @gusanofilms.cine 2.2k/334, Mezcla @__mezcla 2.6k/108, La Ventana @laventanacine 4.7k, CMO @cmoproduccionessas ~18k); No Ficción @noficcionmx verified (count IG-rate-limited); Poster/Oria/García Bross documented email-only. Enrichment loops: Apollo /people/match (Mantarraya/La Ventana/Poster/Mezcla emails VERIFIED), Hunter domain-search (CMO abarreto 94%, García Bross juan 91%), 5 parallel WebFetch DM-roster harvests, puppeteer strict-IG. Recovered: CMO dead IG->@cmoproduccionessas, No Ficción handle->@noficcionmx, Gusano named primary jcaballeroramos@gmail.com, García Bross named primary juan@garciabross.com, La Ventana upgraded contacto@->carola@ (verified). Picks: CMO CO (Palpito #1 Netflix), Matanza AR (Trapero/Gusman, Venecia), Mantarraya MX (Reygadas+Escalante), La Ventana CL (Chicago Boys B-Corp), Poster AR (MercadoLibre/P&G/Amazon), No Ficcion MX (Midnight Family Oscar shortlist), Gusano CO (2x Premio Nacional Doc), Mezcla MX (Mataviejitas/Zona Divas Netflix), Oria ES (Obaba/Armendariz), Garcia Bross MX (Simon Bross 4 Cannes Lions). Pool remaining 15.",
       "supply_metrics": {
         "valid_leads": 10,
-        "methodology": "pool dispatch from staging/pool-a-tier.json (precise-sourced A-tier; audit-gated; 2 role-inbox leads team-greeted)"
+        "methodology": "pool dispatch + full V1 enrichment: Apollo+Hunter email recovery, 5-agent WebFetch DM-roster harvest, puppeteer strict-IG verify w/ follower counts, audit gate 0 high-sev",
+        "ig_verified_with_followers": 6,
+        "documented_email_only": 3,
+        "ig_handle_count_pending": 1,
+        "named_dm_primary": 8
       }
     },
     {
