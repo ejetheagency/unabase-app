@@ -608,6 +608,19 @@ function ur(id,u){
 
 function allR(){return Object.values(db()).filter(r=>r.co)}
 
+// Second email recipient for the FIRST main-channel email — CC a 2nd address
+// from the data we enriched: the company role inbox if present, else the first
+// additionalContacts email. So the opening email always reaches 2 addresses.
+function secondEmailFor(l){
+  if(!l)return null;
+  const primary=(l.contactEmail||'').toLowerCase();
+  if(l.companyEmail&&l.companyEmail.toLowerCase()!==primary)return l.companyEmail;
+  if(Array.isArray(l.additionalContacts)){
+    for(const c of l.additionalContacts){if(c&&c.email&&c.email.toLowerCase()!==primary)return c.email;}
+  }
+  return null;
+}
+
 // ═══ PHASE A 2026-06-12 — MARK CHANNEL INVALID ═══
 // Operator-flagged channels (wrong account / bounced / blocked / etc) get
 // stored on the lead record so the cycle engine (getFollowUp) skips them
@@ -1036,7 +1049,7 @@ const SEQ_STOPS=['replied','meeting','closed','skip'];
 const AUTO_ANCHOR_TX='[Marcado como enviado]';
 const CYCLE_LEN=7*24*3600000;   // 168h main follow-up
 const ALT_DELAY=2*24*3600000;   // 48h alt channel
-const MONTHLY_LEN=30*24*3600000; // 30 days after cycle 4
+const MONTHLY_LEN=30*24*3600000; // 30 days — monthly touch-base after the 4-touch cycle
 
 // ═══ TIME WINDOW CONTROL ═══
 // Outbound actions only suggested between 10:00 AM - 6:00 PM in lead's local timezone.
@@ -1129,19 +1142,21 @@ function getFollowUp(rec,lead,context){
     if(!igDone&&hasIg&&!igInvalid){nextStep='DM Instagram';channel='ig';dueMs=anchorTs+ALT_DELAY;}
     else{nextStep='Follow-up email (ciclo 2)';channel='email';dueMs=anchorTs+CYCLE_LEN;}
   }else if(cycleNum===2){
-    // Cycle 2: WhatsApp at +48h (only if phone exists), then main email at +168h
+    // Cycle 2 (touch 4): last alternate channel — LinkedIn if available, else
+    // WhatsApp — at +48h after email #2. Once it's done the cycle is COMPLETE
+    // and the lead drops into the monthly touch-base state.
+    const liDone=msgs.some(m=>(m.ch==='li'||m.ch==='linkedin')&&new Date(m.ts).getTime()>=lastMainTs);
     const waDone=msgs.some(m=>(m.ch==='wa'||m.ch==='whatsapp')&&new Date(m.ts).getTime()>=lastMainTs);
+    const hasLi=!!(lead&&lead.linkedinPlaybook&&(lead.contactLinkedIn||lead.apolloCompanyLinkedIn));
     const hasPhone=!!(lead&&(lead.contactPhone||lead.apolloCompanyPhone));
-    // PHASE A 2026-06-12: skip WhatsApp if operator marked invalid
+    const liInvalid=isChannelInvalid(rec,'li');
     const waInvalid=isChannelInvalid(rec,'wa');
-    if(!waDone&&hasPhone&&!waInvalid){nextStep='WhatsApp';channel='wa';dueMs=lastMainTs+ALT_DELAY;}
-    else{nextStep='Follow-up email (ciclo 3)';channel='email';dueMs=lastMainTs+CYCLE_LEN;}
-  }else if(cycleNum<=4){
-    // Cycles 3-4: only main every 7 days
-    nextStep='Follow-up email (ciclo '+(cycleNum+1)+')';channel='email';dueMs=lastMainTs+CYCLE_LEN;
+    if(!liDone&&hasLi&&!liInvalid){nextStep='LinkedIn (último canal)';channel='li';dueMs=lastMainTs+ALT_DELAY;}
+    else if(!waDone&&hasPhone&&!waInvalid){nextStep='WhatsApp (último canal)';channel='wa';dueMs=lastMainTs+ALT_DELAY;}
+    else{nextStep='Touch base mensual';channel='email';dueMs=lastMainTs+MONTHLY_LEN;}
   }else{
-    // After 4 cycles: monthly
-    nextStep='Follow-up mensual';channel='email';dueMs=lastMainTs+MONTHLY_LEN;
+    // Cycle complete (4 touches: email · DM · email · alt) → monthly touch-base
+    nextStep='Touch base mensual';channel='email';dueMs=lastMainTs+MONTHLY_LEN;
   }
 
   const diff=dueMs-nowMs;
@@ -1689,9 +1704,9 @@ function computeExecutionCycle(rec, lead) {
     // hello@/hola@/...), include the company inbox as CC so the brand is
     // looped in. lead.companyEmail is populated by the build script when
     // both addresses exist. Renderer surfaces them as Para / CC chips.
-    const ccEmail = lead.companyEmail
-      && lead.companyEmail.toLowerCase() !== (lead.contactEmail || '').toLowerCase()
-      ? lead.companyEmail : null;
+    // First email goes to TWO addresses: the personal primary + a second one
+    // from the data we enriched (company role inbox, else first additional DM).
+    const ccEmail = secondEmailFor(lead);
     paso1.ccEmail = ccEmail;
     // Generic role-inbox prefixes — these trigger the route-finding greeting
     // "¿Es esta la mejor manera de contactar a [Full Name]?" instead of the
@@ -1794,7 +1809,7 @@ function computeExecutionCycle(rec, lead) {
 let _pbOriginTab=null;
 function openPB(d){
   let l=TL.find(x=>dom(x.website)===d)||PL.find(x=>dom(x.website)===d);
-  if(!l){const rec=gr(d);if(rec.lead){l=rec.lead;TL.push(l)}else return}
+  if(!l){const rec=gr(d);if(rec.lead){l=rec.lead;TL.push(l)}else if(window._ALL_BATCH_LEADS&&window._ALL_BATCH_LEADS.get(d)){l=window._ALL_BATCH_LEADS.get(d);TL.push(l)}else return}
   const rec=gr(d);const steps=getSteps(l);const fu=steps.findIndex(s=>!(rec.acts||[]).includes(s.id));
   // Counter: single current task. Same rule as Hoy card — grace period = done.
   const _hasAnyActPB=((rec.acts||[]).length>0)||((rec.msgs||[]).length>0);
@@ -1815,13 +1830,14 @@ function openPB(d){
   const _chWrap = (ch, chipHtml) => isChannelInvalid(rec, ch)
     ? `<span class="ch-strike">${chipHtml}</span>${_chBadge(ch)}`
     : `<span class="ch-wrap">${chipHtml}${_chBadge(ch)}</span>`;
-  if(l.contactEmail)chs+=_chWrap('email',`<a href="mailto:${esc(l.contactEmail)}${l.companyEmail&&l.companyEmail.toLowerCase()!==(l.contactEmail||'').toLowerCase()?'?cc='+encodeURIComponent(l.companyEmail):''}" class="ch ce">${esc(l.contactEmail)}</a>`);
+  const _cc2=secondEmailFor(l);
+  if(l.contactEmail)chs+=_chWrap('email',`<a href="mailto:${esc(l.contactEmail)}${_cc2?'?cc='+encodeURIComponent(_cc2):''}" class="ch ce">${esc(l.contactEmail)}</a>`);
   // 2026-06-03 — CC-the-company modality: when the lead exposes a company role
   // inbox (info@/contacto@/hello@) separate from the personal primary email,
   // render it as a CC chip so the operator can copy it into Gmail's CC field
   // and keep the company looped in.
-  if(l.companyEmail&&l.companyEmail.toLowerCase()!==(l.contactEmail||'').toLowerCase()){
-    chs+=`<a href="mailto:${esc(l.companyEmail)}" class="ch ce" style="opacity:0.85" title="CC empresa">CC: ${esc(l.companyEmail)}</a>`;
+  if(_cc2){
+    chs+=`<a href="mailto:${esc(_cc2)}" class="ch ce" style="opacity:0.85" title="CC (2ª dirección)">CC: ${esc(_cc2)}</a>`;
   }
   if(ig)chs+=_chWrap('ig',`<a href="${esc(l.instagramUrl||'')}" target="_blank" class="ch ci">@${esc(ig)}</a>`);
   if(l.founderInstagramHandle&&l.founderInstagramHandle!==ig)chs+=`<a href="${esc(l.founderInstagramUrl||('https://www.instagram.com/'+l.founderInstagramHandle+'/'))}" target="_blank" class="ch ci">@${esc(l.founderInstagramHandle)}</a>`;
@@ -2209,18 +2225,21 @@ function rM(){
     const dn=steps.filter(s=>(rec.acts||[]).includes(s.id)).length;doneActs+=dn;
     if(s!=='none')completedLeads++;
   });
-  // Pass 2: Terminal states across all APPROVED leads (TL + PL + SEED_PAST)
-  const approved=new Set();
-  TL.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
-  PL.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
-  if(typeof SEED_PAST!=='undefined'&&SEED_PAST)SEED_PAST.forEach(l=>{const d=dom(l.website);if(d)approved.add(d)});
+  // Pass 2: Terminal states (RESPONDIÓ/REUNIÓN/CERRADO) across ALL batches,
+  // within a rolling ~5-week (35-day) window keyed on the lead's deploy/pickup
+  // date (the non-drifting _DOMAIN_TO_BATCH_DATE). Fixes the old bug where a
+  // reply silently stopped counting once the lead aged out of the active batch.
+  const _cut=new Date();_cut.setDate(_cut.getDate()-35);const _cutStr=_cut.toISOString().slice(0,10);
+  const _md=window._DOMAIN_TO_BATCH_DATE;
   allR().forEach(r=>{
-    if(!approved.has(r.id))return;
     const s=cSt(r);
-    if(['replied','meeting','closed'].includes(s))c[s]=(c[s]||0)+1;
+    if(!['replied','meeting','closed'].includes(s))return;
+    let pickup=(_md&&_md.has(r.id))?_md.get(r.id):'';
+    if(!pickup){const L=r.lead||(window._ALL_BATCH_LEADS&&window._ALL_BATCH_LEADS.get(r.id));pickup=(L&&(L._originallySourceDate||L.source_date))||(r.up?r.up.slice(0,10):'');}
+    if(!pickup||pickup>=_cutStr)c[s]=(c[s]||0)+1;
   });
   const show=[['none',0],['partial',1],['contacted',2],['replied',3],['meeting',4],['closed',5]];
-  document.getElementById('mB').innerHTML=show.map(([k,mi])=>`<div class="m"><div class="m-v mc${mi}">${c[k]||0}</div><div class="m-l">${SL[ST.indexOf(k)]}</div></div>`).join('');
+  document.getElementById('mB').innerHTML=show.map(([k,mi])=>`<div class="m"><div class="m-v mc${mi}">${c[k]||0}</div><div class="m-l">${k==='replied'?'Respondió (mes)':SL[ST.indexOf(k)]}</div></div>`).join('');
   const pct=TL.length?Math.round(completedLeads/TL.length*100):0;
   document.getElementById('gpDone').textContent=completedLeads;
   document.getElementById('gpTotal').textContent=TL.length;
@@ -2331,7 +2350,13 @@ function rHist(q){
   if(!h)h='<div style="text-align:center;color:var(--dm);padding:40px;font-size:12px">No hay leads en memoria todavía.</div>';
   document.getElementById('histL').innerHTML=h;
 }
-function oH(id){const rec=gr(id);if(!rec.lead)return;if(!TL.find(l=>dom(l.website)===id)){TL.push(rec.lead);renderDay()}setTimeout(()=>openPB(id),100)}
+function oH(id){const rec=gr(id);
+  // Always openable — fall back to the in-memory batch lead even when this
+  // device never touched it (record has lead:null). Every historial row is clickable.
+  let lead=rec.lead||(window._ALL_BATCH_LEADS&&window._ALL_BATCH_LEADS.get(id))||TL.find(l=>dom(l.website)===id)||PL.find(l=>dom(l.website)===id);
+  if(!lead)return;
+  if(!TL.find(l=>dom(l.website)===id)){TL.push(lead);renderDay()}
+  setTimeout(()=>openPB(id),100)}
 function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 
 // ═══ PAST LEADS ═══
