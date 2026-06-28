@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EJE · Factura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0a0a0a; --ink2:#3a3a3a; --muted:#8a8a8a; --line:#e6e6e6; --line2:#d2d2d2;
+    --paper:#ffffff; --wash:#fafafa;
+    --silver:linear-gradient(135deg,#fafafa 0%,#9b9b9b 22%,#1a1a1a 46%,#8a8a8a 72%,#cfcfcf 100%);
+    --serif:'DM Serif Display', Georgia, serif;
+    --sans:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{background:#ececec;color:var(--ink);font-family:var(--sans);font-weight:300;
+    -webkit-font-smoothing:antialiased;padding:34px 18px 90px;line-height:1.6}
+  ::selection{background:#e8e8e8}
+
+  /* ── Toolbar (screen only) ── */
+  .bar{max-width:820px;margin:0 auto 22px;display:flex;gap:11px;justify-content:flex-end;flex-wrap:wrap}
+  .btn{font-family:var(--sans);font-size:13px;font-weight:500;letter-spacing:.01em;border-radius:9px;
+    padding:11px 20px;cursor:pointer;border:1px solid transparent;transition:transform .12s,background .2s,box-shadow .2s,border-color .2s;
+    display:inline-flex;align-items:center;gap:8px}
+  .btn:active{transform:translateY(1px)}
+  .btn-solid{background:var(--ink);color:#fff}
+  .btn-solid:hover{background:#000;box-shadow:0 6px 22px rgba(0,0,0,.22)}
+  .btn-out{background:#fff;color:var(--ink);border:1px solid var(--line2)}
+  .btn-out:hover{border-color:var(--ink);}
+  .hint{max-width:820px;margin:0 auto 16px;font-size:12px;color:#6f6f6f;text-align:center}
+  .icon{width:15px;height:15px}
+
+  /* ── Sheet ── */
+  .sheet{max-width:820px;margin:0 auto;background:var(--paper);border:1px solid var(--line);
+    box-shadow:0 20px 60px -28px rgba(0,0,0,.4);padding:60px 60px 52px;position:relative}
+  .sheet::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--silver)}
+  @media(max-width:640px){.sheet{padding:38px 26px 40px}}
+
+  /* editable affordance */
+  [contenteditable]{outline:none;border-radius:3px;transition:background .15s,box-shadow .15s}
+  [contenteditable]:hover{background:#f4f4f4}
+  [contenteditable]:focus{background:#f1f1f1;box-shadow:0 0 0 2px #e0e0e0}
+
+  /* ── Head ── */
+  .head{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;
+    padding-bottom:30px;border-bottom:1px solid var(--line)}
+  @media(max-width:640px){.head{flex-direction:column;gap:18px}}
+  .brand{font-family:var(--serif);font-size:38px;line-height:1;letter-spacing:-.02em;color:var(--ink)}
+  .brand span{color:var(--muted)}
+  .brand-tag{font-family:var(--sans);font-size:9.5px;font-weight:500;letter-spacing:.32em;
+    text-transform:uppercase;color:var(--muted);margin-top:12px}
+  .doc-meta{text-align:right}
+  @media(max-width:640px){.doc-meta{text-align:left}}
+  .doc-word{font-family:var(--serif);font-size:30px;letter-spacing:.04em;color:var(--ink);line-height:1}
+  .doc-rows{margin-top:14px;font-size:12.5px;color:var(--ink2)}
+  .doc-rows .r{display:flex;justify-content:flex-end;gap:12px;padding:2px 0}
+  @media(max-width:640px){.doc-rows .r{justify-content:flex-start}}
+  .doc-rows .k{color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:500;align-self:center}
+  .doc-rows .v{font-weight:500;color:var(--ink);min-width:130px;text-align:right}
+  @media(max-width:640px){.doc-rows .v{text-align:left;min-width:0}}
+
+  /* ── Parties ── */
+  .parties{display:grid;grid-template-columns:1fr 1fr;gap:34px;padding:30px 0;border-bottom:1px solid var(--line)}
+  @media(max-width:640px){.parties{grid-template-columns:1fr;gap:24px}}
+  .ptitle{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:10px}
+  .pname{font-family:var(--serif);font-size:20px;color:var(--ink);line-height:1.2}
+  .pline{font-size:13px;color:var(--ink2);margin-top:4px}
+
+  /* ── Items ── */
+  table{width:100%;border-collapse:collapse;margin-top:8px}
+  thead th{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);text-align:left;padding:18px 0 12px;border-bottom:1px solid var(--ink)}
+  thead th.num{text-align:right}
+  tbody td{padding:18px 0;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px;color:var(--ink2)}
+  tbody td.num{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
+  .it-desc{font-family:var(--sans);font-weight:500;font-size:14.5px;color:var(--ink)}
+  .it-sub{font-size:12px;color:var(--muted);margin-top:3px}
+
+  /* ── Totals ── */
+  .totes{display:flex;justify-content:flex-end;margin-top:22px}
+  .totes .box{width:300px;max-width:100%}
+  @media(max-width:640px){.totes .box{width:100%}}
+  .totes .row{display:flex;justify-content:space-between;font-size:13.5px;color:var(--ink2);padding:8px 0}
+  .totes .row .lbl{color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:500;align-self:center}
+  .totes .grand{margin-top:6px;padding-top:16px;border-top:2px solid var(--ink);
+    display:flex;justify-content:space-between;align-items:baseline}
+  .totes .grand .lbl{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+  .totes .grand .amt{font-family:var(--serif);font-size:34px;color:var(--ink);line-height:1}
+  .totes .grand .amt small{font-size:15px;color:var(--muted);margin-left:5px;font-family:var(--sans);font-weight:500}
+
+  /* ── Pay / notes ── */
+  .foot{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:34px;
+    padding-top:26px;border-top:1px solid var(--line)}
+  @media(max-width:640px){.foot{grid-template-columns:1fr;gap:22px}}
+  .foot .ptitle{margin-bottom:8px}
+  .foot p{font-size:13px;color:var(--ink2);line-height:1.65}
+  .thanks{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink);margin-top:36px;text-align:center}
+  .sig{text-align:center;margin-top:14px;font-family:var(--sans);font-size:9.5px;font-weight:500;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .sig .d{color:var(--ink)}
+
+  .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--ink);color:#fff;font-family:var(--sans);font-size:13px;font-weight:500;
+    padding:12px 22px;border-radius:100px;opacity:0;transition:.3s;pointer-events:none;z-index:50}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  /* ── Print ── */
+  @media print{
+    @page{size:A4;margin:14mm}
+    body{background:#fff;padding:0}
+    .bar,.hint,.toast{display:none !important}
+    .sheet{box-shadow:none;border:none;max-width:none;padding:0}
+    [contenteditable]:hover,[contenteditable]:focus{background:transparent;box-shadow:none}
+  }
+</style>
+</head>
+<body>
+
+  <div class="bar">
+    <button class="btn btn-out" id="btnCopy">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+      Copiar texto
+    </button>
+    <button class="btn btn-solid" id="btnPrint">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+      Descargar PDF
+    </button>
+  </div>
+  <p class="hint">Los campos con fondo gris al pasar el cursor son editables. «Descargar PDF» abre el diálogo de impresión — elija «Guardar como PDF».</p>
+
+  <div class="sheet" id="sheet">
+
+    <div class="head">
+      <div>
+        <div class="brand">EJE<span>.</span></div>
+        <div class="brand-tag">Digital · Estrategia · Resultados</div>
+      </div>
+      <div class="doc-meta">
+        <div class="doc-word">Factura</div>
+        <div class="doc-rows">
+          <div class="r"><span class="k">N°</span><span class="v" contenteditable="true">EJE-2026-07-001</span></div>
+          <div class="r"><span class="k">Emisión</span><span class="v" contenteditable="true">21 de julio de 2026</span></div>
+          <div class="r"><span class="k">Vencimiento</span><span class="v" contenteditable="true">A la recepción</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parties">
+      <div>
+        <div class="ptitle">Emitido por</div>
+        <div class="pname" contenteditable="true">Jofree Yzaguirre</div>
+        <div class="pline" contenteditable="true">EJE — ejetheagency.com</div>
+        <div class="pline" contenteditable="true">ejofreeyzaguirre@gmail.com</div>
+      </div>
+      <div>
+        <div class="ptitle">Facturar a</div>
+        <div class="pname" contenteditable="true">Cliente</div>
+        <div class="pline" contenteditable="true">Empresa / contacto</div>
+        <div class="pline" contenteditable="true">correo@cliente.com</div>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th class="num" style="width:70px">Cant.</th>
+          <th class="num" style="width:120px">Precio</th>
+          <th class="num" style="width:120px">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="it-desc" contenteditable="true">Pago base — servicios de marketing y generación de leads</div>
+            <div class="it-sub" contenteditable="true">Período: julio 2026</div>
+          </td>
+          <td class="num" contenteditable="true">1</td>
+          <td class="num" contenteditable="true">USD&nbsp;200,00</td>
+          <td class="num" contenteditable="true">USD&nbsp;200,00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="totes">
+      <div class="box">
+        <div class="row"><span class="lbl">Subtotal</span><span contenteditable="true">USD&nbsp;200,00</span></div>
+        <div class="row"><span class="lbl">Impuestos</span><span contenteditable="true">—</span></div>
+        <div class="grand">
+          <span class="lbl">Total</span>
+          <span class="amt" contenteditable="true">USD&nbsp;200,00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div>
+        <div class="ptitle">Forma de pago</div>
+        <p contenteditable="true">Transferencia bancaria.<br>Banco · N° de cuenta · Titular<br>RUT / correo de confirmación.</p>
+      </div>
+      <div>
+        <div class="ptitle">Notas</div>
+        <p contenteditable="true">Pago base correspondiente al período. Gracias por su preferencia y confianza en EJE.</p>
+      </div>
+    </div>
+
+    <div class="thanks">Gracias por confiar en EJE.</div>
+    <div class="sig">EJE <span class="d">·</span> Excelencia en cada período</div>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+  var $ = function(id){ return document.getElementById(id); };
+
+  $("btnPrint").addEventListener("click", function(){ window.print(); });
+
+  var toastT;
+  function toast(m){ var t=$("toast"); t.textContent=m; t.classList.add("show");
+    clearTimeout(toastT); toastT=setTimeout(function(){t.classList.remove("show");},2200); }
+
+  function plain(){
+    var g=function(sel){var e=document.querySelector(sel);return e?e.innerText.replace(/ /g," ").trim():"";};
+    var rows=document.querySelectorAll(".doc-rows .r");
+    var L=[];
+    L.push("EJE — FACTURA");
+    rows.forEach(function(r){ L.push(r.querySelector(".k").innerText.trim()+": "+r.querySelector(".v").innerText.trim()); });
+    L.push("————————————————————————");
+    L.push("Emitido por: "+document.querySelectorAll(".parties .pname")[0].innerText.trim());
+    document.querySelectorAll(".parties > div")[0].querySelectorAll(".pline").forEach(function(p){L.push("  "+p.innerText.trim());});
+    L.push("Facturar a: "+document.querySelectorAll(".parties .pname")[1].innerText.trim());
+    document.querySelectorAll(".parties > div")[1].querySelectorAll(".pline").forEach(function(p){L.push("  "+p.innerText.trim());});
+    L.push("————————————————————————");
+    var tr=document.querySelector("tbody tr");
+    var tds=tr.querySelectorAll("td");
+    L.push(tr.querySelector(".it-desc").innerText.trim()+" ("+tr.querySelector(".it-sub").innerText.trim()+")");
+    L.push("  Cantidad: "+tds[1].innerText.trim()+"  ·  Precio: "+tds[2].innerText.replace(/ /g," ").trim()+"  ·  Total: "+tds[3].innerText.replace(/ /g," ").trim());
+    L.push("————————————————————————");
+    L.push("TOTAL: "+document.querySelector(".grand .amt").innerText.replace(/ /g," ").trim());
+    L.push("");
+    L.push("Forma de pago: "+document.querySelectorAll(".foot p")[0].innerText.trim());
+    L.push("Notas: "+document.querySelectorAll(".foot p")[1].innerText.trim());
+    return L.join("\n");
+  }
+
+  $("btnCopy").addEventListener("click", function(){
+    var txt=plain();
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(function(){toast("Factura copiada");},function(){fb(txt);});
+    }else{fb(txt);}
+  });
+  function fb(txt){var ta=document.createElement("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";
+    document.body.appendChild(ta);ta.select();try{document.execCommand("copy");toast("Factura copiada");}catch(e){toast("No se pudo copiar");}
+    document.body.removeChild(ta);}
+})();
+</script>
+</body>
+</html>
