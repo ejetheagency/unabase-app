@@ -55,6 +55,9 @@
   .doc-meta{text-align:right}
   @media(max-width:640px){.doc-meta{text-align:left}}
   .doc-word{font-family:var(--serif);font-size:30px;letter-spacing:.04em;color:var(--ink);line-height:1}
+  .doc-badge{display:inline-block;margin-top:11px;font-family:var(--sans);font-size:9.5px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--ink);border:1px solid var(--line2);
+    border-radius:100px;padding:4px 13px;background:var(--wash)}
   .doc-rows{margin-top:14px;font-size:12.5px;color:var(--ink2)}
   .doc-rows .r{display:flex;justify-content:flex-end;gap:12px;padding:2px 0}
   @media(max-width:640px){.doc-rows .r{justify-content:flex-start}}
@@ -91,6 +94,12 @@
   .totes .grand .lbl{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
   .totes .grand .amt{font-family:var(--serif);font-size:34px;color:var(--ink);line-height:1}
   .totes .grand .amt small{font-size:15px;color:var(--muted);margin-left:5px;font-family:var(--sans);font-weight:500}
+  .tnote{font-size:10.5px;color:var(--muted);text-align:right;margin-top:11px;font-style:italic;line-height:1.5}
+  .callout{margin-top:30px;border:1px solid var(--line2);border-left:3px solid var(--ink);border-radius:8px;
+    padding:18px 22px;background:var(--wash)}
+  .callout h4{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-bottom:9px}
+  .callout p{font-size:12.5px;color:var(--ink2);line-height:1.7}
+  .callout strong{color:var(--ink);font-weight:600}
 
   /* ── Pay / notes ── */
   .foot{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:34px;
@@ -141,6 +150,7 @@
       </div>
       <div class="doc-meta">
         <div class="doc-word">Factura</div>
+        <div class="doc-badge">Pago base</div>
         <div class="doc-rows">
           <div class="r"><span class="k">N°</span><span class="v" contenteditable="true">EJE-2026-07-001</span></div>
           <div class="r"><span class="k">Emisión</span><span class="v" contenteditable="true">21 de julio de 2026</span></div>
@@ -176,8 +186,8 @@
       <tbody>
         <tr>
           <td>
-            <div class="it-desc" contenteditable="true">Pago base — servicios de marketing y generación de leads</div>
-            <div class="it-sub" contenteditable="true">Período: julio 2026</div>
+            <div class="it-desc" contenteditable="true">Generador de Conversaciones Accionables</div>
+            <div class="it-sub" contenteditable="true">Pago base mensual · período julio 2026</div>
           </td>
           <td class="num" contenteditable="true">1</td>
           <td class="num" contenteditable="true">USD&nbsp;200,00</td>
@@ -191,10 +201,16 @@
         <div class="row"><span class="lbl">Subtotal</span><span contenteditable="true">USD&nbsp;200,00</span></div>
         <div class="row"><span class="lbl">Impuestos</span><span contenteditable="true">—</span></div>
         <div class="grand">
-          <span class="lbl">Total</span>
+          <span class="lbl">Total · base</span>
           <span class="amt" contenteditable="true">USD&nbsp;200,00</span>
         </div>
+        <div class="tnote">Corresponde al pago base. No incluye el componente variable por desempeño.</div>
       </div>
+    </div>
+
+    <div class="callout">
+      <h4>Estructura de honorarios</h4>
+      <p contenteditable="true">Este documento corresponde exclusivamente al <strong>pago base</strong> del período. El <strong>componente variable por desempeño</strong> —reuniones calificadas sostenidas y clientes cerrados durante el período— se factura por separado una vez consolidados los resultados. El presente total <strong>no constituye el costo final</strong> del período.</p>
     </div>
 
     <div class="foot">
@@ -204,7 +220,7 @@
       </div>
       <div>
         <div class="ptitle">Notas</div>
-        <p contenteditable="true">Pago base correspondiente al período. Gracias por su preferencia y confianza en EJE.</p>
+        <p contenteditable="true">Gracias por su preferencia y confianza en EJE. Quedamos atentos a la consolidación de los resultados del período para la facturación del componente variable.</p>
       </div>
     </div>
 
@@ -243,7 +259,8 @@
     L.push(tr.querySelector(".it-desc").innerText.trim()+" ("+tr.querySelector(".it-sub").innerText.trim()+")");
     L.push("  Cantidad: "+tds[1].innerText.trim()+"  ·  Precio: "+tds[2].innerText.replace(/ /g," ").trim()+"  ·  Total: "+tds[3].innerText.replace(/ /g," ").trim());
     L.push("————————————————————————");
-    L.push("TOTAL: "+document.querySelector(".grand .amt").innerText.replace(/ /g," ").trim());
+    L.push("TOTAL (base): "+document.querySelector(".grand .amt").innerText.replace(/ /g," ").trim());
+    var co=document.querySelector(".callout p"); if(co){ L.push(""); L.push("ESTRUCTURA DE HONORARIOS: "+co.innerText.trim()); }
     L.push("");
     L.push("Forma de pago: "+document.querySelectorAll(".foot p")[0].innerText.trim());
     L.push("Notas: "+document.querySelectorAll(".foot p")[1].innerText.trim());
