@@ -2225,21 +2225,16 @@ function rM(){
     const dn=steps.filter(s=>(rec.acts||[]).includes(s.id)).length;doneActs+=dn;
     if(s!=='none')completedLeads++;
   });
-  // Pass 2: Terminal states (RESPONDIÓ/REUNIÓN/CERRADO) across ALL batches,
-  // within a rolling ~5-week (35-day) window keyed on the lead's deploy/pickup
-  // date (the non-drifting _DOMAIN_TO_BATCH_DATE). Fixes the old bug where a
-  // reply silently stopped counting once the lead aged out of the active batch.
-  const _cut=new Date();_cut.setDate(_cut.getDate()-35);const _cutStr=_cut.toISOString().slice(0,10);
-  const _md=window._DOMAIN_TO_BATCH_DATE;
+  // Pass 2: Terminal states (RESPONDIÓ/REUNIÓN/CERRADO) as an ALL-TIME TOTAL
+  // across ALL batches. Responses are still few, so a running total is more
+  // useful than a monthly slice. (Keeps the all-batch fix so a reply on a lead
+  // that aged out of the active batch still counts — the old bug.)
   allR().forEach(r=>{
     const s=cSt(r);
-    if(!['replied','meeting','closed'].includes(s))return;
-    let pickup=(_md&&_md.has(r.id))?_md.get(r.id):'';
-    if(!pickup){const L=r.lead||(window._ALL_BATCH_LEADS&&window._ALL_BATCH_LEADS.get(r.id));pickup=(L&&(L._originallySourceDate||L.source_date))||(r.up?r.up.slice(0,10):'');}
-    if(!pickup||pickup>=_cutStr)c[s]=(c[s]||0)+1;
+    if(['replied','meeting','closed'].includes(s))c[s]=(c[s]||0)+1;
   });
   const show=[['none',0],['partial',1],['contacted',2],['replied',3],['meeting',4],['closed',5]];
-  document.getElementById('mB').innerHTML=show.map(([k,mi])=>`<div class="m"><div class="m-v mc${mi}">${c[k]||0}</div><div class="m-l">${k==='replied'?'Respondió (mes)':SL[ST.indexOf(k)]}</div></div>`).join('');
+  document.getElementById('mB').innerHTML=show.map(([k,mi])=>`<div class="m"><div class="m-v mc${mi}">${c[k]||0}</div><div class="m-l">${SL[ST.indexOf(k)]}</div></div>`).join('');
   const pct=TL.length?Math.round(completedLeads/TL.length*100):0;
   document.getElementById('gpDone').textContent=completedLeads;
   document.getElementById('gpTotal').textContent=TL.length;
