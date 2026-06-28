@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EJE · Reporte Mensual de Resultados</title>
+<meta name="description" content="Reporte mensual de resultados — EJE" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#f5f0e8;          /* ivory */
+    --paper:#fdfbf6;       /* card paper */
+    --ink:#1c1a17;         /* warm near-black */
+    --ink2:#4a463d;        /* secondary ink */
+    --muted:#8c8475;       /* muted */
+    --line:#e3dccb;        /* hairline */
+    --line2:#d8cfb9;
+    --gold:#b08d57;        /* refined bronze-gold */
+    --gold-d:#9a7b4f;
+    --gold-soft:#f0e7d4;
+    --ok:#5a7d52;
+    --serif:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    --sans:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);color:var(--ink);font-family:var(--serif);
+    line-height:1.55;-webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(circle at 50% -10%, #fbf7ef 0%, var(--bg) 60%);
+    min-height:100vh;padding:0 20px 80px;
+  }
+  ::selection{background:var(--gold-soft)}
+  .wrap{max-width:660px;margin:0 auto}
+
+  /* ── Masthead ─────────────────────────── */
+  header.mast{padding:54px 0 30px;text-align:center}
+  .rule{width:46px;height:2px;background:var(--gold);margin:0 auto 22px;border-radius:2px}
+  .brand{font-family:var(--serif);font-weight:600;font-size:34px;letter-spacing:.42em;
+    text-indent:.42em;color:var(--ink);line-height:1}
+  .brand b{color:var(--gold-d);font-weight:700}
+  .kicker{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.32em;
+    text-transform:uppercase;color:var(--muted);margin-top:14px}
+  h1{font-family:var(--serif);font-weight:500;font-size:40px;line-height:1.1;margin-top:26px;letter-spacing:.005em}
+  .sub{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--ink2);margin-top:8px}
+
+  /* ── Meta row ─────────────────────────── */
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px 0 8px}
+  @media(max-width:520px){.meta{grid-template-columns:1fr}}
+  .meta .field{margin:0}
+
+  /* ── Card / sections ──────────────────── */
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:14px;
+    padding:30px 30px 8px;margin-top:22px;
+    box-shadow:0 1px 0 #fff inset, 0 10px 30px -18px rgba(60,45,20,.28)}
+  @media(max-width:520px){.card{padding:24px 20px 6px}}
+
+  .field{margin-bottom:26px}
+  .qnum{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.18em;color:var(--gold-d)}
+  label.q{display:block;font-family:var(--serif);font-size:23px;font-weight:500;line-height:1.3;margin:6px 0 3px;color:var(--ink)}
+  .help{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-bottom:14px;line-height:1.5}
+  .req{color:var(--gold-d);font-family:var(--sans);font-size:12px}
+
+  input[type=text], input[type=month], textarea, select{
+    width:100%;font-family:var(--serif);font-size:19px;color:var(--ink);
+    background:#fff;border:1px solid var(--line2);border-radius:9px;
+    padding:12px 15px;transition:border-color .18s, box-shadow .18s;outline:none}
+  textarea{min-height:120px;resize:vertical;line-height:1.5}
+  input:focus, textarea:focus, select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(176,141,87,.14)}
+  input::placeholder, textarea::placeholder{color:#b9b1a0;font-style:italic}
+  .micro-label{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink2);margin-bottom:7px;display:block}
+
+  /* ── Stepper (numeric) ────────────────── */
+  .stepper{display:flex;align-items:stretch;width:200px;max-width:100%;
+    border:1px solid var(--line2);border-radius:11px;overflow:hidden;background:#fff}
+  .stepper:focus-within{border-color:var(--gold);box-shadow:0 0 0 3px rgba(176,141,87,.14)}
+  .stepper button{font-family:var(--serif);font-size:26px;font-weight:500;width:52px;
+    background:transparent;border:none;color:var(--gold-d);cursor:pointer;line-height:1;
+    transition:background .15s;user-select:none}
+  .stepper button:hover{background:var(--gold-soft)}
+  .stepper button:active{background:var(--line)}
+  .stepper input{border:none;border-radius:0;text-align:center;font-size:28px;font-weight:600;
+    box-shadow:none;padding:10px 4px;-moz-appearance:textfield}
+  .stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+  .stepper input:focus{box-shadow:none}
+
+  /* ── Sí / No toggle ───────────────────── */
+  .toggle{display:inline-flex;border:1px solid var(--line2);border-radius:11px;overflow:hidden;background:#fff}
+  .toggle button{font-family:var(--serif);font-size:19px;padding:11px 30px;background:transparent;
+    border:none;color:var(--ink2);cursor:pointer;transition:.18s;letter-spacing:.02em}
+  .toggle button + button{border-left:1px solid var(--line2)}
+  .toggle button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+  .toggle button.no[aria-pressed="true"]{background:#7a3b34;color:var(--bg)}
+
+  .reveal{overflow:hidden;max-height:0;opacity:0;transition:max-height .35s ease, opacity .3s ease}
+  .reveal.open{max-height:480px;opacity:1;margin-top:18px}
+  .reveal .field:last-child{margin-bottom:8px}
+
+  .counter{font-family:var(--sans);font-size:11px;color:var(--muted);text-align:right;margin-top:6px}
+
+  .err{font-family:var(--sans);font-size:12px;color:#9a4438;margin-top:7px;display:none}
+  .field.invalid .err{display:block}
+  .field.invalid input, .field.invalid textarea, .field.invalid .stepper, .field.invalid .toggle{border-color:#c08379}
+
+  /* ── Submit / actions ─────────────────── */
+  .actions-row{margin-top:30px;display:flex;flex-direction:column;gap:12px}
+  .btn{font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:.02em;
+    border-radius:11px;padding:15px 22px;cursor:pointer;border:1px solid transparent;
+    transition:transform .12s, box-shadow .2s, background .2s;display:inline-flex;
+    align-items:center;justify-content:center;gap:9px;text-decoration:none}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--ink);color:var(--bg);width:100%;font-size:15px;
+    box-shadow:0 8px 22px -12px rgba(28,26,23,.7)}
+  .btn-primary:hover{background:#000}
+  .note-priv{font-family:var(--sans);font-size:11.5px;color:var(--muted);text-align:center;margin-top:4px;line-height:1.5}
+
+  /* ── Summary / result ─────────────────── */
+  .result{display:none;margin-top:26px}
+  .result.show{display:block;animation:rise .5s ease}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .doc{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:34px 34px;
+    box-shadow:0 10px 34px -20px rgba(60,45,20,.4)}
+  @media(max-width:520px){.doc{padding:26px 22px}}
+  .doc .dhead{text-align:center;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:22px}
+  .doc .dbrand{font-family:var(--serif);font-weight:600;font-size:21px;letter-spacing:.34em;text-indent:.34em}
+  .doc .dbrand b{color:var(--gold-d)}
+  .doc .dtitle{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink2);margin-top:6px}
+  .doc dl{margin:0}
+  .doc .line{display:flex;justify-content:space-between;align-items:baseline;gap:18px;
+    padding:13px 0;border-bottom:1px dotted var(--line2)}
+  .doc .line:last-of-type{border-bottom:none}
+  .doc dt{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--muted);flex:1}
+  .doc dd{font-family:var(--serif);font-size:30px;font-weight:600;color:var(--ink);line-height:1;text-align:right}
+  .doc dd.txt{font-size:19px;font-weight:500;text-align:right;max-width:62%;line-height:1.4}
+  .doc dd.yes{color:var(--ok)}.doc dd.no{color:#7a3b34}
+  .doc .comment{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+  .doc .comment .micro-label{margin-bottom:8px}
+  .doc .comment p{font-family:var(--serif);font-size:18px;line-height:1.55;color:var(--ink2);white-space:pre-wrap}
+  .doc .foot{margin-top:24px;text-align:center;font-family:var(--sans);font-size:10.5px;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+  .send-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:18px}
+  @media(max-width:520px){.send-grid{grid-template-columns:1fr}}
+  .btn-wa{background:#25563f;color:#eef6f0}
+  .btn-mail{background:#3a352c;color:#f3eee2}
+  .btn-copy{background:var(--gold);color:#fff}
+  .btn-dl{background:transparent;color:var(--ink);border:1px solid var(--line2)}
+  .btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line);width:100%;margin-top:11px;font-size:13px}
+  .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--ink);color:var(--bg);font-family:var(--sans);font-size:13px;font-weight:500;
+    padding:12px 22px;border-radius:10px;opacity:0;transition:.3s;pointer-events:none;z-index:50;
+    box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+  footer.sig{text-align:center;margin-top:40px;font-family:var(--sans);font-size:11px;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  footer.sig .dot{color:var(--gold)}
+  .icon{width:17px;height:17px;flex:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div class="rule"></div>
+    <div class="brand">EJ<b>E</b></div>
+    <div class="kicker">Digital · Estrategia · Resultados</div>
+    <h1>Reporte Mensual de Resultados</h1>
+    <p class="sub">Síntesis del desempeño comercial del período</p>
+  </header>
+
+  <form id="form" novalidate>
+
+    <!-- Datos del período -->
+    <div class="card">
+      <div class="meta">
+        <div class="field" style="margin-bottom:0">
+          <span class="micro-label">Cuenta / Cliente</span>
+          <input type="text" id="cliente" placeholder="Nombre de la cuenta" autocomplete="off" />
+        </div>
+        <div class="field" style="margin-bottom:0">
+          <span class="micro-label">Período reportado</span>
+          <input type="month" id="periodo" />
+        </div>
+      </div>
+      <div class="field" style="margin-top:14px;margin-bottom:8px">
+        <span class="micro-label">Responsable del reporte</span>
+        <input type="text" id="responsable" placeholder="Nombre de quien reporta" autocomplete="name" />
+      </div>
+    </div>
+
+    <!-- Preguntas -->
+    <div class="card">
+
+      <!-- 1 -->
+      <div class="field" id="f1">
+        <span class="qnum">01</span>
+        <label class="q" for="q1">¿Cuántas reuniones calificadas se sostuvieron durante el mes? <span class="req">· requerido</span></label>
+        <p class="help">Considere únicamente las reuniones con prospectos que cumplían el perfil definido para la cuenta.</p>
+        <div class="stepper" data-for="q1">
+          <button type="button" aria-label="Disminuir" data-step="-1">−</button>
+          <input type="number" id="q1" inputmode="numeric" min="0" step="1" value="0" aria-label="Reuniones calificadas" />
+          <button type="button" aria-label="Aumentar" data-step="1">+</button>
+        </div>
+        <div class="err">Por favor, indique un número (puede ser 0).</div>
+      </div>
+
+      <!-- 2 -->
+      <div class="field" id="f2">
+        <span class="qnum">02</span>
+        <label class="q" for="q2">¿Cuántos leads alcanzaron una conversación avanzada? <span class="req">· requerido</span></label>
+        <p class="help">Entiéndase por conversación avanzada aquel hilo que progresó más allá del primer contacto: con interés manifiesto, intercambio sostenido o negociación en curso.</p>
+        <div class="stepper" data-for="q2">
+          <button type="button" aria-label="Disminuir" data-step="-1">−</button>
+          <input type="number" id="q2" inputmode="numeric" min="0" step="1" value="0" aria-label="Leads en conversación avanzada" />
+          <button type="button" aria-label="Aumentar" data-step="1">+</button>
+        </div>
+        <div class="err">Por favor, indique un número (puede ser 0).</div>
+      </div>
+
+      <!-- 3 -->
+      <div class="field" id="f3">
+        <span class="qnum">03</span>
+        <label class="q">¿Se concretó el cierre de algún cliente durante el período? <span class="req">· requerido</span></label>
+        <p class="help">Indique si hubo clientes cerrados y, de ser así, su cantidad y detalle.</p>
+        <div class="toggle" id="cierreToggle" role="group" aria-label="¿Se cerraron clientes?">
+          <button type="button" class="si" data-val="si" aria-pressed="false">Sí</button>
+          <button type="button" class="no" data-val="no" aria-pressed="false">No</button>
+        </div>
+        <div class="err">Por favor, seleccione Sí o No.</div>
+
+        <div class="reveal" id="cierreDetail">
+          <div class="field" style="margin-bottom:18px">
+            <span class="micro-label">¿Cuántos clientes se cerraron?</span>
+            <div class="stepper" data-for="q3n" style="width:200px">
+              <button type="button" aria-label="Disminuir" data-step="-1">−</button>
+              <input type="number" id="q3n" inputmode="numeric" min="1" step="1" value="1" aria-label="Cantidad de clientes cerrados" />
+              <button type="button" aria-label="Aumentar" data-step="1">+</button>
+            </div>
+          </div>
+          <div class="field">
+            <span class="micro-label">Detalle de los cierres <span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--muted)">(opcional)</span></span>
+            <textarea id="q3d" placeholder="Nombre de los clientes, monto, condiciones u observaciones relevantes…" style="min-height:90px"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="field" id="f4" style="margin-bottom:14px">
+        <span class="qnum">04</span>
+        <label class="q" for="q4">Comentarios generales</label>
+        <p class="help">Contexto cualitativo del período: aprendizajes, obstáculos, oportunidades detectadas y proyecciones para el mes siguiente.</p>
+        <textarea id="q4" maxlength="1200" placeholder="Escriba aquí sus observaciones…"></textarea>
+        <div class="counter"><span id="cc">0</span> / 1200</div>
+      </div>
+
+    </div>
+
+    <div class="actions-row">
+      <button type="submit" class="btn btn-primary">Generar reporte</button>
+      <p class="note-priv">Sus respuestas se procesan en este dispositivo. Al generar el reporte podrá enviarlo por WhatsApp o correo, copiarlo o descargarlo.</p>
+    </div>
+  </form>
+
+  <!-- Resultado -->
+  <section class="result" id="result" aria-live="polite">
+    <div class="doc" id="doc">
+      <div class="dhead">
+        <div class="dbrand">EJ<b>E</b></div>
+        <div class="dtitle" id="docTitle">Reporte Mensual de Resultados</div>
+      </div>
+      <dl id="docBody"></dl>
+    </div>
+
+    <div class="send-grid">
+      <button type="button" class="btn btn-wa" id="btnWa">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207zm5.49-5.276c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp
+      </button>
+      <button type="button" class="btn btn-mail" id="btnMail">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        Correo
+      </button>
+      <button type="button" class="btn btn-copy" id="btnCopy">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Copiar texto
+      </button>
+      <button type="button" class="btn btn-dl" id="btnDl">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        Descargar
+      </button>
+    </div>
+    <button type="button" class="btn btn-ghost" id="btnEdit">← Volver a editar</button>
+  </section>
+
+  <footer class="sig">EJE <span class="dot">·</span> Excelencia en cada período</footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+  var MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  var $ = function(id){ return document.getElementById(id); };
+  var STORE = "eje_reporte_v1";
+
+  // ── default period = current month ──
+  (function(){
+    var d = new Date();
+    $("periodo").value = d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0");
+  })();
+
+  // ── steppers ──
+  document.querySelectorAll(".stepper").forEach(function(s){
+    var input = s.querySelector("input");
+    s.querySelectorAll("button").forEach(function(b){
+      b.addEventListener("click", function(){
+        var step = parseInt(b.getAttribute("data-step"),10);
+        var min = parseInt(input.getAttribute("min")||"0",10);
+        var v = parseInt(input.value,10); if(isNaN(v)) v = min;
+        v = Math.max(min, v + step);
+        input.value = v; clearErr(input); save();
+      });
+    });
+    input.addEventListener("input", function(){
+      var min = parseInt(input.getAttribute("min")||"0",10);
+      if(input.value==="") return;
+      var v = parseInt(input.value,10);
+      if(isNaN(v)||v<min) input.value = min;
+      clearErr(input); save();
+    });
+  });
+
+  // ── Sí/No toggle ──
+  var cierre = null;
+  var tgl = $("cierreToggle");
+  tgl.querySelectorAll("button").forEach(function(b){
+    b.addEventListener("click", function(){
+      cierre = b.getAttribute("data-val");
+      tgl.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", x===b ? "true":"false"); });
+      $("cierreDetail").classList.toggle("open", cierre==="si");
+      $("f3").classList.remove("invalid");
+      save();
+    });
+  });
+
+  // ── comments counter ──
+  $("q4").addEventListener("input", function(){ $("cc").textContent = $("q4").value.length; save(); });
+  [ "cliente","periodo","responsable","q3d" ].forEach(function(id){ $(id).addEventListener("input", save); });
+
+  function clearErr(el){ var f = el.closest(".field"); if(f) f.classList.remove("invalid"); }
+
+  // ── persistence ──
+  function save(){
+    try{
+      localStorage.setItem(STORE, JSON.stringify({
+        cliente:$("cliente").value, periodo:$("periodo").value, responsable:$("responsable").value,
+        q1:$("q1").value, q2:$("q2").value, cierre:cierre, q3n:$("q3n").value, q3d:$("q3d").value, q4:$("q4").value
+      }));
+    }catch(e){}
+  }
+  (function load(){
+    try{
+      var s = JSON.parse(localStorage.getItem(STORE)||"null"); if(!s) return;
+      if(s.cliente)$("cliente").value=s.cliente; if(s.periodo)$("periodo").value=s.periodo;
+      if(s.responsable)$("responsable").value=s.responsable;
+      if(s.q1!=null)$("q1").value=s.q1; if(s.q2!=null)$("q2").value=s.q2;
+      if(s.q3n!=null)$("q3n").value=s.q3n; if(s.q3d)$("q3d").value=s.q3d;
+      if(s.q4){$("q4").value=s.q4; $("cc").textContent=s.q4.length;}
+      if(s.cierre){
+        cierre=s.cierre;
+        tgl.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", x.getAttribute("data-val")===cierre?"true":"false"); });
+        $("cierreDetail").classList.toggle("open", cierre==="si");
+      }
+    }catch(e){}
+  })();
+
+  // ── period label ──
+  function periodoLabel(){
+    var v = $("periodo").value; if(!v) return "—";
+    var p = v.split("-"); var m = parseInt(p[1],10)-1;
+    return (MESES[m]||"").replace(/^./,function(c){return c.toUpperCase();}) + " de " + p[0];
+  }
+
+  // ── validation ──
+  function validate(){
+    var ok = true;
+    function mark(id){ $(id).classList.add("invalid"); ok=false; }
+    if($("q1").value===""||isNaN(parseInt($("q1").value,10))) mark("f1");
+    if($("q2").value===""||isNaN(parseInt($("q2").value,10))) mark("f2");
+    if(cierre===null) mark("f3");
+    if(!ok){
+      var first = document.querySelector(".field.invalid");
+      if(first) first.scrollIntoView({behavior:"smooth",block:"center"});
+    }
+    return ok;
+  }
+
+  // ── build summary data ──
+  function data(){
+    var n1 = parseInt($("q1").value,10)||0;
+    var n2 = parseInt($("q2").value,10)||0;
+    var cn = cierre==="si" ? (parseInt($("q3n").value,10)||0) : 0;
+    return {
+      cliente: $("cliente").value.trim(),
+      periodo: periodoLabel(),
+      responsable: $("responsable").value.trim(),
+      reuniones: n1,
+      avanzadas: n2,
+      cerro: cierre==="si",
+      cantCierres: cn,
+      detalleCierres: $("q3d").value.trim(),
+      comentarios: $("q4").value.trim()
+    };
+  }
+
+  // ── render elegant doc ──
+  function renderDoc(d){
+    $("docTitle").textContent = "Reporte Mensual · " + d.periodo;
+    var rows = "";
+    if(d.cliente)     rows += line("Cuenta / Cliente", esc(d.cliente), "txt");
+    rows += line("Período reportado", esc(d.periodo), "txt");
+    if(d.responsable) rows += line("Responsable", esc(d.responsable), "txt");
+    rows += line("Reuniones calificadas", d.reuniones, "");
+    rows += line("Leads en conversación avanzada", d.avanzadas, "");
+    if(d.cerro){
+      rows += line("Clientes cerrados", d.cantCierres, "yes");
+    }else{
+      rows += line("Clientes cerrados", "No", "no");
+    }
+    var html = rows;
+    if(d.cerro && d.detalleCierres){
+      html += '<div class="comment"><span class="micro-label">Detalle de los cierres</span><p>'+esc(d.detalleCierres)+'</p></div>';
+    }
+    if(d.comentarios){
+      html += '<div class="comment"><span class="micro-label">Comentarios generales</span><p>'+esc(d.comentarios)+'</p></div>';
+    }
+    html += '<div class="foot">Generado el '+ today() +'</div>';
+    $("docBody").innerHTML = html;
+  }
+  function line(dt, dd, cls){
+    var isNum = (cls===""||cls==="yes"||cls==="no") && cls!=="txt";
+    return '<div class="line"><dt>'+dt+'</dt><dd class="'+cls+'">'+dd+'</dd></div>';
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+  function today(){
+    var d = new Date();
+    return d.getDate()+" de "+MESES[d.getMonth()]+" de "+d.getFullYear();
+  }
+
+  // ── plain-text version (WhatsApp / correo / descarga) ──
+  function asText(d){
+    var L = [];
+    L.push("EJE — REPORTE MENSUAL DE RESULTADOS");
+    L.push("Período: " + d.periodo);
+    if(d.cliente) L.push("Cuenta: " + d.cliente);
+    if(d.responsable) L.push("Responsable: " + d.responsable);
+    L.push("————————————————————————");
+    L.push("• Reuniones calificadas: " + d.reuniones);
+    L.push("• Leads en conversación avanzada: " + d.avanzadas);
+    if(d.cerro){
+      L.push("• Clientes cerrados: Sí (" + d.cantCierres + ")");
+      if(d.detalleCierres) L.push("  Detalle: " + d.detalleCierres);
+    }else{
+      L.push("• Clientes cerrados: No");
+    }
+    if(d.comentarios){
+      L.push("————————————————————————");
+      L.push("Comentarios generales:");
+      L.push(d.comentarios);
+    }
+    L.push("————————————————————————");
+    L.push("Generado el " + today() + " · EJE");
+    return L.join("\n");
+  }
+
+  var current = null;
+
+  // ── submit ──
+  $("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    if(!validate()) return;
+    current = data();
+    renderDoc(current);
+    $("form").style.display = "none";
+    document.querySelector(".actions-row").style.display = "none";
+    $("result").classList.add("show");
+    $("result").scrollIntoView({behavior:"smooth",block:"start"});
+  });
+
+  // ── edit again ──
+  $("btnEdit").addEventListener("click", function(){
+    $("result").classList.remove("show");
+    $("form").style.display = "";
+    document.querySelector(".actions-row").style.display = "";
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+
+  // ── toast ──
+  var toastT;
+  function toast(msg){
+    var t = $("toast"); t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastT); toastT = setTimeout(function(){ t.classList.remove("show"); }, 2200);
+  }
+
+  // ── actions ──
+  $("btnWa").addEventListener("click", function(){
+    window.open("https://wa.me/?text=" + encodeURIComponent(asText(current)), "_blank");
+  });
+  $("btnMail").addEventListener("click", function(){
+    var subj = "Reporte Mensual de Resultados — " + (current.cliente ? current.cliente + " · " : "") + current.periodo;
+    window.location.href = "mailto:?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(asText(current));
+  });
+  $("btnCopy").addEventListener("click", function(){
+    var txt = asText(current);
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(function(){ toast("Reporte copiado al portapapeles"); },
+        function(){ fallbackCopy(txt); });
+    }else{ fallbackCopy(txt); }
+  });
+  function fallbackCopy(txt){
+    var ta = document.createElement("textarea"); ta.value = txt;
+    ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select();
+    try{ document.execCommand("copy"); toast("Reporte copiado al portapapeles"); }catch(e){ toast("No se pudo copiar"); }
+    document.body.removeChild(ta);
+  }
+  $("btnDl").addEventListener("click", function(){
+    var blob = new Blob([asText(current)], {type:"text/plain;charset=utf-8"});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    var slug = (current.cliente||"reporte").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+    a.href = url; a.download = "reporte-" + slug + "-" + ($("periodo").value||"") + ".txt";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+    toast("Descarga iniciada");
+  });
+})();
+</script>
+</body>
+</html>
