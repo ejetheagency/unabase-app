@@ -1434,7 +1434,7 @@ async function autoLoad(){
                     const contacted=!!sbSt && sbSt!=='none';
                     if(contacted)continue;
                     // Bump source_date so today's "Hoy" gate keeps it visible
-                    const carried={...pl,source_date:todayET,_carriedForwardFrom:pb.batch_id,_originallySourceDate:pl.source_date||pb.source_date};
+                    const carried={...pl,source_date:todayET,approved:true,readyToSend:true,_carriedForwardFrom:pb.batch_id,_originallySourceDate:pl.source_date||pb.source_date};
                     carries.push(carried);
                     seenDomains.add(pdom);
                   }

@@ -8,7 +8,7 @@
       "approved": true,
       "approved_at": "2026-06-29T21:49:23.000Z",
       "status": "active",
-      "disable_carry_forward": true,
+      "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
       "note": "10 productoras POOL DISPATCH (fresh 06-28 mine) avg 9.11. Geo MX4/AR2/CO2/GT1/ES1 (9 priority-tier, MX plurality, NO BRAZIL). All email-bearing + named DM (Hola Combo route-inbox). Picks: Interior XIII MX (Dos Estaciones/Pacifiction, Maximiliano Cruz FICUNAM), La Maroma MX (Inti Cordera/DocsMX), Hola Combo MX (nom Oscar corto Ninety-Five Senses), Agave MX, Campo Cine AR (Diego Lerman), LaDoble AR (2 Grand Prix Cannes), La Octava CO (Grey/McCann), Cumbia CO (La Suprema TIFF), La Casa de Produccion GT (Jayro Bustamante - Ixcanul/La Llorona), Blur ES (Cannes Film Craft GP). IG follower counts + pattern emails (Agave/La Casa) to strict-verify. Pool remaining ~32.",
       "supply_metrics": {
@@ -924,5 +924,5 @@
   ],
   "active_batch_id": "batch-2026-06-29",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-29T21:49:23.000Z"
+  "last_updated": "2026-06-29T22:30:00.000Z"
 }
