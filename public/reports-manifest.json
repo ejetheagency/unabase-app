@@ -1,13 +1,29 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-06-29",
+      "source_date": "2026-06-29",
+      "file": "leads-2026-06-29.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-06-29T21:49:23.000Z",
+      "status": "active",
+      "disable_carry_forward": true,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "10 productoras POOL DISPATCH (fresh 06-28 mine) avg 9.11. Geo MX4/AR2/CO2/GT1/ES1 (9 priority-tier, MX plurality, NO BRAZIL). All email-bearing + named DM (Hola Combo route-inbox). Picks: Interior XIII MX (Dos Estaciones/Pacifiction, Maximiliano Cruz FICUNAM), La Maroma MX (Inti Cordera/DocsMX), Hola Combo MX (nom Oscar corto Ninety-Five Senses), Agave MX, Campo Cine AR (Diego Lerman), LaDoble AR (2 Grand Prix Cannes), La Octava CO (Grey/McCann), Cumbia CO (La Suprema TIFF), La Casa de Produccion GT (Jayro Bustamante - Ixcanul/La Llorona), Blur ES (Cannes Film Craft GP). IG follower counts + pattern emails (Agave/La Casa) to strict-verify. Pool remaining ~32.",
+      "supply_metrics": {
+        "valid_leads": 10,
+        "methodology": "pool dispatch from staging/pool-a-tier.json (06-28 precise fresh-mine: 5-agent discovery + exhaustive WebFetch enrichment + Hunter/Apollo); audit-gated"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-26",
       "source_date": "2026-06-26",
       "file": "leads-2026-06-26.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-26T22:51:27.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": true,
       "workspace": "pool_dispatch_a_tier",
       "note": "10 productoras POOL DISPATCH — FULLY ENRICHED to V1 standard, avg 8.92/10. Geo MX4/AR2/CO2/CL1/ES1 (8 priority-tier, MX plurality, NO BRAZIL). All 10 email-bearing; 8 named-DM primary + 2 role-inbox (Matanza team-greet). Briefs 300-500 chars w/ DM rosters. IG: 6 strict-verified w/ follower counts (Matanza @matanzacine 1.9k/361posts, Mantarraya @ndmantarraya 7.5k/616, Gusano @gusanofilms.cine 2.2k/334, Mezcla @__mezcla 2.6k/108, La Ventana @laventanacine 4.7k, CMO @cmoproduccionessas ~18k); No Ficción @noficcionmx verified (count IG-rate-limited); Poster/Oria/García Bross documented email-only. Enrichment loops: Apollo /people/match (Mantarraya/La Ventana/Poster/Mezcla emails VERIFIED), Hunter domain-search (CMO abarreto 94%, García Bross juan 91%), 5 parallel WebFetch DM-roster harvests, puppeteer strict-IG. Recovered: CMO dead IG->@cmoproduccionessas, No Ficción handle->@noficcionmx, Gusano named primary jcaballeroramos@gmail.com, García Bross named primary juan@garciabross.com, La Ventana upgraded contacto@->carola@ (verified). Picks: CMO CO (Palpito #1 Netflix), Matanza AR (Trapero/Gusman, Venecia), Mantarraya MX (Reygadas+Escalante), La Ventana CL (Chicago Boys B-Corp), Poster AR (MercadoLibre/P&G/Amazon), No Ficcion MX (Midnight Family Oscar shortlist), Gusano CO (2x Premio Nacional Doc), Mezcla MX (Mataviejitas/Zona Divas Netflix), Oria ES (Obaba/Armendariz), Garcia Bross MX (Simon Bross 4 Cannes Lions). Pool remaining 15.",
@@ -906,7 +922,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-06-26",
+  "active_batch_id": "batch-2026-06-29",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-26T22:51:27.000Z"
+  "last_updated": "2026-06-29T21:49:23.000Z"
 }
