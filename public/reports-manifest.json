@@ -20,7 +20,7 @@
       "batch_id": "batch-2026-06-26",
       "source_date": "2026-06-26",
       "file": "leads-2026-06-26.json",
-      "lead_count": 10,
+      "lead_count": 9,
       "approved": true,
       "approved_at": "2026-06-26T22:51:27.000Z",
       "status": "archived",

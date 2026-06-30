@@ -62,23 +62,18 @@
     "companyName": "Pacha Films",
     "website": "https://pachafilms.com",
     "country": "Peru",
-    "contactName": "Guillermo Galdós",
-    "contactTitle": "Director / Founder",
-    "contactEmail": "contacto@pachafilms.com",
+    "contactName": "Luis Del Valle",
+    "contactTitle": "Director",
+    "contactEmail": "ldelvalle@pachafilms.com",
     "instagramUrl": "https://www.instagram.com/pachafilms/",
     "instagramHandle": "pachafilms",
     "instagramFollowers": 3727,
-    "additionalContacts": [
-      {
-        "name": "Luis Del Valle",
-        "title": "Director / Founder",
-        "email": null
-      }
-    ],
+    "additionalContacts": [],
     "companyBrief": "Productora de documental/cine ELITE — Miraflores, Lima (desde 2006). Fundada por Guillermo Galdós y Luis Del Valle (periodistas). Clientes: Netflix, Nat Geo, Discovery, Al Jazeera, Disney+, MAX, Channel 4, Warner. 4x Emmy + Rory Peck + RTS. Email contacto@pachafilms.com + tel +51 993 364 555. IG @pachafilms 3.7k ✓ strict-verified.",
     "unabaseScore": 9.5,
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed"
+    "contactSource": "apollo_verified",
+    "contactConfidence": "verified",
+    "_caveat": "contacto@ bounced 2026-06-30 -> replaced with Apollo-verified ldelvalle@"
   },
   {
     "_dispatched_batch_id": "batch-2026-06-24",
