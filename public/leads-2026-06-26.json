@@ -22,9 +22,9 @@
     "companyEmail": "info@cmo.com.co",
     "contactPhone": null,
     "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/cmoproduccionessas/",
-    "instagramHandle": "cmoproduccionessas",
-    "instagramFollowers": 18000,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramFollowers": null,
     "additionalContacts": [
       {
         "name": "Clara María Ochoa Domínguez",
@@ -43,7 +43,8 @@
       }
     ],
     "companyBrief": "Productora de cine y TV — Bogotá, Colombia (1999). Desarrolla y distribuye películas y series en 190+ territorios; certificada ISO 9001 y Great Place to Work 2025. Créditos: Pálpito (#1 Netflix global), La venganza de Analía, Pasión de Gavilanes 2, Perfil Falso, El Bronx, Amar y Vivir. DMs: Clara María Ochoa (Fundadora/Presidenta), Ana Barreto (CEO), Johanna Gutiérrez (Dir. Contenido Original). IG @cmoproduccionessas ≈18k ✓.",
-    "unabaseScore": 9.5
+    "unabaseScore": 9.5,
+    "_caveat": "IG email-only: handle not puppeteer-confirmed (no live profile render)"
   },
   {
     "_dispatched_batch_id": "batch-2026-06-26",
@@ -155,9 +156,9 @@
     "companyEmail": "contacto@laventanacine.com",
     "contactPhone": null,
     "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/laventanacine/",
-    "instagramHandle": "laventanacine",
-    "instagramFollowers": 4694,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramFollowers": null,
     "additionalContacts": [
       {
         "name": "Rafa Valdeavellano",
@@ -166,7 +167,8 @@
       }
     ],
     "companyBrief": "Productora documental de impacto social, empresa B — Santiago, Chile (2006), fundada por Carola Fuentes y Rafael Valdeavellano. Investiga, produce y distribuye historias con impacto en Chile, Latam, EE.UU., Canadá y Europa. Créditos: Chicago Boys (Mejor Director SANFIC 2016; Sheffield DocFest), Breaking the Brick. DMs: Carola Fuentes (CEO/Productora), Rafa Valdeavellano (COO/Director). IG @laventanacine 4.7k ✓.",
-    "unabaseScore": 9
+    "unabaseScore": 9,
+    "_caveat": "IG email-only: handle not puppeteer-confirmed (no live profile render)"
   },
   {
     "_dispatched_batch_id": "batch-2026-06-26",
@@ -247,8 +249,8 @@
     "companyEmail": null,
     "contactPhone": null,
     "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/noficcionmx/",
-    "instagramHandle": "noficcionmx",
+    "instagramUrl": null,
+    "instagramHandle": null,
     "instagramFollowers": null,
     "additionalContacts": [
       {
@@ -258,7 +260,8 @@
       }
     ],
     "companyBrief": "Productora independiente de documental — CDMX (2017), fundada por Daniela Alatorre y Elena Fortes (en alianza con Cinépolis). No ficción de alto perfil y tema social para cine y streaming; Fortes co-fundó el festival Ambulante con Gael García Bernal y Diego Luna. Créditos: Midnight Family (shortlist Oscar 2020), Vivos (Ai Weiwei), Una película de policías (Netflix). DMs: Daniela Alatorre (Fundadora/Directora), Elena Fortes (Co-Fundadora). IG @noficcionmx ✓ (handle verificado; conteo pendiente).",
-    "unabaseScore": 8.8
+    "unabaseScore": 8.8,
+    "_caveat": "IG email-only: handle not puppeteer-confirmed (no live profile render)"
   },
   {
     "_dispatched_batch_id": "batch-2026-06-26",

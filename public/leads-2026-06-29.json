@@ -260,8 +260,8 @@
     "companyEmail": "info@laoctava.com.co",
     "contactPhone": "+57 310 8588744",
     "contactLinkedIn": null,
-    "instagramUrl": "https://www.instagram.com/laoctava_/",
-    "instagramHandle": "laoctava_",
+    "instagramUrl": null,
+    "instagramHandle": null,
     "instagramFollowers": null,
     "additionalContacts": [
       {
@@ -276,7 +276,8 @@
       }
     ],
     "companyBrief": "Productora audiovisual — Bogotá (2011) + oficina Cali, fundada por Valeria Jaramillo (CEO) y José María Ángel. Comerciales, documental, contenido digital vía Grey, MullenLowe, McCann, DDB. Nike, Heineken, Ecopetrol, Nutresa, Discovery, PNUD.",
-    "unabaseScore": 9
+    "unabaseScore": 9,
+    "_caveat": "IG email-only: handle not puppeteer-confirmed (no live profile render)"
   },
   {
     "_dispatched_batch_id": "batch-2026-06-29",
