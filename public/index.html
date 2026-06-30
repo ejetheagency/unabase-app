@@ -458,9 +458,26 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
   .ml-tx{font-size:12px}
 }
 .toast.show{opacity:1;transform:translateY(-3px)}
+/* ═══ BOOT LOADER — covers the app until ALL data is consolidated (no partial/dirty render) ═══ */
+#bootLoader{position:fixed;inset:0;z-index:99999;background:var(--bg,#06060b);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;transition:opacity .45s ease;font-family:'Inter',-apple-system,sans-serif}
+#bootLoader.hide{opacity:0;pointer-events:none}
+#bootLoader .bl-mark{font-size:21px;font-weight:800;color:#fff;letter-spacing:.3px}
+#bootLoader .bl-mark span{color:var(--ac,#d4a017)}
+#bootLoader .bl-spin{width:44px;height:44px;border-radius:50%;border:3px solid rgba(212,160,23,.16);border-top-color:var(--ac,#d4a017);animation:blspin .8s linear infinite}
+@keyframes blspin{to{transform:rotate(360deg)}}
+#bootLoader .bl-bar{width:190px;height:3px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden}
+#bootLoader .bl-bar i{display:block;height:100%;width:38%;background:linear-gradient(90deg,var(--ac,#d4a017),#f5d060);border-radius:3px;animation:blbar 1.25s ease-in-out infinite}
+@keyframes blbar{0%{margin-left:-40%}100%{margin-left:102%}}
+#bootLoader .bl-msg{font-size:12.5px;color:#8a8f9c;min-height:18px;letter-spacing:.02em;transition:opacity .25s}
 </style>
 </head>
 <body>
+<div id="bootLoader">
+  <div class="bl-mark">una<span>base</span></div>
+  <div class="bl-spin"></div>
+  <div class="bl-bar"><i></i></div>
+  <div class="bl-msg" id="blMsg">Cargando datos verificados…</div>
+</div>
 <!-- ═══ CONFIG ═══ -->
 <script>const SEED_PAST=[{"companyName":"HUAU","website":"https://huau.cl","country":"Chile","industry":"commercial","contactEmail":"arturo@huau.cl","unabaseScore":8,"estimatedSize":"small","apolloEmployeeCount":3,"companyBrief":"Productora boutique de Santiago. Comerciales y animación para Netflix, Santander y Pepsi.","notableClients":["Netflix","Pepsi","Modelo","Santander"],"emailCercana":"hola equipo de HUAU — vi que manejan comerciales para Netflix y Santander. cómo hacen con tantos presupuestos a la vez?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett","instagramUrl":"https://www.instagram.com/be_huau/","instagramHandle":"be_huau","contact_flags":["no_phone"]},{"companyName":"Brodaju","website":"https://brodaju.com.co","country":"Colombia","industry":"commercial","contactName":"Rene Martinez","contactTitle":"Owner","contactEmail":"rene@brodaju.com","unabaseScore":8,"companyBrief":"Agencia audiovisual boutique en Colombia.","emailCercana":"hola Rene — vi el trabajo que vienen haciendo en Brodaju. cómo están manejando los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett","instagramUrl":"https://www.instagram.com/brodaju/","instagramHandle":"brodaju","contactPhone":"+57 3124892560"},{"companyName":"Grappi Multimedia","website":"https://grappi.cl","country":"Chile","industry":"commercial","contactEmail":"contacto@grappi.cl","instagramUrl":"https://www.instagram.com/grappifilming/","instagramHandle":"grappifilming","unabaseScore":8,"companyBrief":"Videos corporativos y animación para Sony.","notableClients":["Sony"],"emailCercana":"hola equipo de Grappi — vi el trabajo que hicieron con Sony. cómo hacen con tantos proyectos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett","contact_flags":["no_phone"]},{"companyName":"Intelygente","website":"https://intelygente.net","country":"Colombia","industry":"commercial","contactEmail":"info@intelygente.net","contactPhone":"312 380 8677","instagramUrl":"https://www.instagram.com/intelygente/","instagramHandle":"intelygente","unabaseScore":6,"apolloEmployeeCount":7,"companyBrief":"Producción audiovisual y branding para Google y Facebook.","notableClients":["Google","Facebook"],"emailCercana":"Hola, esta es la mejor forma de contactar a Pablo Castro Echeverri?\n\nvi que Intelygente trabaja con Google y Facebook desde Bogotá en producción de video y contenido digital.\n\ncómo manejan los presupuestos con un equipo de 7 personas y clientes de ese nivel?\n\nen UnaBase vemos este tipo de operación todo el tiempo, hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación, lo vemos 10 min?\n\nScarlett","contactName":"Pablo Castro Echeverri","contactTitle":"Fundador & Director","pitchEmailES":"Hola, esta es la mejor forma de contactar a Pablo Castro Echeverri?\n\nvi que Intelygente trabaja con Google y Facebook desde Bogotá en producción de video y contenido digital.\n\ncómo manejan los presupuestos con un equipo de 7 personas y clientes de ese nivel?\n\nen UnaBase vemos este tipo de operación todo el tiempo, hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación, lo vemos 10 min?\n\nScarlett"},{"companyName":"CBRA Films","website":"https://cbrafilms.com","country":"Chile","industry":"tv","contactName":"Cristobal Braun Mesples","contactTitle":"Owner","contactEmail":"cristobal@cbrafilms.com","contactPhone":"+56 9 7478 5069","unabaseScore":7,"companyBrief":"Productora audiovisual chilena. Contenido y estudio en Santiago.","emailCercana":"hola Cristobal — vi que CBRA combina producción con arriendo de estudio. cómo presupuestan ambos lados?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett","instagramUrl":"https://www.instagram.com/cbrafilms","instagramHandle":"cbrafilms"},{"companyName":"Doin Media","website":"https://doinmedia.com","country":"Colombia","industry":"commercial","contactEmail":"carolina.guerrero@doinmedia.com","contactPhone":"+573183272138","unabaseScore":6,"companyBrief":"Producción audiovisual en Bogotá para Amazon y Facebook.","notableClients":["Amazon","Facebook"],"emailCercana":"hola equipo de Doin Media — vi que manejan proyectos para Amazon y Facebook. cómo coordinan los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett","instagramUrl":"https://www.instagram.com/doinmedia/","instagramHandle":"doinmedia"},{"companyName":"PRAGA 555","website":"https://praga555.cl","country":"Chile","industry":"tv","contactEmail":"marcelo.germani@praga555.cl","unabaseScore":6,"apolloEmployeeCount":6,"companyBrief":"Productora de TV chilena. 6 profesionales.","notableClients":["Facebook"],"emailCercana":"hola equipo de PRAGA 555 — vi que producen para TV y Facebook con 6 personas. cómo manejan los presupuestos?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett","instagramUrl":"https://www.instagram.com/praga555productora/","instagramHandle":"praga555productora","contactPhone":"+56 9 9228 4009"},{"companyName":"ChileRayo","website":"https://chilerayo.com","country":"Chile","industry":"commercial","contactEmail":"contacto@chilerayo.com","contactPhone":"+569 5759 4998","instagramUrl":"https://www.instagram.com/chilerayo/","instagramHandle":"chilerayo","unabaseScore":6,"companyBrief":"Productora boutique chilena. 8K seguidores como @morfina.cl.","emailCercana":"hola equipo de ChileRayo — vi que están creciendo fuerte con 8K seguidores. cómo manejan los presupuestos conforme crecen?\n\nen UnaBase vemos este tipo de operación todo el tiempo — hay formas mucho más simples de ordenarlo.\n\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?\n\nScarlett"}];</script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
@@ -2266,6 +2283,8 @@ function rM(){
 // Raw Supabase discovery rows stay invisible until approved.
 const STATUS_LABEL={none:'Sin contactar',partial:'Parcial',contacted:'Contactado',replied:'Respondió',meeting:'Reunión',closed:'Cerrado',skip:'Omitido'};
 function rHist(q){
+  // Never render partial/dirty data: if the full dataset isn't consolidated yet, show loader.
+  if(!window.DATA_READY){document.getElementById('histL').innerHTML='<div style="text-align:center;color:var(--dm,#40445a);padding:50px 20px;font-size:12px">Cargando historial…</div>';return;}
   const approved=new Set();
   const leadByDom=new Map();
   const consider=(arr)=>arr.forEach(l=>{const d=dom(l.website);if(d){approved.add(d);if(!leadByDom.has(d))leadByDom.set(d,l)}});
@@ -2573,12 +2592,29 @@ document.addEventListener('click',e=>{
 document.getElementById('pbO').addEventListener('click',e=>{if(e.target===document.getElementById('pbO'))closePB()});
 // Init: load Supabase + past leads (PL feeds awareness indicator + Acción Ahora) + autoLoad today
 // Default landing tab = Hoy. autoLoad calls renderDay which now also computes the awareness indicator.
+// ═══ BOOT LOADER — show entertaining loader; render only after ALL data consolidated ═══
+(function(){
+  const MSGS=['Cargando datos verificados…','Sincronizando estados…','Consolidando reportes…','Verificando contactos…','Casi listo…'];
+  let mi=0;const el=document.getElementById('blMsg');
+  window.__blTimer=setInterval(()=>{mi=(mi+1)%MSGS.length;if(el){el.style.opacity='0';setTimeout(()=>{el.textContent=MSGS[mi];el.style.opacity='1';},250);}},1800);
+})();
+function hideBootLoader(){
+  window.DATA_READY=true;
+  if(window.__blTimer){clearInterval(window.__blTimer);window.__blTimer=null;}
+  const bl=document.getElementById('bootLoader');
+  if(bl){bl.classList.add('hide');setTimeout(()=>{if(bl&&bl.parentNode)bl.parentNode.removeChild(bl);},500);}
+}
+// Safety net: never leave the operator stuck on the loader if a fetch hangs.
+setTimeout(()=>{if(!window.DATA_READY)hideBootLoader();},15000);
+
 sbLoadAll().then(()=>loadPast().then(()=>autoLoad().then(()=>{
+  window.DATA_READY=true;            // every source consolidated — safe to render real data
   renderAccionAhora();renderDay();
   // Restore last-active tab on boot (workspace + tab survive refresh)
   const _savedTab=localStorage.getItem('unabase_active_tab');
   if(_savedTab&&['today','now','hist'].includes(_savedTab)&&_savedTab!=='today'){showV(_savedTab)}
-})));
+  hideBootLoader();
+}))).catch(()=>hideBootLoader());
 </script>
 </body>
 </html>
