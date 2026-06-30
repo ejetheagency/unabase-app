@@ -22,9 +22,9 @@
     "companyEmail": null,
     "contactPhone": null,
     "contactLinkedIn": null,
-    "instagramUrl": null,
-    "instagramHandle": null,
-    "instagramFollowers": null,
+    "instagramUrl": "https://www.instagram.com/interiorxiii/",
+    "instagramHandle": "interiorxiii",
+    "instagramFollowers": 5565,
     "additionalContacts": [
       {
         "name": "Sandra Gómez",
@@ -34,7 +34,7 @@
     ],
     "companyBrief": "Sello de cine de autor — CDMX (2010), fundado por Maximiliano Cruz y Sandra Gómez, oficinas MX + Colombia. Distribución, producción, curaduría. 'Dos Estaciones', 'Pacifiction', 'Los Reyes del Mundo'. Cruz es Director Artístico de FICUNAM.",
     "unabaseScore": 9.3,
-    "_caveat": "IG email-only: no confirmed handle (site does not link IG / operator saw error)"
+    "_caveat": null
   },
   {
     "_dispatched_batch_id": "batch-2026-06-29",
@@ -59,9 +59,9 @@
     "companyEmail": "oficina@lamaroma.com",
     "contactPhone": "+52 55 5515 1440",
     "contactLinkedIn": null,
-    "instagramUrl": null,
-    "instagramHandle": null,
-    "instagramFollowers": null,
+    "instagramUrl": "https://www.instagram.com/lamaromaproduce/",
+    "instagramHandle": "lamaromaproduce",
+    "instagramFollowers": 235,
     "additionalContacts": [
       {
         "name": "Karl Lenin González",
@@ -76,7 +76,7 @@
     ],
     "companyBrief": "Productora documental — CDMX (1995), fundada por Inti Cordera (fundador de DocsMX). '499', 'Sansón y yo', 'Lupe bajo el sol' (Brooklyn Film Fest). DMs: Inti Cordera (Dir Gral), Karl Lenin González (Prod Gral).",
     "unabaseScore": 9,
-    "_caveat": "IG email-only: no confirmed handle (site does not link IG / operator saw error)"
+    "_caveat": null
   },
   {
     "_dispatched_batch_id": "batch-2026-06-29",
