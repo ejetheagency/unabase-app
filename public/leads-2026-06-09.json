@@ -224,9 +224,9 @@
     "contactEmail": "jose@casaproductora.tv",
     "companyEmail": "audiovisuales@casaproductora.tv",
     "contactPhone": "+57 605 679 0725",
-    "instagramUrl": "https://www.instagram.com/casaproductoratv/",
-    "instagramHandle": "casaproductoratv",
-    "instagramFollowers": 19000,
+    "instagramUrl": null,
+    "instagramHandle": null,
+    "instagramFollowers": null,
     "apolloCompanyLinkedIn": null,
     "additionalContacts": [],
     "companyBrief": "Casa productora colombiana fundada 2008 (17 años vet) — sede Cartagena de Indias (CALLE 29 N 21 A 80 4 A AVENIDA, Barrio Manga, Bolívar) — referente del Caribe colombiano en contenido audiovisual. Jose Luis Oviedo B Audiovisual Director con email personal Apollo verified. CC role inbox audiovisuales@casaproductora.tv (same domain ✓). Phone +57 605 679 0725. IG @casaproductoratv 19k followers — top tier Colombia.",
@@ -241,7 +241,8 @@
     "unabaseScore": 8.5,
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-09"
+    "_dispatched_batch_id": "batch-2026-06-09",
+    "_caveat": "IG email-only: no confirmed handle (site does not link IG / operator saw error)"
   },
   {
     "companyName": "Cinema Maquina",
