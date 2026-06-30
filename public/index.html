@@ -1208,7 +1208,7 @@ function gateLeads(leads){
   // Safety: ensure every lead has source_date. Missing → default to today ET.
   leads.forEach(l=>{if(!l.source_date)l.source_date=todayET;});
   const D=db();
-  return leads.filter(l=>{
+  const _gated=leads.filter(l=>{
     if(l.source_date&&l.source_date>todayET){console.warn('[GATE] Blocked future lead:',l.companyName,l.source_date);return false}
     if(l.approved===false){console.warn('[GATE] Blocked unapproved lead:',l.companyName);return false}
     if(l.source_date&&l.source_date<todayET){
@@ -1221,6 +1221,19 @@ function gateLeads(leads){
     }
     return true;
   });
+  // ── PERMANENT DEDUP GUARD (2026-06-30) ──────────────────────────────────
+  // Never show the same lead twice. Collapse by website domain, keeping the
+  // FIRST occurrence (the active batch is prepended before carry-forward, so
+  // the active-batch copy always wins). This guarantees Hoy / Acción Ahora /
+  // any TL-driven surface never render a duplicate, regardless of upstream
+  // data problems (re-dispatched lead, carry-forward overlap, merged sources).
+  const _seen=new Set();
+  const _deduped=_gated.filter(l=>{
+    const d=dom(l.website||''); if(!d) return true;
+    if(_seen.has(d)){console.warn('[DEDUP] dropped repeat lead:',l.companyName,'('+d+')');return false;}
+    _seen.add(d); return true;
+  });
+  return _deduped;
 }
 
 // ═══ EJE WORKSPACE QUALITY LAYER ═══
