@@ -11,15 +11,15 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "search_corroborated",
+    "contactConfidence": "likely",
     "companyName": "Errante",
     "website": "https://www.errante.cl",
     "country": "Chile",
-    "contactName": null,
-    "contactTitle": null,
-    "contactEmail": "errante@errante.cl",
-    "companyEmail": null,
+    "contactName": "Paola Castillo",
+    "contactTitle": "Founder & Partner (socia fundadora)",
+    "contactEmail": "pcastillo@errante.cl",
+    "companyEmail": "errante@errante.cl",
     "contactPhone": null,
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/erranteproducciones/",
@@ -52,10 +52,10 @@
     "companyName": "Oruga Cine",
     "website": "https://orugacine.com",
     "country": "Argentina",
-    "contactName": "Claudia Delavenne",
-    "contactTitle": "Executive Producer",
-    "contactEmail": "claudia@orugacine.com",
-    "companyEmail": null,
+    "contactName": "Ioni Borisonik",
+    "contactTitle": "Managing Partner / Executive Producer",
+    "contactEmail": "ioniboris@orugacine.com",
+    "companyEmail": "info@orugacine.com",
     "contactPhone": "+54 11 4553-5878",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/orugacine/",
@@ -64,13 +64,23 @@
     "additionalContacts": [
       {
         "name": "Javier Nir",
-        "title": "Founder & Director",
+        "title": "Founder / Director",
         "email": null
+      },
+      {
+        "name": "Nicolas Spinosa",
+        "title": "Managing Partner",
+        "email": "nico@orugacine.com"
       },
       {
         "name": "Ariel Fainholc",
         "title": "Executive Producer & Partner",
         "email": null
+      },
+      {
+        "name": "Claudia Delavenne",
+        "title": "Executive Producer",
+        "email": "claudia@orugacine.com"
       }
     ],
     "companyBrief": "Productora de publicidad de prestigio — Buenos Aires (1998), con oficinas en México, Chile y Ecuador. Fundada por Javier Nir. Coca-Cola, Unilever, Nike, Movistar, Adidas, Netflix, EA Sports. Cannes Lions, Clio, NY Festivals, Martín Fierro.",
@@ -96,7 +106,7 @@
     "contactName": "Jorge Llama",
     "contactTitle": "Founder & Executive Producer",
     "contactEmail": "jorge@theproduction.club",
-    "companyEmail": null,
+    "companyEmail": "club@theproduction.club",
     "contactPhone": "+34 936 638 856",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/theproductionclubspain/",
@@ -112,6 +122,11 @@
         "name": "Elisabeth Almeda",
         "title": "Partner & Executive Producer",
         "email": "elisabeth@theproduction.club"
+      },
+      {
+        "name": "Sandra Olalde",
+        "title": "Partner",
+        "email": "sandra@theproduction.club"
       }
     ],
     "companyBrief": "Productora de publicidad — Barcelona (2014) + oficina Madrid. Spots con top agencias y marcas (Aquarius, Cupra, Etnia), Gran Teatre del Liceu. Fundada por Jorge Llama y Carlos Vidal-Ribas. Sol de Oro Lotería de Navidad.",
@@ -129,15 +144,15 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "apollo_verified",
-    "contactConfidence": "verified",
+    "contactSource": "website_published",
+    "contactConfidence": "confirmed",
     "companyName": "Sideral Cinema",
     "website": "https://sideralcinema.com",
     "country": "Spain",
-    "contactName": "Nuria Landete",
-    "contactTitle": "Executive Producer / Head of Distribution",
-    "contactEmail": "nuria@sideralcinema.com",
-    "companyEmail": null,
+    "contactName": "Roberto Butragueño",
+    "contactTitle": "Founder & CEO (Elamedia / Sideral)",
+    "contactEmail": "hola@sideralcinema.com",
+    "companyEmail": "sideral@sideralcinema.com",
     "contactPhone": "+34 644 43 27 84",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/sideralcinema/",
@@ -145,13 +160,13 @@
     "instagramFollowers": null,
     "additionalContacts": [
       {
-        "name": "Roberto Butragueño",
-        "title": "Founder & CEO (Elamedia, heads Sideral)",
-        "email": null
+        "name": "Nuria Landete",
+        "title": "Executive Producer / Head of Distribution",
+        "email": "nuria@sideralcinema.com"
       },
       {
         "name": "Paola Botrán",
-        "title": "Executive Producer (International Sales)",
+        "title": "Executive Producer (Intl Sales)",
         "email": null
       }
     ],
@@ -178,13 +193,19 @@
     "contactName": "Toni Martínez",
     "contactTitle": "Founder & Executive Producer",
     "contactEmail": "toni@pueblofilms.com",
-    "companyEmail": null,
+    "companyEmail": "info@pueblofilms.com",
     "contactPhone": "+34 637 054 183",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/pueblofilms/",
     "instagramHandle": "pueblofilms",
     "instagramFollowers": null,
-    "additionalContacts": [],
+    "additionalContacts": [
+      {
+        "name": "Maribel Melero",
+        "title": "Production Director",
+        "email": "maribel@pueblofilms.com"
+      }
+    ],
     "companyBrief": "Productora de publicidad — Madrid (~2013). Spots de TV/publicidad; roster de ~12 directores (Santiago Mitre, Daniel Rosenfeld). 2 Soles de Bronce El Sol. Fundador/EP Toni Martínez.",
     "unabaseScore": 9
   },
@@ -216,9 +237,14 @@
     "instagramFollowers": 6761,
     "additionalContacts": [
       {
-        "name": "Simón Brand",
-        "title": "Director",
-        "email": null
+        "name": "Julio Cesar Gaviria",
+        "title": "CEO & Founder",
+        "email": "julio@imaginer.co"
+      },
+      {
+        "name": "Jorge R.",
+        "title": "Creative Producer / Head of Production",
+        "email": "jorge@clover.com.co"
       }
     ],
     "companyBrief": "Production house Medellín (2024). Netflix James, HBO Max UNO, ESPN+ Emmy. Solo IG @cloverstudios__ — recuperar email en dispatch.",
@@ -241,10 +267,10 @@
     "companyName": "Pulpofilms",
     "website": "https://pulpofilms.com",
     "country": "Argentina",
-    "contactName": "Lucas Scavino",
-    "contactTitle": "Co-Founder / Director / Editor",
-    "contactEmail": "info@pulpofilms.com",
-    "companyEmail": null,
+    "contactName": "Ana Fraile",
+    "contactTitle": "Co-Founder / Directora / Productora Ejecutiva",
+    "contactEmail": "ana@pulpofilms.com",
+    "companyEmail": "info@pulpofilms.com",
     "contactPhone": "+54 11 3281-1596",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/pulpo.films/",
@@ -252,9 +278,9 @@
     "instagramFollowers": null,
     "additionalContacts": [
       {
-        "name": "Ana Fraile",
-        "title": "Co-Founder / Directora / Productora Ejecutiva",
-        "email": "info@pulpofilms.com"
+        "name": "Lucas Scavino",
+        "title": "Co-Founder / Director / Editor",
+        "email": "lucas@pulpofilms.com"
       }
     ],
     "companyBrief": "Productora documental — CABA (2011), fundada por Ana Fraile y Lucas Scavino. Ciencia, educación, DDHH. 'Un fueguito (César Milstein)', '¿Quién mató a mi hermano?', 'Buenas Noches Malvinas'; IDFA.",
@@ -272,15 +298,15 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "search_corroborated",
+    "contactConfidence": "likely",
     "companyName": "Cordón Films",
     "website": "https://www.cordonfilms.com",
     "country": "Uruguay",
     "contactName": "Micaela Solé",
     "contactTitle": "Co-Founder / Producer",
-    "contactEmail": "info@cordonfilms.com",
-    "companyEmail": null,
+    "contactEmail": "micaela@cordonfilms.com",
+    "companyEmail": "info@cordonfilms.com",
     "contactPhone": "+598 99246433",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/cordonfilms/",
@@ -308,15 +334,15 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
-    "contactConfidence": "confirmed",
+    "contactSource": "search_corroborated",
+    "contactConfidence": "likely",
     "companyName": "Santiago Independiente",
     "website": "https://santiagoindependiente.cl",
     "country": "Chile",
     "contactName": "Florencia Dupont",
-    "contactTitle": "Director / Producer",
-    "contactEmail": "santiagoindependientecine@gmail.com",
-    "companyEmail": null,
+    "contactTitle": "Founding Partner / Dirección Ejecutiva",
+    "contactEmail": "florenciadpnt@gmail.com",
+    "companyEmail": "santiagoindependientecine@gmail.com",
     "contactPhone": null,
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/stgo.independiente.cine/",
@@ -325,7 +351,7 @@
     "additionalContacts": [
       {
         "name": "Pilar Díaz",
-        "title": "Producer / Distributor",
+        "title": "Co-Founding Partner",
         "email": null
       }
     ],
@@ -344,7 +370,7 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website_published",
+    "contactSource": "role_inbox",
     "contactConfidence": "confirmed",
     "companyName": "Cuadro24",
     "website": "https://www.cuadro24.com",
@@ -358,13 +384,7 @@
     "instagramUrl": "https://www.instagram.com/cuadro24_/",
     "instagramHandle": "cuadro24_",
     "instagramFollowers": null,
-    "additionalContacts": [
-      {
-        "name": "Goya Ziegele",
-        "title": "Director",
-        "email": null
-      }
-    ],
+    "additionalContacts": [],
     "companyBrief": "Productora de cine publicitario — San Isidro, Lima (13+ años). Spots, contenido digital, videoclip, cine, documental. Fundada por Carlos Alagón. Roster: Goya Ziegele, Yayo Alarcón, Raúl Rojas.",
     "unabaseScore": 8.7
   }
