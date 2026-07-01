@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Campaña Alt-Canal · LinkedIn + WhatsApp</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  :root{--bg:#0a0a0f;--card:#14141c;--card2:#1a1a24;--bd:#242433;--tx:#eceef4;--t2:#a7abbb;--mt:#6b7080;
+    --amber:#ffcf33;--amber2:#7a5c00;--li:#0a66c2;--wa:#25d366;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tx);line-height:1.5;padding:0 16px 80px;
+    background-image:radial-gradient(120% 60% at 50% -10%,rgba(255,207,51,.07),transparent 60%)}
+  .wrap{max-width:840px;margin:0 auto}
+  header{padding:34px 0 18px;border-bottom:1px solid var(--bd)}
+  .tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:#1a1400;background:var(--amber);padding:4px 11px;border-radius:100px}
+  h1{font-size:25px;font-weight:700;margin:14px 0 6px;letter-spacing:-.01em}
+  .sub{font-size:13.5px;color:var(--t2);max-width:640px}
+  .sub b{color:var(--tx)}
+  .bar{display:flex;gap:10px;align-items:center;margin-top:18px;flex-wrap:wrap}
+  .prog{flex:1;min-width:160px;height:8px;background:#20202c;border-radius:6px;overflow:hidden}
+  .prog i{display:block;height:100%;background:linear-gradient(90deg,var(--amber),#ffe27a);width:0;transition:.4s}
+  .pct{font-size:13px;font-weight:600;color:var(--amber)}
+  .filters{display:flex;gap:8px;margin:16px 0}
+  .fbtn{font-size:12px;font-weight:600;color:var(--t2);background:var(--card);border:1px solid var(--bd);
+    padding:7px 14px;border-radius:100px;cursor:pointer}
+  .fbtn.on{background:var(--amber);color:#1a1400;border-color:var(--amber)}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px 18px;margin-bottom:12px;
+    display:flex;gap:14px;align-items:flex-start;transition:.15s}
+  .card.done{opacity:.5}
+  .chk{flex:none;width:24px;height:24px;border-radius:7px;border:2px solid var(--bd);cursor:pointer;margin-top:2px;
+    display:flex;align-items:center;justify-content:center;font-size:14px;color:transparent;transition:.15s}
+  .card.done .chk{background:var(--amber);border-color:var(--amber);color:#1a1400}
+  .body{flex:1;min-width:0}
+  .co{font-size:16px;font-weight:600;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .badge{font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:100px}
+  .b-li{background:rgba(10,102,194,.18);color:#6cb0f5;border:1px solid rgba(10,102,194,.4)}
+  .b-wa{background:rgba(37,211,102,.15);color:#5ee996;border:1px solid rgba(37,211,102,.4)}
+  .b-both{background:rgba(255,207,51,.15);color:var(--amber);border:1px solid rgba(255,207,51,.4)}
+  .meta{font-size:12px;color:var(--mt);margin-top:2px}
+  .why{font-size:12.5px;color:var(--t2);font-style:italic;margin-top:7px}
+  .msg{background:var(--card2);border:1px solid var(--bd);border-radius:9px;padding:10px 12px;margin-top:11px;
+    font-size:13px;color:#d5d8e2;white-space:pre-wrap;line-height:1.5}
+  .acts{display:flex;gap:9px;margin-top:11px;flex-wrap:wrap}
+  .btn{font-size:12.5px;font-weight:600;border-radius:8px;padding:9px 15px;cursor:pointer;border:1px solid transparent;
+    text-decoration:none;display:inline-flex;align-items:center;gap:7px}
+  .btn-li{background:var(--li);color:#fff}
+  .btn-wa{background:var(--wa);color:#053d1a}
+  .btn-copy{background:transparent;border:1px solid var(--bd);color:var(--t2)}
+  .btn:active{transform:translateY(1px)}
+  .empty{text-align:center;color:var(--mt);padding:60px 20px;font-size:13px}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--amber);
+    color:#1a1400;font-size:13px;font-weight:600;padding:11px 20px;border-radius:100px;opacity:0;transition:.3s;pointer-events:none}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  footer{text-align:center;color:var(--mt);font-size:11px;margin-top:26px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="tag">Campaña · una sola vez</span>
+    <h1>Alt-Canal — LinkedIn + WhatsApp</h1>
+    <p class="sub">El cuarto toque (canal alternativo) que <b>nunca ejecutamos</b>. Estos leads recibieron
+      2+ emails y siguen activos, pero jamás se les contactó por LinkedIn/WhatsApp. Canal elegido por empresa
+      (corporativo → LinkedIn · indie con WhatsApp de negocio publicado → WhatsApp). <b>No toca el ciclo del sistema</b> —
+      es una herramienta aparte para ejecutar este toque.</p>
+    <div class="bar"><div class="prog"><i id="pf"></i></div><span class="pct" id="pct">0 / 0</span></div>
+  </header>
+  <div class="filters" id="filters"></div>
+  <div id="list"></div>
+  <footer>Marca "hecho" al enviar cada uno · tu progreso se guarda en este navegador · no modifica ningún reporte ni el ciclo de seguimiento.</footer>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+(function(){
+  "use strict";
+  var $=function(id){return document.getElementById(id)};
+  var KEY='eje_altcanal_done_v1', DONE={};
+  try{DONE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  var DATA=[], filter='all';
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(DONE))}catch(e){}}
+  function waLink(num,msg){var n=(num||'').replace(/[^0-9]/g,'');return 'https://wa.me/'+n+(msg?'?text='+encodeURIComponent(msg):'')}
+  function toast(m){var t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show')},1800)}
+  function render(){
+    var rows=DATA.filter(function(d){return filter==='all'||d.channel===filter||(filter==='both'&&d.channel==='both')});
+    var n=DATA.length, done=DATA.filter(function(d){return DONE[d.company]}).length;
+    $('pf').style.width=(n?Math.round(done/n*100):0)+'%';$('pct').textContent=done+' / '+n;
+    if(!rows.length){$('list').innerHTML='<div class="empty">Sin leads en este filtro.</div>';return}
+    $('list').innerHTML=rows.map(function(d){
+      var isDone=!!DONE[d.company];
+      var badge=d.channel==='linkedin'?'<span class="badge b-li">LinkedIn</span>':d.channel==='whatsapp'?'<span class="badge b-wa">WhatsApp</span>':d.channel==='both'?'<span class="badge b-both">LinkedIn + WhatsApp</span>':'<span class="badge" style="color:var(--mt);border:1px solid var(--bd)">Sin canal</span>';
+      var acts='';
+      if((d.channel==='linkedin'||d.channel==='both')&&d.linkedinUrl)acts+='<a class="btn btn-li" href="'+esc(d.linkedinUrl)+'" target="_blank">Abrir LinkedIn ↗</a>';
+      if((d.channel==='whatsapp'||d.channel==='both')&&d.whatsapp)acts+='<a class="btn btn-wa" href="'+esc(waLink(d.whatsapp,d.message))+'" target="_blank">WhatsApp ↗</a>';
+      if(d.message)acts+='<button class="btn btn-copy" data-copy="'+esc(d.company)+'">Copiar mensaje</button>';
+      return '<div class="card'+(isDone?' done':'')+'" data-co="'+esc(d.company)+'">'+
+        '<div class="chk" data-toggle="'+esc(d.company)+'">✓</div>'+
+        '<div class="body"><div class="co">'+esc(d.company)+' '+badge+'</div>'+
+        '<div class="meta">'+esc(d.country||'')+(d.dm?' · '+esc(d.dm):'')+'</div>'+
+        (d.why?'<div class="why">'+esc(d.why)+'</div>':'')+
+        (d.message?'<div class="msg">'+esc(d.message)+'</div>':'')+
+        '<div class="acts">'+acts+'</div></div></div>';
+    }).join('');
+  }
+  document.addEventListener('click',function(e){
+    var tg=e.target.closest('[data-toggle]'); if(tg){var c=tg.getAttribute('data-toggle');DONE[c]=!DONE[c];if(!DONE[c])delete DONE[c];save();render();return;}
+    var cp=e.target.closest('[data-copy]'); if(cp){var co=cp.getAttribute('data-copy');var d=DATA.find(function(x){return x.company===co});if(d&&d.message){navigator.clipboard&&navigator.clipboard.writeText(d.message);toast('Mensaje copiado')}}
+  });
+  function buildFilters(){
+    var counts={all:DATA.length,linkedin:0,whatsapp:0,both:0};
+    DATA.forEach(function(d){counts[d.channel]=(counts[d.channel]||0)+1});
+    var defs=[['all','Todos'],['linkedin','LinkedIn'],['whatsapp','WhatsApp'],['both','Ambos']];
+    $('filters').innerHTML=defs.map(function(f){return '<button class="fbtn'+(filter===f[0]?' on':'')+'" data-f="'+f[0]+'">'+f[1]+' ('+(counts[f[0]]||0)+')</button>'}).join('');
+    Array.prototype.forEach.call($('filters').children,function(b){b.onclick=function(){filter=b.getAttribute('data-f');buildFilters();render();}});
+  }
+  fetch('./campana-altcanal-data.json?cb='+Math.floor(Date.now()/60000)).then(function(r){return r.json()}).then(function(j){
+    DATA=Array.isArray(j)?j:(j.leads||[]);buildFilters();render();
+  }).catch(function(){$('list').innerHTML='<div class="empty">Aún no hay datos de campaña cargados.</div>'});
+})();
+</script>
+</body>
+</html>
