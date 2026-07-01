@@ -2610,9 +2610,8 @@ setTimeout(()=>{if(!window.DATA_READY)hideBootLoader();},15000);
 sbLoadAll().then(()=>loadPast().then(()=>autoLoad().then(()=>{
   window.DATA_READY=true;            // every source consolidated — safe to render real data
   renderAccionAhora();renderDay();
-  // Restore last-active tab on boot (workspace + tab survive refresh)
-  const _savedTab=localStorage.getItem('unabase_active_tab');
-  if(_savedTab&&['today','now','hist'].includes(_savedTab)&&_savedTab!=='today'){showV(_savedTab)}
+  // ALWAYS land on "Leads Hoy" on load — the client's primary action surface (2026-07-01).
+  showV('today');
   hideBootLoader();
 }))).catch(()=>hideBootLoader());
 </script>
