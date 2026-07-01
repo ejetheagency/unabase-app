@@ -11,8 +11,8 @@
   "message": "Hola Mario, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Mario, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Mario, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Sinapsis Producción y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Mario, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Mario, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Mario, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -24,11 +24,11 @@
   "why": "Servicios B2B corporativos (marcas/agencias), canal LinkedIn.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Audioenlace Producciones y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Audioenlace Producciones y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -40,11 +40,11 @@
   "why": "Coproductora indie de prestigio (Cannes/SanSebastián). LinkedIn de compañía no confirmado, verificar; mejor vía IG/email fundadores.",
   "dm": "Juan Pablo Gugliotta",
   "variant": "C",
-  "message": "Hola Juan, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola Juan, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola Juan, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Juan, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Magma Cine y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Juan, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Juan, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Juan, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -59,8 +59,8 @@
   "message": "Hola Pablo, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Pablo, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Pablo, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Cinematres y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Pablo, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Pablo, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Pablo, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -72,11 +72,11 @@
   "why": "Shop indie regional (Tumaco); WhatsApp es el canal de negocio normal.",
   "dm": "Oscar Darío Jiménez",
   "variant": "B",
-  "message": "Hola Oscar, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Buenavida Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola Oscar, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola Oscar, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Oscar, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Buenavida Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Oscar, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Oscar, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Oscar, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -88,11 +88,11 @@
   "why": "Agencia de branded content (ES) que publica WhatsApp de negocio. LinkedIn primero.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Cinebrand y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -107,8 +107,8 @@
   "message": "Hola Jorge, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Jorge, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Jorge, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Burning Blue y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Jorge, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Jorge, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Jorge, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -120,11 +120,11 @@
   "why": "Estudio grande de series (Paramount, 15k+ followers), WhatsApp inapropiado; LinkedIn.",
   "dm": "Angela Suárez (VP)",
   "variant": "B",
-  "message": "Hola Angela, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Tisproductions y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola Angela, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola Angela, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Angela, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Tisproductions y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Angela, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Angela, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Angela, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -136,11 +136,11 @@
   "why": "Casa internacional ganadora del Oscar, nota profesional a la CEO.",
   "dm": "Vanessa Ragone (CEO)",
   "variant": "C",
-  "message": "Hola Vanessa, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola Vanessa, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola Vanessa, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Vanessa, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Haddock Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Vanessa, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Vanessa, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Vanessa, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -155,8 +155,8 @@
   "message": "Hola Carlos, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Carlos, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Carlos, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Caudiovisual y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Carlos, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Carlos, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Carlos, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -168,11 +168,11 @@
   "why": "Casa establecida de cine/TV (Netflix/Disney+), LinkedIn de compañía.",
   "dm": "Victoria Aizenstat",
   "variant": "B",
-  "message": "Hola Victoria, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Aleph Cine y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola Victoria, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola Victoria, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Victoria, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Aleph Cine y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Victoria, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Victoria, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Victoria, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -184,11 +184,11 @@
   "why": "Productora chica; el fundador mantiene LinkedIn activo, toque menos invasivo.",
   "dm": "Luis Flores Alvarenga",
   "variant": "C",
-  "message": "Hola Luis, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola Luis, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola Luis, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Luis, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Thau Honduras y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Luis, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Luis, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Luis, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -203,8 +203,8 @@
   "message": "Hola Eduardo, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Eduardo, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Eduardo, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Fábrica Visual y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Eduardo, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Eduardo, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Eduardo, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -216,11 +216,11 @@
   "why": "Estudio de animación 3D que publica WhatsApp de negocio.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Zeta Positivo Animation Studio y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Zeta Positivo Animation Studio y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -232,11 +232,11 @@
   "why": "Estudio chileno chico con WhatsApp de negocio publicado.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Estudio Diverge y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -251,8 +251,8 @@
   "message": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Voilà Estudios y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -264,11 +264,11 @@
   "why": "Casa comercial/corporativa CDMX con página LinkedIn.",
   "dm": "Eduardo Ranuschio",
   "variant": "B",
-  "message": "Hola Eduardo, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Elote Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola Eduardo, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola Eduardo, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Eduardo, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Elote Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Eduardo, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Eduardo, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Eduardo, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -280,11 +280,11 @@
   "why": "Productora colombiana con WhatsApp de negocio publicado.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Paranova Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -299,8 +299,8 @@
   "message": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Pampa Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -312,11 +312,11 @@
   "why": "Casa B2B corporativa (World Bank, Intel, MercadoLibre) con LinkedIn + WhatsApp. Alto valor, LinkedIn primero.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Media Branders y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Media Branders y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -328,11 +328,11 @@
   "why": "Agencia de publicidad + producción MX/ES, LinkedIn.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Nomad Estudio y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -347,8 +347,8 @@
   "message": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Bengala Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -360,11 +360,11 @@
   "why": "Estudio de cine/TV/branded (Guadalajara), LinkedIn de compañía.",
   "dm": "Iván López-Barba",
   "variant": "B",
-  "message": "Hola Iván, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Cobra Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola Iván, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola Iván, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Iván, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Cobra Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Iván, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Iván, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Iván, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -376,11 +376,11 @@
   "why": "Productora audiovisual/publicidad (Lima, Xiaomi), LinkedIn.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Quinto Espacio y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -395,8 +395,8 @@
   "message": "Hola Mauricio, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Mauricio, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Mauricio, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Molvo Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Mauricio, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Mauricio, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Mauricio, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -408,11 +408,11 @@
   "why": "Media house de aventura/outdoor con LinkedIn del fundador.",
   "dm": "Benjamin Soto Ferraris",
   "variant": "B",
-  "message": "Hola Benjamin, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Zenith Adventure Media y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola Benjamin, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola Benjamin, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Benjamin, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Zenith Adventure Media y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Benjamin, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Benjamin, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Benjamin, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -424,11 +424,11 @@
   "why": "Casa CGI/3D corporativa 25+ años (Polanco, 38 premios), LinkedIn.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para La Casa Productora y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -443,8 +443,8 @@
   "message": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Happy Monster y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -456,11 +456,11 @@
   "why": "Agencia de producción+marketing (Mercedes-Benz, Adidas, Nestlé), LinkedIn.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Okla Co. y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Okla Co. y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -472,11 +472,11 @@
   "why": "Estudio de virtual production alto valor (Netflix, Chanel) con LinkedIn + WhatsApp. LinkedIn primero.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Cacodelphia Studios y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -491,8 +491,8 @@
   "message": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Estudios Gabriel García Márquez y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -504,11 +504,11 @@
   "why": "Casa de servicios internacional premiada (16+ años), LinkedIn.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para 64A Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para 64A Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -520,11 +520,11 @@
   "why": "Estudio animación/VFX con LinkedIn + WhatsApp de negocio. LinkedIn primero.",
   "dm": "Oscar Saldarriaga (CEO)",
   "variant": "C",
-  "message": "Hola Oscar, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola Oscar, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola Oscar, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Oscar, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Forja Studios y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Oscar, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Oscar, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Oscar, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -539,8 +539,8 @@
   "message": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Exodo Animation Studios y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -552,11 +552,11 @@
   "why": "Estudio de audio/post boutique que publica WhatsApp de reservas.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Trilogy Studio y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Trilogy Studio y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -568,11 +568,11 @@
   "why": "Productora/agencia creativa (Lima) con LinkedIn.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para GeoTV y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -587,8 +587,8 @@
   "message": "Hola Daniel, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Daniel, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Daniel, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Estudio Shout y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Daniel, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Daniel, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Daniel, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -600,11 +600,11 @@
   "why": "Estudio audiovisual indie; su WhatsApp es solo widget (sin número), LinkedIn.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Humans Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Humans Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -616,11 +616,11 @@
   "why": "Casa de cine/TV (Bogotá), fundador en LinkedIn.",
   "dm": "Jorge Andrés Botero",
   "variant": "C",
-  "message": "Hola Jorge, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola Jorge, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola Jorge, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Jorge, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Septima Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Jorge, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Jorge, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Jorge, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -635,8 +635,8 @@
   "message": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Vertigo Films Spain y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -648,11 +648,11 @@
   "why": "Casa de servicios grande (Netflix/Disney/Warner, BA+Miami) con LinkedIn + WhatsApp. LinkedIn primero.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Frame y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Frame y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -664,11 +664,11 @@
   "why": "Post/comercial (Santo Domingo); sin página LinkedIn clara, buscar a un director por nombre.",
   "dm": "Mariano Pichardo",
   "variant": "C",
-  "message": "Hola Mariano, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola Mariano, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola Mariano, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Mariano, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para KOKALEKA y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Mariano, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Mariano, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Mariano, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -683,8 +683,8 @@
   "message": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Mostro Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -696,11 +696,11 @@
   "why": "Agencia creativa multi-oficina (MX/CO) con LinkedIn + WhatsApp. LinkedIn primero.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para D14S / Catorce Días y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para D14S / Catorce Días y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -712,11 +712,11 @@
   "why": "Media/AI/virtual production (CDMX) con LinkedIn de compañía.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Redefinition / 146XR Studio y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -731,8 +731,8 @@
   "message": "Hola Guillermo, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Guillermo, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Guillermo, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Voltage Productions y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Guillermo, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Guillermo, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Guillermo, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -744,11 +744,11 @@
   "why": "Agencia/producción/post (CDMX+Querétaro, 30+ marcas), LinkedIn.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Oye Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Oye Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -760,11 +760,11 @@
   "why": "Productora (Monterrey+CDMX) con LinkedIn + WhatsApp de negocio. LinkedIn primero.",
   "dm": null,
   "variant": "C",
-  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Fantasma Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -779,8 +779,8 @@
   "message": "Hola Camila, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
   "messages": {
    "A": "Hola Camila, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Camila, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Cinestación y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Camila, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Camila, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Camila, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -792,11 +792,11 @@
   "why": "Documental de impacto (B Corp, CANACINE), página LinkedIn.",
   "dm": null,
   "variant": "B",
-  "message": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Sarape Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
+  "message": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
   "messages": {
    "A": "Hola, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Sarape Films y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  },
  {
@@ -808,11 +808,11 @@
   "why": "Audiovisual corporativo + agencia (CL); fundador en LinkedIn.",
   "dm": "Sebastián Pando",
   "variant": "C",
-  "message": "Hola Sebastián, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo.",
+  "message": "Hola Sebastián, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo.",
   "messages": {
    "A": "Hola Sebastián, ¿qué te pareció la propuesta que te mandamos desde UnaBase? Soy Scarlett, por cierto. Cualquier duda sobre el correo escríbeme por acá y lo resolvemos al toque.",
-   "B": "Hola Sebastián, soy Scarlett de UnaBase. Te escribo por acá porque a veces el correo se traspapela: te mandamos una propuesta pensada para Grappi Multimedia y me quedé con ganas de saber tu opinión. ¿Te hace sentido o mejor lo vemos más adelante?",
-   "C": "Hola Sebastián, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, me encantaría saber qué opinas. Si no, te lo reenvío por acá en un segundo."
+   "B": "Hola Sebastián, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
+   "C": "Hola Sebastián, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   }
  }
 ]
