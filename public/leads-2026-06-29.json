@@ -126,15 +126,15 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "pattern",
-    "contactConfidence": "pattern_unverified",
+    "contactSource": "website_published",
+    "contactConfidence": "role_inbox",
     "companyName": "Agave Films",
     "website": "https://www.agavefilms.com.mx",
     "country": "Mexico",
-    "contactName": "Adolfo Ávila Villalobos",
-    "contactTitle": "Director / Fundador (principal)",
-    "contactEmail": "adolfo@agavefilms.com.mx",
-    "companyEmail": "c.produccion@agavefilms.com.mx",
+    "contactName": null,
+    "contactTitle": null,
+    "contactEmail": "c.produccion@agavefilms.com.mx",
+    "companyEmail": null,
     "contactPhone": "+52 3316237456",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/agavefilms/",
@@ -142,13 +142,19 @@
     "instagramFollowers": 1983,
     "additionalContacts": [
       {
+        "name": "Adolfo Ávila Villalobos",
+        "title": "Director / Fundador (principal)",
+        "email": null
+      },
+      {
         "name": "Baruch Padilla Gómez",
         "title": "Productor",
         "email": null
       }
     ],
     "companyBrief": "Productora de cine y publicidad — Zapopan/Guadalajara (2008). Largometrajes, comerciales, documental, animación, post. Principal Adolfo Ávila Villalobos (25+ años). Enfoque en industria fílmica de Jalisco.",
-    "unabaseScore": 8.6
+    "unabaseScore": 8.6,
+    "_caveat": "adolfo@agavefilms.com.mx bounced 2026-07-01 -> published role inbox (deliverable)"
   },
   {
     "_dispatched_batch_id": "batch-2026-06-29",
@@ -291,15 +297,15 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "hunter",
-    "contactConfidence": "likely",
+    "contactSource": "website_published",
+    "contactConfidence": "role_inbox",
     "companyName": "Cumbia Films",
     "website": "https://cumbiafilms.com",
     "country": "Colombia",
     "contactName": "Felipe Holguín Caro",
     "contactTitle": "Co-Founder / Executive Director",
-    "contactEmail": "felipe@cumbiafilms.com",
-    "companyEmail": "info@cumbiafilms.com",
+    "contactEmail": "info@cumbiafilms.com",
+    "companyEmail": null,
     "contactPhone": "+57 310 535 1327",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/cumbiafilms/",
@@ -307,13 +313,19 @@
     "instagramFollowers": 3556,
     "additionalContacts": [
       {
+        "name": "Felipe Holguín Caro",
+        "title": "Co-Founder / Executive Director",
+        "email": null
+      },
+      {
         "name": "María Teresa Gaviria",
         "title": "Co-Founder / Executive Producer",
         "email": null
       }
     ],
     "companyBrief": "Productora full-service — Cartagena (2009) + oficina LA. Cine, documental, videoclip, fixer en Colombia. Fundada por Felipe Holguín Caro y María Teresa Gaviria; 'La Suprema' (TIFF 2023). Videos Kali Uchis, Petrona Martínez.",
-    "unabaseScore": 9
+    "unabaseScore": 9,
+    "_caveat": "felipe@cumbiafilms.com bounced 2026-07-01 -> published role inbox (deliverable)"
   },
   {
     "_dispatched_batch_id": "batch-2026-06-29",
@@ -327,21 +339,26 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "pattern",
-    "contactConfidence": "pattern_unverified",
+    "contactSource": "website_published",
+    "contactConfidence": "role_inbox",
     "companyName": "La Casa de Producción",
     "website": "https://lacasadeproduccion.com.gt",
     "country": "Guatemala",
     "contactName": "Jayro Bustamante",
     "contactTitle": "Founder & Director",
-    "contactEmail": "jayro@lacasadeproduccion.com.gt",
-    "companyEmail": "info@lacasadeproduccion.com.gt",
+    "contactEmail": "info@lacasadeproduccion.com.gt",
+    "companyEmail": null,
     "contactPhone": "+502 2234 8618",
     "contactLinkedIn": null,
     "instagramUrl": "https://www.instagram.com/lacasadeproduccion/",
     "instagramHandle": "lacasadeproduccion",
     "instagramFollowers": 16000,
     "additionalContacts": [
+      {
+        "name": "Jayro Bustamante",
+        "title": "Founder & Director",
+        "email": null
+      },
       {
         "name": "Marina Peralta",
         "title": "Co-Founder & Producer",
@@ -354,7 +371,8 @@
       }
     ],
     "companyBrief": "Productora de cine — Guatemala (2009), fundada por Jayro Bustamante y Marina Peralta. Ixcanul (Oso de Plata Berlinale), Temblores, La Llorona (shortlist Oscar, nom Globo de Oro). Melissa Rosales (Gerente/Productora).",
-    "unabaseScore": 9.5
+    "unabaseScore": 9.5,
+    "_caveat": "jayro@lacasadeproduccion.com.gt bounced 2026-07-01 -> published role inbox (deliverable)"
   },
   {
     "_dispatched_batch_id": "batch-2026-06-29",
@@ -368,21 +386,26 @@
     "tier": "tier1",
     "contactPath": "decision_maker_email",
     "channelPriority": "email",
-    "contactSource": "website",
-    "contactConfidence": "confirmed",
+    "contactSource": "website_published",
+    "contactConfidence": "role_inbox",
     "companyName": "Blur Films",
     "website": "https://blurfilms.tv",
     "country": "Spain",
     "contactName": "Mario Forniés",
     "contactTitle": "Founder & Executive Producer",
-    "contactEmail": "mario.fornies@blurfilms.tv",
-    "companyEmail": "hola@blurfilms.tv",
+    "contactEmail": "hola@blurfilms.tv",
+    "companyEmail": null,
     "contactPhone": "+34 913 562 685",
     "contactLinkedIn": null,
     "instagramUrl": null,
     "instagramHandle": null,
     "instagramFollowers": null,
     "additionalContacts": [
+      {
+        "name": "Mario Forniés",
+        "title": "Founder & Executive Producer",
+        "email": null
+      },
       {
         "name": "Pablo García Acón",
         "title": "Productor Ejecutivo / Socio",
@@ -395,6 +418,7 @@
       }
     ],
     "companyBrief": "Productora de publicidad multidisciplinar — Madrid (2004) + Barcelona. 500+ spots, videoclips, branded content + films 'Secuestrados', 'Temporal'. 1ª productora en el Cannes Lions Global Creativity Report tras Grand Prix Film Craft 2018. DMs: Mario Forniés (fundador/EP), Pablo García Acón, Zico Judge.",
-    "unabaseScore": 9.2
+    "unabaseScore": 9.2,
+    "_caveat": "mario.fornies@blurfilms.tv bounced 2026-07-01 -> published role inbox (deliverable)"
   }
 ]
