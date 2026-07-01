@@ -104,7 +104,7 @@
       if((d.channel==='linkedin'||d.channel==='both')&&d.linkedinUrl)acts+='<a class="btn btn-li" href="'+esc(d.linkedinUrl)+'" target="_blank">Abrir LinkedIn ↗</a>';
       if((d.channel==='whatsapp'||d.channel==='both')&&d.whatsapp)acts+='<a class="btn btn-wa" href="'+esc(waLink(d.whatsapp,am))+'" target="_blank">WhatsApp ↗</a>';
       if(am)acts+='<button class="btn btn-copy" data-copy="'+esc(d.company)+'">Copiar mensaje</button>';
-      var vsw=d.messages?('<div class="vsw">Variante '+['A','B','C','D'].map(function(v){return '<button class="vb'+(av===v?' on':'')+'" data-var="'+v+'" data-vco="'+esc(d.company)+'">'+v+'</button>'}).join('')+'</div>'):'';
+      var vsw=d.messages?('<div class="vsw">Variante '+Object.keys(d.messages).map(function(v){return '<button class="vb'+(av===v?' on':'')+'" data-var="'+v+'" data-vco="'+esc(d.company)+'">'+v+'</button>'}).join('')+'</div>'):'';
       return '<div class="card'+(isDone?' done':'')+'" data-co="'+esc(d.company)+'">'+
         '<div class="chk" data-toggle="'+esc(d.company)+'">✓</div>'+
         '<div class="body"><div class="co">'+esc(d.company)+' '+badge+'</div>'+
