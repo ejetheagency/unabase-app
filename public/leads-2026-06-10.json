@@ -226,9 +226,9 @@
     "contactTitle": "Founder / Executive Producer",
     "contactEmail": "constanza@quijotefilms.com",
     "companyEmail": "cine@quijotefilms.com",
-    "instagramUrl": "https://www.instagram.com/quijotefilms/",
-    "instagramHandle": "quijotefilms",
-    "instagramFollowers": 210,
+    "instagramUrl": "https://www.instagram.com/quijote_films/",
+    "instagramHandle": "quijote_films",
+    "instagramFollowers": null,
     "apolloCompanyLinkedIn": null,
     "additionalContacts": [
       {
@@ -255,7 +255,8 @@
     "unabaseScore": 9.5,
     "pitchEmailES": "",
     "emailCercana": "",
-    "_dispatched_batch_id": "batch-2026-06-10"
+    "_dispatched_batch_id": "batch-2026-06-10",
+    "_caveat": "DM handle corrected quijotefilms->quijote_films (site-authoritative, 2026-07-01); cycle untouched"
   },
   {
     "companyName": "Tornasol Media",
