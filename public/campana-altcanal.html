@@ -48,6 +48,9 @@
   .btn-wa{background:var(--wa);color:#053d1a}
   .btn-copy{background:transparent;border:1px solid var(--bd);color:var(--t2)}
   .btn:active{transform:translateY(1px)}
+  .vsw{display:flex;align-items:center;gap:6px;margin-top:11px;font-size:11px;color:var(--mt);font-weight:600}
+  .vb{width:27px;height:27px;border-radius:7px;border:1px solid var(--bd);background:var(--card2);color:var(--t2);font-weight:700;font-size:12px;cursor:pointer}
+  .vb.on{background:var(--amber);color:#1a1400;border-color:var(--amber)}
   .empty{text-align:center;color:var(--mt);padding:60px 20px;font-size:13px}
   .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--amber);
     color:#1a1400;font-size:13px;font-weight:600;padding:11px 20px;border-radius:100px;opacity:0;transition:.3s;pointer-events:none}
@@ -63,7 +66,8 @@
     <p class="sub">El cuarto toque (canal alternativo) que <b>nunca ejecutamos</b>. Estos leads recibieron
       2+ emails y siguen activos, pero jamás se les contactó por LinkedIn/WhatsApp. Canal elegido por empresa
       (corporativo → LinkedIn · indie con WhatsApp de negocio publicado → WhatsApp). <b>No toca el ciclo del sistema</b> —
-      es una herramienta aparte para ejecutar este toque.</p>
+      es una herramienta aparte para ejecutar este toque. <b>3 mensajes (A/B/C)</b> repartidos para probar
+      cuál responde mejor, firmados por Scarlett. Cambia la variante por lead con los botones A/B/C.</p>
     <div class="bar"><div class="prog"><i id="pf"></i></div><span class="pct" id="pct">0 / 0</span></div>
   </header>
   <div class="filters" id="filters"></div>
@@ -77,6 +81,11 @@
   var $=function(id){return document.getElementById(id)};
   var KEY='eje_altcanal_done_v1', DONE={};
   try{DONE=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  var VKEY='eje_altcanal_var_v1', VAR={};
+  try{VAR=JSON.parse(localStorage.getItem(VKEY)||'{}')}catch(e){}
+  function activeVar(d){return VAR[d.company]||d.variant||'A'}
+  function activeMsg(d){return d.messages?(d.messages[activeVar(d)]||d.message):d.message}
+  function saveVar(){try{localStorage.setItem(VKEY,JSON.stringify(VAR))}catch(e){}}
   var DATA=[], filter='all';
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function save(){try{localStorage.setItem(KEY,JSON.stringify(DONE))}catch(e){}}
@@ -90,22 +99,26 @@
     $('list').innerHTML=rows.map(function(d){
       var isDone=!!DONE[d.company];
       var badge=d.channel==='linkedin'?'<span class="badge b-li">LinkedIn</span>':d.channel==='whatsapp'?'<span class="badge b-wa">WhatsApp</span>':d.channel==='both'?'<span class="badge b-both">LinkedIn + WhatsApp</span>':'<span class="badge" style="color:var(--mt);border:1px solid var(--bd)">Sin canal</span>';
+      var am=activeMsg(d), av=activeVar(d);
       var acts='';
       if((d.channel==='linkedin'||d.channel==='both')&&d.linkedinUrl)acts+='<a class="btn btn-li" href="'+esc(d.linkedinUrl)+'" target="_blank">Abrir LinkedIn ↗</a>';
-      if((d.channel==='whatsapp'||d.channel==='both')&&d.whatsapp)acts+='<a class="btn btn-wa" href="'+esc(waLink(d.whatsapp,d.message))+'" target="_blank">WhatsApp ↗</a>';
-      if(d.message)acts+='<button class="btn btn-copy" data-copy="'+esc(d.company)+'">Copiar mensaje</button>';
+      if((d.channel==='whatsapp'||d.channel==='both')&&d.whatsapp)acts+='<a class="btn btn-wa" href="'+esc(waLink(d.whatsapp,am))+'" target="_blank">WhatsApp ↗</a>';
+      if(am)acts+='<button class="btn btn-copy" data-copy="'+esc(d.company)+'">Copiar mensaje</button>';
+      var vsw=d.messages?('<div class="vsw">Variante '+['A','B','C'].map(function(v){return '<button class="vb'+(av===v?' on':'')+'" data-var="'+v+'" data-vco="'+esc(d.company)+'">'+v+'</button>'}).join('')+'</div>'):'';
       return '<div class="card'+(isDone?' done':'')+'" data-co="'+esc(d.company)+'">'+
         '<div class="chk" data-toggle="'+esc(d.company)+'">✓</div>'+
         '<div class="body"><div class="co">'+esc(d.company)+' '+badge+'</div>'+
         '<div class="meta">'+esc(d.country||'')+(d.dm?' · '+esc(d.dm):'')+'</div>'+
         (d.why?'<div class="why">'+esc(d.why)+'</div>':'')+
-        (d.message?'<div class="msg">'+esc(d.message)+'</div>':'')+
+        vsw+
+        (am?'<div class="msg">'+esc(am)+'</div>':'')+
         '<div class="acts">'+acts+'</div></div></div>';
     }).join('');
   }
   document.addEventListener('click',function(e){
     var tg=e.target.closest('[data-toggle]'); if(tg){var c=tg.getAttribute('data-toggle');DONE[c]=!DONE[c];if(!DONE[c])delete DONE[c];save();render();return;}
-    var cp=e.target.closest('[data-copy]'); if(cp){var co=cp.getAttribute('data-copy');var d=DATA.find(function(x){return x.company===co});if(d&&d.message){navigator.clipboard&&navigator.clipboard.writeText(d.message);toast('Mensaje copiado')}}
+    var cp=e.target.closest('[data-copy]'); if(cp){var co=cp.getAttribute('data-copy');var d=DATA.find(function(x){return x.company===co});if(d){navigator.clipboard&&navigator.clipboard.writeText(activeMsg(d));toast('Mensaje copiado (Variante '+activeVar(d)+')')}}
+    var vb=e.target.closest('[data-var]'); if(vb){VAR[vb.getAttribute('data-vco')]=vb.getAttribute('data-var');saveVar();render();}
   });
   function buildFilters(){
     var counts={all:DATA.length,linkedin:0,whatsapp:0,both:0};
