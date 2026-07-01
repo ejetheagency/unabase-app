@@ -62,12 +62,12 @@
 <div class="wrap">
   <header>
     <span class="tag">Campaña · una sola vez</span>
-    <h1>Alt-Canal — LinkedIn + WhatsApp</h1>
+    <h1>Alt-Canal · LinkedIn + WhatsApp</h1>
     <p class="sub">El cuarto toque (canal alternativo) que <b>nunca ejecutamos</b>. Estos leads recibieron
       2+ emails y siguen activos, pero jamás se les contactó por LinkedIn/WhatsApp. Canal elegido por empresa
-      (corporativo → LinkedIn · indie con WhatsApp de negocio publicado → WhatsApp). <b>No toca el ciclo del sistema</b> —
-      es una herramienta aparte para ejecutar este toque. <b>3 mensajes (A/B/C)</b> repartidos para probar
-      cuál responde mejor, firmados por Scarlett. Cambia la variante por lead con los botones A/B/C.</p>
+      (corporativo: LinkedIn · indie con WhatsApp de negocio publicado: WhatsApp). <b>No toca el ciclo del sistema</b>,
+      es una herramienta aparte para ejecutar este toque. <b>4 mensajes (A/B/C/D)</b> repartidos para probar
+      cuál responde mejor, firmados por Scarlett. Cambia la variante por lead con los botones A/B/C/D.</p>
     <div class="bar"><div class="prog"><i id="pf"></i></div><span class="pct" id="pct">0 / 0</span></div>
   </header>
   <div class="filters" id="filters"></div>
@@ -104,7 +104,7 @@
       if((d.channel==='linkedin'||d.channel==='both')&&d.linkedinUrl)acts+='<a class="btn btn-li" href="'+esc(d.linkedinUrl)+'" target="_blank">Abrir LinkedIn ↗</a>';
       if((d.channel==='whatsapp'||d.channel==='both')&&d.whatsapp)acts+='<a class="btn btn-wa" href="'+esc(waLink(d.whatsapp,am))+'" target="_blank">WhatsApp ↗</a>';
       if(am)acts+='<button class="btn btn-copy" data-copy="'+esc(d.company)+'">Copiar mensaje</button>';
-      var vsw=d.messages?('<div class="vsw">Variante '+['A','B','C'].map(function(v){return '<button class="vb'+(av===v?' on':'')+'" data-var="'+v+'" data-vco="'+esc(d.company)+'">'+v+'</button>'}).join('')+'</div>'):'';
+      var vsw=d.messages?('<div class="vsw">Variante '+['A','B','C','D'].map(function(v){return '<button class="vb'+(av===v?' on':'')+'" data-var="'+v+'" data-vco="'+esc(d.company)+'">'+v+'</button>'}).join('')+'</div>'):'';
       return '<div class="card'+(isDone?' done':'')+'" data-co="'+esc(d.company)+'">'+
         '<div class="chk" data-toggle="'+esc(d.company)+'">✓</div>'+
         '<div class="body"><div class="co">'+esc(d.company)+' '+badge+'</div>'+
