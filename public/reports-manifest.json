@@ -1,13 +1,29 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-07-01",
+      "source_date": "2026-07-01",
+      "file": "leads-2026-07-01.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-07-01T14:26:06.000Z",
+      "status": "active",
+      "disable_carry_forward": false,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "10 productoras POOL DISPATCH — dispatch-verified to full standard (site-render IG confirmed on all 10; emails Apollo-verified or website-published/deliverable; named DMs; deduped). avg 8.95. Geo ES3/AR2/CL2/CO1/UY1/PE1 (geo drift approved for quality). Picks: Errante CL (Paola Castillo, Cannes doc), Oruga AR (Cannes Lions ad house), The Production Club ES (Sol de Oro), Sideral ES (Berlinale label), Pueblo ES (El Sol), Clover CO, Pulpofilms AR (Premio Nacional Doc), Cordon UY (Daniel Hendler, Berlin/TIFF), Santiago Independiente CL, Cuadro24 PE.",
+      "supply_metrics": {
+        "valid_leads": 10,
+        "methodology": "pool dispatch + dispatch-time verification: puppeteer site-render IG (own-site authority) + Apollo-verified/website-published deliverable emails; dedup+audit gated"
+      }
+    },
+    {
       "batch_id": "batch-2026-06-29",
       "source_date": "2026-06-29",
       "file": "leads-2026-06-29.json",
       "lead_count": 10,
       "approved": true,
       "approved_at": "2026-06-29T21:49:23.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
       "note": "10 productoras POOL DISPATCH (fresh 06-28 mine) avg 9.11. Geo MX4/AR2/CO2/GT1/ES1 (9 priority-tier, MX plurality, NO BRAZIL). All email-bearing + named DM (Hola Combo route-inbox). Picks: Interior XIII MX (Dos Estaciones/Pacifiction, Maximiliano Cruz FICUNAM), La Maroma MX (Inti Cordera/DocsMX), Hola Combo MX (nom Oscar corto Ninety-Five Senses), Agave MX, Campo Cine AR (Diego Lerman), LaDoble AR (2 Grand Prix Cannes), La Octava CO (Grey/McCann), Cumbia CO (La Suprema TIFF), La Casa de Produccion GT (Jayro Bustamante - Ixcanul/La Llorona), Blur ES (Cannes Film Craft GP). IG follower counts + pattern emails (Agave/La Casa) to strict-verify. Pool remaining ~32.",
@@ -922,7 +938,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-06-29",
+  "active_batch_id": "batch-2026-07-01",
   "timezone": "America/New_York",
-  "last_updated": "2026-06-29T22:30:00.000Z"
+  "last_updated": "2026-07-01T14:26:06.000Z"
 }
