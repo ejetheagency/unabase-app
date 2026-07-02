@@ -1,944 +1,962 @@
 {
-  "batches": [
-    {
-      "batch_id": "batch-2026-07-01",
-      "source_date": "2026-07-01",
-      "file": "leads-2026-07-01.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-07-01T14:26:06.000Z",
-      "status": "active",
-      "disable_carry_forward": false,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 productoras POOL DISPATCH — dispatch-verified to full standard (site-render IG confirmed on all 10; emails Apollo-verified or website-published/deliverable; named DMs; deduped). avg 8.95. Geo ES3/AR2/CL2/CO1/UY1/PE1 (geo drift approved for quality). Picks: Errante CL (Paola Castillo, Cannes doc), Oruga AR (Cannes Lions ad house), The Production Club ES (Sol de Oro), Sideral ES (Berlinale label), Pueblo ES (El Sol), Clover CO, Pulpofilms AR (Premio Nacional Doc), Cordon UY (Daniel Hendler, Berlin/TIFF), Santiago Independiente CL, Cuadro24 PE.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch + dispatch-time verification: puppeteer site-render IG (own-site authority) + Apollo-verified/website-published deliverable emails; dedup+audit gated"
-      }
+ "batches": [
+  {
+   "batch_id": "batch-2026-07-02",
+   "source_date": "2026-07-02",
+   "file": "leads-2026-07-02.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-07-02T17:23:01.950Z",
+   "status": "active",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras POOL DISPATCH from the 2026-07-01 fresh farm — full standard + NEW link-liveness gate (every website + IG opens live, 0 black screens), named decision-maker on all 10, deliverable/verified emails (Apollo/Hunter/site-published, none guessed), IG own-site-authority on 10/10. Geo MX3/AR2/CO2/UY1/PE1/CR1 (MX plurality). Festival pedigree: Sundance/Cannes/Berlinale/Ariel. avg 9.15.",
+   "supply_metrics": {
+    "pool_usable_before": 84,
+    "dispatched": 10,
+    "pool_usable_after": 74,
+    "mode": "pool_dispatch"
+   }
+  },
+  {
+   "batch_id": "batch-2026-07-01",
+   "source_date": "2026-07-01",
+   "file": "leads-2026-07-01.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-07-01T14:26:06.000Z",
+   "status": "archived",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras POOL DISPATCH — dispatch-verified to full standard (site-render IG confirmed on all 10; emails Apollo-verified or website-published/deliverable; named DMs; deduped). avg 8.95. Geo ES3/AR2/CL2/CO1/UY1/PE1 (geo drift approved for quality). Picks: Errante CL (Paola Castillo, Cannes doc), Oruga AR (Cannes Lions ad house), The Production Club ES (Sol de Oro), Sideral ES (Berlinale label), Pueblo ES (El Sol), Clover CO, Pulpofilms AR (Premio Nacional Doc), Cordon UY (Daniel Hendler, Berlin/TIFF), Santiago Independiente CL, Cuadro24 PE.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch + dispatch-time verification: puppeteer site-render IG (own-site authority) + Apollo-verified/website-published deliverable emails; dedup+audit gated"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-29",
+   "source_date": "2026-06-29",
+   "file": "leads-2026-06-29.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-29T21:49:23.000Z",
+   "status": "archived",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras POOL DISPATCH (fresh 06-28 mine) avg 9.11. Geo MX4/AR2/CO2/GT1/ES1 (9 priority-tier, MX plurality, NO BRAZIL). All email-bearing + named DM (Hola Combo route-inbox). Picks: Interior XIII MX (Dos Estaciones/Pacifiction, Maximiliano Cruz FICUNAM), La Maroma MX (Inti Cordera/DocsMX), Hola Combo MX (nom Oscar corto Ninety-Five Senses), Agave MX, Campo Cine AR (Diego Lerman), LaDoble AR (2 Grand Prix Cannes), La Octava CO (Grey/McCann), Cumbia CO (La Suprema TIFF), La Casa de Produccion GT (Jayro Bustamante - Ixcanul/La Llorona), Blur ES (Cannes Film Craft GP). IG follower counts + pattern emails (Agave/La Casa) to strict-verify. Pool remaining ~32.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch from staging/pool-a-tier.json (06-28 precise fresh-mine: 5-agent discovery + exhaustive WebFetch enrichment + Hunter/Apollo); audit-gated"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-26",
+   "source_date": "2026-06-26",
+   "file": "leads-2026-06-26.json",
+   "lead_count": 9,
+   "approved": true,
+   "approved_at": "2026-06-26T22:51:27.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras POOL DISPATCH — FULLY ENRICHED to V1 standard, avg 8.92/10. Geo MX4/AR2/CO2/CL1/ES1 (8 priority-tier, MX plurality, NO BRAZIL). All 10 email-bearing; 8 named-DM primary + 2 role-inbox (Matanza team-greet). Briefs 300-500 chars w/ DM rosters. IG: 6 strict-verified w/ follower counts (Matanza @matanzacine 1.9k/361posts, Mantarraya @ndmantarraya 7.5k/616, Gusano @gusanofilms.cine 2.2k/334, Mezcla @__mezcla 2.6k/108, La Ventana @laventanacine 4.7k, CMO @cmoproduccionessas ~18k); No Ficción @noficcionmx verified (count IG-rate-limited); Poster/Oria/García Bross documented email-only. Enrichment loops: Apollo /people/match (Mantarraya/La Ventana/Poster/Mezcla emails VERIFIED), Hunter domain-search (CMO abarreto 94%, García Bross juan 91%), 5 parallel WebFetch DM-roster harvests, puppeteer strict-IG. Recovered: CMO dead IG->@cmoproduccionessas, No Ficción handle->@noficcionmx, Gusano named primary jcaballeroramos@gmail.com, García Bross named primary juan@garciabross.com, La Ventana upgraded contacto@->carola@ (verified). Picks: CMO CO (Palpito #1 Netflix), Matanza AR (Trapero/Gusman, Venecia), Mantarraya MX (Reygadas+Escalante), La Ventana CL (Chicago Boys B-Corp), Poster AR (MercadoLibre/P&G/Amazon), No Ficcion MX (Midnight Family Oscar shortlist), Gusano CO (2x Premio Nacional Doc), Mezcla MX (Mataviejitas/Zona Divas Netflix), Oria ES (Obaba/Armendariz), Garcia Bross MX (Simon Bross 4 Cannes Lions). Pool remaining 15.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch + full V1 enrichment: Apollo+Hunter email recovery, 5-agent WebFetch DM-roster harvest, puppeteer strict-IG verify w/ follower counts, audit gate 0 high-sev",
+    "ig_verified_with_followers": 6,
+    "documented_email_only": 3,
+    "ig_handle_count_pending": 1,
+    "named_dm_primary": 8
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-25",
+   "source_date": "2026-06-25",
+   "file": "leads-2026-06-25.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-25T13:32:10.507Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras POOL DISPATCH (first clean dispatch since the 2026-06-24 precise refill) avg 8.86/10. Geo Mexico:6 / Argentina:1 / Spain:1 / Peru:1 / Colombia:1 (8 priority-tier, MX plurality, NO BRAZIL). All 10 email-bearing + all 10 strict-IG verified with follower counts + 5/10 phone. Picks: Magic Hammer MX (Bronze Cannes Lion, IG 6k), Filmadora MX (La Cocina 5 Ariel, IG 10k), Central Films MX (Tecate/Heineken, IG 14k), Cárcava MX (Berlinale Silver Bear, IG 643), MUT MX (North Face/Volvo, Pablo Garcilita Co-Founder via Hunter, IG 9k), Anemona MX (Movistar/Greenpeace, IG 1.7k), Plenty AR (HBO/Fox/NatGeo, IG 33k), Vaca Films ES (Celda 211/Clanes Netflix, IG 24k), Guarango PE (Hija de la Laguna, IG 2.1k), Dirty Kitchen CO (Gran Effie Latam, IG 6.5k). Dispatched from staging/pool-a-tier.json (pool remaining 25).",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch from staging/pool-a-tier.json (precise-sourced, strict-IG re-verified at dispatch w/ follower counts, MUT DM via Hunter)"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-24",
+   "source_date": "2026-06-24",
+   "file": "leads-2026-06-24.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-24T23:12:01.660Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "precise_top10_deploy",
+   "note": "10 productoras PRESTIGE-tier avg 9.32/10 — strongest complete picks (email + strict-IG-verified handle w/ follower count + named DM). Client geo MX 5 / ES 2 / PE 1 / AR 1 / CO 1 (7 priority-tier, NO BRAZIL). Replaces the initial 8-lead 06-24 set after operator chose the 10 strongest from the precise-sourcing refill (the 8 went to the pool). Method: 6 parallel WebSearch+WebFetch discovery agents (MX auteur+commercial, AR, CO, CL+PE, ES) → Apollo/Hunter email recovery → strict IG verify (posts>=10 + name-match + follower count) → dedup vs all 457 shipped/in-pool. Anchors at 9.5: El Deseo ES (Almodóvar, 2 Oscars, esther@ Hunter, IG @eldeseo_ 101k), Pacha Films PE (4x Emmy doc, Netflix/NatGeo/Disney+, IG 3.7k), The Maestros MX (Cannes-tier spots Mercedes/Nike/Dior, IG 14k), CMO swapped→Casa Tarántula. 9.3: Catatonia MX (5x Ariel 2025), El Estudio MX (Zama/Miss Bala/Luis Miguel), Suma Content ES (Los Javis, IG 44k), Maravillacine AR (Fipresci Berlinale 2025), Madrefoca MX (premiada, Nissan/Uber). 9.2 Varios Lobos MX (Selva Trágica Netflix). 9.0 Casa Tarántula CO (ALIS Berlinale Crystal Bear). All 10 email-bearing + all 10 strict-IG verified with follower counts + 4/10 phone.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "precise WebSearch-named-productora sourcing + Apollo/Hunter email recovery + strict IG verify w/ follower counts + dedup vs all past batches; top-10 by score with complete channels"
+   },
+   "archived_at": "2026-06-25T13:32:10.507Z"
+  },
+  {
+   "batch_id": "batch-2026-06-11",
+   "source_date": "2026-06-11",
+   "file": "leads-2026-06-11.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-11T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 ELITE productoras balanced ES/LATAM avg 9.15/10 — DISPATCHED FROM POOL pool-a-tier.json. ES:6 + MX:2 + CL:1 + AR:1. Anchors: Mediapro Studio ES (Spain's biggest, 3 EPs Apollo verified at @mediapro.tv — 10/10), Secuoya Studios ES (Brendan Fitzgerald CEO + 3 EPs, Netflix Élite/KAOS/Berlín/Society of the Snow — 10/10), Portocabo ES (Alfonso Blanco Director General, Movistar+ Hierro/Rapa + Apple TV+ Los Enviados — 10/10), La Claqueta PC ES (Olmo Figueredo founder, 32 Goya noms + Oscar selection La Trinchera Infinita + HBO/Netflix/Disney+/Amazon distribution — 9/10), JW Productions ES (Justin Webster + Sumpta Ayuso EP, Netflix Nisman + The End of ETA + Nazi Cartel docs — 9/10), Storyboard Media CL (Gabriela Sandoval + Carlos Núñez founders, SANFIC creator — 9/10), Avalon Cine ES (Madrid arthouse distributor, 46k IG, catálogo 2026 incluye Couture/Alice Winocour — 9/10). Mid: Sopa de Piedra Films MX (José Luis Isoard Arrubarrena Director, Cannes Semaine de la Critique + Morelia + Vancouver festival auteur — 8.5/10), Patagonik Film Group AR (Pablo Bossi founder, Clarín Group + Disney stakeholders, 21k IG — 8.5/10), Invicta Films MX (Javier Gonzalez-Rubio Founder/Managing Partner/EP — 8.5/10). Pool dispatch — pool-a-tier.json marked 10 leads as dispatched. Pre-deploy dedup audit: Aleph Cine (pool-038) flagged as already-shipped May 20 and swapped pre-deploy for JW Productions ES. Pool now: 8 remaining truly-available + 2 already-shipped marked + 30 dispatched.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch from staging/pool-a-tier.json with pre-deploy dedup audit (Aleph Cine flagged as already-shipped and swapped for JW Productions)"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-10",
+   "source_date": "2026-06-10",
+   "file": "leads-2026-06-10.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-10T00:00:00.000Z",
+   "status": "archived",
+   "archived_at": "2026-06-11T00:00:00.000Z",
+   "carry_forward_only_from": [
+    "batch-2026-06-09"
+   ],
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 ELITE productoras LATAM+ES avg 9.70/10 — DISPATCHED FROM POOL pool-a-tier.json. CL:2 + CO:2 + MX:2 + AR:1 + ES:3. Fabula (CL) swapped out pre-deploy at dedup check (already shipped batch-2026-04-15) and replaced with Buendía Estudios ES. Anchors: Buendía Estudios ES (Atresmedia + Movistar+ JV, #1 fiction series producer Spain 2024 — 10/10), Dynamo CO (Netflix Narcos + 100 Years of Solitude — 10/10), Ciudad Lunar CO (Ciro Guerra Embrace of the Serpent Oscar nom — Colombia's first Oscar nom — 10/10), Caponeto MX (Netflix Desenfrenadas + Tengo Miedo Torero Venice — 10/10), Kapow AR (Netflix Envidiosa global hit — 10/10), Tornasol Media ES (10 Goya 2019 + Oscar co-prod — 10/10). Mid: Forastero CL (Sundance Grand Jury Prize La Nana — 9.5/10), Quijote CL (Cannes Un Certain Regard The Settlers — 9.5/10). Tail: Lopez-li Films ES (Goya documentary auteur — 9/10), The Lift MX (Hollywood production services CDMX — 9/10). Pool dispatch — pool-a-tier.json marked 10 leads as dispatched.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch from staging/pool-a-tier.json (8 fresh + 2 recovered, 6 same-domain CC, 5 contactPhone, 5 additionalContacts)"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-09",
+   "source_date": "2026-06-09",
+   "file": "leads-2026-06-09.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-09T00:00:00.000Z",
+   "status": "archived",
+   "archived_at": "2026-06-10T00:00:00.000Z",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 verified productoras LATAM-heavy avg 9.00/10 — DISPATCHED FROM POOL (Tuesday backfill). MX:3 + AR:3 + ES:2 + CO:1 + CR:1. Anchors: Mantarraya MX (Reygadas Cannes Best Director — 10/10), 100 Bares AR (Campanella El Secreto de sus Ojos Oscar — 10/10). Strong: Argentina Cine (3 EPs verified, 17k IG — 9/10), Latido Films ES (Saura dynasty — 9/10), Lemon Studios MX (Intl Emmy + Netflix Monarca/Control Z — 9/10), Tarea Fina AR (CAIC Best Producer 2020 + Las Acacias Cannes Caméra d'Or — 9/10). Mid: Casa Productora TV CO (19k IG — 8.5/10), Cinema Maquina MX (CEO+Deputy verified — 8.5/10), Volcano Films ES (CEO/EP verified — 8.5/10), Magoo Films CR (Forbes/ESPN/Banco LAFISE insane-proof exception — 8.5/10). Pool dispatch — backfill for missed Tuesday deploy.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch from staging/pool-a-tier.json (Tuesday backfill, 10 leads dispatched)"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-08",
+   "source_date": "2026-06-08",
+   "file": "leads-2026-06-08.json",
+   "lead_count": 9,
+   "approved": true,
+   "approved_at": "2026-06-08T00:00:00.000Z",
+   "status": "archived",
+   "archived_at": "2026-06-10T00:00:00.000Z",
+   "disable_carry_forward": true,
+   "workspace": "premium_v2.2_apollo_verified_only_1k_ig_floor",
+   "note": "9 verified productoras avg 8.50/10 — PRE-BUILT FOR MONDAY 2026-06-08, NOT YET ACTIVE. ES:5 + MX:1 + AR:1 + CR:1 + CO:1. Heavily Spain-weighted because cache-mine spain surfaced 590 untouched candidates and the awards-tier ES productoras dominated. Method: cache-mine premium-v2.2 + cache-mine spain + Apollo /people/match VERIFIED-ONLY x5 rounds (~70 unlocks total) + WebFetch winners + IG follower scrape x3 batches. Anchors: Inicia Films Barcelona (Valerie Delpierre EP, Sundance/Silver Bear/Goya/Cannes Semaine de la Critique tier — 10/10), Seven Islands Film Canary+BCN (Michael Friedl CEO, clientes CBS/Paramount/NCIS/Jack Ryan/Porsche/IKEA/Renault — 9/10), Zebra Producciones (Sara Fernandez-Velasco CEO, TV+cine+teatro 25yr vet, 9.4k IG — 9/10), Pensilvania Films BA (Nicolas Muenzel CEO+EP, 17+ films + 12+ docs — 8.5/10), Lúdica Films CDMX (Cristina Adame EP, clientes Telcel/Pepsi/Nissan/Grupo Modelo/Bancomer — 8.5/10). Mid: Pecado Films Madrid+Málaga (Jose Alba CEO/Producer — 8/10), Citric Box Films CR (Sofi Munoz EP, clientes Red Bull/Pizza Hut/BP — 8/10), Nanouk Films Catalonia (Sergi Cameron EP + Ventura Durall Director — 8/10). Tail: Chirimoya Films CO (Alexandra Yepes Co-Founder/CEO, cine de autor — 7.5/10). CC-the-company modality applied: 4 leads with same-domain role inbox (Lúdica info@, Pecado pecado@, Citric Box produccion@, Chirimoya contacto@). Doctrine compliance: all 9 named DM accepted-title, all 9 mandatory IG verified + follower count ≥1k, zero extrapolated emails. Status=scheduled — operator promotes to active on Monday 2026-06-08.",
+   "supply_metrics": {
+    "valid_leads": 9,
+    "methodology": "cache-mine premium-v2.2 + cache-mine spain + Apollo /people/match VERIFIED-ONLY x70 + WebFetch + IG follower scrape + 1k-IG-floor + CC-the-company same-domain"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-04",
+   "source_date": "2026-06-04",
+   "file": "leads-2026-06-04.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-04T00:00:00.000Z",
+   "status": "archived",
+   "archived_at": "2026-06-08T00:00:00.000Z",
+   "workspace": "premium_v2.2_apollo_verified_only_1k_ig_floor",
+   "note": "10 verified productoras avg 8.60/10. MX:7 + ES:2 (Del Barrio + Microfilm.pro) + CR:1 (Anagram). Method: cache-mine premium-v2.2 + cache-mine spain + refined activity-probe + WebFetch x35 candidates + Apollo /people/match VERIFIED-ONLY x35 + WebSearch IG canonical fallback (Doctrine #1 dead-handle saves) + IG follower scrape x4 batches. NEW CRITERION: 1k IG followers minimum unless insane non-IG social proof — applied to Balassa (320 IG + HBO/Mujeres Asesinas/Intl Emmy nom) and Anagram (864 IG + Apple/DJI/Microsoft 365 clients). CC-the-company modality applied: 5 leads with same-domain role inbox (Del Barrio producciones@, Violeta hola@, Anagram info@, Filmosaurio info@, Microfilm info@). Anchors: Draco Films (Francisco Gonzalez Compean CEO Apollo verified, Amores Perros producer legend — 10/10), Terciopelo Films (7 site-direct DMs, Renne Sotelo Dir of Production Apollo verified — 9.5/10), Del Barrio Productores Spain (Victor Morilla Rivas Head of Dev+EP Apollo verified, clientes HBO Max/Netflix/Disney+/Movistar+/RTVE/La Sexta — shows Lo de Évole/Salvados/No me llame Ternera, 43k IG — 9/10), Violeta Films (Constanza Perez Carrillo Co-Founder Apollo verified + Ana Cardona Managing Partner verified, clientes Doja Cat/Kali Uchis/Danna Paola, 7.9k IG — 9/10), Balassa Films (Alex Balassa CEO + Marisol Mijares EP Apollo verified, HBO/Mujeres Asesinas/Intl Emmy nom — 9/10), Anagram Agency Costa Rica (Diego Luque Founder/CEO + Tomas Portal Managing Director ambos Apollo verified, clientes ELITE Apple/DJI/Microsoft 365/White Claw/Jameson — 8.5/10). Mid: BOBO Producciones (169K IG, ex-OV7 Ari Borovoy founder, company_email fallback — 8/10), Filmosaurio (Ismael Capistran Company Owner Apollo verified — 8/10). Tail: Microfilm.pro Valencia (Toni Puertes Marzal EP Apollo verified, regional CV clients — 7.5/10), INFANTERIA Films Monterrey (10yr/100 proyectos/70 clientes, Apollo banned-titles → company_email — 7.5/10). MALO Casa Productora explored as 11th lead but dropped at audit-gate (jp@malo.film Apollo verified BUT name/email mismatch — Apollo returned 'Juan Justel Seguy' which doesn't match 'jp' localpart and Apollo LinkedIn URL was Esteban Justel, name guess banned per doctrine). Apollo total: ~35 unlocks. Doctrine compliance: 6 named DM accepted-title (Draco/Terciopelo/Del Barrio/Violeta/Balassa/Anagram+Filmosaurio/Microfilm) + 2 company_email fallback (BOBO/INFANTERIA), all 10 mandatory IG verified + follower count, zero extrapolated emails, audit-gate 0/0/0.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY + WebSearch IG canonical fallback + IG follower scrape + 1k-IG-floor with insane-non-IG-proof exception + CC-the-company same-domain role inbox capture"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-03",
+   "source_date": "2026-06-03",
+   "file": "leads-2026-06-03.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-06-03T00:00:00.000Z",
+   "status": "archived",
+   "archived_at": "2026-06-04T00:00:00.000Z",
+   "workspace": "premium_v2.2_apollo_verified_only",
+   "note": "6 verified productoras LATAM avg 8.58/10. MX:5 + AR:1 (Pegasus AR+London). Method: cache-mine premium-v2.2 + refined activity-probe (Televital-pattern filter) + WebFetch x30 candidates + Apollo /people/match x14 VERIFIED-ONLY per bounce-recovery doctrine + WebSearch IG fallback + IG follower scrape. Anchors: Jade & Quetzal (CDMX 2 Apollo verified Cofundadores Jesus Silva + Ivonne Lopez Monroy, clientes BYD/Adidas/Smirnoff/Santander/Corona Capital — 9/10), Rodada Films (Ivan Couttolenc EP verified + WebSearch-recovered IG @rodadafilms, clientes ELITE Coca-Cola/KFC/Rappi/Disney/Xbox/Unilever/OPPO/Honor/Bonafont/Tec de Monterrey — 9/10), Pegasus Content (BA+London, Nicolas Dal Farra Co-Founder + Clara Daray Managing Partner Apollo verified — 8.5/10), Atman Producciones (CDMX, Maribel Vivanco CEO verified, 6.6k IG followers el más alto — 8.5/10), Jakob Studio (CDMX, company info@ + Apollo 0 DMs PERO cliente list ad-agency elite Ogilvy/DDB/Publicis/Havas/Wunderman/McDonalds/Toyota/AT&T/Modelo Especial — 8.5/10), Camus Films (Monterrey, Mariale Espinoza EP/Guionista Apollo verified, clientes Gonher/XIGNUX/SP Garza García — 8/10). Apollo total: 14 unlocks (within 15 budget). Doctrine compliance: all 6 named DM accepted-title OR company_email-with-elite-clients, all 6 mandatory IG verified + follower count, zero extrapolated emails per post-bounce doctrine.",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY x14 + WebSearch IG fallback + IG follower scrape"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-02",
+   "source_date": "2026-06-02",
+   "file": "leads-2026-06-02.json",
+   "lead_count": 7,
+   "approved": true,
+   "approved_at": "2026-06-02T00:00:00.000Z",
+   "status": "archived",
+   "workspace": "premium_v2.2_apollo_verified_only",
+   "note": "7 verified productoras LATAM. AR:5 + MX:2. Average 8.57/10. Method: cache-mine premium-v2.2 (HIT, 0 re-discovery) → refined activity-probe (Televital-pattern filter) → WebFetch x30 candidates → Apollo /people/match x8 unlocks VERIFIED-ONLY per bounce-recovery doctrine → contactHunter puppeteer (7/8 ✓, Mostra timeout — site data used instead) → IG follower scrape. Anchors: Lungo Films (multi-country AR/CO/CL/CR/ES/PE, 4 site DMs + 2 Apollo verified, clients BCP/Pilsen/Tecate/KFC/Zalando/Nicki Nicole/Paulo Londra/Lit Killah/Milo J/Cristal/iPlan/Interbank, 8 directors roster — 9.5/10), CONTROL Studio (Buenos Aires VFX/3D/animation, Nicolas Gonzalez Owner + Pablo Accame EP both Apollo verified, clients K&S/Netflix/Fábula — 9/10), Hippie House Studio (Buenos Aires animation 18yr, Ignacio Sandoval Director Apollo verified, clients Apple/AMC/McDonalds/UNICEF/Banco Macro/LinkedIn/YPF — 9/10), Mostra Cine (Buenos Aires, 2 Managing Directors site-published, Netflix + Martin Scorsese exec credit, 9.3k followers — 8.5/10), Gallo Pinto Films (Mexico, Warner Bros/Adidas/AT&T/Microsoft/Audi/Bimbo/Uber Eats clients, company_email — 8.5/10). Mid: La Perla Cine (Rodrigo Pico Estrada Apollo verified, Jeep/DJI clients — 8/10), Monteroca Producciones (Mexico Querétaro, Enrique Montoya Director — 7.5/10). Dropped from pipeline: Makers Film (7/10 — first-name-only DM weakened it below target). Apollo budget: 8 unlocks (within 15 budget). Doctrine compliance: all 7 named DM with accepted titles, all 7 with mandatory IG verified + follower count, all 7 with verified email source (Apollo verified or website_direct — zero extrapolated emails per the post-bounce doctrine).",
+   "supply_metrics": {
+    "valid_leads": 7,
+    "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY + contactHunter puppeteer + IG follower scrape"
+   },
+   "archived_at": "2026-06-03T00:00:00.000Z"
+  },
+  {
+   "batch_id": "batch-2026-06-01",
+   "source_date": "2026-06-01",
+   "file": "leads-2026-06-01.json",
+   "lead_count": 13,
+   "approved": true,
+   "approved_at": "2026-06-01T00:00:00.000Z",
+   "status": "archived",
+   "workspace": "premium_v2.2_recovery_full_chain",
+   "note": "9 verified productoras LATAM. AR:4 + MX:4 + CR:1. All 9 with named decision-maker accepted-title, all 9 with mandatory IG verified (2 dead-handle saves via canonical-IG audit: Magnética @magnetica_producciones→@magneticalatam 8.3k, Expansión @expansioncr→@expansiondigitaloficial 2.1k — same pattern as LAMUVI fix from 2026-05-29), all 9 with personal LinkedIn. Method: cached premium-v2.2 (HIT, 0 re-discovery) → refined activity-probe with NEW Televital-pattern filter (drops _oficial IG, broadcast-vendor, equipment-rental hybrid; relaxed niche to allow medios/audio/fotograf) → WebFetch x14 candidates → Apollo /people/match 13 unlocks → contactHunter puppeteer 14-step + founderDeepRecovery → WebSearch LinkedIn fallback (the gold path: filled gaps Apollo missed) → puppeteer IG meta scrape for follower counts → canonical-IG dead-link audit. Anchors: Primo Content (8 offices BA/BCN/Madrid/Stgo/CDMX/SP/Bogotá, 5 Apollo-verified DMs Jaime Vidal Managing Partner + Nicolas Pacheco EP + Cora Rodriguez Lacueva Managing Director + Francesca Gaidolfi Head of Production + Gina Medina Director, clients Apple/Google/Nike/Levi's/Armani/Renault, 34k followers, Cannes/D&AD/One Show Best Production winner), VATO (4 offices, films 15+ countries, CEO Juano Alvarez Apollo verified, clients Coca-Cola/Amazon/Adidas/Telefónica/Dell, 7.8k), VDM Casa Productora (CDMX, Patricio Cutler Director with patricio@ name-match + Andrés Cruz + Emiliano Menéndez Directors per Mexican Film Commission registry, clients Volkswagen/Levi's/Adidas Originals/Oreo, 15k). Mid: La Tuna Group (Monterrey+CDMX 20yr, Alejandro Ochoa EP + Adriana Mendivil Production Director Apollo verified, 9.1k), Magnética Producciones (AR/MX/PY, Martin Repetto Production Director, PepsiCo/Nestlé/Quilmes, 8.3k), Musgo Cine (Mar del Plata + BA, Nicolas Werner Presidente/EP, Netflix-tier Elena Sabe + La Mujer de la Fila + Menem Vuelve). Smaller-but-named: Groncho (Rocio Pichirili Productora Ejecutiva, cine independiente, 2.6k), Expansión Digital Productora (CR, Javier Raaz Head of Production via doctrine recovery — was 'no DM' until WebSearch surfaced him, 2.1k), Atemporall Casa Productora (Alejandra Díaz Co-Fundadora, Sony Music/Nespresso/IQOS/Zona Maco, gmail email = weak signal accepted as fallback, 359). Doctrine filters dropped: 3 Creative/Art Directors banned per title rules (Cynthia Lara + Lola Robledo @La Tuna; Fernando Rodriguez @Magnética), 9 leads dropped at WebFetch stage (HACCE U events, Duck Studios agency-hybrid, DECA events, Kamel Media + TFG Panama agency-hybrids, Sonder + Kligger IG-only no-email, Creax placeholder, FilmFlow DIT vendor), Buenatoma late-dropped (no IG handle exists anywhere). Apollo total: 13 unlocks (within 15 budget). Independent SMTP verify still 0/9 — Hunter.io rate-limited.",
+   "supply_metrics": {
+    "valid_leads": 9,
+    "methodology": "cache-mine premium-v2.2 + refined activity-probe (Televital-pattern filter) + WebFetch + Apollo /people/match x13 + contactHunter puppeteer 14-step + founderDeepRecovery + WebSearch LinkedIn fallback + canonical-IG dead-link audit + puppeteer IG follower scrape"
+   },
+   "archived_at": "2026-06-02T00:00:00.000Z"
+  },
+  {
+   "batch_id": "batch-2026-05-29",
+   "source_date": "2026-05-29",
+   "file": "leads-2026-05-29.json",
+   "lead_count": 9,
+   "approved": true,
+   "approved_at": "2026-05-29T00:00:00.000Z",
+   "status": "archived",
+   "archived_at": "2026-06-01T00:00:00.000Z",
+   "workspace": "premium_v2.2_puppeteer_verified",
+   "note": "9 verified productoras LATAM. MX:5 + CO:2 + AR:2. All passed activity-probe + canonical-IG audit. Method: cached discovery (HIT, 0 re-discovery spend) → activity-probe drop-dead-sites → WebFetch deep-scrape → Apollo /people/match (17 unlocks total) → contactHunter puppeteer 14-step (captured 3 LinkedIn URLs + 7 IG bios + 4 phones that WebFetch couldn't extract) → canonical-IG audit (cleared 5 Cuerdas, resolved Dual name conflict, swapped out La Productora Audiovisual for PESCA because no canonical IG on own site). Doctrine filters applied: dropped Valeria Jaramillo (Creative Director banned), Diana Montoya (Post Producer borderline), Manuel Cortés (CFO not in accepted list), and entire Dripper Media Group lead (name/email mismatch: Alejandro≠audrey@ + hunter timed out + IG unverified). Avg score 8.0/10. Anchors: LAMUVI Films (Partner-led CO, Club Colombia/Dove), Árbol Media (MX+UY 2007, EP/Partner Pedro Lafferranderie + 2 add'l), Viernes Media (Netflix/Spotify/Adidas/Pepsi/KFC/Starbucks, CEO Hiram + LinkedIn + phone), Televital (TV Azteca/Fox/ESPN/Televisa/Bloomberg/Sky, Managing Dir Moriel + LinkedIn + phone). Mid: KÖHLER Studio (Corona/Coca-Cola/Toyota/BBVA/MercadoLibre), Ucronia (150+ projects, CEO Abril Gonzalez + LinkedIn, full hunter chain), Dual Productora (Grupo Éxito/Sura/Nutresa/ISA/ONU, Juan Musan Director). B-tier: PESCA Productora Audiovisual (canonical IG, swap-in), 5 Cuerdas (commercials/fashion). Email verification: Hunter.io rate-limited this session — Apollo email_status: confirmed is the verification signal for 4 leads (Hiram, Moriel, Lafferranderie, Köhler). Site-published emails for the rest (Robledo, Gonzalez, Musan, role inboxes).",
+   "supply_metrics": {
+    "valid_leads": 9,
+    "methodology": "cache-mine premium-v2.2 + activity-probe + WebFetch + Apollo /people/match x17 + contactHunter puppeteer 14-step + canonical-IG audit"
+   }
+  },
+  {
+   "batch_id": "batch-2026-05-28",
+   "source_date": "2026-05-28",
+   "file": "leads-2026-05-28.json",
+   "lead_count": 9,
+   "approved": true,
+   "approved_at": "2026-05-28T00:00:00.000Z",
+   "status": "archived",
+   "archived_at": "2026-05-29T00:00:00.000Z",
+   "workspace": "premium_v2.2_latam_heavy_mx_ar",
+   "note": "9 elite productoras LATAM-heavy. MX:5 + AR:3 + ES:1. Doctrine #9 PASS (8/9 priority). 0 animation, 0 marketing, 0 events. Avg score 9.11/10. Anchors: Fight Films (40yr, 11 countries, Coca-Cola/Vogue/Samsung/Toyota), Woo Films (Netflix House of Flowers/Pedro Páramo + Disney Onyx Collective first-look), Unlimited Films (43yr Guadalajara since 1982, Tequila San Matías). Mid: Mango Films (25yr, 3 offices CDMX/GDL/Brooklyn, Eduardo Avila CEO), Cactus Cine (Netflix/Red Bull/Amex), Altana Films (32yr, BA/Stgo/MVD, Heineken/Air NZ/Lipton), Traziende Films (23yr, Cada minuto cuenta Prime Video). Backup: Mariachi Films (25 empleados CDMX), Sur Film (production services ES+PT, 3 oficinas Tenerife/BCN/Lisboa). All have personal email primary + IG verified. 23 total emails (avg 2.6/lead). 20 Apollo unlocks (~150 credits, well within subscription headroom). 11 dead-ends archived to rejected.json (now 95).",
+   "supply_metrics": {
+    "valid_leads": 9,
+    "methodology": "premium-v2.2 cache mine (20h old) + tools/unlock-domains.js surgical x20 + WebFetch x9 + WebSearch x4"
+   }
+  },
+  {
+   "batch_id": "batch-2026-05-27",
+   "source_date": "2026-05-27",
+   "file": "leads-2026-05-27.json",
+   "lead_count": 29,
+   "approved": true,
+   "approved_at": "2026-05-27T00:00:00.000Z",
+   "status": "archived",
+   "workspace": "premium_v2.2_balanced_es_latam_anchor_picks",
+   "note": "11 elite productoras — ES:5 / AR:2 / MX:2 / CO:1 / CR:1. Doctrine #9 PASS (6/11 priority). 10 T1 / 1 T2. 0 animation. Avg score 9.45/10. 37 personal emails (primary + additional) across 11 leads. Anchors: LANDIA (79 Cannes Lions, 4 Palme d'Or, global 8-city, 7 EPs email), Pampa Films AR (Goya Award Un Cuento Chino, Netflix Cuaderno de Tomy, Monzón w/ Disney+Turner+Netflix, IG @pampafilms 182K, 4 EPs email), Bambú ES (Emmy 2024 La Promesa, IG 129K), Antiestático ES (Mango/Toyota/UGG/Netflix/McLaren, 6 offices, 4 EPs email), Shine Iberia (Banijay MasterChef ES+PT, IG 45K), Lee Films ES (most-awarded ES since 1990, VW/LEGO/IKEA/Ford, 4 EPs email), Sin Sentido MX (Apple TV+ Acapulco + Netflix + Terrence Malick collab), Kilombo CO (4 EPs email, 25yr Bogotá+Miami), Atómica CR (Taco Bell/McDonald's/Toyota, Baby Atómica Cannes 2023), Gestmusic ES (Banijay OT+Premios Goya 25-26), KUTER MX (19yr full-service in-house CDMX). Flagged: Sin Sentido + Kilombo (IG follower count auth-walled, handles verified to exist). Rejected.json infrastructure jumped 41→84 today (43 new dead-ends archived). Frank Ariza dropped for Mediaset fraud judgment. Spain-LATAM balance preserves enriched picks while restoring priority country mix. [PATCH 2026-05-27: +3 lead recoveries (Fosforo/Iconica/Panoramica) + 15 revived pilot leads to Hoy + 34 stuck pilots tagged BLUE reactivation in Acción Ahora. 17 Apollo unlocks, 11 website enrichments, 49 Supabase rows patched.]",
+   "supply_metrics": {
+    "valid_leads": 11,
+    "methodology": "premium-v2.2 + tools/unlock-domains.js surgical (3 rounds: ES x10, LATAM x25, AR x16) + WebFetch + WebSearch + rejected.json dedup"
+   },
+   "archived_at": "2026-05-28T00:00:00.000Z"
+  },
+  {
+   "batch_id": "batch-2026-05-26",
+   "source_date": "2026-05-26",
+   "file": "leads-2026-05-26.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-05-26T22:04:36.643Z",
+   "status": "archived",
+   "archived_at": "2026-05-27T00:00:00.000Z",
+   "workspace": "premium_v2.2_focused_commercial_publicity",
+   "note": "8 premium LATAM+Spain productoras focused on commercial/publicity/fashion brief. MX:1/AR:1/CO:1/CR:2/PA:1/ES:2. 7 T1 + 1 T2 (Manglar humanitarian disclosure). 0 animation. 10/10 personal DM emails, 17 additional named contacts. Anchor: Rebolucion (Cannes Lions Palme d'Or 2023, Armando Bo Oscar-winner founder). Other standouts: Colombo Films (One Show + Effie, virtual production + AI), LCA Productions (Apple Music/IKEA/Sony/Bacardi/Vogue clients), IRALTA (Virtual Production pioneer 21yr Repsol/Honda/Iberia), 2Cilindros (Repsol/Pepsi/Zara/Santander). Borderlines disclosed: Lomas Post (post-production not front-end), Manglar Films (humanitarian focus). Built mid-day, archived batch-2026-05-25. Infrastructure fixes shipped today (cache, niche-patch, rejected-list, backup-unlock flag) will compound on next morning's run.",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "methodology": "premium-v2.2 + surgical Apollo unlock + WebFetch enrichment + Spain micro-discovery"
+   }
+  },
+  {
+   "batch_id": "batch-2026-05-25",
+   "source_date": "2026-05-25",
+   "file": "leads-2026-05-25.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-05-25T19:03:04.324Z",
+   "status": "archived",
+   "workspace": "premium_v2.2_expanded_discovery",
+   "note": "10 LATAM productoras — MX:4/AR:2/CO:1/CR:1/PE:2 (Rebolucion AR + Nosotros Films CR added mid-day then pulled back, staged for batch-2026-05-26). 9 T1 / 1 T2. 2 animation (Huevocartoon, Zeppelin) at cap, both marquee (552K + 7.8K followers, Snoop Dogg/Adult Swim/Marvel-tier credits). Premium-v2.2 discovery expansion (20 keywords + pages=2 + employees=1-500) grew the pool 10.8x (323→3,504 candidates) — addresses operator-flagged exhaustion misdiagnosis. New tool: tools/unlock-domains.js (surgical Apollo /people/match for backup-pool candidates without full re-discovery). All 10 picks have named DMs with verified titles + emails (most personal); all 10 have IG verified. 22+ named DMs total across deck. Headliners: Huevocartoon (Riva Palacio brothers — Una Pelicula de Huevos legend), Loymark (Tim Hortons/Canon/Meta/Mercedes-Benz, 8-office network), HUINCA CINE (4 EPs, global offices). archive: batch-2026-05-24.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "premium-v2.2+surgical_unlock+webfetch+contact_recovery"
+   },
+   "archived_at": "2026-05-26T22:04:36.638Z"
+  },
+  {
+   "batch_id": "batch-2026-05-24",
+   "source_date": "2026-05-24",
+   "file": "leads-2026-05-24.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-05-25T01:35:47.236Z",
+   "status": "archived",
+   "workspace": "premium_v2.1_first_validated_run",
+   "note": "10 LATAM productoras — MX:3/AR:2/CO:1/CR:1/PA:1/PE:2 (PE = experimental new-country seed for pipeline longevity). 9 T1 / 1 T2 (Forja company-email). 2 animation (Estudio Shout + Forja Studios) at cap. Built with premium-v2.1 profile: niche-exclusion filter + thin-market fallback + canonical-domain re-dedup — all three fixes worked structurally on first shadow run (caught Videocine, Cantoalegre, Televital, Aurea-redirect; filled Panama; TBWA-class added to filter mid-run). Hand-cherry-picked from v2.1 dossier + surgical Apollo unlocks for backup candidates (no full re-runs).",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "premium-v2.1+surgical_unlock+webfetch"
+   },
+   "archived_at": "2026-05-25T19:03:04.315Z"
+  },
+  {
+   "batch_id": "batch-2026-05-22b",
+   "source_date": "2026-05-22",
+   "file": "leads-2026-05-22b.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-05-22T15:53:21.611Z",
+   "status": "archived",
+   "workspace": "apollo_webfetch_premium_rebalance",
+   "note": "10 LATAM productoras — MX:5/AR:2/CO:1/CR:1/PA:1, 8 T1 / 2 T2, 0 animation studios. Apollo /mixed_companies/search + /people/match + WebFetch LLM enrichment, hand-rebalanced for ICP (casas productoras over VFX/animation studios), IG follower audit on every card. Named batch-2026-05-22b because the batch-2026-05-22 id was already taken by V1 (calendar drift: V1 = the May-21 batch launched post-midnight). V1 leads already contacted, archived cleanly.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "apollo_discovery+llm_extraction+hand_rebalance"
+   },
+   "archived_at": "2026-05-25T01:35:47.230Z"
+  },
+  {
+   "batch_id": "batch-2026-05-22",
+   "source_date": "2026-05-22",
+   "file": "leads-2026-05-22.json",
+   "lead_count": 16,
+   "approved": true,
+   "approved_at": "2026-05-21T23:55:28.107Z",
+   "status": "archived",
+   "workspace": "apollo_webfetch_methodology",
+   "note": "8 Mexican productoras discovered via Apollo /organizations/search + verified/extracted via WebFetch LLM comprehension. 3 T1 (named DMs), 5 T2. All email-valid, all pre-flighted active, all fresh (Apollo dedup against 1036-domain identity index). | 2026-05-22T02:52: rolled-forward 8 uncontacted May 21 leads into Hoy view",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "methodology": "apollo_discovery+llm_extraction"
+   },
+   "archived_at": "2026-05-22T15:53:21.605Z"
+  },
+  {
+   "batch_id": "batch-2026-05-21",
+   "source_date": "2026-05-21",
+   "file": "leads-2026-05-21.json",
+   "lead_count": 6,
+   "approved": true,
+   "approved_at": "2026-05-21T04:29:31.880Z",
+   "status": "archived",
+   "supply_metrics": {
+    "valid_leads": 6,
+    "reserve_pool_size": 0,
+    "seen_domains": 7,
+    "total_query_pool": 0,
+    "estimated_days_supply": -2
+   },
+   "workspace": "unabase_mx_v1",
+   "note": "6 leads: 5 email + 1 phone/WhatsApp exception (Cinepantera). 3 false positives pulled in post-deploy audit."
+  },
+  {
+   "batch_id": "batch-2026-05-20",
+   "source_date": "2026-05-20",
+   "file": "leads-seeds-2026-05-20.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-05-20T03:36:53.601Z",
+   "status": "archived",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "reserve_pool_size": 0,
+    "seen_domains": 11,
+    "total_query_pool": 0,
+    "estimated_days_supply": -2
+   },
+   "workspace": "unabase_seeds"
+  },
+  {
+   "batch_id": "batch-2026-05-19",
+   "source_date": "2026-05-19",
+   "file": "leads-2026-05-19.json",
+   "lead_count": 3,
+   "approved": true,
+   "approved_at": "2026-05-19T23:47:46.559Z",
+   "status": "archived",
+   "supply_metrics": {
+    "valid_leads": 6,
+    "reserve_pool_size": 28,
+    "seen_domains": 907,
+    "total_query_pool": 281,
+    "estimated_days_supply": 83
+   },
+   "workspace": "unabase_default",
+   "rolled_back_at": "2026-05-20T00:14:20.133Z",
+   "rollback_reason": "governance-fail-spot-check",
+   "salvaged_at": "2026-05-20T00:22:31.933Z",
+   "archived_at": "2026-05-27T00:00:00.000Z"
+  },
+  {
+   "batch_id": "batch-2026-05-18",
+   "source_date": "2026-05-18",
+   "file": "leads-2026-05-18.json",
+   "lead_count": 3,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 3,
+    "reserve_pool_size": 27,
+    "seen_domains": 647,
+    "total_query_pool": 281,
+    "estimated_days_supply": 252
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-17",
+   "source_date": "2026-05-17",
+   "file": "leads-2026-05-17.json",
+   "lead_count": 4,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 4,
+    "reserve_pool_size": 27,
+    "seen_domains": 628,
+    "total_query_pool": 281,
+    "estimated_days_supply": 194
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-16",
+   "source_date": "2026-05-16",
+   "file": "leads-2026-05-16.json",
+   "lead_count": 1,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 1,
+    "reserve_pool_size": 26,
+    "seen_domains": 603,
+    "total_query_pool": 281,
+    "estimated_days_supply": 802
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-15",
+   "source_date": "2026-05-15",
+   "file": "leads-2026-05-15.json",
+   "lead_count": 3,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 3,
+    "reserve_pool_size": 29,
+    "seen_domains": 584,
+    "total_query_pool": 281,
+    "estimated_days_supply": 273
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-13",
+   "source_date": "2026-05-13",
+   "file": "leads-2026-05-13.json",
+   "lead_count": 6,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 6,
+    "reserve_pool_size": 29,
+    "seen_domains": 567,
+    "total_query_pool": 281,
+    "estimated_days_supply": 139
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-07",
+   "source_date": "2026-05-07",
+   "file": "leads-2026-05-07.json",
+   "lead_count": 5,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 5,
+    "reserve_pool_size": 28,
+    "seen_domains": 545,
+    "total_query_pool": 281,
+    "estimated_days_supply": 172
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-06",
+   "source_date": "2026-05-06",
+   "file": "leads-2026-05-06.json",
+   "lead_count": 2,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 2,
+    "reserve_pool_size": 27,
+    "seen_domains": 519,
+    "total_query_pool": 281,
+    "estimated_days_supply": 443
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-05",
+   "source_date": "2026-05-05",
+   "file": "leads-2026-05-05.json",
+   "lead_count": 1,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 1,
+    "reserve_pool_size": 26,
+    "seen_domains": 501,
+    "total_query_pool": 281,
+    "estimated_days_supply": 904
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-04",
+   "source_date": "2026-05-04",
+   "file": "leads-2026-05-04.json",
+   "lead_count": 8,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "reserve_pool_size": 25,
+    "seen_domains": 476,
+    "total_query_pool": 281,
+    "estimated_days_supply": 116
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-05-01",
+   "source_date": "2026-05-01",
+   "file": "leads-2026-05-01.json",
+   "lead_count": 7,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 7,
+    "reserve_pool_size": 22,
+    "seen_domains": 445,
+    "total_query_pool": 281,
+    "estimated_days_supply": 137
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-30",
+   "source_date": "2026-04-30",
+   "file": "leads-2026-04-30.json",
+   "lead_count": 3,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 3,
+    "reserve_pool_size": 19,
+    "seen_domains": 413,
+    "total_query_pool": 281,
+    "estimated_days_supply": 330
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-29",
+   "source_date": "2026-04-29",
+   "file": "leads-2026-04-29.json",
+   "lead_count": 5,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 5,
+    "reserve_pool_size": 19,
+    "seen_domains": 397,
+    "total_query_pool": 281,
+    "estimated_days_supply": 201
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-28",
+   "source_date": "2026-04-28",
+   "file": "leads-2026-04-28.json",
+   "lead_count": 0,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 0,
+    "reserve_pool_size": 16,
+    "seen_domains": 364,
+    "total_query_pool": 281,
+    "estimated_days_supply": 1041
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-27",
+   "source_date": "2026-04-27",
+   "file": "leads-2026-04-27.json",
+   "lead_count": 7,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 7,
+    "reserve_pool_size": 24,
+    "seen_domains": 323,
+    "total_query_pool": 281,
+    "estimated_days_supply": 154
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-25",
+   "source_date": "2026-04-25",
+   "file": "leads-2026-04-25.json",
+   "lead_count": 6,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 6,
+    "reserve_pool_size": 23,
+    "seen_domains": 293,
+    "total_query_pool": 281,
+    "estimated_days_supply": 185
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-24",
+   "source_date": "2026-04-24",
+   "file": "leads-2026-04-24.json",
+   "lead_count": 1,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 1,
+    "reserve_pool_size": 20,
+    "seen_domains": 248,
+    "total_query_pool": 281,
+    "estimated_days_supply": 1157
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-23",
+   "source_date": "2026-04-23",
+   "file": "leads-2026-04-23.json",
+   "lead_count": 7,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 7,
+    "reserve_pool_size": 28,
+    "seen_domains": 233,
+    "total_query_pool": 281,
+    "estimated_days_supply": 167
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-22",
+   "source_date": "2026-04-22",
+   "file": "leads-2026-04-22.json",
+   "lead_count": 8,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "reserve_pool_size": 27,
+    "seen_domains": 206,
+    "total_query_pool": 281,
+    "estimated_days_supply": 149
+   },
+   "workspace": "unabase_default"
+  },
+  {
+   "batch_id": "batch-2026-04-21",
+   "source_date": "2026-04-21",
+   "file": "leads-2026-04-21.json",
+   "lead_count": 9,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 9,
+    "reserve_pool_size": 25,
+    "seen_domains": 168,
+    "total_query_pool": 281,
+    "estimated_days_supply": 137
+   }
+  },
+  {
+   "batch_id": "batch-2026-04-20",
+   "source_date": "2026-04-20",
+   "file": "leads-2026-04-20.json",
+   "lead_count": 8,
+   "approved": false,
+   "approved_at": null,
+   "status": "draft",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "reserve_pool_size": 22,
+    "seen_domains": 128,
+    "total_query_pool": 281,
+    "estimated_days_supply": 159
+   }
+  },
+  {
+   "batch_id": "batch-2026-04-17",
+   "source_date": "2026-04-17",
+   "file": "leads-2026-04-17.json",
+   "lead_count": 11,
+   "approved": true,
+   "approved_at": "2026-04-17T21:14:17.731Z",
+   "status": "archived",
+   "supply_metrics": {
+    "valid_leads": 11,
+    "named_decision_makers": 9,
+    "fallback_contacts": 2,
+    "countries": [
+     "Argentina",
+     "Colombia",
+     "Mexico",
+     "Honduras"
+    ],
+    "contact_strength": {
+     "A": 4,
+     "B": 5,
+     "C": 2
     },
-    {
-      "batch_id": "batch-2026-06-29",
-      "source_date": "2026-06-29",
-      "file": "leads-2026-06-29.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-29T21:49:23.000Z",
-      "status": "archived",
-      "disable_carry_forward": false,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 productoras POOL DISPATCH (fresh 06-28 mine) avg 9.11. Geo MX4/AR2/CO2/GT1/ES1 (9 priority-tier, MX plurality, NO BRAZIL). All email-bearing + named DM (Hola Combo route-inbox). Picks: Interior XIII MX (Dos Estaciones/Pacifiction, Maximiliano Cruz FICUNAM), La Maroma MX (Inti Cordera/DocsMX), Hola Combo MX (nom Oscar corto Ninety-Five Senses), Agave MX, Campo Cine AR (Diego Lerman), LaDoble AR (2 Grand Prix Cannes), La Octava CO (Grey/McCann), Cumbia CO (La Suprema TIFF), La Casa de Produccion GT (Jayro Bustamante - Ixcanul/La Llorona), Blur ES (Cannes Film Craft GP). IG follower counts + pattern emails (Agave/La Casa) to strict-verify. Pool remaining ~32.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch from staging/pool-a-tier.json (06-28 precise fresh-mine: 5-agent discovery + exhaustive WebFetch enrichment + Hunter/Apollo); audit-gated"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-26",
-      "source_date": "2026-06-26",
-      "file": "leads-2026-06-26.json",
-      "lead_count": 9,
-      "approved": true,
-      "approved_at": "2026-06-26T22:51:27.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 productoras POOL DISPATCH — FULLY ENRICHED to V1 standard, avg 8.92/10. Geo MX4/AR2/CO2/CL1/ES1 (8 priority-tier, MX plurality, NO BRAZIL). All 10 email-bearing; 8 named-DM primary + 2 role-inbox (Matanza team-greet). Briefs 300-500 chars w/ DM rosters. IG: 6 strict-verified w/ follower counts (Matanza @matanzacine 1.9k/361posts, Mantarraya @ndmantarraya 7.5k/616, Gusano @gusanofilms.cine 2.2k/334, Mezcla @__mezcla 2.6k/108, La Ventana @laventanacine 4.7k, CMO @cmoproduccionessas ~18k); No Ficción @noficcionmx verified (count IG-rate-limited); Poster/Oria/García Bross documented email-only. Enrichment loops: Apollo /people/match (Mantarraya/La Ventana/Poster/Mezcla emails VERIFIED), Hunter domain-search (CMO abarreto 94%, García Bross juan 91%), 5 parallel WebFetch DM-roster harvests, puppeteer strict-IG. Recovered: CMO dead IG->@cmoproduccionessas, No Ficción handle->@noficcionmx, Gusano named primary jcaballeroramos@gmail.com, García Bross named primary juan@garciabross.com, La Ventana upgraded contacto@->carola@ (verified). Picks: CMO CO (Palpito #1 Netflix), Matanza AR (Trapero/Gusman, Venecia), Mantarraya MX (Reygadas+Escalante), La Ventana CL (Chicago Boys B-Corp), Poster AR (MercadoLibre/P&G/Amazon), No Ficcion MX (Midnight Family Oscar shortlist), Gusano CO (2x Premio Nacional Doc), Mezcla MX (Mataviejitas/Zona Divas Netflix), Oria ES (Obaba/Armendariz), Garcia Bross MX (Simon Bross 4 Cannes Lions). Pool remaining 15.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch + full V1 enrichment: Apollo+Hunter email recovery, 5-agent WebFetch DM-roster harvest, puppeteer strict-IG verify w/ follower counts, audit gate 0 high-sev",
-        "ig_verified_with_followers": 6,
-        "documented_email_only": 3,
-        "ig_handle_count_pending": 1,
-        "named_dm_primary": 8
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-25",
-      "source_date": "2026-06-25",
-      "file": "leads-2026-06-25.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-25T13:32:10.507Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 productoras POOL DISPATCH (first clean dispatch since the 2026-06-24 precise refill) avg 8.86/10. Geo Mexico:6 / Argentina:1 / Spain:1 / Peru:1 / Colombia:1 (8 priority-tier, MX plurality, NO BRAZIL). All 10 email-bearing + all 10 strict-IG verified with follower counts + 5/10 phone. Picks: Magic Hammer MX (Bronze Cannes Lion, IG 6k), Filmadora MX (La Cocina 5 Ariel, IG 10k), Central Films MX (Tecate/Heineken, IG 14k), Cárcava MX (Berlinale Silver Bear, IG 643), MUT MX (North Face/Volvo, Pablo Garcilita Co-Founder via Hunter, IG 9k), Anemona MX (Movistar/Greenpeace, IG 1.7k), Plenty AR (HBO/Fox/NatGeo, IG 33k), Vaca Films ES (Celda 211/Clanes Netflix, IG 24k), Guarango PE (Hija de la Laguna, IG 2.1k), Dirty Kitchen CO (Gran Effie Latam, IG 6.5k). Dispatched from staging/pool-a-tier.json (pool remaining 25).",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch from staging/pool-a-tier.json (precise-sourced, strict-IG re-verified at dispatch w/ follower counts, MUT DM via Hunter)"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-24",
-      "source_date": "2026-06-24",
-      "file": "leads-2026-06-24.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-24T23:12:01.660Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "precise_top10_deploy",
-      "note": "10 productoras PRESTIGE-tier avg 9.32/10 — strongest complete picks (email + strict-IG-verified handle w/ follower count + named DM). Client geo MX 5 / ES 2 / PE 1 / AR 1 / CO 1 (7 priority-tier, NO BRAZIL). Replaces the initial 8-lead 06-24 set after operator chose the 10 strongest from the precise-sourcing refill (the 8 went to the pool). Method: 6 parallel WebSearch+WebFetch discovery agents (MX auteur+commercial, AR, CO, CL+PE, ES) → Apollo/Hunter email recovery → strict IG verify (posts>=10 + name-match + follower count) → dedup vs all 457 shipped/in-pool. Anchors at 9.5: El Deseo ES (Almodóvar, 2 Oscars, esther@ Hunter, IG @eldeseo_ 101k), Pacha Films PE (4x Emmy doc, Netflix/NatGeo/Disney+, IG 3.7k), The Maestros MX (Cannes-tier spots Mercedes/Nike/Dior, IG 14k), CMO swapped→Casa Tarántula. 9.3: Catatonia MX (5x Ariel 2025), El Estudio MX (Zama/Miss Bala/Luis Miguel), Suma Content ES (Los Javis, IG 44k), Maravillacine AR (Fipresci Berlinale 2025), Madrefoca MX (premiada, Nissan/Uber). 9.2 Varios Lobos MX (Selva Trágica Netflix). 9.0 Casa Tarántula CO (ALIS Berlinale Crystal Bear). All 10 email-bearing + all 10 strict-IG verified with follower counts + 4/10 phone.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "precise WebSearch-named-productora sourcing + Apollo/Hunter email recovery + strict IG verify w/ follower counts + dedup vs all past batches; top-10 by score with complete channels"
-      },
-      "archived_at": "2026-06-25T13:32:10.507Z"
-    },
-    {
-      "batch_id": "batch-2026-06-11",
-      "source_date": "2026-06-11",
-      "file": "leads-2026-06-11.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-11T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 ELITE productoras balanced ES/LATAM avg 9.15/10 — DISPATCHED FROM POOL pool-a-tier.json. ES:6 + MX:2 + CL:1 + AR:1. Anchors: Mediapro Studio ES (Spain's biggest, 3 EPs Apollo verified at @mediapro.tv — 10/10), Secuoya Studios ES (Brendan Fitzgerald CEO + 3 EPs, Netflix Élite/KAOS/Berlín/Society of the Snow — 10/10), Portocabo ES (Alfonso Blanco Director General, Movistar+ Hierro/Rapa + Apple TV+ Los Enviados — 10/10), La Claqueta PC ES (Olmo Figueredo founder, 32 Goya noms + Oscar selection La Trinchera Infinita + HBO/Netflix/Disney+/Amazon distribution — 9/10), JW Productions ES (Justin Webster + Sumpta Ayuso EP, Netflix Nisman + The End of ETA + Nazi Cartel docs — 9/10), Storyboard Media CL (Gabriela Sandoval + Carlos Núñez founders, SANFIC creator — 9/10), Avalon Cine ES (Madrid arthouse distributor, 46k IG, catálogo 2026 incluye Couture/Alice Winocour — 9/10). Mid: Sopa de Piedra Films MX (José Luis Isoard Arrubarrena Director, Cannes Semaine de la Critique + Morelia + Vancouver festival auteur — 8.5/10), Patagonik Film Group AR (Pablo Bossi founder, Clarín Group + Disney stakeholders, 21k IG — 8.5/10), Invicta Films MX (Javier Gonzalez-Rubio Founder/Managing Partner/EP — 8.5/10). Pool dispatch — pool-a-tier.json marked 10 leads as dispatched. Pre-deploy dedup audit: Aleph Cine (pool-038) flagged as already-shipped May 20 and swapped pre-deploy for JW Productions ES. Pool now: 8 remaining truly-available + 2 already-shipped marked + 30 dispatched.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch from staging/pool-a-tier.json with pre-deploy dedup audit (Aleph Cine flagged as already-shipped and swapped for JW Productions)"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-10",
-      "source_date": "2026-06-10",
-      "file": "leads-2026-06-10.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-10T00:00:00.000Z",
-      "status": "archived",
-      "archived_at": "2026-06-11T00:00:00.000Z",
-      "carry_forward_only_from": [
-        "batch-2026-06-09"
-      ],
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 ELITE productoras LATAM+ES avg 9.70/10 — DISPATCHED FROM POOL pool-a-tier.json. CL:2 + CO:2 + MX:2 + AR:1 + ES:3. Fabula (CL) swapped out pre-deploy at dedup check (already shipped batch-2026-04-15) and replaced with Buendía Estudios ES. Anchors: Buendía Estudios ES (Atresmedia + Movistar+ JV, #1 fiction series producer Spain 2024 — 10/10), Dynamo CO (Netflix Narcos + 100 Years of Solitude — 10/10), Ciudad Lunar CO (Ciro Guerra Embrace of the Serpent Oscar nom — Colombia's first Oscar nom — 10/10), Caponeto MX (Netflix Desenfrenadas + Tengo Miedo Torero Venice — 10/10), Kapow AR (Netflix Envidiosa global hit — 10/10), Tornasol Media ES (10 Goya 2019 + Oscar co-prod — 10/10). Mid: Forastero CL (Sundance Grand Jury Prize La Nana — 9.5/10), Quijote CL (Cannes Un Certain Regard The Settlers — 9.5/10). Tail: Lopez-li Films ES (Goya documentary auteur — 9/10), The Lift MX (Hollywood production services CDMX — 9/10). Pool dispatch — pool-a-tier.json marked 10 leads as dispatched.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch from staging/pool-a-tier.json (8 fresh + 2 recovered, 6 same-domain CC, 5 contactPhone, 5 additionalContacts)"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-09",
-      "source_date": "2026-06-09",
-      "file": "leads-2026-06-09.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-09T00:00:00.000Z",
-      "status": "archived",
-      "archived_at": "2026-06-10T00:00:00.000Z",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 verified productoras LATAM-heavy avg 9.00/10 — DISPATCHED FROM POOL (Tuesday backfill). MX:3 + AR:3 + ES:2 + CO:1 + CR:1. Anchors: Mantarraya MX (Reygadas Cannes Best Director — 10/10), 100 Bares AR (Campanella El Secreto de sus Ojos Oscar — 10/10). Strong: Argentina Cine (3 EPs verified, 17k IG — 9/10), Latido Films ES (Saura dynasty — 9/10), Lemon Studios MX (Intl Emmy + Netflix Monarca/Control Z — 9/10), Tarea Fina AR (CAIC Best Producer 2020 + Las Acacias Cannes Caméra d'Or — 9/10). Mid: Casa Productora TV CO (19k IG — 8.5/10), Cinema Maquina MX (CEO+Deputy verified — 8.5/10), Volcano Films ES (CEO/EP verified — 8.5/10), Magoo Films CR (Forbes/ESPN/Banco LAFISE insane-proof exception — 8.5/10). Pool dispatch — backfill for missed Tuesday deploy.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch from staging/pool-a-tier.json (Tuesday backfill, 10 leads dispatched)"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-08",
-      "source_date": "2026-06-08",
-      "file": "leads-2026-06-08.json",
-      "lead_count": 9,
-      "approved": true,
-      "approved_at": "2026-06-08T00:00:00.000Z",
-      "status": "archived",
-      "archived_at": "2026-06-10T00:00:00.000Z",
-      "disable_carry_forward": true,
-      "workspace": "premium_v2.2_apollo_verified_only_1k_ig_floor",
-      "note": "9 verified productoras avg 8.50/10 — PRE-BUILT FOR MONDAY 2026-06-08, NOT YET ACTIVE. ES:5 + MX:1 + AR:1 + CR:1 + CO:1. Heavily Spain-weighted because cache-mine spain surfaced 590 untouched candidates and the awards-tier ES productoras dominated. Method: cache-mine premium-v2.2 + cache-mine spain + Apollo /people/match VERIFIED-ONLY x5 rounds (~70 unlocks total) + WebFetch winners + IG follower scrape x3 batches. Anchors: Inicia Films Barcelona (Valerie Delpierre EP, Sundance/Silver Bear/Goya/Cannes Semaine de la Critique tier — 10/10), Seven Islands Film Canary+BCN (Michael Friedl CEO, clientes CBS/Paramount/NCIS/Jack Ryan/Porsche/IKEA/Renault — 9/10), Zebra Producciones (Sara Fernandez-Velasco CEO, TV+cine+teatro 25yr vet, 9.4k IG — 9/10), Pensilvania Films BA (Nicolas Muenzel CEO+EP, 17+ films + 12+ docs — 8.5/10), Lúdica Films CDMX (Cristina Adame EP, clientes Telcel/Pepsi/Nissan/Grupo Modelo/Bancomer — 8.5/10). Mid: Pecado Films Madrid+Málaga (Jose Alba CEO/Producer — 8/10), Citric Box Films CR (Sofi Munoz EP, clientes Red Bull/Pizza Hut/BP — 8/10), Nanouk Films Catalonia (Sergi Cameron EP + Ventura Durall Director — 8/10). Tail: Chirimoya Films CO (Alexandra Yepes Co-Founder/CEO, cine de autor — 7.5/10). CC-the-company modality applied: 4 leads with same-domain role inbox (Lúdica info@, Pecado pecado@, Citric Box produccion@, Chirimoya contacto@). Doctrine compliance: all 9 named DM accepted-title, all 9 mandatory IG verified + follower count ≥1k, zero extrapolated emails. Status=scheduled — operator promotes to active on Monday 2026-06-08.",
-      "supply_metrics": {
-        "valid_leads": 9,
-        "methodology": "cache-mine premium-v2.2 + cache-mine spain + Apollo /people/match VERIFIED-ONLY x70 + WebFetch + IG follower scrape + 1k-IG-floor + CC-the-company same-domain"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-04",
-      "source_date": "2026-06-04",
-      "file": "leads-2026-06-04.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-04T00:00:00.000Z",
-      "status": "archived",
-      "archived_at": "2026-06-08T00:00:00.000Z",
-      "workspace": "premium_v2.2_apollo_verified_only_1k_ig_floor",
-      "note": "10 verified productoras avg 8.60/10. MX:7 + ES:2 (Del Barrio + Microfilm.pro) + CR:1 (Anagram). Method: cache-mine premium-v2.2 + cache-mine spain + refined activity-probe + WebFetch x35 candidates + Apollo /people/match VERIFIED-ONLY x35 + WebSearch IG canonical fallback (Doctrine #1 dead-handle saves) + IG follower scrape x4 batches. NEW CRITERION: 1k IG followers minimum unless insane non-IG social proof — applied to Balassa (320 IG + HBO/Mujeres Asesinas/Intl Emmy nom) and Anagram (864 IG + Apple/DJI/Microsoft 365 clients). CC-the-company modality applied: 5 leads with same-domain role inbox (Del Barrio producciones@, Violeta hola@, Anagram info@, Filmosaurio info@, Microfilm info@). Anchors: Draco Films (Francisco Gonzalez Compean CEO Apollo verified, Amores Perros producer legend — 10/10), Terciopelo Films (7 site-direct DMs, Renne Sotelo Dir of Production Apollo verified — 9.5/10), Del Barrio Productores Spain (Victor Morilla Rivas Head of Dev+EP Apollo verified, clientes HBO Max/Netflix/Disney+/Movistar+/RTVE/La Sexta — shows Lo de Évole/Salvados/No me llame Ternera, 43k IG — 9/10), Violeta Films (Constanza Perez Carrillo Co-Founder Apollo verified + Ana Cardona Managing Partner verified, clientes Doja Cat/Kali Uchis/Danna Paola, 7.9k IG — 9/10), Balassa Films (Alex Balassa CEO + Marisol Mijares EP Apollo verified, HBO/Mujeres Asesinas/Intl Emmy nom — 9/10), Anagram Agency Costa Rica (Diego Luque Founder/CEO + Tomas Portal Managing Director ambos Apollo verified, clientes ELITE Apple/DJI/Microsoft 365/White Claw/Jameson — 8.5/10). Mid: BOBO Producciones (169K IG, ex-OV7 Ari Borovoy founder, company_email fallback — 8/10), Filmosaurio (Ismael Capistran Company Owner Apollo verified — 8/10). Tail: Microfilm.pro Valencia (Toni Puertes Marzal EP Apollo verified, regional CV clients — 7.5/10), INFANTERIA Films Monterrey (10yr/100 proyectos/70 clientes, Apollo banned-titles → company_email — 7.5/10). MALO Casa Productora explored as 11th lead but dropped at audit-gate (jp@malo.film Apollo verified BUT name/email mismatch — Apollo returned 'Juan Justel Seguy' which doesn't match 'jp' localpart and Apollo LinkedIn URL was Esteban Justel, name guess banned per doctrine). Apollo total: ~35 unlocks. Doctrine compliance: 6 named DM accepted-title (Draco/Terciopelo/Del Barrio/Violeta/Balassa/Anagram+Filmosaurio/Microfilm) + 2 company_email fallback (BOBO/INFANTERIA), all 10 mandatory IG verified + follower count, zero extrapolated emails, audit-gate 0/0/0.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY + WebSearch IG canonical fallback + IG follower scrape + 1k-IG-floor with insane-non-IG-proof exception + CC-the-company same-domain role inbox capture"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-03",
-      "source_date": "2026-06-03",
-      "file": "leads-2026-06-03.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-06-03T00:00:00.000Z",
-      "status": "archived",
-      "archived_at": "2026-06-04T00:00:00.000Z",
-      "workspace": "premium_v2.2_apollo_verified_only",
-      "note": "6 verified productoras LATAM avg 8.58/10. MX:5 + AR:1 (Pegasus AR+London). Method: cache-mine premium-v2.2 + refined activity-probe (Televital-pattern filter) + WebFetch x30 candidates + Apollo /people/match x14 VERIFIED-ONLY per bounce-recovery doctrine + WebSearch IG fallback + IG follower scrape. Anchors: Jade & Quetzal (CDMX 2 Apollo verified Cofundadores Jesus Silva + Ivonne Lopez Monroy, clientes BYD/Adidas/Smirnoff/Santander/Corona Capital — 9/10), Rodada Films (Ivan Couttolenc EP verified + WebSearch-recovered IG @rodadafilms, clientes ELITE Coca-Cola/KFC/Rappi/Disney/Xbox/Unilever/OPPO/Honor/Bonafont/Tec de Monterrey — 9/10), Pegasus Content (BA+London, Nicolas Dal Farra Co-Founder + Clara Daray Managing Partner Apollo verified — 8.5/10), Atman Producciones (CDMX, Maribel Vivanco CEO verified, 6.6k IG followers el más alto — 8.5/10), Jakob Studio (CDMX, company info@ + Apollo 0 DMs PERO cliente list ad-agency elite Ogilvy/DDB/Publicis/Havas/Wunderman/McDonalds/Toyota/AT&T/Modelo Especial — 8.5/10), Camus Films (Monterrey, Mariale Espinoza EP/Guionista Apollo verified, clientes Gonher/XIGNUX/SP Garza García — 8/10). Apollo total: 14 unlocks (within 15 budget). Doctrine compliance: all 6 named DM accepted-title OR company_email-with-elite-clients, all 6 mandatory IG verified + follower count, zero extrapolated emails per post-bounce doctrine.",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY x14 + WebSearch IG fallback + IG follower scrape"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-02",
-      "source_date": "2026-06-02",
-      "file": "leads-2026-06-02.json",
-      "lead_count": 7,
-      "approved": true,
-      "approved_at": "2026-06-02T00:00:00.000Z",
-      "status": "archived",
-      "workspace": "premium_v2.2_apollo_verified_only",
-      "note": "7 verified productoras LATAM. AR:5 + MX:2. Average 8.57/10. Method: cache-mine premium-v2.2 (HIT, 0 re-discovery) → refined activity-probe (Televital-pattern filter) → WebFetch x30 candidates → Apollo /people/match x8 unlocks VERIFIED-ONLY per bounce-recovery doctrine → contactHunter puppeteer (7/8 ✓, Mostra timeout — site data used instead) → IG follower scrape. Anchors: Lungo Films (multi-country AR/CO/CL/CR/ES/PE, 4 site DMs + 2 Apollo verified, clients BCP/Pilsen/Tecate/KFC/Zalando/Nicki Nicole/Paulo Londra/Lit Killah/Milo J/Cristal/iPlan/Interbank, 8 directors roster — 9.5/10), CONTROL Studio (Buenos Aires VFX/3D/animation, Nicolas Gonzalez Owner + Pablo Accame EP both Apollo verified, clients K&S/Netflix/Fábula — 9/10), Hippie House Studio (Buenos Aires animation 18yr, Ignacio Sandoval Director Apollo verified, clients Apple/AMC/McDonalds/UNICEF/Banco Macro/LinkedIn/YPF — 9/10), Mostra Cine (Buenos Aires, 2 Managing Directors site-published, Netflix + Martin Scorsese exec credit, 9.3k followers — 8.5/10), Gallo Pinto Films (Mexico, Warner Bros/Adidas/AT&T/Microsoft/Audi/Bimbo/Uber Eats clients, company_email — 8.5/10). Mid: La Perla Cine (Rodrigo Pico Estrada Apollo verified, Jeep/DJI clients — 8/10), Monteroca Producciones (Mexico Querétaro, Enrique Montoya Director — 7.5/10). Dropped from pipeline: Makers Film (7/10 — first-name-only DM weakened it below target). Apollo budget: 8 unlocks (within 15 budget). Doctrine compliance: all 7 named DM with accepted titles, all 7 with mandatory IG verified + follower count, all 7 with verified email source (Apollo verified or website_direct — zero extrapolated emails per the post-bounce doctrine).",
-      "supply_metrics": {
-        "valid_leads": 7,
-        "methodology": "cache-mine premium-v2.2 + refined activity-probe + WebFetch + Apollo /people/match VERIFIED-ONLY + contactHunter puppeteer + IG follower scrape"
-      },
-      "archived_at": "2026-06-03T00:00:00.000Z"
-    },
-    {
-      "batch_id": "batch-2026-06-01",
-      "source_date": "2026-06-01",
-      "file": "leads-2026-06-01.json",
-      "lead_count": 13,
-      "approved": true,
-      "approved_at": "2026-06-01T00:00:00.000Z",
-      "status": "archived",
-      "workspace": "premium_v2.2_recovery_full_chain",
-      "note": "9 verified productoras LATAM. AR:4 + MX:4 + CR:1. All 9 with named decision-maker accepted-title, all 9 with mandatory IG verified (2 dead-handle saves via canonical-IG audit: Magnética @magnetica_producciones→@magneticalatam 8.3k, Expansión @expansioncr→@expansiondigitaloficial 2.1k — same pattern as LAMUVI fix from 2026-05-29), all 9 with personal LinkedIn. Method: cached premium-v2.2 (HIT, 0 re-discovery) → refined activity-probe with NEW Televital-pattern filter (drops _oficial IG, broadcast-vendor, equipment-rental hybrid; relaxed niche to allow medios/audio/fotograf) → WebFetch x14 candidates → Apollo /people/match 13 unlocks → contactHunter puppeteer 14-step + founderDeepRecovery → WebSearch LinkedIn fallback (the gold path: filled gaps Apollo missed) → puppeteer IG meta scrape for follower counts → canonical-IG dead-link audit. Anchors: Primo Content (8 offices BA/BCN/Madrid/Stgo/CDMX/SP/Bogotá, 5 Apollo-verified DMs Jaime Vidal Managing Partner + Nicolas Pacheco EP + Cora Rodriguez Lacueva Managing Director + Francesca Gaidolfi Head of Production + Gina Medina Director, clients Apple/Google/Nike/Levi's/Armani/Renault, 34k followers, Cannes/D&AD/One Show Best Production winner), VATO (4 offices, films 15+ countries, CEO Juano Alvarez Apollo verified, clients Coca-Cola/Amazon/Adidas/Telefónica/Dell, 7.8k), VDM Casa Productora (CDMX, Patricio Cutler Director with patricio@ name-match + Andrés Cruz + Emiliano Menéndez Directors per Mexican Film Commission registry, clients Volkswagen/Levi's/Adidas Originals/Oreo, 15k). Mid: La Tuna Group (Monterrey+CDMX 20yr, Alejandro Ochoa EP + Adriana Mendivil Production Director Apollo verified, 9.1k), Magnética Producciones (AR/MX/PY, Martin Repetto Production Director, PepsiCo/Nestlé/Quilmes, 8.3k), Musgo Cine (Mar del Plata + BA, Nicolas Werner Presidente/EP, Netflix-tier Elena Sabe + La Mujer de la Fila + Menem Vuelve). Smaller-but-named: Groncho (Rocio Pichirili Productora Ejecutiva, cine independiente, 2.6k), Expansión Digital Productora (CR, Javier Raaz Head of Production via doctrine recovery — was 'no DM' until WebSearch surfaced him, 2.1k), Atemporall Casa Productora (Alejandra Díaz Co-Fundadora, Sony Music/Nespresso/IQOS/Zona Maco, gmail email = weak signal accepted as fallback, 359). Doctrine filters dropped: 3 Creative/Art Directors banned per title rules (Cynthia Lara + Lola Robledo @La Tuna; Fernando Rodriguez @Magnética), 9 leads dropped at WebFetch stage (HACCE U events, Duck Studios agency-hybrid, DECA events, Kamel Media + TFG Panama agency-hybrids, Sonder + Kligger IG-only no-email, Creax placeholder, FilmFlow DIT vendor), Buenatoma late-dropped (no IG handle exists anywhere). Apollo total: 13 unlocks (within 15 budget). Independent SMTP verify still 0/9 — Hunter.io rate-limited.",
-      "supply_metrics": {
-        "valid_leads": 9,
-        "methodology": "cache-mine premium-v2.2 + refined activity-probe (Televital-pattern filter) + WebFetch + Apollo /people/match x13 + contactHunter puppeteer 14-step + founderDeepRecovery + WebSearch LinkedIn fallback + canonical-IG dead-link audit + puppeteer IG follower scrape"
-      },
-      "archived_at": "2026-06-02T00:00:00.000Z"
-    },
-    {
-      "batch_id": "batch-2026-05-29",
-      "source_date": "2026-05-29",
-      "file": "leads-2026-05-29.json",
-      "lead_count": 9,
-      "approved": true,
-      "approved_at": "2026-05-29T00:00:00.000Z",
-      "status": "archived",
-      "archived_at": "2026-06-01T00:00:00.000Z",
-      "workspace": "premium_v2.2_puppeteer_verified",
-      "note": "9 verified productoras LATAM. MX:5 + CO:2 + AR:2. All passed activity-probe + canonical-IG audit. Method: cached discovery (HIT, 0 re-discovery spend) → activity-probe drop-dead-sites → WebFetch deep-scrape → Apollo /people/match (17 unlocks total) → contactHunter puppeteer 14-step (captured 3 LinkedIn URLs + 7 IG bios + 4 phones that WebFetch couldn't extract) → canonical-IG audit (cleared 5 Cuerdas, resolved Dual name conflict, swapped out La Productora Audiovisual for PESCA because no canonical IG on own site). Doctrine filters applied: dropped Valeria Jaramillo (Creative Director banned), Diana Montoya (Post Producer borderline), Manuel Cortés (CFO not in accepted list), and entire Dripper Media Group lead (name/email mismatch: Alejandro≠audrey@ + hunter timed out + IG unverified). Avg score 8.0/10. Anchors: LAMUVI Films (Partner-led CO, Club Colombia/Dove), Árbol Media (MX+UY 2007, EP/Partner Pedro Lafferranderie + 2 add'l), Viernes Media (Netflix/Spotify/Adidas/Pepsi/KFC/Starbucks, CEO Hiram + LinkedIn + phone), Televital (TV Azteca/Fox/ESPN/Televisa/Bloomberg/Sky, Managing Dir Moriel + LinkedIn + phone). Mid: KÖHLER Studio (Corona/Coca-Cola/Toyota/BBVA/MercadoLibre), Ucronia (150+ projects, CEO Abril Gonzalez + LinkedIn, full hunter chain), Dual Productora (Grupo Éxito/Sura/Nutresa/ISA/ONU, Juan Musan Director). B-tier: PESCA Productora Audiovisual (canonical IG, swap-in), 5 Cuerdas (commercials/fashion). Email verification: Hunter.io rate-limited this session — Apollo email_status: confirmed is the verification signal for 4 leads (Hiram, Moriel, Lafferranderie, Köhler). Site-published emails for the rest (Robledo, Gonzalez, Musan, role inboxes).",
-      "supply_metrics": {
-        "valid_leads": 9,
-        "methodology": "cache-mine premium-v2.2 + activity-probe + WebFetch + Apollo /people/match x17 + contactHunter puppeteer 14-step + canonical-IG audit"
-      }
-    },
-    {
-      "batch_id": "batch-2026-05-28",
-      "source_date": "2026-05-28",
-      "file": "leads-2026-05-28.json",
-      "lead_count": 9,
-      "approved": true,
-      "approved_at": "2026-05-28T00:00:00.000Z",
-      "status": "archived",
-      "archived_at": "2026-05-29T00:00:00.000Z",
-      "workspace": "premium_v2.2_latam_heavy_mx_ar",
-      "note": "9 elite productoras LATAM-heavy. MX:5 + AR:3 + ES:1. Doctrine #9 PASS (8/9 priority). 0 animation, 0 marketing, 0 events. Avg score 9.11/10. Anchors: Fight Films (40yr, 11 countries, Coca-Cola/Vogue/Samsung/Toyota), Woo Films (Netflix House of Flowers/Pedro Páramo + Disney Onyx Collective first-look), Unlimited Films (43yr Guadalajara since 1982, Tequila San Matías). Mid: Mango Films (25yr, 3 offices CDMX/GDL/Brooklyn, Eduardo Avila CEO), Cactus Cine (Netflix/Red Bull/Amex), Altana Films (32yr, BA/Stgo/MVD, Heineken/Air NZ/Lipton), Traziende Films (23yr, Cada minuto cuenta Prime Video). Backup: Mariachi Films (25 empleados CDMX), Sur Film (production services ES+PT, 3 oficinas Tenerife/BCN/Lisboa). All have personal email primary + IG verified. 23 total emails (avg 2.6/lead). 20 Apollo unlocks (~150 credits, well within subscription headroom). 11 dead-ends archived to rejected.json (now 95).",
-      "supply_metrics": {
-        "valid_leads": 9,
-        "methodology": "premium-v2.2 cache mine (20h old) + tools/unlock-domains.js surgical x20 + WebFetch x9 + WebSearch x4"
-      }
-    },
-    {
-      "batch_id": "batch-2026-05-27",
-      "source_date": "2026-05-27",
-      "file": "leads-2026-05-27.json",
-      "lead_count": 29,
-      "approved": true,
-      "approved_at": "2026-05-27T00:00:00.000Z",
-      "status": "archived",
-      "workspace": "premium_v2.2_balanced_es_latam_anchor_picks",
-      "note": "11 elite productoras — ES:5 / AR:2 / MX:2 / CO:1 / CR:1. Doctrine #9 PASS (6/11 priority). 10 T1 / 1 T2. 0 animation. Avg score 9.45/10. 37 personal emails (primary + additional) across 11 leads. Anchors: LANDIA (79 Cannes Lions, 4 Palme d'Or, global 8-city, 7 EPs email), Pampa Films AR (Goya Award Un Cuento Chino, Netflix Cuaderno de Tomy, Monzón w/ Disney+Turner+Netflix, IG @pampafilms 182K, 4 EPs email), Bambú ES (Emmy 2024 La Promesa, IG 129K), Antiestático ES (Mango/Toyota/UGG/Netflix/McLaren, 6 offices, 4 EPs email), Shine Iberia (Banijay MasterChef ES+PT, IG 45K), Lee Films ES (most-awarded ES since 1990, VW/LEGO/IKEA/Ford, 4 EPs email), Sin Sentido MX (Apple TV+ Acapulco + Netflix + Terrence Malick collab), Kilombo CO (4 EPs email, 25yr Bogotá+Miami), Atómica CR (Taco Bell/McDonald's/Toyota, Baby Atómica Cannes 2023), Gestmusic ES (Banijay OT+Premios Goya 25-26), KUTER MX (19yr full-service in-house CDMX). Flagged: Sin Sentido + Kilombo (IG follower count auth-walled, handles verified to exist). Rejected.json infrastructure jumped 41→84 today (43 new dead-ends archived). Frank Ariza dropped for Mediaset fraud judgment. Spain-LATAM balance preserves enriched picks while restoring priority country mix. [PATCH 2026-05-27: +3 lead recoveries (Fosforo/Iconica/Panoramica) + 15 revived pilot leads to Hoy + 34 stuck pilots tagged BLUE reactivation in Acción Ahora. 17 Apollo unlocks, 11 website enrichments, 49 Supabase rows patched.]",
-      "supply_metrics": {
-        "valid_leads": 11,
-        "methodology": "premium-v2.2 + tools/unlock-domains.js surgical (3 rounds: ES x10, LATAM x25, AR x16) + WebFetch + WebSearch + rejected.json dedup"
-      },
-      "archived_at": "2026-05-28T00:00:00.000Z"
-    },
-    {
-      "batch_id": "batch-2026-05-26",
-      "source_date": "2026-05-26",
-      "file": "leads-2026-05-26.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-05-26T22:04:36.643Z",
-      "status": "archived",
-      "archived_at": "2026-05-27T00:00:00.000Z",
-      "workspace": "premium_v2.2_focused_commercial_publicity",
-      "note": "8 premium LATAM+Spain productoras focused on commercial/publicity/fashion brief. MX:1/AR:1/CO:1/CR:2/PA:1/ES:2. 7 T1 + 1 T2 (Manglar humanitarian disclosure). 0 animation. 10/10 personal DM emails, 17 additional named contacts. Anchor: Rebolucion (Cannes Lions Palme d'Or 2023, Armando Bo Oscar-winner founder). Other standouts: Colombo Films (One Show + Effie, virtual production + AI), LCA Productions (Apple Music/IKEA/Sony/Bacardi/Vogue clients), IRALTA (Virtual Production pioneer 21yr Repsol/Honda/Iberia), 2Cilindros (Repsol/Pepsi/Zara/Santander). Borderlines disclosed: Lomas Post (post-production not front-end), Manglar Films (humanitarian focus). Built mid-day, archived batch-2026-05-25. Infrastructure fixes shipped today (cache, niche-patch, rejected-list, backup-unlock flag) will compound on next morning's run.",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "methodology": "premium-v2.2 + surgical Apollo unlock + WebFetch enrichment + Spain micro-discovery"
-      }
-    },
-    {
-      "batch_id": "batch-2026-05-25",
-      "source_date": "2026-05-25",
-      "file": "leads-2026-05-25.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-05-25T19:03:04.324Z",
-      "status": "archived",
-      "workspace": "premium_v2.2_expanded_discovery",
-      "note": "10 LATAM productoras — MX:4/AR:2/CO:1/CR:1/PE:2 (Rebolucion AR + Nosotros Films CR added mid-day then pulled back, staged for batch-2026-05-26). 9 T1 / 1 T2. 2 animation (Huevocartoon, Zeppelin) at cap, both marquee (552K + 7.8K followers, Snoop Dogg/Adult Swim/Marvel-tier credits). Premium-v2.2 discovery expansion (20 keywords + pages=2 + employees=1-500) grew the pool 10.8x (323→3,504 candidates) — addresses operator-flagged exhaustion misdiagnosis. New tool: tools/unlock-domains.js (surgical Apollo /people/match for backup-pool candidates without full re-discovery). All 10 picks have named DMs with verified titles + emails (most personal); all 10 have IG verified. 22+ named DMs total across deck. Headliners: Huevocartoon (Riva Palacio brothers — Una Pelicula de Huevos legend), Loymark (Tim Hortons/Canon/Meta/Mercedes-Benz, 8-office network), HUINCA CINE (4 EPs, global offices). archive: batch-2026-05-24.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "premium-v2.2+surgical_unlock+webfetch+contact_recovery"
-      },
-      "archived_at": "2026-05-26T22:04:36.638Z"
-    },
-    {
-      "batch_id": "batch-2026-05-24",
-      "source_date": "2026-05-24",
-      "file": "leads-2026-05-24.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-05-25T01:35:47.236Z",
-      "status": "archived",
-      "workspace": "premium_v2.1_first_validated_run",
-      "note": "10 LATAM productoras — MX:3/AR:2/CO:1/CR:1/PA:1/PE:2 (PE = experimental new-country seed for pipeline longevity). 9 T1 / 1 T2 (Forja company-email). 2 animation (Estudio Shout + Forja Studios) at cap. Built with premium-v2.1 profile: niche-exclusion filter + thin-market fallback + canonical-domain re-dedup — all three fixes worked structurally on first shadow run (caught Videocine, Cantoalegre, Televital, Aurea-redirect; filled Panama; TBWA-class added to filter mid-run). Hand-cherry-picked from v2.1 dossier + surgical Apollo unlocks for backup candidates (no full re-runs).",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "premium-v2.1+surgical_unlock+webfetch"
-      },
-      "archived_at": "2026-05-25T19:03:04.315Z"
-    },
-    {
-      "batch_id": "batch-2026-05-22b",
-      "source_date": "2026-05-22",
-      "file": "leads-2026-05-22b.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-05-22T15:53:21.611Z",
-      "status": "archived",
-      "workspace": "apollo_webfetch_premium_rebalance",
-      "note": "10 LATAM productoras — MX:5/AR:2/CO:1/CR:1/PA:1, 8 T1 / 2 T2, 0 animation studios. Apollo /mixed_companies/search + /people/match + WebFetch LLM enrichment, hand-rebalanced for ICP (casas productoras over VFX/animation studios), IG follower audit on every card. Named batch-2026-05-22b because the batch-2026-05-22 id was already taken by V1 (calendar drift: V1 = the May-21 batch launched post-midnight). V1 leads already contacted, archived cleanly.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "apollo_discovery+llm_extraction+hand_rebalance"
-      },
-      "archived_at": "2026-05-25T01:35:47.230Z"
-    },
-    {
-      "batch_id": "batch-2026-05-22",
-      "source_date": "2026-05-22",
-      "file": "leads-2026-05-22.json",
-      "lead_count": 16,
-      "approved": true,
-      "approved_at": "2026-05-21T23:55:28.107Z",
-      "status": "archived",
-      "workspace": "apollo_webfetch_methodology",
-      "note": "8 Mexican productoras discovered via Apollo /organizations/search + verified/extracted via WebFetch LLM comprehension. 3 T1 (named DMs), 5 T2. All email-valid, all pre-flighted active, all fresh (Apollo dedup against 1036-domain identity index). | 2026-05-22T02:52: rolled-forward 8 uncontacted May 21 leads into Hoy view",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "methodology": "apollo_discovery+llm_extraction"
-      },
-      "archived_at": "2026-05-22T15:53:21.605Z"
-    },
-    {
-      "batch_id": "batch-2026-05-21",
-      "source_date": "2026-05-21",
-      "file": "leads-2026-05-21.json",
-      "lead_count": 6,
-      "approved": true,
-      "approved_at": "2026-05-21T04:29:31.880Z",
-      "status": "archived",
-      "supply_metrics": {
-        "valid_leads": 6,
-        "reserve_pool_size": 0,
-        "seen_domains": 7,
-        "total_query_pool": 0,
-        "estimated_days_supply": -2
-      },
-      "workspace": "unabase_mx_v1",
-      "note": "6 leads: 5 email + 1 phone/WhatsApp exception (Cinepantera). 3 false positives pulled in post-deploy audit."
-    },
-    {
-      "batch_id": "batch-2026-05-20",
-      "source_date": "2026-05-20",
-      "file": "leads-seeds-2026-05-20.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-05-20T03:36:53.601Z",
-      "status": "archived",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "reserve_pool_size": 0,
-        "seen_domains": 11,
-        "total_query_pool": 0,
-        "estimated_days_supply": -2
-      },
-      "workspace": "unabase_seeds"
-    },
-    {
-      "batch_id": "batch-2026-05-19",
-      "source_date": "2026-05-19",
-      "file": "leads-2026-05-19.json",
-      "lead_count": 3,
-      "approved": true,
-      "approved_at": "2026-05-19T23:47:46.559Z",
-      "status": "archived",
-      "supply_metrics": {
-        "valid_leads": 6,
-        "reserve_pool_size": 28,
-        "seen_domains": 907,
-        "total_query_pool": 281,
-        "estimated_days_supply": 83
-      },
-      "workspace": "unabase_default",
-      "rolled_back_at": "2026-05-20T00:14:20.133Z",
-      "rollback_reason": "governance-fail-spot-check",
-      "salvaged_at": "2026-05-20T00:22:31.933Z",
-      "archived_at": "2026-05-27T00:00:00.000Z"
-    },
-    {
-      "batch_id": "batch-2026-05-18",
-      "source_date": "2026-05-18",
-      "file": "leads-2026-05-18.json",
-      "lead_count": 3,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 3,
-        "reserve_pool_size": 27,
-        "seen_domains": 647,
-        "total_query_pool": 281,
-        "estimated_days_supply": 252
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-17",
-      "source_date": "2026-05-17",
-      "file": "leads-2026-05-17.json",
-      "lead_count": 4,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 4,
-        "reserve_pool_size": 27,
-        "seen_domains": 628,
-        "total_query_pool": 281,
-        "estimated_days_supply": 194
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-16",
-      "source_date": "2026-05-16",
-      "file": "leads-2026-05-16.json",
-      "lead_count": 1,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 1,
-        "reserve_pool_size": 26,
-        "seen_domains": 603,
-        "total_query_pool": 281,
-        "estimated_days_supply": 802
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-15",
-      "source_date": "2026-05-15",
-      "file": "leads-2026-05-15.json",
-      "lead_count": 3,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 3,
-        "reserve_pool_size": 29,
-        "seen_domains": 584,
-        "total_query_pool": 281,
-        "estimated_days_supply": 273
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-13",
-      "source_date": "2026-05-13",
-      "file": "leads-2026-05-13.json",
-      "lead_count": 6,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 6,
-        "reserve_pool_size": 29,
-        "seen_domains": 567,
-        "total_query_pool": 281,
-        "estimated_days_supply": 139
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-07",
-      "source_date": "2026-05-07",
-      "file": "leads-2026-05-07.json",
-      "lead_count": 5,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 5,
-        "reserve_pool_size": 28,
-        "seen_domains": 545,
-        "total_query_pool": 281,
-        "estimated_days_supply": 172
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-06",
-      "source_date": "2026-05-06",
-      "file": "leads-2026-05-06.json",
-      "lead_count": 2,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 2,
-        "reserve_pool_size": 27,
-        "seen_domains": 519,
-        "total_query_pool": 281,
-        "estimated_days_supply": 443
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-05",
-      "source_date": "2026-05-05",
-      "file": "leads-2026-05-05.json",
-      "lead_count": 1,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 1,
-        "reserve_pool_size": 26,
-        "seen_domains": 501,
-        "total_query_pool": 281,
-        "estimated_days_supply": 904
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-04",
-      "source_date": "2026-05-04",
-      "file": "leads-2026-05-04.json",
-      "lead_count": 8,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "reserve_pool_size": 25,
-        "seen_domains": 476,
-        "total_query_pool": 281,
-        "estimated_days_supply": 116
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-05-01",
-      "source_date": "2026-05-01",
-      "file": "leads-2026-05-01.json",
-      "lead_count": 7,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 7,
-        "reserve_pool_size": 22,
-        "seen_domains": 445,
-        "total_query_pool": 281,
-        "estimated_days_supply": 137
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-30",
-      "source_date": "2026-04-30",
-      "file": "leads-2026-04-30.json",
-      "lead_count": 3,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 3,
-        "reserve_pool_size": 19,
-        "seen_domains": 413,
-        "total_query_pool": 281,
-        "estimated_days_supply": 330
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-29",
-      "source_date": "2026-04-29",
-      "file": "leads-2026-04-29.json",
-      "lead_count": 5,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 5,
-        "reserve_pool_size": 19,
-        "seen_domains": 397,
-        "total_query_pool": 281,
-        "estimated_days_supply": 201
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-28",
-      "source_date": "2026-04-28",
-      "file": "leads-2026-04-28.json",
-      "lead_count": 0,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 0,
-        "reserve_pool_size": 16,
-        "seen_domains": 364,
-        "total_query_pool": 281,
-        "estimated_days_supply": 1041
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-27",
-      "source_date": "2026-04-27",
-      "file": "leads-2026-04-27.json",
-      "lead_count": 7,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 7,
-        "reserve_pool_size": 24,
-        "seen_domains": 323,
-        "total_query_pool": 281,
-        "estimated_days_supply": 154
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-25",
-      "source_date": "2026-04-25",
-      "file": "leads-2026-04-25.json",
-      "lead_count": 6,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 6,
-        "reserve_pool_size": 23,
-        "seen_domains": 293,
-        "total_query_pool": 281,
-        "estimated_days_supply": 185
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-24",
-      "source_date": "2026-04-24",
-      "file": "leads-2026-04-24.json",
-      "lead_count": 1,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 1,
-        "reserve_pool_size": 20,
-        "seen_domains": 248,
-        "total_query_pool": 281,
-        "estimated_days_supply": 1157
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-23",
-      "source_date": "2026-04-23",
-      "file": "leads-2026-04-23.json",
-      "lead_count": 7,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 7,
-        "reserve_pool_size": 28,
-        "seen_domains": 233,
-        "total_query_pool": 281,
-        "estimated_days_supply": 167
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-22",
-      "source_date": "2026-04-22",
-      "file": "leads-2026-04-22.json",
-      "lead_count": 8,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "reserve_pool_size": 27,
-        "seen_domains": 206,
-        "total_query_pool": 281,
-        "estimated_days_supply": 149
-      },
-      "workspace": "unabase_default"
-    },
-    {
-      "batch_id": "batch-2026-04-21",
-      "source_date": "2026-04-21",
-      "file": "leads-2026-04-21.json",
-      "lead_count": 9,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 9,
-        "reserve_pool_size": 25,
-        "seen_domains": 168,
-        "total_query_pool": 281,
-        "estimated_days_supply": 137
-      }
-    },
-    {
-      "batch_id": "batch-2026-04-20",
-      "source_date": "2026-04-20",
-      "file": "leads-2026-04-20.json",
-      "lead_count": 8,
-      "approved": false,
-      "approved_at": null,
-      "status": "draft",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "reserve_pool_size": 22,
-        "seen_domains": 128,
-        "total_query_pool": 281,
-        "estimated_days_supply": 159
-      }
-    },
-    {
-      "batch_id": "batch-2026-04-17",
-      "source_date": "2026-04-17",
-      "file": "leads-2026-04-17.json",
-      "lead_count": 11,
-      "approved": true,
-      "approved_at": "2026-04-17T21:14:17.731Z",
-      "status": "archived",
-      "supply_metrics": {
-        "valid_leads": 11,
-        "named_decision_makers": 9,
-        "fallback_contacts": 2,
-        "countries": [
-          "Argentina",
-          "Colombia",
-          "Mexico",
-          "Honduras"
-        ],
-        "contact_strength": {
-          "A": 4,
-          "B": 5,
-          "C": 2
-        },
-        "note": "11-lead batch: 6 named DMs + 13 total named individuals. Tier-segmented personalized emails, LinkedIn messages, and Day 0/Day 2-3 execution cycles embedded per lead."
-      },
-      "archived_at": "2026-05-27T00:00:00.000Z"
-    },
-    {
-      "batch_id": "batch-2026-04-16",
-      "source_date": "2026-04-16",
-      "file": "leads-2026-04-16.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-04-16T21:50:43.883Z",
-      "status": "archived",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "named_decision_makers": 6,
-        "fallback_contacts": 2,
-        "countries": [
-          "Spain",
-          "Argentina",
-          "Colombia",
-          "Chile"
-        ],
-        "note": "Stage 3 contact hunt + deep DM research. 6 named (Co-founder/CEO/Fundador/Director), 2 fallback with full triple contact."
-      }
-    },
-    {
-      "batch_id": "batch-2026-04-15",
-      "source_date": "2026-04-15",
-      "file": "leads-2026-04-15.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-04-15T23:35:17.110Z",
-      "status": "archived",
-      "supply_metrics": null
-    },
-    {
-      "batch_id": "batch-2026-04-14",
-      "source_date": "2026-04-14",
-      "file": "leads-today.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-04-14T12:00:00Z",
-      "status": "archived",
-      "supply_metrics": null
-    },
-    {
-      "batch_id": "batch-2026-06-12",
-      "source_date": "2026-06-12",
-      "file": "leads-2026-06-12.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-12T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 productoras MX-heavy avg 9.5/10 — DISPATCHED FROM POOL pool-a-tier.json. MX 4 / BR 2 / ES 2 / CO 1 / AR 1. Anchors: Mar Abierto MX (Robert Iskandarani 10/10), Globo Filmes BR (Matheus Pereira 10/10), Zeta Studios ES (Xavi Toll 10/10), Caracol Televisión CO (Manuel Penaloza 10/10), Telefé AR (Hernan Rodrigo Luna 10/10). Mid (9/10): Perro Azul MX, Mandarina Cine MX, Cinema226 MX, Buriti Filmes BR, Cuarzo Producciones ES. All verified-only Apollo emails or website-direct role inboxes. Pool now: 21 available + 2 already-shipped marked + 40 dispatched.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch from staging/pool-a-tier.json with strict 9.0+ floor per individual lead and MX-priority demographic balance"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-15",
-      "source_date": "2026-06-15",
-      "file": "leads-2026-06-15.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-15T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 productoras MX-heavy avg 9.3/10 — DISPATCHED FROM POOL pool-a-tier.json. MX 4 (drained) / BR 2 / ES 2 / CO 1 / PE 1. Anchors: Rhayuela CO (Federico Duran 10/10), Tondero PE (Miguel Valladares 10/10), Gullane Filmes BR (Pablo Torrecillas 10/10), O2 Filmes BR (Andre Gustavo 10/10). MX (all 9 or 8.5): Península Films, Producciones Oxígeno, Chulada Films, Selva Studio. ES (9): Ficción Producciones, Diamond Films Spain. All verified-only Apollo emails or website-direct role inboxes. Pool now: 11 available + 2 already-shipped + 50 dispatched.",
-      "supply_metrics": {
-        "valid_leads": 10,
-        "methodology": "pool dispatch from staging/pool-a-tier.json with strict 8.5+ floor and MX-priority demographic balance (drained all MX — next batch needs mining)"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-16",
-      "source_date": "2026-06-16",
-      "file": "leads-2026-06-16.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-06-16T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "8 productoras LATAM avg 9.13/10 — NO BRAZIL per operator doctrine (2026-06-16). Geo: MX 2 / AR 2 / UY 1 / ES 1 / CL 1 / CO 1 (6 countries, max diversity). Anchors at 10: Piano MX (Cannes 3x, Apollo verified Monica Moreno), Oriental Films UY. 9s: Reserva Films MX (Sitges horror), Pensa & Rocca AR (Daniel Pensa CAIC president), Polar Star Films ES, Juntos Films CL (2 Apollo verified DMs). Mid: Pavoreal CO (Apollo verified Luis Villegas), Frontera Films AR. All 8 have strict-IG verified handles (8/8 IG coverage).",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "methodology": "fresh LATAM mining + same-day swap to remove BR + ensure 8/8 IG: WebFetch + Apollo verified-only + strict IG verify + dedup against 340+ tracked domains"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-17",
-      "source_date": "2026-06-17",
-      "file": "leads-2026-06-17.json",
-      "lead_count": 10,
-      "approved": true,
-      "approved_at": "2026-06-17T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "10 productoras LATAM/ES avg 8.75/10 — ME 3 / CO 1 / AR 2 / SP 4. 5 from pool reserves (4 ES + 1 fresh CO mined today: 64A Films Nancy Fernandez Apollo verified) + 5 BOUNCE-RECOVERED with alternate emails (per operator request 2026-06-17): Lemon Studios MX (alejandro@lemonfilms.com Apollo Alejandro Lozano Director, parent group domain), Argentina Cine AR (sandra@argentinacine.com Apollo Sandra Sbarra EP alternate), Magnética AR (fernando@magnetica.com.ar Apollo Fernando Rodriguez Creative Director, alternate corp domain), VDM MX (info@vdm.la website-direct role inbox), Lucaproductora MX (contacto@lucaproductora.com.mx website-direct role inbox at corp domain — original was gmail typo). 2 leads DROPPED for no alternate email surface: Laberintos PA (only bounced gmail listed) + Buriti Filmes BR (no role inbox + cert error on site). Each recovered lead carries _bouncedEmail + _bounceRecoveredAt for audit trail.",
-      "supply_metrics": {
-        "valid_leads": 5,
-        "methodology": "pool dispatch + fresh CO mining + bounce-recovery batch with alternate email surfacing (Apollo re-unlock at alternate domains + WebFetch role inbox extraction)"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-18",
-      "source_date": "2026-06-18",
-      "file": "leads-2026-06-18.json",
-      "lead_count": 6,
-      "approved": true,
-      "approved_at": "2026-06-18T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "6 corporate-tier LATAM productoras avg 9.33/10 — FRESH MINING 2026-06-18. NO BRAZIL per operator doctrine. Geo: MX 3 / CO 3. Anchors at 10: Habitant Productions CO (HQ Bogotá + MX/UY, Zara/Airbnb/Lenny Kravitz clients, 3 Apollo verified DMs Ignacio Betancourt + Ana Gaxiola + Matias Martinez Godoy), BTF Media MX (Francisco Cordero Co-Founder & CEO + Ricardo Coeto + 4 Apollo verified DMs, founded 2010). 9s: Romero&Braas MX (Paul Krauskopf Founder, Netflix/Warner/LucasFilm clients), Jaguar Bite CO (Simon Beltran CEO, Treadstone Amazon + Running with the Devil Nicolas Cage, 4 Apollo verified DMs), WhereNext CO (Stephan Schier Director Global Ops, Netflix 100 Years of Solitude soundscape, Cannes-winning Colombia tourism), Exile Content MX (Nando Vila Head of Studio, Sundance Grand Jury 2024 In the Summers + HBO Vgly, Candle Media). 17 Apollo verified DMs total across the 6 leads. All 6 strict-IG verified. Methodology: WebFetch every company (mandatory) + Apollo /people/match verified-only + strict IG verify + 8.5+ floor + dedup against 348+ tracked domains. 10 Apollo bulk rounds across 80+ candidate domains; mining hit Apollo wall on indie/auteur productoras — corporate-tier with LinkedIn presence yielded the verified DMs.",
-      "supply_metrics": {
-        "valid_leads": 6,
-        "methodology": "corporate-tier LATAM mining: WebFetch every company + Apollo /people/match verified-only + strict IG verify + 8.5+ floor + dedup against 348+ tracked domains"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-19",
-      "source_date": "2026-06-19",
-      "file": "leads-2026-06-19.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-06-19T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "8 LATAM productoras avg 8.94/10 — ALL WITH FULL CONTACT METHODS (email + IG + phone/WhatsApp + LinkedIn). Geo: MX 7 / ES 1 (87.5% MX-heavy per operator). NO BRAZIL. Anchor at 10: Anima Estudios MX (LARGEST animation studio in LATAM, Jose Garcia De Letona Co-Founder/COO Apollo verified + +52 55 5202 6858). 9s: Latido Films ES (Antonio Saura Director General Apollo verified + +34 915 488 877), Art Kingdom MX (3 Apollo verified DMs + WhatsApp +52 155 227 21510 + Cinépolis/Videocine clients), MODE MEDIA MX (Georgie Uris Founder Apollo verified + +52 55 4047 5427 + H&M/Visa/MasterCard clients), The Motion Lab MX (Rodrigo Maldonado Founder Apollo verified + +52 55 2322 8493 + RED BULL/NIKE/NETFLIX/AMAZON clients). 8.5s: Undertk Studio MX (Renata Torrescano Creative Director Apollo verified + 3 phones MX/CA/UK), La Habichuela Mágica MX (Luis Angel Gonzalez + Elias Tapia Apollo verified + +52 81 1507 1255), Ocelote Films MX (Luis Perez EP Apollo verified + WhatsApp). 14 Apollo verified DMs across the 8 leads. All 8 strict-IG verified. All 8 have direct phone/WhatsApp. All 8 have LinkedIn for the primary DM. Mining context: 19 Apollo bulk rounds across 200+ candidate domains + phone enrichment via WebFetch + targeted WebSearch.",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "methodology": "corporate-tier LATAM mining + phone enrichment: WebFetch every company + Apollo verified-only + strict IG verify + phone via website/WebSearch + LinkedIn from Apollo + 8.5+ floor + dedup against 350+ tracked domains"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-21",
-      "source_date": "2026-06-21",
-      "file": "leads-2026-06-21.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-06-21T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "8 productoras 100% FRESH (verified against ALL past batches) avg 9.19/10 — deploys Monday 2026-06-22. Geo: MX 4 / ES 4 (balanced). NO BRAZIL. Anchors at 10: Iconoclast Mexico (CDMX Polanco, Pablo Boyero + Nicolas Blankenhorn Apollo verified, IG @iconoclast.tv 103k), Televisa MX (LA MÁS GRANDE telenovelas, Jose Ignacio Gomez Cisneros Apollo verified, IG @televisa 2M), Apaches Entertainment ES (Enrique López Lavigne CEO/Fundador Apollo verified, Madrid +34 91 519 42 83, IG @apachesfilms). 9s: Globomedia ES (3 Apollo DMs, +34 91 728 5740), Caballo Films ES (As Bestas Cannes 2022 + Antidisturbios, Clara Lago + Belen Sanchez Apollo verified, +34 91 542 5171), Atípica Films ES (La Isla Mínima/Marshland, Oscar Manzano + Ivan Benjumea Apollo verified, +34 91 367 6776). 8.5: La Casa de Cine MX (Toronto Kids Award, email-only). 8: Ojo MX (Mara Garcia Apollo verified, IG @ojo.mx, no phone surfaced). 11 Apollo verified DMs across the 8 leads. 7/8 strict-IG verified (La Casa de Cine email-only). 6/8 have direct phone. Mantarraya DROPPED (was in leads-2026-06-09). CAVEAT logged: Televisa Apollo data had Eduardo Meza Rodriguez DECEASED Oct 2021 — used Jose Ignacio Gomez Cisneros instead.",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "methodology": "20+ Apollo bulk rounds across 350+ candidate domains + parallel WebFetch + WebSearch phone enrichment + strict-IG verify + dedup against ALL past batch files"
-      }
-    },
-    {
-      "batch_id": "batch-2026-06-23",
-      "source_date": "2026-06-23",
-      "file": "leads-2026-06-23.json",
-      "lead_count": 8,
-      "approved": true,
-      "approved_at": "2026-06-23T00:00:00.000Z",
-      "status": "archived",
-      "disable_carry_forward": true,
-      "workspace": "pool_dispatch_a_tier",
-      "note": "8 productoras 100% FRESH avg 8.88/10. Geo: ES 5 / MX 2 / AR 1. NO BRAZIL. Anchors at 10: Pokeepsie Films ES (Alex de la Iglesia + Carolina Bang founders, Banijay Iberia equity, HBO Max/Netflix/Amazon/Disney+, IG @pokeepsie_films 31k), Nostromo Pictures ES (Adrián Guerra + Núria Valls founders, 40+ films Russell Crowe/Johnny Depp/Penélope Cruz, BBC Night Manager S2, Netflix trilogy A través de mi ventana, +34 93 368 1985, IG @nostromopictures 11k). 9s: Arcadia Motion Pictures ES (Barcelona, HBO Max/Netflix/MAX, +34 93 414 3071), MOD Producciones ES (Madrid, Helen Marti Donoghue EP, IG @mod_producciones 14k). 8.5s: Mulata Films AR (Maite Echave Cofundadora, email-only), Encinta MX (Daniel Alejandre Director, email-only), Home Films MX (Fredy Wollenstein AMC CEO, IG @homefilms). 7.5 BORDERLINE: Vertigo Films Spain (Spanish subsidiary of UK Vertigo, Tomas Garcia Post-Production Supervisor, email-only). 13 Apollo verified DMs across the 8 leads. 4/8 strict-IG verified. 3/8 have phone. Mining context: 40+ Apollo bulk rounds across 500+ candidate domains; corporate-tier ES yielded the major hits. Mantarraya lesson: 100% dedup-verified against ALL past batch files.",
-      "supply_metrics": {
-        "valid_leads": 8,
-        "methodology": "fast corporate-tier mining: 40+ Apollo bulk rounds + parallel WebFetch + WebSearch phone enrichment + strict IG verify + dedup against ALL past batches"
-      },
-      "archived_at": "2026-06-24T21:56:59.063Z"
-    }
-  ],
-  "active_batch_id": "batch-2026-07-01",
-  "timezone": "America/New_York",
-  "last_updated": "2026-07-01T14:26:06.000Z"
+    "note": "11-lead batch: 6 named DMs + 13 total named individuals. Tier-segmented personalized emails, LinkedIn messages, and Day 0/Day 2-3 execution cycles embedded per lead."
+   },
+   "archived_at": "2026-05-27T00:00:00.000Z"
+  },
+  {
+   "batch_id": "batch-2026-04-16",
+   "source_date": "2026-04-16",
+   "file": "leads-2026-04-16.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-04-16T21:50:43.883Z",
+   "status": "archived",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "named_decision_makers": 6,
+    "fallback_contacts": 2,
+    "countries": [
+     "Spain",
+     "Argentina",
+     "Colombia",
+     "Chile"
+    ],
+    "note": "Stage 3 contact hunt + deep DM research. 6 named (Co-founder/CEO/Fundador/Director), 2 fallback with full triple contact."
+   }
+  },
+  {
+   "batch_id": "batch-2026-04-15",
+   "source_date": "2026-04-15",
+   "file": "leads-2026-04-15.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-04-15T23:35:17.110Z",
+   "status": "archived",
+   "supply_metrics": null
+  },
+  {
+   "batch_id": "batch-2026-04-14",
+   "source_date": "2026-04-14",
+   "file": "leads-today.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-04-14T12:00:00Z",
+   "status": "archived",
+   "supply_metrics": null
+  },
+  {
+   "batch_id": "batch-2026-06-12",
+   "source_date": "2026-06-12",
+   "file": "leads-2026-06-12.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-12T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras MX-heavy avg 9.5/10 — DISPATCHED FROM POOL pool-a-tier.json. MX 4 / BR 2 / ES 2 / CO 1 / AR 1. Anchors: Mar Abierto MX (Robert Iskandarani 10/10), Globo Filmes BR (Matheus Pereira 10/10), Zeta Studios ES (Xavi Toll 10/10), Caracol Televisión CO (Manuel Penaloza 10/10), Telefé AR (Hernan Rodrigo Luna 10/10). Mid (9/10): Perro Azul MX, Mandarina Cine MX, Cinema226 MX, Buriti Filmes BR, Cuarzo Producciones ES. All verified-only Apollo emails or website-direct role inboxes. Pool now: 21 available + 2 already-shipped marked + 40 dispatched.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch from staging/pool-a-tier.json with strict 9.0+ floor per individual lead and MX-priority demographic balance"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-15",
+   "source_date": "2026-06-15",
+   "file": "leads-2026-06-15.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-15T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras MX-heavy avg 9.3/10 — DISPATCHED FROM POOL pool-a-tier.json. MX 4 (drained) / BR 2 / ES 2 / CO 1 / PE 1. Anchors: Rhayuela CO (Federico Duran 10/10), Tondero PE (Miguel Valladares 10/10), Gullane Filmes BR (Pablo Torrecillas 10/10), O2 Filmes BR (Andre Gustavo 10/10). MX (all 9 or 8.5): Península Films, Producciones Oxígeno, Chulada Films, Selva Studio. ES (9): Ficción Producciones, Diamond Films Spain. All verified-only Apollo emails or website-direct role inboxes. Pool now: 11 available + 2 already-shipped + 50 dispatched.",
+   "supply_metrics": {
+    "valid_leads": 10,
+    "methodology": "pool dispatch from staging/pool-a-tier.json with strict 8.5+ floor and MX-priority demographic balance (drained all MX — next batch needs mining)"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-16",
+   "source_date": "2026-06-16",
+   "file": "leads-2026-06-16.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-06-16T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "8 productoras LATAM avg 9.13/10 — NO BRAZIL per operator doctrine (2026-06-16). Geo: MX 2 / AR 2 / UY 1 / ES 1 / CL 1 / CO 1 (6 countries, max diversity). Anchors at 10: Piano MX (Cannes 3x, Apollo verified Monica Moreno), Oriental Films UY. 9s: Reserva Films MX (Sitges horror), Pensa & Rocca AR (Daniel Pensa CAIC president), Polar Star Films ES, Juntos Films CL (2 Apollo verified DMs). Mid: Pavoreal CO (Apollo verified Luis Villegas), Frontera Films AR. All 8 have strict-IG verified handles (8/8 IG coverage).",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "methodology": "fresh LATAM mining + same-day swap to remove BR + ensure 8/8 IG: WebFetch + Apollo verified-only + strict IG verify + dedup against 340+ tracked domains"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-17",
+   "source_date": "2026-06-17",
+   "file": "leads-2026-06-17.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-06-17T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras LATAM/ES avg 8.75/10 — ME 3 / CO 1 / AR 2 / SP 4. 5 from pool reserves (4 ES + 1 fresh CO mined today: 64A Films Nancy Fernandez Apollo verified) + 5 BOUNCE-RECOVERED with alternate emails (per operator request 2026-06-17): Lemon Studios MX (alejandro@lemonfilms.com Apollo Alejandro Lozano Director, parent group domain), Argentina Cine AR (sandra@argentinacine.com Apollo Sandra Sbarra EP alternate), Magnética AR (fernando@magnetica.com.ar Apollo Fernando Rodriguez Creative Director, alternate corp domain), VDM MX (info@vdm.la website-direct role inbox), Lucaproductora MX (contacto@lucaproductora.com.mx website-direct role inbox at corp domain — original was gmail typo). 2 leads DROPPED for no alternate email surface: Laberintos PA (only bounced gmail listed) + Buriti Filmes BR (no role inbox + cert error on site). Each recovered lead carries _bouncedEmail + _bounceRecoveredAt for audit trail.",
+   "supply_metrics": {
+    "valid_leads": 5,
+    "methodology": "pool dispatch + fresh CO mining + bounce-recovery batch with alternate email surfacing (Apollo re-unlock at alternate domains + WebFetch role inbox extraction)"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-18",
+   "source_date": "2026-06-18",
+   "file": "leads-2026-06-18.json",
+   "lead_count": 6,
+   "approved": true,
+   "approved_at": "2026-06-18T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "6 corporate-tier LATAM productoras avg 9.33/10 — FRESH MINING 2026-06-18. NO BRAZIL per operator doctrine. Geo: MX 3 / CO 3. Anchors at 10: Habitant Productions CO (HQ Bogotá + MX/UY, Zara/Airbnb/Lenny Kravitz clients, 3 Apollo verified DMs Ignacio Betancourt + Ana Gaxiola + Matias Martinez Godoy), BTF Media MX (Francisco Cordero Co-Founder & CEO + Ricardo Coeto + 4 Apollo verified DMs, founded 2010). 9s: Romero&Braas MX (Paul Krauskopf Founder, Netflix/Warner/LucasFilm clients), Jaguar Bite CO (Simon Beltran CEO, Treadstone Amazon + Running with the Devil Nicolas Cage, 4 Apollo verified DMs), WhereNext CO (Stephan Schier Director Global Ops, Netflix 100 Years of Solitude soundscape, Cannes-winning Colombia tourism), Exile Content MX (Nando Vila Head of Studio, Sundance Grand Jury 2024 In the Summers + HBO Vgly, Candle Media). 17 Apollo verified DMs total across the 6 leads. All 6 strict-IG verified. Methodology: WebFetch every company (mandatory) + Apollo /people/match verified-only + strict IG verify + 8.5+ floor + dedup against 348+ tracked domains. 10 Apollo bulk rounds across 80+ candidate domains; mining hit Apollo wall on indie/auteur productoras — corporate-tier with LinkedIn presence yielded the verified DMs.",
+   "supply_metrics": {
+    "valid_leads": 6,
+    "methodology": "corporate-tier LATAM mining: WebFetch every company + Apollo /people/match verified-only + strict IG verify + 8.5+ floor + dedup against 348+ tracked domains"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-19",
+   "source_date": "2026-06-19",
+   "file": "leads-2026-06-19.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-06-19T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "8 LATAM productoras avg 8.94/10 — ALL WITH FULL CONTACT METHODS (email + IG + phone/WhatsApp + LinkedIn). Geo: MX 7 / ES 1 (87.5% MX-heavy per operator). NO BRAZIL. Anchor at 10: Anima Estudios MX (LARGEST animation studio in LATAM, Jose Garcia De Letona Co-Founder/COO Apollo verified + +52 55 5202 6858). 9s: Latido Films ES (Antonio Saura Director General Apollo verified + +34 915 488 877), Art Kingdom MX (3 Apollo verified DMs + WhatsApp +52 155 227 21510 + Cinépolis/Videocine clients), MODE MEDIA MX (Georgie Uris Founder Apollo verified + +52 55 4047 5427 + H&M/Visa/MasterCard clients), The Motion Lab MX (Rodrigo Maldonado Founder Apollo verified + +52 55 2322 8493 + RED BULL/NIKE/NETFLIX/AMAZON clients). 8.5s: Undertk Studio MX (Renata Torrescano Creative Director Apollo verified + 3 phones MX/CA/UK), La Habichuela Mágica MX (Luis Angel Gonzalez + Elias Tapia Apollo verified + +52 81 1507 1255), Ocelote Films MX (Luis Perez EP Apollo verified + WhatsApp). 14 Apollo verified DMs across the 8 leads. All 8 strict-IG verified. All 8 have direct phone/WhatsApp. All 8 have LinkedIn for the primary DM. Mining context: 19 Apollo bulk rounds across 200+ candidate domains + phone enrichment via WebFetch + targeted WebSearch.",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "methodology": "corporate-tier LATAM mining + phone enrichment: WebFetch every company + Apollo verified-only + strict IG verify + phone via website/WebSearch + LinkedIn from Apollo + 8.5+ floor + dedup against 350+ tracked domains"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-21",
+   "source_date": "2026-06-21",
+   "file": "leads-2026-06-21.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-06-21T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "8 productoras 100% FRESH (verified against ALL past batches) avg 9.19/10 — deploys Monday 2026-06-22. Geo: MX 4 / ES 4 (balanced). NO BRAZIL. Anchors at 10: Iconoclast Mexico (CDMX Polanco, Pablo Boyero + Nicolas Blankenhorn Apollo verified, IG @iconoclast.tv 103k), Televisa MX (LA MÁS GRANDE telenovelas, Jose Ignacio Gomez Cisneros Apollo verified, IG @televisa 2M), Apaches Entertainment ES (Enrique López Lavigne CEO/Fundador Apollo verified, Madrid +34 91 519 42 83, IG @apachesfilms). 9s: Globomedia ES (3 Apollo DMs, +34 91 728 5740), Caballo Films ES (As Bestas Cannes 2022 + Antidisturbios, Clara Lago + Belen Sanchez Apollo verified, +34 91 542 5171), Atípica Films ES (La Isla Mínima/Marshland, Oscar Manzano + Ivan Benjumea Apollo verified, +34 91 367 6776). 8.5: La Casa de Cine MX (Toronto Kids Award, email-only). 8: Ojo MX (Mara Garcia Apollo verified, IG @ojo.mx, no phone surfaced). 11 Apollo verified DMs across the 8 leads. 7/8 strict-IG verified (La Casa de Cine email-only). 6/8 have direct phone. Mantarraya DROPPED (was in leads-2026-06-09). CAVEAT logged: Televisa Apollo data had Eduardo Meza Rodriguez DECEASED Oct 2021 — used Jose Ignacio Gomez Cisneros instead.",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "methodology": "20+ Apollo bulk rounds across 350+ candidate domains + parallel WebFetch + WebSearch phone enrichment + strict-IG verify + dedup against ALL past batch files"
+   }
+  },
+  {
+   "batch_id": "batch-2026-06-23",
+   "source_date": "2026-06-23",
+   "file": "leads-2026-06-23.json",
+   "lead_count": 8,
+   "approved": true,
+   "approved_at": "2026-06-23T00:00:00.000Z",
+   "status": "archived",
+   "disable_carry_forward": true,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "8 productoras 100% FRESH avg 8.88/10. Geo: ES 5 / MX 2 / AR 1. NO BRAZIL. Anchors at 10: Pokeepsie Films ES (Alex de la Iglesia + Carolina Bang founders, Banijay Iberia equity, HBO Max/Netflix/Amazon/Disney+, IG @pokeepsie_films 31k), Nostromo Pictures ES (Adrián Guerra + Núria Valls founders, 40+ films Russell Crowe/Johnny Depp/Penélope Cruz, BBC Night Manager S2, Netflix trilogy A través de mi ventana, +34 93 368 1985, IG @nostromopictures 11k). 9s: Arcadia Motion Pictures ES (Barcelona, HBO Max/Netflix/MAX, +34 93 414 3071), MOD Producciones ES (Madrid, Helen Marti Donoghue EP, IG @mod_producciones 14k). 8.5s: Mulata Films AR (Maite Echave Cofundadora, email-only), Encinta MX (Daniel Alejandre Director, email-only), Home Films MX (Fredy Wollenstein AMC CEO, IG @homefilms). 7.5 BORDERLINE: Vertigo Films Spain (Spanish subsidiary of UK Vertigo, Tomas Garcia Post-Production Supervisor, email-only). 13 Apollo verified DMs across the 8 leads. 4/8 strict-IG verified. 3/8 have phone. Mining context: 40+ Apollo bulk rounds across 500+ candidate domains; corporate-tier ES yielded the major hits. Mantarraya lesson: 100% dedup-verified against ALL past batch files.",
+   "supply_metrics": {
+    "valid_leads": 8,
+    "methodology": "fast corporate-tier mining: 40+ Apollo bulk rounds + parallel WebFetch + WebSearch phone enrichment + strict IG verify + dedup against ALL past batches"
+   },
+   "archived_at": "2026-06-24T21:56:59.063Z"
+  }
+ ],
+ "active_batch_id": "batch-2026-07-02",
+ "timezone": "America/New_York",
+ "last_updated": "2026-07-02T17:23:01.956Z"
 }
