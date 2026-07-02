@@ -362,7 +362,7 @@
   "country": "Mexico",
   "channel": "whatsapp",
   "linkedinUrl": "https://mx.linkedin.com/company/cobrafilms",
-  "whatsapp": null,
+  "whatsapp": "523310662270",
   "why": "Estudio de cine/TV/branded (Guadalajara), LinkedIn de compañía.",
   "dm": "Iván López-Barba",
   "variant": "A",
@@ -371,7 +371,8 @@
    "A": "Hola Iván, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
    "B": "Hola Iván, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
    "C": "Hola Iván, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
-  }
+  },
+  "waConfidence": "medium"
  },
  {
   "company": "Quinto Espacio",
@@ -460,7 +461,7 @@
   "country": "Argentina",
   "channel": "whatsapp",
   "linkedinUrl": "https://ar.linkedin.com/company/oklacompany",
-  "whatsapp": null,
+  "whatsapp": "5491170736235",
   "why": "Agencia de producción+marketing (Mercedes-Benz, Adidas, Nestlé), LinkedIn.",
   "dm": null,
   "variant": "A",
@@ -469,7 +470,8 @@
    "A": "Hola, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
    "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
    "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
-  }
+  },
+  "waConfidence": "medium"
  },
  {
   "company": "Cacodelphia Studios",
@@ -606,7 +608,7 @@
   "country": "Colombia",
   "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/humansfilms",
-  "whatsapp": null,
+  "whatsapp": "573105831107",
   "why": "Estudio audiovisual indie; su WhatsApp es solo widget (sin número), LinkedIn.",
   "dm": null,
   "variant": "A",
@@ -615,7 +617,8 @@
    "A": "Hola, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
    "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
    "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
-  }
+  },
+  "waConfidence": "high"
  },
  {
   "company": "Septima Films",
@@ -681,22 +684,6 @@
    "C": "Hola Mariano, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
   },
   "waConfidence": "medium"
- },
- {
-  "company": "Mostro Films",
-  "country": "Mexico",
-  "channel": "whatsapp",
-  "linkedinUrl": "https://www.linkedin.com/company/mostro-tv",
-  "whatsapp": null,
-  "why": "Agencia de eventos/experiencias (MX/AR); los teléfonos son celulares personales, NO WhatsApp en frío. LinkedIn.",
-  "dm": null,
-  "variant": "A",
-  "message": "Hola, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
-  "messages": {
-   "A": "Hola, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
-   "B": "Hola, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
-   "C": "Hola, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
-  }
  },
  {
   "company": "D14S / Catorce Días",
@@ -785,7 +772,7 @@
   "country": "Chile",
   "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/in/camilamanns/",
-  "whatsapp": null,
+  "whatsapp": "56945013561",
   "why": "Cine de autor + servicios (CL); co-fundadora en LinkedIn.",
   "dm": "Camila Manns",
   "variant": "A",
@@ -794,7 +781,8 @@
    "A": "Hola Camila, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
    "B": "Hola Camila, ¿qué te pareció el correo que te enviamos desde UnaBase? Soy Scarlett. Si tienes cualquier duda sobre el correo, dime por acá. Y si quieres te hago un resumen rápido de lo que te propusimos, sin problema.",
    "C": "Hola Camila, soy Scarlett de UnaBase. Pregunta rápida: ¿alcanzaste a ver el correo que te enviamos? Si sí, cuéntame qué opinas. Si no, te lo reenvío por acá en un segundo."
-  }
+  },
+  "waConfidence": "medium"
  },
  {
   "company": "Sarape Films",
