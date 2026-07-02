@@ -2,7 +2,7 @@
  {
   "company": "Sinapsis Producción",
   "country": "Argentina",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/in/mario-borovich-41b08312/",
   "whatsapp": null,
   "why": "Casa de servicios/formatos internacional (Netflix, Telemundo; BA+Miami), LinkedIn profesional.",
@@ -18,7 +18,7 @@
  {
   "company": "Audioenlace Producciones",
   "country": "Colombia",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://co.linkedin.com/company/audioenlace-producciones",
   "whatsapp": null,
   "why": "Servicios B2B corporativos (marcas/agencias), canal LinkedIn.",
@@ -34,7 +34,7 @@
  {
   "company": "Magma Cine",
   "country": "Argentina",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": null,
   "whatsapp": null,
   "why": "Coproductora indie de prestigio (Cannes/SanSebastián). LinkedIn de compañía no confirmado, verificar; mejor vía IG/email fundadores.",
@@ -50,7 +50,7 @@
  {
   "company": "Cinematres",
   "country": "Argentina",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://linkedin.com/in/pablo-meza-92767ba/",
   "whatsapp": "5491168122274",
   "why": "Indie que publica WhatsApp de negocio + LinkedIn del fundador. LinkedIn primero, WA de seguimiento.",
@@ -82,7 +82,7 @@
  {
   "company": "Cinebrand",
   "country": "Spain",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://es.linkedin.com/company/cinebrand",
   "whatsapp": "34678430141",
   "why": "Agencia de branded content (ES) que publica WhatsApp de negocio. LinkedIn primero.",
@@ -98,7 +98,7 @@
  {
   "company": "Burning Blue",
   "country": "Colombia",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/in/jorge-forero/",
   "whatsapp": null,
   "why": "Arthouse de prestigio (Cannes/Berlin), nota profesional al fundador.",
@@ -114,7 +114,7 @@
  {
   "company": "Tisproductions",
   "country": "Colombia",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://co.linkedin.com/company/tisproductions",
   "whatsapp": null,
   "why": "Estudio grande de series (Paramount, 15k+ followers), WhatsApp inapropiado; LinkedIn.",
@@ -130,7 +130,7 @@
  {
   "company": "Haddock Films",
   "country": "Argentina",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://ar.linkedin.com/in/vanessa-ragone-68485519",
   "whatsapp": null,
   "why": "Casa internacional ganadora del Oscar, nota profesional a la CEO.",
@@ -146,7 +146,7 @@
  {
   "company": "Caudiovisual",
   "country": "Spain",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/in/carlos-llorca/",
   "whatsapp": "34614233945",
   "why": "Productora comercial (Valencia/Madrid) con WhatsApp de negocio publicado. LinkedIn primero.",
@@ -162,7 +162,7 @@
  {
   "company": "Aleph Cine",
   "country": "Argentina",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://ar.linkedin.com/company/aleph-cine",
   "whatsapp": null,
   "why": "Casa establecida de cine/TV (Netflix/Disney+), LinkedIn de compañía.",
@@ -178,7 +178,7 @@
  {
   "company": "Thau Honduras",
   "country": "Honduras",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/in/luis-flores-alvarenga-272b821b7/",
   "whatsapp": null,
   "why": "Productora chica; el fundador mantiene LinkedIn activo, toque menos invasivo.",
@@ -194,7 +194,7 @@
  {
   "company": "Fábrica Visual",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": null,
   "whatsapp": null,
   "why": "Video corporativo/industrial B2B, encaja LinkedIn (buscar página de compañía).",
@@ -242,7 +242,7 @@
  {
   "company": "Voilà Estudios",
   "country": "Chile",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/voilaestudios",
   "whatsapp": null,
   "why": "Estudio de producción/diseño corporativo internacional, LinkedIn.",
@@ -258,7 +258,7 @@
  {
   "company": "Elote Films",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/elote-films",
   "whatsapp": null,
   "why": "Casa comercial/corporativa CDMX con página LinkedIn.",
@@ -290,7 +290,7 @@
  {
   "company": "Pampa Films",
   "country": "Argentina",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://ar.linkedin.com/company/pampa-films-s-a",
   "whatsapp": null,
   "why": "Casa establecida de largos/series (AR), LinkedIn de compañía.",
@@ -306,7 +306,7 @@
  {
   "company": "Media Branders",
   "country": "Argentina",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://ar.linkedin.com/company/mediabranders",
   "whatsapp": "541154628440",
   "why": "Casa B2B corporativa (World Bank, Intel, MercadoLibre) con LinkedIn + WhatsApp. Alto valor, LinkedIn primero.",
@@ -322,7 +322,7 @@
  {
   "company": "Nomad Estudio",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://mx.linkedin.com/company/nomad-espa-a",
   "whatsapp": null,
   "why": "Agencia de publicidad + producción MX/ES, LinkedIn.",
@@ -338,7 +338,7 @@
  {
   "company": "Bengala Films",
   "country": "Italy",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://it.linkedin.com/company/bengala-films",
   "whatsapp": null,
   "why": "Casa de producción internacional (IT), LinkedIn (ojo colisiones de nombre).",
@@ -354,7 +354,7 @@
  {
   "company": "Cobra Films",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://mx.linkedin.com/company/cobrafilms",
   "whatsapp": null,
   "why": "Estudio de cine/TV/branded (Guadalajara), LinkedIn de compañía.",
@@ -370,7 +370,7 @@
  {
   "company": "Quinto Espacio",
   "country": "Peru",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://pe.linkedin.com/company/quintoespacio",
   "whatsapp": null,
   "why": "Productora audiovisual/publicidad (Lima, Xiaomi), LinkedIn.",
@@ -386,7 +386,7 @@
  {
   "company": "Molvo Films",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://mx.linkedin.com/company/molvo-films",
   "whatsapp": null,
   "why": "Agencia comercial de lujo (Chanel, Cartier, Adidas), LinkedIn.",
@@ -402,7 +402,7 @@
  {
   "company": "Zenith Adventure Media",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/in/benjaminsf/",
   "whatsapp": null,
   "why": "Media house de aventura/outdoor con LinkedIn del fundador.",
@@ -418,7 +418,7 @@
  {
   "company": "La Casa Productora",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://mx.linkedin.com/company/la-casa-productora-lcp",
   "whatsapp": null,
   "why": "Casa CGI/3D corporativa 25+ años (Polanco, 38 premios), LinkedIn.",
@@ -434,7 +434,7 @@
  {
   "company": "Happy Monster",
   "country": "Mexico",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/happymonstermx-production-company",
   "whatsapp": "525555007533",
   "why": "Publica WhatsApp de negocio + LinkedIn. Alto valor, LinkedIn primero.",
@@ -450,7 +450,7 @@
  {
   "company": "Okla Co.",
   "country": "Argentina",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://ar.linkedin.com/company/oklacompany",
   "whatsapp": null,
   "why": "Agencia de producción+marketing (Mercedes-Benz, Adidas, Nestlé), LinkedIn.",
@@ -466,7 +466,7 @@
  {
   "company": "Cacodelphia Studios",
   "country": "Argentina",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/cacodelphia/",
   "whatsapp": "5491125700592",
   "why": "Estudio de virtual production alto valor (Netflix, Chanel) con LinkedIn + WhatsApp. LinkedIn primero.",
@@ -482,7 +482,7 @@
  {
   "company": "Estudios Gabriel García Márquez",
   "country": "Mexico",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/estudiosggm/",
   "whatsapp": "5215580111566",
   "why": "Estudio MX grande (Luis Miguel, Oscuro Deseo) con LinkedIn + WhatsApp. LinkedIn primero.",
@@ -498,7 +498,7 @@
  {
   "company": "64A Films",
   "country": "Colombia",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/64afilms",
   "whatsapp": null,
   "why": "Casa de servicios internacional premiada (16+ años), LinkedIn.",
@@ -514,7 +514,7 @@
  {
   "company": "Forja Studios",
   "country": "Colombia",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/86712225/",
   "whatsapp": "573012422976",
   "why": "Estudio animación/VFX con LinkedIn + WhatsApp de negocio. LinkedIn primero.",
@@ -530,7 +530,7 @@
  {
   "company": "Exodo Animation Studios",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/exodoanimation",
   "whatsapp": null,
   "why": "Estudio CGI internacional (18 años, FNAF/Paladins), LinkedIn.",
@@ -562,7 +562,7 @@
  {
   "company": "GeoTV, Productora Audiovisual",
   "country": "Peru",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://pe.linkedin.com/company/productora-geotv",
   "whatsapp": null,
   "why": "Productora/agencia creativa (Lima) con LinkedIn.",
@@ -578,7 +578,7 @@
  {
   "company": "Estudio Shout",
   "country": "Costa Rica",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://cr.linkedin.com/company/estudio-shout",
   "whatsapp": null,
   "why": "Estudio animación/VFX (Marvel What If…), LinkedIn.",
@@ -594,7 +594,7 @@
  {
   "company": "Humans Films",
   "country": "Colombia",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/humansfilms",
   "whatsapp": null,
   "why": "Estudio audiovisual indie; su WhatsApp es solo widget (sin número), LinkedIn.",
@@ -610,7 +610,7 @@
  {
   "company": "Septima Films",
   "country": "Colombia",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/in/jorge-andres-botero-botero-5b456495/",
   "whatsapp": null,
   "why": "Casa de cine/TV (Bogotá), fundador en LinkedIn.",
@@ -626,7 +626,7 @@
  {
   "company": "Vertigo Films Spain",
   "country": "Spain",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/vertigofilms",
   "whatsapp": null,
   "why": "Distribuidor/productor internacional grande (grupo Wild Bunch), LinkedIn.",
@@ -642,7 +642,7 @@
  {
   "company": "Frame",
   "country": "Argentina",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://ar.linkedin.com/company/frameproductora",
   "whatsapp": "5491155813642",
   "why": "Casa de servicios grande (Netflix/Disney/Warner, BA+Miami) con LinkedIn + WhatsApp. LinkedIn primero.",
@@ -658,7 +658,7 @@
  {
   "company": "KOKALEKA",
   "country": "Dominican Republic",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": null,
   "whatsapp": null,
   "why": "Post/comercial (Santo Domingo); sin página LinkedIn clara, buscar a un director por nombre.",
@@ -674,7 +674,7 @@
  {
   "company": "Mostro Films",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/mostro-tv",
   "whatsapp": null,
   "why": "Agencia de eventos/experiencias (MX/AR); los teléfonos son celulares personales, NO WhatsApp en frío. LinkedIn.",
@@ -690,7 +690,7 @@
  {
   "company": "D14S / Catorce Días",
   "country": "Mexico",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/catorce-dias",
   "whatsapp": "525611244024",
   "why": "Agencia creativa multi-oficina (MX/CO) con LinkedIn + WhatsApp. LinkedIn primero.",
@@ -706,7 +706,7 @@
  {
   "company": "Redefinition / 146XR Studio",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://mx.linkedin.com/company/redefinition-mx",
   "whatsapp": null,
   "why": "Media/AI/virtual production (CDMX) con LinkedIn de compañía.",
@@ -722,7 +722,7 @@
  {
   "company": "Voltage Productions",
   "country": "Panama",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://pa.linkedin.com/in/guillermo-b%C3%A1rcenas-53b72337",
   "whatsapp": null,
   "why": "Casa de servicios internacional (Panamá), apuntar al EP/dueño.",
@@ -738,7 +738,7 @@
  {
   "company": "Oye Films",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://mx.linkedin.com/company/oyefilms",
   "whatsapp": null,
   "why": "Agencia/producción/post (CDMX+Querétaro, 30+ marcas), LinkedIn.",
@@ -754,7 +754,7 @@
  {
   "company": "Fantasma Films",
   "country": "Mexico",
-  "channel": "both",
+  "channel": "whatsapp",
   "linkedinUrl": "https://mx.linkedin.com/company/fantasma-films",
   "whatsapp": "528182725146",
   "why": "Productora (Monterrey+CDMX) con LinkedIn + WhatsApp de negocio. LinkedIn primero.",
@@ -770,7 +770,7 @@
  {
   "company": "Cinestación",
   "country": "Chile",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/in/camilamanns/",
   "whatsapp": null,
   "why": "Cine de autor + servicios (CL); co-fundadora en LinkedIn.",
@@ -786,7 +786,7 @@
  {
   "company": "Sarape Films",
   "country": "Mexico",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://www.linkedin.com/company/sarape-films/",
   "whatsapp": null,
   "why": "Documental de impacto (B Corp, CANACINE), página LinkedIn.",
@@ -802,7 +802,7 @@
  {
   "company": "Grappi Multimedia",
   "country": "Chile",
-  "channel": "linkedin",
+  "channel": "whatsapp",
   "linkedinUrl": "https://cl.linkedin.com/in/sebastianpando/",
   "whatsapp": null,
   "why": "Audiovisual corporativo + agencia (CL); fundador en LinkedIn.",
