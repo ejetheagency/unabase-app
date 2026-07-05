@@ -1,13 +1,29 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-07-05",
+   "source_date": "2026-07-05",
+   "file": "leads-2026-07-05.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-07-05T18:53:37.725Z",
+   "status": "active",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras — pool dispatch + DEEP ENRICHMENT of top-scoring incomplete leads (5 of 8 rescued to full standard via site+press+IG+Apollo/Hunter cross-exam; 3 dropped for dead/compromised sites caught by link-liveness). Named decision-maker + deliverable email + live IG on 10/10; all 3 gates clean (link-liveness/audit/dedup). Geo MX3/AR2/CO2/PE1/CL1/DR1. Names incl. Maite Alberdi (Micromundo), Diego Luna/Gael (La Corriente del Golfo), Mónica Lozano (Alebrije), Axel Kuschevatzky (Infinity Hill). avg 9.06.",
+   "supply_metrics": {
+    "mode": "pool_dispatch+enrich",
+    "dispatched": 10
+   }
+  },
+  {
    "batch_id": "batch-2026-07-02",
    "source_date": "2026-07-02",
    "file": "leads-2026-07-02.json",
    "lead_count": 10,
    "approved": true,
    "approved_at": "2026-07-02T17:23:01.950Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "10 productoras POOL DISPATCH from the 2026-07-01 fresh farm — full standard + NEW link-liveness gate (every website + IG opens live, 0 black screens), named decision-maker on all 10, deliverable/verified emails (Apollo/Hunter/site-published, none guessed), IG own-site-authority on 10/10. Geo MX3/AR2/CO2/UY1/PE1/CR1 (MX plurality). Festival pedigree: Sundance/Cannes/Berlinale/Ariel. avg 9.15.",
@@ -956,7 +972,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-07-02",
+ "active_batch_id": "batch-2026-07-05",
  "timezone": "America/New_York",
- "last_updated": "2026-07-02T17:23:01.956Z"
+ "last_updated": "2026-07-05T18:53:37.726Z"
 }
