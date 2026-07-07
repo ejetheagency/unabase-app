@@ -66,11 +66,11 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .lc{font-weight:800;font-size:17px;color:#fff;letter-spacing:-.3px;line-height:1.2;word-break:break-word}
 .lh-sub{font-size:10px;color:var(--mt);font-weight:500;margin-top:2px}
 .lh-sub strong{color:var(--t2);font-weight:600}
-.send-slot{display:inline-flex;align-items:center;gap:4px;margin-top:4px;padding:2px 8px;font-size:9.5px;font-weight:500;letter-spacing:.2px;color:var(--mt);background:rgba(255,207,51,.06);border:1px solid rgba(255,207,51,.22);border-radius:999px;white-space:nowrap;cursor:default}
-.send-slot b{color:var(--amber,#ffcf33);font-weight:700;font-variant-numeric:tabular-nums}
-.send-slot .ss-tz{opacity:.75}
-.send-slot .ss-loc{opacity:.6}
-.lead.compact .send-slot{font-size:9px;padding:1px 6px}
+.pb-sendslot{display:flex;align-items:center;gap:7px;margin:0 0 12px;padding:6px 10px;font-size:10.5px;font-weight:500;color:var(--mt);background:rgba(255,207,51,.05);border:1px solid rgba(255,207,51,.2);border-radius:7px;white-space:nowrap;overflow:hidden}
+.pb-sendslot .pss-ic{font-size:12px;opacity:.85;flex:0 0 auto}
+.pb-sendslot .pss-tx{color:var(--t2,#cfcfe0)}
+.pb-sendslot .pss-tx b{color:var(--amber,#ffcf33);font-weight:700;font-variant-numeric:tabular-nums;margin:0 1px}
+.pb-sendslot .pss-sub{margin-left:auto;opacity:.6;font-size:9.5px;text-align:right}
 
 /* Task score */
 .lh-score{font-size:16px;font-weight:900;margin-top:8px;letter-spacing:1px}
@@ -1645,7 +1645,6 @@ function renderDay(){
         <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
         <div class="lc">${esc(l.companyName)}${_ejeBadge}</div>
         <div class="lh-sub"><strong>${esc(first)}</strong>${_ejeContactBadge}${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
-        ${(function(){var s=sendSlotChile(l.country);if(!s)return '';return `<div class="send-slot" title="Programá el correo a esta hora (reloj de Chile) para que llegue ~8:00 AM, hora natural en ${esc(s.country)}. Ajustado por zona horaria y horario de verano.">⏱ Enviar <b>${s.chile}</b> <span class="ss-tz">hora Chile</span>${s.same?' <span class="ss-loc">(local)</span>':` <span class="ss-loc">→ ~8 AM ${esc(s.country)}</span>`}</div>`;})()}
         <div class="lh-score ${scCls}">${done} / ${total}</div>
         <div class="ls s${si}">${SL[si]}</div>
         ${fuTag}
@@ -2094,6 +2093,7 @@ function openPB(d){
   </div>`:'';
 
   document.getElementById('pbB').innerHTML=`
+    ${(function(){var s=sendSlotChile(l.country);if(!s)return '';return `<div class="pb-sendslot" title="Programá el correo a esta hora (reloj de Chile) para que llegue a una hora natural (~8:00 AM) en ${esc(s.country)}. Ajustado por zona horaria + horario de verano."><span class="pss-ic">⏱</span><span class="pss-tx">Programar envío <b>${s.chile}</b> hora Chile</span><span class="pss-sub">${s.same?'(hora local)':`llega ~8 AM en ${esc(s.country)}`}</span></div>`;})()}
     ${actionSection}
     ${refuerzoSection}
     ${paso2Section}
