@@ -66,6 +66,11 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .lc{font-weight:800;font-size:17px;color:#fff;letter-spacing:-.3px;line-height:1.2;word-break:break-word}
 .lh-sub{font-size:10px;color:var(--mt);font-weight:500;margin-top:2px}
 .lh-sub strong{color:var(--t2);font-weight:600}
+.send-slot{display:inline-flex;align-items:center;gap:4px;margin-top:4px;padding:2px 8px;font-size:9.5px;font-weight:500;letter-spacing:.2px;color:var(--mt);background:rgba(255,207,51,.06);border:1px solid rgba(255,207,51,.22);border-radius:999px;white-space:nowrap;cursor:default}
+.send-slot b{color:var(--amber,#ffcf33);font-weight:700;font-variant-numeric:tabular-nums}
+.send-slot .ss-tz{opacity:.75}
+.send-slot .ss-loc{opacity:.6}
+.lead.compact .send-slot{font-size:9px;padding:1px 6px}
 
 /* Task score */
 .lh-score{font-size:16px;font-weight:900;margin-top:8px;letter-spacing:1px}
@@ -1094,6 +1099,26 @@ function adjustTimeStr(fu,country){
   return fu.timeStr;
 }
 
+// ═══ SEND-TIME SLOT (per-country, Chile clock) ═══
+// The operator works on the Chilean clock. To land in the recipient's inbox at a
+// natural local morning hour, the email must be SCHEDULED at the equivalent Santiago
+// time. This returns that Chile-clock time (DST-accurate via IANA tz), so the operator
+// just programs the send for it. Target local arrival = 8:00 AM in the recipient country.
+const SEND_LOCAL_HOUR=8; // natural local arrival hour (recipient country)
+function _tzOffsetMin(tz,date){
+  const p=new Intl.DateTimeFormat('en-US',{timeZone:tz,hour12:false,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'}).formatToParts(date).reduce((a,x)=>{a[x.type]=x.value;return a;},{});
+  let hh=parseInt(p.hour,10)%24;
+  const asUTC=Date.UTC(+p.year,+p.month-1,+p.day,hh,+p.minute,+p.second);
+  return Math.round((asUTC-date.getTime())/60000); // minutes ahead of UTC
+}
+function _fmt12(mins){mins=((mins%1440)+1440)%1440;let h=Math.floor(mins/60),m=mins%60;const ap=h<12?'AM':'PM';let hh=h%12;if(hh===0)hh=12;return hh+(m?(':'+String(m).padStart(2,'0')):'')+' '+ap;}
+function sendSlotChile(country){
+  const tz=COUNTRY_TZ[country]; if(!tz) return null;
+  const now=new Date();
+  const diffMin=_tzOffsetMin('America/Santiago',now)-_tzOffsetMin(tz,now); // Chile − country
+  return {chile:_fmt12(SEND_LOCAL_HOUR*60+diffMin), local:_fmt12(SEND_LOCAL_HOUR*60), country, same:(diffMin===0)};
+}
+
 function getFollowUp(rec,lead,context){
   const st=rec.st||'none';
   if(SEQ_STOPS.includes(st))return{active:false,reason:st,color:'none'};
@@ -1620,6 +1645,7 @@ function renderDay(){
         <div class="lh-scorebadge">${l.unabaseScore||'?'}/10</div>
         <div class="lc">${esc(l.companyName)}${_ejeBadge}</div>
         <div class="lh-sub"><strong>${esc(first)}</strong>${_ejeContactBadge}${l.contactTitle?` · <span style="color:var(--pp)">${esc(l.contactTitle)}</span>`:''} · ${esc(l.country)}</div>
+        ${(function(){var s=sendSlotChile(l.country);if(!s)return '';return `<div class="send-slot" title="Programá el correo a esta hora (reloj de Chile) para que llegue ~8:00 AM, hora natural en ${esc(s.country)}. Ajustado por zona horaria y horario de verano.">⏱ Enviar <b>${s.chile}</b> <span class="ss-tz">hora Chile</span>${s.same?' <span class="ss-loc">(local)</span>':` <span class="ss-loc">→ ~8 AM ${esc(s.country)}</span>`}</div>`;})()}
         <div class="lh-score ${scCls}">${done} / ${total}</div>
         <div class="ls s${si}">${SL[si]}</div>
         ${fuTag}

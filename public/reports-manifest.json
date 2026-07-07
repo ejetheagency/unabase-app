@@ -1,13 +1,30 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-07-07",
+   "source_date": "2026-07-07",
+   "file": "leads-2026-07-07.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-07-07T15:04:01.475Z",
+   "status": "active",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras pool dispatch (Tue) from deep-enriched farm. Named DM + deliverable email + live IG on 10/10; 3 gates clean. NEW: per-country send-time scheduler (Chile-clock) shown on each lead card. Geo MX3/AR2/CO2/ES1/UY1/PE1. Names incl. Angélica Lares (Taller del Chucho/del Toro studio), Diego Peskins (Virgen), Marcela Rincón (Fosfenos). avg 9.17.",
+   "supply_metrics": {
+    "mode": "pool_dispatch",
+    "dispatched": 10,
+    "pool_usable_before": 81
+   }
+  },
+  {
    "batch_id": "batch-2026-07-06",
    "source_date": "2026-07-06",
    "file": "leads-2026-07-06.json",
    "lead_count": 10,
    "approved": true,
    "approved_at": "2026-07-06T16:16:14.808Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "10 productoras pool dispatch (Monday) — drawn largely from the deep-enriched round-2 pool. Named decision-maker + deliverable email + live own-site IG on 10/10; all 3 gates clean (link-liveness/audit/dedup). Geo MX3/AR2/ES1/CL1/GT1/CO1/PE1 (MX plurality, 7/10 priority-tier). Names incl. Marisa Fernández Armenteros (Buenapinta, Cinco lobitos/El agente topo), Jose Cohen (Cactus, H2Omx), Mauricio Escobar (La Danta, Cadejo Blanco). avg 8.9.",
@@ -989,7 +1006,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-07-06",
+ "active_batch_id": "batch-2026-07-07",
  "timezone": "America/New_York",
- "last_updated": "2026-07-06T16:16:14.809Z"
+ "last_updated": "2026-07-07T15:04:01.481Z"
 }
