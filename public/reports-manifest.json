@@ -1,13 +1,31 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-07-08",
+   "source_date": "2026-07-08",
+   "file": "leads-2026-07-08.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-07-08T16:39:25.536Z",
+   "status": "active",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras pool dispatch. NEW: ships the evidence-based CONSULTATIVE email copy per lead (pitchEmailES) — the ~40%-reply winner from the Supabase analysis (vs ~4% generic), hand-personalized from each companys real named credits + tailored question + Scarlett Lillo sign-off; gatekeeper opener for role inboxes. Named DM + deliverable email + live IG on 10/10; 3 gates clean. Geo MX3/AR2/ES2/CO1/UY1/DR1. Names incl. Gastón Pavlovich (Fábrica/Scorsese), Fernanda Valadez (Enaguas/Sujo), Sandra... (Little Spain/Goya). avg 9.06.",
+   "supply_metrics": {
+    "mode": "pool_dispatch",
+    "dispatched": 10,
+    "pool_usable_before": 71,
+    "copy": "consultative_v1"
+   }
+  },
+  {
    "batch_id": "batch-2026-07-07",
    "source_date": "2026-07-07",
    "file": "leads-2026-07-07.json",
    "lead_count": 10,
    "approved": true,
    "approved_at": "2026-07-07T15:04:01.475Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "10 productoras pool dispatch (Tue) from deep-enriched farm. Named DM + deliverable email + live IG on 10/10; 3 gates clean. NEW: per-country send-time scheduler (Chile-clock) shown on each lead card. Geo MX3/AR2/CO2/ES1/UY1/PE1. Names incl. Angélica Lares (Taller del Chucho/del Toro studio), Diego Peskins (Virgen), Marcela Rincón (Fosfenos). avg 9.17.",
@@ -1006,7 +1024,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-07-07",
+ "active_batch_id": "batch-2026-07-08",
  "timezone": "America/New_York",
- "last_updated": "2026-07-07T15:04:01.481Z"
+ "last_updated": "2026-07-08T16:39:25.543Z"
 }

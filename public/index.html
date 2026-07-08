@@ -1769,7 +1769,7 @@ function computeExecutionCycle(rec, lead) {
     // agency role inboxes (video@, ideas@, casting@) and Spanish-language
     // role naming (cuentas, proyectos, creativo) that earlier batches mis-
     // routed to personal greeting.
-    const GENERIC_RE = /^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos|video|ideas|casting|rrss|social|proyectos|projects|cuentas|accounts|creativo|creativa|creative|account|operaciones|operations|finance|finanzas|hello\.|hola\.|info\.|contact\.)@/i;
+    const GENERIC_RE = /^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos|video|ideas|casting|rrss|social|proyectos|projects|cuentas|accounts|creativo|creativa|creative|account|operaciones|operations|finance|finanzas|acercate|acércate|dime|escribinos|escribenos|escríbenos|consultas|hello\.|hola\.|info\.|contact\.)@/i;
     const fullEmail = (lead.contactEmail || '').toLowerCase();
     const localPart = fullEmail.split('@')[0] || '';
     const isFreeProvider = /@(gmail|hotmail|yahoo|outlook|icloud|live)\./i.test(fullEmail);
@@ -1793,15 +1793,21 @@ function computeExecutionCycle(rec, lead) {
       //   "hey, te habla scarlett desde una base solo pasaba para preguntarte
       //    que pensaste del email que te enviamos. quedo atenta"
       paso1.message = `${greeting}\n\nTe habla ${SENDER} desde ${PRODUCT}, solo pasaba para preguntarte qué pensaste del email que te enviamos.\n\nQuedo atenta.\n\n${SENDER}`;
+    } else if (lead.pitchEmailES) {
+      // EVIDENCE-BASED CONSULTATIVE COPY (2026-07-08). The Supabase reply-rate
+      // analysis showed the handcrafted "consultative" opener replied ~40% vs
+      // ~4% for the generic template below (10x), and that real per-lead
+      // personalization (naming actual projects/clients) IS the mechanism. So
+      // when a lead ships a pre-personalized pitchEmailES (built from its real
+      // credits: named projects + tailored question + consultative framing +
+      // "Scarlett Lillo" sign-off, gatekeeper opener for role inboxes), use it
+      // verbatim on the first touch. Falls back to the generic template below
+      // for any lead without one. Reversible: clear pitchEmailES to revert.
+      paso1.message = lead.pitchEmailES;
     } else {
-      // First-touch email — ALWAYS use the LOCKED simple template per
-      // operator-doctrine 2026-06-01. The verbose AI-generated emailCercana
-      // bodies that some recent batches shipped (rich client-list pitches
-      // like "Vimos el trabajo de Primo Content produciendo para Apple,
-      // Google, Nike, Levi's...") are too tedious — the operator wants the
-      // short locked template every time. lead.emailCercana is no longer
-      // consulted on cycle 1; the rendered email is deterministic from
-      // {greeting, companyName, PRODUCT, SENDER} only.
+      // First-touch fallback — the generic locked template (kept for leads
+      // that don't carry a pitchEmailES). NOTE: this is the ~4%-reply copy;
+      // prefer shipping pitchEmailES per lead.
       const productLine = (typeof WS !== 'undefined' && WS.kind === 'client')
         ? `En ${PRODUCT} armamos un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.`
         : `En ${PRODUCT} armamos un sistema justamente para eso.`;
