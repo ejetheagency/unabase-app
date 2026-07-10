@@ -1118,6 +1118,19 @@ function sendSlotChile(country){
   return {chile:_fmt12(SEND_LOCAL_HOUR*60+diffMin), local:_fmt12(SEND_LOCAL_HOUR*60), country, same:(diffMin===0)};
 }
 
+// ─── Channel-fallback (CHANNEL-FALLBACK-DOCTRINE, 2026-07-10) ────────────────
+// A great lead that has exhausted alt-channel enrichment (no usable WhatsApp;
+// LinkedIn is never usable — the operator has no premium) is NEVER parked at the
+// slow monthly cadence. It becomes an email-nurtured lead: a fresh-angle email to
+// a ROTATED address on a tighter cadence (default 21d). The marker lead.emailFallback
+// is written by the revival / health-check automation once _altEnrichTries caps out.
+function emailFallbackDue(lead,lastMainTs){
+  const ef=lead&&lead.emailFallback;
+  if(!ef||!ef.active)return null;
+  const cadence=((+ef.cadenceDays||21))*24*3600000;
+  return{nextStep:'Email (canal alterno)',dueMs:lastMainTs+cadence};
+}
+
 function getFollowUp(rec,lead,context){
   const st=rec.st||'none';
   if(SEQ_STOPS.includes(st))return{active:false,reason:st,color:'none'};
@@ -1172,7 +1185,7 @@ function getFollowUp(rec,lead,context){
   const cycleNum=mainMsgs.length; // 1 after first main, 2 after second, etc.
   const lastMainTs=cycleNum?new Date(mainMsgs[cycleNum-1].ts).getTime():anchorTs;
 
-  let nextStep,channel,dueMs;
+  let nextStep,channel,dueMs,fbFlag=false;
 
   if(cycleNum===1){
     // Cycle 1: IG at +48h (only if handle exists), then main email at +168h
@@ -1192,12 +1205,21 @@ function getFollowUp(rec,lead,context){
     const hasPhone=!!(lead&&(lead.contactPhone||lead.apolloCompanyPhone));
     const liInvalid=isChannelInvalid(rec,'li');
     const waInvalid=isChannelInvalid(rec,'wa');
-    if(!liDone&&hasLi&&!liInvalid){nextStep='LinkedIn (último canal)';channel='li';dueMs=lastMainTs+ALT_DELAY;}
+    // Email-fallback is the ADJUDICATED verdict "no usable alt-channel" (set once
+    // alt-enrichment caps out). It wins over LI/WA: a landline on file is NOT a
+    // usable WhatsApp, and LinkedIn is never usable — so honor the verdict first.
+    const efDue=emailFallbackDue(lead,lastMainTs);
+    if(efDue){nextStep=efDue.nextStep;channel='email';dueMs=efDue.dueMs;fbFlag=true;}
+    else if(!liDone&&hasLi&&!liInvalid){nextStep='LinkedIn (último canal)';channel='li';dueMs=lastMainTs+ALT_DELAY;}
     else if(!waDone&&hasPhone&&!waInvalid){nextStep='WhatsApp (último canal)';channel='wa';dueMs=lastMainTs+ALT_DELAY;}
     else{nextStep='Touch base mensual';channel='email';dueMs=lastMainTs+MONTHLY_LEN;}
   }else{
-    // Cycle complete (4 touches: email · DM · email · alt) → monthly touch-base
-    nextStep='Touch base mensual';channel='email';dueMs=lastMainTs+MONTHLY_LEN;
+    // Cycle complete (4 touches: email · DM · email · alt). Email-fallback leads
+    // (no usable alt-channel) get the tighter rotated-address cadence; everyone
+    // else drops to the monthly touch-base.
+    const ef=emailFallbackDue(lead,lastMainTs);
+    if(ef){nextStep=ef.nextStep;channel='email';dueMs=ef.dueMs;fbFlag=true;}
+    else{nextStep='Touch base mensual';channel='email';dueMs=lastMainTs+MONTHLY_LEN;}
   }
 
   const diff=dueMs-nowMs;
@@ -1228,7 +1250,7 @@ function getFollowUp(rec,lead,context){
     else timeStr='hace '+Math.floor(over/(24*3600000))+'d';
   }
 
-  return{active:true,step:{label:nextStep,channel},state,timeStr,color,dueMs,cycle:cycleNum};
+  return{active:true,step:{label:nextStep,channel},state,timeStr,color,dueMs,cycle:cycleNum,fallback:fbFlag};
 }
 
 let PL=[];// past leads
@@ -1742,8 +1764,11 @@ function computeExecutionCycle(rec, lead) {
     paso1.targetKind = 'WhatsApp';
     paso1.targetLabel = phone || '';
     paso1.targetLineHTML = `WhatsApp → <strong>${esc(phone || '')}</strong>`;
-    // Same plural-voice locked copy for IG and WhatsApp per doctrine
-    paso1.message = (lead.whatsappMessage && !hasPriorMsg) ? lead.whatsappMessage
+    // Same plural-voice locked copy for IG and WhatsApp per doctrine.
+    // EXCEPTION: a REVIVED lead (lead._revived) carries a purpose-built alt-channel
+    // WhatsApp message that already references the prior email ("¿qué te pareció la
+    // propuesta…?") — so use it even though prior msgs exist. (CHANNEL-FALLBACK / revival)
+    paso1.message = (lead.whatsappMessage && (!hasPriorMsg || lead._revived)) ? lead.whatsappMessage
       : `Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde ${PRODUCT} y queríamos asegurarnos de que no se perdiera 🙌\nSi quieren, se los contamos por acá.`;
   } else {
     paso1.channelKey = 'email';
@@ -1818,6 +1843,32 @@ function computeExecutionCycle(rec, lead) {
         + `Lo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\n`
         + `${productLine}\n\n`
         + `Si te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\n`
+        + `${SENDER}`;
+    }
+    // ── Channel-fallback re-touch (CHANNEL-FALLBACK-DOCTRINE, 2026-07-10) ──────
+    // This lead exhausted alt-channel enrichment (no usable WhatsApp; LinkedIn not
+    // usable). Instead of a repeat follow-up to the same inbox, send a FRESH-ANGLE
+    // email to a ROTATED, site-verified address (a different inbox than the one
+    // already contacted) — a genuine new attempt. rotateTo is set by the revival /
+    // health-check automation; when null we re-touch the primary with a new hook.
+    if (fu.fallback && lead.emailFallback && lead.emailFallback.active) {
+      const ef = lead.emailFallback;
+      const toAddr = ef.rotateTo || lead.contactEmail || '';
+      const rotated = !!(ef.rotateTo && ef.rotateTo.toLowerCase() !== (lead.contactEmail || '').toLowerCase());
+      // Greeting safety: only greet by first name when we're re-touching the SAME
+      // personal primary. A ROTATED address may belong to a DIFFERENT person than
+      // lead.contactName, so use the neutral company greeting to avoid a wrong name.
+      const primaryPersonal = !GENERIC_RE.test(lead.contactEmail || '') && !!first;
+      const efGreeting = (!rotated && primaryPersonal)
+        ? ('Hola ' + first + ',')
+        : ('Hola equipo de ' + lead.companyName + ',');
+      paso1.targetLabel = toAddr;
+      paso1.ccEmail = null;
+      paso1.targetLineHTML = `Email → <strong>${esc(toAddr)}</strong> <span class="step-who">(${rotated ? 'canal alterno' : 're-toque'})</span>`;
+      paso1.message = `${efGreeting}\n\n`
+        + `Te escribo de nuevo desde ${PRODUCT}, ahora por esta vía.\n\n`
+        + `Lo resumo en una línea: ayudamos a productoras como ${lead.companyName} a ordenar y ver los presupuestos de cada proyecto en un solo lugar, sin planillas sueltas.\n\n`
+        + `Si te hace sentido, te muestro en 10 min cómo lo están usando otras productoras. Quedo atenta.\n\n`
         + `${SENDER}`;
     }
   }
@@ -2474,7 +2525,7 @@ function actionTypeLabel(fu){
   const ch=fu.step.channel;
   if(ch==='ig'||ch==='instagram')return 'DM Instagram';
   if(ch==='wa'||ch==='whatsapp')return 'WhatsApp';
-  if(ch==='email')return fu.cycle>=2?'Follow-up Email':'Email';
+  if(ch==='email')return fu.fallback?'Email · canal alterno':(fu.cycle>=2?'Follow-up Email':'Email');
   return fu.step.label||'';
 }
 function renderAccionAhora(){

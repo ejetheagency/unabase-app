@@ -982,7 +982,13 @@
       "extracted-from-company-website",
       "handle-matches-company-name"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [],
+    "contactPhone": "525611244024",
+    "whatsapp": "525611244024",
+    "whatsappMessage": "Hola Juan, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
+    "altChannel": "whatsapp",
+    "_revived": true,
+    "_revivedAt": "2026-07-10"
   },
   {
     "companyName": "Nomad Estudio",
@@ -1134,7 +1140,18 @@
       "web-search-confirmed",
       "handle-matches-company-name"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [],
+    "emailFallback": {
+      "note": "primary was Fran; rotate to named DM Ignacio Brignone",
+      "setAt": "2026-07-10",
+      "active": true,
+      "reason": "no WhatsApp after 2 deep enrichment passes (LinkedIn not usable — no premium)",
+      "rotateTo": "ignacio@okla.com.ar",
+      "freshAngle": true,
+      "cadenceDays": 21,
+      "previousAddress": "fran.gm@okla.com.ar"
+    },
+    "_altEnrichTries": 2
   },
   {
     "companyName": "Forja Studios",
@@ -1232,7 +1249,18 @@
     ],
     "_prestigeFlags": [
       "ig_followers_unverified_auth_wall"
-    ]
+    ],
+    "emailFallback": {
+      "note": "primary was D. del Risco; rotate to named DM Daniel Rodriguez",
+      "setAt": "2026-07-10",
+      "active": true,
+      "reason": "no WhatsApp after 2 deep enrichment passes (LinkedIn not usable — no premium)",
+      "rotateTo": "drodriguez@estudioshout.com",
+      "freshAngle": true,
+      "cadenceDays": 21,
+      "previousAddress": "ddelrisco@estudioshout.com"
+    },
+    "_altEnrichTries": 2
   },
   {
     "companyName": "Trilogy Studio",
@@ -1271,7 +1299,13 @@
       "extracted-from-company-website",
       "handle-matches-company-name"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [],
+    "contactPhone": "50762309762",
+    "whatsapp": "50762309762",
+    "whatsappMessage": "Hola Mario, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
+    "altChannel": "whatsapp",
+    "_revived": true,
+    "_revivedAt": "2026-07-10"
   },
   {
     "companyName": "GeoTV. Productora Audiovisual",
@@ -1847,7 +1881,7 @@
     "contactName": "Gastón Gallo",
     "contactTitle": "Co-Founder & Director of Virtual Production",
     "contactEmail": "gastongallo@cacodelphia.com",
-    "contactPhone": "+54 9 11 2570 0592",
+    "contactPhone": "5491125700592",
     "instagramUrl": "https://www.instagram.com/cacodelphiastudios",
     "instagramHandle": "cacodelphiastudios",
     "instagramFollowers": 14000,
@@ -1875,7 +1909,12 @@
       "extracted-from-company-website",
       "handle-matches-company-name"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [],
+    "whatsapp": "5491125700592",
+    "whatsappMessage": "Hola Gastón, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
+    "altChannel": "whatsapp",
+    "_revived": true,
+    "_revivedAt": "2026-07-10"
   },
   {
     "companyName": "Subterránea Films",
@@ -2010,7 +2049,7 @@
     "contactName": "Jim Biancardi",
     "contactTitle": "CEO",
     "contactEmail": "jbiancardi@voltage-panama.com",
-    "contactPhone": "+507 6670 1111",
+    "contactPhone": "50766701111",
     "instagramUrl": "https://www.instagram.com/voltageproductions",
     "instagramHandle": "voltageproductions",
     "instagramFollowers": 3763,
@@ -2049,7 +2088,12 @@
       "extracted-from-company-website",
       "handle-matches-company-name"
     ],
-    "_prestigeFlags": []
+    "_prestigeFlags": [],
+    "whatsapp": "50766701111",
+    "whatsappMessage": "Hola Jim, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
+    "altChannel": "whatsapp",
+    "_revived": true,
+    "_revivedAt": "2026-07-10"
   },
   {
     "companyName": "Mostro Films",
@@ -3585,7 +3629,7 @@
     "twitterUrl": "https://twitter.com/septimafilms",
     "youtubeUrl": null,
     "vimeoUrl": "https://vimeo.com/user4009488",
-    "contactPhone": null,
+    "contactPhone": "573124408523",
     "emailPatterns": null,
     "scoutLog": [
       {
@@ -3750,8 +3794,7 @@
       "paso3": "Comentar algo sobre su enfoque documental o reconocimiento en premios",
       "dm": "Hola! Vi su trabajo documental y los comerciales que hacen. Me imagino que manejar presupuestos entre formatos tan distintos debe ser complejo. ¿Usan algo específico para organizarse?"
     },
-    "whatsappMessage": null,
-    "linkedinPlaybook": null,
+    "whatsappMessage": "Hola Jorge, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
     "outreachSequence": [
       "Dia 1: Email directo con specificLine",
       "Dia 2: Seguir en y engagement",
@@ -3761,7 +3804,11 @@
     "keyInsight": "Productora con mix documental/comercial establecida necesita herramientas para manejar dos modelos financieros opuestos simultáneamente.",
     "source_date": "2026-05-20",
     "approved": true,
-    "approved_at": "2026-05-20T03:36:53.601Z"
+    "approved_at": "2026-05-20T03:36:53.601Z",
+    "whatsapp": "573124408523",
+    "altChannel": "whatsapp",
+    "_revived": true,
+    "_revivedAt": "2026-07-10"
   },
   {
     "companyName": "Aleph Cine",
@@ -5581,10 +5628,6 @@
       "dm": "¡Hola Samuel! Increíble el nivel de producción que manejan con Paramount. Me imagino que coordinar presupuestos entre tantos formatos debe ser intenso. ¿Tienes 15 min esta semana para platicar?"
     },
     "whatsappMessage": "Hola Samuel, soy Scarlett de UnaBase. Vimos el trabajo que hacen con Paramount - impresionante nivel. Me imagino que manejar presupuestos entre series, realities y deportes debe ser complejo. ¿Tienes 15 min esta semana?",
-    "linkedinPlaybook": {
-      "connectionNote": "Hola Samuel, admiro el trabajo de TisProductions con Paramount",
-      "followUp": "Samuel, con la variedad de formatos que producen, me imagino que organizar presupuestos entre proyectos debe ser todo un desafío. Me encantaría platicar 15 min sobre cómo otros estudios lo están resolviendo."
-    },
     "outreachSequence": [
       "Día 1: Email específico sobre gestión multi-formato",
       "Día 2: LinkedIn connection con mensaje personalizado",
@@ -5598,7 +5641,18 @@
     "_igVerifiedManually": true,
     "_igVerifiedSource": "operator-spot-check-2026-05-19",
     "_igVerified": true,
-    "_igVerificationReason": "operator-verified-correction"
+    "_igVerificationReason": "operator-verified-correction",
+    "emailFallback": {
+      "note": "primary was DM Samuel Duque; rotate to site role inbox",
+      "setAt": "2026-07-10",
+      "active": true,
+      "reason": "no WhatsApp after 2 deep enrichment passes (LinkedIn not usable — no premium)",
+      "rotateTo": "contacto@tisproductions.com",
+      "freshAngle": true,
+      "cadenceDays": 21,
+      "previousAddress": "samuel.duque@tisproductions.com"
+    },
+    "_altEnrichTries": 2
   },
   {
     "companyName": "KOKALEKA",
@@ -22813,7 +22867,18 @@
     "_emailStatus": "website_published",
     "_emailVerifiedAt": "2026-05-28T18:46:02.794Z",
     "_emailVerificationSource": "website:confirmed",
-    "_emailSweepNote": "Existing email confirmed published on company site (A1 stamp 2026-05-28)."
+    "_emailSweepNote": "Existing email confirmed published on company site (A1 stamp 2026-05-28).",
+    "emailFallback": {
+      "note": "only role inbox info@ on file; no distinct 2nd address found — fresh-angle re-touch to info@, and keep hunting a named-DM email",
+      "setAt": "2026-07-10",
+      "active": true,
+      "reason": "no WhatsApp after 2 deep enrichment passes (LinkedIn not usable — no premium)",
+      "rotateTo": null,
+      "freshAngle": true,
+      "cadenceDays": 21,
+      "previousAddress": "info@sinapsisproduccion.com"
+    },
+    "_altEnrichTries": 2
   },
   {
     "country": "Argentina",
@@ -24354,7 +24419,18 @@
     },
     "_prestigeFlags": [
       "revived_pilot_lead_basic_icp_only"
-    ]
+    ],
+    "emailFallback": {
+      "note": "primary was founder Alvaro; rotate to site role inbox",
+      "setAt": "2026-07-10",
+      "active": true,
+      "reason": "no WhatsApp after 2 deep enrichment passes (LinkedIn not usable — no premium)",
+      "rotateTo": "contacto@voilaestudios.com",
+      "freshAngle": true,
+      "cadenceDays": 21,
+      "previousAddress": "alvaro@voilaestudios.com"
+    },
+    "_altEnrichTries": 2
   },
   {
     "companyName": "Container Films DVA",
@@ -26583,7 +26659,7 @@
     ],
     "companyBrief": "Cinematres es una productora argentina fundada en 2002 que desarrolla largometrajes y cortometrajes nacionales y coproducciones, además de dar servicios de producción. Han trabajado con clientes como Facebook y tienen un portfolio de proyectos que incluye Las Ineses, La De Messi y Buenos Aires 100 KM.",
     "contactEmail": "pablomeza@cinematres.com.ar",
-    "contactPhone": "11 6812 2274",
+    "contactPhone": "5491168122274",
     "contactTitle": "Fundador & Productor",
     "emailCercana": "Hola Pablo! Soy Scarlett del equipo de UnaBase.\n\n¿Lograron ver el correo que les envié? Si es que no, les mando un resumen.\n\nSaludos,\nScarlett",
     "instagramBio": "See Instagram photos and videos from Cinematres (@cinematres_argentina) Log into Instagram",
@@ -26618,8 +26694,7 @@
     },
     "contactLinkedIn": null,
     "instagramHandle": "cinematres_argentina",
-    "whatsappMessage": "Pablo — vi que manejan varios largometrajes como Las Ineses y Buenos Aires 100 KM. cómo hacen para que no se mezcle todo entre proyectos?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
-    "linkedinPlaybook": null,
+    "whatsappMessage": "Hola Pablo, ¿qué te pareció la propuesta que te enviamos desde UnaBase? Soy Scarlett, por cierto. ¿Alguna duda con el correo? Escríbeme por acá y te ayudo a entenderlo.",
     "outreachSequence": [
       "Dia 1: Enviar email cercana a pablomeza@cinematres.com.ar",
       "Dia 2: Seguir y dar engagement en Instagram @cinematres_argentina",
@@ -26651,7 +26726,11 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "whatsapp": "5491168122274",
+    "altChannel": "whatsapp",
+    "_revived": true,
+    "_revivedAt": "2026-07-10"
   },
   {
     "country": "Argentina",
@@ -26782,10 +26861,6 @@
     "contactLinkedIn": null,
     "instagramHandle": "haddockfilms",
     "whatsappMessage": "Vanessa — vi que Haddock produce para Netflix con un equipo de 23 personas. cómo están manejando tantos proyectos con ese equipo?\nte puedo mostrar cómo lo están ordenando otras productoras en tu misma situación — lo vemos 10 min?",
-    "linkedinPlaybook": {
-      "followUp": "Vanessa, después de revisar el portfolio de Haddock Films, creo que UnaBase podría ser muy útil para optimizar la coordinación de sus 23 colaboradores en proyectos múltiples. ¿Te interesaría una breve llamada esta semana?",
-      "connectionNote": "Admiro el trabajo de Haddock Films con Netflix - me encantaría conectar y compartir insights sobre gestión de equipos en producción audiovisual."
-    },
     "outreachSequence": [
       "Dia 1: Enviar email cercana + conectar LinkedIn",
       "Dia 2: Llamada telefónica de seguimiento",
@@ -26812,7 +26887,18 @@
     "_reactivationReason": "pre-may-19 stuck cohort. never replied to first contact, soft re-igniting",
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
-    ]
+    ],
+    "emailFallback": {
+      "note": "primary was DM Vanessa Ragone; rotate to site role inbox",
+      "setAt": "2026-07-10",
+      "active": true,
+      "reason": "no WhatsApp after 2 deep enrichment passes (LinkedIn not usable — no premium)",
+      "rotateTo": "info@haddockfilms.com",
+      "freshAngle": true,
+      "cadenceDays": 21,
+      "previousAddress": "vanessa.ragone@haddockfilms.com"
+    },
+    "_altEnrichTries": 2
   },
   {
     "country": "Argentina",
@@ -27144,5 +27230,66 @@
     "_prestigeFlags": [
       "forgotten_pilot_lead_reactivated"
     ]
+  },
+  {
+    "companyName": "Argentina Cine",
+    "website": "https://argentinacine.com",
+    "country": "Argentina",
+    "industry": "film",
+    "tier": "tier1",
+    "channelPriority": "email",
+    "contactPath": "decision_maker_email",
+    "contactName": "Sandra Sbarra",
+    "contactTitle": "Executive Producer",
+    "contactEmail": "sandra@argentinacine.com",
+    "companyEmail": "productora@argentinacine.com",
+    "contactPhone": "+54 11 5368 5860",
+    "instagramUrl": "https://www.instagram.com/argentinacine/",
+    "instagramHandle": "argentinacine",
+    "instagramFollowers": 17000,
+    "additionalContacts": [
+      {
+        "name": "Diego Gonzalez Sureda",
+        "title": "Executive Producer (bounced — replaced)",
+        "email": null
+      },
+      {
+        "name": "Rosario Caprarulo",
+        "title": "Executive Producer",
+        "email": "rosario@argentinacine.com"
+      },
+      {
+        "name": "Georgina Orellana",
+        "title": "Executive Producer",
+        "email": null
+      }
+    ],
+    "companyBrief": "Productora argentina top-5 — Buenos Aires, fundada 1999. Producción integral de cine + advertising. Sandra Sbarra Executive Producer Apollo verified (alternate DM tras bounce de diego@). Rosario Caprarulo + Georgina Orellana additional EPs. IG @argentinacine 17k followers + 365 posts ✓ strict-verified. BOUNCE RECOVERY 2026-06-17: diego@argentinacine.com bounced → sandra@argentinacine.com Apollo verified (alternate EP, same corporate domain).",
+    "unabaseScore": 9,
+    "contactSource": "apollo_verified",
+    "contactConfidence": "confirmed",
+    "_bouncedEmail": "diego@argentinacine.com",
+    "_bounceRecoveredAt": "2026-06-17T20:19:33.304Z",
+    "_discoveryMethod": "bounce recovery 2026-06-17: Apollo re-unlock surfaced alternate EP at same domain",
+    "source_date": "2026-06-17",
+    "approved": true,
+    "readyToSend": true,
+    "_operatorVerified": false,
+    "pitchEmailES": "",
+    "emailCercana": "",
+    "_dispatched_batch_id": "batch-2026-06-17",
+    "_recoveredFrom": "bounce_2026-06-17",
+    "_batchDate": "2026-06-17",
+    "emailFallback": {
+      "note": "primary was Sandra; rotate to named DM Rosario Caprarulo (also productora@ CC available)",
+      "setAt": "2026-07-10",
+      "active": true,
+      "reason": "no WhatsApp after 2 deep enrichment passes (LinkedIn not usable — no premium)",
+      "rotateTo": "rosario@argentinacine.com",
+      "freshAngle": true,
+      "cadenceDays": 21,
+      "previousAddress": "sandra@argentinacine.com"
+    },
+    "_altEnrichTries": 2
   }
 ]
