@@ -1,13 +1,30 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-07-10",
+   "source_date": "2026-07-10",
+   "file": "leads-2026-07-10.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-07-10T14:46:19.201Z",
+   "status": "active",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "10 productoras pool dispatch. Consultative pitchEmailES per lead (evidence-based winning copy). Named DM + deliverable email + live IG on 10/10; 3 gates clean. Geo MX3/AR2/ES2/UY1/PA1/CR1 (MX plurality, 7/10 priority-tier). Names incl. Mauricio Calderón (Colmena/Berlinale), Yulene Olaizola (Malacosa/Venecia-Netflix), Karina Avellán (Pacífica/Clara Sola-Cannes). avg 8.9.",
+   "supply_metrics": {
+    "mode": "pool_dispatch",
+    "dispatched": 10,
+    "copy": "consultative_v1"
+   }
+  },
+  {
    "batch_id": "batch-2026-07-08",
    "source_date": "2026-07-08",
    "file": "leads-2026-07-08.json",
    "lead_count": 10,
    "approved": true,
    "approved_at": "2026-07-08T16:39:25.536Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "10 productoras pool dispatch. NEW: ships the evidence-based CONSULTATIVE email copy per lead (pitchEmailES) — the ~40%-reply winner from the Supabase analysis (vs ~4% generic), hand-personalized from each companys real named credits + tailored question + Scarlett Lillo sign-off; gatekeeper opener for role inboxes. Named DM + deliverable email + live IG on 10/10; 3 gates clean. Geo MX3/AR2/ES2/CO1/UY1/DR1. Names incl. Gastón Pavlovich (Fábrica/Scorsese), Fernanda Valadez (Enaguas/Sujo), Sandra... (Little Spain/Goya). avg 9.06.",
@@ -1024,7 +1041,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-07-08",
+ "active_batch_id": "batch-2026-07-10",
  "timezone": "America/New_York",
- "last_updated": "2026-07-08T16:39:25.543Z"
+ "last_updated": "2026-07-10T14:46:19.207Z"
 }
