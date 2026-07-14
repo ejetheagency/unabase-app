@@ -17,7 +17,20 @@ const path = require('path');
 const PUB = path.join(__dirname, '..', 'public');
 const GATE = process.argv.includes('--gate');
 
-const dom = u => { try { return new URL(/^https?:/.test(u) ? u : 'https://' + u).hostname.replace(/^www\./, '').toLowerCase(); } catch { return ''; } };
+const dom = u => {
+  try {
+    const url = new URL(/^https?:/.test(u) ? u : 'https://' + u);
+    const h = url.hostname.replace(/^www\./, '').toLowerCase();
+    // Social profiles share ONE host — key on host + first path segment (the handle)
+    // so distinct profiles (instagram.com/a vs instagram.com/b) don't collide as dups
+    // when a lead uses its IG as the clickable link (no live standalone site).
+    if (/^(instagram|facebook|vimeo|youtube|tiktok|twitter|x)\.com$/.test(h)) {
+      const seg = (url.pathname.split('/').filter(Boolean)[0] || '').toLowerCase();
+      if (seg) return h + '/' + seg;
+    }
+    return h;
+  } catch { return ''; }
+};
 
 let manifest;
 try { manifest = JSON.parse(fs.readFileSync(path.join(PUB, 'reports-manifest.json'), 'utf8')); }
