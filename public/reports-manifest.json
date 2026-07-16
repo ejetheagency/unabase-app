@@ -1,13 +1,31 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-07-15",
+   "source_date": "2026-07-15",
+   "file": "leads-2026-07-15.json",
+   "lead_count": 10,
+   "approved": true,
+   "approved_at": "2026-07-15T14:47:52.615Z",
+   "status": "active",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "Autonomous daily-run, approved via phone. Consultative pitchEmailES, credit-verified pool.",
+   "supply_metrics": {
+    "mode": "pool_dispatch",
+    "dispatched": 10,
+    "copy": "consultative_v1",
+    "credits": "web_verified"
+   }
+  },
+  {
    "batch_id": "batch-2026-07-14",
    "source_date": "2026-07-14",
    "file": "leads-2026-07-14.json",
    "lead_count": 10,
    "approved": true,
    "approved_at": "2026-07-14T15:37:30.673Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "10 productoras pool dispatch (farm-2026-07-13, credits web-verified). Consultative pitchEmailES naming only verified credits. FULL contact harvest: all published inboxes + IGs per lead (no guessed emails). Geo MX4 AR2 CO1 GT1 ES2 (MX plurality, 8 priority-tier). 3 gates clean.",
@@ -1076,7 +1094,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-07-14",
+ "active_batch_id": "batch-2026-07-15",
  "timezone": "America/New_York",
- "last_updated": "2026-07-14T15:37:30.674Z"
+ "last_updated": "2026-07-15T14:47:52.615Z"
 }
