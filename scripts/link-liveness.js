@@ -58,6 +58,19 @@ async function checkInstagram(url) {
   } catch (e) { return { ok: false, reason: (e.name === 'AbortError' ? 'timeout' : (e.cause?.code || e.message)) }; }
 }
 
+// Retry a check a few times before declaring a link dead. A transient network blip
+// (timeout / ECONNREFUSED from one IP at one moment) must NOT fail the gate — only a
+// link that is dead across all attempts is a real failure. (2026-07-16 reliability fix.)
+async function checkWithRetry(fn, url, tries = 3) {
+  let last;
+  for (let i = 0; i < tries; i++) {
+    last = await fn(url);
+    if (last.ok) return last;
+    if (i < tries - 1) await new Promise(r => setTimeout(r, 1200 * (i + 1)));
+  }
+  return last;
+}
+
 (async () => {
   const raw = JSON.parse(fs.readFileSync(file, 'utf8'));
   const leads = Array.isArray(raw) ? raw : (raw.leads || []);
@@ -72,12 +85,12 @@ async function checkInstagram(url) {
 
     if (web) {
       checked++;
-      const r = await checkWebsite(web);
+      const r = await checkWithRetry(checkWebsite, web);
       if (!r.ok) fails.push({ name, field: 'website', url: web, reason: r.reason });
     }
     if (ig) {
       checked++;
-      const r = await checkInstagram(ig);
+      const r = await checkWithRetry(checkInstagram, ig);
       if (!r.ok) fails.push({ name, field: 'instagram', url: ig, reason: r.reason });
       else if (r.soft) softs.push({ name, url: ig });
     }
