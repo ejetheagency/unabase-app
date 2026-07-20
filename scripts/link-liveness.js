@@ -61,7 +61,7 @@ async function checkInstagram(url) {
 // Retry a check a few times before declaring a link dead. A transient network blip
 // (timeout / ECONNREFUSED from one IP at one moment) must NOT fail the gate — only a
 // link that is dead across all attempts is a real failure. (2026-07-16 reliability fix.)
-async function checkWithRetry(fn, url, tries = 3) {
+async function checkWithRetry(fn, url, tries = 5) {
   let last;
   for (let i = 0; i < tries; i++) {
     last = await fn(url);
