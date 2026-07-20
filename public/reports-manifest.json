@@ -1,13 +1,31 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-07-20",
+   "source_date": "2026-07-20",
+   "file": "leads-2026-07-20.json",
+   "lead_count": 20,
+   "approved": true,
+   "approved_at": "2026-07-20T14:15:50.669Z",
+   "status": "active",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "DOUBLE batch (20) - catch-up for the unpublished 2026-07-17 report + today. Credit-verified pool dispatch, consultative pitchEmailES, MX-plurality.",
+   "supply_metrics": {
+    "mode": "pool_dispatch_double",
+    "dispatched": 20,
+    "copy": "consultative_v1",
+    "credits": "web_verified"
+   }
+  },
+  {
    "batch_id": "batch-2026-07-15",
    "source_date": "2026-07-15",
    "file": "leads-2026-07-15.json",
    "lead_count": 10,
    "approved": true,
    "approved_at": "2026-07-15T14:47:52.615Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "Autonomous daily-run, approved via phone. Consultative pitchEmailES, credit-verified pool.",
@@ -1094,7 +1112,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-07-15",
+ "active_batch_id": "batch-2026-07-20",
  "timezone": "America/New_York",
- "last_updated": "2026-07-15T14:47:52.615Z"
+ "last_updated": "2026-07-20T14:15:50.673Z"
 }
