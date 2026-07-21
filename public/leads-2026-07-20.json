@@ -19,29 +19,30 @@
   "contactName": "Juan Carlos Rulfo",
   "contactTitle": "Director / Co-founder",
   "contactEmail": "info@lamedialuna.com.mx",
-  "companyEmail": null,
+  "companyEmail": "info@lamedialuna.com.mx",
   "contactPhone": null,
   "contactLinkedIn": null,
   "whatsapp": null,
   "altChannel": null,
   "instagramUrl": "https://www.instagram.com/lamedialunaproducciones/",
   "instagramHandle": "lamedialunaproducciones",
-  "instagramFollowers": null,
+  "instagramFollowers": 26,
   "additionalContacts": [
    {
     "name": "Eugenia Montiel Pagés",
     "title": "Producer / Co-founder",
-    "email": null
+    "email": "eugenia@lamedialuna.com.mx"
    }
   ],
   "companyBrief": "Mexico City documentary house led by director Juan Carlos Rulfo and producer Eugenia Montiel Pages. Produced 'En el hoyo / In the Pit' (2006, Sundance World Cinema Documentary Grand Jury Prize), 'Los que se quedan' (2008), 'Del olvido al no me acuerdo' (1999, Ariel). IG @lamedialunaproducciones live. DM: Juan Carlos Rulfo.",
   "unabaseScore": 9.3,
-  "pitchEmailES": "Asunto: una pregunta sobre La Media Luna Producciones\n\nHola, quería saber si esta es la mejor forma de llegar a Juan Carlos Rulfo.\nSi no es con él, ¿con quién me recomendarías verlo?\n\nEstuve viendo lo de La Media Luna, de En el hoyo en Sundance a Los que se quedan después. Pocas casas de documental en México sostienen ese nivel dos veces seguidas.\n\nMe quedó una duda puntual: cuando hay varios documentales en distintas etapas a la vez, rodaje de uno, post de otro, entrega de un tercero, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, le puedo mostrar en 10 minutos a Juan Carlos cómo lo resuelven otras productoras de documental en una situación parecida.\n\nScarlett Lillo"
+  "pitchEmailES": "Asunto: una pregunta sobre La Media Luna Producciones\n\nHola, quería saber si esta es la mejor forma de llegar a Juan Carlos Rulfo.\nSi no es con él, ¿con quién me recomendarías verlo?\n\nEstuve viendo lo de La Media Luna, de En el hoyo en Sundance a Los que se quedan después. Pocas casas de documental en México sostienen ese nivel dos veces seguidas.\n\nMe quedó una duda puntual: cuando hay varios documentales en distintas etapas a la vez, rodaje de uno, post de otro, entrega de un tercero, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, le puedo mostrar en 10 minutos a Juan Carlos cómo lo resuelven otras productoras de documental en una situación parecida.\n\nScarlett Lillo",
+  "founderInstagramHandle": "juancarlosrulfo"
  },
  {
   "_dispatched_batch_id": "batch-2026-07-20",
-  "_dispatched_at": "2026-07-20T14:11:07.843Z",
-  "_discoveryMethod": "pool dispatch (autonomous daily-run); gates verified; consultative pitchEmailES",
+  "_dispatched_at": "2026-07-21T16:13:19.841Z",
+  "_discoveryMethod": "pool dispatch (manual swap for Radiola - wrong-entity data); consultative pitchEmailES",
   "source_date": "2026-07-20",
   "approved": true,
   "readyToSend": true,
@@ -50,37 +51,32 @@
   "tier": "tier1",
   "contactPath": "decision_maker_email",
   "channelPriority": "email",
-  "contactSource": "hunter",
-  "contactConfidence": "likely",
-  "companyName": "Radiola Films",
-  "website": "https://radiolafilms.org",
+  "contactSource": "website",
+  "contactConfidence": "verified",
+  "companyName": "Violeta Cine",
+  "website": "https://www.instagram.com/violeta.cine/",
   "country": "Mexico",
-  "contactName": "Tatiana Huezo",
-  "contactTitle": "Director / Co-founder",
-  "contactEmail": "radiolafilmsproduction@gmail.com",
+  "contactName": "Melissa Castañeda",
+  "contactTitle": "Producer & Co-founder",
+  "contactEmail": "info@violetacine.com",
   "companyEmail": null,
   "contactPhone": null,
   "contactLinkedIn": null,
   "whatsapp": null,
   "altChannel": null,
-  "instagramUrl": "https://www.instagram.com/radiolafilms/",
-  "instagramHandle": "radiolafilms",
-  "instagramFollowers": null,
+  "instagramUrl": "https://www.instagram.com/violeta.cine/",
+  "instagramHandle": "violeta.cine",
+  "instagramFollowers": 1035,
   "additionalContacts": [
    {
-    "name": "Ernesto Pardo",
-    "title": "Co-founder / Cinematographer",
-    "email": null
-   },
-   {
-    "name": "Lena Esquenazi",
-    "title": "Co-founder / Sound designer",
+    "name": "Diego Hernández",
+    "title": "Director & Co-founder",
     "email": null
    }
   ],
-  "companyBrief": "Compania de CDMX (fundada 2020) de Tatiana Huezo, Ernesto Pardo y Lena Esquenazi. Produjo 'El Eco' (2023, Berlinale Encounters Mejor Direccion, 3 Arieles, San Sebastian Horizontes Latinos); ventas The Match Factory. Huezo (Tempestad, Noche de fuego) es una directora mayor. IG @radiolafilms live. DM: Tatiana Huezo.",
-  "unabaseScore": 9.3,
-  "pitchEmailES": "Asunto: una pregunta sobre Radiola Films\n\nHola, quería saber si esta es la mejor forma de llegar a Tatiana Huezo.\nSi no es con ella, ¿con quién me recomendarías verlo?\n\nEstuve viendo el recorrido de Radiola Films, de El Eco ganando en Berlinale Encounters hasta Horizontes Latinos en San Sebastián. Se nota el cuidado con el que eligen cada proyecto desde que fundaron la compañía.\n\nMe quedó una duda puntual: cuando manejan documentales de este calibre junto con las ventas internacionales que llevan con The Match Factory, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi tiene sentido, le puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo"
+  "companyBrief": "Tijuana, Baja California, productora de autor/docuficcion liderada por la productora Melissa Castaneda con el director Diego Hernandez (desde 2019). Creditos: 'Los Fundadores' (2021, Puma Mexico Mejor Pelicula FICUNAM + Mencion Especial FIDMarseille), 'Agua Caliente' (2022, FICUNAM), 'El Mirador' (2023). IG @violeta.cine ~1K. DM: Melissa Castaneda.",
+  "unabaseScore": 9,
+  "pitchEmailES": "Asunto: una pregunta sobre Violeta Cine\n\nHola, quería saber si esta es la mejor forma de llegar a Melissa Castañeda. Si no es con ella, ¿con quién me recomendarías verlo?\n\nEstuve viendo lo de Violeta, sobre todo Los Fundadores y su Puma a Mejor Película en FICUNAM. Un trabajo de autor muy fuerte desde Tijuana.\n\nMe quedó una duda puntual: cuando varios proyectos de autor corren a la vez entre rodaje, post y festivales, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo creativo, incluso en equipos bien armados.\n\nSi te hace sentido, les muestro en 10 minutos cómo lo resuelven otras productoras parecidas.\n\nScarlett Lillo"
  },
  {
   "_dispatched_batch_id": "batch-2026-07-20",
@@ -109,7 +105,7 @@
   "altChannel": null,
   "instagramUrl": "https://www.instagram.com/sociedadfantasma/",
   "instagramHandle": "sociedadfantasma",
-  "instagramFollowers": null,
+  "instagramFollowers": 14000,
   "additionalContacts": [
    {
     "name": "Lizeth Rodríguez",
@@ -145,7 +141,7 @@
   "country": "Mexico",
   "contactName": "Paulina Villavicencio",
   "contactTitle": "Founder / Owner-Producer",
-  "contactEmail": "disruptiva@disruptivafilms.com",
+  "contactEmail": "contacto@disruptivafilms.com",
   "companyEmail": null,
   "contactPhone": null,
   "contactLinkedIn": null,
@@ -153,11 +149,12 @@
   "altChannel": null,
   "instagramUrl": "https://www.instagram.com/disruptivafilms/",
   "instagramHandle": "disruptivafilms",
-  "instagramFollowers": 2480,
+  "instagramFollowers": 2997,
   "additionalContacts": [],
   "companyBrief": "Mexico City fiction/documentary house founded 2018 by CCC-trained producer Paulina Villavicencio. Produced 'Huesera: The Bone Woman' (2022, Tribeca Best New Narrative Director, Sitges, FICM, 4 Ariel Awards) and 'Despues' (2024, FICG Guadalajara). IG @disruptivafilms live (~2.5K). DM: Paulina Villavicencio.",
   "unabaseScore": 9.2,
-  "pitchEmailES": "Asunto: una pregunta sobre Disruptiva Films\n\nHola, quería saber si esta es la mejor forma de llegar a Paulina Villavicencio.\nSi no es con ella, ¿con quién me recomendarías verlo?\n\nEstuve viendo lo de Disruptiva Films, de Huesera pasando por Tribeca y Sitges hasta Despues en FICG Guadalajara. Se nota el criterio para movverse entre ficción y documental sin perder identidad.\n\nMe quedó una duda puntual: cuando ficción y documental corren en paralelo, con ritmos y estructuras de financiamiento tan distintos, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo"
+  "pitchEmailES": "Asunto: una pregunta sobre Disruptiva Films\n\nHola, quería saber si esta es la mejor forma de llegar a Paulina Villavicencio.\nSi no es con ella, ¿con quién me recomendarías verlo?\n\nEstuve viendo lo de Disruptiva Films, de Huesera pasando por Tribeca y Sitges hasta Despues en FICG Guadalajara. Se nota el criterio para movverse entre ficción y documental sin perder identidad.\n\nMe quedó una duda puntual: cuando ficción y documental corren en paralelo, con ritmos y estructuras de financiamiento tan distintos, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+  "founderInstagramHandle": "paulinaprimera"
  },
  {
   "_dispatched_batch_id": "batch-2026-07-20",
@@ -179,7 +176,7 @@
   "contactName": "Simón Mesa Soto",
   "contactTitle": "Director / Founder-Producer",
   "contactEmail": "ocultimo@gmail.com",
-  "companyEmail": null,
+  "companyEmail": "info@juan-sarmiento.com",
   "contactPhone": null,
   "contactLinkedIn": null,
   "whatsapp": null,
@@ -191,12 +188,13 @@
    {
     "name": "Juan Sarmiento G.",
     "title": "Cinematographer / Co-founder",
-    "email": null
+    "email": "info@juan-sarmiento.com"
    }
   ],
   "companyBrief": "Medellin, casa de cine de autor fundada 2017 por el director Simon Mesa Soto y el DoP Juan Sarmiento G. Produjo 'Amparo' (2021, Semana de la Critica Cannes) y 'Un Poeta / A Poet' (2025, Premio del Jurado Cannes Un Certain Regard). Coproduce con Alemania (Ma.Ja.De) y Suecia (Momento Film); ventas Luxbox. IG @ocultimo ~1.5K. DM: Simon Mesa Soto.",
   "unabaseScore": 9.6,
-  "pitchEmailES": "Asunto: una pregunta sobre Ocúltimo\n\nHola, quería saber si esta es la mejor forma de llegar a Simón Mesa Soto.\nSi no es con él, ¿con quién me recomendarías verlo?\n\nEstuve viendo lo de Ocúltimo, de Amparo en la Semana de la Crítica en Cannes a Un Poeta con el Premio del Jurado en Un Certain Regard este año. Ese recorrido en tan pocos años, con coproducciones en Alemania y Suecia de por medio, no es nada común.\n\nMe quedó una duda puntual: cuando coproducen con Ma.Ja.De y Momento Film a la vez que manejan ventas con Luxbox, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos y territorios?\n\nLo pregunto porque ese cruce entre monedas, socios y reportes suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo"
+  "pitchEmailES": "Asunto: una pregunta sobre Ocúltimo\n\nHola, quería saber si esta es la mejor forma de llegar a Simón Mesa Soto.\nSi no es con él, ¿con quién me recomendarías verlo?\n\nEstuve viendo lo de Ocúltimo, de Amparo en la Semana de la Crítica en Cannes a Un Poeta con el Premio del Jurado en Un Certain Regard este año. Ese recorrido en tan pocos años, con coproducciones en Alemania y Suecia de por medio, no es nada común.\n\nMe quedó una duda puntual: cuando coproducen con Ma.Ja.De y Momento Film a la vez que manejan ventas con Luxbox, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos y territorios?\n\nLo pregunto porque ese cruce entre monedas, socios y reportes suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+  "founderInstagramHandle": "simonmesasoto"
  },
  {
   "_dispatched_batch_id": "batch-2026-07-20",
@@ -230,7 +228,7 @@
    {
     "name": "Marité Ugás",
     "title": "Co-founder / Producer-Director",
-    "email": null
+    "email": "mariteugas@gmail.com"
    }
   ],
   "companyBrief": "Sudaca Films, Lima, productora de largometrajes de autor fundada por Mariana Rondon y Marite Ugas. Creditos: 'Pelo Malo' (2013, Concha de Oro Mejor Pelicula San Sebastian), 'Zafari' (2024, San Sebastian Horizontes Latinos), 'El chico que miente' (2011, Berlinale Generation). IG @sudacafilms live. DM: Mariana Rondon.",
@@ -301,7 +299,7 @@
   "contactName": "Manuel Ruiz Montealegre",
   "contactTitle": "Co-founder / Producer",
   "contactEmail": "manuel@mediodecontencion.com",
-  "companyEmail": null,
+  "companyEmail": "educacion@mediodecontencion.com",
   "contactPhone": null,
   "contactLinkedIn": null,
   "whatsapp": null,
@@ -589,14 +587,14 @@
   "contactName": "Isabella Parra",
   "contactTitle": "Founder / Producer",
   "contactEmail": "isabella@caleidoscopiocine.com",
-  "companyEmail": null,
+  "companyEmail": "soledad@caleidoscopiocine.com",
   "contactPhone": null,
   "contactLinkedIn": null,
   "whatsapp": null,
   "altChannel": null,
   "instagramUrl": "https://www.instagram.com/caleidoscopiocine/",
   "instagramHandle": "caleidoscopiocine",
-  "instagramFollowers": null,
+  "instagramFollowers": 1227,
   "additionalContacts": [],
   "companyBrief": "Caleidoscopio Cine, Quito, productora/distribuidora fundada 2011 por Isabella Parra. Creditos: 'Alba' (2016, Ana Cristina Barragan, estreno IFFR Rotterdam + Mencion Especial San Sebastian Horizontes Latinos), 'La Piel Pulpo' (2022, San Sebastian WIP Latam). IG @caleidoscopiocine live. DM: Isabella Parra.",
   "unabaseScore": 9.1,
@@ -630,7 +628,18 @@
   "instagramUrl": "https://www.instagram.com/nochenegraprod/",
   "instagramHandle": "nochenegraprod",
   "instagramFollowers": null,
-  "additionalContacts": [],
+  "additionalContacts": [
+   {
+    "name": "Kim Torres",
+    "title": "Director / Screenwriter",
+    "email": null
+   },
+   {
+    "name": "Nicole Chi Amén",
+    "title": "Director / Producer",
+    "email": null
+   }
+  ],
   "companyBrief": "San Jose, Costa Rica (fundada 2018). Productora de autor, nuevas voces y narrativas femeninas/disidentes. Produjo 'Si no ardemos, como iluminar la noche' (2025, Kim Torres, San Sebastian Nuevos Directores), el doc 'Guian' (2023, Visions du Reel) y 'La Picada' (Mejor Direccion SANFIC). IG @nochenegraprod live. DM: Alejandra Vargas Carballo.",
   "unabaseScore": 9.1,
   "pitchEmailES": "Asunto: una pregunta sobre Noche Negra\n\nHola Alejandra, ¿cómo estás?\n\nEstuve viendo lo de Noche Negra, de \"Si no ardemos, como iluminar la noche\" en San Sebastián Nuevos Directores a \"Guian\" en Visions du Reel. Se nota una línea de autor muy clara, sostenida entre ficción y documental sin perder identidad.\n\nMe quedó una duda puntual: cuando manejan ficción y documental en paralelo, con festivales y calendarios de estreno distintos para cada proyecto, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre producciones?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo"
@@ -662,7 +671,7 @@
   "altChannel": null,
   "instagramUrl": "https://www.instagram.com/nadadorcine/",
   "instagramHandle": "nadadorcine",
-  "instagramFollowers": 5179,
+  "instagramFollowers": 7913,
   "additionalContacts": [
    {
     "name": "Juan José López",
@@ -733,14 +742,14 @@
   "contactName": "Juan Manuel Egaña",
   "contactTitle": "Co-founder / Executive Producer",
   "contactEmail": "info@aplaplac.cl",
-  "companyEmail": null,
+  "companyEmail": "info@aplaplac.cl",
   "contactPhone": null,
   "contactLinkedIn": null,
   "whatsapp": null,
   "altChannel": null,
   "instagramUrl": "https://www.instagram.com/aplaplactv/",
   "instagramHandle": "aplaplactv",
-  "instagramFollowers": 8857,
+  "instagramFollowers": 8871,
   "additionalContacts": [
    {
     "name": "Álvaro Díaz",
@@ -777,14 +786,14 @@
   "contactName": "Alejandro Ugarte",
   "contactTitle": "Founder / Producer",
   "contactEmail": "ugarte@infractor.cl",
-  "companyEmail": null,
+  "companyEmail": "info@infractor.cl",
   "contactPhone": null,
   "contactLinkedIn": null,
   "whatsapp": null,
   "altChannel": null,
   "instagramUrl": "https://www.instagram.com/infractor_films/",
   "instagramHandle": "infractor_films",
-  "instagramFollowers": 4394,
+  "instagramFollowers": 4369,
   "additionalContacts": [],
   "companyBrief": "Santiago, Chile. Productora art-house fundada por Alejandro Ugarte. Produjo 'Perro Bomba' (2019, Mejor Pelicula + Premio del Publico + Mejor Actor, Malaga), 'La Madre, el Hijo y la Abuela' (2017, Torino Film Festival) y 'Patio de Chacales' (2024, estreno mundial Tallinn Black Nights, Mejor Director competencia debut). IG @infractor_films ~4.4K. DM: Alejandro Ugarte.",
   "unabaseScore": 9,
