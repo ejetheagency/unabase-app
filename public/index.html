@@ -2148,8 +2148,35 @@ function openPB(d){
     ${l.executionCycle&&l.executionCycle.day23?`<div class="str-row"><span class="str-k">Día 2–3</span><span class="str-v">${esc(l.executionCycle.day23)}</span></div>`:''}
   </div>`:'';
 
+  // RESPONSE HANDLER — the golden moment (2026-07-21 client meeting). The client's
+  // funnel converts when the prospect actually TALKS to their team. So the instant a
+  // lead REPLIES, script the second touch to drive there: acknowledge warmly, offer
+  // more info PLUS a FREE, no-compromise consulting meeting with the team. This is the
+  // niche — lower the barrier to the conversation that closes.
+  let responseSection='';
+  if(rec.st==='replied'){
+    const rFirst=(l.contactName||'').split(/\s+/)[0]||'';
+    const hola=rFirst?`Hola ${rFirst},`:'Hola,';
+    const prod=(typeof WS!=='undefined'&&WS.productName)?WS.productName:'UnaBase';
+    const sender=(typeof WS!=='undefined'&&WS.senderName)?WS.senderName:'Scarlett Lillo';
+    const rMsg=`${hola} qué bueno tener tu respuesta.\n\n`
+      +`Con gusto te cuento en más detalle cómo funciona ${prod} y en qué se diferencia.\n\n`
+      +`Y si te sirve, coordinamos una reunión corta con nuestro equipo, sin ningún compromiso, para que veas cómo trabajamos y resuelvas cualquier duda con calma. Vos preguntás lo que quieras y te mostramos cómo lo aplicaríamos a ${l.companyName||'tu productora'}.\n\n`
+      +`¿Te viene bien una llamada de 20 minutos esta semana? Me decís qué día y lo agendamos.\n\n${sender}`;
+    responseSection=`<div class="step" style="border:1px solid var(--am,#f59e0b);box-shadow:0 0 0 3px rgba(245,158,11,.10)">
+      <div class="step-head">
+        <div class="step-num" style="background:var(--am,#f59e0b);color:#0a0a0f">Respondió</div>
+        <div class="step-title">Ofrecé consultoría gratis, sin compromiso</div>
+      </div>
+      <div class="step-body-text" style="margin-bottom:8px">Momento clave: el objetivo ahora es llevarlos a <strong>hablar con el equipo</strong>. Dales más info y ofrecé una reunión gratuita, sin ningún compromiso. Ahí es donde se cierra.</div>
+      <div class="step-to">Responder por el mismo canal donde te escribieron</div>
+      <div class="msg"><pre>${esc(rMsg)}</pre><button class="mcpy" onclick="event.stopPropagation();cpM(this)">Copiar</button></div>
+    </div>`;
+  }
+
   document.getElementById('pbB').innerHTML=`
     ${(function(){var s=sendSlotChile(l.country);if(!s)return '';return `<div class="pb-sendslot" title="Programá el correo a esta hora (reloj de Chile) para que llegue a una hora natural (~8:00 AM) en ${esc(s.country)}. Ajustado por zona horaria + horario de verano."><span class="pss-ic">⏱</span><span class="pss-tx">Programar envío <b>${s.chile}</b> hora Chile</span><span class="pss-sub">${s.same?'(hora local)':`llega ~8 AM en ${esc(s.country)}`}</span></div>`;})()}
+    ${responseSection}
     ${actionSection}
     ${refuerzoSection}
     ${paso2Section}
