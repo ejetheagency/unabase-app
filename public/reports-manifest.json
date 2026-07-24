@@ -1,6 +1,30 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-07-24",
+      "source_date": "2026-07-24",
+      "file": "leads-2026-07-24.json",
+      "lead_count": 15,
+      "approved": false,
+      "status": "staged",
+      "disable_carry_forward": false,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "STAGED for 07-24: 10 core MX-plurality + 5 frontier (UY/PA/CR/PE/BO). Full enrichment, hold deploy.",
+      "supply_metrics": {
+        "mode": "pool_dispatch+fresh_frontier",
+        "dispatched": 15,
+        "core": 10,
+        "frontier": 5,
+        "new_countries": [
+          "Uruguay",
+          "Panama",
+          "Costa Rica",
+          "Peru",
+          "Bolivia"
+        ]
+      }
+    },
+    {
       "batch_id": "batch-2026-07-23",
       "source_date": "2026-07-23",
       "file": "leads-2026-07-23.json",
