@@ -18,7 +18,7 @@
     "country": "Mexico",
     "city": null,
     "contactName": "Sofía Gómez Córdova",
-    "contactTitle": "Socia fundadora / Directora",
+    "contactTitle": "CEO / Socia fundadora",
     "contactEmail": "info@brujazul.com",
     "companyEmail": "info@brujazul.com",
     "instagramUrl": "https://www.instagram.com/brujazul.cine/",
@@ -70,12 +70,12 @@
     "website": "https://petate.com",
     "country": "Mexico",
     "contactName": "Yolanda Cruz",
-    "contactTitle": "Fundadora, Directora y Productora",
+    "contactTitle": "Fundadora / Directora y Productora",
     "contactEmail": "petate@petate.com",
     "companyEmail": "petate@petate.com",
     "instagramUrl": "https://www.instagram.com/petatefilms/",
     "instagramHandle": "petatefilms",
-    "instagramFollowers": "~2400",
+    "instagramFollowers": "~2434",
     "additionalContacts": [],
     "contactLinkedIn": "https://www.linkedin.com/in/yolanda-cruz-2429399/",
     "companyLinkedIn": null,
@@ -117,19 +117,13 @@
     "city": null,
     "contactName": "Francisco Sánchez Solís",
     "contactTitle": "Cofundador / Productor",
-    "contactEmail": "francisco@enfantpoulet.com",
+    "contactEmail": "films@enfantpoulet.com",
     "companyEmail": "films@enfantpoulet.com",
     "instagramUrl": "https://www.instagram.com/enfantpoulet/",
     "instagramHandle": "enfantpoulet",
     "instagramFollowers": "~2164",
     "_igVerifiedVia": "cross-ref",
-    "additionalContacts": [
-      {
-        "contactName": "Ariande Davila",
-        "contactTitle": "Productora Ejecutiva",
-        "contactEmail": null
-      }
-    ],
+    "additionalContacts": [],
     "contactLinkedIn": "http://www.linkedin.com/in/francisco-s%c3%a1nchez-sol%c3%ads-8519a86a",
     "companyLinkedIn": "https://mx.linkedin.com/company/enfantpoulet",
     "whatsapp": null,
@@ -147,9 +141,10 @@
     "_enrichNotes": "Web publica solo role inboxes; uso films@ (publicado) -> opener de portero pidiendo por Francisco. francisco@ era patrón inferido, no publicado.",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre Enfant & Poulet\n\nHola Francisco, ¿cómo estás?\n\nEstuve viendo lo de Enfant & Poulet, Huesera llegando a Tribeca y también Todos los incendios. Se nota que no le tienen miedo a mezclar registros tan distintos y que cada proyecto mantiene su propia identidad, eso no es fácil de lograr.\n\nMe quedó una duda puntual: cuando el largometraje y el contenido de marca o comercial corren a la vez, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Sobre Huesera y Todos los incendios\n\nHola, quería saber si esta es la mejor forma de llegar a Francisco Sánchez Solís, cofundador de Enfant & Poulet.\n\nVi que además de Huesera, premiada en Tribeca, tienen en el catálogo Todos los incendios y el documental Sanctuary. Se nota que la productora se mueve entre ficción, documental y contenido de marca sin quedarse en un solo carril, y eso no es tan común de ver.\n\nJustamente por esa mezcla tengo una curiosidad concreta: cuando corren en paralelo un largo, un documental y trabajo de marca, ¿cómo separan los presupuestos de cada proyecto para que no se pisen entre sí, sobre todo cuando hay gastos compartidos de equipo o producción?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-23",
-    "_dispatched_at": "2026-07-23T13:00:00.000Z"
+    "_dispatched_at": "2026-07-23T13:00:00.000Z",
+    "_emailNote": "published role inbox; francisco@ was unverified guess"
   },
   {
     "_pool_id": "pool-2026-07-01-02",
@@ -202,7 +197,8 @@
     "_enriched": true,
     "pitchEmailES": "Asunto: una pregunta sobre Avanti Pictures\n\nHola Yossy, ¿cómo estás?\n\nEstuve viendo lo de Avanti Pictures, Sin señas particulares en Sundance y Nudo Mixteco. Se nota el criterio detrás de esas selecciones, no es fácil sostener ese nivel de cine de autor y encima construir una boutique sólida alrededor.\n\nMe quedó una duda puntual: cuando la ficción, el documental y los comerciales corren a la vez, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-23",
-    "_dispatched_at": "2026-07-23T13:00:00.000Z"
+    "_dispatched_at": "2026-07-23T13:00:00.000Z",
+    "_emailNote": "yossy@ festival-published (San Sebastián 2020)"
   },
   {
     "_pool_id": "pool-2026-07-10s-17",
@@ -228,13 +224,18 @@
     "companyEmail": "produccion@bigsurpeliculas.com",
     "instagramUrl": "https://www.instagram.com/bigsurpeliculas/",
     "instagramHandle": "bigsurpeliculas",
-    "instagramFollowers": "~912",
+    "instagramFollowers": "1036",
     "_igVerifiedVia": "own-site",
     "additionalContacts": [
       {
         "contactName": "Iván Sierra Sanjurjo",
         "contactTitle": "Productor Asociado / Socio",
         "contactEmail": null
+      },
+      {
+        "contactName": "Sonia Barrera Gutiérrez",
+        "contactTitle": "Producción",
+        "contactEmail": "produccion@bigsurpeliculas.com"
       }
     ],
     "contactLinkedIn": "https://co.linkedin.com/in/joangen",
@@ -280,6 +281,11 @@
         "name": "David Correa Franco",
         "title": "Co-founder / DP",
         "email": null
+      },
+      {
+        "contactName": "Camilo Escobar Henao",
+        "contactTitle": "Director / Productor",
+        "contactEmail": null
       }
     ],
     "companyBrief": "Medellin colectivo (fundado 2014); ficcion y documental de autor. Creditos: 'Los dias de la ballena' (2019, seleccion oficial SXSW + FICCI); en produccion el doc 'Los impostores' (becas FDC 2022/2023; FICG coproduccion 2024). IG @raracolectivo live. DM: Jaime Guerrero Naudin.",
@@ -329,7 +335,7 @@
     "contactPhone": "+54 11 4983 9310",
     "instagramUrl": "https://www.instagram.com/magoyafilms/",
     "instagramHandle": "magoyafilms",
-    "instagramFollowers": "~1738",
+    "instagramFollowers": "1738",
     "additionalContacts": [
       {
         "contactName": "Nicolás Batlle",
@@ -371,7 +377,7 @@
     "whatsapp": null,
     "altChannel": null,
     "instagramHandle": "bikinifilms",
-    "instagramFollowers": 4999,
+    "instagramFollowers": "4995",
     "additionalContacts": [
       {
         "name": "Juan Pablo Félix",
@@ -392,7 +398,9 @@
     "_creditsVerified": true,
     "_enriched": true,
     "_enrichedAt": "2026-07-21",
-    "_verifiedCredits": [],
+    "_verifiedCredits": [
+      "Karnawal (2020, dir. Juan Pablo Félix), Premio Platino Mejor Ópera Prima"
+    ],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
     "pitchEmailES": "Asunto: una pregunta sobre Bikini Films\n\nHola Edson, ¿cómo estás?\n\nEstuve viendo el recorrido de Karnawal, el estreno en Toronto y después Mejor Dirección en Guadalajara y Mejor Ópera Prima en el Platino. Pocas veces se ve una película de autor sumar así de premios en circuitos tan distintos, la verdad se nota el trabajo de selección detrás.\n\nMe quedó una duda puntual: cuando la gira de festivales y distribución de una película sigue corriendo mientras arrancan el desarrollo o rodaje de la siguiente, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
@@ -492,7 +500,8 @@
     "_verifiedCredits": [
       "Rara (2016), ganadora Generation KPlus, Berlinale",
       "Turistas (2009, dir. Alicia Scherson)",
-      "Play (2005, dir. Alicia Scherson)"
+      "Play (2005, dir. Alicia Scherson)",
+      "La Felicidad (dir. Pepa San Martín)"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "Email gmail publicado en su contacto (website-published). Sin IG (email-only). Credits corregidos: El principe NO es suyo.",
@@ -530,7 +539,7 @@
     "contactPhone": null,
     "instagramUrl": "https://www.instagram.com/lapobladoracine/",
     "instagramHandle": "lapobladoracine",
-    "instagramFollowers": "~1400",
+    "instagramFollowers": "1409",
     "additionalContacts": [],
     "companyBrief": "La Pobladora Cine es una casa productora uruguaya de cine de autor con sede en Montevideo, fundada por Alex Piperno para producir sus obras y las de directores afines. Ha producido Parabellum de Lukas Rinner (IFFR), La sabana y la montana de Paulo Carneiro (Quincena de Cineastas, Cannes 2024) y Diciembre de Lucas Gallo (IDFA 2025). Financiacion de Ibermedia y Hubert Bals. DM: Alex Piperno. IG @lapobladoracine.",
     "unabaseScore": 9.2,
@@ -573,6 +582,11 @@
         "name": "Rodrigo Quintero Arauz",
         "title": "Co-founder / Director",
         "email": "rodrigo@expansivacine.com"
+      },
+      {
+        "contactName": "Rodrigo Quintero Araúz",
+        "contactTitle": "Cofundador / Productor",
+        "contactEmail": "rodrigo@expansivacine.com"
       }
     ],
     "companyBrief": "Ciudad de Panama. Productora de cine de autor via coproducciones internacionales. Produjo 'Querido Tropico' (2024, Ana Endara; estreno mundial TIFF, Mejor Largometraje de Centroamerica y el Caribe); desarrolla 'Victoria en las Nubes' (Foro de Coproduccion San Sebastian). IG @expansivacine live. DM: Isabella Galvez.",
@@ -587,7 +601,9 @@
     "founderInstagramHandle": "rodrigoquinteroarauz",
     "_enriched": true,
     "_enrichedAt": "2026-07-21",
-    "_verifiedCredits": [],
+    "_verifiedCredits": [
+      "Las Hijas (2023), SXSW y Biznaga de Oro en Málaga"
+    ],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
     "pitchEmailES": "Asunto: una pregunta sobre Expansiva Cine\n\nHola Isabella, ¿cómo estás?\n\nEstuve viendo lo de Expansiva Cine, \"Querido Trópico\" llegando a TIFF y llevándose Mejor Largometraje de Centroamérica y el Caribe, y ahora \"Victoria en las Nubes\" avanzando en el Foro de San Sebastián. Se nota el trabajo detrás de sostener ese nivel en coproducciones internacionales, no es poco.\n\nMe quedó una duda puntual: cuando manejan varios proyectos en distintas etapas, uno en festivales y otro en desarrollo con socios de coproducción, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre sí?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
@@ -604,7 +620,7 @@
     "country": "Dominican Republic",
     "contactName": "Tatiana Fernández Geara",
     "contactTitle": "Founder / Director / CEO",
-    "contactEmail": "cinecarmelita@gmail.com",
+    "contactEmail": "tatiluka@gmail.com",
     "companyEmail": null,
     "contactPhone": null,
     "contactLinkedIn": null,
@@ -636,18 +652,19 @@
     "_verifiedCredits": [],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
-    "pitchEmailES": "Asunto: una pregunta sobre Cine Carmelita\n\nHola, quería saber si esta es la mejor forma de llegar a Tatiana Fernández Geara.\n\nEstuve viendo lo de Cine Carmelita, \"Vals de Santo Domingo\" y esa mención especial en FICG Guadalajara junto con el reconocimiento en el IFF Panamá, y también \"Nana\". Se nota el trabajo de largo aliento detrás de cada documental, no es poco sostener ese nivel proyecto tras proyecto.\n\nMe quedó una duda puntual: cuando la producción documental y todo lo que implica moverse entre festivales y distribución corren a la vez, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi le hace sentido a Tatiana, puedo mostrarle en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Vals de Santo Domingo y lo que viene después\n\nHola Tatiana, ¿cómo estás?\n\nTe escribo porque estuve viendo el recorrido de Cine Carmelita y la verdad me quedé pensando en \"Vals de Santo Domingo\", esa mención honorífica en FICG Guadalajara y el premio en IFF Panamá no son poca cosa, sobre todo viniendo después de \"Nana\". Se nota que hay un criterio muy propio detrás de cada proyecto, no es casualidad.\n\nMe imagino que entre documentales propios, encargos y proyectos que capaz están en distintas etapas a la vez, la organización financiera se vuelve un tema real. ¿Cómo hacen hoy para que los presupuestos de cada proyecto no se mezclen entre sí, sobre todo cuando tenés varias líneas de trabajo corriendo en paralelo?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-23",
     "_dispatched_at": "2026-07-23T13:00:00.000Z",
     "source_date": "2026-07-23",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_emailNote": "founder personal email, published on her bio site"
   },
   {
     "website": "https://faulafilms.com",
     "instagramHandle": "faulafilms",
-    "instagramFollowers": "~1718",
+    "instagramFollowers": "1718",
     "contactName": "Natalia Cabral",
     "contactTitle": "Cofundadora / Productora",
     "contactEmail": "info@faulafilms.com",
@@ -700,7 +717,8 @@
     "_verifiedCredits": [
       "Octubre (2010), Premio del Jurado, Un Certain Regard, Cannes 2010",
       "Reinas (2024), coproducción, Sundance y Berlinale",
-      "La Bronca (2019)"
+      "La Bronca (2019)",
+      "Todas las fuerzas (Festival de Lima 2025)"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "Email publicado (Cinelatino/Unifrance directory). Website placeholder (dominio resuelve). Sin IG de empresa (email-only).",
