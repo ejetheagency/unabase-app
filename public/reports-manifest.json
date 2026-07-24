@@ -5,11 +5,11 @@
       "source_date": "2026-07-24",
       "file": "leads-2026-07-24.json",
       "lead_count": 15,
-      "approved": false,
-      "status": "staged",
+      "approved": true,
+      "status": "active",
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
-      "note": "STAGED for 07-24: 10 core MX-plurality + 5 frontier (UY/PA/CR/PE/BO). Full enrichment, hold deploy.",
+      "note": "ACTIVE 07-24: 10 core MX-plurality + 5 frontier (UY/PA/CR/PE/BO). Full enrichment. Deployed.",
       "supply_metrics": {
         "mode": "pool_dispatch+fresh_frontier",
         "dispatched": 15,
@@ -22,7 +22,8 @@
           "Peru",
           "Bolivia"
         ]
-      }
+      },
+      "approved_at": "2026-07-24T12:00:00.000Z"
     },
     {
       "batch_id": "batch-2026-07-23",
@@ -31,7 +32,7 @@
       "lead_count": 15,
       "approved": true,
       "approved_at": "2026-07-23T13:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
       "note": "Same criteria as 07-22: 10 core (MX-plurality MX4/CO2/AR2/ES1/CL1) + 5 new-frontier under-focused countries (Uruguay, Panama, Dominican Rep, Venezuela, Peru). Full deep enrichment on all 15, credits web-verified, warm first-touch copy. 3 gates clean. Enrichment caught: Magoya domain hijacked (dropped), La Pobladora + Enfant SSL (dropped, IG used), 111 Producciones swapped (guessed email).",
@@ -1208,7 +1209,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-07-23",
+  "active_batch_id": "batch-2026-07-24",
   "timezone": "America/New_York",
-  "last_updated": "2026-07-23T13:00:00.000Z"
+  "last_updated": "2026-07-24T12:00:00.000Z"
 }
