@@ -1,38 +1,42 @@
 [
   {
+    "companyName": "Mil Nubes-Cine",
+    "country": "Mexico",
     "website": null,
-    "instagramHandle": "noficcionmx",
-    "contactName": "Daniela Alatorre",
-    "contactTitle": "Cofundadora / Directora",
-    "contactEmail": "info@noficcion.mx",
-    "companyEmail": "info@noficcion.mx",
-    "companyBrief": "No Ficcion es una productora mexicana fundada en 2017 por Daniela Alatorre y Elena Fortes, enfocada en cine documental de autor y no ficcion de alto perfil para salas y plataformas. Produjo Una pelicula de policias (Oso de Plata en la Berlinale, Netflix), Users y Vivos, ademas de Familia de medianoche. Con sede en Ciudad de Mexico, lleva historias sociales mexicanas a festivales y audiencias internacionales. IG @noficcionmx.",
+    "instagramHandle": "milnubescine",
+    "instagramFollowers": "~1540",
+    "contactName": "Roberto Fiesco Trejo",
+    "contactTitle": "Fundador / Productor",
+    "contactEmail": "milnubes@yahoo.com",
+    "companyEmail": "milnubes@yahoo.com",
+    "unabaseScore": 8.5,
+    "companyBrief": "Casa productora mexicana de cine independiente fundada en 1998 por Roberto Fiesco en la Ciudad de Mexico. Junto al director Julian Hernandez ha construido una de las filmografias de autor mas premiadas del pais, con titulos como Mil nubes de paz, El cielo dividido y Rabioso sol, rabioso cielo, presentes en la Berlinale y festivales internacionales. Produce largometrajes de ficcion con mirada arriesgada. IG @milnubescine.",
     "additionalContacts": [
       {
-        "contactName": "Elena Fortes",
-        "contactTitle": "Cofundadora / Directora",
+        "contactName": "Julián Hernández",
+        "contactTitle": "Cofundador / Director-Guionista",
         "contactEmail": null
       }
     ],
-    "country": "Mexico",
-    "companyName": "No Ficción",
-    "unabaseScore": 9,
     "_verifiedCredits": [
-      "Una película de policías (2021, dir. Alonso Ruizpalacios), Oso de Plata Berlinale, Netflix",
-      "Users (2021, dir. Natalia Almada), Premio a la Dirección en Sundance",
-      "Familia de medianoche (2019), Sundance"
+      "Mil nubes de paz cercan el cielo (2003), Teddy Award Berlinale",
+      "El cielo dividido (2006), Berlinale Panorama",
+      "Rabioso sol, rabioso cielo (2009)"
     ],
-    "_igStatus": "live-verified",
-    "_enrichNotes": "Cinema/documental ELITE (Berlinale/Sundance/Netflix). info@ publicado (Google Workspace) -> opener de portero por Daniela.",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre No Ficción\n\nHola, quería saber si esta es la mejor forma de llegar a Daniela Alatorre, o si hay otro correo más directo para ella.\n\nEstuve viendo lo de No Ficción, Una película de policías y Users. Que ambas hayan tenido ese reconocimiento internacional (Oso de Plata en Berlinale y el premio a la Dirección en Sundance) en documentales tan distintos entre sí dice mucho del criterio detrás de cada proyecto.\n\nMe quedó una duda puntual: cuando tienen varios documentales de autor avanzando en paralelo, cada uno con su propio ciclo de festivales, plataformas y financiamiento, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi le hace sentido a Daniela, le puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "_pool_status": "pool",
+    "_igStatus": "live-verified",
+    "_source": "reserve-farm-2026-07-23",
+    "_enrichNotes": "RESERVA. Email COMEFILM-publicado. Link = IG (sin website).",
     "_dispatched_batch_id": "batch-2026-07-24",
     "_dispatched_at": "2026-07-24T13:00:00.000Z",
     "source_date": "2026-07-24",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_swapReason": "Reemplaza a No Ficción: su DM Daniela Alatorre es Directora General del IMCINE desde oct-2024 (cargo público, dejó de producir), Elena Fortes fundó FIASCO, sin créditos de largo posteriores a 2021, sitio noficcion.mx devuelve cuerpo vacío y el dominio sirve URLs tipo spam, y @noficcionmx NO EXISTE en Instagram (es su cuenta de X).",
+    "pitchEmailES": "Asunto: Sobre la mezcla de proyectos de Mil Nubes-Cine\n\nHola, quería saber si esta es la mejor forma de llegar a Roberto...\n\nVi el recorrido de Mil Nubes-Cine junto a Julián Hernández, desde Mil nubes de paz cercan el cielo hasta El cielo dividido en Berlinale Panorama. Sostener esa mirada de autor por más de dos décadas, con reconocimiento internacional constante, no es poco.\n\nSe nota que hay una filmografía pensada a largo plazo, no proyectos sueltos.\n\nCon esa cantidad de películas en distintas etapas (algunas en festivales, otras en desarrollo, tal vez alguna en postproducción), ¿cómo organizan hoy los presupuestos para que los gastos de un proyecto no se mezclen con los de otro?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo"
   },
   {
     "instagramHandle": "zafirocinema",
@@ -55,7 +59,10 @@
     "_verifiedCredits": [
       "Te llevo conmigo (2020, dir. Heidi Ewing), Sundance NEXT Audience Award, Sony Pictures Classics",
       "La Jaula de Oro (2013), Un Certain Regard Cannes (Edher Campos)",
-      "Año Bisiesto (2010), Caméra d'Or Cannes (Edher Campos)"
+      "Año Bisiesto (2010), Caméra d'Or Cannes (Edher Campos)",
+      "La Cazadora (2026, dir. Suzanne Andrews Correa), estreno mundial World Cinema Dramatic Competition, Sundance 2026",
+      "El ladrón de perros (2024), estreno Tribeca 2024",
+      "Las niñas bien (2018), TIFF Platform"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Cinema productora (Sundance/Cannes). Sin website (link=IG @zafirocinema). Email personal COMEFILM-verificado gabriela.maire7@ (name-match).",
@@ -67,7 +74,14 @@
     "source_date": "2026-07-24",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "instagramFollowers": "937",
+    "contactPhone": "+52 1 55 3938 9748",
+    "_phones": [
+      "+52 1 55 3938 9748",
+      "+52 55 5510 1952"
+    ],
+    "_deepNotes": "IG VERIFICADO como la entidad correcta: @zafirocinema, 937 seguidores exactos, cuenta pública, y COMEFILM enlaza el perfil en su ficha oficial (doble confirmación). SIN sitio web (5 dominios probados sin DNS) -> el link es el IG. DATO MUERTO: edher@macheteproducciones.com está MUERTO (macheteproducciones.com NXDOMAIN), no usar. TRAMPA DE HOMÓNIMO evitada: @gabrielamaire (bio venezolana) NO es ella (Gabriela Maire es boliviana). Móvil probable WhatsApp."
   },
   {
     "_pool_id": "pool-2026-07-06-b01",
@@ -84,16 +98,22 @@
     "readyToSend": true,
     "_operatorVerified": false,
     "companyName": "Arte Mecánica Producciones",
-    "website": "https://artemecanica.com",
+    "website": "https://artemecanica.com/es",
     "country": "Mexico",
     "contactName": "Ozcar Ramírez González",
     "contactTitle": "Productor / Socio Fundador",
-    "contactEmail": "produccion@artemecanica.com",
+    "contactEmail": "ozcar@artemecanica.com",
     "companyEmail": "produccion@artemecanica.com",
     "instagramUrl": "https://www.instagram.com/artemecanica/",
     "instagramHandle": "artemecanica",
-    "instagramFollowers": "~77",
-    "additionalContacts": [],
+    "instagramFollowers": "77",
+    "additionalContacts": [
+      {
+        "contactName": "Proyector (buzón de rol)",
+        "contactTitle": "Segundo inbox publicado en COMEFILM",
+        "contactEmail": "proyector@artemecanica.com"
+      }
+    ],
     "contactLinkedIn": "https://mx.linkedin.com/in/ozcar-ram%C3%ADrez-gonz%C3%A1lez-55386434",
     "companyLinkedIn": "https://mx.linkedin.com/company/arte-mecanica",
     "whatsapp": null,
@@ -104,15 +124,25 @@
     "_verifiedCredits": [
       "La 4ª Compañía (2016), 10 premios Ariel incluido Mejor Película",
       "Días de Gracia (2011, dir. Everardo Gout), Selección Oficial Cannes, 7 Arieles",
-      "Carga Sellada, coproducción México-Bolivia, Premio del Jurado en Goa"
+      "Carga Sellada, coproducción México-Bolivia, Premio del Jurado en Goa",
+      "El hombre que vio demasiado (dir. Trisha Ziff), Competencia Oficial Tribeca, Ariel a Mejor Documental",
+      "Carga Sellada, Premio del Jurado en el Festival de Goa (India)",
+      "En camino (dir. Guillermo Piñón), en desarrollo, MAFF Málaga 2026"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Email verificado en registro gov (comefilm.gob.mx) -> opener de portero por Ozcar. IG dormante (~77); link = website (resuelve, plantilla).",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre Arte Mecánica Producciones\n\nHola, quería saber si esta es la mejor forma de llegar a Ozcar Ramírez González.\n\nEstuve viendo lo de Arte Mecánica, La 4ª Compañía con esos 10 Arieles incluido Mejor Película, y Días de Gracia llegando a Cannes. Se nota un criterio muy sostenido en el tiempo, no es fácil mantener ese nivel proyecto tras proyecto.\n\nMe quedó una duda puntual: con más de 20 largometrajes y coproducciones internacionales como Carga Sellada corriendo en paralelo con lo local, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre producciones?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi le hace sentido a Ozcar, puedo mostrarle en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: La 4ª Compañía y los Arieles\n\nHola Ozcar, ¿cómo estás?\n\nTe escribo porque venía repasando el recorrido de Arte Mecánica y la verdad que la mezcla entre La 4ª Compañía (con esos 10 Arieles, incluido Mejor Película) y Días de Gracia en Cannes muestra un catálogo con mucha personalidad, de esos que no se arman por casualidad sino con años de criterio.\n\nY se nota también en cómo suman ahora En camino con Guillermo Piñón, en desarrollo para MAFF Málaga 2026. Eso de sostener cine de autor por más de veinte años, con coproducciones como Carga Sellada incluidas, no es poca cosa.\n\nJustamente por eso te quería preguntar: con proyectos en etapas tan distintas (uno en desarrollo, otros ya estrenados o en festivales), ¿cómo organizan hoy los presupuestos para que no se mezclen los gastos de cada película?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nSaludos,\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "_emailNote": "upgraded to personal: DOS fuentes independientes, una vigente: PDF oficial COMEFILM 'Mexican Coproducers' (fila 31: 'Ózcar Ramírez | ozcar@artemecanica.com') y ficha VIGENTE 2026 del proyecto 'En camino' en el Málaga Festival Fund (MAFIZ) con campo 'Contacto ozcar@artemecanica.com'. Dominio con A, MX y SPF válidos",
+    "contactPhone": "+52 55 5689 7712",
+    "_phones": [
+      "+52 55 5689 7712",
+      "+52 55 6273 7435"
+    ],
+    "_deepNotes": "UPGRADE: de buzón de rol produccion@ a email PERSONAL del socio fundador ozcar@artemecanica.com, doble-verificado y VIGENTE (proyecto en Málaga 2026). BASURA DE PLANTILLA CONFIRMADA Y DESCARTADA: el pie del sitio publica contacto@artemecanica.mx (dominio NXDOMAIN, INDELIVERABLE) y +52 33 1234 5678 (relleno), además de links sociales pelados sin handle. Se usan SOLO los teléfonos de COMEFILM. IG @artemecanica es genuino pero dormido (77 seguidores, 2 posts de 2017); homónimo @artemecanicamx es un taller de guitarras en Sinaloa, descartado. Link válido = website (contenido real y actual, noticias may-2026)."
   },
   {
     "_pool_id": "pool-2026-07-01-06",
@@ -157,7 +187,10 @@
     "_verifiedCredits": [
       "Oso Polar (2017, dir. Marcelo Tobar), Mejor Película Mexicana en Morelia",
       "Los parecidos (2015, dir. Isaac Ezban)",
-      "Workers (2013, dir. José Luis Valle)"
+      "Workers (2013, dir. José Luis Valle)",
+      "Luciérnagas (dir. Bani Khoshnoudi), Cinéma en Construction Toulouse",
+      "Almacenados",
+      "Asteroide"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "elsa@ name-match (citado en Variety). Sin IG (email-only). Website live.",
@@ -165,7 +198,12 @@
     "_enriched": true,
     "pitchEmailES": "Asunto: una pregunta sobre Zensky Cine\n\nHola Elsa, ¿cómo estás?\n\nEstuve viendo lo de Zensky Cine, Oso Polar y Los parecidos en particular. Se nota que hay un criterio claro detrás de la selección de proyectos, no cualquier casa productora sostiene esa calidad desde 2007.\n\nMe quedó una duda puntual: cuando desarrollan ficción y documental en paralelo, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "contactPhone": "+52 55 2690 3169",
+    "_phones": [
+      "+52 55 2690 3169"
+    ],
+    "_deepNotes": "IG de empresa CONFIRMADO inexistente tras barrido exhaustivo; @zensky04 descartado (cuenta ajena de maquillaje). IG profesional del cofundador Ramón Orozco = @bakeliteboy (1.067) disponible como canal alterno, NO se usa como IG de empresa para no confundir la tarjeta. Link = website. Dirección actual: Kelvin 25, Miguel Hidalgo, CDMX."
   },
   {
     "_pool_id": "pool-2026-07-10s-19",
@@ -182,7 +220,7 @@
     "readyToSend": true,
     "_operatorVerified": false,
     "companyName": "La Productora Cine",
-    "website": "http://laproductoracine.com",
+    "website": "https://laproductoracine.com",
     "country": "Colombia",
     "city": null,
     "contactName": "Diana Cristina Patiño Martínez",
@@ -191,7 +229,7 @@
     "companyEmail": "laproductoracine@gmail.com",
     "instagramUrl": "https://www.instagram.com/laproductoracine/",
     "instagramHandle": "laproductoracine",
-    "instagramFollowers": "~384",
+    "instagramFollowers": "384",
     "_igVerifiedVia": "own-site",
     "additionalContacts": [],
     "contactLinkedIn": null,
@@ -204,7 +242,10 @@
     "_verifiedCredits": [
       "Leidi (2014), Palma de Oro al cortometraje, Cannes",
       "Bogotá Story (2023), selección oficial Orizzonti, Venecia",
-      "Entre tú y milagros (2020), Venecia"
+      "Entre tú y milagros (2020), Venecia",
+      "La Vida Nueva (2023), ganadora FDC Desarrollo",
+      "La Mona (2025), Selección Oficial Freiburg",
+      "Momentum, Selección Oficial Málaga"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Website http-only (sin TLS); IG live respaldo. Email gmail publicado (Biennale). Palme d'Or corto.",
@@ -212,7 +253,12 @@
     "_enriched": true,
     "pitchEmailES": "Asunto: una pregunta sobre La Productora Cine\n\nHola Diana, ¿cómo estás?\n\nEstuve viendo lo de La Productora Cine, desde Leidi con la Palma de Oro en Cannes hasta Bogotá Story en Orizzonti, Venecia. Se nota que no es casualidad, es una línea de trabajo sostenida en el tiempo y con mucha coherencia.\n\nMe quedó una duda puntual: cuando tienen varios proyectos de autor en distintas etapas a la vez, desarrollo, rodaje, o post pensando en festivales, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados y con trayectoria como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "contactPhone": "+57 300 899 4784",
+    "_phones": [
+      "+57 300 899 4784"
+    ],
+    "_deepNotes": "HTTPS funciona (el http del seed era obsoleto) -> website actualizado. ALERTA: las páginas /contacto y /about-us del sitio TODAVIA tienen datos dummy del tema WordPress (dirección en Los Angeles, teléfono 123-456-7899) — descartados, NO ingerir. MEJOR CANAL DM: IG personal de Diana @dianapm22 (1.533 seguidores, 4x la cuenta de empresa); la cuenta de empresa la cross-linkea. Decisora única."
   },
   {
     "_pool_id": "pool-2026-07-10s-18",
@@ -234,7 +280,7 @@
     "city": null,
     "contactName": "Andrés Ramírez Pulido",
     "contactTitle": "Cofundador / Director y Productor",
-    "contactEmail": "valientegraciacine@gmail.com",
+    "contactEmail": "andresrepulido@gmail.com",
     "companyEmail": "valientegraciacine@gmail.com",
     "instagramUrl": "https://www.instagram.com/valientegraciacine/",
     "instagramHandle": "valientegraciacine",
@@ -257,15 +303,24 @@
     "_verifiedCredits": [
       "La jauría (2022, dir. Andrés Ramírez Pulido), Gran Premio Semana de la Crítica, Cannes",
       "Damiana (2017), competencia de cortos en Cannes",
-      "El Edén (2016), Berlinale"
+      "El Edén (2016), Berlinale",
+      "1 hijo & 1 padre (2024/2025), Festival de Locarno",
+      "Carmesí (corto), Clermont-Ferrand y Palm Springs"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Email gmail publicado (sitio + Proimágenes) -> opener de portero. Website en Cargo Collective (live).",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre Valiente Gracia\n\nHola Andrés, ¿cómo estás?\n\nEstuve viendo lo de Valiente Gracia, el recorrido de La jauría hasta el Gran Premio de la Semana de la Crítica en Cannes, y antes Damiana y El Edén abriendo camino en Cannes y Berlinale. Se nota que la productora elige riesgo y autoría por encima de la fórmula fácil, y eso rinde.\n\nMe quedó una duda puntual: cuando la distribución internacional y festivales de un proyecto ya estrenado corre en paralelo con el desarrollo o rodaje de uno nuevo, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre sí?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: La jauría y los presupuestos entre proyectos\n\nHola Andrés, ¿cómo estás?\n\nTe escribo porque estuve viendo el recorrido de Valiente Gracia y la verdad es notable: desde El Edén en Berlinale y Damiana en Cannes, hasta el Gran Premio de la Semana de la Crítica con La jauría. No es común sostener ese nivel de selección año tras año, y se nota que hay un criterio muy claro detrás de cada proyecto.\n\nMe imagino que entre cortos, largos y coproducciones internacionales el volumen de gestión financiera debe ser bastante particular, sobre todo cuando cada proyecto tiene fuentes de fondos distintas (fondos de fomento, coproductores, festivales).\n\n¿Cómo hacen hoy para que los presupuestos de cada película no se mezclen entre sí, sobre todo cuando hay varios proyectos corriendo en paralelo?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nUn abrazo,\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "_emailNote": "upgraded to personal: VERIFICADO EN LA FUENTE: booklet oficial Cinélatino/ARCALT 2022 (Toulouse), directorio Cinéma en Construction, entrada literal 'Director of La Jauría | ANDRÉS RAMIREZ PULIDO | andresrepulido@gmail.com'. Corroborado por vimeo.com/andresrepulido",
+    "contactPhone": "+57 311 250 5803",
+    "_phones": [
+      "+57 311 250 5803",
+      "+57 313 209 3722"
+    ],
+    "_deepNotes": "UPGRADE MAYOR: de gmail de marca compartido a email PERSONAL del decisor, verificado en PDF oficial de Cinélatino. Dos móviles colombianos publicados en su propia página de contacto (viables WhatsApp); Cinélatino atribuye el 311 250 5803 a Andrés. Conteo de seguidores IG no obtenible (login wall) tras múltiples rutas; handle confirmado existente."
   },
   {
     "_pool_id": "pool-2026-07-10s-14",
@@ -287,11 +342,11 @@
     "city": null,
     "contactName": "Iván Moscovich",
     "contactTitle": "Cofundador / Productor",
-    "contactEmail": "36caballos@gmail.com",
+    "contactEmail": "moscovichivan@gmail.com",
     "companyEmail": "36caballos@gmail.com",
     "instagramUrl": "https://www.instagram.com/36caballos/",
     "instagramHandle": "36caballos",
-    "instagramFollowers": "~1662",
+    "instagramFollowers": "1662",
     "_igVerifiedVia": "cross-ref",
     "additionalContacts": [
       {
@@ -315,15 +370,24 @@
     "_verifiedCredits": [
       "Algo viejo, algo nuevo, algo prestado (2024, dir. Hernán Rosselli), estreno en Cannes",
       "Los tonos mayores (2024, dir. Ingrid Pokropek), Mejor Película Málaga",
-      "Un movimiento extraño (2024), Oso de Oro Berlinale Shorts"
+      "Un movimiento extraño (2024), Oso de Oro Berlinale Shorts",
+      "Los tonos mayores: Gran Premio Competencia Internacional Jeonju 2024; dos Biznagas de Plata en Málaga 2024; Berlinale Generation 2024",
+      "Cambio cambio (coproducción Gong Cine)"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Email seed personal (moscovichivan@) no publicado; uso 36caballos@gmail.com publicado -> opener de portero por Iván.",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre 36 Caballos\n\nHola Iván, ¿cómo estás?\n\nEstuve viendo lo de 36 Caballos, con \"Algo viejo, algo nuevo, algo prestado\" en Cannes y \"Un movimiento extraño\" con el Oso de Oro en Berlinale Shorts. Llamar la atención en dos festivales tan distintos en el mismo año no es poca cosa, se nota que hay una búsqueda autoral clara detrás de cada proyecto.\n\nMe quedó una duda puntual: cuando tienen varios largos corriendo en paralelo, entre rodaje, posproducción y circuito de festivales, con equipos repartidos entre Buenos Aires y Ciudad de México, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Cannes, Berlinale y la logística detrás\n\nHola Iván, ¿cómo estás?\n\nTe escribo porque venía siguiendo el recorrido de 36 Caballos y la verdad es que llama la atención: \"Algo viejo, algo nuevo, algo prestado\" estrenando en Cannes y \"Los tonos mayores\" llevándose Mejor Película en Málaga y el Gran Premio en Jeonju en el mismo año. No es común que una productora tenga ese nivel de circulación festivalera con dos películas a la vez, y encima con una coproducción como \"Cambio cambio\" corriendo en paralelo.\n\nMe imagino que coordinar eso (proyectos en distintas etapas, con Gong Cine de por medio y base en dos países) debe ser un rompecabezas aparte del trabajo creativo.\n\n¿Cómo hacen hoy para que los presupuestos y gastos de cada película no se mezclen entre sí, sobre todo cuando hay coproducción de por medio?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "_emailNote": "upgraded to personal: CONFIRMADO publicado en la propia web 36caballos.com/about (verificado a nivel de HTML crudo); el seed queda validado",
+    "contactPhone": "+54 9 221 618-2353",
+    "_phones": [
+      "+54 9 221 618-2353",
+      "+52 55 4905-7025"
+    ],
+    "_deepNotes": "WIN TOTAL: los TRES fundadores tienen gmail personal publicado en su propia página About (la versión ES trae los tres; la EN solo el de Moscovich); juansealamos@ corroborado en el directorio oficial 'Argentina Creativa' de Cancillería. Se abandona el inbox de marca 36caballos@gmail.com y se va directo. Dos teléfonos móviles (viables WhatsApp), doble base BA + CDMX."
   },
   {
     "_pool_id": "pool-2026-07-06-22",
@@ -343,18 +407,28 @@
     "website": "https://wanka.tv",
     "country": "Argentina",
     "city": null,
-    "contactName": "Leandro Pugliese",
-    "contactTitle": "Productor Ejecutivo / Propietario",
-    "contactEmail": "info@wanka.tv",
+    "contactName": "Ezequiel Borovinsky",
+    "contactTitle": "Productor Ejecutivo / Socio",
+    "contactEmail": "boro@wanka.tv",
     "companyEmail": "info@wanka.tv",
     "instagramUrl": "https://www.instagram.com/wankacine/",
     "instagramHandle": "wankacine",
-    "instagramFollowers": "~3512",
+    "instagramFollowers": "2778",
     "_igVerifiedVia": "cross-ref",
     "additionalContacts": [
       {
         "contactName": "Ezequiel Borovinsky",
         "contactTitle": "Productor Ejecutivo",
+        "contactEmail": null
+      },
+      {
+        "contactName": "Leandro Pugliese",
+        "contactTitle": "Productor Ejecutivo / Propietario",
+        "contactEmail": null
+      },
+      {
+        "contactName": "Leandro 'Lega' Pugliese",
+        "contactTitle": "Productor Ejecutivo / Director de VFX / Propietario",
         "contactEmail": null
       }
     ],
@@ -368,15 +442,26 @@
     "_verifiedCredits": [
       "Los delincuentes (2023, dir. Rodrigo Moreno), amplia proyección internacional",
       "Jauja (2014, dir. Lisandro Alonso)",
-      "El estudiante (2011, dir. Santiago Mitre)"
+      "El estudiante (2011, dir. Santiago Mitre)",
+      "Un cabo suelto (2025, dir. Daniel Hendler), Venecia 2025 (Venezia Spotlight)",
+      "Re Granchio (2021), Un Certain Regard Cannes",
+      "El invierno (2016, dir. Emiliano Torres), San Sebastián"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Seed lega@wanka.tv no publicado; uso info@wanka.tv publicado -> opener de portero por Leandro.",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre Wanka Cine\n\nHola, quería saber si esta es la mejor forma de llegar a Leandro Pugliese o si hay otro correo por el que prefiera que lo contacten.\n\nEstuve viendo lo de Wanka Cine, Los delincuentes con esa proyección internacional tan grande en 2023, y antes Jauja y El estudiante. Se nota una trayectoria de acompañar cine de autor sostenido en el tiempo, no es fácil mantener ese criterio con los años.\n\nMe quedó una duda puntual: cuando la producción integral y la postproducción con efectos visuales corren en paralelo para distintos proyectos, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre uno y otro?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi le hace sentido, puedo mostrarle en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Los delincuentes y el próximo festival\n\nHola Ezequiel, ¿cómo estás?\n\nTe escribo porque venía siguiendo el recorrido de Los delincuentes y ahora me entero de Un cabo suelto en Venecia. Ese salto de una película tan local a semejante proyección internacional, y después meterse de nuevo en la selección de un festival como Venecia, no es casualidad, se nota que hay algo sólido detrás en cómo arman cada proyecto.\n\nMe imagino que en Wanka conviven en simultáneo cosas bastante distintas: films de festival con financiamiento internacional, proyectos más comerciales, animación, postproducción para terceros. ¿Cómo hacen hoy para que los presupuestos de cada línea no se mezclen entre sí y cada productor ejecutivo tenga claridad de números en tiempo real?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "_dmPivot": "lega@wanka.tv del seed NO está publicado (el sitio solo publica info@). Borovinsky es el Productor Ejecutivo que figura como contacto en los créditos oficiales de festivales de nuestros propios títulos, y SÍ tiene email personal publicado y móvil.",
+    "_emailNote": "upgraded to personal: TRIPLE publicado en registros oficiales de industria: Venice Biennale 2025 ('Un cabo suelto', Venezia Spotlight) verificado por curl, San Sebastián 2023 ('Los delincuentes') y San Sebastián ('El invierno')",
+    "contactPhone": "+54 9 11 6858-3710",
+    "_phones": [
+      "+54 9 11 6858-3710",
+      "+54 11 4551-3559"
+    ],
+    "_deepNotes": "SEED DESMENTIDO: lega@wanka.tv no está publicado en ninguna parte (grep del sitio: solo info@wanka.tv); sigue siendo una conjetura. PIVOTE DE DECISOR a Ezequiel Borovinsky con boro@wanka.tv (publicado 3 veces en festivales) + móvil publicado. CORRECCIÓN DE DATO: IG real 2.778 seguidores, NO ~3.512 como teníamos."
   },
   {
     "_pool_id": "pool-2026-07-06-07",
@@ -396,13 +481,13 @@
     "website": "https://colose.es",
     "country": "Spain",
     "city": null,
-    "contactName": "Sole Martínez",
-    "contactTitle": "Productora Ejecutiva",
-    "contactEmail": "sole@colose.es",
+    "contactName": "Sandra Hermida",
+    "contactTitle": "Cofundadora / Productora Ejecutiva",
+    "contactEmail": "sandrahermida@gmail.com",
     "companyEmail": "sole@colose.es",
     "instagramUrl": "https://www.instagram.com/colose_prod/",
     "instagramHandle": "colose_prod",
-    "instagramFollowers": "~352",
+    "instagramFollowers": "352",
     "_igVerifiedVia": "own-site",
     "additionalContacts": [
       {
@@ -414,6 +499,16 @@
         "contactName": "Javier Soto",
         "contactTitle": "Cofundador / Productor Ejecutivo",
         "contactEmail": null
+      },
+      {
+        "contactName": "Sole Martínez",
+        "contactTitle": "Productora Ejecutiva",
+        "contactEmail": null
+      },
+      {
+        "contactName": "Soledad 'Sole' Martínez Torres",
+        "contactTitle": "Productora Ejecutiva / contacto designado de la empresa",
+        "contactEmail": "sole@colose.es"
       }
     ],
     "contactLinkedIn": "https://es.linkedin.com/in/sandra-hermida-bb283a40",
@@ -426,7 +521,10 @@
     "_verifiedCredits": [
       "Contratiempo (2016, dir. Oriol Paulo), coproducción",
       "Un amor (2023, dir. Isabel Coixet), coproducción",
-      "Garbo: el espía (2009, dir. Edmon Roch), documental"
+      "Garbo: el espía (2009, dir. Edmon Roch), documental",
+      "La sociedad de la nieve (2023, dir. J.A. Bayona), Sandra Hermida productora, nominada al Oscar",
+      "Lo imposible (2012, dir. J.A. Bayona), Sandra Hermida productora",
+      "Cinco lobitos (2022, dir. Alauda Ruiz de Azúa)"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Email publicado sole@colose.es pertenece a Sole Martinez (por eso es la DM nombrada); Sandra Hermida sin email personal publicado. Creditos = de Colose (no los de Bayona de Hermida).",
@@ -434,7 +532,14 @@
     "_enriched": true,
     "pitchEmailES": "Asunto: una pregunta sobre Colosé Producciones\n\nHola Sole, ¿cómo estás?\n\nEstuve viendo lo de Colosé, Contratiempo y Un amor son coproducciones con directores muy distintos entre sí, y se nota el criterio detrás de esas decisiones. Me gustó especialmente ver que también metieron mano en documental con Garbo: el espía, no es fácil sostener esa variedad de registros con la misma solidez.\n\nMe quedó una duda puntual: cuando cine y publicidad corren a la vez, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "_dmPivot": "Objetivo prioritario logrado: email personal de Sandra Hermida doble-confirmado. Es la decisora de mayor peso (productora de Bayona), muy superior a la tercera socia que teníamos por ser dueña del inbox publicado.",
+    "_emailNote": "upgraded to personal: DOBLE confirmado: directorio de socios de APPA (asociacionappa.es/socio/sandra-hermida, verificado por curl) y créditos oficiales de industria del Festival de San Sebastián para 'Arde Madrid' (2018)",
+    "contactPhone": "+34 629 733 763",
+    "_phones": [
+      "+34 629 733 763"
+    ],
+    "_deepNotes": "Email de Sandra Hermida publicado en APPA + San Sebastián. Javier Soto sin email publicado tras barrido exhaustivo. sole@colose.es pertenece a Soledad Martínez Torres (persona real, contacto designado) y queda como contacto secundario. Móvil +34 629 733 763 publicado en el directorio oficial de Catalan Films / ICEC (viable WhatsApp). Créditos de Bayona atribuidos correctamente a Hermida como productora."
   },
   {
     "_pool_id": "pool-2026-07-01-20",
@@ -460,9 +565,20 @@
     "companyEmail": "contacto@parox.cl",
     "instagramUrl": "https://www.instagram.com/paroxproductora/",
     "instagramHandle": "paroxproductora",
-    "instagramFollowers": "~8584",
+    "instagramFollowers": "8584",
     "_igVerifiedVia": "own-site",
-    "additionalContacts": [],
+    "additionalContacts": [
+      {
+        "contactName": "Leonora González Jelincic",
+        "contactTitle": "Productora Ejecutiva / Directora de Contenidos",
+        "contactEmail": null
+      },
+      {
+        "contactName": "Josefina Menjíbar",
+        "contactTitle": "Productora Ejecutiva",
+        "contactEmail": null
+      }
+    ],
     "contactLinkedIn": null,
     "companyLinkedIn": "https://cl.linkedin.com/company/parox-productora",
     "whatsapp": null,
@@ -473,7 +589,10 @@
     "_verifiedCredits": [
       "Los mil días de Allende (2023, serie), nominada a los Premios Platino",
       "El reemplazante (serie, TVN)",
-      "Play (2005, dir. Alicia Scherson)"
+      "Play (2005, dir. Alicia Scherson)",
+      "Reparo (2022, dir. Lucía van Gelderen)",
+      "El árbol magnético (2013, dir. Isabel Ayguavives)",
+      "Navidad (2009, dir. Sebastián Lelio)"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "sergiogandara@ name-match (ZoomInfo-consistente, no publicado verbatim). IG 8.5K.",
@@ -481,7 +600,12 @@
     "_enriched": true,
     "pitchEmailES": "Asunto: una pregunta sobre Parox\n\nHola Sergio, ¿cómo estás?\n\nEstuve viendo lo de Parox, Los mil días de Allende y esa nominación en los Premios Platino, y también Play, que ya es un referente del cine chileno. Se nota que en más de veinte años nunca dejaron de apostar por historias con mirada social, eso no es fácil de sostener.\n\nMe quedó una duda puntual: cuando series como El reemplazante conviven con proyectos de cine y con los servicios de producción que prestan a nivel nacional e internacional, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre sí?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "contactPhone": "+56 9 4268 9972",
+    "_phones": [
+      "+56 9 4268 9972"
+    ],
+    "_deepNotes": "Email pasó de inferido a CONFIRMADO (San Sebastián + Cinechile). Sitio propio no publica email, solo teléfono."
   },
   {
     "_pool_id": "pool-0701-07",
@@ -503,12 +627,12 @@
     "city": "Montevideo",
     "contactName": "Sandino Saravia Vinay",
     "contactTitle": "Socio / Director Ejecutivo México",
-    "contactEmail": "sandino@cimarroncine.com",
-    "companyEmail": null,
-    "contactPhone": null,
+    "contactEmail": "sandinosaravia@gmail.com",
+    "companyEmail": "sandino@cimarroncine.com",
+    "contactPhone": "+598 2203 1314",
     "instagramUrl": null,
     "instagramHandle": "cimarron_cine",
-    "instagramFollowers": "~23000",
+    "instagramFollowers": "22000",
     "additionalContacts": [
       {
         "contactName": "Hernán Musaluppi",
@@ -519,6 +643,21 @@
         "contactName": "Diego Robino",
         "contactTitle": "Socio fundador / Productor",
         "contactEmail": null
+      },
+      {
+        "contactName": "Santiago López",
+        "contactTitle": "Socio fundador / Productor",
+        "contactEmail": null
+      },
+      {
+        "contactName": "Bruna M.",
+        "contactTitle": "Producción / ventas",
+        "contactEmail": "brunam@cimarroncine.com"
+      },
+      {
+        "contactName": "Luciana",
+        "contactTitle": "Contacto de producción",
+        "contactEmail": "luciana@cimarroncine.com"
       }
     ],
     "companyBrief": "Cimarron Cine es una productora fundada en 2018 por Hernan Musaluppi, Diego Robino y Santiago Lopez, con oficinas en Montevideo, Buenos Aires y Ciudad de Mexico. En 2023 se incorporo al grupo The Mediapro Studio manteniendo independencia creativa. Produce cine y series premium para plataformas y coproducciones internacionales, con titulos como El viento que arrasa e Iosi el espia arrepentido. Sandino Saravia Vinay lidera la operacion en Mexico. IG @cimarron_cine.",
@@ -527,7 +666,10 @@
     "_verifiedCredits": [
       "El viento que arrasa (2023, dir. Paula Hernández)",
       "Iosi, el espía arrepentido (serie, Amazon)",
-      "Barrabrava (serie)"
+      "Barrabrava (serie)",
+      "La Sociedad de la Nieve (servicios de producción)",
+      "Así habló el cambista",
+      "El otro hermano"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "sandino@ name-match (ZoomInfo). IG 23K. Mediapro-backed.",
@@ -535,7 +677,14 @@
     "_enriched": true,
     "pitchEmailES": "Asunto: una pregunta sobre Cimarrón Cine\n\nHola Sandino, ¿cómo estás?\n\nEstuve viendo lo de Cimarrón Cine, El viento que arrasa e Iosi, el espía arrepentido. Se nota el rango, pasar de una película de festival a una serie de plataforma como Amazon y que ambas mantengan ese nivel dice mucho del equipo que armaron.\n\nMe quedó una duda puntual: cuando cine y series premium para plataformas corren a la vez, con coproducciones internacionales de por medio, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "_emailNote": "upgraded to personal: Publicado en Uruguay Audiovisual (directorio oficial ACAU/Uruguay XXI), perfil de Sandino Saravia Vinay",
+    "_phones": [
+      "+598 2203 1314",
+      "+52 55 9224 9191",
+      "+598 99 524 704"
+    ],
+    "_deepNotes": "sandino@cimarroncine.com NO era verificable (solo ZoomInfo enmascarado); reemplazado por email personal publicado en directorio oficial uruguayo. Sandino es socio/lead México; fundadores son Musaluppi, Robino y López (emails no publicados). Parte de The Mediapro Studio desde 2023."
   },
   {
     "_pool_id": "pool-0628-19",
@@ -556,12 +705,12 @@
     "country": "Panama",
     "contactName": "Enrique Pérez Him",
     "contactTitle": "Director / Productor",
-    "contactEmail": "info@mentepublica.org",
+    "contactEmail": "producciones@mentepublica.org",
     "companyEmail": "info@mentepublica.org",
     "contactPhone": "+507 6901-9292",
     "instagramUrl": "https://www.instagram.com/mentepublicacine/",
     "instagramHandle": "mentepublicacine",
-    "instagramFollowers": null,
+    "instagramFollowers": "2166",
     "additionalContacts": [
       {
         "contactName": "Nyra Soberón Torchía",
@@ -574,7 +723,8 @@
     "_caveat": null,
     "_verifiedCredits": [
       "Kenke (2015), largometraje de ficción",
-      "Días de Luz (2019), creación colectiva centroamericana"
+      "Días de Luz (2019), creación colectiva centroamericana",
+      "Caos en la ciudad (2013, documental, dir. Enrique Pérez Him), DOCTV Latinoamérica"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "info@ role -> opener de portero por Enrique Pérez Him (lead de produccion). Las Hijas OMITIDO (conflicto de credito con Expansiva).",
@@ -582,7 +732,13 @@
     "_enriched": true,
     "pitchEmailES": "Asunto: una pregunta sobre Mente Pública\n\nHola, quería saber si esta es la mejor forma de llegar a Enrique Pérez Him.\n\nEstuve viendo lo de Mente Pública, Kenke y después Días de Luz como creación colectiva centroamericana. Se nota que no se quedaron en un solo formato ni en un solo país, y eso ya dice bastante del equipo que sostienen detrás.\n\nMe quedó una duda puntual: cuando la producción de cine convive con la formación y la acción social de la organización, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi le hace sentido a Enrique, le puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
-    "_dispatched_at": "2026-07-24T13:00:00.000Z"
+    "_dispatched_at": "2026-07-24T13:00:00.000Z",
+    "_emailNote": "upgraded to personal: Publicado en Sicultura (registro oficial del Ministerio de Cultura de Panamá) para 'Mente Pública Inc.', la entidad de producción; mejor dirigido que info@",
+    "_phones": [
+      "+507 6901 9292",
+      "+507 6614 5543"
+    ],
+    "_deepNotes": "OJO: el email personal hallado (isabellagalvez@gmail.com, registro oficial de Panamá) pertenece a Isabella Gálvez, QUE YA ES NUESTRA DM EN EXPANSIVA CINE (reporte 07-23 en vivo). NO usar para evitar doble contacto a la misma persona en dos días. Se usa producciones@ (inbox de la entidad productora, publicado) manteniendo a Enrique Pérez Him como decisor. Emails personales de Enrique y Nyra no existen públicos tras barrido exhaustivo (subpáginas del sitio dan 404)."
   },
   {
     "companyName": "Incendio Cine",
@@ -596,8 +752,8 @@
     "contactLinkedIn": null,
     "whatsapp": null,
     "altChannel": null,
-    "instagramHandle": null,
-    "instagramFollowers": null,
+    "instagramHandle": "nicolaswongdiaz",
+    "instagramFollowers": "3705",
     "additionalContacts": [],
     "companyBrief": "Incendio Cine es la casa productora del director de fotografia y productor Nicolas Wong Diaz, radicado en Costa Rica y con trayectoria internacional en Cannes, Locarno y Sundance. Se enfoca en coproducciones de cine de autor. Su credencial destacada es Domingo y la niebla, dirigida por Ariel Escalante Meza, estrenada en Un Certain Regard en Cannes 2022, coproducida con Bicha Cine y el Centro de Cine costarricense.",
     "unabaseScore": 9,
@@ -612,9 +768,11 @@
     "_emailOnlyReason": "no company IG (founders use personal accounts); email-only, Cannes UCR caliber",
     "_recovered": true,
     "_verifiedCredits": [
-      "Domingo y la niebla (2022, dir. Ariel Escalante Meza), Un Certain Regard, Cannes 2022"
+      "Domingo y la niebla (2022, dir. Ariel Escalante Meza), Un Certain Regard, Cannes 2022",
+      "Incendio Cine en Cannes Marché du Film 2026 (delegación PROCOMER / Costa Rica Film Commission), compañía activa",
+      "Nicolás Wong: miembro de la Academia (AMPAS), rama de Cinematografía; 3 Premios Nacionales de Cultura de Costa Rica"
     ],
-    "_igStatus": "email-only-no-ig",
+    "_igStatus": "live-verified",
     "_enrichNotes": "Email personal publicado nico@nicowong.com (name-match). Sin IG de empresa (email-only; @incendioproducciones es un grupo de teatro, NO esta).",
     "_enriched": true,
     "pitchEmailES": "Asunto: una pregunta sobre Incendio Cine\n\nHola Nicolás, ¿cómo estás?\n\nEstuve viendo lo de Incendio Cine, en particular el recorrido de Domingo y la niebla en Un Certain Regard, Cannes 2022. Se nota el trabajo de coproducción con Bicha Cine y el Centro de Cine para llevar una película así de un país chico a ese escenario, no es poca cosa.\n\nMe quedó una duda puntual: cuando las coproducciones internacionales corren en paralelo, con distintos socios, monedas y fondos metidos en un mismo proyecto, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre sí?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
@@ -623,13 +781,14 @@
     "source_date": "2026-07-24",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_deepNotes": "IG WIN: @nicolaswongdiaz verificado (público, 3.705 seguidores, 2.457 posts, categoría 'Cinematographer', external_url nicowong.com auto-confirmatorio). Es el fundador y único decisor, así que su IG profesional es el canal social real. NAMESAKES DESCARTADOS: @incendioproducciones (grupo de teatro MX), @incendiofilms (cuenta de videoclips), @incendiocine (shell vacío de 3 seguidores). La empresa no tiene dominio propio (6 variantes NXDOMAIN); el link válido es su sitio personal nicowong.com. Sin teléfono publicado."
   },
   {
     "website": "https://mosaico.pe",
     "contactName": "Leonardo Barbuy",
     "contactTitle": "Director / Socio fundador",
-    "contactEmail": "contacto@mosaico.pe",
+    "contactEmail": "leonardobarbuy@gmail.com",
     "companyEmail": "contacto@mosaico.pe",
     "companyBrief": "Mosaico es una productora peruana de cine de autor fundada en 2016 en Lima. Desarrolla obras con procesos creativos, reflexivos y criticos, sin limites de genero ni formato. Su largometraje Diogenes, hablado en quechua y dirigido por Leonardo Barbuy, gano Mejor Pelicula Iberoamericana y Mejor Direccion en el Festival de Malaga 2023. Coproduce con Francia y Colombia y apuesta por narrativas peruanas descentralizadas.",
     "additionalContacts": [
@@ -637,27 +796,37 @@
         "contactName": "Illari Orccottoma",
         "contactTitle": "Productora creativa",
         "contactEmail": null
+      },
+      {
+        "contactName": "Illari Orccottoma Mendoza",
+        "contactTitle": "Productora creativa (Locarno Open Doors Lab 2022)",
+        "contactEmail": null
       }
     ],
     "country": "Peru",
-    "instagramHandle": null,
+    "instagramHandle": "mosaicoproductora",
     "companyName": "Mosaico",
     "unabaseScore": 8.7,
     "_verifiedCredits": [
       "Diógenes (2023, dir. Leonardo Barbuy), Mejor Película Iberoamericana y Mejor Dirección, Festival de Málaga 2023",
-      "Alana (2017), cortometraje ganador Concurso Nacional DAFO"
+      "Alana (2017), cortometraje ganador Concurso Nacional DAFO",
+      "Toro Mata (en desarrollo), sección industria 'Focus on Peru' Málaga 2023",
+      "Diógenes: Mejor Película Competencia Latinoamericana FICCali 2023; 40+ festivales; estreno en salas de Francia (Bobine Films)"
     ],
-    "_igStatus": "email-only-no-ig",
+    "_igStatus": "live-verified",
     "_enrichNotes": "Email publicado contacto@mosaico.pe -> opener de portero por Leonardo. Website live HTTPS (link); sin IG.",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre Mosaico\n\nHola, quería saber si esta es la mejor forma de llegar a Leonardo Barbuy o si hay otro canal más directo.\n\nEstuve viendo lo de Mosaico, Diógenes ganando Mejor Película Iberoamericana y Mejor Dirección en Málaga 2023 es un logro enorme, más aún rodada en quechua. Y me gustó mucho encontrar Alana en el camino, se nota que la búsqueda de historias descentralizadas viene de antes.\n\nMe quedó una duda puntual: cuando las coproducciones internacionales (con Francia, con Colombia) corren en paralelo con el desarrollo de proyectos acá en Perú, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre sí?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, puedo mostrarles en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Diógenes, Málaga y lo que viene con Toro Mata\n\nHola Leonardo, ¿cómo estás?\n\nTe escribo porque estuve viendo el recorrido de Diógenes, Mejor Película Iberoamericana y Mejor Dirección en Málaga 2023, y me llamó la atención que además haya llegado a más de 40 festivales y a salas en Francia con Bobine Films. Ese tipo de recorrido internacional no es casualidad, se nota que hay una estructura detrás pensada para sostenerlo en el tiempo.\n\nAhora con Toro Mata en desarrollo dentro de Focus on Peru en Málaga, imagino que están manejando en paralelo la vida festivalera y comercial de Diógenes con las etapas iniciales de un proyecto nuevo, además de las coproducciones con Francia y Colombia.\n\n¿Cómo ordenan hoy los presupuestos y la administración cuando conviven proyectos en etapas tan distintas, para que no se mezclen los gastos ni pierdan trazabilidad entre coproductores?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-24",
     "_dispatched_at": "2026-07-24T13:00:00.000Z",
     "source_date": "2026-07-24",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_emailNote": "upgraded to personal: Publicado como contacto directo del director en la página oficial del Festival de Málaga para Diógenes (festivaldemalaga.com), verificado por fetch directo",
+    "instagramFollowers": "747",
+    "_deepNotes": "DOBLE WIN (la mejor mejora del lote): IG de EMPRESA confirmado @mosaicoproductora (público, bio 'Productora peruana de cine', 747 seguidores; el grafo de perfiles relacionados de IG devuelve Barbuy, Orccottoma y Diógenes = match de entidad inequívoco) MÁS email personal del decisor publicado en la web oficial del Festival de Málaga. Namesakes descartados: @mosaic.pe y @mosaicoproducciones. Sitio mosaico.pe es una sola página (subpáginas 404); sin teléfono publicado. Razón social: Mosaico Productora E.I.R.L."
   },
   {
     "website": "https://pucarafilms.com",
@@ -666,7 +835,13 @@
     "contactEmail": "produccion@pucarafilms.com",
     "companyEmail": "produccion@pucarafilms.com",
     "companyBrief": "Pucara Films es una productora de cine boliviano fundada en 2003 con base en La Paz y Cochabamba. Trabaja con directores de la nueva generacion y produce largometrajes de ficcion y documentales con coproduccion internacional que viajan por festivales de America y Europa. Entre sus creditos figuran 98 segundos sin sombra, La tonada del viento y el documental El rey negro. Dirigida por la productora Paola Gosalvez.",
-    "additionalContacts": [],
+    "additionalContacts": [
+      {
+        "contactName": "Angie Rico",
+        "contactTitle": "Asistente de producción (USA)",
+        "contactEmail": null
+      }
+    ],
     "country": "Bolivia",
     "instagramHandle": null,
     "companyName": "Pucara Films",
@@ -674,7 +849,10 @@
     "_verifiedCredits": [
       "98 segundos sin sombra (2019, dir. Juan Pablo Richter), coproducción internacional",
       "La tonada del viento (2019, dir. Yvette Paz Soldán), coproducción Bolivia-Brasil",
-      "El rey negro (2017), documental"
+      "El rey negro (2017), documental",
+      "El río (dir. Juan Pablo Richter)",
+      "Rojo Amarillo Verde",
+      "La Reina del Sur 3 (2022, Telemundo), productora de servicios en Bolivia"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "Bolivia (sustituto GT). Email publicado -> opener de portero por Paola. Website live HTTPS; sin IG. Score ajustado 8.5.",
@@ -686,6 +864,11 @@
     "source_date": "2026-07-24",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "contactPhone": "+591 70613619",
+    "_phones": [
+      "+591 70613619"
+    ],
+    "_deepNotes": "IG del fundador @paogos confirmado (link mutuo sitio<->perfil, full_name 'Paola Gosalvez', external_url pucarafilms.com) PERO es PRIVADO (523 seguidores): un DM requiere solicitud aceptada, así que NO se usa como link/IG de la tarjeta; el email sigue siendo el canal primario. No existe IG de empresa (@pucarafilms, @pucara_films, @pucarafilmsbolivia inexistentes). TELÉFONO WIN: +591 70613619 publicado en su sitio. CAUTION: la página de contacto trae basura de plantilla sin editar (info@yourcompany.com, +3453-909-6565, dirección en New York) — descartada, NO ingerir. Dirección de registro: Calle Los Pioneros 10, Achumani, La Paz. Oficina en Zagreb desde 2022."
   }
 ]

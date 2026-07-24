@@ -1793,7 +1793,7 @@ function computeExecutionCycle(rec, lead) {
     // agency role inboxes (video@, ideas@, casting@) and Spanish-language
     // role naming (cuentas, proyectos, creativo) that earlier batches mis-
     // routed to personal greeting.
-    const GENERIC_RE = /^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|production|direccion|equipo|team|comercial|marketing|contactanos|video|ideas|casting|rrss|social|proyectos|projects|cuentas|accounts|creativo|creativa|creative|account|operaciones|operations|finance|finanzas|acercate|acércate|dime|escribinos|escribenos|escríbenos|consultas|histories|historias|films|film|hello\.|hola\.|info\.|contact\.)@/i;
+    const GENERIC_RE = /^(info|contact|contacto|hello|hola|admin|support|help|noreply|no-reply|ventas|sales|press|prensa|rrhh|hr|jobs|billing|webmaster|postmaster|booking|reservas|general|oficina|office|produccion|producciones|production|productions|direccion|equipo|team|comercial|marketing|contactanos|video|ideas|casting|rrss|social|proyectos|projects|cuentas|accounts|creativo|creativa|creative|account|operaciones|operations|finance|finanzas|acercate|acércate|dime|escribinos|escribenos|escríbenos|consultas|histories|historias|films|film|hello\.|hola\.|info\.|contact\.)@/i;
     const fullEmail = (lead.contactEmail || '').toLowerCase();
     const localPart = fullEmail.split('@')[0] || '';
     const isFreeProvider = /@(gmail|hotmail|yahoo|outlook|icloud|live)\./i.test(fullEmail);
