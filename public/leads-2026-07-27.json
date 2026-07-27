@@ -19,7 +19,7 @@
     "city": "Mexico City",
     "contactName": "Gerardo Gatica",
     "contactTitle": "Fundador / Director General",
-    "contactEmail": "info@panorama.global",
+    "contactEmail": "gatica@panorama.global",
     "companyEmail": "info@panorama.global",
     "contactPhone": "+52 1 55 7679 7156",
     "instagramUrl": null,
@@ -46,20 +46,24 @@
       "Ya no estoy aquí (2019), Netflix, Ariel a Mejor Película",
       "Bellas de noche (2016), documental",
       "La Cocina (2024, dir. Alonso Ruizpalacios), Berlinale 2024",
-      "Familia (dir. Rodrigo García)"
+      "Familia (dir. Rodrigo García)",
+      "Cassandro (2023, con Gael García Bernal)",
+      "Technoboys (Netflix)"
     ],
     "_creditsVerified": true,
     "_enriched": true,
     "_igStatus": "live-verified",
     "_enrichNotes": "RESERVA. Créditos cine elite (Museo, Ya no estoy aquí). info@ publicado -> portero. Nota: matriz tiene brazo publicitario, pero créditos de cine reales.",
     "_source": "reserve-farm-2026-07-23-update",
-    "pitchEmailES": "Asunto: una pregunta sobre Panorama\n\nHola, quería saber si esta es la mejor forma de llegar a Gerardo Gatica o si hay alguien más del equipo con quien convenga hablar primero.\n\nEstuve viendo el recorrido de Panorama, Museo ganando el Oso de Plata al Mejor Guion en Berlinale y después Ya no estoy aquí llevándose el Ariel a Mejor Película con Netflix. Se nota que no es casualidad, hay una visión bastante clara detrás de esos dos proyectos tan distintos entre sí.\n\nMe quedó una duda puntual: cuando tienen largometrajes de festival, documentales y proyectos para plataformas corriendo al mismo tiempo, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre producciones?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Presupuestos entre Museo, La Cocina y Cassandro\n\nHola Gerardo, ¿cómo estás?\n\nTe escribo porque revisando el trabajo de Panorama me quedé pensando en el rango que manejan: desde Museo y Ya no estoy aquí hasta La Cocina en Berlinale este año, pasando por Cassandro. Es un catálogo con tonos y escalas muy distintas, y eso siempre me llama la atención desde el lado financiero.\n\nMás allá del reconocimiento, se nota que hay una visión curatorial fuerte detrás de cada proyecto, y eso no es fácil de sostener cuando los presupuestos crecen en volumen.\n\n¿Cómo organizan hoy los presupuestos cuando tienen varios proyectos corriendo en paralelo, para que no se mezclen los gastos ni las cuentas entre uno y otro?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-27",
     "_dispatched_at": "2026-07-27T13:00:00.000Z",
     "_phones": [
+      "+52 55 5256 3195",
       "+52 1 55 7679 7156"
     ],
-    "_deepNotes": "IG WIN: cuenta de empresa @panorama.global dormida (0 posts); se usa el IG profesional del DM Gerardo Gatica @geragatica (5.975 seguidores, bio 'Film Producer'), canal real. Sin email personal publicado; info@ deliverable. Panorama es conglomerado (Panorama Films, Cinevaquero, etc)."
+    "_deepNotes": "UPGRADE: de role info@ a email PERSONAL gatica@panorama.global (verificado en Cinélatino) -> flip a saludo personal. Socio Müffelmann también con email directo. Segundo teléfono. La mejor captura del pass 2.",
+    "_emailNote": "upgraded: VERIFICADO en la base de datos de estructuras de Cinélatino (Toulouse), perfil cinelatino.fr/structure/panorama-global (gatica@panorama.global y muffelmann@panorama.global), emails directos de decisores"
   },
   {
     "website": "https://luciafilms.wixsite.com/luciafilms",
@@ -96,7 +100,7 @@
     "approved": true,
     "readyToSend": true,
     "_operatorVerified": false,
-    "_deepNotes": "DELIVERABILIDAD RESUELTA: luciafilms.com tiene MX de Google Workspace vivos (el 404 en raíz es homepage sin mapear); info@luciafilms.com entregable. Sin IG oficial (@_luciafilms_ es una parodia de superhéroes, homónimo, NO usar). OJO: 'Nuevo Orden' NO es de Lucía (es de Teorema), no atribuir. DM correcto = Moisés Zonana."
+    "_deepNotes": "Sin email personal (Production List/Unifrance gated/paywalled). Confirmado: NO hay IG activo de empresa (@luciafilms es cuenta casi vacía/ajena). Solo info@luciafilms.com (deliverable). OJO: no atribuir Nuevo Orden/Sundown/Memory a Lucía (son de Teorema, la compañía posterior de Michel Franco). Ruta alterna: Teorema."
   },
   {
     "website": "https://www.maligno.mx",
@@ -167,6 +171,11 @@
         "contactName": "Milka A. Ibáñez Martinovic",
         "contactTitle": "Producción / Coproductora de Apenas primavera",
         "contactEmail": "milkosasfilms@gmail.com"
+      },
+      {
+        "contactName": "Sergio Morales Hernández",
+        "contactTitle": "Edición / Post-producción",
+        "contactEmail": "s.moraleshdz@gmail.com"
       }
     ],
     "country": "Mexico",
@@ -191,7 +200,8 @@
     "readyToSend": true,
     "_operatorVerified": false,
     "_emailNote": "upgraded: Publicado en la página de equipo morguefilms.mx/creativxs bajo Rafael Martínez-García (real, no el dominio muerto)",
-    "_deepNotes": "WIN en el lead más débil: email personal de Rafael publicado en la team page (rafaelmgarcia.8@gmail.com, name-match) -> flip a saludo personal. Página /creativxs publica gmail de todo el equipo. IG @morguefilmsmx confirmado (conteo no extraíble). Sin teléfono."
+    "_deepNotes": "IG @morguefilmsmx 385 seguidores (exacto, IG API). Rafael también tiene IG personal @rafaelmtzgarcia (2.135, bio '@morguefilmsmx') como canal alterno. Crew capturado de /creativxs. Sin teléfono.",
+    "instagramFollowers": "385"
   },
   {
     "_pool_id": "pool-2026-07-06-14",
@@ -239,7 +249,8 @@
       "El concursante, seleccionado en el Atelier del Festival de Cannes",
       "Gordo, calvo y bajito (2011), adquirida por el MoMA de Nueva York",
       "Entrevista laboral (2022 Tallinn, 2023 Cartagena)",
-      "Serie Sin tierra firme (2024)"
+      "Serie Sin tierra firme (2024)",
+      "El Concursante, FICCI Cartagena Mejor Proyecto 2014, Cannes L'Atelier 2015, Tallinn Black Nights"
     ],
     "_creditsVerified": true,
     "_enriched": true,
@@ -254,7 +265,7 @@
       "+57 320 840 6419",
       "+57 315 364 0250"
     ],
-    "_deepNotes": "Sin email personal (keep brand gmail). SIN IG de empresa (namesake @maltaprod = Malta Producciones, distinta, NO usar). Link = sitio Wix. Dos teléfonos publicados. Gordo calvo y bajito adquirida por el MoMA."
+    "_deepNotes": "Sin email personal publicado (confirmado tras barrido: Proimágenes, ENACC, Javeriana). Sin IG de empresa (Facebook /maltacine sí existe). FLAG: el sitio Wix es una plantilla a medio terminar (nav placeholder 'Nueva página'); es su único link y tiene filmografía real, se mantiene. Gordo calvo y bajito en la colección del MoMA confirmado."
   },
   {
     "companyName": "Trópico Atómico Films",
@@ -292,7 +303,9 @@
     "_verifiedCredits": [
       "Alguacil (2019), estreno Visions du Réel",
       "Al otro lado del mar (2022), coproducción con España",
-      "Pukem Swa / Sol de invierno (2026), estreno en cines Colombia"
+      "Pukem Swa / Sol de invierno (2026), estreno en cines Colombia",
+      "Rodaje (2023), Visions du Réel 2023",
+      "El baile de la iguana (2018)"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
@@ -306,7 +319,7 @@
     "_phones": [
       "+57 314 300 9798"
     ],
-    "_deepNotes": "Sin email personal (keep brand gmail). IG 1.254. Dominio propio tropicoatomicofilms.com (no solo gmail). Teléfono publicado (WhatsApp viable)."
+    "_deepNotes": "Sin email personal publicado (Behance/IMDb/Marvin&Wayne sin email). IG @tropicoatomicofilms real (1.254). FLAG: los iconos sociales del footer del sitio Wix son placeholders, NO el IG (que sí es real)."
   },
   {
     "_pool_id": "pool-2026-07-10s-15",
@@ -339,6 +352,11 @@
         "contactName": "Melina Grevino",
         "contactTitle": "Coordinadora de producción",
         "contactEmail": "meli.ajimolidofilms@gmail.com"
+      },
+      {
+        "contactName": "Santiago Borensztejn",
+        "contactTitle": "Coordinador de administración",
+        "contactEmail": "santiago.ajimolidofilms@gmail.com"
       }
     ],
     "contactLinkedIn": null,
@@ -354,7 +372,9 @@
       "Tengo miedo torero (2020, dir. Rodrigo Sepúlveda), Venecia",
       "Los que vuelven (2020, dir. Laura Casabé), San Sebastián",
       "Zonda: folclore argentino (2015, dir. Carlos Saura)",
-      "Al desierto (2017, dir. Ulises Rosell)"
+      "Al desierto (2017, dir. Ulises Rosell)",
+      "Tengo miedo torero (2020), Venecia",
+      "Angélica (2019)"
     ],
     "_creditsVerified": true,
     "_enriched": true,
@@ -367,9 +387,10 @@
     "contactPhone": "+54 9 11 5185 1568",
     "_phones": [
       "+54 9 11 5185 1568",
-      "+54 11 4863 9844"
+      "+54 11 4863 9844",
+      "+54 11 4924 9238"
     ],
-    "_deepNotes": "Sin email personal separado (el brand gmail dobla como contacto de Alejandro Israel, verificado en Ventana Sur 2018). IG @ajimolidofilms 2.131. Dos teléfonos publicados (móvil viable WhatsApp)."
+    "_deepNotes": "Sin email personal de Alejandro Israel publicado (el sitio solo lista meli. y santiago.; el suyo NO está, no se adivina). Tercer teléfono de BAFC. Sitio propio limpio (no plantilla)."
   },
   {
     "_pool_id": "pool-0628-08",
@@ -386,7 +407,7 @@
     "readyToSend": true,
     "_operatorVerified": false,
     "companyName": "Murillo Cine",
-    "website": "https://murillocine.com.ar",
+    "website": null,
     "country": "Argentina",
     "contactName": "Georgina Baisch",
     "contactTitle": "Productora / Socia fundadora",
@@ -412,7 +433,9 @@
       "Jesús López (2021, dir. Maximiliano Schonfeld), coproducción con Francia",
       "Jesús López (2021, dir. Maximiliano Schonfeld), San Sebastián",
       "Chaco (2020), coproducción, Rotterdam",
-      "El empleado y el patrón (2021), coproducción, Quincena de Cineastas Cannes"
+      "El empleado y el patrón (2021), coproducción, Quincena de Cineastas Cannes",
+      "El empleado y el patrón (2021, dir. Manuel Nieto Zas), Quincena de Realizadores Cannes",
+      "Ese fin de semana (dir. Mara Pescio), coproducción con Brasil"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "info@ role -> opener de portero por Georgina. FLAG: 'El prófugo' NO es suyo (es de Rei Cine), no atribuir. IG live (conteo no extraíble).",
@@ -425,7 +448,7 @@
     "_phones": [
       "+54 9 11 5468 4076"
     ],
-    "_deepNotes": "UPGRADE: de role info@ a email PERSONAL georgina.baisch@gmail.com (triple-confirmado San Sebastián + Ventana Sur) -> flip a saludo personal. Cecilia Salim también con gmail personal publicado. Conteo IG no extraíble (handle @murillocine confirmado). 'El prófugo' NO es suyo (Rei Cine)."
+    "_deepNotes": "ALERTA: murillocine.com.ar ahora es un sitio SQUATTED de casino (Aviator) -> DROP website, usar IG @murillocine como link. (Pasó link-liveness antes porque el casino devuelve 200; el gate detecta muerto, no contenido-equivocado.) Conteo IG genuinamente no recuperable. 'El prófugo' NO es suyo (Rei Cine)."
   },
   {
     "companyName": "Vilaüt Films",
@@ -507,7 +530,9 @@
     "_enrichedAt": "2026-07-21",
     "_verifiedCredits": [
       "Perro Bomba (2019), premiada en Guadalajara, Gramado y Múnich",
-      "Bajo Sospecha: Zokunentu (2022), documental, estreno Hot Docs"
+      "Bajo Sospecha: Zokunentu (2022), documental, estreno Hot Docs",
+      "Kaye (2025), largometraje de ficción",
+      "La conmemoración (2020), largometraje de ficción"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
@@ -518,7 +543,7 @@
     "approved": true,
     "readyToSend": true,
     "_operatorVerified": false,
-    "_deepNotes": "Sin email personal (keep brand contacto@pejeperro.cl; esteban@ inferido por ZoomInfo pero no publicado). IG @pejeperrofilms 2.475. Cofundadora Valeria Fuentes."
+    "_deepNotes": "Sin email personal publicado (esteban@pejeperro.cl es patrón ZoomInfo no publicado, NO usar). Sin teléfono publicado (confirmado en Cinechile/APIChile). Esteban = Director Ejecutivo; Valeria = Directora Creativa."
   },
   {
     "companyName": "Dulce Cine",
@@ -549,6 +574,11 @@
         "contactName": "Ilén Juambeltz",
         "contactTitle": "Desarrollo / Guionista-Directora",
         "contactEmail": null
+      },
+      {
+        "contactName": "Lucía Carmela Martínez Echagüe",
+        "contactTitle": "Directora/Productora afiliada a Dulce Cine",
+        "contactEmail": "lulumrtz92@gmail.com"
       }
     ],
     "companyBrief": "Ciudad de la Costa, Uruguay casa productora working with emerging directors; shorts selected/awarded at Berlinale, Palm Springs, Biarritz, BAFICI, Tampere (sales to Canal+, Movistar+, SRF). Short 'Antes de Madrid' at Berlinale Generation 14plus (2023) + Colón de Plata Best International Short at Huelva. Founder Facundo Umpierrez. IG @dulce.cine live (~704).",
@@ -565,7 +595,9 @@
     "_enrichedAt": "2026-07-21",
     "_verifiedCredits": [
       "MATAGATO (serie de ficción), programa de desarrollo audiovisual ACAU",
-      "Ventas a Canal+ (Francia), Movistar+ (España) y SRF (Suiza)"
+      "Ventas a Canal+ (Francia), Movistar+ (España) y SRF (Suiza)",
+      "Sabremos Cumplir (2026, en producción, dir. Ilén Juambeltz y Nicolás Botana)",
+      "La hora del lobo (2026, en producción)"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
@@ -576,7 +608,7 @@
     "approved": true,
     "readyToSend": true,
     "_operatorVerified": false,
-    "_deepNotes": "Sin email personal (keep role contacto@dulcecine.com). IG @dulce.cine 704. FLAG: el footer del sitio Wix trae placeholders de plantilla ('@wix', '2035 GSL Productions') — ignorar. Segundo DM: Ilén Juambeltz."
+    "_deepNotes": "Sin email personal de Facundo (razón social ES su nombre pero sin inbox personal publicado; ACAU y sitio solo listan contacto@). Sin teléfono (confirmado tras extraer el PDF de 25 págs de ACAU). Email adicional publicado de una directora afiliada, Lucía Carmela Martínez."
   },
   {
     "companyName": "Bou Group",
@@ -604,7 +636,9 @@
     "_verifiedCredits": [
       "Malpaso (2019, dir. Héctor M. Valdez), reconocida mejor producción dominicana de 2020, recomendada por El País",
       "Colao (2017), comedia dominicana de gran taquilla",
-      "Qué León (2018), largometraje de comedia"
+      "Qué León (2018), largometraje de comedia",
+      "Qué León, la película dominicana más taquillera de la historia",
+      "Cazatesoros (2024), Disney+"
     ],
     "companyBrief": "Bou Group (Bougroup) es una casa productora dominicana con sede en Santo Domingo y Barcelona, liderada por Jose Ramon Alama. Especializada en largometrajes de ficcion y documental con estandares internacionales, ha producido titulos como Malpaso, Colao, Que Leon, Los Leones y Diaspora. Une criterio artistico con estructura industrial y ha logrado alianzas de distribucion con Disney+, Netflix y Prime Video, consolidando una de las trayectorias mas solidas del cine dominicano contemporaneo. IG @bougroup.",
     "unabaseScore": 8.6,
@@ -618,7 +652,12 @@
     "approved": true,
     "readyToSend": true,
     "_operatorVerified": false,
-    "pitchEmailES": "Asunto: Consulta sobre Bou Group\n\nHola, quería saber si esta es la mejor forma de llegar a Jose Ramon Alama o si hay alguien más indicado en el equipo para este tipo de consulta.\n\nVi que Malpaso fue reconocida como mejor producción dominicana de 2020 y recomendada por El País, y que Colao también tuvo muy buena recepción en taquilla. Se nota que en Bou Group no manejan un solo tipo de proyecto, sino varios formatos y escalas a la vez, lo cual imagino que no es sencillo de coordinar.\n\nJustamente por eso quería preguntar: con esa mezcla de largometrajes, comedias y documentales corriendo en paralelo, ¿cómo organizan hoy los presupuestos de cada proyecto para que no se mezclen entre sí?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo"
+    "pitchEmailES": "Asunto: Consulta sobre Bou Group\n\nHola, quería saber si esta es la mejor forma de llegar a Jose Ramon Alama o si hay alguien más indicado en el equipo para este tipo de consulta.\n\nVi que Malpaso fue reconocida como mejor producción dominicana de 2020 y recomendada por El País, y que Colao también tuvo muy buena recepción en taquilla. Se nota que en Bou Group no manejan un solo tipo de proyecto, sino varios formatos y escalas a la vez, lo cual imagino que no es sencillo de coordinar.\n\nJustamente por eso quería preguntar: con esa mezcla de largometrajes, comedias y documentales corriendo en paralelo, ¿cómo organizan hoy los presupuestos de cada proyecto para que no se mezclen entre sí?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "contactPhone": "+1 809 566 5771",
+    "_phones": [
+      "+1 809 566 5771"
+    ],
+    "_deepNotes": "Sin email personal VERIFICADO -> keep asistencia@ (publicado). Candidatos NO confirmados (no usar como primario): jralanc@gmail.com (Páginas Amarillas, mapeo dudoso) y pascal@bougroup.com (persona 'Pascal', rol desconocido). Teléfono + dirección (Ensanche Naco, Santo Domingo) + código DGCINE AC-ES 3617. Acuerdo de distribución multianual con Disney. Conteo IG no recuperable."
   },
   {
     "_pool_id": "pool-2026-07-01-30",
@@ -665,7 +704,8 @@
       "Reinas (2013), documental",
       "Para su tranquilidad, haga su propio museo (2021), documental",
       "Reinas (2013), TIFF, Grolsch Discovery Award",
-      "Querido Trópico (2024), candidatura de Panamá al Oscar; Gran Premio del Jurado CinéLatino Toulouse"
+      "Querido Trópico (2024), candidatura de Panamá al Oscar; Gran Premio del Jurado CinéLatino Toulouse",
+      "Querido Trópico: TIFF Centrepiece, San Sebastián Horizontes Latinos, Premio del Público Biarritz, Gran Premio del Jurado CinéLatino Toulouse"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "gmail role -> opener de portero por Ana. Website HTTPS válido. Querido Trópico es coprod PA-CO (Big-Sur fue el lado CO en 07-23); coproducción legítima. Créditos no verificables omitidos.",
@@ -675,7 +715,7 @@
     "_dispatched_batch_id": "batch-2026-07-27",
     "_dispatched_at": "2026-07-27T13:00:00.000Z",
     "_emailNote": "upgraded: Gmail personal de Ana Endara publicado en su portfolio anaendara.com/Contacto (distinto del brand inbox)",
-    "_deepNotes": "UPGRADE: de brand gmail a email PERSONAL anaendara@gmail.com (publicado en su portfolio) -> flip a saludo personal. IG @mansa_productora 1.059 confirmado exacto. Pilar Moreno es co-guionista (contacto vía empresa)."
+    "_deepNotes": "Email personal anaendara@gmail.com confirmado. Sin teléfono publicado (RocketReach enmascarado, no usar). anaendara.com muerto (placeholder Cargo); sitio vivo = mansaproductora.com. Isabella Gálvez es colaboradora (su base es Mente Pública/Expansiva), no DM aquí."
   },
   {
     "contactName": "Josué Méndez",
@@ -700,7 +740,10 @@
       "Días de Santiago (2004, dir. Josué Méndez), estreno en el Festival de Rotterdam",
       "Dioses (2008, dir. Josué Méndez), San Sebastián",
       "La deuda / Oliver's Deal (2015)",
-      "Desde 2018 produce series para Netflix, Movistar y Amazon"
+      "Desde 2018 produce series para Netflix, Movistar y Amazon",
+      "Oliver's Deal / La deuda (2015), productor",
+      "Las malas intenciones (2011), productor",
+      "Josué Méndez dirige la 30ª edición del Festival Internacional de Cine de Lima (2026)"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "Email gmail publicado en la página oficial del Festival de Málaga (verificado). SIN website ni IG -> el deep-pass debe hallar el link (IG profesional de Josué Méndez). Opener de portero por Josué.",
@@ -713,7 +756,7 @@
     "approved": true,
     "readyToSend": true,
     "_operatorVerified": false,
-    "_deepNotes": "PRIORIDAD (link): el deep-pass confirmó que NO existe website ni IG de empresa. Josué Méndez tiene LinkedIn confirmado (linkedin.com/in/josue-mendez-a0343a24, 'Propietario - Chullachaki Cine') y es Director del Festival de Cine de Lima (ancla verificable). IG @elamigomendez (3.178, 'Josué Méndez') es PROBABLE pero NO 100% confirmable -> NO se usa como link de la tarjeta (doctrina: link equivocado peor que ninguno). Queda email-only documentado (email verificado en Festival de Málaga). Referencia para operador: LinkedIn confirmado."
+    "_deepNotes": "LINK: veredicto pass-2 = @elamigomendez sigue PROBABLE-NO-CONFIRMADO (bios de IG bloqueadas en todos los mirrors) -> NO se pone en la tarjeta (doctrina). LinkedIn confirmado (linkedin.com/in/josue-mendez-a0343a24, 'Propietario - Chullachaki Cine') = referencia para operador, no link de tarjeta. Confirmado: NO existe website ni IG de empresa. Queda email-only documentado (email verificado en Festival de Málaga). Sin email personal publicado."
   },
   {
     "website": "https://www.puatararafilms.com",
@@ -742,7 +785,8 @@
       "Guaraní (2016, dir. Luis Zorraquín), largometraje, múltiples premios iberoamericanos",
       "El tiempo nublado (2014, dir. Arami Ullón), documental, Visions du Réel",
       "Chicas nuevas 24 horas (2015, dir. Mabel Lozano), documental",
-      "Guaraní (2016, dir. Luis Zorraquín), 3 premios en el Festival de Gramado"
+      "Guaraní (2016, dir. Luis Zorraquín), 3 premios en el Festival de Gramado",
+      "Timoteo 'El Loro Santo' (2025, dir. Osvaldo Ortiz Faiman), apoyo Ibermedia"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "Website propio activo HTTPS (link) + email publicado. gmail role -> opener de portero por Osvaldo. Nota: Sebastián Peña Escobar (additional) también es socio de La Babosa Cine (07-22), pero aquí no es el DM.",
@@ -757,8 +801,9 @@
     "_operatorVerified": false,
     "contactPhone": "+595 981 762638",
     "_phones": [
-      "+595 981 762638"
+      "+595 981 762638",
+      "+595 21 754800"
     ],
-    "_deepNotes": "Sin email personal (keep brand gmail). Sin IG verificable; canales vivos = website propio + Facebook facebook.com/puatararafilms + LinkedIn de Osvaldo. WhatsApp +595 981 762638 (canal directo). Tercera socia: Tania Simbrón. RUC 80086110-8 (registro Paraguay)."
+    "_deepNotes": "IG confirmado INEXISTENTE (ni empresa ni fundador). Link = website propio puatararafilms.com (vivo) + Facebook /puatararafilms alterno. Sin email personal (solo brand gmail). Segundo teléfono (landline del registro gov). Canal directo: WhatsApp +595 981 762638 / Facebook Messenger."
   }
 ]
