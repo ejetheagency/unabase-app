@@ -1,12 +1,37 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-07-27",
+      "source_date": "2026-07-27",
+      "file": "leads-2026-07-27.json",
+      "lead_count": 15,
+      "approved": true,
+      "approved_at": "2026-07-27T13:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": false,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "07-27: 10 core MX-plurality (MX4 Panorama/Maligno/Morgue/Reserva, CO2, AR2, ES Vilaut, CL Pejeperro) + 5 frontier (Dulce UY, Monte y Culebra DR, Mansa PA, Chullachaki PE, Puatarara PY). Full enrichment, 3 gates. Reserve-fed + fresh cinema mines.",
+      "supply_metrics": {
+        "mode": "pool_dispatch+fresh",
+        "dispatched": 15,
+        "core": 10,
+        "frontier": 5,
+        "new_countries": [
+          "Uruguay",
+          "Dominican Republic",
+          "Panama",
+          "Peru",
+          "Paraguay"
+        ]
+      }
+    },
+    {
       "batch_id": "batch-2026-07-24",
       "source_date": "2026-07-24",
       "file": "leads-2026-07-24.json",
       "lead_count": 15,
       "approved": true,
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
       "note": "ACTIVE 07-24: 10 core MX-plurality + 5 frontier (UY/PA/CR/PE/BO). Full enrichment. Deployed.",
@@ -1209,7 +1234,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-07-24",
+  "active_batch_id": "batch-2026-07-27",
   "timezone": "America/New_York",
-  "last_updated": "2026-07-24T12:00:00.000Z"
+  "last_updated": "2026-07-27T13:00:00.000Z"
 }
