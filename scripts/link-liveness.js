@@ -22,6 +22,18 @@ if (!file) { console.error('usage: node scripts/link-liveness.js [--gate] <leads
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const PARKED = [/domain (is )?for sale/i, /buy this domain/i, /parkingcrew/i, /sedoparking/i, /godaddy\.com\/domainsearch/i, /this domain is parked/i, /account suspended/i, /future home of something/i];
 const IG_DEAD = [/Sorry, this page isn'?t available/i, /page isn'?t available/i, /the link you followed may be broken/i, /Page Not Found/i, /content isn'?t available/i, /user not found/i];
+// HIJACKED-CONTENT sanity check: a domain that returns HTTP 200 with a live page but the
+// content is gambling/casino/adult spam — the classic expired-then-repurposed hijack we
+// keep hitting (Murillo -> "Aviator" casino, Magoya -> 1Win, Monte y Culebra). link-liveness
+// only saw "200 + non-empty body" and passed it. We flag when >= 2 distinct high-specificity
+// gambling markers appear (2-signal threshold so a lone word on a legit film site never trips).
+const HIJACK_MARKERS = [
+  /\bcasino/i, /apuestas/i, /tragamonedas/i, /tragaperras/i, /\bruleta\b/i, /\baviator\b/i,
+  /\b1win\b/i, /\b1xbet\b/i, /\bbetano\b/i, /\bbetway\b/i, /\bbet365\b/i, /juegos de azar/i,
+  /casas? de apuestas/i, /bono de bienvenida/i, /giros gratis/i, /\bslots?\b/i, /\bp[oó]ker\b/i,
+  /apuestas deportivas/i, /dep[oó]sito m[ií]nimo/i, /retiro de ganancias/i, /\bjackpot\b/i, /\bblackjack\b/i,
+];
+function hijackHits(body) { const seen = new Set(); for (const m of HIJACK_MARKERS) if (m.test(body)) seen.add(m.source); return seen.size; }
 
 async function fetchWithTimeout(url, ms = 20000) {
   const ctrl = new AbortController();
@@ -39,6 +51,7 @@ async function checkWebsite(url) {
     if (status < 200 || status >= 400) return { ok: false, reason: `HTTP ${status}` };
     if (!body || body.trim().length < 200) return { ok: false, reason: 'empty/blank body' };
     for (const p of PARKED) if (p.test(body)) return { ok: false, reason: 'parked/suspended domain' };
+    if (hijackHits(body) >= 2) return { ok: false, reason: 'HIJACKED: domain now serves gambling/spam content (was 200 OK)' };
     return { ok: true, reason: `HTTP ${status}` };
   } catch (e) { return { ok: false, reason: (e.name === 'AbortError' ? 'timeout' : (e.cause?.code || e.message)) }; }
 }
