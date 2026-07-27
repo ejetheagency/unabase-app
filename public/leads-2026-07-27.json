@@ -21,14 +21,19 @@
     "contactTitle": "Fundador / Director General",
     "contactEmail": "info@panorama.global",
     "companyEmail": "info@panorama.global",
-    "contactPhone": null,
+    "contactPhone": "+52 1 55 7679 7156",
     "instagramUrl": null,
-    "instagramHandle": null,
-    "instagramFollowers": null,
+    "instagramHandle": "geragatica",
+    "instagramFollowers": "5975",
     "additionalContacts": [
       {
         "contactName": "Alberto Müffelmann",
         "contactTitle": "Cofundador / Productor",
+        "contactEmail": null
+      },
+      {
+        "contactName": "Moisés Cosio",
+        "contactTitle": "Socio cofundador",
         "contactEmail": null
       }
     ],
@@ -39,16 +44,22 @@
     "_verifiedCredits": [
       "Museo (2018), Oso de Plata al Mejor Guion, Berlinale",
       "Ya no estoy aquí (2019), Netflix, Ariel a Mejor Película",
-      "Bellas de noche (2016), documental"
+      "Bellas de noche (2016), documental",
+      "La Cocina (2024, dir. Alonso Ruizpalacios), Berlinale 2024",
+      "Familia (dir. Rodrigo García)"
     ],
     "_creditsVerified": true,
     "_enriched": true,
-    "_igStatus": "unknown",
+    "_igStatus": "live-verified",
     "_enrichNotes": "RESERVA. Créditos cine elite (Museo, Ya no estoy aquí). info@ publicado -> portero. Nota: matriz tiene brazo publicitario, pero créditos de cine reales.",
     "_source": "reserve-farm-2026-07-23-update",
     "pitchEmailES": "Asunto: una pregunta sobre Panorama\n\nHola, quería saber si esta es la mejor forma de llegar a Gerardo Gatica o si hay alguien más del equipo con quien convenga hablar primero.\n\nEstuve viendo el recorrido de Panorama, Museo ganando el Oso de Plata al Mejor Guion en Berlinale y después Ya no estoy aquí llevándose el Ariel a Mejor Película con Netflix. Se nota que no es casualidad, hay una visión bastante clara detrás de esos dos proyectos tan distintos entre sí.\n\nMe quedó una duda puntual: cuando tienen largometrajes de festival, documentales y proyectos para plataformas corriendo al mismo tiempo, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre producciones?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-27",
-    "_dispatched_at": "2026-07-27T13:00:00.000Z"
+    "_dispatched_at": "2026-07-27T13:00:00.000Z",
+    "_phones": [
+      "+52 1 55 7679 7156"
+    ],
+    "_deepNotes": "IG WIN: cuenta de empresa @panorama.global dormida (0 posts); se usa el IG profesional del DM Gerardo Gatica @geragatica (5.975 seguidores, bio 'Film Producer'), canal real. Sin email personal publicado; info@ deliverable. Panorama es conglomerado (Panorama Films, Cinevaquero, etc)."
   },
   {
     "website": "https://luciafilms.wixsite.com/luciafilms",
@@ -71,7 +82,8 @@
     "_verifiedCredits": [
       "Desde Allá (2015, dir. Lorenzo Vigas), León de Oro, Festival de Venecia, coproducción",
       "Después de Lucía (2012, dir. Michel Franco), Mejor Película Un Certain Regard, Cannes",
-      "600 Millas (2015, dir. Gabriel Ripstein), Mejor Ópera Prima, Berlinale"
+      "600 Millas (2015, dir. Gabriel Ripstein), Mejor Ópera Prima, Berlinale",
+      "Chronic (2015, dir. Michel Franco), Mejor Guion, Cannes"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "Créditos élite (León de Oro Venecia + Cannes) justifican 8.5. Email role info@luciafilms.com publicado en Contacto -> opener de portero por Zonana (DM operativo, no Michel Franco -> evita solape con Teorema). Website = wix subdominio (luciafilms.com da 404 en raíz; email en dominio propio). Deep-pass: verificar entregabilidad y buscar email personal.",
@@ -83,7 +95,8 @@
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_deepNotes": "DELIVERABILIDAD RESUELTA: luciafilms.com tiene MX de Google Workspace vivos (el 404 en raíz es homepage sin mapear); info@luciafilms.com entregable. Sin IG oficial (@_luciafilms_ es una parodia de superhéroes, homónimo, NO usar). OJO: 'Nuevo Orden' NO es de Lucía (es de Teorema), no atribuir. DM correcto = Moisés Zonana."
   },
   {
     "website": "https://www.maligno.mx",
@@ -102,6 +115,11 @@
         "contactName": "Ximena García Lecuona",
         "contactTitle": "Fundadora / Guionista-Directora",
         "contactEmail": null
+      },
+      {
+        "contactName": "Eduardo García Lecuona",
+        "contactTitle": "Fundador / Productor-Director",
+        "contactEmail": null
       }
     ],
     "country": "Mexico",
@@ -110,7 +128,8 @@
     "_verifiedCredits": [
       "Párvulos: Hijos del Apocalipsis (2024, dir. Isaac Ezban), largometraje de terror, estreno en salas México y EE.UU.",
       "No me sigas (2025), largometraje de terror en coproducción con Blumhouse",
-      "Huesera (2022, dir. Michelle Garza Cervera), coproductora, premiada en Tribeca y Sitges"
+      "Huesera (2022, dir. Michelle Garza Cervera), coproductora, premiada en Tribeca y Sitges",
+      "Lux Noctis (en producción, coproducción con Pimienta Films)"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Cine de género ELITE (Blumhouse, Isaac Ezban). Email personal javier@maligno.mx publicado + WhatsApp. Créditos reordenados: Huesera al final (coprod compartida con Enfant en 07-23).",
@@ -122,36 +141,57 @@
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "instagramFollowers": "1440",
+    "contactPhone": "+52 1 55 7972 0874",
+    "_phones": [
+      "+52 1 55 7972 0874"
+    ],
+    "_deepNotes": "javier@maligno.mx confirmado (Google Workspace deliverable). IG @malignogorehouse ~1.440 confirmado como la entidad. Eduardo/Ximena García Lecuona: emails eduardo@/ximena@ eran patrón INFERIDO (no publicados) -> se dejan sin email. Apellido completo García Lecuona."
   },
   {
     "website": "https://www.morguefilms.mx",
     "instagramHandle": "morguefilmsmx",
     "contactName": "Rafael Martínez-García",
     "contactTitle": "Fundador / Director-Productor",
-    "contactEmail": "contacto@morguefilms.mx",
+    "contactEmail": "rafaelmgarcia.8@gmail.com",
     "companyEmail": "contacto@morguefilms.mx",
     "companyBrief": "Productora de cine ubicada en Campeche, Mexico, dedicada al largometraje y cortometraje de ficcion de autor. Encabezada por el cineasta Rafael Martinez-Garcia, ha producido 90 dias para el 2 de julio (2021) y El guardian del faro (2023), rodada en Ciudad del Carmen, ademas de Apenas primavera, seleccionada en el Festival Internacional de Cine de Morelia. IG @morguefilmsmx.",
-    "additionalContacts": [],
+    "additionalContacts": [
+      {
+        "contactName": "César Rincón Jiménez",
+        "contactTitle": "Cinefotografía / Edición",
+        "contactEmail": "cesar.rinconjimenez@gmail.com"
+      },
+      {
+        "contactName": "Milka A. Ibáñez Martinovic",
+        "contactTitle": "Producción / Coproductora de Apenas primavera",
+        "contactEmail": "milkosasfilms@gmail.com"
+      }
+    ],
     "country": "Mexico",
     "companyName": "Morgue Films",
     "unabaseScore": 7.8,
     "_verifiedCredits": [
       "Apenas primavera (2024, dir. Rafael Martínez-García), selección Festival Internacional de Cine de Morelia",
       "El guardián del faro (2023), largometraje rodado en Campeche",
-      "90 días para el 2 de julio (2021), largometraje de ficción"
+      "90 días para el 2 de julio (2021), largometraje de ficción",
+      "Ratonera (cortometraje)",
+      "La luz agonizante (cortometraje)"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "Cine de ficción de autor (FICM). Solo role inbox publicado -> opener de portero por Rafael. El más débil del lote MX (7.8); el deep-pass buscará email personal.",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre Apenas primavera\n\nHola, quería saber si esta es la mejor forma de llegar a Rafael Martínez-García, o si hay alguien más del equipo de Morgue Films con quien convenga hablar de temas administrativos y de producción.\n\nEstuve viendo el recorrido de la productora, Apenas primavera en la selección de Morelia y antes El guardián del faro, rodada en Campeche. Se nota el trabajo de armar una identidad de autor tan clara desde una locación como Campeche, no es lo más común.\n\nMe quedó una duda puntual: cuando tienen un largometraje en desarrollo o rodaje y a la vez están gestionando la vida de festival de otro (viajes, copias, submissions), ¿cómo están ordenando hoy los presupuestos para que no se mezclen los gastos de cada proyecto?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi le hace sentido a Rafael, o a quien maneje esa parte, puedo mostrar en 10 minutos cómo lo resuelven otras productoras de cine de autor en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Sobre Apenas primavera y la mezcla de proyectos en Morgue Films\n\nHola Rafael, ¿cómo estás?\n\nTe escribo porque vi el recorrido de Morgue Films, desde 90 días para el 2 de julio hasta Apenas primavera y su selección en Morelia. Se nota que hay una línea de autor bien sostenida en el tiempo, no es fácil mantener eso proyecto tras proyecto.\n\nMe imagino que entre largos y cortos deben tener varias etapas corriendo en paralelo, preproducción de uno, posproducción de otro. ¿Cómo hacen hoy para que los presupuestos de cada proyecto no se mezclen entre sí?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-27",
     "_dispatched_at": "2026-07-27T13:00:00.000Z",
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_emailNote": "upgraded: Publicado en la página de equipo morguefilms.mx/creativxs bajo Rafael Martínez-García (real, no el dominio muerto)",
+    "_deepNotes": "WIN en el lead más débil: email personal de Rafael publicado en la team page (rafaelmgarcia.8@gmail.com, name-match) -> flip a saludo personal. Página /creativxs publica gmail de todo el equipo. IG @morguefilmsmx confirmado (conteo no extraíble). Sin teléfono."
   },
   {
     "_pool_id": "pool-2026-07-06-14",
@@ -196,7 +236,10 @@
     "_verifiedCredits": [
       "Gordo, calvo y bajito (2012), largometraje animado premiado internacionalmente",
       "Sin mover los labios (2017), largometraje de ficción",
-      "El concursante, seleccionado en el Atelier del Festival de Cannes"
+      "El concursante, seleccionado en el Atelier del Festival de Cannes",
+      "Gordo, calvo y bajito (2011), adquirida por el MoMA de Nueva York",
+      "Entrevista laboral (2022 Tallinn, 2023 Cartagena)",
+      "Serie Sin tierra firme (2024)"
     ],
     "_creditsVerified": true,
     "_enriched": true,
@@ -205,7 +248,13 @@
     "_source": "reserve-farm-2026-07-23-update",
     "pitchEmailES": "Asunto: una pregunta sobre El concursante\n\nHola, quería saber si esta es la mejor forma de llegar a Carlos Osuna, Director de Malta Cine.\n\nEstuve viendo el recorrido de Malta Cine, desde Gordo, calvo y bajito hasta Sin mover los labios, y me llamó la atención cómo mantienen ese sello surrealista tan propio en cada proyecto. Se nota un criterio de autor muy consistente, no es fácil sostenerlo película tras película.\n\nMe quedó una duda puntual: con El concursante en coproducción con México y Chile, y probablemente otros proyectos propios corriendo en paralelo, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre países y proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-27",
-    "_dispatched_at": "2026-07-27T13:00:00.000Z"
+    "_dispatched_at": "2026-07-27T13:00:00.000Z",
+    "contactPhone": "+57 320 840 6419",
+    "_phones": [
+      "+57 320 840 6419",
+      "+57 315 364 0250"
+    ],
+    "_deepNotes": "Sin email personal (keep brand gmail). SIN IG de empresa (namesake @maltaprod = Malta Producciones, distinta, NO usar). Link = sitio Wix. Dos teléfonos publicados. Gordo calvo y bajito adquirida por el MoMA."
   },
   {
     "companyName": "Trópico Atómico Films",
@@ -215,13 +264,19 @@
     "contactTitle": "Founder / Director-Producer",
     "contactEmail": "tropicoatomicofilms@gmail.com",
     "companyEmail": null,
-    "contactPhone": null,
+    "contactPhone": "+57 314 300 9798",
     "contactLinkedIn": null,
     "whatsapp": null,
     "altChannel": null,
     "instagramHandle": "tropicoatomicofilms",
-    "instagramFollowers": 1254,
-    "additionalContacts": [],
+    "instagramFollowers": "1254",
+    "additionalContacts": [
+      {
+        "contactName": "David Aguilera Cogollo",
+        "contactTitle": "Director afiliado",
+        "contactEmail": null
+      }
+    ],
     "companyBrief": "Compania documental (est. 2017), fundador Samuel Moreno Alvarez (Barranquilla, ahora Bogota). Slate de no-ficcion de autor: 'El baile de la iguana' (Filmar en America Latina 2018), trabajo en Visions du Reel 2019 y Gijon 2022, 'Al otro lado del mar'. IG @tropicoatomicofilms ~1.25K (sitio Wix live). DM: Samuel Moreno.",
     "unabaseScore": 8.6,
     "tier": "tier1",
@@ -234,7 +289,11 @@
     "_recovered": true,
     "_enriched": true,
     "_enrichedAt": "2026-07-21",
-    "_verifiedCredits": [],
+    "_verifiedCredits": [
+      "Alguacil (2019), estreno Visions du Réel",
+      "Al otro lado del mar (2022), coproducción con España",
+      "Pukem Swa / Sol de invierno (2026), estreno en cines Colombia"
+    ],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
     "pitchEmailES": "Asunto: una pregunta sobre El baile de la iguana\n\nHola, quería saber si esta es la mejor forma de llegar a Samuel Moreno Álvarez o si hay otro correo por el que prefiera que le escriba.\n\nEstuve viendo lo de Trópico Atómico Films, el recorrido de El baile de la iguana por Filmar en América Latina y el paso de Al otro lado del mar por Visions du Réel y Gijón. Se nota un criterio de autor bien sostenido en el tiempo, no es fácil mantener esa coherencia en documental.\n\nMe quedó una duda puntual: cuando tienen desarrollo, rodaje y festivales corriendo a la vez para distintos proyectos, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre sí?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi le hace sentido a Samuel, le puedo mostrar en 10 minutos cómo lo resuelven otras productoras documentales en una situación parecida.\n\nScarlett Lillo",
@@ -243,7 +302,11 @@
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_phones": [
+      "+57 314 300 9798"
+    ],
+    "_deepNotes": "Sin email personal (keep brand gmail). IG 1.254. Dominio propio tropicoatomicofilms.com (no solo gmail). Teléfono publicado (WhatsApp viable)."
   },
   {
     "_pool_id": "pool-2026-07-10s-15",
@@ -269,7 +332,7 @@
     "companyEmail": "ajimolidofilms@gmail.com",
     "instagramUrl": "https://www.instagram.com/ajimolidofilms/",
     "instagramHandle": "ajimolidofilms",
-    "instagramFollowers": null,
+    "instagramFollowers": "2131",
     "_igVerifiedVia": "own-site",
     "additionalContacts": [
       {
@@ -288,7 +351,10 @@
     "_verifiedCredits": [
       "El invierno (2016, dir. Emiliano Torres), Competencia Oficial San Sebastián, Premio Especial del Jurado",
       "Los que vuelven (2019, dir. Laura Casabé), Mejor Dirección en Sitges",
-      "Tengo miedo torero (2020, dir. Rodrigo Sepúlveda), Venecia"
+      "Tengo miedo torero (2020, dir. Rodrigo Sepúlveda), Venecia",
+      "Los que vuelven (2020, dir. Laura Casabé), San Sebastián",
+      "Zonda: folclore argentino (2015, dir. Carlos Saura)",
+      "Al desierto (2017, dir. Ulises Rosell)"
     ],
     "_creditsVerified": true,
     "_enriched": true,
@@ -297,7 +363,13 @@
     "_source": "reserve-farm-2026-07-23-update",
     "pitchEmailES": "Asunto: una pregunta sobre Ajimolido Films\n\nHola, quería saber si esta es la mejor forma de llegar a Alejandro Israel.\n\nEstuve viendo el recorrido de Ajimolido Films, El invierno con el Premio Especial del Jurado en San Sebastián y Los que vuelven con Mejor Dirección en Sitges. Se nota el criterio detrás de cada selección, no es poca cosa mantener ese nivel película tras película.\n\nMe quedó una duda puntual: cuando manejan ficción de autor y documental al mismo tiempo, muchas veces con coproducciones internacionales de por medio, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, le puedo mostrar a Alejandro en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-27",
-    "_dispatched_at": "2026-07-27T13:00:00.000Z"
+    "_dispatched_at": "2026-07-27T13:00:00.000Z",
+    "contactPhone": "+54 9 11 5185 1568",
+    "_phones": [
+      "+54 9 11 5185 1568",
+      "+54 11 4863 9844"
+    ],
+    "_deepNotes": "Sin email personal separado (el brand gmail dobla como contacto de Alejandro Israel, verificado en Ventana Sur 2018). IG @ajimolidofilms 2.131. Dos teléfonos publicados (móvil viable WhatsApp)."
   },
   {
     "_pool_id": "pool-0628-08",
@@ -318,7 +390,7 @@
     "country": "Argentina",
     "contactName": "Georgina Baisch",
     "contactTitle": "Productora / Socia fundadora",
-    "contactEmail": "info@murillocine.com",
+    "contactEmail": "georgina.baisch@gmail.com",
     "companyEmail": "info@murillocine.com",
     "contactPhone": "+54 9 11 5468 4076",
     "instagramUrl": "https://www.instagram.com/murillocine/",
@@ -337,47 +409,68 @@
     "_verifiedCredits": [
       "Ceniza negra (2019, dir. Sofía Quirós), Semaine de la Critique, Cannes",
       "El motoarrebatador (2018, dir. Agustín Toscano), San Sebastián Horizontes Latinos",
-      "Jesús López (2021, dir. Maximiliano Schonfeld), coproducción con Francia"
+      "Jesús López (2021, dir. Maximiliano Schonfeld), coproducción con Francia",
+      "Jesús López (2021, dir. Maximiliano Schonfeld), San Sebastián",
+      "Chaco (2020), coproducción, Rotterdam",
+      "El empleado y el patrón (2021), coproducción, Quincena de Cineastas Cannes"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "info@ role -> opener de portero por Georgina. FLAG: 'El prófugo' NO es suyo (es de Rei Cine), no atribuir. IG live (conteo no extraíble).",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre Murillo Cine\n\nHola, quería saber si esta es la mejor forma de llegar a Georgina Baisch, o si hay alguien más indicado para esto.\n\nEstuve viendo el recorrido de Murillo Cine, Ceniza negra en la Semaine de la Critique de Cannes y El motoarrebatador en San Sebastián Horizontes Latinos. Se nota un criterio muy claro para elegir óperas primas con proyección internacional, no es fácil sostener eso película tras película.\n\nMe quedó una duda puntual: cuando tienen ficción, documental y coproducciones como la de Jesús López con Francia corriendo en paralelo, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi le hace sentido a Georgina, puedo mostrarle en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Coproducciones y presupuestos en Murillo Cine\n\nHola Georgina, ¿cómo estás?\n\nTe escribo porque venía siguiendo el recorrido de Murillo Cine y me quedé pensando en la combinación de películas como Ceniza negra, que llegó a la Semaine de la Critique en Cannes, y Jesús López, con esa coproducción con Francia y su paso por San Sebastián. Se nota un trabajo muy fino para sostener miradas de autor en estructuras internacionales tan distintas entre sí.\n\nMe imagino que each coproducción trae su propia moneda, sus propios plazos de rendición y sus propios organismos de control. Por eso te quería preguntar puntualmente: ¿cómo hacen hoy para que los presupuestos de cada proyecto (con sus fondos, coproductores y monedas) no se mezclen entre sí y cada uno mantenga su trazabilidad clara?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-27",
-    "_dispatched_at": "2026-07-27T13:00:00.000Z"
+    "_dispatched_at": "2026-07-27T13:00:00.000Z",
+    "_emailNote": "upgraded: Gmail personal de la DM Georgina Baisch, publicado en el bloque de contacto de San Sebastián 2024 y en el directorio oficial de Ventana Sur 2018",
+    "_phones": [
+      "+54 9 11 5468 4076"
+    ],
+    "_deepNotes": "UPGRADE: de role info@ a email PERSONAL georgina.baisch@gmail.com (triple-confirmado San Sebastián + Ventana Sur) -> flip a saludo personal. Cecilia Salim también con gmail personal publicado. Conteo IG no extraíble (handle @murillocine confirmado). 'El prófugo' NO es suyo (Rei Cine)."
   },
   {
     "companyName": "Vilaüt Films",
     "country": "Spain",
     "website": "https://vilautfilms.com",
-    "instagramHandle": null,
-    "instagramFollowers": null,
+    "instagramHandle": "vilaut.films",
+    "instagramFollowers": "1294",
     "contactName": "Tono Folguera",
     "contactTitle": "Productor / Socio",
-    "contactEmail": "info@lastormedia.com",
+    "contactEmail": "tfolguera@lastormedia.com",
     "companyEmail": "info@lastormedia.com",
     "unabaseScore": 8.8,
     "companyBrief": "Vilaüt Films es una productora de cine con sede en Barcelona dedicada a largometrajes de ficcion y documental de autor. Ha coproducido titulos de gran recorrido festivalero como Alcarras de Carla Simon, Oso de Oro en la Berlinale 2022, El Planeta de Amalia Ulman estrenada en Sundance y Creatura de Elena Martin, presentada en la Quinzaine de Cannes 2023. Operada por el equipo de Lastor Media.",
-    "additionalContacts": [],
+    "additionalContacts": [
+      {
+        "contactName": "Clàudia Vila",
+        "contactTitle": "Coordinadora de Producción y Desarrollo",
+        "contactEmail": null
+      }
+    ],
     "_verifiedCredits": [
       "Alcarràs (2022, dir. Carla Simón), Oso de Oro Berlinale 2022, coproductora",
       "Creatura (2023, dir. Elena Martín), Quinzaine des Cinéastes Cannes",
-      "El Planeta (2021, dir. Amalia Ulman), Sundance"
+      "El Planeta (2021, dir. Amalia Ulman), Sundance",
+      "Els dies que vindran (dir. Carlos Marqués-Marcet)"
     ],
     "_creditsVerified": true,
     "_enriched": true,
     "_pool_status": "pool",
-    "_igStatus": "unknown",
+    "_igStatus": "live-verified",
     "_source": "reserve-farm-2026-07-23",
     "_enrichNotes": "RESERVA. Comparte equipo/inbox con Lastor Media (info@lastormedia.com, tambien en pool). Website live. Sin IG.",
-    "pitchEmailES": "Asunto: una pregunta sobre Vilaüt Films\n\nHola, quería saber si esta es la mejor forma de llegar a Tono Folguera.\n\nEstuve viendo lo de Vilaüt Films, el recorrido con Alcarràs, Oso de Oro en Berlinale 2022, y Creatura en la Quinzaine de Cannes 2023. Se nota el criterio detrás de esas coproducciones, no es casualidad que ambas hayan llegado tan lejos.\n\nMe quedó una duda puntual: cuando ficción de autor y documental corren a la vez, con coproducciones internacionales de por medio, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Coproducciones y orden de presupuestos\n\nHola Tono, ¿cómo estás?\n\nTe escribo porque venimos siguiendo el recorrido de Vilaüt Films, y la verdad que el camino de Alcarràs con el Oso de Oro en Berlinale 2022 y después Creatura en la Quinzaine de Cannes habla de un criterio de selección muy fino, no es casualidad que ambos títulos hayan tenido ese recorrido festivalero.\n\nNos imaginamos que coproducir varios largos a la vez, con distintos socios y monedas, debe complicar bastante el seguimiento financiero de cada proyecto por separado.\n\n¿Cómo hacen hoy para que los presupuestos de cada coproducción no se mezclen entre sí, sobre todo cuando hay aportes de distintos países involucrados?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nSaludos,\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-27",
     "_dispatched_at": "2026-07-27T13:00:00.000Z",
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_emailNote": "upgraded: Email directo de Tono Folguera (Antoni Folguera Amorós), publicado en el bloque de contacto de producción de San Sebastián 2022 para 'Alcarràs' (Vilaüt Films)",
+    "contactPhone": "+34 934 430 769",
+    "_phones": [
+      "+34 934 430 769"
+    ],
+    "_deepNotes": "CORRECCIÓN CLAVE: Vilaüt SÍ tiene Instagram -> @vilaut.films (~1.294), nuestra data lo tenía sin IG. UPGRADE de email: de info@lastormedia.com (rol) a tfolguera@lastormedia.com (personal, name-match, San Sebastián 2022) -> flip a saludo personal. Tono Folguera = 'Screen International Catalan Producer of the Year'."
   },
   {
     "companyName": "Pejeperro Films",
@@ -392,7 +485,7 @@
     "whatsapp": null,
     "altChannel": null,
     "instagramHandle": "pejeperrofilms",
-    "instagramFollowers": 2475,
+    "instagramFollowers": "2475",
     "additionalContacts": [
       {
         "name": "Valeria Fuentes Briones",
@@ -412,7 +505,10 @@
     "founderInstagramHandle": "vafubri",
     "_enriched": true,
     "_enrichedAt": "2026-07-21",
-    "_verifiedCredits": [],
+    "_verifiedCredits": [
+      "Perro Bomba (2019), premiada en Guadalajara, Gramado y Múnich",
+      "Bajo Sospecha: Zokunentu (2022), documental, estreno Hot Docs"
+    ],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
     "pitchEmailES": "Asunto: una pregunta sobre Bajo Sospecha: Zokunentu\n\nHola, quería saber si esta es la mejor forma de llegar a Esteban Sandoval, o si hay otro correo donde te llegue más directo.\n\nEstuve viendo lo de Pejeperro Films, el documental en mapudungun Bajo Sospecha: Zokunentu con estreno en Hot Docs y SANFIC, y también la coproducción de Perro Bomba, que se llevó Mejor Película en Málaga. Se nota el trabajo de años detrás de esos dos, no es poca cosa sostener documental y ficción al mismo tiempo con ese nivel.\n\nMe quedó una duda puntual: cuando un documental como el de Zokunentu y un proyecto de ficción corren a la vez, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
@@ -421,7 +517,8 @@
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_deepNotes": "Sin email personal (keep brand contacto@pejeperro.cl; esteban@ inferido por ZoomInfo pero no publicado). IG @pejeperrofilms 2.475. Cofundadora Valeria Fuentes."
   },
   {
     "companyName": "Dulce Cine",
@@ -436,7 +533,7 @@
     "whatsapp": null,
     "altChannel": null,
     "instagramHandle": "dulce.cine",
-    "instagramFollowers": 704,
+    "instagramFollowers": "704",
     "additionalContacts": [
       {
         "name": "Ilen Juambeltz",
@@ -447,6 +544,11 @@
         "name": "Facundo Umpierrez",
         "title": null,
         "email": "up.facundo@gmail.com"
+      },
+      {
+        "contactName": "Ilén Juambeltz",
+        "contactTitle": "Desarrollo / Guionista-Directora",
+        "contactEmail": null
       }
     ],
     "companyBrief": "Ciudad de la Costa, Uruguay casa productora working with emerging directors; shorts selected/awarded at Berlinale, Palm Springs, Biarritz, BAFICI, Tampere (sales to Canal+, Movistar+, SRF). Short 'Antes de Madrid' at Berlinale Generation 14plus (2023) + Colón de Plata Best International Short at Huelva. Founder Facundo Umpierrez. IG @dulce.cine live (~704).",
@@ -461,7 +563,10 @@
     "founderInstagramHandle": "fakka.nda",
     "_enriched": true,
     "_enrichedAt": "2026-07-21",
-    "_verifiedCredits": [],
+    "_verifiedCredits": [
+      "MATAGATO (serie de ficción), programa de desarrollo audiovisual ACAU",
+      "Ventas a Canal+ (Francia), Movistar+ (España) y SRF (Suiza)"
+    ],
     "_igStatus": "live-verified",
     "_enrichNotes": "",
     "pitchEmailES": "Asunto: una pregunta sobre Antes de Madrid\n\nHola, quería saber si esta es la mejor forma de llegar a Facundo Umpierrez.\n\nEstuve viendo lo de Dulce Cine, el recorrido de Antes de Madrid por Berlinale Generation 14plus en 2023 y después el Colón de Plata en Huelva. Ese tipo de camino, de festival a premio, no es tan común y se nota que hay un criterio claro detrás de cada corto que eligen acompañar.\n\nMe quedó una duda puntual: cuando tienen varios cortos corriendo en etapas distintas, unos en festivales, otros en ventas, otros recién en desarrollo con directores nuevos, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados como el de ustedes.\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
@@ -470,53 +575,50 @@
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_deepNotes": "Sin email personal (keep role contacto@dulcecine.com). IG @dulce.cine 704. FLAG: el footer del sitio Wix trae placeholders de plantilla ('@wix', '2035 GSL Productions') — ignorar. Segundo DM: Ilén Juambeltz."
   },
   {
-    "companyName": "Monte y Culebra",
-    "website": "https://www.instagram.com/monteyculebra_rd/",
+    "companyName": "Bou Group",
     "country": "Dominican Republic",
-    "contactName": "Pablo Lozano",
-    "contactTitle": "Co-founder / Producer",
-    "contactEmail": "anaisafull@gmail.com",
-    "companyEmail": null,
-    "contactPhone": null,
-    "contactLinkedIn": null,
-    "whatsapp": null,
-    "altChannel": null,
-    "instagramHandle": "monteyculebra_rd",
+    "website": "https://www.bougroup.com",
+    "instagramHandle": "bougroup",
     "instagramFollowers": null,
+    "igStatus": "live-verified",
+    "contactName": "José Ramón Alamá",
+    "contactTitle": "CEO / Productor",
+    "contactEmail": "Asistencia@bougroup.com",
+    "companyEmail": "Asistencia@bougroup.com",
     "additionalContacts": [
       {
-        "name": "Tanya Valette",
-        "title": "Director / Lead Producer",
-        "email": null
+        "contactName": "Héctor Manuel Valdez",
+        "contactTitle": "Cofundador / Director",
+        "contactEmail": null
+      },
+      {
+        "contactName": "Vicente Alamá",
+        "contactTitle": "Productor",
+        "contactEmail": null
       }
     ],
-    "companyBrief": "Santo Domingo, RD (fundada 2015). Productora de cine de autor, operas primas y coproducciones iberoamericanas. Produjo 'Pepe' (2024, Nelson Carlo de los Santos Arias, Competencia Berlinale + Oso de Plata Mejor Direccion) y 'Candela' (Premio del Jurado Biarritz; Cannes La Fabrique). IG @monteyculebra_rd live. DM: Pablo Lozano.",
-    "unabaseScore": 8.7,
-    "tier": "tier1",
-    "industry": "film",
-    "_pool_status": "pool",
-    "_added": "2026-07-14",
-    "_sourcedVia": "farm2-2026-07-14 (credit-verified)",
+    "_verifiedCredits": [
+      "Malpaso (2019, dir. Héctor M. Valdez), reconocida mejor producción dominicana de 2020, recomendada por El País",
+      "Colao (2017), comedia dominicana de gran taquilla",
+      "Qué León (2018), largometraje de comedia"
+    ],
+    "companyBrief": "Bou Group (Bougroup) es una casa productora dominicana con sede en Santo Domingo y Barcelona, liderada por Jose Ramon Alama. Especializada en largometrajes de ficcion y documental con estandares internacionales, ha producido titulos como Malpaso, Colao, Que Leon, Los Leones y Diaspora. Une criterio artistico con estructura industrial y ha logrado alianzas de distribucion con Disney+, Netflix y Prime Video, consolidando una de las trayectorias mas solidas del cine dominicano contemporaneo. IG @bougroup.",
+    "unabaseScore": 8.6,
     "_creditsVerified": true,
-    "_emailFlag": "SUSPECT email anaisafull@gmail.com (Ventana Sur catalog, no name match) - VERIFY or use site contact form",
-    "_igNeed": true,
-    "_origWebsite": "https://www.monteyculebra.com",
-    "founderInstagramHandle": "itspablolozano",
     "_enriched": true,
-    "_enrichedAt": "2026-07-21",
-    "_verifiedCredits": [],
     "_igStatus": "live-verified",
-    "_enrichNotes": "",
-    "pitchEmailES": "Asunto: una pregunta sobre la mezcla de proyectos en Monte y Culebra\n\nHola, quería saber si esta es la mejor forma de llegar a Pablo Lozano.\n\nEstuve viendo lo de Monte y Culebra, con 'Pepe' en Competencia de Berlinale y el Oso de Plata a Mejor Dirección, y 'Candela' con el Premio del Jurado en Biarritz y su paso por Cannes La Fabrique. Se nota el criterio para sostener cine de autor con ese nivel de exigencia internacional.\n\nMe quedó una duda puntual: cuando tienen operas primas propias y coproducciones iberoamericanas corriendo a la vez, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi le hace sentido a Pablo, puedo mostrarle en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
+    "_swapReason": "Reemplaza a Monte y Culebra: el email en ficha era dato espurio y el deep-pass no hallo email entregable ni website funcional (dominio .com hijacked). Sin email entregable el lead no es despachable.",
     "_dispatched_batch_id": "batch-2026-07-27",
     "_dispatched_at": "2026-07-27T13:00:00.000Z",
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "pitchEmailES": "Asunto: Consulta sobre Bou Group\n\nHola, quería saber si esta es la mejor forma de llegar a Jose Ramon Alama o si hay alguien más indicado en el equipo para este tipo de consulta.\n\nVi que Malpaso fue reconocida como mejor producción dominicana de 2020 y recomendada por El País, y que Colao también tuvo muy buena recepción en taquilla. Se nota que en Bou Group no manejan un solo tipo de proyecto, sino varios formatos y escalas a la vez, lo cual imagino que no es sencillo de coordinar.\n\nJustamente por eso quería preguntar: con esa mezcla de largometrajes, comedias y documentales corriendo en paralelo, ¿cómo organizan hoy los presupuestos de cada proyecto para que no se mezclen entre sí?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo"
   },
   {
     "_pool_id": "pool-2026-07-01-30",
@@ -538,7 +640,7 @@
     "city": "Panama City",
     "contactName": "Ana Endara Mislov",
     "contactTitle": "Directora / Productora / Cofundadora",
-    "contactEmail": "mansaproductora@gmail.com",
+    "contactEmail": "anaendara@gmail.com",
     "companyEmail": "mansaproductora@gmail.com",
     "instagramUrl": "https://www.instagram.com/mansa_productora/",
     "instagramHandle": "mansa_productora",
@@ -561,15 +663,19 @@
     "_verifiedCredits": [
       "Querido Trópico (2024, dir. Ana Endara), estreno TIFF Toronto y San Sebastián Horizontes Latinos",
       "Reinas (2013), documental",
-      "Para su tranquilidad, haga su propio museo (2021), documental"
+      "Para su tranquilidad, haga su propio museo (2021), documental",
+      "Reinas (2013), TIFF, Grolsch Discovery Award",
+      "Querido Trópico (2024), candidatura de Panamá al Oscar; Gran Premio del Jurado CinéLatino Toulouse"
     ],
     "_igStatus": "live-verified",
     "_enrichNotes": "gmail role -> opener de portero por Ana. Website HTTPS válido. Querido Trópico es coprod PA-CO (Big-Sur fue el lado CO en 07-23); coproducción legítima. Créditos no verificables omitidos.",
     "_creditsVerified": true,
     "_enriched": true,
-    "pitchEmailES": "Asunto: una pregunta sobre Querido Trópico\n\nHola, quería saber si esta es la mejor forma de llegar a Ana Endara, directora de Mansa Productora.\n\nEstuve viendo lo de Querido Trópico, el estreno en TIFF Toronto y después en San Sebastián en la sección Horizontes Latinos no es poca cosa. Se nota el salto de una casa que viene del documental, como Reinas, hacia la ficción, y que igual mantiene esa mirada tan propia sobre la identidad panameña.\n\nMe quedó una duda puntual: cuando el documental de autor y la ficción corren a la vez, ¿cómo están ordenando hoy los presupuestos para que no se mezclen entre proyectos?\n\nLo pregunto porque ese cruce suele pesar más en lo administrativo que en lo operativo, incluso en equipos bien armados.\n\nSi le hace sentido a Ana, le puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida. Cualquier cosa, con gusto coordino por acá.\n\nScarlett Lillo",
+    "pitchEmailES": "Asunto: Querido Trópico y la mezcla de proyectos\n\nHola Ana, ¿cómo estás?\n\nTe escribo porque estuve viendo el recorrido de Querido Trópico, el estreno en TIFF y San Sebastián, la candidatura de Panamá al Oscar, y también Reinas con el Grolsch Discovery Award en TIFF. Se nota que en Mansa conviven distintos tiempos: documental de autor, ficción, proyectos que arrancan y otros que siguen dando vueltas por festivales años después.\n\nJustamente por eso me quedó la duda: con esa mezcla de formatos y etapas, ¿cómo hacen para que los presupuestos de cada proyecto no se mezclen entre sí, sobre todo cuando uno está en festivales y otro recién arrancando producción?\n\nSi te hace sentido, te puedo mostrar en 10 minutos cómo lo resuelven otras productoras en una situación parecida.\n\nScarlett Lillo",
     "_dispatched_batch_id": "batch-2026-07-27",
-    "_dispatched_at": "2026-07-27T13:00:00.000Z"
+    "_dispatched_at": "2026-07-27T13:00:00.000Z",
+    "_emailNote": "upgraded: Gmail personal de Ana Endara publicado en su portfolio anaendara.com/Contacto (distinto del brand inbox)",
+    "_deepNotes": "UPGRADE: de brand gmail a email PERSONAL anaendara@gmail.com (publicado en su portfolio) -> flip a saludo personal. IG @mansa_productora 1.059 confirmado exacto. Pilar Moreno es co-guionista (contacto vía empresa)."
   },
   {
     "contactName": "Josué Méndez",
@@ -592,7 +698,9 @@
     "_verifiedCredits": [
       "El caso Monroy (2022, dir. Josué Méndez), Sección Oficial Festival de Málaga y Festival de Lima",
       "Días de Santiago (2004, dir. Josué Méndez), estreno en el Festival de Rotterdam",
-      "Dioses (2008, dir. Josué Méndez), San Sebastián"
+      "Dioses (2008, dir. Josué Méndez), San Sebastián",
+      "La deuda / Oliver's Deal (2015)",
+      "Desde 2018 produce series para Netflix, Movistar y Amazon"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "Email gmail publicado en la página oficial del Festival de Málaga (verificado). SIN website ni IG -> el deep-pass debe hallar el link (IG profesional de Josué Méndez). Opener de portero por Josué.",
@@ -604,7 +712,8 @@
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "_deepNotes": "PRIORIDAD (link): el deep-pass confirmó que NO existe website ni IG de empresa. Josué Méndez tiene LinkedIn confirmado (linkedin.com/in/josue-mendez-a0343a24, 'Propietario - Chullachaki Cine') y es Director del Festival de Cine de Lima (ancla verificable). IG @elamigomendez (3.178, 'Josué Méndez') es PROBABLE pero NO 100% confirmable -> NO se usa como link de la tarjeta (doctrina: link equivocado peor que ninguno). Queda email-only documentado (email verificado en Festival de Málaga). Referencia para operador: LinkedIn confirmado."
   },
   {
     "website": "https://www.puatararafilms.com",
@@ -618,6 +727,11 @@
         "contactName": "Sebastián Peña Escobar",
         "contactTitle": "Productor / Director",
         "contactEmail": null
+      },
+      {
+        "contactName": "Tania Simbrón",
+        "contactTitle": "Socia",
+        "contactEmail": null
       }
     ],
     "country": "Paraguay",
@@ -627,7 +741,8 @@
     "_verifiedCredits": [
       "Guaraní (2016, dir. Luis Zorraquín), largometraje, múltiples premios iberoamericanos",
       "El tiempo nublado (2014, dir. Arami Ullón), documental, Visions du Réel",
-      "Chicas nuevas 24 horas (2015, dir. Mabel Lozano), documental"
+      "Chicas nuevas 24 horas (2015, dir. Mabel Lozano), documental",
+      "Guaraní (2016, dir. Luis Zorraquín), 3 premios en el Festival de Gramado"
     ],
     "_igStatus": "email-only-no-ig",
     "_enrichNotes": "Website propio activo HTTPS (link) + email publicado. gmail role -> opener de portero por Osvaldo. Nota: Sebastián Peña Escobar (additional) también es socio de La Babosa Cine (07-22), pero aquí no es el DM.",
@@ -639,6 +754,11 @@
     "source_date": "2026-07-27",
     "approved": true,
     "readyToSend": true,
-    "_operatorVerified": false
+    "_operatorVerified": false,
+    "contactPhone": "+595 981 762638",
+    "_phones": [
+      "+595 981 762638"
+    ],
+    "_deepNotes": "Sin email personal (keep brand gmail). Sin IG verificable; canales vivos = website propio + Facebook facebook.com/puatararafilms + LinkedIn de Osvaldo. WhatsApp +595 981 762638 (canal directo). Tercera socia: Tania Simbrón. RUC 80086110-8 (registro Paraguay)."
   }
 ]
