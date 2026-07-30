@@ -31,7 +31,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Venado Films",
@@ -44,7 +45,7 @@
   "contactEmail": "indira@venadofilms.com",
   "companyEmail": "info@venadofilms.com",
   "unabaseScore": 9,
-  "companyBrief": "Coyoacan, CDMX. Productora de cine documental de autor fundada por la directora Betzabe Garcia. Credito insignia: 'Kings of Nowhere / Los reyes del pueblo que no existe' (SXSW 2015 Audience Award, Mejor Documental FICM Morelia, Mejor Doc Internacional Zurich). Recien produjo 'Mickey' (dir. Dano Garcia), estreno mundial SXSW 2026 y 41 FICG Guadalajara. DMs: Indira Cato (productora) y Betzabe Garcia (fundadora/directora). Solo FB/Twitter en el sitio; IG sin confirmar.",
+  "companyBrief": "Coyoacan, CDMX. Productora de cine documental de autor fundada por la directora Betzabe Garcia. Credito insignia: 'Kings of Nowhere / Los reyes del pueblo que no existe' (SXSW 2015 Audience Award, Mejor Documental FICM Morelia, Mejor Doc Internacional Zurich). Recien produjo 'Mickey' (dir. Dano Garcia), estreno mundial SXSW 2026 y 41 FICG Guadalajara. DMs: Indira Cato (productora) y Betzabe Garcia (fundadora/directora). Solo FB/Twitter en el sitio; IG sin confirmar. Founder-director Betzabé García; catalog includes 'Kings of Nowhere', 'Unsilenced' and 'Porcelana'.",
   "additionalContacts": [
    {
     "name": "Betzabe Garcia",
@@ -65,7 +66,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Cine Chalana",
@@ -78,12 +80,22 @@
   "contactEmail": "maria@cinechalana.com",
   "companyEmail": "rafael@cinechalana.com",
   "unabaseScore": 8.5,
-  "companyBrief": "Productora de cine documental de impacto social en Mexico (geo inferida Veracruz; cofundador Rafael Munozcano Carcamo registrado como productor veracruzano en resultados IMCINE 2026). Realizo el largometraje 'Peninsula Sur' (90 min, 2024, financiado por FOCINE, sobre el Tren Maya) y desarrolla 'El viaje de Ximena' y la webserie 'Ecos de la Tierra'. DMs: Maria Romero y Rafael Munozcano. Emails personales publicados en el sitio.",
+  "companyBrief": "Productora de cine documental de impacto social en Mexico (geo inferida Veracruz; cofundador Rafael Munozcano Carcamo registrado como productor veracruzano en resultados IMCINE 2026). Realizo el largometraje 'Peninsula Sur' (90 min, 2024, financiado por FOCINE, sobre el Tren Maya) y desarrolla 'El viaje de Ximena' y la webserie 'Ecos de la Tierra'. DMs: Maria Romero y Rafael Munozcano. Emails personales publicados en el sitio. Production + distribution house; slate includes 'El viaje de Ximena' (2026, dir. Pau Ortiz), 'Península Sur' (2027) and the 'Ecos de la Tierra' series.",
   "additionalContacts": [
    {
     "name": "Rafael Munozcano Carcamo",
     "title": "Cofundador / Productor",
     "email": "rafael@cinechalana.com"
+   },
+   {
+    "name": "Vivian",
+    "title": "Team (role not stated on site)",
+    "email": "vivian@cinechalana.com"
+   },
+   {
+    "name": "Pau Ortiz",
+    "title": "Director",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -98,7 +110,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Tecolote Films",
@@ -111,8 +124,19 @@
   "contactEmail": "tecolotefilms@gmail.com",
   "companyEmail": "tecolotefilms@gmail.com",
   "unabaseScore": 8.5,
-  "companyBrief": "Casa productora y distribuidora de cine documental en CDMX (fundada 2007). Catalogo (Eugenio Polgovsky) suma 4 Premios Ariel y premios en Cinema du reel y La Habana; 'Malintzin 17' (2022) compitio en Tiger del IFF Rotterdam y FICUNAM. Dirigida por Mara Polgovsky.",
-  "additionalContacts": [],
+  "companyBrief": "Casa productora y distribuidora de cine documental en CDMX (fundada 2007). Catalogo (Eugenio Polgovsky) suma 4 Premios Ariel y premios en Cinema du reel y La Habana; 'Malintzin 17' (2022) compitio en Tiger del IFF Rotterdam y FICUNAM. Dirigida por Mara Polgovsky. Documentary house (CDMX) founded by the late Eugenio Polgovsky (d. Aug 2017) and Rosario Ezcurra, now run by Mara Polgovsky; catalog incl. 'Tropic of Cancer', 'The Inheritors', 'Mitote', 'Malintzin 17'.",
+  "additionalContacts": [
+   {
+    "name": "Mara Polgovsky",
+    "title": "Current operator / runs the studio",
+    "email": null
+   },
+   {
+    "name": "Rosario Ezcurra",
+    "title": "Co-founder",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Malintzin 17 (2022, dir. Eugenio y Mara Polgovsky) - Tiger Competition IFF Rotterdam 2022; FICUNAM",
    "Los herederos (2008) - multiples Premios Ariel"
@@ -126,7 +150,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Inadaptados Films",
@@ -139,8 +164,34 @@
   "contactEmail": "inadaptados.films.productora@gmail.com",
   "companyEmail": "inadaptados.films.productora@gmail.com",
   "unabaseScore": 8.5,
-  "companyBrief": "Guadalajara, Jalisco. Productora indie de ficcion fundada en 2018; cortometrajes, videoclips y su primer largometraje 'Desvanecido' (2025) sobre desaparicion forzada, estrenado en Festival de Cine con Valores (UNIVA). Casa emergente, no publicidad. DM: Oscar Valerio.",
-  "additionalContacts": [],
+  "companyBrief": "Guadalajara, Jalisco. Productora indie de ficcion fundada en 2018; cortometrajes, videoclips y su primer largometraje 'Desvanecido' (2025) sobre desaparicion forzada, estrenado en Festival de Cine con Valores (UNIVA). Casa emergente, no publicidad. DM: Oscar Valerio. Guadalajara audiovisual productora; feature 'Desvanecido' plus shorts 'Insomne', 'Identidad perdida', 'Adriel'. Site phone 52-33-1601-8019.",
+  "additionalContacts": [
+   {
+    "name": "Oscar Valerio",
+    "title": "Director / realizador",
+    "email": null
+   },
+   {
+    "name": "Felipe Ramírez",
+    "title": "Director / realizador",
+    "email": null
+   },
+   {
+    "name": "Rogelio Soria",
+    "title": "Director / realizador",
+    "email": null
+   },
+   {
+    "name": "Fer Muñoz",
+    "title": "Director / realizador",
+    "email": null
+   },
+   {
+    "name": "Juls",
+    "title": "Director / realizador",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Desvanecido (2025, dir. Oscar Valerio) - debut feature; Festival Internacional de Cine con Valores (UNIVA, Guadalajara)"
   ],
@@ -153,7 +204,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Jarana Cine",
@@ -166,11 +218,16 @@
   "contactEmail": "jaranacine@gmail.com",
   "companyEmail": null,
   "unabaseScore": 9,
-  "companyBrief": "Bogota / Palenque, Colombia. Productora de cine documental de autor. Creditos: 'La Bonga' (Cinema du Reel, proyeccion en MoMA) y 'Carropasajero' (apoyo WCF/FDC, Visions du Reel). Cofundadores: Sebastian Pinzon Silva y Canela Reyes.",
+  "companyBrief": "Bogota / Palenque, Colombia. Productora de cine documental de autor. Creditos: 'La Bonga' (Cinema du Reel, proyeccion en MoMA) y 'Carropasajero' (apoyo WCF/FDC, Visions du Reel). Cofundadores: Sebastian Pinzon Silva y Canela Reyes. Bogotá doc house (founded 2022) by Canela Reyes & Sebastián Pinzón Silva; work has screened at Locarno, Berlinale, Sundance, Visions du Réel, MoMA Doc Fortnight, FICCI and Cinéma du Réel.",
   "additionalContacts": [
    {
     "name": "Canela Reyes",
     "title": "Cofundadora",
+    "email": null
+   },
+   {
+    "name": "Sebastián Pinzón Silva",
+    "title": "Co-founder / Cineasta documental",
     "email": null
    }
   ],
@@ -187,7 +244,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Pathos Audiovisual",
@@ -216,7 +274,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "_enrichNotes": " [site cert expired 07-30 -> website dropped, IG channel]"
+  "_enrichNotes": " [site cert expired 07-30 -> website dropped, IG channel]",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "La Cueva Cine",
@@ -229,8 +288,24 @@
   "contactEmail": "info@lacuevacine.com",
   "companyEmail": "info@lacuevacine.com",
   "unabaseScore": 8.8,
-  "companyBrief": "Bogota, Colombia. Productora de cine documental fundada por Inti Jacanamijoy. Credito: 'Los suenos viajan con el viento' (financiado por el FDC; First Feature Competition Sheffield Doc/Fest). DM: Inti Jacanamijoy.",
-  "additionalContacts": [],
+  "companyBrief": "Bogota, Colombia. Productora de cine documental fundada por Inti Jacanamijoy. Credito: 'Los suenos viajan con el viento' (financiado por el FDC; First Feature Competition Sheffield Doc/Fest). DM: Inti Jacanamijoy. Bogotá auteur-cinema productora; titles incl. 'Los sueños viajan con el viento' (dir. Inti Jacanamijoy), 'Liebres', 'Lupita y las sirenas'; screened at Berlinale EFM, Visions du Réel, FICCI and Guadalajara.",
+  "additionalContacts": [
+   {
+    "name": "Inti Jacanamijoy",
+    "title": "CEO / Director-Guionista-Productor",
+    "email": null
+   },
+   {
+    "name": "Juan Felipe Correa",
+    "title": "COO",
+    "email": null
+   },
+   {
+    "name": "Laura Carvajal",
+    "title": "Director / Guionista / Productora / Editora",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Los suenos viajan con el viento - FDC; Sheffield Doc/Fest First Feature Competition"
   ],
@@ -243,7 +318,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Gong Cine",
@@ -256,12 +332,17 @@
   "contactEmail": "gongproduccionesargentina@gmail.com",
   "companyEmail": "gongproduccionesargentina@gmail.com",
   "unabaseScore": 9,
-  "companyBrief": "Productora de cine independiente de Buenos Aires, Argentina, fundada en 2021 por Pablo Piedras y Magdalena Schavelzon, con foco en propuestas estéticas radicales y de autor. Su credito insignia es 'Los tonos mayores' (2024, opera prima de Ingrid Pokropek), estrenada en la seccion Generation de la Berlinale 2024 y nominada a los Premios Goya. Tambien produce el cine de Lucia Seles. IG @gong.cine.ar (~1.318 seguidores).",
+  "companyBrief": "Productora de cine independiente de Buenos Aires, Argentina, fundada en 2021 por Pablo Piedras y Magdalena Schavelzon, con foco en propuestas estéticas radicales y de autor. Su credito insignia es 'Los tonos mayores' (2024, opera prima de Ingrid Pokropek), estrenada en la seccion Generation de la Berlinale 2024 y nominada a los Premios Goya. Tambien produce el cine de Lucia Seles. IG @gong.cine.ar (~1.318 seguidores). Argentine productora founded 2021 by Pablo Piedras; producer Magdalena Schavelzon; slate incl. 'Sueño Pélvico' and 'La noche está marchándose ya'; INCAA-backed.",
   "additionalContacts": [
    {
     "name": "Magdalena Schavelzon",
     "title": "Productora y socia fundadora",
     "channel": "via gongproduccionesargentina@gmail.com"
+   },
+   {
+    "name": "Pablo Piedras",
+    "title": "Founder (2021)",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -277,7 +358,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Periferia Cine",
@@ -290,7 +372,7 @@
   "contactEmail": "periferiacine@gmail.com",
   "companyEmail": "periferiacine@gmail.com",
   "unabaseScore": 8.7,
-  "companyBrief": "Productora de cine independiente radicada en Cordoba, Argentina (con base secundaria en Lisboa), especializada en documental y no-ficcion/ensayo de autor que circula por festivales internacionales. Fundada por el director Pablo Martin Weber. Creditos: 'Ecos de Xinjiang' (2024, ensayo/ciencia-ficcion) y 'Homenaje a la obra de Philip Henry Gosse' (2020). Sitio WordPress activo; el dominio .com esta caido. IG @periferiacine (~1.176 seguidores).",
+  "companyBrief": "Productora de cine independiente radicada en Cordoba, Argentina (con base secundaria en Lisboa), especializada en documental y no-ficcion/ensayo de autor que circula por festivales internacionales. Fundada por el director Pablo Martin Weber. Creditos: 'Ecos de Xinjiang' (2024, ensayo/ciencia-ficcion) y 'Homenaje a la obra de Philip Henry Gosse' (2020). Sitio WordPress activo; el dominio .com esta caido. IG @periferiacine (~1.176 seguidores). Spanish-language documentary outfit active in Iberoamerican festival/alt-distribution networks (collaborates with La Moviola, participates in DocsMX initiatives).",
   "additionalContacts": [
    {
     "name": "Periferia Cine",
@@ -311,7 +393,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Monarca Films",
@@ -324,7 +407,7 @@
   "contactEmail": "eolascuaga@gmail.com",
   "companyEmail": "contacto@monarcafilms.com.uy",
   "unabaseScore": 9.1,
-  "companyBrief": "Productora de cine de autor con sede en Montevideo, Uruguay, fundada en 2011 por Eugenia Olascuaga Fierro y Valentina Baracco Pena. Trabaja ficcion y documental con mirada autoral. Creditos: 'Delia' (Biznaga de Plata a Mejor Direccion, Festival de Malaga 2022), 'Para no olvidar' (estreno Visions du Reel 2023), 'Ese soplo' (FicMonterrey 2023) y 'La fabula de la tortuga y la flor' (SANFIC 2025). Olascuaga participo en Open Doors Locarno 2023 y Sundance Producers Lab. IG @monarca_films (~2.019 seguidores).",
+  "companyBrief": "Productora de cine de autor con sede en Montevideo, Uruguay, fundada en 2011 por Eugenia Olascuaga Fierro y Valentina Baracco Pena. Trabaja ficcion y documental con mirada autoral. Creditos: 'Delia' (Biznaga de Plata a Mejor Direccion, Festival de Malaga 2022), 'Para no olvidar' (estreno Visions du Reel 2023), 'Ese soplo' (FicMonterrey 2023) y 'La fabula de la tortuga y la flor' (SANFIC 2025). Olascuaga participo en Open Doors Locarno 2023 y Sundance Producers Lab. IG @monarca_films (~2.019 seguidores). Founded 2011 in Montevideo, Uruguay by Eugenia Olascuaga Fierro and Valentina Baracco Peña; women-led ('Nosotras') producer of shorts, series and features.",
   "additionalContacts": [
    {
     "name": "Valentina Baracco Pena",
@@ -345,7 +428,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Tekoha Audiovisual",
@@ -358,12 +442,27 @@
   "contactEmail": "tekoha@tekohaudiovisual.com.py",
   "companyEmail": "tekoha@tekohaudiovisual.com.py",
   "unabaseScore": 9,
-  "companyBrief": "Productora de cine documental de Asuncion, Paraguay (activa desde 2007, equipo ~90% mujeres), fundada por la directora Sofia Paoli Thorne. Credito insignia: 'Guapo'y' (2022, dir. Sofia Paoli Thorne) — estreno mundial en IDFA (Mencion Especial del Jurado), Biznaga de Plata a Mejor Direccion de Documental en Malaga 2023 y representante de Paraguay a los Goya. Tambien 'Fuera de campo' (dir. Hugo Gimenez, doc del caso Curuguaty). Sitio propio activo; email Google Workspace. IG @somostekoha (~2.618 seguidores).",
+  "companyBrief": "Productora de cine documental de Asuncion, Paraguay (activa desde 2007, equipo ~90% mujeres), fundada por la directora Sofia Paoli Thorne. Credito insignia: 'Guapo'y' (2022, dir. Sofia Paoli Thorne) — estreno mundial en IDFA (Mencion Especial del Jurado), Biznaga de Plata a Mejor Direccion de Documental en Malaga 2023 y representante de Paraguay a los Goya. Tambien 'Fuera de campo' (dir. Hugo Gimenez, doc del caso Curuguaty). Sitio propio activo; email Google Workspace. IG @somostekoha (~2.618 seguidores). Paraguayan (Asunción) audiovisual producer, 90% women-led team with 15+ years' experience; works across cinema, education and digital communication.",
   "additionalContacts": [
    {
     "name": "Tekoha Audiovisual",
     "title": "Telefono",
     "channel": "+595 971 263 222"
+   },
+   {
+    "name": "Sofia Paoli Thorne",
+    "title": "Producción Ejecutiva",
+    "email": null
+   },
+   {
+    "name": "Yasmina Samudio",
+    "title": "Coordinación de contenidos de Animación",
+    "email": null
+   },
+   {
+    "name": "Rebeka Nadir Sanabria",
+    "title": "Consultoría de comunicación",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -379,7 +478,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Tonina Sur Films",
@@ -392,7 +492,7 @@
   "contactEmail": "magdaponce@toninasur.com",
   "companyEmail": "contacto@toninasur.com",
   "unabaseScore": 8.8,
-  "companyBrief": "Productora de cine documental con sede en Valdivia, Chile (Isla Teja, Region de los Rios), enfocada en documentales de alto impacto sobre temas de actualidad y universos invisibles, y en el desarrollo de nuevos talentos via su lab Documenta Sur. Producciones ejecutivas: Magdalena Ponce y Alejandra Rosas. Creditos: 'Puerto Escondido' (dir. Gabriela Paz Ybarnegaray, coprod. Bolivia-Chile) y 'Siringa'. IG @tonina_sur.",
+  "companyBrief": "Productora de cine documental con sede en Valdivia, Chile (Isla Teja, Region de los Rios), enfocada en documentales de alto impacto sobre temas de actualidad y universos invisibles, y en el desarrollo de nuevos talentos via su lab Documenta Sur. Producciones ejecutivas: Magdalena Ponce y Alejandra Rosas. Creditos: 'Puerto Escondido' (dir. Gabriela Paz Ybarnegaray, coprod. Bolivia-Chile) y 'Siringa'. IG @tonina_sur. Documentary producer based in Valdivia (Isla Teja), Región de los Ríos, Chile; also runs the 'Documenta Sur' documentary training program with a cross-border (Chile/Brazil/Bolivia) team.",
   "additionalContacts": [
    {
     "name": "Alejandra Rosas",
@@ -413,7 +513,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Cine Ojo",
@@ -426,8 +527,19 @@
   "contactEmail": "produccion@cineojo.com.ar",
   "companyEmail": "produccion@cineojo.com.ar",
   "unabaseScore": 8.6,
-  "companyBrief": "Cine Ojo es la productora y distribuidora de cine documental independiente fundada en 1986 por Carmen Guarini y el fallecido Marcelo Cespedes, pionera en Argentina del documental de autor. Produjo titulos clave como Yo no se que me han hecho tus ojos, La television y yo y Ata tu arado a una estrella, y creo el festival DocBuenosAires en 2001, referencia regional del genero.",
-  "additionalContacts": [],
+  "companyBrief": "Cine Ojo es la productora y distribuidora de cine documental independiente fundada en 1986 por Carmen Guarini y el fallecido Marcelo Cespedes, pionera en Argentina del documental de autor. Produjo titulos clave como Yo no se que me han hecho tus ojos, La television y yo y Ata tu arado a una estrella, y creo el festival DocBuenosAires en 2001, referencia regional del genero. Founded 1986 in Buenos Aires by Carmen Guarini and Marcelo Céspedes as Argentina's pioneering producer dedicated exclusively to author documentaries; also runs distribution (since 1998) and an Image Bank archive (founded 1990 with human-rights organizations).",
+  "additionalContacts": [
+   {
+    "name": "Carmen Guarini",
+    "title": "Co-fundadora / Directora",
+    "email": null
+   },
+   {
+    "name": "Marcelo Céspedes",
+    "title": "Co-fundador",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Yo no sé qué me han hecho tus ojos (2003)",
    "La televisión y yo (2001, dir. Andrés Di Tella)",
@@ -443,7 +555,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Pejeperro Films",
@@ -456,12 +569,17 @@
   "contactEmail": "contacto@pejeperro.cl",
   "companyEmail": "contacto@pejeperro.cl",
   "unabaseScore": 8.6,
-  "companyBrief": "Santiago/Valparaiso, Chile. Productora documental/ficcion fundada 2015 por la directora de fotografia Valeria Fuentes Briones y el productor Esteban Sandoval Carrasco. Produjo el doc en mapudungun 'Bajo Sospecha: Zokunentu' (2022, estreno Hot Docs Canada + SANFIC) y coprodujo 'Perro Bomba' (2019, Mejor Pelicula Malaga). IG @pejeperrofilms ~2.5K. DM: Esteban Sandoval.",
+  "companyBrief": "Santiago/Valparaiso, Chile. Productora documental/ficcion fundada 2015 por la directora de fotografia Valeria Fuentes Briones y el productor Esteban Sandoval Carrasco. Produjo el doc en mapudungun 'Bajo Sospecha: Zokunentu' (2022, estreno Hot Docs Canada + SANFIC) y coprodujo 'Perro Bomba' (2019, Mejor Pelicula Malaga). IG @pejeperrofilms ~2.5K. DM: Esteban Sandoval. Chilean author-driven producer whose cinema explores human, social and territorial narratives bridging memory and future; co-led by founding partners Esteban Sandoval Carrasco and Valeria Fuentes Briones.",
   "additionalContacts": [
    {
     "name": "Valeria Fuentes Briones",
     "title": "Co-founder / Cinematographer",
     "email": "valeriafuentesbriones@gmail.com"
+   },
+   {
+    "name": "Esteban Sandoval Carrasco",
+    "title": "Socio fundador / Director ejecutivo, productor",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -480,7 +598,8 @@
   "source_date": "2026-07-30",
   "approved": true,
   "readyToSend": true,
-  "_operatorVerified": false
+  "_operatorVerified": false,
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Olivo Films",
@@ -493,8 +612,14 @@
   "contactEmail": "produccion@olivofilms.com",
   "companyEmail": "produccion@olivofilms.com",
   "unabaseScore": 9,
-  "companyBrief": "Productora de cine independiente fundada en 2008 por el director Alberto Morais, con base en Valencia y Madrid. Dedicada al desarrollo y produccion de largometrajes de ficcion y documental de autor. Miembro de PAV y EGEDA. Sus peliculas han estado presentes en secciones oficiales y paralelas de Cannes, Moscu, Toronto, San Sebastian, Bafici y Seminci, entre otros. Cine de vocacion autoral con recorrido internacional.",
-  "additionalContacts": [],
+  "companyBrief": "Productora de cine independiente fundada en 2008 por el director Alberto Morais, con base en Valencia y Madrid. Dedicada al desarrollo y produccion de largometrajes de ficcion y documental de autor. Miembro de PAV y EGEDA. Sus peliculas han estado presentes en secciones oficiales y paralelas de Cannes, Moscu, Toronto, San Sebastian, Bafici y Seminci, entre otros. Cine de vocacion autoral con recorrido internacional. Independent Spanish producer of documentaries and fiction features, member of industry associations PAV and EGEDA; founded and directed by Alberto Morais (films incl. 'Las Olas', 'Los chicos del puerto', 'La Madre').",
+  "additionalContacts": [
+   {
+    "name": "Alberto Morais",
+    "title": "Fundador / Director",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Las olas (2011) - largometraje dirigido y producido por Alberto Morais; Espiga de Oro (Golden George) y premio FIPRESCI en el Festival de Moscu",
    "La madre (2016) - largometraje de ficcion, coproduccion Espana (Olivo Films) - Rumania, dirigido por Alberto Morais"
@@ -509,7 +634,8 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Alberto, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Olivo Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichNotes": " [olivofilms.com verified LIVE via public DNS 178.33.119.75 (200, valid entity) but sandbox link-gate cannot resolve it; website dropped for a clean gate, IG @olivo_films is the clickable channel]"
+  "_enrichNotes": " [olivofilms.com verified LIVE via public DNS 178.33.119.75 (200, valid entity) but sandbox link-gate cannot resolve it; website dropped for a clean gate, IG @olivo_films is the clickable channel]",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Kluge Productions Films",
@@ -522,8 +648,29 @@
   "contactEmail": "info@klugeproductionsfilms.com",
   "companyEmail": "info@klugeproductionsfilms.com",
   "unabaseScore": 8,
-  "companyBrief": "Productora de cine independiente con sede en Valencia especializada en largometrajes y documentales de caracter autoral e internacional. Dirigida por el cineasta Orlando Bosch. Sus proyectos se han seleccionado en festivales internacionales (Shanghai International Film Festival) y distribuido en plataformas como Filmin y Prime Video. Foco en ficcion de autor y documental con vocacion de mercado global.",
-  "additionalContacts": [],
+  "companyBrief": "Productora de cine independiente con sede en Valencia especializada en largometrajes y documentales de caracter autoral e internacional. Dirigida por el cineasta Orlando Bosch. Sus proyectos se han seleccionado en festivales internacionales (Shanghai International Film Festival) y distribuido en plataformas como Filmin y Prime Video. Foco en ficcion de autor y documental con vocacion de mercado global. Valencia (Spain)-based producer founded 2003 (former Berlin branch 2009-2015), specializing in author-driven feature films and documentaries with a European vocation and international reach; founded and led by director Orlando Bosch.",
+  "additionalContacts": [
+   {
+    "name": "Orlando Bosch",
+    "title": "Fundador / Director, guionista y productor",
+    "email": null
+   },
+   {
+    "name": "Ángela Giner",
+    "title": "Ayudante de dirección y producción",
+    "email": null
+   },
+   {
+    "name": "Toni Zafra",
+    "title": "Director de arte",
+    "email": null
+   },
+   {
+    "name": "Andrés García",
+    "title": "Montador",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Isla del Sur (2025/2026) - largometraje thriller escrito, dirigido y producido por Orlando Bosch con Kluge Productions Films, rodado entre Berlin, Valencia y Alicante; registrado en el ICAA",
    "Documental sobre el artista Marco Caparros - dirigido por Orlando Bosch, disponible en Filmin"
@@ -537,7 +684,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Orlando, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Kluge Productions Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Orlando, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Kluge Productions Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Un Capricho de Producciones",
@@ -550,12 +698,22 @@
   "contactEmail": "hola@uncaprichoproducciones.com",
   "companyEmail": "hola@uncaprichoproducciones.com",
   "unabaseScore": 8,
-  "companyBrief": "Productora de cine independiente fundada en 2015 en Barcelona (Catalunya) por Santi Suarez-Baldris y Belen Sanchez Silvero. Produce largometrajes de ficcion y documental buscando estreno en festivales de primer nivel (San Sebastian, IDFA, Berlinale, Malaga, SXSW). Coproductora del aclamado largometraje 'Secaderos' de Rocio Mesa. Perfil de autor con proyeccion internacional.",
+  "companyBrief": "Productora de cine independiente fundada en 2015 en Barcelona (Catalunya) por Santi Suarez-Baldris y Belen Sanchez Silvero. Produce largometrajes de ficcion y documental buscando estreno en festivales de primer nivel (San Sebastian, IDFA, Berlinale, Malaga, SXSW). Coproductora del aclamado largometraje 'Secaderos' de Rocio Mesa. Perfil de autor con proyeccion internacional. Barcelona-based production house founded 2008 by David Fernández, Edu Soto and Santi Suárez; relaunched in 2015 with partner Belén Sánchez. Tagline 'Grandes historias para pantallas de cualquier tamaño'.",
   "additionalContacts": [
    {
     "name": "Belen Sanchez Silvero",
     "title": "Cofundadora y productora",
     "email": "hola@uncaprichoproducciones.com"
+   },
+   {
+    "name": "Santi Suárez-Baldrís",
+    "title": "Socio fundador / Productor, guionista, director",
+    "email": null
+   },
+   {
+    "name": "Eudald Corominas",
+    "title": "Productor ejecutivo (desde 2024)",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -571,7 +729,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Santi, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Un Capricho de Producciones y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Santi, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Un Capricho de Producciones y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Ferviente Films",
@@ -584,12 +743,17 @@
   "contactEmail": "diana@fervientefilms.com.co",
   "companyEmail": "info@fervientefilms.com.co",
   "unabaseScore": 8.5,
-  "companyBrief": "Empresa colombiana de cine y TV fundada por Diana Pérez Mejía e Iván Luna Dulcey (ambos egresados de Artes Audiovisuales de la UNAB). Desarrolla y coproduce largometrajes de ficción, documental y series con foco en historias del Caribe y las regiones colombianas, además de ventas internacionales de cortometrajes. Trabaja con directores como Andrés Burgos y Mateo Ramírez.",
+  "companyBrief": "Empresa colombiana de cine y TV fundada por Diana Pérez Mejía e Iván Luna Dulcey (ambos egresados de Artes Audiovisuales de la UNAB). Desarrolla y coproduce largometrajes de ficción, documental y series con foco en historias del Caribe y las regiones colombianas, además de ventas internacionales de cortometrajes. Trabaja con directores como Andrés Burgos y Mateo Ramírez. Bogotá/Colombia fiction+documentary house; doc 'Tejedoras' touring festivals and 'La Suprema' premiered at TIFF (Toronto). Diana Pérez Mejia is Creative Producer & Director (matches current diana@ contact).",
   "additionalContacts": [
    {
     "name": "Iván Luna Dulcey",
     "title": "Cofundador / Director, Guionista y Productor Ejecutivo",
     "instagram": "ivandlunad"
+   },
+   {
+    "name": "Mariana Henao Aristizabal",
+    "title": "Production Coordinator",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -605,7 +769,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Diana, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Ferviente Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Diana, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Ferviente Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Viso Producciones",
@@ -618,7 +783,7 @@
   "contactEmail": "vivianagomez@visoproducciones.com",
   "companyEmail": "vivianagomez@visoproducciones.com",
   "unabaseScore": 8,
-  "companyBrief": "Empresa colombiana de producción audiovisual con sede en Bogotá, fundada por Sonia Barrera Gutiérrez y Viviana Gómez Echeverry. Se interesa por historias innovadoras con visiones sociales, ambientalistas, inclusivas y artísticas: produce largometrajes de ficción, documentales y series documentales con circulación en festivales internacionales como Sundance y Tallinn Black Nights.",
+  "companyBrief": "Empresa colombiana de producción audiovisual con sede en Bogotá, fundada por Sonia Barrera Gutiérrez y Viviana Gómez Echeverry. Se interesa por historias innovadoras con visiones sociales, ambientalistas, inclusivas y artísticas: produce largometrajes de ficción, documentales y series documentales con circulación en festivales internacionales como Sundance y Tallinn Black Nights. Viso Producciones SAS, Bogotá D.C., Colombia. Two partners (socias): Viviana Gómez Echeverry (Director, Producer, Screenwriter, Cinematographer) — matches current vivianagomez@ contact — and Sonia Barrera Gutiérrez (Producer/Filmmaker).",
   "additionalContacts": [
    {
     "name": "Sonia Barrera Gutiérrez",
@@ -638,7 +803,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Viviana, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Viso Producciones y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Viviana, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Viso Producciones y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Cinema Co.",
@@ -651,7 +817,7 @@
   "contactEmail": "cinemaproductora@gmail.com",
   "companyEmail": "cinemaproductora@gmail.com",
   "unabaseScore": 8,
-  "companyBrief": "Productora de cine independiente establecida en Cali (Valle del Cauca) en 2011, cofundada por Diana Montenegro García (egresada de la Universidad del Valle) y Orlando Culzat. Construye 'historias íntimas y arriesgadas, con libertad narrativa' de cine de autor, apoyadas por el FDC. Cuenta con una línea complementaria de rental de equipos; el núcleo del negocio es el largometraje de ficción.",
+  "companyBrief": "Productora de cine independiente establecida en Cali (Valle del Cauca) en 2011, cofundada por Diana Montenegro García (egresada de la Universidad del Valle) y Orlando Culzat. Construye 'historias íntimas y arriesgadas, con libertad narrativa' de cine de autor, apoyadas por el FDC. Cuenta con una línea complementaria de rental de equipos; el núcleo del negocio es el largometraje de ficción. Colombian arthouse film company ('Proudly Colombian'), founded by Diana Montenegro (IG @montenegrura) and @oculzat; ~3.4k IG followers. Feature 'Golán' covered by Las2Orillas.",
   "additionalContacts": [
    {
     "name": "Orlando Culzat",
@@ -661,6 +827,11 @@
    {
     "name": "Diana Montenegro (personal)",
     "instagram": "montenegrura"
+   },
+   {
+    "name": "Co-founder (IG @oculzat)",
+    "title": "Co-founder",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -676,7 +847,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Diana, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Cinema Co. y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Diana, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Cinema Co. y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "80 Mundos",
@@ -689,12 +861,17 @@
   "contactEmail": "80mundossrl@gmail.com",
   "companyEmail": "80mundossrl@gmail.com",
   "unabaseScore": 8,
-  "companyBrief": "Buenos Aires, Argentina. Productora independiente (fundada 2009) de largometrajes, series de ficcion y documentales, con coproducciones internacionales (Espana, Italia, Francia, EE.UU., Uruguay, Mexico). Credito: largometraje VIDA (2019, opera prima de Mariu Lombardi) y la serie Las Tareas (2023). Cofundador Alejandro Espolsino (director/DF). DM: Mariu Lombardi, fundadora. IG @80mundosfilm.",
+  "companyBrief": "Buenos Aires, Argentina. Productora independiente (fundada 2009) de largometrajes, series de ficcion y documentales, con coproducciones internacionales (Espana, Italia, Francia, EE.UU., Uruguay, Mexico). Credito: largometraje VIDA (2019, opera prima de Mariu Lombardi) y la serie Las Tareas (2023). Cofundador Alejandro Espolsino (director/DF). DM: Mariu Lombardi, fundadora. IG @80mundosfilm. 80 Mundos SRL, Buenos Aires — inclusive/transformative audiovisual production, co-founded 2010 by Mariú Lombardi (Founder, Screenwriter/Director/Creative Producer) and Alejandro Espolsino. Phone +54 11 3441 4420. Home to the 'TAL — Colectiva de Mujeres' women's collective.",
   "additionalContacts": [
    {
     "name": "Alejandro Espolsino",
     "title": "Cofundador / Director-DF-editor",
     "email": "80mundossrl@gmail.com"
+   },
+   {
+    "name": "Victoria Andino",
+    "title": "Film Director",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -710,7 +887,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Mariú, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en 80 Mundos y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Mariú, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en 80 Mundos y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Centrosur Producciones",
@@ -723,7 +901,7 @@
   "contactEmail": "gustavocentrosur@gmail.com",
   "companyEmail": "gustavocentrosur@gmail.com",
   "unabaseScore": 8,
-  "companyBrief": "San Jose, Costa Rica. Productora independiente de cine de autor del cineasta Gustavo Fallas. Creditos: largometraje Puerto Padre (2013, Zenith de Plata a Mejor Opera Prima, Festival de Montreal), Rio Sucio (seleccion La Fabrique/Cannes 2016) y coproduccion La hija de Lazaro (con Espana). DM: Gustavo Fallas, dueno/director. Email personal publicado. IG personal @g.fallas.",
+  "companyBrief": "San Jose, Costa Rica. Productora independiente de cine de autor del cineasta Gustavo Fallas. Creditos: largometraje Puerto Padre (2013, Zenith de Plata a Mejor Opera Prima, Festival de Montreal), Rio Sucio (seleccion La Fabrique/Cannes 2016) y coproduccion La hija de Lazaro (con Espana). DM: Gustavo Fallas, dueno/director. Email personal publicado. IG personal @g.fallas. Film/video production ('Crafting Visual Stories'). Single-page GoDaddy site, © 2025 (actively maintained).",
   "additionalContacts": [],
   "_verifiedCredits": [
    "Puerto Padre (largometraje, 2013, Zenith de Plata Mejor Opera Prima - Festival de Montreal)",
@@ -738,7 +916,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Gustavo, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Centrosur Producciones y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Gustavo, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Centrosur Producciones y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Filmarte",
@@ -751,12 +930,22 @@
   "contactEmail": "info@filmarte.ec",
   "companyEmail": "info@filmarte.ec",
   "unabaseScore": 8,
-  "companyBrief": "Quito, Ecuador. Productora independiente de cine documental y comunitario (desde 2010), 'laboratorio de creacion: formacion, produccion y distribucion'. Creditos: doc Sacachun (2018, Premio del Publico Festival La Orquidea Cuenca) y el corto doc Maura (Mejor Documental Iberoamericano en Shorts Mexico). DM: Gabriel Paez Hernandez, director/productor ejecutivo fundador. IG @filmarte_ec (2.5K).",
+  "companyBrief": "Quito, Ecuador. Productora independiente de cine documental y comunitario (desde 2010), 'laboratorio de creacion: formacion, produccion y distribucion'. Creditos: doc Sacachun (2018, Premio del Publico Festival La Orquidea Cuenca) y el corto doc Maura (Mejor Documental Iberoamericano en Shorts Mexico). DM: Gabriel Paez Hernandez, director/productor ejecutivo fundador. IG @filmarte_ec (2.5K). Filmarte — Cine y Comunicación Estratégica, Quito, Ecuador (Av. Colón E4-105 y 9 de Octubre, Ed. Solamar, Of. 205). Independent film/documentary + educommunication using 'memory as a tool for transformation'; runs solar-powered traveling open-air community cinema. Director Gabriel Páez Hernández (Ecuadorian-Chilean, ~15 yrs) directed 'Sacachún' (2018). Phones (+593) 99262-1752 / (+593) 99838-3315.",
   "additionalContacts": [
    {
     "name": "Isabel Rodas Leon",
     "title": "Productora creativa",
     "email": "info@filmarte.ec"
+   },
+   {
+    "name": "Gabriel Páez Hernández",
+    "title": "Director",
+    "email": null
+   },
+   {
+    "name": "Carolina Rodas León",
+    "title": "Communication Director",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -772,7 +961,8 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Gabriel, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Filmarte y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Gabriel, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Filmarte y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  },
  {
   "companyName": "Niña Niño Films",
@@ -785,7 +975,7 @@
   "contactEmail": "doveris@uchile.cl",
   "companyEmail": null,
   "unabaseScore": 8.7,
-  "companyBrief": "Productora de cine de autor con base en Santiago, Chile, fundada por Roberto Doveris (2010). Desarrolla largometrajes de ficción para el mercado internacional, con foco en directoras y voces LGBTQ+. Debut de Doveris, Las Plantas (2016), ganó el Oso de Cristal en Berlinale Generation 14plus; luego Proyecto Fantasma (2022, IFFR Rotterdam) y El Príncipe (Queer Lion, Venecia). Contactar a Roberto Doveris directamente. IG @nina.nino.films (~4.6K, activo).",
+  "companyBrief": "Productora de cine de autor con base en Santiago, Chile, fundada por Roberto Doveris (2010). Desarrolla largometrajes de ficción para el mercado internacional, con foco en directoras y voces LGBTQ+. Debut de Doveris, Las Plantas (2016), ganó el Oso de Cristal en Berlinale Generation 14plus; luego Proyecto Fantasma (2022, IFFR Rotterdam) y El Príncipe (Queer Lion, Venecia). Contactar a Roberto Doveris directamente. IG @nina.nino.films (~4.6K, activo). Independent Chilean production company (Santiago de Chile), founded 2010 by Roberto Doveris — features, music videos and advertising; works/clients incl. ProChile and Spotify. Roberto Doveris = Founder/Director/Producer/Editor (matches current doveris@ contact).",
   "additionalContacts": [],
   "_verifiedCredits": [
    "Las Plantas (2016, dir. Roberto Doveris) - Berlinale Generation 14plus, Oso de Cristal (Crystal Bear)",
@@ -804,6 +994,7 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola Roberto, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Niña Niño Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+  "pitchEmailES": "Hola Roberto, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Niña Niño Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichPass": "2026-07-30-deepen"
  }
 ]
