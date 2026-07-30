@@ -232,8 +232,12 @@
   .c-rail .v .link{color:var(--info)}
   .c-main{padding:17px 20px}
   .tabs{display:flex;gap:3px;margin-bottom:15px;background:var(--sunken);padding:3px;border-radius:10px;width:fit-content;max-width:100%;overflow-x:auto}
-  .tab{font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;color:var(--ink-2);white-space:nowrap}
+  .tab{font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;color:var(--ink-2);white-space:nowrap;background:none;border:none;cursor:pointer}
   .tab.on{background:var(--canvas);color:var(--ink);box-shadow:var(--sh-sm)}
+  .tab-panel .row{margin-bottom:11px}
+  .tab-panel .k{font-size:10px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-3)}
+  .tab-panel .v{font-size:13.5px;margin-top:3px;font-weight:500}
+  .tab-panel .v .link{color:var(--info)}
   .draft{border:1px solid var(--line);border-radius:12px;background:var(--sunken);overflow:hidden}
   .draft-h{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);padding:11px 14px 0}
   .draft-b{margin:0;padding:9px 14px 14px;font-family:var(--sans);font-size:13px;color:var(--ink-2);white-space:pre-wrap;line-height:1.6}
@@ -525,9 +529,9 @@
         +(credits.length?rrow('Créditos',esc(credits.slice(0,2).join(' · '))):'')
         +rrow('País',flag(l.country)+' '+esc(l.country))
         +'</div><div class="c-main">'
-        +'<div class="tabs"><span class="tab on">Borrador</span><span class="tab">Otros decisores'+(addl.length?' ('+addl.length+')':'')+'</span></div>'
-        +'<div class="draft"><div class="draft-h">Email de primer toque</div><pre class="draft-b">'+esc(l.pitchEmailES||'(sin borrador)')+'</pre></div>'
-        +addlHtml
+        +'<div class="tabs"><button class="tab on" data-p="borrador">Borrador</button><button class="tab" data-p="otros">Otros decisores'+(addl.length?' ('+addl.length+')':'')+'</button></div>'
+        +'<div class="tab-panel" data-panel="borrador"><div class="draft"><div class="draft-h">Email de primer toque</div><pre class="draft-b">'+esc(l.pitchEmailES||'(sin borrador)')+'</pre></div></div>'
+        +'<div class="tab-panel" data-panel="otros" style="display:none">'+(addl.length?addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join(''):'<div class="seam-note">Sin otros decisores registrados.</div>')+'</div>'
         +'<div class="c-actions"><button class="btn pri copy-btn">Copiar borrador</button>'
         +'<button class="btn win win-btn" data-msg="Marcado: Respondió">Respondió</button>'
         +'<button class="btn win win-btn" data-msg="Marcado: Rechazó (señal accionable)">Rechazó</button>'
@@ -539,6 +543,10 @@
       window.scrollTo({top:0,behavior:'smooth'});
       cardWrap.querySelector('.dc-back').addEventListener('click',closeCard);
       cardWrap.querySelectorAll('.win-btn').forEach(function(b){b.addEventListener('click',function(){b.classList.add('done');toast(b.dataset.msg);});});
+      cardWrap.querySelectorAll('.tab[data-p]').forEach(function(t){t.addEventListener('click',function(){
+        cardWrap.querySelectorAll('.tab[data-p]').forEach(function(x){x.classList.toggle('on',x===t);});
+        cardWrap.querySelectorAll('.tab-panel').forEach(function(p){p.style.display=(p.dataset.panel===t.dataset.p)?'':'none';});
+      });});
       var cbn=cardWrap.querySelector('.copy-btn');
       if(cbn) cbn.addEventListener('click',function(){try{navigator.clipboard.writeText(l.pitchEmailES||'');}catch(e){} cbn.textContent='Copiado ✓'; toast('Borrador copiado');});
     }
@@ -561,6 +569,13 @@
     document.querySelectorAll('[data-view="decisores"]').forEach(function(el){el.addEventListener('click',ensure);});
     // if the app restored to the Decisores view on load, fetch too
     try{ if(localStorage.getItem('eje_view')==='decisores') ensure(); }catch(e){}
+
+    // progressive: reflect the REAL active-batch size on Home (after paint, non-blocking)
+    fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){
+      var a=(m.batches||[]).find(function(b){return b.batch_id===m.active_batch_id;});
+      var el=document.getElementById('greetSub');
+      if(a&&el) el.textContent='UnaBase · '+a.lead_count+' decisores en cola hoy';
+    }).catch(function(){});
   })();
 </script>
 </body>
