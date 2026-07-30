@@ -199,6 +199,56 @@
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
+  /* ── decisores: list + card (real data seam) ── */
+  .dec-list{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+  .dec-row{display:flex;align-items:center;gap:13px;width:100%;text-align:left;background:var(--canvas);
+    border:1px solid var(--line-2);border-radius:12px;padding:12px 15px;box-shadow:var(--sh-sm);
+    transition:transform .12s ease,border-color .12s ease}
+  .dec-row:hover{border-color:var(--line-3);transform:translateY(-1px)}
+  .dec-av{width:38px;height:38px;border-radius:10px;background:color-mix(in srgb,var(--cool) 13%,transparent);
+    color:var(--cool);display:flex;align-items:center;justify-content:center;font-weight:750;font-size:13px;flex:none}
+  .dec-main{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+  .dec-co{font-size:14.5px;font-weight:650;letter-spacing:-.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dec-meta{font-size:12px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dec-ch{font-size:10.5px;font-weight:600;color:var(--ink-3);background:var(--sunken);border-radius:6px;padding:3px 8px;flex:none}
+  .dec-score{font-size:15px;font-weight:750;color:var(--cool);font-variant-numeric:tabular-nums;flex:none;min-width:30px;text-align:right}
+  @media (max-width:520px){.dec-ch{display:none}}
+  .dc-back{background:none;border:none;color:var(--ink-2);font-size:13px;font-weight:600;padding:4px 0;margin-bottom:12px;display:inline-flex;align-items:center;gap:5px}
+  .dc-back:hover{color:var(--ink)}
+  .card{border:1px solid var(--line-2);border-radius:16px;overflow:hidden;box-shadow:var(--sh);background:var(--canvas)}
+  .c-head{display:flex;align-items:center;gap:14px;padding:17px 20px;border-bottom:1px solid var(--line)}
+  .c-av{width:46px;height:46px;border-radius:12px;background:color-mix(in srgb,var(--cool) 14%,transparent);color:var(--cool);display:flex;align-items:center;justify-content:center;font-weight:750;font-size:16px;letter-spacing:-.03em;flex:none}
+  .c-name{font-size:19px;font-weight:720;letter-spacing:-.03em}
+  .c-sub{font-size:13px;color:var(--ink-2)}
+  .c-score{margin-left:auto;text-align:right}
+  .c-score .v{font-size:24px;font-weight:750;color:var(--cool);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+  .c-score .l{font-size:9.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3)}
+  .c-body{display:grid;grid-template-columns:200px 1fr}
+  @media (max-width:640px){.c-body{grid-template-columns:1fr}.c-rail{border-right:none!important;border-bottom:1px solid var(--line)}}
+  .c-rail{border-right:1px solid var(--line);padding:16px 18px;background:var(--panel)}
+  .c-rail .row{margin-bottom:13px}
+  .c-rail .k{font-size:10px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-3)}
+  .c-rail .v{font-size:13.5px;margin-top:3px;font-weight:500;word-break:break-word}
+  .c-rail .v .link{color:var(--info)}
+  .c-main{padding:17px 20px}
+  .tabs{display:flex;gap:3px;margin-bottom:15px;background:var(--sunken);padding:3px;border-radius:10px;width:fit-content;max-width:100%;overflow-x:auto}
+  .tab{font-size:12px;font-weight:600;padding:6px 12px;border-radius:8px;color:var(--ink-2);white-space:nowrap}
+  .tab.on{background:var(--canvas);color:var(--ink);box-shadow:var(--sh-sm)}
+  .draft{border:1px solid var(--line);border-radius:12px;background:var(--sunken);overflow:hidden}
+  .draft-h{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-3);padding:11px 14px 0}
+  .draft-b{margin:0;padding:9px 14px 14px;font-family:var(--sans);font-size:13px;color:var(--ink-2);white-space:pre-wrap;line-height:1.6}
+  .c-actions{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+  .btn{font-size:12.5px;font-weight:650;border-radius:10px;padding:9px 15px;border:1px solid var(--line-2);background:var(--canvas);color:var(--ink);box-shadow:var(--sh-sm)}
+  .btn.pri{background:var(--primary);color:var(--bg);border-color:var(--primary)}
+  .btn.win{border-color:color-mix(in srgb,var(--ok) 45%,transparent);color:var(--ok)}
+  .btn.done{opacity:.55}
+  .seam-note{margin-top:14px;font-size:11.5px;color:var(--ink-3)}
+  #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;
+    background:var(--primary);color:var(--bg);font-size:13px;font-weight:600;padding:10px 18px;border-radius:10px;
+    box-shadow:var(--sh-lg);z-index:80;transition:opacity .2s,transform .2s;pointer-events:none}
+  #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media (max-width:760px){#toast{bottom:96px}}
+
   /* ── login gate ── */
   #login{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px}
   .login-card{width:100%;max-width:360px;text-align:center}
@@ -318,12 +368,13 @@
         <div class="note">Próximo paso del build (Jue).</div></div>
     </section>
 
-    <!-- DECISORES -->
+    <!-- DECISORES (real active-batch data) -->
     <section class="view" id="view-decisores">
-      <div class="page-h">Decisores</div><div class="page-sub">La ficha del decisor — la pieza central.</div>
-      <div class="empty"><div class="ei"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div>
-        <h3>La ficha del decisor</h3><p>Cabecera + riel de atributos verificados + timeline de cadencia + borrador + botones win (Respondió / Rechazó con motivo).</p>
-        <div class="note">Núcleo del build (Mié).</div></div>
+      <div id="dec-list-wrap">
+        <div class="page-h">Decisores</div><div class="page-sub" id="dec-sub">Cargando cola…</div>
+        <div class="dec-list" id="dec-list"></div>
+      </div>
+      <div id="dec-card-wrap" style="display:none"></div>
     </section>
 
     <!-- HISTORIAL -->
@@ -351,6 +402,8 @@
   <button class="mob-item" data-view="historial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>Historial</button>
   <button class="mob-item" data-view="ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a8 8 0 0 0 .1-3l1.7-1.3-2-3.4-2 .8a8 8 0 0 0-2.6-1.5L14 4h-4l-.7 2.1a8 8 0 0 0-2.6 1.5l-2-.8-2 3.4L4.5 12a8 8 0 0 0 0 3l-1.8 1.3 2 3.4 2-.8a8 8 0 0 0 2.6 1.5L10 20h4l.7-2.1a8 8 0 0 0 2.6-1.5l2 .8 2-3.4L19.4 15Z"/></svg>Ajustes</button>
 </nav>
+
+<div id="toast"></div>
 
 <script>
   // ── theme: follow OS, remember choice ──
@@ -424,6 +477,90 @@
       sb.auth.getSession().then(function(r){ (r&&r.data&&r.data.session)?showApp():showLogin(); }).catch(showLogin);
       sb.auth.onAuthStateChange(function(_e,session){ if(session) showApp(); });
     } else { showLogin(); }
+  })();
+
+  // ── Decisores: real active-batch data (the migration seam test). Per-view load + local-first cache. ──
+  (function(){
+    var loaded=false, DATA=null;
+    var listWrap=document.getElementById('dec-list-wrap'),
+        cardWrap=document.getElementById('dec-card-wrap'),
+        listEl=document.getElementById('dec-list'),
+        subEl=document.getElementById('dec-sub');
+    if(!listWrap) return;
+    function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+    function initials(s){return String(s||'?').trim().split(/\s+/).slice(0,2).map(function(w){return w[0]||'';}).join('').toUpperCase();}
+    function fmtK(n){n=+n||0;return n>=1000?(n/1000).toFixed(n>=10000?0:1)+'K':(''+n);}
+    var FLAGS={Spain:'🇪🇸',Mexico:'🇲🇽',Colombia:'🇨🇴',Argentina:'🇦🇷',Chile:'🇨🇱',Uruguay:'🇺🇾',Paraguay:'🇵🇾',Peru:'🇵🇪',Ecuador:'🇪🇨',Venezuela:'🇻🇪','Costa Rica':'🇨🇷','Dominican Republic':'🇩🇴',Bolivia:'🇧🇴',Guatemala:'🇬🇹',Panama:'🇵🇦'};
+    function flag(c){return FLAGS[c]||'🌎';}
+    function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},1800);}
+    function render(){
+      if(!DATA||!DATA.leads){return;}
+      subEl.textContent=DATA.leads.length+' decisores · lote '+esc(DATA.date);
+      listEl.innerHTML=DATA.leads.map(function(l,i){
+        var ch=l.website?'sitio':(l.instagramHandle?'IG':'email');
+        return '<button class="dec-row" data-i="'+i+'">'
+          +'<span class="dec-av">'+esc(initials(l.companyName))+'</span>'
+          +'<span class="dec-main"><span class="dec-co">'+esc(l.companyName)+'</span>'
+          +'<span class="dec-meta">'+flag(l.country)+' '+esc(l.contactName||'—')+'</span></span>'
+          +'<span class="dec-ch">'+ch+'</span>'
+          +'<span class="dec-score">'+esc(l.unabaseScore||'')+'</span></button>';
+      }).join('');
+      listEl.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openCard(+r.dataset.i);});});
+    }
+    function rrow(k,v){return '<div class="row"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>';}
+    function openCard(i){
+      var l=DATA.leads[i]; if(!l)return;
+      var credits=(l._verifiedCredits||l.verifiedCredits||[]);
+      var addl=(l.additionalContacts||[]);
+      var addlHtml=addl.length?('<div style="margin-top:14px">'+addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join('')+'</div>'):'';
+      var html='<button class="dc-back">&larr; Decisores</button>'
+        +'<div class="card"><div class="c-head">'
+        +'<div class="c-av">'+esc(initials(l.companyName))+'</div>'
+        +'<div><div class="c-name">'+esc(l.companyName)+'</div><div class="c-sub">'+flag(l.country)+' '+esc(l.country)+' · '+esc(l.contactName||'—')+(l.contactTitle?', '+esc(l.contactTitle):'')+'</div></div>'
+        +'<div class="c-score"><div class="v">'+esc(l.unabaseScore||'—')+'</div><div class="l">Score</div></div>'
+        +'</div><div class="c-body"><div class="c-rail">'
+        +rrow('Decisor',esc(l.contactName||'—'))
+        +rrow('Email',esc(l.contactEmail||'—'))
+        +(l.instagramHandle?rrow('Instagram','<span class="link">@'+esc(l.instagramHandle)+(l.instagramFollowers?' · '+fmtK(l.instagramFollowers):'')+'</span>'):'')
+        +(credits.length?rrow('Créditos',esc(credits.slice(0,2).join(' · '))):'')
+        +rrow('País',flag(l.country)+' '+esc(l.country))
+        +'</div><div class="c-main">'
+        +'<div class="tabs"><span class="tab on">Borrador</span><span class="tab">Otros decisores'+(addl.length?' ('+addl.length+')':'')+'</span></div>'
+        +'<div class="draft"><div class="draft-h">Email de primer toque</div><pre class="draft-b">'+esc(l.pitchEmailES||'(sin borrador)')+'</pre></div>'
+        +addlHtml
+        +'<div class="c-actions"><button class="btn pri copy-btn">Copiar borrador</button>'
+        +'<button class="btn win win-btn" data-msg="Marcado: Respondió">Respondió</button>'
+        +'<button class="btn win win-btn" data-msg="Marcado: Rechazó (señal accionable)">Rechazó</button>'
+        +'<button class="btn win-btn" data-msg="Marcado: Reunión">Reunión</button></div>'
+        +'<div class="seam-note">Datos reales del lote activo. La escritura a Supabase se conecta con el login (RLS) — por ahora las acciones son locales.</div>'
+        +'</div></div></div>';
+      cardWrap.innerHTML=html;
+      listWrap.style.display='none'; cardWrap.style.display='block';
+      window.scrollTo({top:0,behavior:'smooth'});
+      cardWrap.querySelector('.dc-back').addEventListener('click',closeCard);
+      cardWrap.querySelectorAll('.win-btn').forEach(function(b){b.addEventListener('click',function(){b.classList.add('done');toast(b.dataset.msg);});});
+      var cbn=cardWrap.querySelector('.copy-btn');
+      if(cbn) cbn.addEventListener('click',function(){try{navigator.clipboard.writeText(l.pitchEmailES||'');}catch(e){} cbn.textContent='Copiado ✓'; toast('Borrador copiado');});
+    }
+    function closeCard(){cardWrap.style.display='none';listWrap.style.display='block';}
+    function load(){
+      // local-first: paint cache instantly, then refresh in background
+      try{var c=localStorage.getItem('eje_dec_cache'); if(c){DATA=JSON.parse(c); render();}}catch(e){}
+      var cb='?v='+Date.now();
+      fetch('./reports-manifest.json'+cb).then(function(r){return r.json();}).then(function(m){
+        var active=(m.batches||[]).find(function(b){return b.batch_id===m.active_batch_id;});
+        if(!active) throw 0;
+        return fetch('./'+active.file+cb).then(function(r){return r.json();}).then(function(leads){
+          DATA={date:active.source_date,leads:leads};
+          try{localStorage.setItem('eje_dec_cache',JSON.stringify(DATA));}catch(e){}
+          render();
+        });
+      }).catch(function(){ if(!DATA&&subEl) subEl.textContent='No se pudo cargar la cola.'; });
+    }
+    function ensure(){if(loaded)return;loaded=true;load();}
+    document.querySelectorAll('[data-view="decisores"]').forEach(function(el){el.addEventListener('click',ensure);});
+    // if the app restored to the Decisores view on load, fetch too
+    try{ if(localStorage.getItem('eje_view')==='decisores') ensure(); }catch(e){}
   })();
 </script>
 </body>
