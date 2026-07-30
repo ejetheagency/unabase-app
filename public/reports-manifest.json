@@ -1,6 +1,24 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-07-31",
+   "source_date": "2026-07-31",
+   "file": "leads-2026-07-31.json",
+   "lead_count": 15,
+   "approved": true,
+   "approved_at": "2026-07-31T13:00:00.000Z",
+   "status": "pending",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "07-31 STAGED pool-dispatch: priority ES6/MX2/CO2 + AR1 + frontier (DR/EC/PE/VE). Elite pool (Elastica/La Zanfona/Irusoin/Tabula Rasa/Boton). Locked template. Activate by setting active_batch_id when 07-31 arrives.",
+   "supply_metrics": {
+    "mode": "pool_dispatch_staged",
+    "priority": 10,
+    "frontier": 5,
+    "avg_score": 8.9
+   }
+  },
+  {
    "batch_id": "batch-2026-07-30",
    "source_date": "2026-07-30",
    "file": "leads-2026-07-30.json",
