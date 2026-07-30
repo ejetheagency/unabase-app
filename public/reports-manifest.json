@@ -4,18 +4,21 @@
    "batch_id": "batch-2026-07-30",
    "source_date": "2026-07-30",
    "file": "leads-2026-07-30.json",
-   "lead_count": 15,
+   "lead_count": 25,
    "approved": true,
    "approved_at": "2026-07-30T13:00:00.000Z",
    "status": "active",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
-   "note": "07-30 Batch 1 of phased double: 13 pool-dispatch (MX5 Nahuyaca/Venado/Cine Chalana/Tecolote/Inadaptados, CO3 Jarana/Pathos/La Cueva, AR2 Gong/Periferia, UY Monarca, PY Tekoha, CL Tonina) + 2 LAZARUS revivals (Cine Ojo, Pejeperro - bounced emails rotated). Locked template. Batch 2 (fresh mine) appends after session-limit reset.",
+   "note": "07-30 DOUBLE report (catch-up): 25 leads. Batch1=13 pool-dispatch (MX5/CO3/AR2/UY/PY/CL) + Batch2=10 fresh-mine (ES3 Olivo/Kluge/Un Capricho, CO3 Ferviente/Viso/Cinema Co, AR 80 Mundos, CR Centrosur, EC Filmarte) + 3 LAZARUS revivals (Cine Ojo, Pejeperro, Nina Nino - all bounced emails recovered). Locked template, gates clean (dedup exceptions = the 3 revivals; Summer Films dropped - domain hijacked to gambling).",
    "supply_metrics": {
-    "mode": "pool_dispatch+revival",
+    "mode": "double_pool+mine+revival",
+    "total": 25,
     "pool": 13,
-    "revived": 2,
-    "mx_plurality": 5
+    "mined": 10,
+    "revived": 3,
+    "priority_markets": "ES3/MX5/CO6",
+    "dropped": "Summer Films (hijacked domain), Gentil Cine (dup)"
    }
   },
   {
