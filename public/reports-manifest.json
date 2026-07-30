@@ -1,13 +1,31 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-07-30",
+   "source_date": "2026-07-30",
+   "file": "leads-2026-07-30.json",
+   "lead_count": 15,
+   "approved": true,
+   "approved_at": "2026-07-30T13:00:00.000Z",
+   "status": "active",
+   "disable_carry_forward": false,
+   "workspace": "pool_dispatch_a_tier",
+   "note": "07-30 Batch 1 of phased double: 13 pool-dispatch (MX5 Nahuyaca/Venado/Cine Chalana/Tecolote/Inadaptados, CO3 Jarana/Pathos/La Cueva, AR2 Gong/Periferia, UY Monarca, PY Tekoha, CL Tonina) + 2 LAZARUS revivals (Cine Ojo, Pejeperro - bounced emails rotated). Locked template. Batch 2 (fresh mine) appends after session-limit reset.",
+   "supply_metrics": {
+    "mode": "pool_dispatch+revival",
+    "pool": 13,
+    "revived": 2,
+    "mx_plurality": 5
+   }
+  },
+  {
    "batch_id": "batch-2026-07-29",
    "source_date": "2026-07-29",
    "file": "leads-2026-07-29.json",
    "lead_count": 15,
    "approved": true,
    "approved_at": "2026-07-29T13:00:00.000Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "fresh_mine_a_tier",
    "note": "07-29: 10 core MX-plurality (MX6 Cebolla/1987/Paloma Negra/Jacalito/La Furia/Abejas, AR Gauchos del Mar, CO2 Inercia/Paso de Elefante, ES Setembro) + 5 frontier (La Faena VE, El Cielo UY, Sabate PY, Ostinato EC, Films Bastardia PE). Fresh-mine, max enrichment, LOCKED Jaguar-Bite first-touch template, 3 gates clean. Aleph swapped out (already-shipped domain caught by dedup gate).",
@@ -1279,7 +1297,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-07-29",
+ "active_batch_id": "batch-2026-07-30",
  "timezone": "America/New_York",
  "last_updated": "2026-07-28T13:00:00.000Z"
 }
