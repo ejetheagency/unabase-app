@@ -10,7 +10,7 @@
   "contactEmail": "info@elasticafilms.com",
   "companyEmail": "info@elasticafilms.com",
   "unabaseScore": 9.5,
-  "companyBrief": "Independent production and distribution house founded 2021 by producer Maria Zamora (ex-Avalon) and distributor Enrique Costa. Focus on auteur cinema and films directed by women. Zamora produced Carla Simon's Alcarras (Berlinale Golden Bear 2022) and Clara Roquet's Libertad, and distributes Palme d'Or and Oscar titles in Spain. Operates from Madrid with a Valencia registration.",
+  "companyBrief": "Independent production and distribution house founded 2021 by producer Maria Zamora (ex-Avalon) and distributor Enrique Costa. Focus on auteur cinema and films directed by women. Zamora produced Carla Simon's Alcarras (Berlinale Golden Bear 2022) and Clara Roquet's Libertad, and distributes Palme d'Or and Oscar titles in Spain. Operates from Madrid with a Valencia registration. Producer of 'El deshielo' (Cannes, Un Certain Regard) and distributor of auteur cinema by women incl. Carla Simón; 'El amor que permanece' selected Cannes Première 2025.",
   "additionalContacts": [
    {
     "name": "Enrique Costa",
@@ -44,9 +44,24 @@
   "contactEmail": "info@lazanfona.com",
   "companyEmail": "info@lazanfona.com",
   "unabaseScore": 9.3,
-  "companyBrief": "Productora andaluza con sede en Sevilla, fundada en 2001 por Gervasio Iglesias. Una de las indies mas premiadas de Espana: 17 Goyas (incluidos Mejor Pelicula por La Isla Minima y Juan de los Muertos) y 3 Conchas de Plata en San Sebastian. Cantera del cine de autor andaluz (Alberto Rodriguez, Santi Amodeo).",
+  "companyBrief": "Productora andaluza con sede en Sevilla, fundada en 2001 por Gervasio Iglesias. Una de las indies mas premiadas de Espana: 17 Goyas (incluidos Mejor Pelicula por La Isla Minima y Juan de los Muertos) y 3 Conchas de Plata en San Sebastian. Cantera del cine de autor andaluz (Alberto Rodriguez, Santi Amodeo). Sevilla-based house behind 17 Goya Awards (2 for Best Film) and 3 Silver Shells at San Sebastián; directors Alberto Rodríguez and Santi Amodeo.",
   "additionalContacts": [
-   "Vanessa Garcia-Pelayo (Productora)"
+   "Vanessa Garcia-Pelayo (Productora)",
+   {
+    "name": "Gervasio Iglesias",
+    "title": "Fundador (2001) / Productor, Academias de Cine Europea y Española",
+    "email": null
+   },
+   {
+    "name": "Vanessa García-Pelayo",
+    "title": "Productora",
+    "email": null
+   },
+   {
+    "name": "Gonzalo García-Pelayo",
+    "title": "Director / Productor",
+    "email": null
+   }
   ],
   "_verifiedCredits": [
    "Modelo 77 (2022, 5 Goyas)",
@@ -74,7 +89,7 @@
   "contactEmail": "info@lacanicafilms.com",
   "companyEmail": "info@lacanicafilms.com",
   "unabaseScore": 9,
-  "companyBrief": "Madrid production company founded in 2010 by producer Beatriz Bodegas, championing personal, intimate cinema and young talent. Its breakout, Raul Arevalo's Tarde para la ira, swept four Goya Awards including Best Film. Consistent presence at Spain's major awards and festivals, with theatrical and RTVE/streamer releases.",
+  "companyBrief": "Madrid production company founded in 2010 by producer Beatriz Bodegas, championing personal, intimate cinema and young talent. Its breakout, Raul Arevalo's Tarde para la ira, swept four Goya Awards including Best Film. Consistent presence at Spain's major awards and festivals, with theatrical and RTVE/streamer releases. Madrid producer of 'Tarde para la ira' — 4 Goya Awards including Best Film; recent production 'Caminando con el Diablo'.",
   "additionalContacts": [
    {
     "name": "La Canica Films",
@@ -114,6 +129,21 @@
     "name": "Aqui y Alli Films",
     "title": "Press inbox",
     "email": "prensa@aquiyallifilms.com"
+   },
+   {
+    "name": "Lucía Ramírez",
+    "title": "Directora General",
+    "email": null
+   },
+   {
+    "name": "Marta Ferrer",
+    "title": "Productora Ejecutiva Internacional",
+    "email": null
+   },
+   {
+    "name": "Claudia Reinares",
+    "title": "Coordinadora de Proyectos",
+    "email": null
    }
   ],
   "_verifiedCredits": [
@@ -145,7 +175,27 @@
   "companyBrief": "Productora canaria de Santa Cruz de Tenerife, coproductora de cine de autor con socios en Francia, Alemania, Chile y Argentina. Presencia en festivales Clase A: Blanco en Blanco (Venecia Orizzonti, Mejor Direccion; candidata al Oscar por Chile), Eles transportan a morte (Venecia) y La Hojarasca.",
   "additionalContacts": [
    "Jairo Lopez (Nuevos proyectos) jairo@elviaje.es",
-   "Jose M. Vina (Produccion/Comunicacion) josemiguel@elviaje.es"
+   "Jose M. Vina (Produccion/Comunicacion) josemiguel@elviaje.es",
+   {
+    "name": "Marina Alberti",
+    "title": "Dirección de Producción",
+    "email": "marina@elviaje.es"
+   },
+   {
+    "name": "Jamie Weiss",
+    "title": "Coproducciones Internacionales",
+    "email": "jamie@elviaje.es"
+   },
+   {
+    "name": "José M. Viña",
+    "title": "Producción y Comunicación",
+    "email": "josemiguel@elviaje.es"
+   },
+   {
+    "name": "Jairo López",
+    "title": "Nuevos Proyectos",
+    "email": "jairo@elviaje.es"
+   }
   ],
   "_verifiedCredits": [
    "Eles transportan a morte (2021, Venecia - Giornate degli Autori)",
@@ -173,7 +223,7 @@
   "contactEmail": "produccion@jaibofilms.com",
   "companyEmail": "produccion@jaibofilms.com",
   "unabaseScore": 8.9,
-  "companyBrief": "Productora art-house de Alicante (Comunitat Valenciana), fundada en 2006 por Miguel Molina, presidente de la asociacion de productoras valencianas (PAV). Largos, animacion y documental con cerca de 200 premios internacionales y 2 nominaciones al Goya; seleccionada en Cannes, San Sebastian, Berlin, Locarno y Annecy.",
+  "companyBrief": "Productora art-house de Alicante (Comunitat Valenciana), fundada en 2006 por Miguel Molina, presidente de la asociacion de productoras valencianas (PAV). Largos, animacion y documental con cerca de 200 premios internacionales y 2 nominaciones al Goya; seleccionada en Cannes, San Sebastian, Berlin, Locarno y Annecy. Alicante art-house producer founded 2006 after 'La casa de mi abuela'; 'The Sacred Spirit' (Espíritu Sagrado) earned a Special Mention at Locarno.",
   "additionalContacts": [],
   "_verifiedCredits": [
    "Espiritu Sagrado (2021, Chema Garcia Ibarra - Locarno, Premio Feroz Mejor Pelicula)",
@@ -201,7 +251,7 @@
   "contactEmail": "pikila.cine@gmail.com",
   "companyEmail": "pikila.cine@gmail.com",
   "unabaseScore": 8.7,
-  "companyBrief": "Independent Mexico City film production house founded in 2016 by director Pablo Pérez Lombardini (CCC graduate; former assistant director to Alonso Ruizpalacios, Rodrigo Plá and Claudia Sainte-Luce). Focused on social and environmental cinema. Its debut feature La Reserva (2025) won Best Fiction Feature, Best Director and Best Actress at the Morelia Film Festival (FICM) and premiered at Telluride; a Mexico–Qatar co-production backed by the Doha Film Institute.",
+  "companyBrief": "Independent Mexico City film production house founded in 2016 by director Pablo Pérez Lombardini (CCC graduate; former assistant director to Alonso Ruizpalacios, Rodrigo Plá and Claudia Sainte-Luce). Focused on social and environmental cinema. Its debut feature La Reserva (2025) won Best Fiction Feature, Best Director and Best Actress at the Morelia Film Festival (FICM) and premiered at Telluride; a Mexico–Qatar co-production backed by the Doha Film Institute. Mexican independent house; feature 'La reserva' premiered at Telluride 2025 and won 3 awards at Festival de Cine de Morelia (Best Fiction Feature, Best Director, Best Actress).",
   "additionalContacts": [],
   "_verifiedCredits": [
    "La Reserva (2025) — dir./prod. Pablo Pérez Lombardini; Best Fiction Feature + Best Director + Best Actress, FICM Morelia 2025; premiered Telluride 2025; Mexico–Qatar (Doha Film Institute)"
@@ -228,7 +278,7 @@
   "contactEmail": "info@chumberaproducciones.com",
   "companyEmail": "info@chumberaproducciones.com",
   "unabaseScore": 8.7,
-  "companyBrief": "Productora mexicana de cine con enfoque de impacto social, fundada por Indira Cato. Su documental 'Llamarse Olimpia' (sobre sobrevivientes de violencia digital, base de la Ley Olimpia) fue nominado al Ariel 68. Proyectos con raiz y causa, cubiertos por El Financiero, Excelsior, Proceso y The Hollywood Reporter.",
+  "companyBrief": "Productora mexicana de cine con enfoque de impacto social, fundada por Indira Cato. Su documental 'Llamarse Olimpia' (sobre sobrevivientes de violencia digital, base de la Ley Olimpia) fue nominado al Ariel 68. Proyectos con raiz y causa, cubiertos por El Financiero, Excelsior, Proceso y The Hollywood Reporter. Mexican documentary house; 'Llamarse Olimpia' (dir. Indira Cato) tells the story of activist Olimpia Coral Melo and the 'Ley Olimpia'.",
   "additionalContacts": [],
   "_verifiedCredits": [
    "Llamarse Olimpia (documental, nominado Ariel 68)"
@@ -255,7 +305,7 @@
   "contactEmail": "contacto@agora.com.co",
   "companyEmail": "contacto@agora.com.co",
   "unabaseScore": 8.5,
-  "companyBrief": "Bogota, Colombia. Casa productora; ancla ICP como coproductora de 'Estimados senores' (10 Premios Macondo 2025) y 'Diablo'. DM: Alvaro Gutierrez. Nota: portafolio con inclinacion comercial/genero, pero con credito de cine reconocido.",
+  "companyBrief": "Bogota, Colombia. Casa productora; ancla ICP como coproductora de 'Estimados senores' (10 Premios Macondo 2025) y 'Diablo'. DM: Alvaro Gutierrez. Nota: portafolio con inclinacion comercial/genero, pero con credito de cine reconocido. Productora colombiana fundada y dirigida por el productor Álvaro Gutiérrez.",
   "additionalContacts": [],
   "_verifiedCredits": [
    "Estimados senores - 10 Premios Macondo 2025 (coproductora)",
@@ -283,7 +333,7 @@
   "contactEmail": "ganasprod.sas@gmail.com",
   "companyEmail": "ganasprod.sas@gmail.com",
   "unabaseScore": 8.5,
-  "companyBrief": "Bogotá-based independent film productora founded in 2014 by actress-producer Marcela Mar to champion female-led auteur cinema and new perspectives. Co-produced Camila Beltran's debut feature Mi Bestia, which premiered in the ACID parallel section of the Cannes Film Festival 2024 (Colombia-France) and secured international distribution. Slate of author-driven feature projects in development.",
+  "companyBrief": "Bogotá-based independent film productora founded in 2014 by actress-producer Marcela Mar to champion female-led auteur cinema and new perspectives. Co-produced Camila Beltran's debut feature Mi Bestia, which premiered in the ACID parallel section of the Cannes Film Festival 2024 (Colombia-France) and secured international distribution. Slate of author-driven feature projects in development. GANAS PRODUCCIONES SAS, con sede en Medellín, Colombia; fundada en 2014 por la actriz Marcela Mar (17 largometrajes en su carrera).",
   "additionalContacts": [
    {
     "name": "Pedro Fernandez",
@@ -322,7 +372,7 @@
   "contactEmail": "martinlongo@gmail.com",
   "companyEmail": "tiancartier@gmail.com",
   "unabaseScore": 8.5,
-  "companyBrief": "Productora porteña de cine y series documental y de ficción, fundada en 2006 por Martín Longo y Tian Cartier. Perfil autoral y social/ambiental, financiamiento INCAA. Su corto 'Nuestra Arma es Nuestra Lengua' superó 160 selecciones en festivales; la serie 'Un Año sin Nosotros' recibió nominacion al Martín Fierro y ganó concursos INCAA/Tec.tv.",
+  "companyBrief": "Productora porteña de cine y series documental y de ficción, fundada en 2006 por Martín Longo y Tian Cartier. Perfil autoral y social/ambiental, financiamiento INCAA. Su corto 'Nuestra Arma es Nuestra Lengua' superó 160 selecciones en festivales; la serie 'Un Año sin Nosotros' recibió nominacion al Martín Fierro y ganó concursos INCAA/Tec.tv. Productora audiovisual fundada en 2006 por Martín Longo (Buenos Aires, 1980); operaciones en Argentina (+54 911 5668 4622) y República Dominicana (+1 829 629 0851); numerosos premios internacionales.",
   "additionalContacts": [
    {
     "name": "Tian Cartier",
@@ -356,7 +406,7 @@
   "contactEmail": "contactojosemcabral@gmail.com",
   "companyEmail": null,
   "unabaseScore": 9.3,
-  "companyBrief": "Tabula Rasa Films is the Santo Domingo production company of José María Cabral, one of the Dominican Republic's leading auteur filmmakers. It backs his feature and documentary work — arthouse fiction, prison drama and social documentary — with regular international festival play, theatrical release and streaming distribution (HBO Max). Elite independent creative pedigree, not a service/commercial shop.",
+  "companyBrief": "Tabula Rasa Films is the Santo Domingo production company of José María Cabral, one of the Dominican Republic's leading auteur filmmakers. It backs his feature and documentary work — arthouse fiction, prison drama and social documentary — with regular international festival play, theatrical release and streaming distribution (HBO Max). Elite independent creative pedigree, not a service/commercial shop. Productora del director dominicano José María Cabral.",
   "additionalContacts": [],
   "_verifiedCredits": [
    "Carpinteros / Woodpeckers (2017) — first Dominican film in Sundance World Cinema Dramatic Competition; Guadalajara Intl Film Festival (Best Director, +2 awards); DR official Oscar submission (Best Foreign Language, 90th Academy Awards)",
@@ -385,10 +435,20 @@
   "contactEmail": "info@botonfilms.com",
   "companyEmail": "info@botonfilms.com",
   "unabaseScore": 9.2,
-  "companyBrief": "Quito-based independent film production company founded 2019 by Joe Houlberg Silva, home to director Ana Cristina Barragan. Auteur-driven fiction and documentary. Elite festival pedigree: Venice Orizzonti, IDFA, TIFF, Locarno Open Doors, FICCI Best Documentary (Oscar-eligible). One of Ecuador's leading arthouse outfits.",
+  "companyBrief": "Quito-based independent film production company founded 2019 by Joe Houlberg Silva, home to director Ana Cristina Barragan. Auteur-driven fiction and documentary. Elite festival pedigree: Venice Orizzonti, IDFA, TIFF, Locarno Open Doors, FICCI Best Documentary (Oscar-eligible). One of Ecuador's leading arthouse outfits. Productora ecuatoriana fundada en 2019 por Joe Houlberg Silva. OZOGOCHE (2023) se estrenó en IDFA, ganó Mejor Documental en FICCI y calificó a los Oscar; HIEDRA (2025) seleccionada en la sección Orizzonti de Venecia. Apoyos de Ibermedia y el CNC de Francia.",
   "additionalContacts": [
    "botonfilms@gmail.com",
-   "+593 984620149"
+   "+593 984620149",
+   {
+    "name": "Ana Cristina Barragán",
+    "title": "Director",
+    "email": null
+   },
+   {
+    "name": "Andrés Cornejo Pinto",
+    "title": "Director/Producer",
+    "email": null
+   }
   ],
   "_verifiedCredits": [
    "Hiedra (2025) - Official Selection, Venice Biennale Orizzonti; Best Screenplay Orizzonti; Special Mention San Sebastian",
@@ -416,7 +476,7 @@
   "contactEmail": "perpetuacine.pe@gmail.com",
   "companyEmail": "perpetuacine.pe@gmail.com",
   "unabaseScore": 8.7,
-  "companyBrief": "Productora peruana de cine de autor y documental de creación, activa desde 2020-2021, liderada por la productora Lali Madueño con un equipo pequeño en Perú y Latinoamérica. Enfocada en relatos visuales audaces, memoria indígena y cine experimental, con fuerte recorrido en festivales europeos de primer nivel (Berlinale Forum, DocsBarcelona, BFI London, Doclisboa).",
+  "companyBrief": "Productora peruana de cine de autor y documental de creación, activa desde 2020-2021, liderada por la productora Lali Madueño con un equipo pequeño en Perú y Latinoamérica. Enfocada en relatos visuales audaces, memoria indígena y cine experimental, con fuerte recorrido en festivales europeos de primer nivel (Berlinale Forum, DocsBarcelona, BFI London, Doclisboa). Productora de cine peruana (IG @perpetua_cine).",
   "additionalContacts": [],
   "_verifiedCredits": [
    "'La memoria de las mariposas' (2025, dir. Tatiana Fuentes Sadowski, Perú/Portugal) — Premio FIPRESCI en el Forum de la Berlinale 2025; Mejor Película DocsBarcelona 2025; Mejor Película Peruana, Festival de Cine de Lima 2025; premios en Memorimage y selección en BFI London y Doclisboa",
