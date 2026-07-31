@@ -46,7 +46,6 @@
   "unabaseScore": 9.3,
   "companyBrief": "Productora andaluza con sede en Sevilla, fundada en 2001 por Gervasio Iglesias. Una de las indies mas premiadas de Espana: 17 Goyas (incluidos Mejor Pelicula por La Isla Minima y Juan de los Muertos) y 3 Conchas de Plata en San Sebastian. Cantera del cine de autor andaluz (Alberto Rodriguez, Santi Amodeo). Sevilla-based house behind 17 Goya Awards (2 for Best Film) and 3 Silver Shells at San Sebastián; directors Alberto Rodríguez and Santi Amodeo.",
   "additionalContacts": [
-   "Vanessa Garcia-Pelayo (Productora)",
    {
     "name": "Gervasio Iglesias",
     "title": "Fundador (2001) / Productor, Academias de Cine Europea y Española",
@@ -174,8 +173,6 @@
   "unabaseScore": 9,
   "companyBrief": "Productora canaria de Santa Cruz de Tenerife, coproductora de cine de autor con socios en Francia, Alemania, Chile y Argentina. Presencia en festivales Clase A: Blanco en Blanco (Venecia Orizzonti, Mejor Direccion; candidata al Oscar por Chile), Eles transportan a morte (Venecia) y La Hojarasca.",
   "additionalContacts": [
-   "Jairo Lopez (Nuevos proyectos) jairo@elviaje.es",
-   "Jose M. Vina (Produccion/Comunicacion) josemiguel@elviaje.es",
    {
     "name": "Marina Alberti",
     "title": "Dirección de Producción",
@@ -437,8 +434,6 @@
   "unabaseScore": 9.2,
   "companyBrief": "Quito-based independent film production company founded 2019 by Joe Houlberg Silva, home to director Ana Cristina Barragan. Auteur-driven fiction and documentary. Elite festival pedigree: Venice Orizzonti, IDFA, TIFF, Locarno Open Doors, FICCI Best Documentary (Oscar-eligible). One of Ecuador's leading arthouse outfits. Productora ecuatoriana fundada en 2019 por Joe Houlberg Silva. OZOGOCHE (2023) se estrenó en IDFA, ganó Mejor Documental en FICCI y calificó a los Oscar; HIEDRA (2025) seleccionada en la sección Orizzonti de Venecia. Apoyos de Ibermedia y el CNC de Francia.",
   "additionalContacts": [
-   "botonfilms@gmail.com",
-   "+593 984620149",
    {
     "name": "Ana Cristina Barragán",
     "title": "Director",
@@ -505,11 +500,7 @@
   "companyEmail": "info@onceuponatimeinvenezuela.com",
   "unabaseScore": 9,
   "companyBrief": "Sancocho Público is an independent Venezuelan filmmaking, poetry and environmentalist collective led by director Anabel Rodríguez Ríos and producer Sepp R. Brudermann. It produced the feature documentary 'Once Upon a Time in Venezuela' (Congo Mirador), which premiered in the World Cinema Documentary Competition at Sundance 2020, screened at IDFA Best of Fests, and was Venezuela's official submission for the 93rd Academy Awards (Best International Feature). Elite festival and Oscar-submission pedigree; independent documentary productora.",
-  "additionalContacts": [
-   "Anabel Rodríguez Ríos — Director / Founder",
-   "info@onceuponatimeinvenezuela.com — general/company inbox (Google Workspace, deliverable)",
-   "sepp@spiraleyeproductions.com — producer direct (Spiraleye Productions, UK co-producer)"
-  ],
+  "additionalContacts": [],
   "_verifiedCredits": [
    "Once Upon a Time in Venezuela (2020) — dir. Anabel Rodríguez Ríos, prod. Sepp R. Brudermann; World Cinema Documentary Competition, Sundance 2020; IDFA Best of Fests; Venezuela's 93rd Academy Awards submission (Best International Feature)"
   ],
