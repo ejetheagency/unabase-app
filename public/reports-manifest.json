@@ -7,7 +7,7 @@
    "lead_count": 15,
    "approved": true,
    "approved_at": "2026-07-31T13:00:00.000Z",
-   "status": "pending",
+   "status": "active",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "07-31 STAGED pool-dispatch: priority ES6/MX2/CO2 + AR1 + frontier (DR/EC/PE/VE). Elite pool (Elastica/La Zanfona/Irusoin/Tabula Rasa/Boton). Locked template. Activate by setting active_batch_id when 07-31 arrives.",
@@ -25,7 +25,7 @@
    "lead_count": 25,
    "approved": true,
    "approved_at": "2026-07-30T13:00:00.000Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "07-30 DOUBLE report (catch-up): 25 leads. Batch1=13 pool-dispatch (MX5/CO3/AR2/UY/PY/CL) + Batch2=10 fresh-mine (ES3 Olivo/Kluge/Un Capricho, CO3 Ferviente/Viso/Cinema Co, AR 80 Mundos, CR Centrosur, EC Filmarte) + 3 LAZARUS revivals (Cine Ojo, Pejeperro, Nina Nino - all bounced emails recovered). Locked template, gates clean (dedup exceptions = the 3 revivals; Summer Films dropped - domain hijacked to gambling).",
@@ -1318,7 +1318,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-07-30",
+ "active_batch_id": "batch-2026-07-31",
  "timezone": "America/New_York",
  "last_updated": "2026-07-28T13:00:00.000Z"
 }
