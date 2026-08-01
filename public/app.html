@@ -259,6 +259,11 @@
   .tq-dot{width:8px;height:8px;border-radius:50%;flex:none}
   .tq-dot.due{background:var(--crit)}.tq-dot.soon{background:var(--warn)}
   .tq-empty{font-size:13px;color:var(--ink-3);padding:8px 2px}
+  .hist-row{display:flex;align-items:center;gap:12px;background:var(--canvas);border:1px solid var(--line-2);border-radius:11px;padding:12px 15px;box-shadow:var(--sh-sm);flex-wrap:wrap;margin-bottom:8px}
+  .hist-date{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink);min-width:92px}
+  .hist-n{font-size:12px;color:var(--ink-2);font-weight:600}
+  .hist-active{font-size:10px;font-weight:700;color:var(--ok);background:color-mix(in srgb,var(--ok) 13%,transparent);border-radius:6px;padding:2px 8px}
+  .hist-note{font-size:12px;color:var(--ink-3);flex:1;min-width:200px}
   #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;
     background:var(--primary);color:var(--bg);font-size:13px;font-weight:600;padding:10px 18px;border-radius:10px;
     box-shadow:var(--sh-lg);z-index:80;transition:opacity .2s,transform .2s;pointer-events:none}
@@ -391,12 +396,10 @@
       <div id="dec-card-wrap" style="display:none"></div>
     </section>
 
-    <!-- HISTORIAL -->
+    <!-- HISTORIAL (real batches from manifest) -->
     <section class="view" id="view-historial">
-      <div class="page-h">Historial</div><div class="page-sub">Todo lo despachado, buscable.</div>
-      <div class="empty"><div class="ei"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div>
-        <h3>Tabla filtrable con vistas guardadas</h3><p>Por país, estado, fecha. Estado editable en línea. Hereda la búsqueda del cockpit actual.</p>
-        <div class="note">Build (Jue).</div></div>
+      <div class="page-h">Historial</div><div class="page-sub" id="hist-sub">Reportes despachados.</div>
+      <div id="hist-body"></div>
     </section>
 
     <!-- AJUSTES -->
@@ -489,8 +492,8 @@
     window.__ejeSignOut=function(){ try{localStorage.removeItem('eje_demo');}catch(e){} if(sb){sb.auth.signOut().then(showLogin,showLogin);} else showLogin(); };
     if(demo()){ showApp(); }
     else if(sb){
-      sb.auth.getSession().then(function(r){ (r&&r.data&&r.data.session)?showApp():showLogin(); }).catch(showLogin);
-      sb.auth.onAuthStateChange(function(_e,session){ if(session) showApp(); });
+      sb.auth.getSession().then(function(r){ if(r&&r.data&&r.data.session){window.__ejeAuthed=true;showApp();} else showLogin(); }).catch(showLogin);
+      sb.auth.onAuthStateChange(function(_e,session){ if(session){window.__ejeAuthed=true;showApp();} });
     } else { showLogin(); }
   })();
 
@@ -514,6 +517,25 @@
     function statusOf(l){var d=decDom(l.website);return (d&&STATUS[d])||'none';}
     function statusChip(l){var s=statusOf(l);return '<span class="dec-status '+(STCLASS[s]||'st-none')+'">'+(STLABEL[s]||'Nuevo')+'</span>';}
     function avImg(l){var d=decDom(l.website);return d?'<img class="av-logo" src="https://logo.clearbit.com/'+d+'?size=128" alt="" loading="lazy" onerror="this.remove()">':'';}
+    // ── WRITE layer (mirrors classic cockpit schema exactly; only fires when authenticated) ──
+    var EJE_CLIENT='unabase_default', EJE_USER='scarlett';
+    function canWrite(){return window.__ejeAuthed===true && !!window.__ejeSB;}
+    function sbStatusWrite(id,status){var sb=window.__ejeSB;return sb.from('status_history').insert({lead_id:id,user_name:EJE_USER,status:status,client_id:EJE_CLIENT}).then(function(){return sb.from('leads').update({status:status,updated_at:new Date().toISOString()}).eq('id',id).eq('client_id',EJE_CLIENT);});}
+    function sbActionWrite(id,ch){var sb=window.__ejeSB;return sb.from('actions').delete().match({lead_id:id,channel:ch,user_name:EJE_USER,client_id:EJE_CLIENT}).then(function(){return sb.from('actions').insert({lead_id:id,user_name:EJE_USER,channel:ch,completed:true,client_id:EJE_CLIENT});});}
+    function sbMsgWrite(id,ch,text){var sb=window.__ejeSB;return sb.from('messages_sent').insert({lead_id:id,user_name:EJE_USER,channel:ch,message_text:text,client_id:EJE_CLIENT,sent_at:new Date().toISOString()});}
+    function sbNoteWrite(id,text){var sb=window.__ejeSB;return sb.from('notes').upsert({lead_id:id,user_name:EJE_USER,note_text:text,updated_at:new Date().toISOString(),client_id:EJE_CLIENT},{onConflict:'lead_id,user_name'});}
+    function markStatus(l,status,label,note){
+      var d=decDom(l.website); if(d) STATUS[d]=status;
+      toast(label+(canWrite()?'':' · demo (local)'));
+      render(); if(typeof renderTareas==='function') renderTareas();
+      if(canWrite()&&d){ sbStatusWrite(d,status).catch(function(){toast('No se pudo guardar');}); if(note) sbNoteWrite(d,note).catch(function(){}); }
+    }
+    function markSent(l){
+      var d=decDom(l.website); if(d) STATUS[d]='contacted';
+      toast('Enviado marcado'+(canWrite()?'':' · demo (local)'));
+      render();
+      if(canWrite()&&d){ sbMsgWrite(d,'email',l.pitchEmailES||'').catch(function(){}); sbActionWrite(d,'email').catch(function(){}); sbStatusWrite(d,'contacted').catch(function(){}); }
+    }
     function loadStatus(){
       var sb=window.__ejeSB; if(!sb) return Promise.resolve();
       return sb.from('leads').select('id,status').eq('client_id','unabase_default').limit(2000)
@@ -557,23 +579,28 @@
         +'<div class="tabs"><button class="tab on" data-p="borrador">Borrador</button><button class="tab" data-p="otros">Otros decisores'+(addl.length?' ('+addl.length+')':'')+'</button></div>'
         +'<div class="tab-panel" data-panel="borrador"><div class="draft"><div class="draft-h">Email de primer toque</div><pre class="draft-b">'+esc(l.pitchEmailES||'(sin borrador)')+'</pre></div></div>'
         +'<div class="tab-panel" data-panel="otros" style="display:none">'+(addl.length?addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join(''):'<div class="seam-note">Sin otros decisores registrados.</div>')+'</div>'
-        +'<div class="c-actions"><button class="btn pri copy-btn">Copiar borrador</button>'
-        +'<button class="btn win win-btn" data-msg="Marcado: Respondió">Respondió</button>'
-        +'<button class="btn win win-btn" data-msg="Marcado: Rechazó (señal accionable)">Rechazó</button>'
-        +'<button class="btn win-btn" data-msg="Marcado: Reunión">Reunión</button></div>'
-        +'<div class="seam-note">Datos reales del lote activo. La escritura a Supabase se conecta con el login (RLS) — por ahora las acciones son locales.</div>'
+        +'<div class="c-actions"><button class="btn pri act-sent">Copiar y marcar enviado</button>'
+        +'<button class="btn win act-replied">Respondió</button>'
+        +'<button class="btn win act-rejected">Rechazó</button>'
+        +'<button class="btn act-meeting">Reunión</button></div>'
+        +'<div class="seam-note">Datos reales del lote activo. Las acciones persisten en Supabase al iniciar sesión; en modo demo quedan locales.</div>'
         +'</div></div></div>';
       cardWrap.innerHTML=html;
       listWrap.style.display='none'; cardWrap.style.display='block';
       window.scrollTo({top:0,behavior:'smooth'});
       cardWrap.querySelector('.dc-back').addEventListener('click',closeCard);
-      cardWrap.querySelectorAll('.win-btn').forEach(function(b){b.addEventListener('click',function(){b.classList.add('done');toast(b.dataset.msg);});});
+      var bSent=cardWrap.querySelector('.act-sent');
+      if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(l.pitchEmailES||'');}catch(e){} bSent.textContent='Enviado ✓'; bSent.classList.add('done'); markSent(l);});
+      var bRep=cardWrap.querySelector('.act-replied');
+      if(bRep) bRep.addEventListener('click',function(){bRep.classList.add('done'); markStatus(l,'replied','Marcado: Respondió');});
+      var bRej=cardWrap.querySelector('.act-rejected');
+      if(bRej) bRej.addEventListener('click',function(){var m=prompt('Motivo del rechazo (queda registrado):','')||''; bRej.classList.add('done'); markStatus(l,'replied','Marcado: Rechazó — señal accionable', m?('Rechazó: '+m):'Rechazó');});
+      var bMeet=cardWrap.querySelector('.act-meeting');
+      if(bMeet) bMeet.addEventListener('click',function(){bMeet.classList.add('done'); markStatus(l,'meeting','Marcado: Reunión');});
       cardWrap.querySelectorAll('.tab[data-p]').forEach(function(t){t.addEventListener('click',function(){
         cardWrap.querySelectorAll('.tab[data-p]').forEach(function(x){x.classList.toggle('on',x===t);});
         cardWrap.querySelectorAll('.tab-panel').forEach(function(p){p.style.display=(p.dataset.panel===t.dataset.p)?'':'none';});
       });});
-      var cbn=cardWrap.querySelector('.copy-btn');
-      if(cbn) cbn.addEventListener('click',function(){try{navigator.clipboard.writeText(l.pitchEmailES||'');}catch(e){} cbn.textContent='Copiado ✓'; toast('Borrador copiado');});
     }
     function closeCard(){cardWrap.style.display='none';listWrap.style.display='block';}
     function openFromTareas(i){
@@ -597,6 +624,23 @@
       body.innerHTML=html;
       body.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openFromTareas(+r.dataset.ti);});});
     }
+    var MANIFEST=null;
+    function renderHistorial(){
+      var body=document.getElementById('hist-body'); if(!body)return;
+      function paint(){
+        var batches=(MANIFEST.batches||[]).filter(function(b){return b.file&&b.source_date;});
+        var sub=document.getElementById('hist-sub'); if(sub) sub.textContent=batches.length+' reportes despachados';
+        body.innerHTML=batches.map(function(b){
+          return '<div class="hist-row"><span class="hist-date">'+esc(b.source_date)+'</span>'
+            +'<span class="hist-n">'+esc(b.lead_count||'?')+' decisores</span>'
+            +(b.batch_id===MANIFEST.active_batch_id?'<span class="hist-active">activo</span>':'')
+            +'<span class="hist-note">'+esc(String(b.note||'').slice(0,90))+'</span></div>';
+        }).join('');
+      }
+      if(MANIFEST){paint();return;}
+      body.innerHTML='<div class="tq-empty">Cargando…</div>';
+      fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){MANIFEST=m;paint();}).catch(function(){body.innerHTML='<div class="tq-empty">No se pudo cargar.</div>';});
+    }
     function load(){
       // local-first: paint cache instantly, then refresh in background
       try{var c=localStorage.getItem('eje_dec_cache'); if(c){DATA=JSON.parse(c); render();}}catch(e){}
@@ -616,6 +660,7 @@
     document.querySelectorAll('[data-view="decisores"]').forEach(function(el){el.addEventListener('click',ensure);});
     function onTareas(){ if(DATA) renderTareas(); else ensure(); }
     document.querySelectorAll('[data-view="tareas"]').forEach(function(el){el.addEventListener('click',onTareas);});
+    document.querySelectorAll('[data-view="historial"]').forEach(function(el){el.addEventListener('click',renderHistorial);});
     // if the app restored to Decisores or Tareas on load, fetch too
     try{ var lv=localStorage.getItem('eje_view'); if(lv==='decisores'||lv==='tareas') ensure(); }catch(e){}
 
