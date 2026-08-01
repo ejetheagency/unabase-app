@@ -212,6 +212,13 @@
   .dec-meta{font-size:12px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .dec-ch{font-size:10.5px;font-weight:600;color:var(--ink-3);background:var(--sunken);border-radius:6px;padding:3px 8px;flex:none}
   .dec-score{font-size:15px;font-weight:750;color:var(--cool);font-variant-numeric:tabular-nums;flex:none;min-width:30px;text-align:right}
+  .dec-status{font-size:10px;font-weight:700;border-radius:6px;padding:3px 8px;flex:none;white-space:nowrap}
+  .st-none{color:var(--ink-3);background:var(--sunken)}
+  .st-contacted{color:var(--info);background:color-mix(in srgb,var(--info) 13%,transparent)}
+  .st-replied,.st-meeting{color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,transparent)}
+  .st-closed,.st-skip{color:var(--ink-3);background:var(--sunken)}
+  .dec-av,.c-av{position:relative;overflow:hidden}
+  .av-logo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:3px}
   @media (max-width:520px){.dec-ch{display:none}}
   .dc-back{background:none;border:none;color:var(--ink-2);font-size:13px;font-weight:600;padding:4px 0;margin-bottom:12px;display:inline-flex;align-items:center;gap:5px}
   .dc-back:hover{color:var(--ink)}
@@ -247,6 +254,11 @@
   .btn.win{border-color:color-mix(in srgb,var(--ok) 45%,transparent);color:var(--ok)}
   .btn.done{opacity:.55}
   .seam-note{margin-top:14px;font-size:11.5px;color:var(--ink-3)}
+  .tq-h{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:700;letter-spacing:-.02em;margin:18px 0 10px}
+  .tq-h b{margin-left:2px;color:var(--ink-3);font-weight:650}
+  .tq-dot{width:8px;height:8px;border-radius:50%;flex:none}
+  .tq-dot.due{background:var(--crit)}.tq-dot.soon{background:var(--warn)}
+  .tq-empty{font-size:13px;color:var(--ink-3);padding:8px 2px}
   #toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;
     background:var(--primary);color:var(--bg);font-size:13px;font-weight:600;padding:10px 18px;border-radius:10px;
     box-shadow:var(--sh-lg);z-index:80;transition:opacity .2s,transform .2s;pointer-events:none}
@@ -364,12 +376,10 @@
       <button class="cta" data-view="tareas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Trabajar cola de hoy</button>
     </section>
 
-    <!-- TAREAS -->
+    <!-- TAREAS (real action queue from active batch + live status) -->
     <section class="view" id="view-tareas">
-      <div class="page-h">Tareas</div><div class="page-sub">Todo lo que toca hacer hoy, en todos los decisores.</div>
-      <div class="empty"><div class="ei"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg></div>
-        <h3>Vista amplia de cadencia</h3><p>Vence ahora · Pronto · Próximas — con acción de un clic. Hereda el motor T1→T4 del cockpit actual.</p>
-        <div class="note">Próximo paso del build (Jue).</div></div>
+      <div class="page-h">Tareas</div><div class="page-sub" id="tareas-sub">Lo que toca hacer, del lote activo.</div>
+      <div id="tareas-body"></div>
     </section>
 
     <!-- DECISORES (real active-batch data) -->
@@ -462,6 +472,7 @@
     var SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9nZHN1enR6aG1ubmpvbGlsc3VvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYyMDI0MDMsImV4cCI6MjA5MTc3ODQwM30.9iKhJJWd_zg6WfdxTR9ojK4DVLR3e-bLdPXY-0uDp7Q';
     var loginEl=document.getElementById('login'), errEl=document.getElementById('loginErr');
     var sb=null; try{ if(window.supabase) sb=window.supabase.createClient(SB_URL,SB_KEY,{auth:{persistSession:true,detectSessionInUrl:true}}); }catch(e){}
+    window.__ejeSB=sb; // shared read-only client for status hydration
     function showApp(){ loginEl.style.display='none'; }
     function showLogin(){ loginEl.style.display='flex'; }
     function demo(){ try{return localStorage.getItem('eje_demo')==='1';}catch(e){return false;} }
@@ -496,6 +507,19 @@
     function fmtK(n){n=+n||0;return n>=1000?(n/1000).toFixed(n>=10000?0:1)+'K':(''+n);}
     var FLAGS={Spain:'🇪🇸',Mexico:'🇲🇽',Colombia:'🇨🇴',Argentina:'🇦🇷',Chile:'🇨🇱',Uruguay:'🇺🇾',Paraguay:'🇵🇾',Peru:'🇵🇪',Ecuador:'🇪🇨',Venezuela:'🇻🇪','Costa Rica':'🇨🇷','Dominican Republic':'🇩🇴',Bolivia:'🇧🇴',Guatemala:'🇬🇹',Panama:'🇵🇦'};
     function flag(c){return FLAGS[c]||'🌎';}
+    function decDom(w){try{return new URL(w).hostname.replace(/^www\./,'').toLowerCase()}catch(e){return null}}
+    var STATUS={};
+    var STLABEL={none:'Nuevo',contacted:'Contactado',replied:'Respondió',meeting:'Reunión',closed:'Cerrado',skip:'Omitido'};
+    var STCLASS={none:'st-none',contacted:'st-contacted',replied:'st-replied',meeting:'st-meeting',closed:'st-closed',skip:'st-skip'};
+    function statusOf(l){var d=decDom(l.website);return (d&&STATUS[d])||'none';}
+    function statusChip(l){var s=statusOf(l);return '<span class="dec-status '+(STCLASS[s]||'st-none')+'">'+(STLABEL[s]||'Nuevo')+'</span>';}
+    function avImg(l){var d=decDom(l.website);return d?'<img class="av-logo" src="https://logo.clearbit.com/'+d+'?size=128" alt="" loading="lazy" onerror="this.remove()">':'';}
+    function loadStatus(){
+      var sb=window.__ejeSB; if(!sb) return Promise.resolve();
+      return sb.from('leads').select('id,status').eq('client_id','unabase_default').limit(2000)
+        .then(function(r){(r.data||[]).forEach(function(row){if(row.id)STATUS[String(row.id).toLowerCase()]=row.status||'none';});})
+        .catch(function(){});
+    }
     function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},1800);}
     function render(){
       if(!DATA||!DATA.leads){return;}
@@ -503,10 +527,11 @@
       listEl.innerHTML=DATA.leads.map(function(l,i){
         var ch=l.website?'sitio':(l.instagramHandle?'IG':'email');
         return '<button class="dec-row" data-i="'+i+'">'
-          +'<span class="dec-av">'+esc(initials(l.companyName))+'</span>'
+          +'<span class="dec-av">'+esc(initials(l.companyName))+avImg(l)+'</span>'
           +'<span class="dec-main"><span class="dec-co">'+esc(l.companyName)+'</span>'
           +'<span class="dec-meta">'+flag(l.country)+' '+esc(l.contactName||'—')+'</span></span>'
           +'<span class="dec-ch">'+ch+'</span>'
+          +statusChip(l)
           +'<span class="dec-score">'+esc(l.unabaseScore||'')+'</span></button>';
       }).join('');
       listEl.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openCard(+r.dataset.i);});});
@@ -519,8 +544,8 @@
       var addlHtml=addl.length?('<div style="margin-top:14px">'+addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join('')+'</div>'):'';
       var html='<button class="dc-back">&larr; Decisores</button>'
         +'<div class="card"><div class="c-head">'
-        +'<div class="c-av">'+esc(initials(l.companyName))+'</div>'
-        +'<div><div class="c-name">'+esc(l.companyName)+'</div><div class="c-sub">'+flag(l.country)+' '+esc(l.country)+' · '+esc(l.contactName||'—')+(l.contactTitle?', '+esc(l.contactTitle):'')+'</div></div>'
+        +'<div class="c-av">'+esc(initials(l.companyName))+avImg(l)+'</div>'
+        +'<div><div class="c-name">'+esc(l.companyName)+' '+statusChip(l)+'</div><div class="c-sub">'+flag(l.country)+' '+esc(l.country)+' · '+esc(l.contactName||'—')+(l.contactTitle?', '+esc(l.contactTitle):'')+'</div></div>'
         +'<div class="c-score"><div class="v">'+esc(l.unabaseScore||'—')+'</div><div class="l">Score</div></div>'
         +'</div><div class="c-body"><div class="c-rail">'
         +rrow('Decisor',esc(l.contactName||'—'))
@@ -551,6 +576,27 @@
       if(cbn) cbn.addEventListener('click',function(){try{navigator.clipboard.writeText(l.pitchEmailES||'');}catch(e){} cbn.textContent='Copiado ✓'; toast('Borrador copiado');});
     }
     function closeCard(){cardWrap.style.display='none';listWrap.style.display='block';}
+    function openFromTareas(i){
+      var nav=document.querySelector('.nav-item[data-view="decisores"]')||document.querySelector('.mob-item[data-view="decisores"]');
+      if(nav) nav.click();
+      openCard(i);
+    }
+    function renderTareas(){
+      var body=document.getElementById('tareas-body'); if(!body||!DATA)return;
+      var pend=[],prog=[];
+      DATA.leads.forEach(function(l,i){var s=statusOf(l);if(s==='none')pend.push([l,i]);else if(s==='contacted')prog.push([l,i]);});
+      var sub=document.getElementById('tareas-sub'); if(sub) sub.textContent=(pend.length+prog.length)+' pendientes · lote '+esc(DATA.date);
+      function rows(arr){return arr.map(function(x){var l=x[0],i=x[1];
+        return '<button class="dec-row" data-ti="'+i+'"><span class="dec-av">'+esc(initials(l.companyName))+avImg(l)+'</span>'
+          +'<span class="dec-main"><span class="dec-co">'+esc(l.companyName)+'</span><span class="dec-meta">'+flag(l.country)+' '+esc(l.contactName||'—')+'</span></span>'
+          +'<span class="dec-score">'+esc(l.unabaseScore||'')+'</span></button>';}).join('');}
+      var html='<div class="tq-h"><span class="tq-dot due"></span>Sin contactar <b>'+pend.length+'</b></div>'
+        +(pend.length?'<div class="dec-list">'+rows(pend)+'</div>':'<div class="tq-empty">Todo contactado 🎉</div>')
+        +'<div class="tq-h"><span class="tq-dot soon"></span>En proceso <b>'+prog.length+'</b></div>'
+        +(prog.length?'<div class="dec-list">'+rows(prog)+'</div>':'<div class="tq-empty">Sin seguimientos en curso.</div>');
+      body.innerHTML=html;
+      body.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openFromTareas(+r.dataset.ti);});});
+    }
     function load(){
       // local-first: paint cache instantly, then refresh in background
       try{var c=localStorage.getItem('eje_dec_cache'); if(c){DATA=JSON.parse(c); render();}}catch(e){}
@@ -562,13 +608,16 @@
           DATA={date:active.source_date,leads:leads};
           try{localStorage.setItem('eje_dec_cache',JSON.stringify(DATA));}catch(e){}
           render();
+          loadStatus().then(function(){ render(); if(typeof renderTareas==='function') renderTareas(); });
         });
       }).catch(function(){ if(!DATA&&subEl) subEl.textContent='No se pudo cargar la cola.'; });
     }
     function ensure(){if(loaded)return;loaded=true;load();}
     document.querySelectorAll('[data-view="decisores"]').forEach(function(el){el.addEventListener('click',ensure);});
-    // if the app restored to the Decisores view on load, fetch too
-    try{ if(localStorage.getItem('eje_view')==='decisores') ensure(); }catch(e){}
+    function onTareas(){ if(DATA) renderTareas(); else ensure(); }
+    document.querySelectorAll('[data-view="tareas"]').forEach(function(el){el.addEventListener('click',onTareas);});
+    // if the app restored to Decisores or Tareas on load, fetch too
+    try{ var lv=localStorage.getItem('eje_view'); if(lv==='decisores'||lv==='tareas') ensure(); }catch(e){}
 
     // progressive: reflect the REAL active-batch size on Home (after paint, non-blocking)
     fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){
