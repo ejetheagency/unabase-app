@@ -670,6 +670,24 @@
       var el=document.getElementById('greetSub');
       if(a&&el) el.textContent='UnaBase · '+a.lead_count+' decisores en cola hoy';
     }).catch(function(){});
+
+    // progressive: real Home headline numbers from Supabase status counts (read-only)
+    (function(){
+      var sb=window.__ejeSB; if(!sb) return;
+      sb.from('leads').select('status').eq('client_id','unabase_default').limit(5000).then(function(r){
+        var rows=(r&&r.data)||[]; if(!rows.length) return;
+        var c={}; rows.forEach(function(x){var s=x.status||'none';c[s]=(c[s]||0)+1;});
+        var conv=(c.replied||0)+(c.meeting||0), resp=c.replied||0, meet=c.meeting||0, pipe=(c.contacted||0)+(c.partial||0);
+        var tv=document.querySelectorAll('#view-home .tile .tv'),
+            tl=document.querySelectorAll('#view-home .tile .tl'),
+            td=document.querySelectorAll('#view-home .tile .td');
+        if(tv[0]){tl[0].textContent='Conversaciones · total';tv[0].textContent=conv;td[0].innerHTML=resp+' respuestas · '+meet+' reuniones';}
+        if(tv[1]){tl[1].textContent='Reuniones';tv[1].textContent=meet;td[1].textContent='agendadas';}
+        if(tv[2]){tl[2].textContent='En pipeline';tv[2].textContent=pipe;td[2].textContent='contactados en curso';}
+        var enc=document.querySelector('#view-home .encourage .et');
+        if(enc) enc.innerHTML='<b>Llevás '+conv+' conversaciones</b> y '+meet+' reuniones. Cada respuesta —incluso un rechazo— es señal accionable; el silencio no cuenta.';
+      }).catch(function(){});
+    })();
   })();
 </script>
 </body>
