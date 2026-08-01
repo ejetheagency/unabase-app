@@ -509,8 +509,8 @@
     function flag(c){return FLAGS[c]||'🌎';}
     function decDom(w){try{return new URL(w).hostname.replace(/^www\./,'').toLowerCase()}catch(e){return null}}
     var STATUS={};
-    var STLABEL={none:'Nuevo',contacted:'Contactado',replied:'Respondió',meeting:'Reunión',closed:'Cerrado',skip:'Omitido'};
-    var STCLASS={none:'st-none',contacted:'st-contacted',replied:'st-replied',meeting:'st-meeting',closed:'st-closed',skip:'st-skip'};
+    var STLABEL={none:'Nuevo',contacted:'Contactado',partial:'En proceso',replied:'Respondió',meeting:'Reunión',closed:'Cerrado',skip:'Omitido'};
+    var STCLASS={none:'st-none',contacted:'st-contacted',partial:'st-contacted',replied:'st-replied',meeting:'st-meeting',closed:'st-closed',skip:'st-skip'};
     function statusOf(l){var d=decDom(l.website);return (d&&STATUS[d])||'none';}
     function statusChip(l){var s=statusOf(l);return '<span class="dec-status '+(STCLASS[s]||'st-none')+'">'+(STLABEL[s]||'Nuevo')+'</span>';}
     function avImg(l){var d=decDom(l.website);return d?'<img class="av-logo" src="https://logo.clearbit.com/'+d+'?size=128" alt="" loading="lazy" onerror="this.remove()">':'';}
@@ -584,7 +584,7 @@
     function renderTareas(){
       var body=document.getElementById('tareas-body'); if(!body||!DATA)return;
       var pend=[],prog=[];
-      DATA.leads.forEach(function(l,i){var s=statusOf(l);if(s==='none')pend.push([l,i]);else if(s==='contacted')prog.push([l,i]);});
+      DATA.leads.forEach(function(l,i){var s=statusOf(l);if(s==='none')pend.push([l,i]);else if(s==='contacted'||s==='partial')prog.push([l,i]);});
       var sub=document.getElementById('tareas-sub'); if(sub) sub.textContent=(pend.length+prog.length)+' pendientes · lote '+esc(DATA.date);
       function rows(arr){return arr.map(function(x){var l=x[0],i=x[1];
         return '<button class="dec-row" data-ti="'+i+'"><span class="dec-av">'+esc(initials(l.companyName))+avImg(l)+'</span>'
