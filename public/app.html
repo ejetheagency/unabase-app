@@ -201,6 +201,13 @@
 
   /* ── decisores: list + card (real data seam) ── */
   .dec-list{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+  .dec-search{width:100%;margin-top:14px;padding:11px 14px;font-size:14px;background:var(--canvas);border:1px solid var(--line-2);border-radius:11px;color:var(--ink);box-shadow:var(--sh-sm);font-family:inherit}
+  .dec-search:focus{outline:none;border-color:var(--cool)}
+  .dec-search::placeholder{color:var(--ink-3)}
+  .set-list{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+  .set-row{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--canvas);border:1px solid var(--line-2);border-radius:12px;padding:14px 16px;box-shadow:var(--sh-sm)}
+  .set-t{font-size:14px;font-weight:650}
+  .set-d{font-size:12.5px;color:var(--ink-3);margin-top:2px}
   .dec-row{display:flex;align-items:center;gap:13px;width:100%;text-align:left;background:var(--canvas);
     border:1px solid var(--line-2);border-radius:12px;padding:12px 15px;box-shadow:var(--sh-sm);
     transition:transform .12s ease,border-color .12s ease}
@@ -391,6 +398,7 @@
     <section class="view" id="view-decisores">
       <div id="dec-list-wrap">
         <div class="page-h">Decisores</div><div class="page-sub" id="dec-sub">Cargando cola…</div>
+        <input id="dec-search" class="dec-search" type="search" placeholder="Buscar decisor, empresa o país…" autocomplete="off">
         <div class="dec-list" id="dec-list"></div>
       </div>
       <div id="dec-card-wrap" style="display:none"></div>
@@ -404,10 +412,14 @@
 
     <!-- AJUSTES -->
     <section class="view" id="view-ajustes">
-      <div class="page-h">Ajustes</div><div class="page-sub">Cuentas, importación, vara de calidad del autopiloto.</div>
-      <div class="empty"><div class="ei"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a8 8 0 0 0 .1-3l1.7-1.3-2-3.4-2 .8a8 8 0 0 0-2.6-1.5L14 4h-4l-.7 2.1a8 8 0 0 0-2.6 1.5l-2-.8-2 3.4L4.5 12a8 8 0 0 0 0 3l-1.8 1.3 2 3.4 2-.8a8 8 0 0 0 2.6 1.5L10 20h4l.7-2.1a8 8 0 0 0 2.6-1.5l2 .8 2-3.4L19.4 15Z"/></svg></div>
-        <h3>Configuración de cuenta</h3><p>Selector de cliente, remitente, ICP, vara del autopiloto por cuenta, toggle de tema. Una sola fuente de verdad.</p>
-        <div class="note">Base (Lun).</div></div>
+      <div class="page-h">Ajustes</div><div class="page-sub">Cuenta y preferencias.</div>
+      <div class="set-list">
+        <div class="set-row"><div><div class="set-t">Cuenta activa</div><div class="set-d" id="set-acct">UnaBase · firma Scarlett</div></div></div>
+        <div class="set-row"><div><div class="set-t">Tema</div><div class="set-d">Claro u oscuro (también arriba a la derecha)</div></div><button class="btn" type="button" onclick="document.getElementById('themeBtn').click()">Cambiar</button></div>
+        <div class="set-row"><div><div class="set-t">Cockpit clásico</div><div class="set-d">La herramienta actual, intacta</div></div><button class="btn" type="button" onclick="location.href='./index.html'">Abrir</button></div>
+        <div class="set-row"><div><div class="set-t">Sesión</div><div class="set-d">Cerrar sesión de la plataforma</div></div><button class="btn" type="button" onclick="window.__ejeSignOut&&window.__ejeSignOut()">Cerrar sesión</button></div>
+      </div>
+      <div class="seam-note" style="margin-top:16px">Próximamente: selector de cliente, vara de calidad del autopiloto por cuenta, integraciones.</div>
     </section>
   </main>
 </div>
@@ -543,10 +555,15 @@
         .catch(function(){});
     }
     function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},1800);}
+    function norm2(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
     function render(){
       if(!DATA||!DATA.leads){return;}
-      subEl.textContent=DATA.leads.length+' decisores · lote '+esc(DATA.date);
-      listEl.innerHTML=DATA.leads.map(function(l,i){
+      var si=document.getElementById('dec-search'); var q=norm2(si?si.value:'');
+      var pairs=DATA.leads.map(function(l,i){return [l,i];}).filter(function(x){
+        if(!q)return true; var l=x[0]; return norm2((l.companyName||'')+' '+(l.contactName||'')+' '+(l.country||'')).indexOf(q)>=0;
+      });
+      subEl.textContent=(q?pairs.length+' de '+DATA.leads.length:DATA.leads.length+' decisores')+' · lote '+esc(DATA.date);
+      listEl.innerHTML=pairs.map(function(x){var l=x[0],i=x[1];
         var ch=l.website?'sitio':(l.instagramHandle?'IG':'email');
         return '<button class="dec-row" data-i="'+i+'">'
           +'<span class="dec-av">'+esc(initials(l.companyName))+avImg(l)+'</span>'
@@ -555,7 +572,7 @@
           +'<span class="dec-ch">'+ch+'</span>'
           +statusChip(l)
           +'<span class="dec-score">'+esc(l.unabaseScore||'')+'</span></button>';
-      }).join('');
+      }).join('')||'<div class="tq-empty">Sin resultados.</div>';
       listEl.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openCard(+r.dataset.i);});});
     }
     function rrow(k,v){return '<div class="row"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>';}
@@ -661,6 +678,10 @@
     function onTareas(){ if(DATA) renderTareas(); else ensure(); }
     document.querySelectorAll('[data-view="tareas"]').forEach(function(el){el.addEventListener('click',onTareas);});
     document.querySelectorAll('[data-view="historial"]').forEach(function(el){el.addEventListener('click',renderHistorial);});
+    var si=document.getElementById('dec-search'); if(si) si.addEventListener('input',render);
+    function focusSearch(){var nav=document.querySelector('.nav-item[data-view="decisores"]')||document.querySelector('.mob-item[data-view="decisores"]');if(nav)nav.click();var s=document.getElementById('dec-search');if(s)s.focus();}
+    document.addEventListener('keydown',function(e){if((e.metaKey||e.ctrlKey)&&(e.key==='k'||e.key==='K')){e.preventDefault();focusSearch();}});
+    var cmdEl=document.querySelector('.cmd'); if(cmdEl) cmdEl.addEventListener('click',focusSearch);
     // if the app restored to Decisores or Tareas on load, fetch too
     try{ var lv=localStorage.getItem('eje_view'); if(lv==='decisores'||lv==='tareas') ensure(); }catch(e){}
 
@@ -671,21 +692,44 @@
       if(a&&el) el.textContent='UnaBase · '+a.lead_count+' decisores en cola hoy';
     }).catch(function(){});
 
-    // progressive: real Home headline numbers from Supabase status counts (read-only)
+    // progressive: REAL Home time-series (weekly conversations, envíos, streak, record) — read-only
     (function(){
       var sb=window.__ejeSB; if(!sb) return;
-      sb.from('leads').select('status').eq('client_id','unabase_default').limit(5000).then(function(r){
-        var rows=(r&&r.data)||[]; if(!rows.length) return;
-        var c={}; rows.forEach(function(x){var s=x.status||'none';c[s]=(c[s]||0)+1;});
-        var conv=(c.replied||0)+(c.meeting||0), resp=c.replied||0, meet=c.meeting||0, pipe=(c.contacted||0)+(c.partial||0);
-        var tv=document.querySelectorAll('#view-home .tile .tv'),
-            tl=document.querySelectorAll('#view-home .tile .tl'),
-            td=document.querySelectorAll('#view-home .tile .td');
-        if(tv[0]){tl[0].textContent='Conversaciones · total';tv[0].textContent=conv;td[0].innerHTML=resp+' respuestas · '+meet+' reuniones';}
-        if(tv[1]){tl[1].textContent='Reuniones';tv[1].textContent=meet;td[1].textContent='agendadas';}
-        if(tv[2]){tl[2].textContent='En pipeline';tv[2].textContent=pipe;td[2].textContent='contactados en curso';}
+      function wkStart(d){var x=new Date(d);var day=(x.getDay()+6)%7;x.setHours(0,0,0,0);x.setDate(x.getDate()-day);return x;}
+      function dstr(d){return new Date(d).toISOString().slice(0,10);}
+      Promise.all([
+        sb.from('messages_sent').select('sent_at').eq('client_id','unabase_default').limit(6000),
+        sb.from('status_history').select('status,created_at').eq('client_id','unabase_default').limit(9000)
+      ]).then(function(res){
+        var msgs=(((res[0]||{}).data)||[]).map(function(m){return new Date(m.sent_at);}).filter(function(d){return !isNaN(d);});
+        var sh=(((res[1]||{}).data)||[]).filter(function(r){return r.status==='replied'||r.status==='meeting';}).map(function(r){return new Date(r.created_at);}).filter(function(d){return !isNaN(d);});
+        var now=new Date(), tw=wkStart(now), lw=new Date(tw.getTime()-7*864e5);
+        var envTW=msgs.filter(function(d){return d>=tw;}).length, envLW=msgs.filter(function(d){return d>=lw&&d<tw;}).length;
+        var convTW=sh.filter(function(d){return d>=tw;}).length, convLW=sh.filter(function(d){return d>=lw&&d<tw;}).length;
+        var daySet={}; msgs.forEach(function(d){daySet[dstr(d)]=1;});
+        var streak=0, cur=new Date(now); cur.setHours(0,0,0,0);
+        if(!daySet[dstr(cur)]) cur.setDate(cur.getDate()-1);
+        while(daySet[dstr(cur)]){streak++;cur.setDate(cur.getDate()-1);}
+        var wk={}; sh.forEach(function(d){var k=dstr(wkStart(d));wk[k]=(wk[k]||0)+1;});
+        var record=0; Object.keys(wk).forEach(function(k){if(wk[k]>record)record=wk[k];});
+        var sentToday=msgs.filter(function(d){return dstr(d)===dstr(now);}).length;
+        var tv=document.querySelectorAll('#view-home .tile .tv'), tl=document.querySelectorAll('#view-home .tile .tl'), td=document.querySelectorAll('#view-home .tile .td');
+        function up(n){return n>=0?('▲ +'+n):('▼ '+n);}
+        if(tv[0]){tl[0].textContent='Conversaciones · semana';tv[0].textContent=convTW;td[0].innerHTML='<span class="up">'+up(convTW-convLW)+'</span> vs. semana pasada';}
+        if(tv[1]){tl[1].textContent='Envíos · semana';tv[1].textContent=envTW;var pct=envLW?Math.round((envTW-envLW)/envLW*100):0;td[1].innerHTML='<span class="up">'+(pct>=0?'▲ '+pct:'▼ '+Math.abs(pct))+'%</span> vs. semana pasada';}
+        if(tv[2]){tl[2].textContent='Racha';tv[2].textContent=streak+'d';td[2].textContent='días con actividad';}
+        var accs=document.querySelectorAll('#view-home .acc');
+        if(accs[0]) accs[0].innerHTML='🔥 <b>'+streak+'</b> días de racha';
+        if(accs[1]) accs[1].innerHTML='Esta semana: <b>'+convTW+'</b> conversaciones';
+        if(accs[2]) accs[2].innerHTML='★ Récord semana: <b>'+record+'</b>';
         var enc=document.querySelector('#view-home .encourage .et');
-        if(enc) enc.innerHTML='<b>Llevás '+conv+' conversaciones</b> y '+meet+' reuniones. Cada respuesta —incluso un rechazo— es señal accionable; el silencio no cuenta.';
+        if(enc){var toRec=record-convTW;enc.innerHTML='<b>'+((convTW>=record&&record>0)?'¡Semana récord!':'Vas camino a tu mejor semana.')+'</b> Llevás '+convTW+' conversaciones esta semana'+(convTW>convLW?', +'+(convTW-convLW)+' que la pasada':'')+(toRec>0?' — a '+toRec+' de tu récord ('+record+')':'')+'.';}
+        var gGc=document.querySelector('#view-home .goal:not(.best) .gc'), gBar=document.querySelector('#view-home .goal:not(.best) .bar>span');
+        if(gGc) gGc.innerHTML='<b>'+sentToday+'</b> / 15 enviados hoy';
+        if(gBar) gBar.style.width=Math.min(100,Math.round(sentToday/15*100))+'%';
+        var bBar=document.querySelector('#view-home .best .bar>span'), bGc=document.querySelector('#view-home .best .gc');
+        if(bBar&&record) bBar.style.width=Math.min(100,Math.round(convTW/record*100))+'%';
+        if(bGc) bGc.innerHTML=convTW+' / <b>'+(record||convTW)+'</b>';
       }).catch(function(){});
     })();
   })();
