@@ -501,7 +501,7 @@
     });
     window.__ejeSignOut=function(){ if(sb){sb.auth.signOut().then(showLogin,showLogin);} else showLogin(); };
     // AUTHORIZATION allowlist — only these accounts may use the platform.
-    var ALLOWED=['ejofreeyzaguirre@gmail.com','contact@ejetheagency.com'];
+    var ALLOWED=['ejofreeyzaguirre@gmail.com','contact@ejetheagency.com','scarlett@unabase.com'];
     function handleSession(session){
       if(!session){ showLogin(); return; }
       var em=((session.user&&session.user.email)||'').toLowerCase();
