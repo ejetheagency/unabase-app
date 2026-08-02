@@ -491,7 +491,6 @@
     window.__ejeSB=sb; // shared read-only client for status hydration
     function showApp(){ loginEl.style.display='none'; }
     function showLogin(){ loginEl.style.display='flex'; }
-    function demo(){ try{return localStorage.getItem('eje_demo')==='1';}catch(e){return false;} }
     var gBtn=document.getElementById('googleBtn');
     if(gBtn) gBtn.addEventListener('click',function(){
       errEl.style.display='none';
