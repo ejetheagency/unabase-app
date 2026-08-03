@@ -857,7 +857,9 @@
       var src=(UNIVERSE&&UNIVERSE.length)?UNIVERSE:((DATA&&DATA.leads)||[]);
       if(!src.length){return;}
       var si=document.getElementById('dec-search'); var q=norm2(si?si.value:'');
-      var pairs=src.filter(function(l){ if(!q)return true; return norm2((l.companyName||'')+' '+(l.contactName||'')+' '+(l.country||'')).indexOf(q)>=0; });
+      var pairs=src.filter(function(l){ if(!q)return true;
+        var hay=norm2((l.companyName||'')+' '+(l.contactName||'')+' '+(l.contactTitle||'')+' '+(l.country||'')+' '+(l.contactEmail||'')+' '+(l.companyEmail||'')+' '+(l.website||l.domain||'')+' '+(l.instagramHandle||'')+' '+(l.companyBrief||'')+' '+((l.additionalContacts||[]).map(function(c){return (c.name||c.contactName||'')+' '+(c.email||c.contactEmail||'');}).join(' ')));
+        return hay.indexOf(q)>=0; });
       pairs.sort(function(a,b){return (b.unabaseScore||0)-(a.unabaseScore||0);});
       subEl.textContent=(q?pairs.length+' de '+src.length:src.length+' decisores')+(DATA?' · lote '+esc(DATA.date):'');
       listEl.innerHTML=pairs.map(function(l){var d=l._key||decDom(l.website);
