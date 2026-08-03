@@ -617,17 +617,31 @@
     function sbActionWrite(id,ch){var sb=window.__ejeSB;return sb.from('actions').delete().match({lead_id:id,channel:ch,user_name:EJE_USER,client_id:EJE_CLIENT}).then(function(){return sb.from('actions').insert({lead_id:id,user_name:EJE_USER,channel:ch,completed:true,client_id:EJE_CLIENT});});}
     function sbMsgWrite(id,ch,text){var sb=window.__ejeSB;return sb.from('messages_sent').insert({lead_id:id,user_name:EJE_USER,channel:ch,message_text:text,client_id:EJE_CLIENT,sent_at:new Date().toISOString()});}
     function sbNoteWrite(id,text){var sb=window.__ejeSB;return sb.from('notes').upsert({lead_id:id,user_name:EJE_USER,note_text:text,updated_at:new Date().toISOString(),client_id:EJE_CLIENT},{onConflict:'lead_id,user_name'});}
+    // CRITICAL: messages_sent/actions/status_history/notes all have a FK to leads(id).
+    // Must upsert the lead row BEFORE any child write, or the insert is rejected (409)
+    // and progress silently vanishes. Mirrors the classic cockpit's sbUpsertLead.
+    function sbUpsertLead(id,l){var sb=window.__ejeSB;return sb.from('leads').upsert({id:id,company:l.companyName||'',contact_name:l.contactName||null,contact_email:l.contactEmail||null,contact_phone:l.contactPhone||null,country:l.country||null,score:Math.round(l.unabaseScore||0),source_date:l.source_date||new Date().toISOString().slice(0,10),lead_data:l,updated_at:new Date().toISOString(),client_id:EJE_CLIENT},{onConflict:'id'});}
+    function sbSetStatus(id,status){var sb=window.__ejeSB;return sb.from('leads').update({status:status,updated_at:new Date().toISOString()}).eq('id',id).eq('client_id',EJE_CLIENT);}
+    function reRender(){ render(); if(typeof renderAccion==='function') renderAccion(); if(typeof renderHoy==='function') renderHoy(); }
     function markStatus(l,status,label,note){
-      var d=decDom(l.website); if(d) STATUS[d]=status;
+      var d=decDom(l.website); var prev=d?(STATUS[d]||'none'):null; if(d) STATUS[d]=status;
       toast(label+(canWrite()?'':' · demo (local)'));
-      render(); if(typeof renderTareas==='function') renderTareas();
-      if(canWrite()&&d){ sbStatusWrite(d,status).catch(function(){toast('No se pudo guardar');}); if(note) sbNoteWrite(d,note).catch(function(){}); }
+      reRender();
+      if(canWrite()&&d){
+        sbUpsertLead(d,l).then(function(){return sbStatusWrite(d,status);}).then(function(){if(note)return sbNoteWrite(d,note);})
+          .catch(function(){ STATUS[d]=prev; reRender(); toast('⚠ No se pudo guardar — reintentá'); });
+      }
     }
     function markSent(l,ch){ ch=ch||'email';
-      var d=decDom(l.website); if(d){ STATUS[d]='contacted'; (MSGS[d]=MSGS[d]||[]).push(Date.now()); }
+      var d=decDom(l.website); if(!d){ toast('Lead sin dominio, no se puede registrar'); return; }
+      var prev=STATUS[d]||'none'; var wasTerminal=['replied','meeting','closed','skip'].indexOf(prev)>=0;
+      if(!wasTerminal) STATUS[d]='contacted'; (MSGS[d]=MSGS[d]||[]).push(Date.now());
       toast('Enviado marcado'+(canWrite()?'':' · demo (local)'));
-      render(); if(typeof renderAccion==='function') renderAccion(); if(typeof renderHoy==='function') renderHoy();
-      if(canWrite()&&d){ sbMsgWrite(d,ch,l.pitchEmailES||'').catch(function(){}); sbActionWrite(d,ch).catch(function(){}); sbStatusWrite(d,'contacted').catch(function(){}); }
+      reRender();
+      if(canWrite()){
+        sbUpsertLead(d,l).then(function(){return sbMsgWrite(d,ch,l.pitchEmailES||'');}).then(function(){return sbActionWrite(d,ch);}).then(function(){if(!wasTerminal)return sbSetStatus(d,'contacted');})
+          .catch(function(){ (MSGS[d]||[]).pop(); STATUS[d]=prev; reRender(); toast('⚠ No se pudo guardar el envío — reintentá'); });
+      }
     }
     function loadStatus(){
       var sb=window.__ejeSB; if(!sb) return Promise.resolve();
