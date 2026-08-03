@@ -328,6 +328,13 @@
   .cad-dots{display:flex;gap:5px;margin-left:auto}
   .cad-dots i{width:9px;height:9px;border-radius:50%;background:var(--line-3);display:block}
   .cad-dots i.on{background:var(--ok)} .cad-dots i.now{background:var(--info);box-shadow:0 0 0 3px color-mix(in srgb,var(--info) 20%,transparent)}
+  .stage-chip.ig{background:color-mix(in srgb,#c13584 15%,transparent);color:#c13584}
+  .pb{border:1px solid var(--line);border-radius:12px;background:var(--sunken);padding:13px 15px}
+  .pb-h{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12.5px;font-weight:700;margin-bottom:10px}
+  .pb-open{font-size:12px;font-weight:650;color:var(--info);text-decoration:none;white-space:nowrap}
+  .pb-tgt{font-size:12px;color:var(--ink-3);font-weight:500}
+  .pb-steps{margin:0 0 12px;padding-left:20px;counter-reset:pb}
+  .pb-steps li{font-size:12.5px;color:var(--ink-2);line-height:1.65;margin-bottom:4px}
   @media (max-width:900px){.ac-cards{grid-template-columns:repeat(2,1fr)}}
   @media (max-width:760px){
     .ac-tr{grid-template-columns:1.5fr .7fr .8fr;gap:8px}
@@ -616,11 +623,11 @@
       render(); if(typeof renderTareas==='function') renderTareas();
       if(canWrite()&&d){ sbStatusWrite(d,status).catch(function(){toast('No se pudo guardar');}); if(note) sbNoteWrite(d,note).catch(function(){}); }
     }
-    function markSent(l){
+    function markSent(l,ch){ ch=ch||'email';
       var d=decDom(l.website); if(d){ STATUS[d]='contacted'; (MSGS[d]=MSGS[d]||[]).push(Date.now()); }
       toast('Enviado marcado'+(canWrite()?'':' · demo (local)'));
-      render(); if(typeof renderAccion==='function') renderAccion();
-      if(canWrite()&&d){ sbMsgWrite(d,'email',l.pitchEmailES||'').catch(function(){}); sbActionWrite(d,'email').catch(function(){}); sbStatusWrite(d,'contacted').catch(function(){}); }
+      render(); if(typeof renderAccion==='function') renderAccion(); if(typeof renderHoy==='function') renderHoy();
+      if(canWrite()&&d){ sbMsgWrite(d,ch,l.pitchEmailES||'').catch(function(){}); sbActionWrite(d,ch).catch(function(){}); sbStatusWrite(d,'contacted').catch(function(){}); }
     }
     function loadStatus(){
       var sb=window.__ejeSB; if(!sb) return Promise.resolve();
@@ -634,26 +641,32 @@
     var DAY=864e5;
     var DORMANT_MS=30*DAY; // last touch older than this -> revival bucket, NOT "urgente"
     var MSGS={}, UNIVERSE=[], BYKEY={};
+    // Real cadence (doctrine): T1 email -> T2 Instagram DM (+2d) -> T3 email #2 (+5d)
+    // -> T4 alt-channel (+7d) -> monthly. IG/WA fall back to email if channel unavailable.
     function cadNext(n){
-      if(n<=1) return {touch:1,label:'1er toque',iv:0};
-      if(n===2) return {touch:2,label:'2º toque',iv:7*DAY};
-      if(n===3) return {touch:3,label:'3er toque',iv:7*DAY};
-      if(n===4) return {touch:4,label:'4º toque',iv:7*DAY};
-      return {touch:n,label:'Mensual',iv:30*DAY};
+      if(n<=1) return {touch:1,label:'1er toque',channel:'email',iv:0};
+      if(n===2) return {touch:2,label:'2º toque',channel:'ig',iv:2*DAY};
+      if(n===3) return {touch:3,label:'3er toque',channel:'email',iv:5*DAY};
+      if(n===4) return {touch:4,label:'4º toque',channel:'wa',iv:7*DAY};
+      return {touch:n,label:'Mensual',channel:'email',iv:30*DAY};
     }
-    function stageCls(label){ return label==='Mensual'?'green':(/4/.test(label)?'amber':''); }
+    function chLabel(ch){ return ch==='ig'?'IG':ch==='wa'?'WA':'Email'; }
+    function nextTxt(ch,l){ return ch==='ig'?('DM por Instagram'+(l&&l.instagramHandle?' @'+l.instagramHandle:'')):ch==='wa'?'Enviar WhatsApp':'Enviar email de seguimiento'; }
+    function chChip(ch){ return ch==='ig'?'ig':ch==='wa'?'green':''; }
+    function resolveCh(ch,l){ if(ch==='ig'&&!l.instagramHandle) return 'email'; if(ch==='wa'&&!(l.contactPhone||l.apolloCompanyPhone)) return 'email'; return ch; }
     function cadOf(l){
       var d=l._key||decDom(l.website); var st=(d&&STATUS[d])||l.status||'none';
       var ts=(MSGS[d]||[]).slice().sort(function(a,b){return a-b;});
       var touches=ts.length, now=Date.now();
-      if(st==='replied') return {kind:'replied',stageLabel:'Respondió',next:'Ofrecé consultoría / llamada',dueMs:now,overdue:0,stageClass:'green'};
+      if(st==='replied') return {kind:'replied',stageLabel:'Respondió',chip:'Respondió',channel:'call',next:'Ofrecé consultoría / llamada',dueMs:now,overdue:0,stageClass:'green'};
       if(st==='meeting') return {kind:'meeting'};
       if(st==='closed'||st==='skip') return {kind:'stop'};
-      if(touches===0) return {kind:'first',touch:1,stageLabel:'1er toque',next:'Enviar primer email',dueMs:now,overdue:0,stageClass:''};
-      var last=ts[touches-1], nx=cadNext(touches+1), dueMs=last+nx.iv, overdue=now-dueMs;
+      if(touches===0) return {kind:'first',touch:1,stageLabel:'1er toque',chip:'1er · Email',channel:'email',next:'Enviar primer email',dueMs:now,overdue:0,stageClass:''};
+      var last=ts[touches-1], nx=cadNext(touches+1), ch=resolveCh(nx.channel,l), dueMs=last+nx.iv, overdue=now-dueMs;
       var kind=overdue>=0?'due':(dueMs-now<=DAY?'soon':'upcoming');
       var dormant=overdue>=0 && (now-last)>DORMANT_MS;
-      return {kind:kind,touch:nx.touch,stageLabel:nx.label,next:'Enviar email follow-up',dueMs:dueMs,overdue:overdue,stageClass:stageCls(nx.label),lastMs:last,dormant:dormant};
+      var chip=nx.label==='Mensual'?'Mensual':(nx.touch+'º · '+chLabel(ch)).replace('1º','1er').replace('3º','3er');
+      return {kind:kind,touch:nx.touch,stageLabel:nx.label,chip:chip,channel:ch,next:nextTxt(ch,l),dueMs:dueMs,overdue:overdue,stageClass:(nx.label==='Mensual'?'green':chChip(ch)),lastMs:last,dormant:dormant};
     }
     function priOf(c){
       if(c.kind==='replied') return 'alta';
@@ -675,6 +688,19 @@
       if(c.kind==='first'||c.touch===1) return {text:l.pitchEmailES||'(sin borrador)',label:'Email de primer toque',mark:''};
       return {text:followupCopy(l),label:c.stageLabel+' · email de seguimiento',mark:' · borrador editable'};
     }
+    // Locked IG DM copy (plural voice, references prior email) — ported from classic cockpit.
+    function igDM(l){ return 'Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde UnaBase y queríamos asegurarnos de que no se perdiera 🙌\nSi les hace sentido, se los contamos por acá y coordinamos una llamada corta.\nScarlett'; }
+    // Per-touch PLAYBOOK — the step-by-step "how" (IG protocol from enrichment/ai-content.js).
+    function playbookFor(l,c){ c=c||cadOf(l); var ch=c.channel||'email';
+      if(ch==='ig'){ var h=l.instagramHandle||''; return {ch:'ig',title:'Playbook · Instagram DM',target:h?('@'+h):'(sin handle)',link:h?('https://instagram.com/'+h):'',
+        steps:['Abrí @'+h+' y mirá sus historias y últimos posts.','Reaccioná / dale me gusta a sus últimos 2-3 posts.','Dejá un comentario genuino y específico en un post reciente (no genérico).','Seguí la cuenta.','Recién ahí enviá el DM (abajo). Casual, sin nombrar el producto de entrada.'],
+        draft:l.instagramDM||igDM(l)}; }
+      if(ch==='wa'){ var ph=l.contactPhone||l.apolloCompanyPhone||''; return {ch:'wa',title:'Playbook · WhatsApp',target:ph||'(sin teléfono)',link:ph?('https://wa.me/'+String(ph).replace(/[^0-9]/g,'')):'',
+        steps:['Guardá el contacto y abrí WhatsApp.','Enviá el mensaje (abajo) en horario laboral local.','Si no responde en 48h, pasá al toque mensual.'],
+        draft:l.whatsappMessage||igDM(l)}; }
+      var dd=draftFor(l,c); return {ch:'email',title:'Playbook · Email',target:l.contactEmail||'—',link:l.contactEmail?('mailto:'+l.contactEmail):'',
+        steps:['Redactá a '+(l.contactEmail||'—')+(l.companyEmail?(' (CC '+l.companyEmail+')'):'')+'.','Pegá el borrador de abajo, revisá nombre y empresa.',(c.kind==='first'?'Enviá el primer email.':'Enviá el seguimiento — tono corto, un solo ask: la llamada.')],
+        draft:dd.text}; }
     function loadUniverse(){
       var sb=window.__ejeSB; if(!sb) return Promise.resolve();
       return Promise.all([
@@ -700,6 +726,8 @@
       send:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>',
       chat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
       refresh:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg>',
+      instagram:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>',
+      wa:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.2-5.1A8.5 8.5 0 1 1 21 11.5z"/></svg>',
       arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
     };
     function avStack(list){ var a=list.slice(0,4).map(function(x){var l=x.l||x; return '<span class="av">'+esc(initials(l.companyName))+avImg(l)+'</span>';}).join('');
@@ -711,14 +739,14 @@
       return '<div class="ac-tr" data-key="'+esc(d)+'">'
         +'<div class="ac-dec"><span class="av">'+esc(initials(l.companyName))+avImg(l)+'</span><span class="nm">'+esc(l.contactName||l.companyName)+'</span></div>'
         +'<div class="ac-co">'+flag(l.country)+' '+esc(l.companyName)+'</div>'
-        +'<div class="col-hide"><span class="stage-chip '+(c.stageClass||'')+'">'+esc(c.stageLabel)+'</span></div>'
+        +'<div class="col-hide"><span class="stage-chip '+(c.stageClass||'')+'">'+esc(c.chip||c.stageLabel)+'</span></div>'
         +'<div class="ac-wait '+waitCls+'">'+waitTxt+'</div>'
         +'<div class="ac-next col-hide">'+esc(c.next||'')+'</div>'
         +'<span class="pri-pill '+pri+'">'+priLbl+'</span></div>';
     }
     function acHead(){ return '<div class="ac-tr head"><div>Decisor</div><div class="ac-co">Empresa</div><div class="col-hide">Etapa</div><div>Esperando</div><div class="ac-next col-hide">Próxima acción</div><div>Prioridad</div></div>'; }
     function statCard(cls,icon,label,num,sub){ return '<button class="ac-card '+cls+'" data-scroll="ac-urgent"><div class="acl">'+ICN[icon]+label+'</div><div class="acn">'+num+'</div><div class="acs">'+sub+'</div><span class="aca">'+ICN.arrow+'</span></button>'; }
-    function stageCard(icon,label,list,amber){ return '<div class="ac-card ac-stage'+(amber?' amber':'')+'"><div class="acl">'+ICN[icon]+label+'</div><div class="acn">'+list.length+'</div><div class="acs">'+(label==='Ciclo mensual'?'en ciclo mensual':'decisores esperando')+'</div>'+(list.length?avStack(list):'')+'</div>'; }
+    function stageCard(icon,label,list,amber){ return '<div class="ac-card ac-stage'+(amber?' amber':'')+'"><div class="acl">'+ICN[icon]+label+'</div><div class="acn">'+list.length+'</div><div class="acs">'+(/ensual/i.test(label)?'en ciclo mensual':'decisores esperando')+'</div>'+(list.length?avStack(list):'')+'</div>'; }
     function renderAccion(){
       var body=document.getElementById('tareas-body'); if(!body) return;
       var uni=(UNIVERSE&&UNIVERSE.length)?UNIVERSE:((DATA&&DATA.leads)?DATA.leads.map(function(l){return Object.assign({_key:decDom(l.website)},l);}):[]);
@@ -746,7 +774,7 @@
         +'</div>'
         +'<div class="ac-sech">Por etapa del ciclo</div>'
         +'<div class="ac-cards">'
-        +stageCard('mail','2º toque',s2)+stageCard('send','3er toque',s3)+stageCard('chat','4º toque',s4,true)+stageCard('refresh','Ciclo mensual',sm)
+        +stageCard('instagram','2º · Instagram',s2)+stageCard('mail','3er · Email',s3)+stageCard('wa','4º · Alterno',s4,true)+stageCard('refresh','Ciclo mensual',sm)
         +'</div>';
       if(replied.length){ html+='<div class="ac-panel" id="ac-replied"><div class="ac-panel-h blue">💬 Respondieron — ofrecé la llamada <span class="cnt">'+replied.length+'</span></div>'+acHead()+replied.map(acRow).join('')+'</div>'; }
       html+='<div class="ac-panel" id="ac-urgent"><div class="ac-panel-h">🔴 Urgentes: más de 2 horas esperando <span class="cnt">'+urgent.length+'</span></div>'
@@ -806,11 +834,12 @@
     function rrow(k,v){return '<div class="row"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>';}
     function openCard(ref){
       var l=(ref&&typeof ref==='object')?ref:(DATA&&DATA.leads[ref]); if(!l)return;
-      var _cad=cadOf(l); var _draft=draftFor(l,_cad);
+      var _cad=cadOf(l); var _draft=draftFor(l,_cad); var _pb=playbookFor(l,_cad);
       var _key=l._key||decDom(l.website); var _done=(MSGS[_key]||[]).length;
       var _dueLbl=_cad.kind==='replied'?'responder ahora':(_cad.kind==='first'?'listo para enviar':(_cad.overdue>=0?('vence hace '+fmtDur(_cad.overdue)):('vence en '+fmtDur(_cad.overdue))));
       var _dots=''; for(var _k=1;_k<=Math.max(4,_done+1);_k++){_dots+='<i class="'+(_k<=_done?'on':(_k===_done+1?'now':''))+'"></i>';}
-      var _strip='<div class="cad-strip"><span class="cs-badge stage-chip '+(_cad.stageClass||'')+'">'+esc(_cad.stageLabel||'—')+'</span><span class="cs-due">Próxima acción: <b>'+esc(_cad.next||'—')+'</b> · '+_dueLbl+'</span><div class="cad-dots">'+_dots+'</div></div>';
+      var _strip='<div class="cad-strip"><span class="cs-badge stage-chip '+(_cad.stageClass||'')+'">'+esc(_cad.chip||_cad.stageLabel||'—')+'</span><span class="cs-due">Próxima acción: <b>'+esc(_cad.next||'—')+'</b> · '+_dueLbl+'</span><div class="cad-dots">'+_dots+'</div></div>';
+      var _pbHtml='<div class="pb"><div class="pb-h"><span>'+esc(_pb.title)+'</span>'+(_pb.link?'<a class="pb-open" href="'+esc(_pb.link)+'" target="_blank" rel="noopener">'+esc(_pb.target)+' ↗</a>':'<span class="pb-tgt">'+esc(_pb.target)+'</span>')+'</div><ol class="pb-steps">'+_pb.steps.map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol><div class="draft"><div class="draft-h">Mensaje'+esc(_draft.mark||'')+'</div><pre class="draft-b">'+esc(_pb.draft)+'</pre></div></div>';
       var credits=(l._verifiedCredits||l.verifiedCredits||[]);
       var addl=(l.additionalContacts||[]);
       var addlHtml=addl.length?('<div style="margin-top:14px">'+addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join('')+'</div>'):'';
@@ -828,7 +857,7 @@
         +'</div><div class="c-main">'
         + _strip
         +'<div class="tabs"><button class="tab on" data-p="borrador">Borrador</button><button class="tab" data-p="otros">Otros decisores'+(addl.length?' ('+addl.length+')':'')+'</button></div>'
-        +'<div class="tab-panel" data-panel="borrador"><div class="draft"><div class="draft-h">'+esc(_draft.label)+esc(_draft.mark||'')+'</div><pre class="draft-b">'+esc(_draft.text)+'</pre></div></div>'
+        +'<div class="tab-panel" data-panel="borrador">'+_pbHtml+'</div>'
         +'<div class="tab-panel" data-panel="otros" style="display:none">'+(addl.length?addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join(''):'<div class="seam-note">Sin otros decisores registrados.</div>')+'</div>'
         +'<div class="c-actions"><button class="btn pri act-sent">Copiar y marcar enviado</button>'
         +'<button class="btn win act-replied">Respondió</button>'
@@ -841,7 +870,7 @@
       window.scrollTo({top:0,behavior:'smooth'});
       cardWrap.querySelector('.dc-back').addEventListener('click',closeCard);
       var bSent=cardWrap.querySelector('.act-sent');
-      if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(_draft.text||'');}catch(e){} bSent.textContent='Enviado ✓'; bSent.classList.add('done'); markSent(l);});
+      if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.draft||'');}catch(e){} bSent.textContent='Enviado ✓'; bSent.classList.add('done'); markSent(l,_cad.channel);});
       var bRep=cardWrap.querySelector('.act-replied');
       if(bRep) bRep.addEventListener('click',function(){bRep.classList.add('done'); markStatus(l,'replied','Marcado: Respondió');});
       var bRej=cardWrap.querySelector('.act-rejected');
