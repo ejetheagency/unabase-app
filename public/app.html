@@ -399,6 +399,7 @@
     </div>
 
     <button class="nav-item on" data-view="home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>Home</button>
+    <button class="nav-item" data-view="hoy"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M8 2v4M16 2v4M3 10h18M8 15l2.5 2.5L15 13"/></svg>Hoy<span class="ct" id="hoy-ct"></span></button>
     <button class="nav-item" data-view="tareas"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg>Tareas<span class="ct">8</span></button>
     <button class="nav-item" data-view="decisores"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>Decisores<span class="ct">15</span></button>
     <button class="nav-item" data-view="historial"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>Historial</button>
@@ -447,7 +448,13 @@
         <div class="bar"><span style="width:78%"></span></div>
       </div>
 
-      <button class="cta" data-view="tareas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Trabajar cola de hoy</button>
+      <button class="cta" data-view="hoy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Ver reporte de hoy</button>
+    </section>
+
+    <!-- HOY (today's dispatched report ONLY) -->
+    <section class="view" id="view-hoy">
+      <div class="page-h">Hoy</div><div class="page-sub" id="hoy-sub">Reporte de hoy.</div>
+      <div class="dec-list" id="hoy-list"></div>
     </section>
 
     <!-- TAREAS (real action queue from active batch + live status) -->
@@ -488,6 +495,7 @@
 
 <nav class="mobnav" aria-label="Navegación">
   <button class="mob-item on" data-view="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>Home</button>
+  <button class="mob-item" data-view="hoy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M8 2v4M16 2v4M3 10h18M8 15l2.5 2.5L15 13"/></svg>Hoy</button>
   <button class="mob-item" data-view="tareas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg>Tareas</button>
   <button class="mob-item" data-view="decisores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>Decisores</button>
   <button class="mob-item" data-view="historial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>Historial</button>
@@ -757,6 +765,23 @@
       body.querySelectorAll('.ac-more-row[data-exp]').forEach(function(exp){exp.addEventListener('click',function(){var which=exp.dataset.exp;var list=which==='dormant'?dormant:urgent;var shown=which==='dormant'?8:6;var p=exp.closest('.ac-panel');exp.remove();p.insertAdjacentHTML('beforeend',list.slice(shown).map(acRow).join(''));bindRows(p);});});
     }
     function renderTareas(){ renderAccion(); }
+    // ── HOY: today's dispatched report ONLY (the active batch, not the full cadence) ──
+    function renderHoy(){
+      var body=document.getElementById('hoy-list'); if(!body) return;
+      if(!DATA||!DATA.leads){ body.innerHTML='<div class="tq-empty">Cargando reporte…</div>'; return; }
+      var leads=DATA.leads, sent=leads.filter(function(l){return statusOf(l)!=='none';}).length;
+      var sub=document.getElementById('hoy-sub'); if(sub) sub.textContent='Reporte del '+esc(DATA.date)+' · '+leads.length+' decisores · '+sent+'/'+leads.length+' contactados';
+      var ct=document.getElementById('hoy-ct'); if(ct) ct.textContent=leads.length;
+      body.innerHTML=leads.map(function(l,i){var ch=l.website?'sitio':(l.instagramHandle?'IG':'email');
+        return '<button class="dec-row" data-hi="'+i+'">'
+          +'<span class="dec-av">'+esc(initials(l.companyName))+avImg(l)+'</span>'
+          +'<span class="dec-main"><span class="dec-co">'+esc(l.companyName)+'</span>'
+          +'<span class="dec-meta">'+flag(l.country)+' '+esc(l.contactName||'—')+'</span></span>'
+          +'<span class="dec-ch">'+ch+'</span>'+statusChip(l)
+          +'<span class="dec-score">'+esc(l.unabaseScore||'')+'</span></button>';
+      }).join('')||'<div class="tq-empty">Sin reporte hoy.</div>';
+      body.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openFromTareas(DATA.leads[+r.dataset.hi]);});});
+    }
     function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},1800);}
     function norm2(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
     function render(){
@@ -867,7 +892,7 @@
     }
     function load(){
       // local-first: paint cache instantly, then refresh in background
-      try{var c=localStorage.getItem('eje_dec_cache'); if(c){DATA=JSON.parse(c); render();}}catch(e){}
+      try{var c=localStorage.getItem('eje_dec_cache'); if(c){DATA=JSON.parse(c); render(); if(typeof renderHoy==='function') renderHoy();}}catch(e){}
       var cb='?v='+Date.now();
       fetch('./reports-manifest.json'+cb).then(function(r){return r.json();}).then(function(m){
         var active=(m.batches||[]).find(function(b){return b.batch_id===m.active_batch_id;});
@@ -875,8 +900,8 @@
         return fetch('./'+active.file+cb).then(function(r){return r.json();}).then(function(leads){
           DATA={date:active.source_date,leads:leads};
           try{localStorage.setItem('eje_dec_cache',JSON.stringify(DATA));}catch(e){}
-          render();
-          loadStatus().then(function(){ render(); return loadUniverse(); }).then(function(){ render(); if(typeof renderAccion==='function') renderAccion(); });
+          render(); if(typeof renderHoy==='function') renderHoy();
+          loadStatus().then(function(){ render(); if(typeof renderHoy==='function') renderHoy(); return loadUniverse(); }).then(function(){ render(); if(typeof renderHoy==='function') renderHoy(); if(typeof renderAccion==='function') renderAccion(); });
         });
       }).catch(function(){ if(!DATA&&subEl) subEl.textContent='No se pudo cargar la cola.'; });
     }
@@ -885,12 +910,14 @@
     function onTareas(){ if(DATA) renderTareas(); else ensure(); }
     document.querySelectorAll('[data-view="tareas"]').forEach(function(el){el.addEventListener('click',onTareas);});
     document.querySelectorAll('[data-view="historial"]').forEach(function(el){el.addEventListener('click',renderHistorial);});
+    function onHoy(){ if(DATA){ renderHoy(); } else ensure(); }
+    document.querySelectorAll('[data-view="hoy"]').forEach(function(el){el.addEventListener('click',onHoy);});
     var si=document.getElementById('dec-search'); if(si) si.addEventListener('input',render);
     function focusSearch(){var nav=document.querySelector('.nav-item[data-view="decisores"]')||document.querySelector('.mob-item[data-view="decisores"]');if(nav)nav.click();var s=document.getElementById('dec-search');if(s)s.focus();}
     document.addEventListener('keydown',function(e){if((e.metaKey||e.ctrlKey)&&(e.key==='k'||e.key==='K')){e.preventDefault();focusSearch();}});
     var cmdEl=document.querySelector('.cmd'); if(cmdEl) cmdEl.addEventListener('click',focusSearch);
     // if the app restored to Decisores or Tareas on load, fetch too
-    try{ var lv=localStorage.getItem('eje_view'); if(lv==='decisores'||lv==='tareas') ensure(); }catch(e){}
+    try{ var lv=localStorage.getItem('eje_view'); if(lv==='decisores'||lv==='tareas'||lv==='hoy') ensure(); }catch(e){}
 
     // progressive: reflect the REAL active-batch size on Home (after paint, non-blocking)
     fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){
