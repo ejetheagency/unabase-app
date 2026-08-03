@@ -335,6 +335,9 @@
   .pb-tgt{font-size:12px;color:var(--ink-3);font-weight:500}
   .pb-steps{margin:0 0 12px;padding-left:20px;counter-reset:pb}
   .pb-steps li{font-size:12.5px;color:var(--ink-2);line-height:1.65;margin-bottom:4px}
+  .sendslot{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--ink-2);background:color-mix(in srgb,var(--info) 8%,transparent);border:1px solid color-mix(in srgb,var(--info) 22%,transparent);border-radius:10px;padding:9px 12px;margin:-2px 0 12px}
+  .sendslot svg{width:15px;height:15px;color:var(--info);flex:none}
+  .sendslot b{color:var(--ink);font-weight:700}
   @media (max-width:900px){.ac-cards{grid-template-columns:repeat(2,1fr)}}
   @media (max-width:760px){
     .ac-tr{grid-template-columns:1.5fr .7fr .8fr;gap:8px}
@@ -691,6 +694,13 @@
     function fmtDur(ms){ ms=Math.abs(ms); var d=Math.floor(ms/DAY),h=Math.floor((ms%DAY)/36e5),m=Math.floor((ms%36e5)/6e4);
       if(d>=1) return d+'d'+(h?' '+h+'h':''); if(h>=1) return h+'h'+(m?' '+m+'m':''); return (m||1)+'m'; }
     function firstName(l){ return (l.contactName||'').split(/\s+/)[0]||''; }
+    // ── SEND-TIME SLOT (per-country, Chile clock) — ported from classic cockpit ──
+    // Operator works on the Chilean clock; schedule the email at this Santiago time
+    // so it lands ~8 AM local in the recipient's country.
+    var COUNTRY_TZ={Argentina:'America/Argentina/Buenos_Aires',Mexico:'America/Mexico_City',Colombia:'America/Bogota',Chile:'America/Santiago',Peru:'America/Lima',Spain:'Europe/Madrid',Ecuador:'America/Guayaquil','Costa Rica':'America/Costa_Rica',Uruguay:'America/Montevideo',Paraguay:'America/Asuncion',Bolivia:'America/La_Paz',Venezuela:'America/Caracas',Panama:'America/Panama',Guatemala:'America/Guatemala','Dominican Republic':'America/Santo_Domingo'};
+    function _tzOff(tz,date){var p=new Intl.DateTimeFormat('en-US',{timeZone:tz,hour12:false,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'}).formatToParts(date).reduce(function(a,x){a[x.type]=x.value;return a;},{});var hh=parseInt(p.hour,10)%24;var asUTC=Date.UTC(+p.year,+p.month-1,+p.day,hh,+p.minute,+p.second);return Math.round((asUTC-date.getTime())/60000);}
+    function _fmt12(mins){mins=((mins%1440)+1440)%1440;var h=Math.floor(mins/60),m=mins%60;var ap=h<12?'AM':'PM';var hh=h%12;if(hh===0)hh=12;return hh+(m?(':'+String(m).padStart(2,'0')):'')+' '+ap;}
+    function sendSlot(country){var tz=COUNTRY_TZ[country];if(!tz)return null;var now=new Date();var diff=_tzOff('America/Santiago',now)-_tzOff(tz,now);return {chile:_fmt12(8*60+diff),local:_fmt12(8*60),same:diff===0};}
     // Follow-up copy (ported verbatim from checkpoint/03-email-copy/WINNING-COPY.md)
     function followupCopy(l){ var n=firstName(l)||'equipo', e=l.companyName||'tu productora';
       return '¡Hola, '+n+'! ¿Cómo va todo?\n\nSolo quería saber si pudiste ver mi correo anterior y si te parece bien agendar la llamada que te comentaba. Me encantaría contarte más sobre UnaBase porque creo que a '+e+' le vendría muy bien. La diseñamos específicamente para la industria creativa y ordena muchísimo los presupuestos cuando hay varios proyectos a la vez.\n\n¿Te parece si coordinamos una reunión corta por Meet, sin ningún compromiso, para resolver cualquier duda? Contame cómo lo ves.\n\nSaludos,\nScarlett Lillo'; }
@@ -729,6 +739,21 @@
         });
         if(DATA&&DATA.leads){DATA.leads.forEach(function(l){var d=decDom(l.website);if(!d)return;map[d]=Object.assign({},map[d]||{},l,{_key:d,_today:true});});}
         BYKEY=map; UNIVERSE=Object.keys(map).map(function(k){return map[k];});
+      }).catch(function(){});
+    }
+    // Completeness: merge EVERY dispatched lead from all report files into the
+    // directory (background), so a company the operator worked is always findable
+    // even if it was never synced to Supabase. Deduped vs the Supabase universe.
+    var REPORTS_MERGED=false;
+    function loadReportLeads(){
+      if(REPORTS_MERGED) return Promise.resolve(); REPORTS_MERGED=true;
+      return fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){
+        var files=Object.keys((m.batches||[]).reduce(function(a,b){if(b.file)a[b.file]=1;return a;},{}));
+        return Promise.all(files.map(function(f){return fetch('./'+f+'?v='+Date.now()).then(function(r){return r.ok?r.json():[];}).catch(function(){return [];});}));
+      }).then(function(arrs){
+        var added=0;
+        arrs.forEach(function(arr){ if(!Array.isArray(arr))arr=(arr&&arr.leads)||[]; arr.forEach(function(l){ if(!l)return; var d=decDom(l.website||(l.domain?('https://'+l.domain):'')); if(!d||BYKEY[d])return; var obj=Object.assign({_key:d},l); BYKEY[d]=obj; UNIVERSE.push(obj); added++; }); });
+        if(added){ render(); if(typeof renderAccion==='function') renderAccion(); }
       }).catch(function(){});
     }
     var ICN={
@@ -854,6 +879,8 @@
       var _dots=''; for(var _k=1;_k<=Math.max(4,_done+1);_k++){_dots+='<i class="'+(_k<=_done?'on':(_k===_done+1?'now':''))+'"></i>';}
       var _strip='<div class="cad-strip"><span class="cs-badge stage-chip '+(_cad.stageClass||'')+'">'+esc(_cad.chip||_cad.stageLabel||'—')+'</span><span class="cs-due">Próxima acción: <b>'+esc(_cad.next||'—')+'</b> · '+_dueLbl+'</span><div class="cad-dots">'+_dots+'</div></div>';
       var _pbHtml='<div class="pb"><div class="pb-h"><span>'+esc(_pb.title)+'</span>'+(_pb.link?'<a class="pb-open" href="'+esc(_pb.link)+'" target="_blank" rel="noopener">'+esc(_pb.target)+' ↗</a>':'<span class="pb-tgt">'+esc(_pb.target)+'</span>')+'</div><ol class="pb-steps">'+_pb.steps.map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol><div class="draft"><div class="draft-h">Mensaje'+esc(_draft.mark||'')+'</div><pre class="draft-b">'+esc(_pb.draft)+'</pre></div></div>';
+      var _slot=(_cad.channel==='email')?sendSlot(l.country):null;
+      var _slotHtml=_slot?('<div class="sendslot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg><span>Programá el envío a las <b>'+esc(_slot.chile)+'</b> (hora Chile) para que llegue ~8 AM en '+esc(l.country||'destino')+(_slot.same?' · misma zona horaria':'')+'</span></div>'):'';
       var credits=(l._verifiedCredits||l.verifiedCredits||[]);
       var addl=(l.additionalContacts||[]);
       var addlHtml=addl.length?('<div style="margin-top:14px">'+addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join('')+'</div>'):'';
@@ -869,7 +896,7 @@
         +(credits.length?rrow('Créditos',esc(credits.slice(0,2).join(' · '))):'')
         +rrow('País',flag(l.country)+' '+esc(l.country))
         +'</div><div class="c-main">'
-        + _strip
+        + _strip + _slotHtml
         +'<div class="tabs"><button class="tab on" data-p="borrador">Borrador</button><button class="tab" data-p="otros">Otros decisores'+(addl.length?' ('+addl.length+')':'')+'</button></div>'
         +'<div class="tab-panel" data-panel="borrador">'+_pbHtml+'</div>'
         +'<div class="tab-panel" data-panel="otros" style="display:none">'+(addl.length?addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join(''):'<div class="seam-note">Sin otros decisores registrados.</div>')+'</div>'
@@ -944,7 +971,7 @@
           DATA={date:active.source_date,leads:leads};
           try{localStorage.setItem('eje_dec_cache',JSON.stringify(DATA));}catch(e){}
           render(); if(typeof renderHoy==='function') renderHoy();
-          loadStatus().then(function(){ render(); if(typeof renderHoy==='function') renderHoy(); return loadUniverse(); }).then(function(){ render(); if(typeof renderHoy==='function') renderHoy(); if(typeof renderAccion==='function') renderAccion(); });
+          loadStatus().then(function(){ render(); if(typeof renderHoy==='function') renderHoy(); return loadUniverse(); }).then(function(){ render(); if(typeof renderHoy==='function') renderHoy(); if(typeof renderAccion==='function') renderAccion(); loadReportLeads(); });
         });
       }).catch(function(){ if(!DATA&&subEl) subEl.textContent='No se pudo cargar la cola.'; });
     }
