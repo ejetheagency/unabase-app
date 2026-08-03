@@ -624,6 +624,7 @@
     // Email-only follow-up cadence — alt-channel (IG/WhatsApp, Plan C) is on hold.
     // Anchored on real messages_sent timestamps. Stops on replied/meeting/closed/skip.
     var DAY=864e5;
+    var DORMANT_MS=30*DAY; // last touch older than this -> revival bucket, NOT "urgente"
     var MSGS={}, UNIVERSE=[], BYKEY={};
     function cadNext(n){
       if(n<=1) return {touch:1,label:'1er toque',iv:0};
@@ -643,7 +644,8 @@
       if(touches===0) return {kind:'first',touch:1,stageLabel:'1er toque',next:'Enviar primer email',dueMs:now,overdue:0,stageClass:''};
       var last=ts[touches-1], nx=cadNext(touches+1), dueMs=last+nx.iv, overdue=now-dueMs;
       var kind=overdue>=0?'due':(dueMs-now<=DAY?'soon':'upcoming');
-      return {kind:kind,touch:nx.touch,stageLabel:nx.label,next:'Enviar email follow-up',dueMs:dueMs,overdue:overdue,stageClass:stageCls(nx.label)};
+      var dormant=overdue>=0 && (now-last)>DORMANT_MS;
+      return {kind:kind,touch:nx.touch,stageLabel:nx.label,next:'Enviar email follow-up',dueMs:dueMs,overdue:overdue,stageClass:stageCls(nx.label),lastMs:last,dormant:dormant};
     }
     function priOf(c){
       if(c.kind==='replied') return 'alta';
@@ -694,16 +696,17 @@
     };
     function avStack(list){ var a=list.slice(0,4).map(function(x){var l=x.l||x; return '<span class="av">'+esc(initials(l.companyName))+avImg(l)+'</span>';}).join('');
       return '<div class="ac-avs">'+a+(list.length>4?'<span class="more">+'+(list.length-4)+'</span>':'')+'</div>'; }
-    function acRow(x){ var l=x.l,c=x.c,d=l._key||decDom(l.website),pri=priOf(c);
-      var waitCls=c.overdue>=0?'red':(c.kind==='soon'?'amber':'mut');
+    function acRow(x){ var l=x.l,c=x.c,d=l._key||decDom(l.website),pri=c.dormant?'baja':priOf(c);
+      var waitCls=c.dormant?'mut':(c.overdue>=0?'red':(c.kind==='soon'?'amber':'mut'));
       var waitTxt=c.kind==='replied'?'ahora':(c.kind==='first'?'nuevo':fmtDur(c.overdue));
+      var priLbl=c.dormant?'Dormido':(pri==='alta'?'Alta':pri==='media'?'Media':'Baja');
       return '<div class="ac-tr" data-key="'+esc(d)+'">'
         +'<div class="ac-dec"><span class="av">'+esc(initials(l.companyName))+avImg(l)+'</span><span class="nm">'+esc(l.contactName||l.companyName)+'</span></div>'
         +'<div class="ac-co">'+flag(l.country)+' '+esc(l.companyName)+'</div>'
         +'<div class="col-hide"><span class="stage-chip '+(c.stageClass||'')+'">'+esc(c.stageLabel)+'</span></div>'
         +'<div class="ac-wait '+waitCls+'">'+waitTxt+'</div>'
         +'<div class="ac-next col-hide">'+esc(c.next||'')+'</div>'
-        +'<span class="pri-pill '+pri+'">'+(pri==='alta'?'Alta':pri==='media'?'Media':'Baja')+'</span></div>';
+        +'<span class="pri-pill '+pri+'">'+priLbl+'</span></div>';
     }
     function acHead(){ return '<div class="ac-tr head"><div>Decisor</div><div class="ac-co">Empresa</div><div class="col-hide">Etapa</div><div>Esperando</div><div class="ac-next col-hide">Próxima acción</div><div>Prioridad</div></div>'; }
     function statCard(cls,icon,label,num,sub){ return '<button class="ac-card '+cls+'" data-scroll="ac-urgent"><div class="acl">'+ICN[icon]+label+'</div><div class="acn">'+num+'</div><div class="acs">'+sub+'</div><span class="aca">'+ICN.arrow+'</span></button>'; }
@@ -712,7 +715,9 @@
       var body=document.getElementById('tareas-body'); if(!body) return;
       var uni=(UNIVERSE&&UNIVERSE.length)?UNIVERSE:((DATA&&DATA.leads)?DATA.leads.map(function(l){return Object.assign({_key:decDom(l.website)},l);}):[]);
       if(!uni.length){ body.innerHTML='<div class="tq-empty">Cargando cola…</div>'; return; }
-      var items=uni.map(function(l){return {l:l,c:cadOf(l)};}).filter(function(x){return x.c&&['first','due','soon','upcoming','replied'].indexOf(x.c.kind)>=0;});
+      var allItems=uni.map(function(l){return {l:l,c:cadOf(l)};}).filter(function(x){return x.c&&['first','due','soon','upcoming','replied'].indexOf(x.c.kind)>=0;});
+      var dormant=allItems.filter(function(x){return x.c.dormant;}).sort(function(a,b){return (b.l.unabaseScore||0)-(a.l.unabaseScore||0);});
+      var items=allItems.filter(function(x){return !x.c.dormant;});
       var urgent=items.filter(function(x){return x.c.kind==='due'&&x.c.overdue>2*36e5;}).sort(function(a,b){return b.c.overdue-a.c.overdue;});
       var soon=items.filter(function(x){return x.c.kind==='soon'||(x.c.kind==='due'&&x.c.overdue<=2*36e5);});
       var firsts=items.filter(function(x){return x.c.kind==='first';});
@@ -742,10 +747,14 @@
       html+='<div class="ac-panel"><div class="ac-panel-h">📋 Todas las tareas de hoy <span class="cnt" style="color:var(--info);background:color-mix(in srgb,var(--info) 12%,transparent)">'+todos.length+'</span></div>'
         + (todos.length?acHead()+todos.map(acRow).join(''):'<div class="tq-empty" style="padding:14px 18px">Todo al día. Nada pendiente hoy.</div>')
         +'</div>';
+      if(dormant.length){ html+='<div class="ac-panel" id="ac-dormant"><div class="ac-panel-h" style="color:var(--warn)">😴 Dormidos · para revivir <span class="cnt" style="color:var(--warn);background:color-mix(in srgb,var(--warn) 12%,transparent)">'+dormant.length+'</span></div>'
+        +'<div style="padding:2px 18px 11px;color:var(--ink-3);font-size:12px">Contactados hace +30 días sin seguimiento — no urgentes. Retomá los de mejor score como campaña de reactivación (protocolo LAZARUS / Plan A).</div>'
+        +acHead()+dormant.slice(0,8).map(acRow).join('')+(dormant.length>8?'<div class="ac-more-row" style="color:var(--warn)" data-exp="dormant">Ver todos los dormidos ('+dormant.length+') ⌄</div>':'')+'</div>'; }
       body.innerHTML=html;
-      body.querySelectorAll('.ac-tr:not(.head)').forEach(function(r){r.addEventListener('click',function(){var l=BYKEY[r.dataset.key]||uni.filter(function(x){return (x._key||decDom(x.website))===r.dataset.key;})[0];if(l)openFromTareas(l);});});
+      function bindRows(scope){ (scope||body).querySelectorAll('.ac-tr:not(.head)').forEach(function(r){ if(r._b)return; r._b=1; r.addEventListener('click',function(){var l=BYKEY[r.dataset.key]||uni.filter(function(x){return (x._key||decDom(x.website))===r.dataset.key;})[0];if(l)openFromTareas(l);}); }); }
+      bindRows();
       body.querySelectorAll('.ac-card[data-scroll]').forEach(function(c){c.addEventListener('click',function(){var t=document.getElementById(c.dataset.scroll);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});});
-      var exp=body.querySelector('[data-exp="urgent"]'); if(exp) exp.addEventListener('click',function(){var p=document.getElementById('ac-urgent');p.querySelectorAll('.ac-tr:not(.head)').forEach(function(x){x.remove();});exp.remove();var frag=urgent.map(acRow).join('');p.insertAdjacentHTML('beforeend',frag);p.querySelectorAll('.ac-tr:not(.head)').forEach(function(r){r.addEventListener('click',function(){var l=BYKEY[r.dataset.key];if(l)openFromTareas(l);});});});
+      body.querySelectorAll('.ac-more-row[data-exp]').forEach(function(exp){exp.addEventListener('click',function(){var which=exp.dataset.exp;var list=which==='dormant'?dormant:urgent;var shown=which==='dormant'?8:6;var p=exp.closest('.ac-panel');exp.remove();p.insertAdjacentHTML('beforeend',list.slice(shown).map(acRow).join(''));bindRows(p);});});
     }
     function renderTareas(){ renderAccion(); }
     function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},1800);}
