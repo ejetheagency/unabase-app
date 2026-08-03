@@ -612,7 +612,9 @@
     var STCLASS={none:'st-none',contacted:'st-contacted',partial:'st-contacted',replied:'st-replied',meeting:'st-meeting',closed:'st-closed',skip:'st-skip'};
     function statusOf(l){var d=decDom(l.website);return (d&&STATUS[d])||l.status||'none';}
     function statusChip(l){var s=statusOf(l);return '<span class="dec-status '+(STCLASS[s]||'st-none')+'">'+(STLABEL[s]||'Nuevo')+'</span>';}
-    function avImg(l){var d=decDom(l.website);return d?'<img class="av-logo" src="https://logo.clearbit.com/'+d+'?size=128" alt="" loading="lazy" onerror="this.remove()">':'';}
+    // Company logos via unavatar.io (aggregates real logos; ?fallback=false => 404 for
+    // unknown domains so onerror cleanly drops to initials). Clearbit's API was shut down.
+    function avImg(l){var d=decDom(l.website);return d?'<img class="av-logo" src="https://unavatar.io/'+encodeURIComponent(d)+'?fallback=false" alt="" loading="lazy" onerror="this.remove()">':'';}
     // ── WRITE layer (mirrors classic cockpit schema exactly; only fires when authenticated) ──
     var EJE_CLIENT='unabase_default', EJE_USER='scarlett';
     function canWrite(){return window.__ejeAuthed===true && !!window.__ejeSB;}
