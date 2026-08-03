@@ -8,7 +8,7 @@
     "contactName": "Jaione Camborda",
     "contactTitle": "Fundadora / Directora / Guionista",
     "contactEmail": "info@esnatu.com",
-    "companyEmail": null,
+    "companyEmail": "produccion@esnatu.com",
     "unabaseScore": 9.4,
     "companyBrief": "Productora cinematográfica independiente de Galicia, España, fundada por la directora-guionista Jaione Camborda. Produjo su aclamada \"O Corno / The Rye Horn\" (2023), ganadora de la Concha de Oro en el Festival de San Sebastián — Camborda es la primera directora española en lograrlo. Cine de autor en gallego/castellano con fuerte compromiso artístico. IG @esnatuzinema verificado (562 seguidores).",
     "additionalContacts": [],
@@ -63,7 +63,7 @@
     "contactName": "Felipe Lage Coro",
     "contactTitle": "Fundador y Productor",
     "contactEmail": "felipe.lage@zeitunfilms.com",
-    "companyEmail": null,
+    "companyEmail": "info@zeitunfilms.com",
     "unabaseScore": 9.3,
     "companyBrief": "Productora de cine de autor de A Coruña, Galicia, dirigida por Felipe Lage Coro, uno de los productores más premiados en festivales de España. Filmografía con Oliver Laxe (\"O que arde\", Premio del Jurado Un Certain Regard Cannes 2019; \"Sirat\", Cannes 2025; \"Mimosas\") y Lois Patiño (\"Costa da Morte\"). IG @zeitunfilms verificado (896 seguidores).",
     "additionalContacts": [],
@@ -90,15 +90,15 @@
     "instagramFollowers": 1642,
     "contactName": "Pedro Palacios",
     "contactTitle": "Fundador y Productor",
-    "contactEmail": "info@lacimaproducciones.com",
-    "companyEmail": null,
+    "contactEmail": "pedropalacios@lacimaproducciones.com",
+    "companyEmail": "info@lacimaproducciones.com",
     "unabaseScore": 9.3,
     "companyBrief": "Productora de cine con sedes en Barcelona y Madrid, fundada por Pedro Palacios y Ricard Sales. Coproducciones y créditos: \"El año del descubrimiento\" (Goya 2020 a Mejor Documental y Montaje), \"Tardes de Soledad\", \"El cerro de los dioses\", \"Alicia\" y \"UMMO\" — largometrajes, series y cortos de autor. IG @lacimaproducciones verificado (1.642 seguidores).",
     "additionalContacts": [
       {
         "name": "Ricard Sales",
         "title": "Fundador y Productor",
-        "email": null
+        "email": "ricardsales@lacimaproducciones.com"
       }
     ],
     "_verifiedCredits": [
@@ -226,7 +226,7 @@
       {
         "name": "Tana Schémbori",
         "title": "Cofundadora / Directora",
-        "email": null
+        "email": "tana@maneglia-schembori.com"
       }
     ],
     "_verifiedCredits": [
@@ -323,7 +323,13 @@
     "companyEmail": "zuatzu@irusoin.com",
     "unabaseScore": 9.2,
     "companyBrief": "Casa de producción y postproducción vasca (Donostia-San Sebastián + Bilbao), fundada en 1982 y referente del cine vasco con 29 premios/nominaciones a los Goya. Respaldó \"Handia\" (10 Goyas), \"La trinchera infinita\" y \"Loreak\" (candidata al Óscar por España). El productor Xabier Berzosa (socio fundador de Moriarti) es el contacto. IG @irusoin.sa (~1.822 seguidores).",
-    "additionalContacts": [],
+    "additionalContacts": [
+      {
+        "name": "Eneko Egaña",
+        "title": "Productor",
+        "email": "eneko@irusoin.com"
+      }
+    ],
     "_verifiedCredits": [
       "Handia (10 Goyas)",
       "Loreak (candidata al Óscar)"
@@ -347,18 +353,18 @@
     "instagramFollowers": 59000,
     "contactName": "Ralph Karam",
     "contactTitle": "Fundador / Director Creativo",
-    "contactEmail": "hello@lecube.tv",
-    "companyEmail": null,
+    "contactEmail": "ralph@lecube.tv",
+    "companyEmail": "hello@lecube.tv",
     "unabaseScore": 9.4,
     "companyBrief": "Estudio de animación de personajes y motion premiado, fundado por Ralph Karam, con oficinas en Buenos Aires y São Paulo. Clientes: Nike, MTV, Cartoon Network, Coca-Cola, Spotify, Uber, Duolingo y Fortnite x Marvel. Animation Company of the Year en Ciclope 2019; premios en Cannes Lions, Clio, The One Show y LIA. IG @lecube.tv verificado (~59.000 seguidores).",
     "additionalContacts": [
       {
-        "name": "Gustavo Karam",
+        "name": "Fer Soma",
         "title": "Productor Ejecutivo",
-        "email": null
+        "email": "fer@lecube.tv"
       },
       {
-        "name": "Juan Manuel Freire",
+        "name": "Gustavo Karam",
         "title": "Productor Ejecutivo",
         "email": null
       }
@@ -387,8 +393,8 @@
     "instagramFollowers": 32200,
     "contactName": "Daniel Vélez",
     "contactTitle": "Fundador / Gerente",
-    "contactEmail": "elbombilloamarillo@gmail.com",
-    "companyEmail": null,
+    "contactEmail": "danielvelez@bombilloamarillo.com",
+    "companyEmail": "elbombilloamarillo@gmail.com",
     "unabaseScore": 9,
     "companyBrief": "Estudio de animación 2D/3D colombiano fundado por Daniel Vélez, con sede en Medellín. Créditos: fondos de \"The Boys\" (Prime Video), personajes/rigs de \"Villano\" (Cartoon Network), \"Kayko and Kokosh\" (Netflix) y coproductor del ganador Cristal de Annecy \"The Violinist\". En 2026 abrió BA Estudios en Bilbao. IG @bombilloamarillo verificado (32.200 seguidores).",
     "additionalContacts": [],
@@ -455,7 +461,13 @@
     "companyEmail": "produccion@reinobuenosaires.com",
     "unabaseScore": 9,
     "companyBrief": "Casa productora publicitaria de Colegiales, CABA, con división propia REINO VFX y un brazo de workflows con IA. Clientes de marca: Coca-Cola, Mercado Libre, McDonald's, Pepsi, Sprite, YPF, Santander, Gatorade y Mercedes-Benz. El productor ejecutivo Matías Gil (\"Matute\") suma 15+ años en postproducción publicitaria. IG @reinobuenosaires verificado (~1.881 seguidores).",
-    "additionalContacts": [],
+    "additionalContacts": [
+      {
+        "name": "Agus Torre",
+        "title": "Fundador",
+        "email": "agus@reinobuenosaires.com"
+      }
+    ],
     "_verifiedCredits": [
       "Coca-Cola / Mercado Libre / McDonald's",
       "REINO VFX"
