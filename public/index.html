@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ejecución</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#06060b;--card:#0e0e18;--sf:#131322;--bd:#1a1a30;--bd2:#252540;--tx:#e8eaf0;--t2:#b0b4c0;--mt:#6b7280;--dm:#40445a;--ac:#d4a017;--ac2:#f5d060;--gn:#22c55e;--gn2:#4ade80;--bl:#3b82f6;--pp:#818cf8;--rd:#ef4444;--am:#f59e0b;--teal:#14b8a6}
@@ -1415,28 +1417,40 @@ async function autoLoad(){
         // correct deploy date. Phantom dates that aren't in the manifest cannot
         // appear; missing contacted leads from past batches are now loadable.
         //
-        // Loads in parallel (~36 small JSON files) so initial render isn't slow.
-        try {
-          window._DOMAIN_TO_BATCH_DATE = new Map();
-          window._ALL_BATCH_LEADS = new Map();
-          const batchFetches = manifest.batches
-            .filter(b => b.file && b.source_date)
-            .map(b => fetch('./' + b.file + cb).then(r => r.ok ? r.json() : null).then(arr => ({ b, arr })).catch(() => ({ b, arr: null })));
-          const results = await Promise.all(batchFetches);
-          for (const { b, arr } of results) {
-            if (!Array.isArray(arr)) continue;
-            arr.forEach(l => {
-              try {
-                const d = new URL(l.website).hostname.replace(/^www\./, '').toLowerCase();
-                if (!window._DOMAIN_TO_BATCH_DATE.has(d)) {
-                  window._DOMAIN_TO_BATCH_DATE.set(d, b.source_date);
-                  window._ALL_BATCH_LEADS.set(d, l);
-                }
-              } catch {}
-            });
-          }
-          console.log('[manifest-load] populated ' + window._DOMAIN_TO_BATCH_DATE.size + ' lead→date entries across ' + manifest.batches.length + ' batches');
-        } catch (e) { console.warn('[manifest-load] err:', e.message); }
+        // ── PERF 2026-07-28 — HISTORIAL MAP NOW LOADS IN THE BACKGROUND ──────
+        // This walk fetches EVERY manifest batch file (now 72 files, ~2.2MB) just
+        // to build the Historial domain→date map. "Hoy" (the primary surface) does
+        // NOT use it — only the Historial tab does. Previously it ran AWAITED here,
+        // BEFORE the active-batch fetch, so the boot loader (and the Historial
+        // search, which is gated on DATA_READY) blocked on all 72 downloads.
+        // Now: init the maps empty (rHist falls back to TL/PL until they fill),
+        // then populate them in the background and refresh Historial if it's open.
+        window._DOMAIN_TO_BATCH_DATE = window._DOMAIN_TO_BATCH_DATE || new Map();
+        window._ALL_BATCH_LEADS = window._ALL_BATCH_LEADS || new Map();
+        (async () => {
+          try {
+            const batchFetches = manifest.batches
+              .filter(b => b.file && b.source_date)
+              .map(b => fetch('./' + b.file + cb).then(r => r.ok ? r.json() : null).then(arr => ({ b, arr })).catch(() => ({ b, arr: null })));
+            const results = await Promise.all(batchFetches);
+            for (const { b, arr } of results) {
+              if (!Array.isArray(arr)) continue;
+              arr.forEach(l => {
+                try {
+                  const d = new URL(l.website).hostname.replace(/^www\./, '').toLowerCase();
+                  if (!window._DOMAIN_TO_BATCH_DATE.has(d)) {
+                    window._DOMAIN_TO_BATCH_DATE.set(d, b.source_date);
+                    window._ALL_BATCH_LEADS.set(d, l);
+                  }
+                } catch {}
+              });
+            }
+            console.log('[manifest-load] populated ' + window._DOMAIN_TO_BATCH_DATE.size + ' lead→date entries across ' + manifest.batches.length + ' batches (background)');
+            // If Historial is the open tab, re-render now that the full map is in.
+            const hv = document.getElementById('v-hist');
+            if (hv && hv.classList.contains('on')) { const q = document.querySelector('.hs'); rHist(q ? q.value : ''); }
+          } catch (e) { console.warn('[manifest-load bg] err:', e.message); }
+        })();
         const active=manifest.batches.find(b=>b.batch_id===manifest.active_batch_id);
         if(active&&active.file){
           const lr=await fetch('./'+active.file+cb);
