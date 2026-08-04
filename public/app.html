@@ -402,9 +402,9 @@
       </button>
       <div class="ws-menu" id="wsMenu">
         <div class="ws-sep">Cuentas de cliente</div>
-        <button class="ws-opt" data-ws="UnaBase" data-acct="#c6902a" data-kind="Scarlett"><span class="d" style="background:#c6902a"></span><span class="n">UnaBase</span><span class="k">Scarlett</span></button>
+        <button class="ws-opt" data-ws="UnaBase" data-client="unabase_default" data-acct="#c6902a" data-kind="Scarlett"><span class="d" style="background:#c6902a"></span><span class="n">UnaBase</span><span class="k">Scarlett</span></button>
         <div class="ws-sep">Interno</div>
-        <button class="ws-opt" data-ws="EJE · outbound" data-acct="#3f8cff" data-kind="Emiliano"><span class="d" style="background:#3f8cff"></span><span class="n">EJE · outbound</span><span class="k">Emiliano</span></button>
+        <button class="ws-opt" data-ws="EJE Websites" data-client="eje_web" data-acct="#3f8cff" data-kind="Emiliano"><span class="d" style="background:#3f8cff"></span><span class="n">EJE Websites</span><span class="k">Emiliano</span></button>
       </div>
     </div>
 
@@ -544,19 +544,24 @@
     if(last) go(last);
   })();
 
-  // ── workspace switcher (account indicator only) ──
+  // ── workspace switcher (switches the active client_id + reloads; default-safe) ──
   (function(){
     var btn=document.getElementById('wsBtn'), menu=document.getElementById('wsMenu');
+    function activeClient(){try{return localStorage.getItem('eje_ws')||'unabase_default';}catch(e){return 'unabase_default';}}
     btn.addEventListener('click',function(e){e.stopPropagation();var open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);});
     document.addEventListener('click',function(){menu.classList.remove('open');btn.setAttribute('aria-expanded','false');});
+    var cur=activeClient();
     document.querySelectorAll('.ws-opt').forEach(function(o){
-      o.addEventListener('click',function(){
+      if(o.dataset.client===cur){
         document.getElementById('wsName').textContent=o.dataset.ws;
         document.getElementById('wsDot').style.background=o.dataset.acct;
         document.documentElement.style.setProperty('--acct',o.dataset.acct);
-        var g=document.getElementById('greetSub');
-        g.textContent=o.dataset.ws+' · 15 decisores en cola hoy';
-        document.getElementById('greet').textContent='Buen día, '+o.dataset.kind+'.';
+        var gr=document.getElementById('greet'); if(gr) gr.textContent='Buen día, '+o.dataset.kind+'.';
+      }
+      o.addEventListener('click',function(){
+        if(o.dataset.client===activeClient()){menu.classList.remove('open');return;}
+        try{localStorage.setItem('eje_ws',o.dataset.client);}catch(e){}
+        location.reload();
       });
     });
   })();
@@ -616,7 +621,7 @@
     // unknown domains so onerror cleanly drops to initials). Clearbit's API was shut down.
     function avImg(l){var d=decDom(l.website);return d?'<img class="av-logo" src="https://unavatar.io/'+encodeURIComponent(d)+'?fallback=false" alt="" loading="lazy" onerror="this.remove()">':'';}
     // ── WRITE layer (mirrors classic cockpit schema exactly; only fires when authenticated) ──
-    var EJE_CLIENT='unabase_default', EJE_USER='scarlett';
+    var EJE_CLIENT=(function(){try{return localStorage.getItem('eje_ws')||'unabase_default';}catch(e){return 'unabase_default';}})(), EJE_USER='scarlett';
     function canWrite(){return window.__ejeAuthed===true && !!window.__ejeSB;}
     function sbStatusWrite(id,status){var sb=window.__ejeSB;return sb.from('status_history').insert({lead_id:id,user_name:EJE_USER,status:status,client_id:EJE_CLIENT}).then(function(){return sb.from('leads').update({status:status,updated_at:new Date().toISOString()}).eq('id',id).eq('client_id',EJE_CLIENT);});}
     function sbActionWrite(id,ch){var sb=window.__ejeSB;return sb.from('actions').delete().match({lead_id:id,channel:ch,user_name:EJE_USER,client_id:EJE_CLIENT}).then(function(){return sb.from('actions').insert({lead_id:id,user_name:EJE_USER,channel:ch,completed:true,client_id:EJE_CLIENT});});}
@@ -650,7 +655,7 @@
     }
     function loadStatus(){
       var sb=window.__ejeSB; if(!sb) return Promise.resolve();
-      return sb.from('leads').select('id,status').eq('client_id','unabase_default').limit(2000)
+      return sb.from('leads').select('id,status').eq('client_id',EJE_CLIENT).limit(2000)
         .then(function(r){(r.data||[]).forEach(function(row){if(row.id)STATUS[String(row.id).toLowerCase()]=row.status||'none';});})
         .catch(function(){});
     }
@@ -730,8 +735,8 @@
     function loadUniverse(){
       var sb=window.__ejeSB; if(!sb) return Promise.resolve();
       return Promise.all([
-        sb.from('leads').select('id,company,contact_name,contact_email,score,status,lead_data,source_date').eq('client_id','unabase_default').limit(3000),
-        sb.from('messages_sent').select('lead_id,sent_at').eq('client_id','unabase_default').limit(9000)
+        sb.from('leads').select('id,company,contact_name,contact_email,score,status,lead_data,source_date').eq('client_id',EJE_CLIENT).limit(3000),
+        sb.from('messages_sent').select('lead_id,sent_at').eq('client_id',EJE_CLIENT).limit(9000)
       ]).then(function(res){
         MSGS={};
         ((((res[1]||{}).data))||[]).forEach(function(m){var d=String(m.lead_id||'').toLowerCase();var t=new Date(m.sent_at).getTime();if(d&&!isNaN(t)){(MSGS[d]=MSGS[d]||[]).push(t);}});
@@ -945,6 +950,7 @@
     }
     function renderHistorial(){
       var body=document.getElementById('hist-body'); if(!body)return;
+      if(EJE_CLIENT!=='unabase_default'){ body.innerHTML='<div class="tq-empty">El historial de reportes es específico de UnaBase.</div>'; var hs=document.getElementById('hist-sub'); if(hs) hs.textContent=''; return; }
       function paint(){
         var batches=(MANIFEST.batches||[]).filter(function(b){return b.file&&b.source_date;});
         var sub=document.getElementById('hist-sub'); if(sub) sub.textContent=batches.length+' reportes despachados';
@@ -965,6 +971,14 @@
       fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){MANIFEST=m;paint();}).catch(function(){body.innerHTML='<div class="tq-empty">No se pudo cargar.</div>';});
     }
     function load(){
+      // Non-UnaBase workspaces (e.g. eje_web) have no report manifest — load purely from Supabase.
+      if(EJE_CLIENT!=='unabase_default'){
+        loadStatus().then(function(){ return loadUniverse(); }).then(function(){
+          DATA={date:new Date().toISOString().slice(0,10),leads:(UNIVERSE||[]).slice()};
+          render(); if(typeof renderAccion==='function') renderAccion(); if(typeof renderHoy==='function') renderHoy();
+        }).catch(function(){ if(subEl) subEl.textContent='No se pudo cargar.'; });
+        return;
+      }
       // local-first: paint cache instantly, then refresh in background
       try{var c=localStorage.getItem('eje_dec_cache'); if(c){DATA=JSON.parse(c); render(); if(typeof renderHoy==='function') renderHoy();}}catch(e){}
       var cb='?v='+Date.now();
@@ -993,8 +1007,8 @@
     // if the app restored to Decisores or Tareas on load, fetch too
     try{ var lv=localStorage.getItem('eje_view'); if(lv==='decisores'||lv==='tareas'||lv==='hoy') ensure(); }catch(e){}
 
-    // progressive: reflect the REAL active-batch size on Home (after paint, non-blocking)
-    fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){
+    // progressive: reflect the REAL active-batch size on Home (after paint, non-blocking) — UnaBase only
+    if(EJE_CLIENT==='unabase_default') fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){
       var a=(m.batches||[]).find(function(b){return b.batch_id===m.active_batch_id;});
       var el=document.getElementById('greetSub');
       if(a&&el) el.textContent='UnaBase · '+a.lead_count+' decisores en cola hoy';
@@ -1006,8 +1020,8 @@
       function wkStart(d){var x=new Date(d);var day=(x.getDay()+6)%7;x.setHours(0,0,0,0);x.setDate(x.getDate()-day);return x;}
       function dstr(d){return new Date(d).toISOString().slice(0,10);}
       Promise.all([
-        sb.from('messages_sent').select('sent_at').eq('client_id','unabase_default').limit(6000),
-        sb.from('status_history').select('status,created_at').eq('client_id','unabase_default').limit(9000)
+        sb.from('messages_sent').select('sent_at').eq('client_id',EJE_CLIENT).limit(6000),
+        sb.from('status_history').select('status,created_at').eq('client_id',EJE_CLIENT).limit(9000)
       ]).then(function(res){
         var msgs=(((res[0]||{}).data)||[]).map(function(m){return new Date(m.sent_at);}).filter(function(d){return !isNaN(d);});
         var sh=(((res[1]||{}).data)||[]).filter(function(r){return r.status==='replied'||r.status==='meeting';}).map(function(r){return new Date(r.created_at);}).filter(function(d){return !isNaN(d);});
