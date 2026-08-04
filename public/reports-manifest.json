@@ -1,13 +1,32 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-08-04",
+      "source_date": "2026-08-04",
+      "file": "leads-2026-08-04.json",
+      "lead_count": 10,
+      "approved": true,
+      "approved_at": "2026-08-04T13:00:00.000Z",
+      "status": "active",
+      "disable_carry_forward": false,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "08-04 pool-dispatch: MX-plurality (4: Radiola/Grupo Expert/Corazón/Autonauta) + AR2 (Gema/Oh My Gómez) + GT1 (A La Deriva) + CO1 (Jaguar Taller Digital) + ES2 (Lamia/Massa d'Or). 8/10 priority-tier, MX plurality. All pre-enriched pool leads: emails deliverable, named DMs, briefs 300+, link-liveness 0 dead. 2 email-only (Jaguar/Lamia).",
+      "supply_metrics": {
+        "mode": "pool_dispatch",
+        "priority": 8,
+        "frontier": 0,
+        "adjacent": 0,
+        "avg_score": 8.86
+      }
+    },
+    {
       "batch_id": "batch-2026-08-03",
       "source_date": "2026-08-03",
       "file": "leads-2026-08-03.json",
       "lead_count": 15,
       "approved": true,
       "approved_at": "2026-08-03T13:00:00.000Z",
-      "status": "active",
+      "status": "archived",
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
       "note": "08-03 pool-dispatch: priority ES5/MX1/CO1 + AR2 + frontier (UY/PE/DO/PY/BO/EC). 11 core cinema + 4 adjacent-creative (Le Cube/Bombillo/Melocoton/Reino). Deep extra-enrichment pass: fixed emails (Cinekdoque->Federico, Irusoin->Berzosa, Maneglia->Luis Amarilla, Melocoton->Christian), refreshed IG counts, cleaned rosters. Locked first-touch template.",
@@ -1337,7 +1356,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-08-03",
+  "active_batch_id": "batch-2026-08-04",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-03T13:00:00.000Z"
+  "last_updated": "2026-08-04T13:00:00.000Z"
 }
