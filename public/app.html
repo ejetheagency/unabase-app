@@ -553,6 +553,16 @@
   (function(){
     var btn=document.getElementById('wsBtn'), menu=document.getElementById('wsMenu');
     function activeClient(){try{return localStorage.getItem('eje_ws')||'unabase_default';}catch(e){return 'unabase_default';}}
+    // EJE Websites workspace is private to Emiliano's accounts — hide it from everyone else.
+    var EJE_OWNERS=['ejofreeyzaguirre@gmail.com','contact@ejetheagency.com'];
+    window.__ejeApplyWsGate=function(){
+      var opt=document.querySelector('.ws-opt[data-client="eje_web"]'); if(!opt) return;
+      var email=(window.__ejeEmail||'').toLowerCase(), owner=EJE_OWNERS.indexOf(email)>=0;
+      opt.style.display=owner?'':'none';
+      // once we KNOW the email (post-auth) and it's NOT an owner, boot any stray session out of eje_web
+      if(email && !owner && activeClient()==='eje_web'){ try{localStorage.setItem('eje_ws','unabase_default');}catch(e){} location.reload(); }
+    };
+    window.__ejeApplyWsGate();
     btn.addEventListener('click',function(e){e.stopPropagation();var open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);});
     document.addEventListener('click',function(){menu.classList.remove('open');btn.setAttribute('aria-expanded','false');});
     var cur=activeClient();
@@ -594,7 +604,7 @@
     function handleSession(session){
       if(!session){ showLogin(); return; }
       var em=((session.user&&session.user.email)||'').toLowerCase();
-      if(ALLOWED.indexOf(em)>=0){ window.__ejeAuthed=true; showApp(); }
+      if(ALLOWED.indexOf(em)>=0){ window.__ejeAuthed=true; window.__ejeEmail=em; if(window.__ejeApplyWsGate)window.__ejeApplyWsGate(); showApp(); }
       else { window.__ejeAuthed=false; errEl.textContent='La cuenta '+em+' no tiene acceso. Pedile a EJE que la habilite.'; errEl.style.display='block'; try{sb.auth.signOut();}catch(e){} showLogin(); }
     }
     if(sb){
