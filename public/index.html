@@ -373,6 +373,10 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .hg-stat.closed{background:#150a28;color:#d8b4fe}
 .hg-body{padding:4px 8px 10px;border-top:1px solid var(--bd)}
 .hg.collapsed .hg-body{display:none}
+.hg-resp{margin:6px 2px 8px;padding:7px 10px;border-radius:6px;background:#0a1f12;border:1px solid rgba(52,211,153,.28);color:var(--gn2,#6ee7b7);font-size:10px;line-height:1.5}
+.hg-resp b{color:#a7f3d0;font-weight:700}
+.hg-resp-i{font-weight:800;margin-right:2px}
+.hi.resp{border-color:rgba(52,211,153,.45);box-shadow:inset 3px 0 0 var(--gn2,#34d399)}
 .hi{background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:8px 12px;margin-top:4px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:.15s}
 .hi:hover{background:var(--sf);border-color:var(--ac)}
 .hi-n{font-weight:600;font-size:11px;flex:1;color:#fff;display:flex;align-items:center;gap:6px}
@@ -2497,9 +2501,11 @@ function rHist(q){
   const dates=Object.keys(byDate).sort((a,b)=>b.localeCompare(a));
 
   let h='';
+  // Within a report, surface who ENGAGED first: meeting > replied, then the rest.
+  const stPri={meeting:0,replied:1,contacted:2,partial:3,none:4,closed:5};
   dates.forEach(date=>{
     const items=byDate[date];
-    items.sort((a,b)=>new Date(b.up||0)-new Date(a.up||0));
+    items.sort((a,b)=>{const pa=stPri[cSt(a)]??9,pb=stPri[cSt(b)]??9;return pa-pb||(new Date(b.up||0)-new Date(a.up||0));});
     // Per-status counts
     const counts={};
     items.forEach(r=>{const s=cSt(r);counts[s]=(counts[s]||0)+1;});
@@ -2507,6 +2513,11 @@ function rHist(q){
     const statChips=order.filter(k=>counts[k]).map(k=>`<span class="hg-stat ${k}">${counts[k]} ${STATUS_LABEL[k].toLowerCase()}</span>`).join('');
     const collapsedClass=(date===activeDate)?'':' collapsed';
     h+=`<div class="hg${collapsedClass}"><div class="hg-t" onclick="this.parentElement.classList.toggle('collapsed')"><span class="hg-date">${date}</span><span class="hg-c">${items.length}</span><span class="hg-stats">${statChips}</span></div><div class="hg-body">`;
+    // "Who responded" summary — the fast answer to "who replied, and from which report"
+    const responders=items.filter(r=>{const s=cSt(r);return s==='replied'||s==='meeting';});
+    if(responders.length){
+      h+=`<div class="hg-resp"><span class="hg-resp-i">✔</span> Respondieron (${responders.length}): `+responders.map(r=>`<b>${esc(r.co)}</b>${cSt(r)==='meeting'?' · reunión':''}`).join(' · ')+`</div>`;
+    }
     items.forEach(r=>{
       const a=(r.acts||[]).length;
       const m=(r.msgs||[]).filter(x=>x.tx!==AUTO_ANCHOR_TX).length;
@@ -2517,7 +2528,8 @@ function rHist(q){
       // REACTIVAR card in Acción Ahora so the operator can spot them anywhere.
       const lead=leadByDom.get(r.id);
       const reactBadge=(lead&&lead._reactivationMode)?'<span class="hi-st reactivation">REACTIVAR</span>':'';
-      h+=`<div class="hi" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}${reactBadge}${stBadge}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`;
+      const respClass=(st==='replied'||st==='meeting')?' resp':'';
+      h+=`<div class="hi${respClass}" onclick="oH('${r.id}')"><div class="hi-n">${esc(r.co)}${reactBadge}${stBadge}</div><div class="hi-a">${a} acc · ${m} msgs</div><div class="hi-d">${r.up?r.up.slice(0,10):''}</div></div>`;
     });
     h+='</div></div>';
   });
