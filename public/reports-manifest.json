@@ -1,6 +1,40 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-08-06",
+      "source_date": "2026-08-06",
+      "file": "leads-2026-08-06.json",
+      "lead_count": 18,
+      "approved": true,
+      "approved_at": "2026-08-06T13:00:00.000Z",
+      "status": "queued",
+      "scheduled": true,
+      "disable_carry_forward": false,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "QUEUED 2026-08-06 — auto-activates on its date (ET). Pre-enriched pool dispatch, audit-safe emails, geo {\"Argentina\":5,\"Guatemala\":2,\"Colombia\":1,\"Mexico\":1,\"Spain\":7,\"Ecuador\":1,\"Uruguay\":1}. 3 gates clean at queue time.",
+      "supply_metrics": {
+        "mode": "pool_dispatch_queued",
+        "avg_score": 8.62
+      }
+    },
+    {
+      "batch_id": "batch-2026-08-05",
+      "source_date": "2026-08-05",
+      "file": "leads-2026-08-05.json",
+      "lead_count": 18,
+      "approved": true,
+      "approved_at": "2026-08-05T13:00:00.000Z",
+      "status": "queued",
+      "scheduled": true,
+      "disable_carry_forward": false,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "QUEUED 2026-08-05 — auto-activates on its date (ET). Pre-enriched pool dispatch, audit-safe emails, geo {\"Argentina\":6,\"Mexico\":2,\"Colombia\":2,\"Uruguay\":3,\"Spain\":5}. 3 gates clean at queue time.",
+      "supply_metrics": {
+        "mode": "pool_dispatch_queued",
+        "avg_score": 8.61
+      }
+    },
+    {
       "batch_id": "batch-2026-08-04",
       "source_date": "2026-08-04",
       "file": "leads-2026-08-04.json",
@@ -1359,5 +1393,5 @@
   ],
   "active_batch_id": "batch-2026-08-04",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-04T13:00:00.000Z"
+  "last_updated": "2026-08-04T13:30:00.000Z"
 }
