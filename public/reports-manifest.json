@@ -4,19 +4,20 @@
       "batch_id": "batch-2026-08-04",
       "source_date": "2026-08-04",
       "file": "leads-2026-08-04.json",
-      "lead_count": 10,
+      "lead_count": 18,
       "approved": true,
       "approved_at": "2026-08-04T13:00:00.000Z",
       "status": "active",
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
-      "note": "08-04 pool-dispatch: MX-plurality (4: Radiola/Grupo Expert/Corazón/Autonauta) + AR2 (Gema/Oh My Gómez) + GT1 (A La Deriva) + CO1 (Jaguar Taller Digital) + ES2 (Lamia/Massa d'Or). 8/10 priority-tier, MX plurality. All pre-enriched pool leads: emails deliverable, named DMs, briefs 300+, link-liveness 0 dead. 2 email-only (Jaguar/Lamia).",
+      "note": "08-04 pool-dispatch (18 = locked composition 10 core + 5 adjacent-creative + 3 frontera). Core MX-plurality: Radiola/Grupo Expert/Corazón/Autonauta + Gema/Oh My Gómez + A La Deriva + Jaguar + Ringo/Massa dOr. Adjacent: Suricata/DeTuco/Draff/Dessignare/Punto8. Frontera: SOMOS DER/Fonktown/LaPizarra. Live enrichment pass: IG counts refreshed+verified, rosters harvested, Suricata DM corrected to founder Aída Argüelles, SOMOS DER URL fixed to somosder.ar. DROPPED Gusana Films (founder deceased 2023). 3 gates clean.",
       "supply_metrics": {
         "mode": "pool_dispatch",
-        "priority": 8,
-        "frontier": 0,
-        "adjacent": 0,
-        "avg_score": 8.86
+        "core": 10,
+        "adjacent": 5,
+        "frontera": 3,
+        "priority": 12,
+        "avg_score": 8.71
       }
     },
     {

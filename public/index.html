@@ -1429,8 +1429,9 @@ async function autoLoad(){
         window._ALL_BATCH_LEADS = window._ALL_BATCH_LEADS || new Map();
         (async () => {
           try {
+            const _todayET=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})).toISOString().slice(0,10);
             const batchFetches = manifest.batches
-              .filter(b => b.file && b.source_date)
+              .filter(b => b.file && b.source_date && b.source_date <= _todayET)  // skip FUTURE queued batches (stay invisible until their day)
               .map(b => fetch('./' + b.file + cb).then(r => r.ok ? r.json() : null).then(arr => ({ b, arr })).catch(() => ({ b, arr: null })));
             const results = await Promise.all(batchFetches);
             for (const { b, arr } of results) {
@@ -1450,6 +1451,27 @@ async function autoLoad(){
             const hv = document.getElementById('v-hist');
             if (hv && hv.classList.contains('on')) { const q = document.querySelector('.hs'); rHist(q ? q.value : ''); }
           } catch (e) { console.warn('[manifest-load bg] err:', e.message); }
+        })();
+        // ── QUEUE 2026-08-04 — DATE-SCHEDULED AUTO-ACTIVATION ───────────────
+        // Reports can be enriched + committed DAYS in advance and auto-go-live
+        // on their date — no manual manifest edit, no same-day deploy. Any batch
+        // flagged `scheduled:true` becomes the active batch automatically once its
+        // `source_date` has arrived (America/New_York clock). Among all due
+        // scheduled batches (source_date <= today), the NEWEST date wins. Future
+        // scheduled batches stay dormant (their leads are also blocked by the
+        // future-date "Hoy" gate below until their day). If nothing is scheduled/
+        // due, we fall back to the manually-set active_batch_id (legacy behavior).
+        (function(){
+          try{
+            const todayET=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})).toISOString().slice(0,10);
+            const due=(manifest.batches||[])
+              .filter(b=>b.scheduled&&b.file&&b.source_date&&b.source_date<=todayET)
+              .sort((a,b)=>b.source_date.localeCompare(a.source_date));
+            if(due.length&&due[0].batch_id!==manifest.active_batch_id){
+              console.log('[queue] date-activated '+due[0].batch_id+' (source_date '+due[0].source_date+' <= '+todayET+'); was '+manifest.active_batch_id);
+              manifest.active_batch_id=due[0].batch_id;
+            }
+          }catch(e){ console.warn('[queue] activation err:',e.message); }
         })();
         const active=manifest.batches.find(b=>b.batch_id===manifest.active_batch_id);
         if(active&&active.file){
@@ -1501,7 +1523,9 @@ async function autoLoad(){
                 (sbRows||[]).forEach(r=>{ if(r.id) sbStatusMap.set(r.id.toLowerCase(),r.status||'none'); });
               }catch(e){console.warn('[carry-forward] supabase snapshot err:',e.message);}
 
-              let prevBatches=manifest.batches.filter(b=>b.batch_id!==manifest.active_batch_id&&b.file);
+              // QUEUE-SAFE: never carry-forward from a FUTURE scheduled batch (source_date > today),
+              // otherwise tomorrow's queued leads would get bumped into today's Hoy early.
+              let prevBatches=manifest.batches.filter(b=>b.batch_id!==manifest.active_batch_id&&b.file&&(!b.source_date||b.source_date<=todayET));
               if (carryWhitelist && carryWhitelist.length) {
                 prevBatches = prevBatches.filter(b => carryWhitelist.includes(b.batch_id));
                 console.log('[carry-forward] whitelist active — only pulling from:', carryWhitelist.join(', '));
