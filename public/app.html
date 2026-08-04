@@ -919,7 +919,7 @@
         +rrow('Decisor',esc(l.contactName||'—'))
         +rrow('Email',l.contactEmail?'<a class="link" href="mailto:'+esc(l.contactEmail)+'">'+esc(l.contactEmail)+'</a>':'—')
         +(l.website?rrow('Sitio web','<a class="link ext" href="'+esc(l.website)+'" target="_blank" rel="noopener">'+esc(decDom(l.website)||l.website)+' ↗</a>'):'')
-        +(l.instagramHandle?rrow('Instagram','<span class="link">@'+esc(l.instagramHandle)+(l.instagramFollowers?' · '+fmtK(l.instagramFollowers):'')+'</span>'):'')
+        +(l.instagramHandle?rrow('Instagram','<a class="link ext" href="https://instagram.com/'+esc(l.instagramHandle)+'" target="_blank" rel="noopener">@'+esc(l.instagramHandle)+(l.instagramFollowers?' · '+fmtK(l.instagramFollowers):'')+' ↗</a>'):'')
         +(credits.length?rrow('Créditos',esc(credits.slice(0,2).join(' · '))):'')
         +rrow('País',flag(l.country)+' '+esc(l.country))
         +(l.companyBrief?rrow('Nota',esc(String(l.companyBrief).slice(0,180))):'')
