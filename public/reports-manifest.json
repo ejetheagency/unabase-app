@@ -72,14 +72,14 @@
       "batch_id": "batch-2026-08-05",
       "source_date": "2026-08-05",
       "file": "leads-2026-08-05.json",
-      "lead_count": 18,
+      "lead_count": 20,
       "approved": true,
       "approved_at": "2026-08-05T13:00:00.000Z",
       "status": "queued",
       "scheduled": true,
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
-      "note": "QUEUED 2026-08-05 — auto-activates on its date (ET). Pre-enriched pool dispatch, audit-safe emails, geo {\"Argentina\":6,\"Mexico\":2,\"Colombia\":2,\"Uruguay\":3,\"Spain\":5}. 3 gates clean at queue time.",
+      "note": "QUEUED 2026-08-05 — auto-activates on its date (ET). Pre-enriched pool dispatch, audit-safe emails, geo {\"Argentina\":6,\"Mexico\":2,\"Colombia\":2,\"Uruguay\":3,\"Spain\":5}. 3 gates clean at queue time. +2 bounce-recontacts (Corazón Films, Grupo Expert) with new emails.",
       "supply_metrics": {
         "mode": "pool_dispatch_queued",
         "avg_score": 8.61
