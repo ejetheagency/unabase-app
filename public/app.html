@@ -275,11 +275,27 @@
   .tq-dot{width:8px;height:8px;border-radius:50%;flex:none}
   .tq-dot.due{background:var(--crit)}.tq-dot.soon{background:var(--warn)}
   .tq-empty{font-size:13px;color:var(--ink-3);padding:8px 2px}
-  .hist-row{display:flex;align-items:center;gap:12px;background:var(--canvas);border:1px solid var(--line-2);border-radius:11px;padding:12px 15px;box-shadow:var(--sh-sm);flex-wrap:wrap;margin-bottom:8px}
+  .hist-item{margin-bottom:8px}
+  .hist-row{display:flex;align-items:center;gap:12px;background:var(--canvas);border:1px solid var(--line-2);border-radius:11px;padding:12px 15px;box-shadow:var(--sh-sm);flex-wrap:wrap;cursor:pointer;transition:.12s;user-select:none}
+  .hist-row:hover{border-color:var(--info);background:color-mix(in srgb,var(--info) 4%,var(--canvas))}
+  .hist-item.open .hist-row{border-bottom-left-radius:0;border-bottom-right-radius:0;border-color:var(--info)}
+  .hist-caret{font-size:10px;color:var(--ink-3);width:12px;flex:none}
   .hist-date{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--ink);min-width:92px}
   .hist-n{font-size:12px;color:var(--ink-2);font-weight:600}
   .hist-active{font-size:10px;font-weight:700;color:var(--ok);background:color-mix(in srgb,var(--ok) 13%,transparent);border-radius:6px;padding:2px 8px}
   .hist-note{font-size:12px;color:var(--ink-3);flex:1;min-width:200px}
+  .hist-detail{display:none}
+  .hist-item.open .hist-detail{display:block;background:var(--canvas);border:1px solid var(--info);border-top:none;border-radius:0 0 11px 11px;padding:6px 10px 10px}
+  .hist-d-hd{font-size:10.5px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:var(--ok);padding:8px 4px 6px}
+  .hist-d-row{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:color-mix(in srgb,var(--ok) 7%,var(--canvas));border:1px solid color-mix(in srgb,var(--ok) 22%,transparent);border-radius:8px;padding:9px 12px;margin-top:5px;cursor:pointer;box-shadow:inset 3px 0 0 var(--ok)}
+  .hist-d-row:hover{background:color-mix(in srgb,var(--ok) 13%,var(--canvas))}
+  .hd-co{font-weight:700;font-size:13px;color:var(--ink)}
+  .hd-dm{font-size:12px;color:var(--ink-2);flex:1}
+  .hd-badge{font-size:9.5px;font-weight:800;padding:2px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.3px}
+  .hd-badge.rep{color:var(--ok);background:color-mix(in srgb,var(--ok) 15%,transparent)}
+  .hd-badge.meet{color:var(--info);background:color-mix(in srgb,var(--info) 15%,transparent)}
+  .hist-d-empty{font-size:12px;color:var(--ink-3);padding:10px 4px}
+  .hist-d-foot{font-size:11px;color:var(--ink-3);padding:8px 4px 2px;border-top:1px solid var(--line-2);margin-top:8px}
   /* ── Centro de Acción (cadence command center) ── */
   .ac-topsub{font-size:13.5px;color:var(--ink-2);margin:-4px 0 18px}
   .ac-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
@@ -970,7 +986,26 @@
       openCard(l);
     }
     var MANIFEST=null;
-    var HISTCNT={};
+    var HISTCNT={}, HISTLEADS={};
+    function batchLeads(file){ if(HISTLEADS[file])return Promise.resolve(HISTLEADS[file]); return fetch('./'+file+'?v='+Date.now()).then(function(r){return r.ok?r.json():[];}).then(function(arr){ if(!Array.isArray(arr))arr=(arr&&arr.leads)||[]; HISTLEADS[file]=arr; return arr; }).catch(function(){return [];}); }
+    // Drill-down: list WHO responded in a report (company + decisor), responders first, meetings on top.
+    function histDetail(file, el){
+      batchLeads(file).then(function(arr){
+        var resp=[], rest=0;
+        arr.forEach(function(l){ var st=statusOf(l); if(st==='replied'||st==='meeting') resp.push({l:l,st:st}); else if(st!=='none') rest++; });
+        resp.sort(function(a,b){ return (a.st==='meeting'?0:1)-(b.st==='meeting'?0:1); });
+        var h='';
+        if(resp.length){
+          h+='<div class="hist-d-hd">Respondieron ('+resp.length+')</div>';
+          h+=resp.map(function(x){ var l=x.l, co=l.companyName||l._key||'—', dm=l.contactName||'—';
+            var badge=x.st==='meeting'?'<span class="hd-badge meet">Reunión</span>':'<span class="hd-badge rep">Respondió</span>';
+            return '<button class="hist-d-row" data-key="'+esc(decDom(l.website)||'')+'"><span class="hd-co">'+esc(co)+'</span><span class="hd-dm">'+esc(dm)+'</span>'+badge+'</button>'; }).join('');
+        } else { h+='<div class="hist-d-empty">Sin respuestas todavía en este reporte.</div>'; }
+        h+='<div class="hist-d-foot">'+rest+' contactados sin respuesta aún</div>';
+        el.innerHTML=h;
+        el.querySelectorAll('.hist-d-row').forEach(function(r){ r.addEventListener('click',function(e){ e.stopPropagation(); var k=r.dataset.key; var lead=(typeof BYKEY!=='undefined'&&BYKEY[k])||arr.filter(function(l){return decDom(l.website)===k;})[0]; if(lead&&typeof openFromTareas==='function') openFromTareas(lead); }); });
+      });
+    }
     function batchCounts(b){
       if(HISTCNT[b.file]) return Promise.resolve(HISTCNT[b.file]);
       return fetch('./'+b.file+'?v='+Date.now()).then(function(r){return r.ok?r.json():[];}).then(function(arr){
@@ -982,21 +1017,28 @@
     function renderHistorial(){
       var body=document.getElementById('hist-body'); if(!body)return;
       if(EJE_CLIENT!=='unabase_default'){ body.innerHTML='<div class="tq-empty">El historial de reportes es específico de UnaBase.</div>'; var hs=document.getElementById('hist-sub'); if(hs) hs.textContent=''; return; }
+      // Ensure Supabase statuses are loaded (needed to know who responded) even if Historial is the first tab opened.
+      if(typeof loadStatus==='function' && !renderHistorial._statusLoaded){ renderHistorial._statusLoaded=true; loadStatus().then(function(){ HISTCNT={}; renderHistorial(); }).catch(function(){}); }
       function paint(){
         var _today=ejeTodayET();
         var batches=(MANIFEST.batches||[]).filter(function(b){return b.file&&b.source_date&&b.source_date<=_today;});  // hide FUTURE queued reports until their day
         var _active=(ejeActiveBatch(MANIFEST)||{}).batch_id;
-        var sub=document.getElementById('hist-sub'); if(sub) sub.textContent=batches.length+' reportes despachados';
+        var sub=document.getElementById('hist-sub'); if(sub) sub.textContent=batches.length+' reportes despachados · toca un reporte para ver quién respondió';
         body.innerHTML=batches.map(function(b){
-          return '<div class="hist-row"><span class="hist-date">'+esc(b.source_date)+'</span>'
+          return '<div class="hist-item"><div class="hist-row" data-file="'+esc(b.file)+'"><span class="hist-caret">▸</span><span class="hist-date">'+esc(b.source_date)+'</span>'
             +'<span class="hist-n">'+esc(b.lead_count||'?')+' decisores</span>'
             +(b.batch_id===_active?'<span class="hist-active">activo</span>':'')
-            +'<span class="hist-out" data-file="'+esc(b.file)+'" style="font-size:12px;font-weight:650;color:var(--ink-3)">·</span>'
-            +'<span class="hist-note">'+esc(String(b.note||'').slice(0,80))+'</span></div>';
+            +'<span class="hist-out" data-file="'+esc(b.file)+'" style="margin-left:auto;font-size:12px;font-weight:650;color:var(--ink-3)">·</span></div>'
+            +'<div class="hist-detail" data-file="'+esc(b.file)+'"></div></div>';
         }).join('');
         batches.forEach(function(b){ batchCounts(b).then(function(c){ if(!c)return; var el=body.querySelector('.hist-out[data-file="'+b.file+'"]'); if(!el)return;
           if(c.rep||c.meet){ el.style.color='var(--ok)'; el.innerHTML='✓ '+c.rep+' respondió'+(c.meet?' · <span style="color:var(--info)">'+c.meet+' reunión</span>':''); }
           else { el.style.color='var(--ink-3)'; el.style.fontWeight='500'; el.textContent='sin respuestas aún'; }
+        }); });
+        body.querySelectorAll('.hist-row').forEach(function(row){ row.addEventListener('click',function(){
+          var item=row.parentElement, det=item.querySelector('.hist-detail'), open=item.classList.toggle('open');
+          var car=row.querySelector('.hist-caret'); if(car) car.textContent=open?'▾':'▸';
+          if(open && det && !det.dataset.loaded){ det.dataset.loaded='1'; det.innerHTML='<div class="hist-d-empty">Cargando…</div>'; histDetail(row.dataset.file, det); }
         }); });
       }
       if(MANIFEST){paint();return;}
