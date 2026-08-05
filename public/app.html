@@ -767,10 +767,22 @@
     // directory (background), so a company the operator worked is always findable
     // even if it was never synced to Supabase. Deduped vs the Supabase universe.
     var REPORTS_MERGED=false;
+    // ── QUEUE 2026-08-05 — date-scheduled active batch (mirror of index.html) ──
+    // A batch flagged scheduled:true becomes the active report automatically once its source_date
+    // has arrived (America/New_York). Newest due wins. Fallback: the manual active_batch_id. Without
+    // this, Hoy loaded the literal active_batch_id (a past batch) and showed nothing for today.
+    function ejeTodayET(){ try{ return new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})).toISOString().slice(0,10); }catch(e){ return new Date().toISOString().slice(0,10); } }
+    function ejeActiveBatch(m){
+      var today=ejeTodayET();
+      var due=(m.batches||[]).filter(function(b){return b.scheduled&&b.file&&b.source_date&&b.source_date<=today;}).sort(function(a,b){return a.source_date<b.source_date?1:(a.source_date>b.source_date?-1:0);});
+      if(due.length) return due[0];
+      return (m.batches||[]).find(function(b){return b.batch_id===m.active_batch_id;});
+    }
     function loadReportLeads(){
       if(REPORTS_MERGED) return Promise.resolve(); REPORTS_MERGED=true;
       return fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){
-        var files=Object.keys((m.batches||[]).reduce(function(a,b){if(b.file)a[b.file]=1;return a;},{}));
+        var today=ejeTodayET();
+        var files=Object.keys((m.batches||[]).reduce(function(a,b){if(b.file&&(!b.source_date||b.source_date<=today))a[b.file]=1;return a;},{}));  // skip FUTURE queued files
         return Promise.all(files.map(function(f){return fetch('./'+f+'?v='+Date.now()).then(function(r){return r.ok?r.json():[];}).catch(function(){return [];});}));
       }).then(function(arrs){
         var added=0;
@@ -971,12 +983,14 @@
       var body=document.getElementById('hist-body'); if(!body)return;
       if(EJE_CLIENT!=='unabase_default'){ body.innerHTML='<div class="tq-empty">El historial de reportes es específico de UnaBase.</div>'; var hs=document.getElementById('hist-sub'); if(hs) hs.textContent=''; return; }
       function paint(){
-        var batches=(MANIFEST.batches||[]).filter(function(b){return b.file&&b.source_date;});
+        var _today=ejeTodayET();
+        var batches=(MANIFEST.batches||[]).filter(function(b){return b.file&&b.source_date&&b.source_date<=_today;});  // hide FUTURE queued reports until their day
+        var _active=(ejeActiveBatch(MANIFEST)||{}).batch_id;
         var sub=document.getElementById('hist-sub'); if(sub) sub.textContent=batches.length+' reportes despachados';
         body.innerHTML=batches.map(function(b){
           return '<div class="hist-row"><span class="hist-date">'+esc(b.source_date)+'</span>'
             +'<span class="hist-n">'+esc(b.lead_count||'?')+' decisores</span>'
-            +(b.batch_id===MANIFEST.active_batch_id?'<span class="hist-active">activo</span>':'')
+            +(b.batch_id===_active?'<span class="hist-active">activo</span>':'')
             +'<span class="hist-out" data-file="'+esc(b.file)+'" style="font-size:12px;font-weight:650;color:var(--ink-3)">·</span>'
             +'<span class="hist-note">'+esc(String(b.note||'').slice(0,80))+'</span></div>';
         }).join('');
@@ -1002,7 +1016,7 @@
       try{var c=localStorage.getItem('eje_dec_cache'); if(c){DATA=JSON.parse(c); render(); if(typeof renderHoy==='function') renderHoy();}}catch(e){}
       var cb='?v='+Date.now();
       fetch('./reports-manifest.json'+cb).then(function(r){return r.json();}).then(function(m){
-        var active=(m.batches||[]).find(function(b){return b.batch_id===m.active_batch_id;});
+        var active=ejeActiveBatch(m);   // date-scheduled active batch (today's report), not the literal active_batch_id
         if(!active) throw 0;
         return fetch('./'+active.file+cb).then(function(r){return r.json();}).then(function(leads){
           DATA={date:active.source_date,leads:leads};
@@ -1028,7 +1042,7 @@
 
     // progressive: reflect the REAL active-batch size on Home (after paint, non-blocking) — UnaBase only
     if(EJE_CLIENT==='unabase_default') fetch('./reports-manifest.json?v='+Date.now()).then(function(r){return r.json();}).then(function(m){
-      var a=(m.batches||[]).find(function(b){return b.batch_id===m.active_batch_id;});
+      var a=ejeActiveBatch(m);
       var el=document.getElementById('greetSub');
       if(a&&el) el.textContent='UnaBase · '+a.lead_count+' decisores en cola hoy';
     }).catch(function(){});
