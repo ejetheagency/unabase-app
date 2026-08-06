@@ -1014,9 +1014,54 @@
         var c={rep:rep,meet:meet};HISTCNT[b.file]=c;return c;
       }).catch(function(){return null;});
     }
+    // Day-by-day report history for non-UnaBase workspaces (eje_web) — grouped from Supabase leads.
+    function ejeHistDetail(items, el){
+      var resp=[], sent=0;
+      items.forEach(function(l){ var s=statusOf(l); if(s==='replied'||s==='meeting') resp.push({l:l,st:s}); if(s!=='none') sent++; });
+      var h='';
+      if(resp.length){ h+='<div class="hist-d-hd">Respondieron ('+resp.length+')</div>';
+        h+=resp.map(function(x){ var l=x.l, co=l.companyName||l._key||'—', dm=l.contactName||(l.instagramHandle?('@'+l.instagramHandle):'—');
+          var badge=x.st==='meeting'?'<span class="hd-badge meet">Reunión</span>':'<span class="hd-badge rep">Respondió</span>';
+          return '<button class="hist-d-row" data-key="'+esc(l._key||decDom(l.website)||'')+'"><span class="hd-co">'+esc(co)+'</span><span class="hd-dm">'+esc(dm)+'</span>'+badge+'</button>'; }).join('');
+      }
+      h+='<div class="hist-d-hd" style="color:var(--ink-2)">Empresas del día ('+items.length+')</div>';
+      h+=items.map(function(l){ var s=statusOf(l), co=l.companyName||l._key||'—', ch=l.website?'sitio':(l.instagramHandle?('@'+l.instagramHandle):'email');
+        var stTxt=(typeof STLABEL!=='undefined'&&STLABEL[s])||(s==='none'?'Nuevo':s);
+        return '<button class="hist-d-row" data-key="'+esc(l._key||decDom(l.website)||'')+'" style="box-shadow:none;background:var(--canvas);border-color:var(--line-2)"><span class="hd-co">'+esc(co)+'</span><span class="hd-dm">'+esc(ch)+'</span><span class="hd-badge '+(s==='replied'||s==='meeting'?'rep':'')+'"'+(s==='none'?' style="color:var(--ink-3)"':'')+'>'+esc(stTxt)+'</span></button>'; }).join('');
+      h+='<div class="hist-d-foot">'+sent+'/'+items.length+' contactados</div>';
+      el.innerHTML=h;
+      el.querySelectorAll('.hist-d-row').forEach(function(r){ r.addEventListener('click',function(e){ e.stopPropagation(); var k=r.dataset.key; var lead=(typeof BYKEY!=='undefined'&&BYKEY[k])||items.filter(function(l){return (l._key||decDom(l.website))===k;})[0]; if(lead&&typeof openFromTareas==='function') openFromTareas(lead); }); });
+    }
+    function renderHistorialEje(body){
+      function paint(){
+        var src=(UNIVERSE&&UNIVERSE.length)?UNIVERSE:[];
+        var byDate={}; src.forEach(function(l){ var d=l.source_date||(l.lead_data&&l.lead_data.source_date)||'(sin fecha)'; (byDate[d]=byDate[d]||[]).push(l); });
+        var dates=Object.keys(byDate).sort(function(a,b){return a<b?1:(a>b?-1:0);});
+        var sub=document.getElementById('hist-sub'); if(sub) sub.textContent=dates.length+' días · toca un día para ver empresas y quién respondió';
+        if(!dates.length){ body.innerHTML='<div class="tq-empty">Aún no hay envíos registrados.</div>'; return; }
+        body.innerHTML=dates.map(function(d){
+          var items=byDate[d];
+          var sent=items.filter(function(l){return statusOf(l)!=='none';}).length;
+          var resp=items.filter(function(l){var s=statusOf(l);return s==='replied'||s==='meeting';}).length;
+          var out=resp?('<span style="color:var(--ok);font-weight:700">✓ '+resp+' respondió</span>'):(sent?(sent+' contactados'):'sin enviar');
+          return '<div class="hist-item"><div class="hist-row" data-date="'+esc(d)+'"><span class="hist-caret">▸</span><span class="hist-date">'+esc(d)+'</span>'
+            +'<span class="hist-n">'+items.length+' leads</span>'
+            +'<span class="hist-out" style="margin-left:auto;font-size:12px;font-weight:600">'+out+'</span></div>'
+            +'<div class="hist-detail" data-date="'+esc(d)+'"></div></div>';
+        }).join('');
+        body.querySelectorAll('.hist-row').forEach(function(row){ row.addEventListener('click',function(){
+          var item=row.parentElement, det=item.querySelector('.hist-detail'), open=item.classList.toggle('open');
+          var car=row.querySelector('.hist-caret'); if(car) car.textContent=open?'▾':'▸';
+          if(open && det && !det.dataset.loaded){ det.dataset.loaded='1'; ejeHistDetail(byDate[row.dataset.date], det); }
+        }); });
+      }
+      if(UNIVERSE&&UNIVERSE.length){ paint(); return; }
+      body.innerHTML='<div class="tq-empty">Cargando…</div>';
+      Promise.resolve(typeof loadStatus==='function'?loadStatus():null).then(function(){ return typeof loadUniverse==='function'?loadUniverse():null; }).then(paint).catch(function(){ body.innerHTML='<div class="tq-empty">No se pudo cargar.</div>'; });
+    }
     function renderHistorial(){
       var body=document.getElementById('hist-body'); if(!body)return;
-      if(EJE_CLIENT!=='unabase_default'){ body.innerHTML='<div class="tq-empty">El historial de reportes es específico de UnaBase.</div>'; var hs=document.getElementById('hist-sub'); if(hs) hs.textContent=''; return; }
+      if(EJE_CLIENT!=='unabase_default'){ return renderHistorialEje(body); }
       // Ensure Supabase statuses are loaded (needed to know who responded) even if Historial is the first tab opened.
       if(typeof loadStatus==='function' && !renderHistorial._statusLoaded){ renderHistorial._statusLoaded=true; loadStatus().then(function(){ HISTCNT={}; renderHistorial(); }).catch(function(){}); }
       function paint(){
