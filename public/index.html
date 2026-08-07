@@ -768,14 +768,42 @@ async function sbUpsertLead(id,l,isHist){
   },{onConflict:'id'})}catch(e){console.warn('sb upsert lead:',e.message)}
 }
 
+// ═══ GHOST-PROGRESS GUARD (2026-08-07) ═══════════════════════════════════════
+// Every child-table write (actions / messages_sent / status_history) has an FK to
+// leads(id). If the lead row isn't in Supabase yet (merge()'s fire-and-forget
+// upsert hasn't landed — common for a just-appeared lead), the child insert
+// FK-fails silently, the mark is lost, and it reverts on refresh. ensureLeadRow
+// AWAITS an idempotent upsert of the lead row so the FK is always satisfied
+// BEFORE any child write. Called at the top of every sb write fn — cheap
+// (ON CONFLICT(id)) and self-healing for every caller (handlers, auto-anchor,
+// self-heal). Returns true on success.
+async function ensureLeadRow(leadId){
+  if(!leadId)return false;
+  const rec=(typeof gr==='function')?gr(leadId):null;
+  const l=(rec&&rec.lead)||{};
+  try{
+    const r=await sb.from('leads').upsert({
+      id:leadId, company:l.companyName||(rec&&rec.co)||'', contact_name:l.contactName||(rec&&rec.cn)||null,
+      contact_email:l.contactEmail||null, contact_phone:l.contactPhone||null, country:l.country||null,
+      score:Math.round(l.unabaseScore||0), source_date:l.source_date||new Date().toISOString().slice(0,10),
+      lead_data:l&&l.companyName?l:(rec&&rec.lead)||{companyName:(rec&&rec.co)||''},
+      updated_at:new Date().toISOString(), client_id:CLIENT_ID
+    },{onConflict:'id'});
+    if(r&&r.error){console.error('[ensureLeadRow] FAILED',leadId,r.error.message);return false}
+    return true;
+  }catch(e){console.error('[ensureLeadRow] EXCEPTION',leadId,e.message);return false}
+}
+
 async function sbSync(id,rec){
   try{
+    await ensureLeadRow(id);   // FK-safety: ensure the row exists so the status update below actually lands (update on a missing row is a silent no-op)
     await sb.from('leads').update({status:rec.st,updated_at:new Date().toISOString()}).eq('id',id).eq('client_id',CLIENT_ID);
   }catch(e){console.warn('sb sync:',e.message)}
 }
 
 async function sbLogAction(leadId,channel,completed){
   try{
+    await ensureLeadRow(leadId);   // FK-safety: lead row must exist before the actions insert
     if(completed){
       // DELETE any existing rows for this (lead, channel) FIRST — prevents duplicates
       // from double-clicks, self-heal re-runs, or network retries.
@@ -798,6 +826,7 @@ async function sbLogMessage(leadId,channel,text,sentAt){
   const debugId=Math.random().toString(36).slice(2,8);
   console.log(`[sbLogMessage:${debugId}] START`,{leadId,channel,text:text.slice(0,40),sentAt});
   try{
+    await ensureLeadRow(leadId);   // FK-safety: lead row must exist before the messages_sent insert
     // DEDUPE CHECK: look for identical (lead, channel, text, user, client) within 60s
     if(sentAt){
       const windowStart=new Date(new Date(sentAt).getTime()-60000).toISOString();
@@ -863,6 +892,7 @@ async function sbSaveNote(leadId,text){
 
 async function sbLogStatus(leadId,status){
   try{
+    await ensureLeadRow(leadId);   // FK-safety: lead row must exist before status_history insert + leads.update
     const r=await sb.from('status_history').insert({lead_id:leadId,user_name:USER,status,client_id:CLIENT_ID});
     if(r&&r.error){console.error('[sb] status FAILED:',r.error.message);return false}
     // Also update the leads table status column for consistency
