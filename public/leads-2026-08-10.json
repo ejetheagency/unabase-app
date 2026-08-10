@@ -10,11 +10,11 @@
     "contactEmail": "alvaro@atomik.com.mx",
     "companyEmail": "hola@atomik.com.mx",
     "unabaseScore": 8.8,
-    "companyBrief": "Casa productora audiovisual en Monterrey (fundada 2009), +15 años. Produce comerciales, cine, documentales, fashion films y contenido corporativo. Clientes: Mercedes-Benz Fashion Week (CEDIM), Whirlpool, CEMEX, Alestra, FAMSA. Co-fundada por Alvaro Gutiérrez (productor) y Carlos Mendoza Guillén (director creativo).",
+    "companyBrief": "Productora audiovisual en Monterrey, Nuevo León (fundada en 2009, 15+ años). Produce comerciales de TV, cine, documentales, fashion films y contenido corporativo con calidad cinematográfica. Clientes: CEMEX, Whirlpool, Alestra, FAMSA, Cloralen, Impuls y Mercedes-Benz Fashion Week (CEDIM). Dirigida por su socio y productor Álvaro Gutiérrez, con Carlos Mendoza Guillén como Director Creativo.",
     "additionalContacts": [
       {
         "name": "Carlos Mendoza Guillén",
-        "title": "Co-Founder / Director Creativo",
+        "title": "Director Creativo",
         "email": ""
       }
     ],
@@ -42,7 +42,7 @@
     "contactEmail": "roger@metraje.com.mx",
     "companyEmail": "roger@metraje.com.mx",
     "unabaseScore": 8.5,
-    "companyBrief": "Ciudad de México. Casa productora y post de ~19 años enfocada en branded content, publicidad y cine de alto impacto; clientes L'Oréal, Vichy Dercos, Amazon Ring, Bonafont y Grupo Fórmula, con agencias DDB, McCann y Terán TBWA. Roster de directores incluye a la ganadora del Ariel Lucía Gajá. Fundador y productor ejecutivo Roger Gómez.",
+    "companyBrief": "Casa productora de publicidad y postproducción en Ciudad de México, con casi dos décadas de trayectoria (19 años). Crea contenido de alto impacto para campañas publicitarias, políticas y sociales, y recientemente cine y contenido digital. Clientes: L'Oréal, Vichy, Bonafont, Pétalo, Ring (Amazon), Grupo Fórmula y Farmacias Similares. Fundada y dirigida por el productor ejecutivo Roger Gómez (CDMX), +20 años en la industria.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "verified",
@@ -68,7 +68,7 @@
     "contactEmail": "hola@moviendomonos.com",
     "companyEmail": "hola@moviendomonos.com",
     "unabaseScore": 8.3,
-    "companyBrief": "Estudio de animación mexicano con base en Ciudad de México y Querétaro (y presencia en Buenos Aires), fundado y dirigido por Mel Izanami Cano Flores (director creativo y animador, egresado de la UAQ y máster en Artes Electrónicas por la UNTREF). Más de 10 años en cut-out, stop motion, 2D/3D y videomapping para clientes como Nissan, CineUAQ y Festival Sonorum. Decisor: Mel Izanami.",
+    "companyBrief": "Estudio de animación y medios audiovisuales con sedes en Ciudad de México, Querétaro y Buenos Aires, +10 años. Domina animación 2D, 3D, cut-out y stop motion, videomapping, realidad aumentada y live action. Clientes: Nissan, Universidad Autónoma de Querétaro (UAQ), Álamo Country Club y Festival Sonorum. Fundado por el artista multimedia Mel Izanami Cano Flores (Lic. en Artes Visuales, UAQ).",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "verified",
@@ -87,23 +87,23 @@
     "companyName": "Ártico Cine",
     "country": "Mexico",
     "website": "https://www.articocine.com",
-    "instagramHandle": "",
+    "instagramHandle": "artico_cine",
     "instagramFollowers": 223,
     "contactName": "José Villanueva",
     "contactTitle": "Productor / Socio",
     "contactEmail": "articocine@gmail.com",
     "companyEmail": "articocine@gmail.com",
     "unabaseScore": 8.1,
-    "companyBrief": "Productora cinematográfica de Guadalajara, México (Col. Colinas de la Normal). Produce cine de autor con proyección internacional: 'El año del gato' (guion premiado de Juliana Orea), 'Rojo sobre rojo', 'El viaje de Paty' y 'Tiempo suspendido'. Al frente están el productor José Villanueva y la directora-guionista Juliana Orea.",
+    "companyBrief": "Productora cinematográfica en Guadalajara, Jalisco, enfocada en historias honestas de transformación cultural y social para audiencias internacionales. Ha producido el largometraje 'El año del gato' (dir. Juliana Orea), el documental 'El Viaje de Paty' (Selección Oficial FICG) y 'Off the Road' (premio interreligioso en Visions du Réel), más una docena de cortometrajes en festivales. Encabezada por el productor José Villanueva y la directora-guionista Juliana Orea.",
     "additionalContacts": [
       {
         "name": "Juliana Orea",
-        "title": "Directora y Guionista",
-        "email": "articocine@gmail.com"
+        "title": "Directora / Guionista",
+        "email": ""
       }
     ],
     "_verifiedCredits": [],
-    "_igStatus": "handle-dead-cleared",
+    "_igStatus": "verified",
     "_creditsVerified": false,
     "_enriched": true,
     "_lane": "core",
@@ -184,12 +184,17 @@
     "contactEmail": "info@lulofilms.com",
     "companyEmail": "info@lulofilms.com",
     "unabaseScore": 9.2,
-    "companyBrief": "Bogotá + Toronto. Estudio (20+ años) que produce ficción, documental, entretenimiento y branded content premiado en nueve idiomas y cinco continentes. Liderado por la cofundadora/productora ejecutiva Ximena Sotomayor-Araujo; director creativo Jaime Escallón y showrunner Andrés Biermann en el equipo.",
+    "companyBrief": "Bilingual creative studio with offices in Bogotá, Colombia and Toronto, Canada, producing award-winning scripted, documentary, entertainment and branded content in nine languages across five continents for 20+ years. Credits include 'Orgasm' (Antonio Sanint, Amazon Prime Video), 'Twisted Tales' (Tubi) and 'Lost in the Amazon' (MAX). Partners: Ximena Sotomayor (Exec Producer) and Jaime Escallón (Creative Director).",
     "additionalContacts": [
       {
         "name": "Jaime Escallón",
         "title": "Partner / Creative Director",
-        "email": "info@lulofilms.com"
+        "email": ""
+      },
+      {
+        "name": "Ricardo Escallón",
+        "title": "Partner / Postproduction Supervisor",
+        "email": ""
       }
     ],
     "_verifiedCredits": [],
@@ -280,17 +285,17 @@
     "website": "https://martestudio.com/",
     "instagramHandle": "real.martestudio",
     "instagramFollowers": 945,
-    "contactName": "Manrique Cortes",
-    "contactTitle": "Owner",
+    "contactName": "Oliver Zúñiga",
+    "contactTitle": "Socio Fundador",
     "contactEmail": "info@martestudio.com",
     "companyEmail": "info@martestudio.com",
     "unabaseScore": 8.9,
-    "companyBrief": "Costa Rica (San José; también LA y Orlando). Estudio de animación, VFX, motion design y XR fundado en 1998; ganador en New York Festival e Ibero-American Advertising Festival. Comerciales para BID, Bayer, Dos Pinos, Saba y proyectos de cine/TV con distribución mundial. Owner Manrique Cortes; productor Fabián Borelly.",
+    "companyBrief": "Estudio de animación y efectos visuales fundado en 1998 en Costa Rica, con presencia también en Los Ángeles y Orlando. Nació de la fusión de cuatro estudios ticos; realiza cel/CG animation, VFX, motion design y realidad extendida (AR/VR/MR) para marcas globales, cine y TV. Premiado desde 2002 en el New York Festival y el Festival Iberoamericano de Publicidad. Socios fundadores: Oliver Zúñiga, Christian Glenewinkel (Dir. de Postproducción), John Timms y Hans Castro.",
     "additionalContacts": [
       {
-        "name": "Fabian Borelly",
-        "title": "Producer",
-        "email": "production@martestudio.com"
+        "name": "Christian Glenewinkel",
+        "title": "Socio fundador / Director de Postproducción",
+        "email": ""
       }
     ],
     "_verifiedCredits": [],
@@ -304,7 +309,7 @@
     "approved": true,
     "readyToSend": true,
     "_operatorVerified": false,
-    "pitchEmailES": "Hola Manrique, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Marte Studio y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
+    "pitchEmailES": "Hola Oliver, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Marte Studio y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo"
   },
   {
     "companyName": "Milagrosa",
@@ -317,12 +322,12 @@
     "contactEmail": "daniela@milagrosa.co",
     "companyEmail": "",
     "unabaseScore": 8.8,
-    "companyBrief": "Bogotá. Casa de producción de comerciales, branded content, videoclips y films más servicios de producción internacional. Fundada por la cineasta Daniela Riascos (NYU Tisch) con el cineasta Giorgio Caputo (Bogotá, Nueva York y Londres). Line production y dirección para marcas globales. DMs: Daniela Riascos y Giorgio Caputo.",
+    "companyBrief": "Productora con sede en Bogotá, Colombia, especializada en comerciales, branded content, videos musicales y cine, con servicios de producción de clase mundial para clientes internacionales. Campañas para Nespresso, McDonald's, Juan Valdez, ProColombia y Missoma. Fundada por la directora Daniela Riascos (NYU Tisch / Brown); el director-productor Giorgio Caputo es miembro de The Actors Studio.",
     "additionalContacts": [
       {
         "name": "Giorgio Caputo",
-        "title": "Co-founder & Filmmaker",
-        "email": "giorgio@milagrosa.co"
+        "title": "Director / Producer",
+        "email": ""
       }
     ],
     "_verifiedCredits": [],
@@ -381,8 +386,19 @@
     "contactEmail": "production@hampastudio.com",
     "companyEmail": "production@hampastudio.com",
     "unabaseScore": 9.2,
-    "companyBrief": "Valencia. Estudio de animación 3D y tradicional (fundado 1997), uno de los mayores de España, produce películas, cortos y series para Netflix, HBO Max, Disney, Apple TV y Cartoon Network. Créditos: Cry Babies, My Talking Tom, Chica y Lobo, nominaciones Goya 2026. Fundado y dirigido por Álex Cervantes.",
-    "additionalContacts": [],
+    "companyBrief": "Estudio de animación español con sede en Valencia (desde 2006), especializado en animación 2D y 3D para cine y series. Distribuido en Netflix, Amazon Prime, HBO Max, Nickelodeon, Apple TV y Disney. Proyectos: el largometraje 'Chica y Lobo' y la serie 'Rancid Ranch', con doble nominación a los Goya 2026. Fundado y dirigido por Álex Cervantes (CEO/CCO/Director).",
+    "additionalContacts": [
+      {
+        "name": "Álvaro García",
+        "title": "Executive Producer",
+        "email": ""
+      },
+      {
+        "name": "Manu González",
+        "title": "Director",
+        "email": ""
+      }
+    ],
     "_verifiedCredits": [],
     "_igStatus": "verified",
     "_creditsVerified": false,
@@ -444,7 +460,7 @@
     "contactEmail": "info@doingshow.com",
     "companyEmail": "info@doingshow.com",
     "unabaseScore": 8.9,
-    "companyBrief": "Productora audiovisual con sede en Valdemorillo, Madrid, España, fundada y dirigida por Borja Rebull. Especializada en campañas para agencias y marcas, branded content, spots y contenido corporativo con acabado cinematográfico. Clientes: Renault, Netflix, Amazon, Disney, National Geographic, Airbnb, KIA y Danone. Decisor: Borja Rebull, fundador y realizador.",
+    "companyBrief": "Productora audiovisual con sede en Valdemorillo (Madrid), España, que realiza spots publicitarios, branded content, vídeo corporativo y contenido con impacto social para agencias y marcas en España e internacionalmente. Clientes: Renault, Netflix, Amazon, Disney, National Geographic, Airbnb, Accenture, KIA y Danone. Fundada y dirigida por Borja Rebull, fundador y realizador único.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "verified",
@@ -470,12 +486,17 @@
     "contactEmail": "info@thethinklab.com",
     "companyEmail": "info@thethinklab.com",
     "unabaseScore": 8.7,
-    "companyBrief": "Bilbao. Estudio de animación 3D y live-action (est. 2006) que desarrolla largos y series de autor con enfoque social. Créditos: Inspector Sun (top-3 en HBO global), Deep (Lionsgate/Netflix), y los próximos Evolution y Metal Heroes (con Sony Pictures). CEO/cofundadora Adriana Malfatti, cofundador/director Julio Soto.",
+    "companyBrief": "Bilbao-based film production company (est. 2006) producing 3D-animated and live-action features and series for the international market. Credits include the animated feature 'Evolution' (2026), 'Inspector Sun' (Top 3 on HBO globally), 'Deep' (Lionsgate) and the Oscar-qualified short 'Dissection of a Storm'. Co-founded and led by CEO Adriana Malfatti, with co-founders Julio Soto (director) and José Tatay (creative director).",
     "additionalContacts": [
       {
         "name": "Julio Soto",
-        "title": "Co-founder & Director",
-        "email": "info@thethinklab.com"
+        "title": "Co-founder / Director",
+        "email": ""
+      },
+      {
+        "name": "José Tatay",
+        "title": "Co-founder / Creative Director",
+        "email": ""
       }
     ],
     "_verifiedCredits": [],
@@ -502,7 +523,7 @@
     "contactEmail": "hola@filmakersmonkeys.com",
     "companyEmail": "hola@filmakersmonkeys.com",
     "unabaseScore": 8.6,
-    "companyBrief": "Productora española de cine y publicidad fundada por Néstor López (fundador y CEO), Goya 2021 a Mejor Cortometraje Documental por 'Mamá' y preseleccionada al Oscar. Más de 300 campañas para Coca-Cola, Netflix, Banco Santander y Sony, con palmarés en Málaga, San Sebastián y SEMINCI. Otros créditos: 'Semillas de Kivu', 'La Gran Obra' y 'Ajar'. Decisor: Néstor López.",
+    "companyBrief": "Productora audiovisual integral española fundada en 2016 por Néstor López (fundador y CEO), con +300 campañas en tres años y trabajos en Movistar+, National Geographic y Filmin. Ganadora de dos Goya 2025 —Mejor Corto Documental ('Semillas de Kivu', preseleccionado a los Oscar 2026) y Mejor Corto de Ficción ('La Gran Obra', Gran Premio del Jurado en Sundance)— y selección oficial en Venecia con 'Ajar'.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "verified",
@@ -528,7 +549,7 @@
     "contactEmail": "info@absafilms.com",
     "companyEmail": "info@absafilms.com",
     "unabaseScore": 8.6,
-    "companyBrief": "Productora y fixer chilena fundada en 1999 por Yamil Ahuile (productor y director de fotografía ganador de un Emmy). Con sede en Santiago, ofrece service production internacional en Atacama, Patagonia y Valparaíso para clientes como HBO, ESPN, MTV, Vice Media, Ford y Nissan. Más de 20 años de experiencia con estándares de producción de EE.UU. Decisor: Yamil Ahuile, fundador.",
+    "companyBrief": "Chile-based fixer and service-production company led by Emmy-winning producer Yamil Ahuile, providing bilingual crews and locations across Atacama, Patagonia, Santiago and Valparaíso for international film, TV, commercials, documentaries and branded content. Clients include HBO Sports, ESPN, ABC, MTV, Vice Media, Ford, Nissan, Bose and Ogilvy. Founder-led, 20+ years' experience.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "verified",
