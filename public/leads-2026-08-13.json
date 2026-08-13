@@ -2,7 +2,7 @@
   {
     "companyName": "Navajo Films",
     "country": "Argentina",
-    "website": "https://navajofilms.com/",
+    "website": "https://www.navajofilms.com",
     "instagramHandle": "navajofilms",
     "instagramFollowers": 16500,
     "contactName": "Mariano Kohan",
@@ -10,11 +10,16 @@
     "contactEmail": "marianok@navajofilms.com",
     "companyEmail": "marianok@navajofilms.com",
     "unabaseScore": 8.7,
-    "companyBrief": "Buenos Aires. Productora fundada en 2006, cine y series de TV (ficción, entretenimiento, animación) para LATAM. Créditos: Pacto de Sangre (Caetano, Warner/Netflix), Porno y Helado (Amazon Prime), Psiconautas, Insania (Star+). Equipo: Lucas Vivo García Lagos (fundador/GM), Mariano Kohan (productor ejecutivo).",
+    "companyBrief": "Productora audiovisual con sede en Buenos Aires, Argentina, fundada en 2006 por el uruguayo Lucas Vivo García Lagos; desarrolla ficción, documentales y animación para plataformas internacionales. Créditos: 'Porno y Helado' y 'Menem' (Amazon Prime Video), 'Psiconautas' y 'Pacto de Sangre' (Warner/Netflix), 'Insania' y el documental 'Monumental' (Star+), 'El Presidente' (Amazon). En 2024 lanzó Navajo Charrúa en Uruguay junto a Cecilia Mato. Área de ficción a cargo de Mariano Kohan (Productor Ejecutivo).",
     "additionalContacts": [
       {
         "name": "Lucas Vivo García Lagos",
         "title": "Fundador / General Manager",
+        "email": ""
+      },
+      {
+        "name": "Cecilia Mato",
+        "title": "Productora (Navajo Charrúa, Uruguay)",
         "email": ""
       }
     ],
@@ -42,7 +47,7 @@
     "contactEmail": "hola@elgatoverdeproducciones.com",
     "companyEmail": "hola@elgatoverdeproducciones.com",
     "unabaseScore": 8.6,
-    "companyBrief": "Madrid (C/ de la Reina 39; grupo Idearia). Productora de documentales, series y largometrajes con mirada social. Créditos: 'El sueño de la Sultana' (Selección Oficial San Sebastián), 'Valentina' (animación, Goya) y 'Empieza el baile' (Málaga). Decisores: Esther del Pozo (productora/socia) y Mariano Baratech (director).",
+    "companyBrief": "Productora de cine, series y documentales con sede en Madrid, España (Calle de la Reina 39), integrante del Grupo IDEARIA. Produce animación y ficción para RTVE y para festivales como San Sebastián. Créditos: los largometrajes de animación 'El Sueño de la Sultana' y 'Valentina', la serie 'Hope! Estamos a Tiempo' (RTVE, 2025), y los documentales 'Quinografía', 'Empieza el Baile' y 'Las Tres Vidas de Carlos Slepoy'; trabajo animado con nominaciones a los Goya. Dirigida por Esther del Pozo. Contacto: hola@elgatoverdeproducciones.com.",
     "additionalContacts": [
       {
         "name": "Mariano Baratech",
@@ -74,7 +79,7 @@
     "contactEmail": "argos@argos.com.pe",
     "companyEmail": "argos@argos.com.pe",
     "unabaseScore": 8.6,
-    "companyBrief": "Lima, Perú. Productora de cine con +30 años dirigida por el cineasta Augusto Tamayo San Román; largometrajes de ficción, documentales históricos y spots. Créditos: 'Una sombra al frente', 'El bien esquivo', 'La vigilia', 'Sebastiana, la maldición'. Opera la escuela audiovisual TERA. Decisores Augusto Tamayo San Román y la productora Nat Hendrickx.",
+    "companyBrief": "Productora audiovisual peruana con más de 30 años de trayectoria, dedicada a largometrajes, documentales, contenido para televisión y proyectos corporativos, con las divisiones hermanas Argos Editorial y la escuela TERA (Escuela de Realización Audiovisual). Créditos: los largometrajes 'Una Sombra al Frente', 'La Vigilia', 'Sebastiana La Maldición' y 'La Herencia de Flora', además de documentales históricos sobre la Independencia del Perú (Huánuco 1812, Francisco de Zela). Dirigida por Augusto Tamayo San Román.",
     "additionalContacts": [
       {
         "name": "Nat Hendrickx",
@@ -170,7 +175,7 @@
     "contactEmail": "info@arte7.net",
     "companyEmail": "info@arte7.net",
     "unabaseScore": 8,
-    "companyBrief": "Escuela de cine y casa productora en CDMX y Querétaro, activa desde 1999. Produce largometrajes de ficción con estreno comercial (De Día y de Noche, Los Presentes, Hasta el Fin de los Tiempos y En Off, 2025, dirigidos por Alejandro Molina Romo), además de documentales y óperas primas de su comunidad de cineastas.",
+    "companyBrief": "Escuela de cine independiente fundada en 1999, con sedes en Coyoacán (Ciudad de México) y en el Centro Cultural La Fábrica de Querétaro. Imparte la Licenciatura en Cinematografía con RVOE SEP, además de diplomados y talleres, y opera su propia casa realizadora ('Nuestras Producciones') y el cineclub 'Caja Negra' con ciclos y retrospectivas. Dirigida por Alejandro Molina Romo. Contacto: info@arte7.net.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "mined-unverified-followers",
@@ -196,7 +201,7 @@
     "contactEmail": "info@illabufarda.gal",
     "companyEmail": "info@illabufarda.gal",
     "unabaseScore": 8,
-    "companyBrief": "Santiago de Compostela (Galicia). Cooperativa audiovisual gallega creada en 2012, especializada en documental, animación, fotografía y diseño, con escuela propia. Dirigida por sus tres socias fundadoras Adriana P. Villanueva, Pilar Abades y Sabela Iglesias, especialistas en animación e imagen.",
+    "companyBrief": "Productora audiovisual con sede en Galicia, España, que trabaja entre el audiovisual (documental, ficción, vídeos promocionales y material etnográfico), la animación (2D y stop-motion), la fotografía, el diseño y la estrategia de comunicación, con especial atención a la cultura y la lengua gallegas. Trabajos: 'Cantigas e Agarimos', 'Negro Púrpura', 'Historia dunha nena namorada do mar', 'Aldeas Libres de Macroeólicos' y 'A Guerra de España en Galicia'. Equipo fundador: Adriana, Pilar y Sabela. Contacto: info@illabufarda.gal.",
     "additionalContacts": [
       {
         "name": "Pilar Abades",
@@ -259,12 +264,17 @@
     "contactEmail": "gonzalo@poston.studio",
     "companyEmail": "hello@poston.studio",
     "unabaseScore": 9,
-    "companyBrief": "Santiago, Chile (Ciudad Empresarial). Estudio de animación 2D/3D, VFX y postproducción fundado en 2003. Campañas y contenidos para Netflix, Disney, Lionsgate, Red Bull, Nissan, Nestlé y Meta; el corto 'El Niño y la Montaña' ganó +400 premios. Director ejecutivo/socio Gonzalo Pomes con Paulina Muñoz (productora ejecutiva).",
+    "companyBrief": "Estudio de animación 2D/3D, VFX y CGI con sede en Santiago de Chile, fundado en 2003; produce comerciales, series, largometrajes y contenido original. Clientes: Netflix, Disney, Lionsgate, Red Bull, Universal Music, Nissan, Toyota, Walmart, Nestlé y Meta, además de agencias como TBWA, McCann y BBDO. Producciones propias: el largometraje 'Un Like de Navidad' (2024) y el corto animado 'El Niño y la Montaña'. Dirección de Gonzalo Pomés (Director Ejecutivo y socio). Contacto: gonzalo@poston.studio.",
     "additionalContacts": [
       {
         "name": "Paulina Muñoz",
         "title": "Productora Ejecutiva",
         "email": "pali@poston.studio"
+      },
+      {
+        "name": "Hernán Leal",
+        "title": "Productor Ejecutivo",
+        "email": ""
       }
     ],
     "_verifiedCredits": [],
@@ -317,7 +327,7 @@
     "contactEmail": "jp@malo.film",
     "companyEmail": "administracion@malo.film",
     "unabaseScore": 8.7,
-    "companyBrief": "Buenos Aires (Palermo), con oficinas satélite en CDMX y Barcelona; 10+ años produciendo comerciales, contenido digital y proyectos de TV/cine junto a marcas y agencias, con pipeline creativo-a-post. Socios: productor ejecutivo Juan Pedro Justel Seguy, directores German Gugliara y Maximiliano Lastra Bahlcke.",
+    "companyBrief": "Casa productora de publicidad, branded content y videoclips con oficinas en Buenos Aires (Palermo), Barcelona y Ciudad de México. Créditos y clientes: ESPN (campañas 'Clima Mundialista', Copa Libertadores y Finalissima), HBO ('Los Caballeros de los Siete Reinos'), VISA Brasil (campaña olímpica), TNT Sports (Superclásico River-Boca), Fundación Telefónica España ('Seres Digitales') y PHILCO. Con dirección de José Bianco e Igor Selingarde. Contacto: Juan Pedro Justel Seguy — jp@malo.film / administracion@malo.film.",
     "additionalContacts": [
       {
         "name": "German Gugliara",
@@ -354,7 +364,7 @@
     "contactEmail": "seba@huproductora.com",
     "companyEmail": "seba@huproductora.com",
     "unabaseScore": 8.5,
-    "companyBrief": "Córdoba (fundada 2015) tras años en el cine publicitario de Buenos Aires. Produce comerciales, ofrece servicios de producción para LATAM y hace videoclips y animación con crews flexibles y un brazo AI/labs (@hu.labs). Instagram verificado, jugador emergente del interior. Fundador y productor general Sebastian Huter.",
+    "companyBrief": "Productora audiovisual fundada en 2015 en la provincia de Córdoba, Argentina (Salsipuedes), con raíces en el cine publicitario de Buenos Aires. Produce comerciales, videoclips, animación 3D, fotografía, contenido digital y servicios de producción. Entre sus clientes figura Turismo de Córdoba, para quien desarrolló una campaña de visualización 3D y diseño de personajes. Dirigida por Sebastián Huter, jefe de producción. Contacto: seba@huproductora.com.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "mined-unverified-followers",
@@ -380,7 +390,7 @@
     "contactEmail": "hello@poligonic.com",
     "companyEmail": "hello@poligonic.com",
     "unabaseScore": 8.1,
-    "companyBrief": "Ciudad de México. Estudio de animación y motion graphics enfocado en video comercial y explainer para startups, corporativos y ONGs, con producción in-house de arte y animación a la medida. Proyectos para Clara (banca digital, +10M vistas), Nelo, Bridgefy, Ekatena y The Alan Turing Institute. Dirigido por Alberto Saenz Gómez Tello.",
+    "companyBrief": "Estudio de video y motion graphics con sede en Ciudad de México, especializado en explainer videos y contenido animado para startups y empresas en crecimiento. Clientes: Clara (banca digital), Nelo, Bridgefy, Ekatena, Urvita, Ecaresoft, DEMCO y The Alan Turing Institute, con trabajo vinculado a portafolios de 500 Global y a startups destacadas por Forbes. Dirigido por Alberto Sáenz Gómez Tello. Contacto: hello@poligonic.com.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "mined-unverified-followers",
@@ -406,7 +416,7 @@
     "contactEmail": "sales@scenic.mx",
     "companyEmail": "sales@scenic.mx",
     "unabaseScore": 8.3,
-    "companyBrief": "Cancún, Quintana Roo (+Orlando, FL). Productora de escenografía, fabricación temática, arte escultórico y experiencias de marca/activaciones para retail, hospitality y entretenimiento. Clientes: Nickelodeon, Karisma Hotels & Resorts, Grupo Playa Resorts, Sarao y Chiligrin. CEO Gerardo Zurita; general manager Luis Hernández.",
+    "companyBrief": "Estudio de diseño y fabricación de ambientes temáticos, escultura, personajes 3D, displays y arquitectura decorativa para marcas, hoteles y parques temáticos, con más de 25 años de trayectoria; planta de producción en Cancún, Quintana Roo (México) y oficina en Orlando, Florida (EE.UU.). Talleres internos de carpintería, fibra de vidrio, metal, CNC y pintura. Clientes: Nickelodeon Experience Design, Karisma Hotels & Resorts y Playa Resorts. Miembro de IAAPA. CEO: Gerardo Zurita. Contacto: sales@scenic.mx.",
     "additionalContacts": [
       {
         "name": "Luis Hernández",
@@ -438,7 +448,7 @@
     "contactEmail": "contacto@kiwifilms.com.uy",
     "companyEmail": "contacto@kiwifilms.com.uy",
     "unabaseScore": 8.3,
-    "companyBrief": "Montevideo, Uruguay. Casa de production services especializada en transmisión de TV en vivo, streaming multiplataforma, cobertura de eventos y alquiler de equipos. Fundada 2013; créditos con ESPN, Star+, Nestlé, la Semana Criolla de TV Ciudad y el America Business Forum en Punta del Este. Director-fundador Jose Pedro 'Josepe' De Los Reyes.",
+    "companyBrief": "Productora audiovisual con sede en Montevideo, Uruguay (Asunción 1368), especializada en transmisiones de TV en vivo, producción de video, streaming multiplataforma y alquiler de equipos. Trabajos y clientes: transmisión del torneo de rugby SRA 2023 para Star+, Semana Criolla 2023 para TV Ciudad, America Rockstars y America Business Forum 2022, además de ESPN, Nestlé, OPS, Ceibal, AJE y TATA. Contacto: contacto@kiwifilms.com.uy.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "mined-unverified-followers",
@@ -464,7 +474,7 @@
     "contactEmail": "",
     "companyEmail": "hauskino.co@gmail.com",
     "unabaseScore": 9.2,
-    "companyBrief": "Productora de cine de autor en Bogotá, Colombia. Su proyecto 'Retención', del director Gonzalo Escobar Mora, fue seleccionado en BAM 2025 (Film Projects). Su filmografía incluye 'Meteorito' (Semana de la Crítica de Venecia 41; Mejor Película WIP FICCI 2025), 'Otro Naufragio' y 'Los Reinos'. Productor ejecutivo: Sebastián Martínez R.; director Sebastián Múnera.",
+    "companyBrief": "Casa productora de cine de autor con sede en Bogotá, Colombia; produce largometrajes, cortos, miniseries y documentales híbridos. Créditos: 'Meteorito' (Mejor Película WIP FICCI 2025), 'Los Reinos' (Mejor Película Competencia LATEXOS), 'Otro Naufragio', 'Verde Adentro' y la miniserie 'Sobre el amor & otras desventuras', con estreno mundial en la Semana de la Crítica de Venecia (SIC). Producción a cargo de Sebastián Martínez R. y Mauricio S. Burckhardt. Contacto: contact@hauskino.co.",
     "additionalContacts": [
       {
         "name": "Gonzalo Escobar Mora",
@@ -501,7 +511,7 @@
     "contactEmail": "hello@calderafilms.com",
     "companyEmail": "hello@calderafilms.com",
     "unabaseScore": 9,
-    "companyBrief": "Miami, USA (también LA/NY/Houston). Casa de cine dirigida por su fundador que produce comerciales, brand films, campaign films y documentales en inglés y español para marcas europeas y latinoamericanas. Créditos: Adidas, Netflix, Sony Music, Walmart, Fujifilm, Cirque du Soleil, Centinela Tequila. Fundador, director y productor ejecutivo Enrique Caldera.",
+    "companyBrief": "Productora cinematográfica con base en Miami, FL (25 SE 2nd Ave #550) y oficinas en Los Ángeles, Nueva York y Houston, con capacidad de rodaje mundial (España, Londres, París, Río de Janeiro). Produce campaign films, comerciales, documentales, founder films y storytelling institucional para sectores de licores, hospitalidad, lifestyle y diseño. Clientes: Adidas, Netflix, Sony Music, Walmart, Fujifilm, Cirque du Soleil y Centinela Tequila. Dirigida por Enrique Caldera (Director y Productor Ejecutivo). Contacto: hello@calderafilms.com.",
     "additionalContacts": [],
     "_verifiedCredits": [],
     "_igStatus": "mined-unverified-followers",
