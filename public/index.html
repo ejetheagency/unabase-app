@@ -104,6 +104,13 @@ button,input,textarea,select{font-family:inherit}a{color:var(--pp);text-decorati
 .hoy-pending{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.3);color:var(--am);padding:8px 14px;border-radius:8px;font-size:12px;font-weight:600;margin-bottom:14px;cursor:pointer;transition:.2s}
 .hoy-pending:hover{background:rgba(245,158,11,.18);transform:translateY(-1px)}
 .hoy-pending strong{color:#fbbf24}
+/* Follow-up backlog alert — leads stacked in later touches (2-4) */
+.hoy-stack{display:flex;align-items:center;flex-wrap:wrap;gap:8px;background:rgba(59,130,246,.09);border:1px solid rgba(59,130,246,.3);color:#9db8f5;padding:10px 15px;border-radius:8px;font-size:12px;font-weight:600;margin-bottom:14px;cursor:pointer;transition:.2s}
+.hoy-stack:hover{filter:brightness(1.18);transform:translateY(-1px)}
+.hoy-stack strong{color:#cfe0ff;font-size:13px}
+.hoy-stack .hs-sub{color:var(--mt);font-weight:500}
+.hoy-stack.hot{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.36);color:#f3a8a8}
+.hoy-stack.hot strong{color:#fca5a5}
 
 /* ═══ ACCIÓN AHORA — focused execution queue ═══ */
 .aa-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:980px;margin:24px auto 0}
@@ -1623,6 +1630,34 @@ function renderDay(){
     const hiddenCount=TL.filter(l=>{const d=dom(l.website);const rec=gr(d);return((rec.msgs||[]).length>0)||SEQ_STOPS.includes(rec.st||'none');}).length;
     if(TL.length>0&&hiddenCount>0){
       indEl.innerHTML+=`<div class="hoy-pending" style="background:rgba(212,160,23,0.08);border:1px solid rgba(212,160,23,0.3);color:var(--ac);cursor:pointer;margin-top:6px" onclick="window.__hoyShowAll=${showAll?'false':'true'};renderDay()"><span>${showAll?'👁️':'⊕'}</span> ${showAll?'Ocultar los ya iniciados ('+hiddenCount+')':'Mostrar TODOS los leads de hoy ('+TL.length+' incl. '+hiddenCount+' en ciclo)'}</div>`;
+    }
+    // ── Follow-up backlog alert: leads stacked in later touches (cycle ≥1) ──
+    // "Apilados en otros touches" = leads past first-touch (has msgs, in-cycle,
+    // active follow-up). Surfaces the growing pile so follow-ups no se pudran.
+    // PL is loaded before renderDay in the boot chain, so this counts past leads too.
+    const _stkSeen=new Set();let _stk=0,_stkOver=0,_stkSoon=0,_stkDeep=0;
+    [...TL,...PL].forEach(l=>{
+      const dd=dom(l.website);if(!dd||_stkSeen.has(dd))return;_stkSeen.add(dd);
+      const rec=gr(dd);
+      if(SEQ_STOPS.includes(rec.st||'none'))return;
+      if(!((rec.msgs||[]).length>0))return;              // must be in-cycle (past first touch)
+      const fu=getFollowUp(rec,l,l&&l._batchDate?'past':'hoy');
+      if(!fu.active||!fu.color)return;
+      _stk++;
+      if(fu.color==='red')_stkOver++;else if(fu.color==='yellow')_stkSoon++;
+      if((fu.cycle||0)>=2)_stkDeep++;                    // touch 3+ (deeper pile)
+    });
+    if(_stk>0){
+      const hot=_stkOver>=4||_stk>=12;
+      const bits=[];
+      if(_stkOver>0)bits.push(`<strong>${_stkOver}</strong> vencido${_stkOver===1?'':'s'}`);
+      if(_stkSoon>0)bits.push(`${_stkSoon} próximo${_stkSoon===1?'':'s'}`);
+      if(_stkDeep>0)bits.push(`${_stkDeep} en touch 3+`);
+      const sub=bits.length?`<span class="hs-sub">· ${bits.join(' · ')}</span>`:'';
+      const head=hot
+        ? `📮 <strong>${_stk}</strong> leads apilándose en follow-up (touches 2-4)`
+        : `📮 <strong>${_stk}</strong> lead${_stk===1?'':'s'} en follow-up (touches 2-4)`;
+      indEl.innerHTML+=`<div class="hoy-stack${hot?' hot':''}" onclick="showV('now')">${head} ${sub}</div>`;
     }
   }
   // TAB SEPARATION RULE — Hoy vs Acción Ahora are mutually exclusive:
