@@ -627,6 +627,19 @@ const SL=['Sin contactar','Parcial','Contactado','Respondió','Reunión','Cerrad
 function db(){try{return JSON.parse(localStorage.getItem(DBK))||{}}catch{return{}}}
 function sdb(d){localStorage.setItem(DBK,JSON.stringify(d))}
 function gr(id){const D=db();return D[id]||{id,co:'',cn:'',st:'none',acts:[],msgs:[],tl:[],notes:'',lead:null,up:null}}
+// ── OUTBOX — durable queue of marks not yet CONFIRMED in Supabase ───────────
+// A mark (a completed touch / sent message) is written to localStorage
+// instantly, but the Supabase sync is async and can fail silently (network,
+// RLS, or a refresh mid-write). sbLoadAll() trusts Supabase as the source of
+// truth and WIPES local acts/msgs on load — so an unsynced mark used to vanish
+// on refresh, forcing the operator to redo the whole touch. The outbox holds
+// every mark until Supabase confirms it: the mark survives refreshes AND is
+// retried on the next load, so a completed step is never lost.
+const OBK='unabase_ob_'+CLIENT_ID+'_'+USER;
+function obGet(){try{return JSON.parse(localStorage.getItem(OBK))||[]}catch{return[]}}
+function obSet(a){try{localStorage.setItem(OBK,JSON.stringify(a))}catch{}}
+function obAdd(e){const a=obGet().filter(x=>!(x.k===e.k&&x.id===e.id&&x.ch===e.ch&&(x.ts||'')===(e.ts||'')));a.push({...e,_at:Date.now()});obSet(a)}
+function obDone(match){const a=obGet();const n=a.filter(e=>!match(e));if(n.length!==a.length)obSet(n)}
 
 function ur(id,u){
   // Write to localStorage (instant)
@@ -1042,6 +1055,30 @@ async function sbLoadAll(){
     });
     if(anchored.length)console.warn('[self-heal] anchored '+anchored.length+' checkbox-only action(s):',anchored);
     if(uncertain.length)console.error('[self-heal] ⚠️ '+uncertain.length+' action(s) have NO reliable timestamp source — flagged _anchorUncertain, NOT inserting synthetic anchors:',uncertain);
+    // ── OUTBOX REPLAY — the fix for "marks get erased on refresh" ────────────
+    // The Supabase load above WIPES local acts/msgs (it treats the server as
+    // the only source of truth). Any mark whose write failed or was still
+    // in-flight when the operator refreshed would be lost. Here we re-apply
+    // every still-pending mark from the outbox (union into D) and retry its
+    // write; confirmed marks already left the outbox, so legitimate server
+    // deletes still stick. Net effect: a completed touch NEVER disappears.
+    const _ob=obGet();
+    if(_ob.length){
+      const _stale=[];
+      for(const e of _ob){
+        if(Date.now()-(e._at||0)>7*24*3600000){_stale.push(e);continue;} // give up after 7d
+        let r=D[e.id]; if(!r){r=gr(e.id);D[e.id]=r;}
+        if(e.k==='act'){
+          if(!r.acts)r.acts=[]; if(!r.acts.includes(e.ch))r.acts.push(e.ch);
+          ensureLeadRow(e.id).then(()=>sbLogAction(e.id,e.ch,true)).then(ok=>{if(ok)obDone(x=>x.k==='act'&&x.id===e.id&&x.ch===e.ch)}).catch(()=>{});
+        }else if(e.k==='msg'){
+          if(!r.msgs)r.msgs=[]; if(!r.msgs.some(m=>m.ts===e.ts&&m.ch===e.ch))r.msgs.push({ch:e.ch,tx:e.tx,ts:e.ts});
+          ensureLeadRow(e.id).then(()=>sbLogMessage(e.id,e.ch,e.tx,e.ts)).then(ok=>{if(ok)obDone(x=>x.k==='msg'&&x.id===e.id&&x.ch===e.ch&&x.ts===e.ts)}).catch(()=>{});
+        }
+      }
+      if(_stale.length)obSet(obGet().filter(e=>!_stale.some(s=>s.k===e.k&&s.id===e.id&&s.ch===e.ch&&(s.ts||'')===(e.ts||''))));
+      console.warn('[outbox] replayed '+(_ob.length-_stale.length)+' pending mark(s) — kept them alive through the refresh');
+    }
     // Recalculate status from actions for leads without manual override
     Object.values(D).forEach(r=>{
       if(!['replied','meeting','closed','skip'].includes(r.st)){
@@ -2388,12 +2425,19 @@ async function tA(d,aid,ch){
   const ns=cSt({...rec,acts,msgs});
   if(ns!==cSt(rec))tl.push({tp:'st',desc:'Estado → '+SL[ST.indexOf(ns)],ts:now()});
   ur(d,{acts,msgs,st:ns,tl});
+  // OUTBOX: record the mark BEFORE syncing so a failed/slow write can never
+  // erase it on refresh. On uncheck, clear any pending mark for this channel.
+  if(completed){ obAdd({k:'act',id:d,ch}); if(autoAnchorToPush)obAdd({k:'msg',id:d,ch,tx:AUTO_ANCHOR_TX,ts:autoAnchorToPush.ts}); }
+  else { obDone(e=>e.id===d&&e.ch===ch); }
   // Supabase persistence
   const actOk=await sbLogAction(d,ch,completed);
   let msgOk=true;
   if(autoAnchorToPush){
     msgOk=await sbLogMessage(d,ch,AUTO_ANCHOR_TX,autoAnchorToPush.ts);
   }
+  // Clear from the outbox only once Supabase confirms the write landed.
+  if(completed&&actOk)obDone(e=>e.k==='act'&&e.id===d&&e.ch===ch);
+  if(autoAnchorToPush&&msgOk)obDone(e=>e.k==='msg'&&e.id===d&&e.ch===ch&&e.ts===autoAnchorToPush.ts);
   // Clean up auto-anchors from Supabase when unchecking (keeps multi-device sync aligned)
   for(const ts of autoAnchorsToDelete){
     try{await sbDeleteMessage(d,ts)}catch{}
@@ -2430,8 +2474,12 @@ async function sM(d,aid,ch){
     // sends had no action row, breaking cSt() → status looked like 'sin
     // contactar'. Always-call sbLogAction is idempotent (it deletes-then-
     // inserts in Supabase) so retries are safe.
+    // OUTBOX: record the message + action before syncing (durable through refresh)
+    obAdd({k:'msg',id:d,ch,tx:msgText,ts}); obAdd({k:'act',id:d,ch});
     const msgOk=await sbLogMessage(d,ch,msgText,ts);
     const actOk=await sbLogAction(d,ch,true);
+    if(msgOk)obDone(e=>e.k==='msg'&&e.id===d&&e.ch===ch&&e.ts===ts);
+    if(actOk)obDone(e=>e.k==='act'&&e.id===d&&e.ch===ch);
     console.log(`[${debugId}] DONE`,{d,ch,msgOk,actOk,actAdded,finalMsgCount:(gr(d).msgs||[]).length});
     toast((msgOk&&actOk)?'Mensaje guardado ✓':'⚠️ Guardado local OK, error en Supabase — revisa consola');
     refresh();
