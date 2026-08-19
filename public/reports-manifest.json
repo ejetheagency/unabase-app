@@ -1,6 +1,38 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-08-21",
+      "source_date": "2026-08-21",
+      "file": "leads-2026-08-21.json",
+      "lead_count": 18,
+      "approved": true,
+      "approved_at": "2026-08-21T13:00:00.000Z",
+      "status": "queued",
+      "scheduled": true,
+      "disable_carry_forward": false,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "QUEUED 2026-08-21 (business day). 18 leads = 15 core+adjacent ICP + 3 frontera (line-production/events). Pool-dispatch, deep-enriched. Gates clean.",
+      "supply_metrics": {
+        "note": "pool_dispatch_2026-08-19"
+      }
+    },
+    {
+      "batch_id": "batch-2026-08-20",
+      "source_date": "2026-08-20",
+      "file": "leads-2026-08-20.json",
+      "lead_count": 18,
+      "approved": true,
+      "approved_at": "2026-08-20T13:00:00.000Z",
+      "status": "queued",
+      "scheduled": true,
+      "disable_carry_forward": false,
+      "workspace": "pool_dispatch_a_tier",
+      "note": "QUEUED 2026-08-20 (business day). 18 leads = 15 core+adjacent ICP + 3 frontera (line-production/events). Pool-dispatch, deep-enriched. Gates clean.",
+      "supply_metrics": {
+        "note": "pool_dispatch_2026-08-19"
+      }
+    },
+    {
       "batch_id": "batch-2026-08-19",
       "source_date": "2026-08-19",
       "file": "leads-2026-08-19.json",
@@ -1543,5 +1575,5 @@
   ],
   "active_batch_id": "batch-2026-08-19",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-19T13:00:00.000Z"
+  "last_updated": "2026-08-19T16:47:24.359Z"
 }
