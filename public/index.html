@@ -921,10 +921,28 @@ async function sbLogStatus(leadId,status){
   }catch(e){console.error('[sb] status EXCEPTION:',e.message);return false}
 }
 
+// ═══ PAGINATED FETCH — PostgREST caps every response at 1000 rows. Without
+// this, a workspace with >1000 actions/messages silently DROPS everything past
+// row 1000 on load, so those leads' completed touches vanish and the cycle
+// re-proposes a channel the operator already did. Fetch in 1000-row pages. ═══
+async function sbAll(table, apply){
+  let out=[], from=0;
+  for(;;){
+    let qb=sb.from(table).select('*').eq('client_id',CLIENT_ID).range(from, from+999);
+    if(apply)qb=apply(qb);
+    const {data,error}=await qb;
+    if(error){console.error('[sbAll]',table,'page',from,error.message);break;}
+    if(!data||!data.length)break;
+    out=out.concat(data);
+    if(data.length<1000)break;
+    from+=1000;
+  }
+  return out;
+}
 // ═══ SUPABASE LOAD (on startup, hydrate from shared DB — filtered by client_id) ═══
 async function sbLoadAll(){
   try{
-    const{data:leads}=await sb.from('leads').select('*').eq('client_id',CLIENT_ID);
+    const leads=await sbAll('leads');
     if(!leads||!leads.length)return;
     const D=db();
     leads.forEach(l=>{
@@ -944,7 +962,7 @@ async function sbLoadAll(){
     // Load actions — filtered by client_id. Capture earliest completed_at
     // per (lead, channel) so we can backfill auto-anchor messages below for
     // any action that was logged without a corresponding message.
-    const{data:acts}=await sb.from('actions').select('*').eq('completed',true).eq('client_id',CLIENT_ID);
+    const acts=await sbAll('actions',qb=>qb.eq('completed',true));
     Object.values(D).forEach(r=>{if(r.acts)r.acts=[]});
     const actionTs={}; // { leadId: { channel: earliest_completed_at } }
     if(acts)acts.forEach(a=>{
@@ -959,7 +977,7 @@ async function sbLoadAll(){
     // the entire local msgs array with Supabase data to eliminate timestamp
     // drift duplicates (local ts ≠ Supabase sent_at from pre-fix writes).
     // This is safe because every sbLogMessage call now writes sent_at.
-    const{data:msgs}=await sb.from('messages_sent').select('*').eq('client_id',CLIENT_ID);
+    const msgs=await sbAll('messages_sent');
     if(msgs){
       // Group Supabase messages by lead_id (deduplicate by exact sent_at)
       const sbMsgsByLead={};
@@ -981,7 +999,7 @@ async function sbLoadAll(){
       });
     }
     // Load notes — filtered by client_id
-    const{data:nts}=await sb.from('notes').select('*').eq('client_id',CLIENT_ID);
+    const nts=await sbAll('notes');
     if(nts)nts.forEach(n=>{if(D[n.lead_id])D[n.lead_id].notes=n.note_text||''});
     // SELF-HEAL (forward): if a lead has a message for channel X but no
     // matching action row, add the action. Protects against sM()/tA() drift.
