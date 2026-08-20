@@ -44,7 +44,7 @@
   "country": "Spain",
   "website": "https://www.aralanfilms.com",
   "instagramHandle": "aralanfilms",
-  "instagramFollowers": null,
+  "instagramFollowers": 15200,
   "contactName": "",
   "contactTitle": "",
   "contactEmail": "aralanfilms@aralanfilms.com",
@@ -58,13 +58,18 @@
     "email": null
    },
    "Gonzalo Bendala - director y co-fundador",
-   "Tel. +34 955 45 25 90 (C/ Industria 5, Edificio Metropol III, 41927 Mairena del Aljarafe, Sevilla)"
+   "Tel. +34 955 45 25 90 (C/ Industria 5, Edificio Metropol III, 41927 Mairena del Aljarafe, Sevilla)",
+   {
+    "name": "Gonzalo Bendala",
+    "title": "Co-fundador / Director",
+    "email": null
+   }
   ],
   "_verifiedCredits": [
    "Quien te cantara (2018, dir. Carlos Vermut) - Seccion Oficial del Festival de San Sebastian; coproduccion Aralan Films / Apache / Les Films du Worso",
    "Cuando los angeles duermen (2018, dir. Gonzalo Bendala) - largometraje de Aralan Films"
   ],
-  "_igStatus": "verified-handle (IG @aralanfilms + Twitter @AralanFilms confirmed); follower count not retrievable server-side (IG login wall)",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -75,14 +80,14 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Aralan Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Gaitafilmes",
   "country": "Spain",
   "website": "https://gaitafilmes.com/",
   "instagramHandle": "gaitafilmes",
-  "instagramFollowers": null,
+  "instagramFollowers": 3019,
   "contactName": "",
   "contactTitle": "",
   "contactEmail": "producion@gaitafilmes.com",
@@ -100,7 +105,7 @@
    "Dhogs - Sitges, 13 Mestre Mateo",
    "Ulises - Seccion Oficial Malaga"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -111,60 +116,14 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Gaitafilmes y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
- },
- {
-  "companyName": "Color Monster",
-  "country": "Bolivia",
-  "website": "https://color-monster.com",
-  "instagramHandle": "",
-  "instagramFollowers": null,
-  "contactName": "",
-  "contactTitle": "",
-  "contactEmail": "adrian@color-monster.com",
-  "companyEmail": "adrian@color-monster.com",
-  "unabaseScore": 8.8,
-  "companyBrief": "Productora boliviana de cine independiente con sede en La Paz, fundada en 2013 por Álvaro Manzano Zambrana. Trabaja con directores emergentes de Bolivia, Chile, México y Reino Unido buscando voces audaces. Produjo Chaco (Diego Mondaca), estrenada en IFFR Rotterdam y elegida por Bolivia para los Goya; The Dog Thief (Vinko Tomicic), en Competencia Internacional de Narrativa de Tribeca; y el documental premiado El Corral y el Viento (Miguel Hilari).",
-  "additionalContacts": [
-   {
-    "name": "Álvaro Manzano Zambrana",
-    "title": "Fundador y Productor",
-    "email": null
-   },
-   {
-    "name": "(equipo) ami",
-    "title": "email publicado — posible Álvaro Manzano (iniciales, SIN confirmar)",
-    "email": "ami@color-monster.com"
-   },
-   {
-    "name": "Dominique",
-    "title": "equipo",
-    "email": "dominique@color-monster.com"
-   }
-  ],
-  "_verifiedCredits": [
-   "Chaco (Diego Mondaca, 2020) — estreno mundial en IFFR Rotterdam; representó a Bolivia en los Goya; recorrido por Gijón, AFI, FICUNAM",
-   "The Dog Thief / El Ladrón de Perros (Vinko Tomicic) — Competencia Internacional de Narrativa, Festival de Tribeca; y El Corral y el Viento (Miguel Hilari), documental premiado"
-  ],
-  "_igStatus": "no-encontrado-en-sitio (SPA sin enlaces sociales expuestos; contacto por email)",
-  "_creditsVerified": true,
-  "_enriched": true,
-  "_lane": "core",
-  "_dispatched_batch_id": "batch-2026-08-20",
-  "_dispatched_at": "2026-08-20T13:00:00.000Z",
-  "source_date": "2026-08-20",
-  "approved": true,
-  "readyToSend": true,
-  "_operatorVerified": false,
-  "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Color Monster y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Frida Films",
   "country": "Spain",
   "website": "https://fridafilms.com",
   "instagramHandle": "frida_films",
-  "instagramFollowers": null,
+  "instagramFollowers": 2400,
   "contactName": "Luisa Romeo",
   "contactTitle": "Fundadora / Productora",
   "contactEmail": "luisa.romeo@fridafilms.com",
@@ -183,7 +142,7 @@
    "Trote (2018, San Sebastian Zabaltegi-Tabakalera)",
    "La sombra de la ley (2018, 3 Goyas)"
   ],
-  "_igStatus": "verified (handle linked on official site)",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -194,21 +153,27 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Luisa, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Frida Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Adhokers",
   "country": "Spain",
   "website": "https://www.adhokers.com",
   "instagramHandle": "adhokers",
-  "instagramFollowers": null,
+  "instagramFollowers": 1373,
   "contactName": "Beatriz Acinas",
   "contactTitle": "CEO y Productora Ejecutiva",
   "contactEmail": "beatriz.acinas@adhokers.com",
   "companyEmail": "",
   "unabaseScore": 8.7,
   "companyBrief": "Productora audiovisual boutique (Madrid, Barcelona, Pamplona, Londres, NY) de publicidad y branded content para plataformas, marcas y agencias. Clientes: Red Bull, Disney, Movistar+, Vodafone, Iberia, BBVA, ING, Burger King, Ballantine's, Absolut.",
-  "additionalContacts": [],
+  "additionalContacts": [
+   {
+    "name": "J. Luis Tejedor",
+    "title": "CTO & Director Creativo",
+    "email": "jluis.tejedor@adhokers.com"
+   }
+  ],
   "_verifiedCredits": [
    "Red Bull",
    "Disney",
@@ -216,7 +181,7 @@
    "Iberia",
    "BBVA"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "adjacent-creative",
@@ -227,26 +192,37 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Beatriz, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Adhokers y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Cambur Producciones",
   "country": "Spain",
   "website": "https://www.camburproducciones.com/",
   "instagramHandle": "camburproducciones",
-  "instagramFollowers": null,
+  "instagramFollowers": 925,
   "contactName": "María Monreal Otano",
   "contactTitle": "Directora y socia fundadora",
   "contactEmail": "hello@camburproducciones.com",
   "companyEmail": "",
   "unabaseScore": 8.7,
   "companyBrief": "Pamplona (Navarra) social-cinema productora founded 2019 by Maria Monreal Otano. Awarded shorts (Cuando crece la hierba - Best Fiction Short Oldenburg; O - Best Screenplay Cartagena) developing debut feature.",
-  "additionalContacts": [],
+  "additionalContacts": [
+   {
+    "name": "Beatriz Otano Labiano",
+    "title": "Productora / Socia",
+    "email": null
+   },
+   {
+    "name": "Alba González de Molina",
+    "title": "Productora Ejecutiva",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Cuando crece la hierba - Oldenburg",
    "O - Best Screenplay Cartagena"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -257,26 +233,37 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola María, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Cambur Producciones y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Tourmalet Films",
   "country": "Spain",
   "website": "https://tourmaletfilms.com/",
   "instagramHandle": "tourmaletfilms",
-  "instagramFollowers": null,
+  "instagramFollowers": 3149,
   "contactName": "Omar Razzak Martínez",
   "contactTitle": "Fundador y productor",
   "contactEmail": "o.razzak@tourmaletfilms.com",
   "companyEmail": "info@tourmaletfilms.com",
   "unabaseScore": 8.7,
   "companyBrief": "Tenerife (Canarias) fiction/documentary/animation productora founded by Omar Razzak. Stockholm (3 Goya nominations), Ibero-American doc co-productions La selva inflada, Doble Yo.",
-  "additionalContacts": [],
+  "additionalContacts": [
+   {
+    "name": "Omar Al Abdul Razzak Martínez",
+    "title": "Founder / Producer-Director",
+    "email": "o.razzak@tourmaletfilms.com"
+   },
+   {
+    "name": "Manuel Arango",
+    "title": "Producer / Partner",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Stockholm - 3 Goya nominations",
    "La selva inflada (doc)"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -287,14 +274,14 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Omar, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Tourmalet Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Rinoceronte Films",
   "country": "Spain",
   "website": "https://rinocerontefilms.com",
   "instagramHandle": "rinoceronte.films",
-  "instagramFollowers": null,
+  "instagramFollowers": 651,
   "contactName": "",
   "contactTitle": "",
   "contactEmail": "mail@rinocerontefilms.com",
@@ -313,7 +300,7 @@
    "La ciudad oculta / The Hidden City (2018, Premio Feroz Mejor Documental)",
    "The Building (2014, nominada al Goya Mejor Documental)"
   ],
-  "_igStatus": "verified (handle linked on official site)",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -324,7 +311,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Rinoceronte Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Docmas",
@@ -344,13 +331,18 @@
     "title": "Founder / Director-Editor-Producer",
     "email": null
    },
-   "+593 985785000"
+   "+593 985785000",
+   {
+    "name": "Joe Houlberg Silva",
+    "title": "Director / Producer",
+    "email": null
+   }
   ],
   "_verifiedCredits": [
    "Ave (2023) - Premiered at Toronto International Film Festival (TIFF)",
    "Documentary shorts selected at IDFA, Hot Docs, Sheffield DocFest, Docaviv and Busan; Ozogoche (co-writer/producer) won Best Documentary FICCI (Oscar-eligible)"
   ],
-  "_igStatus": "no-official-account-found",
+  "_igStatus": "email-only-exception: sin IG de empresa verificable (candidatos eran squatter/marca decoración); solo Vimeo/web",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -361,7 +353,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Docmas y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Woler",
@@ -539,19 +531,25 @@
   "country": "Spain",
   "website": "https://teamworkspain.com/",
   "instagramHandle": "teamworks.spain",
-  "instagramFollowers": null,
+  "instagramFollowers": 1853,
   "contactName": "Victor Minguez",
   "contactTitle": "Executive Producer",
   "contactEmail": "victor@teamworkspain.com",
   "companyEmail": "",
   "unabaseScore": 8.6,
   "companyBrief": "Production-services company (est. 2000) across Madrid, Barcelona, Malaga, Valencia, Canaries y Lisbon. Does TV commercials, stills and feature service work; builds per-shoot budgets (crew, permits, locations). Credits: Nike, Adidas, Kia, Hyundai, Ford, Maserati, Emirates, Amazon Prime.",
-  "additionalContacts": [],
+  "additionalContacts": [
+   {
+    "name": "Steve Evans",
+    "title": "Line Producer",
+    "email": "steve@teamworkspain.com"
+   }
+  ],
   "_verifiedCredits": [
    "Nike, Adidas, Kia, Maserati",
    "Amazon Prime Video, Emirates"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "frontera",
@@ -562,26 +560,37 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Victor, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en TeamWorks Production Services y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "TGA Producciones",
   "country": "Chile",
   "website": "https://tgaproducciones.cl",
   "instagramHandle": "tgaproducciones",
-  "instagramFollowers": null,
+  "instagramFollowers": 3747,
   "contactName": "Tomas Gonzalez",
   "contactTitle": "Director Ejecutivo y Socio Mayoritario",
   "contactEmail": "info@tgaproducciones.cl",
   "companyEmail": "",
   "unabaseScore": 8.5,
   "companyBrief": "Productora integral (25 anos, 40+ profesionales) de eventos corporativos y activaciones a escala. Produjo Convencion de Ventas Pepsico, Movistar Chile Open (tenis ATP), ferias Sodimac, Mercado Libre Experience 2024, fiestas Nestle y eventos Peugeot. Escenario, tecnica y logistica con presupuesto de produccion por cada evento.",
-  "additionalContacts": [],
+  "additionalContacts": [
+   {
+    "name": "Héctor Donoso",
+    "title": "Director Asociado – Producción",
+    "email": null
+   },
+   {
+    "name": "Cristóbal Riquelme",
+    "title": "Director Asociado – Cuentas",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Movistar Chile Open 2024/2025",
    "Mercado Libre Experience 2024"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "frontera",
@@ -592,14 +601,14 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Tomas, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en TGA Producciones y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Kubalu Events",
   "country": "Spain",
   "website": "https://kubaluevents.com",
   "instagramHandle": "kubaluevents",
-  "instagramFollowers": null,
+  "instagramFollowers": 11500,
   "contactName": "",
   "contactTitle": "",
   "contactEmail": "brands@kubaluevents.com",
@@ -611,13 +620,18 @@
     "name": "Marta Oderiz Balaguer",
     "title": "CEO y Cofundadora",
     "email": null
+   },
+   {
+    "name": "Paula Rubio",
+    "title": "Co-founder",
+    "email": null
    }
   ],
   "_verifiedCredits": [
    "Uber EMEA Employee Event",
    "Mercedes-Benz GLC launch"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "frontera",
@@ -628,14 +642,14 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Kubalu Events y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  },
  {
   "companyName": "Freews",
   "country": "Spain",
   "website": "https://www.freews.es",
   "instagramHandle": "freewsproducciones9",
-  "instagramFollowers": null,
+  "instagramFollowers": 219,
   "contactName": "Marcos M. Merino",
   "contactTitle": "Director, guionista y co-fundador",
   "contactEmail": "info@freews.es",
@@ -644,13 +658,18 @@
   "companyBrief": "Productora independiente asturiana (Gijon) fundada en 2012 por el director Marcos M. Merino y la productora Marta F. Crestelo. Cine documental de autor sobre memoria, territorio y patrimonio, con estreno en salas y recorrido internacional. 'ReMine, el ultimo movimiento obrero' obtuvo Mencion Especial en el BAFICI y recorrio 33 festivales; 'El trabajo...' logro el Premio Especial del Jurado en el FICX de Gijon.",
   "additionalContacts": [
    "Marta F. Crestelo - directora de produccion y co-fundadora",
-   "Tercer largo 'Plaza Mayor' presentado en el FICX de Gijon"
+   "Tercer largo 'Plaza Mayor' presentado en el FICX de Gijon",
+   {
+    "name": "Marta F. Crestelo",
+    "title": "Co-founder / Producer-Director",
+    "email": null
+   }
   ],
   "_verifiedCredits": [
    "ReMine, el ultimo movimiento obrero (2014, dir. Marcos M. Merino) - Mencion Especial BAFICI; seleccionado en 33 festivales de 16 paises",
    "El trabajo o a quien le pertenece el mundo (2019) - Premio Especial del Jurado, Festival Internacional de Cine de Gijon (FICX)"
   ],
-  "_igStatus": "verified-handle (linked on official site); follower count not retrievable server-side (IG login wall)",
+  "_igStatus": "web-verified-2026-08-20",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -661,6 +680,6 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Marcos, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Freews y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-20"
  }
 ]

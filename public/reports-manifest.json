@@ -20,7 +20,7 @@
       "batch_id": "batch-2026-08-20",
       "source_date": "2026-08-20",
       "file": "leads-2026-08-20.json",
-      "lead_count": 18,
+      "lead_count": 17,
       "approved": true,
       "approved_at": "2026-08-20T13:00:00.000Z",
       "status": "queued",
@@ -1575,5 +1575,5 @@
   ],
   "active_batch_id": "batch-2026-08-19",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-19T16:47:24.359Z"
+  "last_updated": "2026-08-20T18:12:13.213Z"
 }
