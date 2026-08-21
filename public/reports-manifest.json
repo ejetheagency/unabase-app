@@ -8,7 +8,7 @@
       "approved": true,
       "approved_at": "2026-08-21T13:00:00.000Z",
       "status": "queued",
-      "scheduled": false,
+      "scheduled": true,
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
       "note": "QUEUED 2026-08-21 (business day). 18 leads = 15 core+adjacent ICP + 3 frontera (line-production/events). Pool-dispatch, deep-enriched. Gates clean.",
@@ -1577,5 +1577,5 @@
   ],
   "active_batch_id": "batch-2026-08-21",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-21T16:56:23.504634Z"
+  "last_updated": "2026-08-21T17:07:49.823635Z"
 }
