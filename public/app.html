@@ -684,10 +684,36 @@
           .catch(function(){ (MSGS[d]||[]).pop(); STATUS[d]=prev; reRender(); toast('⚠ No se pudo guardar el envío — reintentá'); });
       }
     }
+    // ── PAGINATED FETCH — PostgREST hard-caps every response at 1000 rows.
+    // A single .limit(3000/9000) call SILENTLY returns only the first 1000, so
+    // with >1000 messages_sent rows (currently ~1558 for unabase_default) many
+    // leads' message history was truncated → the cadence under-counted touches
+    // → already-done follow-ups kept re-appearing in Tareas (the "I mark it,
+    // it comes back" bug). Fetch in 1000-row pages; retry a flaky page before
+    // giving up so a dropped mobile request can't truncate the load either. ──
+    function sbPageAll(table,cols,apply){
+      var sb=window.__ejeSB; if(!sb) return Promise.resolve([]);
+      var out=[];
+      function page(from,tries){
+        var q=sb.from(table).select(cols).eq('client_id',EJE_CLIENT).range(from,from+999);
+        if(apply)q=apply(q);
+        return q.then(function(r){
+          if(r.error){
+            if((tries||0)>=2) throw r.error;
+            return new Promise(function(res){setTimeout(res,400*((tries||0)+1));}).then(function(){return page(from,(tries||0)+1);});
+          }
+          var d=r.data||[];
+          out=out.concat(d);
+          if(d.length<1000) return out;
+          return page(from+1000,0);
+        });
+      }
+      return page(0,0);
+    }
     function loadStatus(){
-      var sb=window.__ejeSB; if(!sb) return Promise.resolve();
-      return sb.from('leads').select('id,status').eq('client_id',EJE_CLIENT).limit(2000)
-        .then(function(r){(r.data||[]).forEach(function(row){if(row.id)STATUS[String(row.id).toLowerCase()]=row.status||'none';});})
+      if(!window.__ejeSB) return Promise.resolve();
+      return sbPageAll('leads','id,status')
+        .then(function(rows){rows.forEach(function(row){if(row.id)STATUS[String(row.id).toLowerCase()]=row.status||'none';});})
         .catch(function(){});
     }
     // ══ CADENCE ENGINE (ported from classic cockpit getFollowUp) ══
@@ -764,15 +790,15 @@
         steps:['Redactá a '+(l.contactEmail||'—')+(l.companyEmail?(' (CC '+l.companyEmail+')'):'')+'.','Pegá el borrador de abajo, revisá nombre y empresa.',(c.kind==='first'?'Enviá el primer email.':'Enviá el seguimiento — tono corto, un solo ask: la llamada.')],
         draft:dd.text}; }
     function loadUniverse(){
-      var sb=window.__ejeSB; if(!sb) return Promise.resolve();
+      if(!window.__ejeSB) return Promise.resolve();
       return Promise.all([
-        sb.from('leads').select('id,company,contact_name,contact_email,score,status,lead_data,source_date').eq('client_id',EJE_CLIENT).limit(3000),
-        sb.from('messages_sent').select('lead_id,sent_at').eq('client_id',EJE_CLIENT).limit(9000)
+        sbPageAll('leads','id,company,contact_name,contact_email,score,status,lead_data,source_date'),
+        sbPageAll('messages_sent','lead_id,sent_at')
       ]).then(function(res){
         MSGS={};
-        ((((res[1]||{}).data))||[]).forEach(function(m){var d=String(m.lead_id||'').toLowerCase();var t=new Date(m.sent_at).getTime();if(d&&!isNaN(t)){(MSGS[d]=MSGS[d]||[]).push(t);}});
+        (res[1]||[]).forEach(function(m){var d=String(m.lead_id||'').toLowerCase();var t=new Date(m.sent_at).getTime();if(d&&!isNaN(t)){(MSGS[d]=MSGS[d]||[]).push(t);}});
         var map={};
-        ((((res[0]||{}).data))||[]).forEach(function(r){var d=String(r.id||'').toLowerCase();if(!d)return;var ld=r.lead_data||{};
+        (res[0]||[]).forEach(function(r){var d=String(r.id||'').toLowerCase();if(!d)return;var ld=r.lead_data||{};
           map[d]={_key:d,companyName:r.company||ld.companyName||d,contactName:r.contact_name||ld.contactName||'',contactEmail:r.contact_email||ld.contactEmail||'',country:ld.country||'',unabaseScore:r.score||ld.unabaseScore||'',instagramHandle:ld.instagramHandle||'',instagramFollowers:ld.instagramFollowers||0,website:ld.website||('https://'+d),pitchEmailES:ld.pitchEmailES||ld.emailCercana||'',_verifiedCredits:ld._verifiedCredits||ld.verifiedCredits||[],additionalContacts:ld.additionalContacts||[],companyEmail:ld.companyEmail||null,contactTitle:ld.contactTitle||'',status:r.status||'none'};
         });
         if(DATA&&DATA.leads){DATA.leads.forEach(function(l){var d=decDom(l.website);if(!d)return;map[d]=Object.assign({},map[d]||{},l,{_key:d,_today:true});});}
@@ -1140,11 +1166,11 @@
       function wkStart(d){var x=new Date(d);var day=(x.getDay()+6)%7;x.setHours(0,0,0,0);x.setDate(x.getDate()-day);return x;}
       function dstr(d){return new Date(d).toISOString().slice(0,10);}
       Promise.all([
-        sb.from('messages_sent').select('sent_at').eq('client_id',EJE_CLIENT).limit(6000),
-        sb.from('status_history').select('status,created_at').eq('client_id',EJE_CLIENT).limit(9000)
+        sbPageAll('messages_sent','sent_at'),
+        sbPageAll('status_history','status,created_at')
       ]).then(function(res){
-        var msgs=(((res[0]||{}).data)||[]).map(function(m){return new Date(m.sent_at);}).filter(function(d){return !isNaN(d);});
-        var sh=(((res[1]||{}).data)||[]).filter(function(r){return r.status==='replied'||r.status==='meeting';}).map(function(r){return new Date(r.created_at);}).filter(function(d){return !isNaN(d);});
+        var msgs=(res[0]||[]).map(function(m){return new Date(m.sent_at);}).filter(function(d){return !isNaN(d);});
+        var sh=(res[1]||[]).filter(function(r){return r.status==='replied'||r.status==='meeting';}).map(function(r){return new Date(r.created_at);}).filter(function(d){return !isNaN(d);});
         var now=new Date(), tw=wkStart(now), lw=new Date(tw.getTime()-7*864e5);
         var envTW=msgs.filter(function(d){return d>=tw;}).length, envLW=msgs.filter(function(d){return d>=lw&&d<tw;}).length;
         var convTW=sh.filter(function(d){return d>=tw;}).length, convLW=sh.filter(function(d){return d>=lw&&d<tw;}).length;
