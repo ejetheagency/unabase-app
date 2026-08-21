@@ -8,13 +8,14 @@
       "approved": true,
       "approved_at": "2026-08-21T13:00:00.000Z",
       "status": "queued",
-      "scheduled": true,
+      "scheduled": false,
       "disable_carry_forward": false,
       "workspace": "pool_dispatch_a_tier",
       "note": "QUEUED 2026-08-21 (business day). 18 leads = 15 core+adjacent ICP + 3 frontera (line-production/events). Pool-dispatch, deep-enriched. Gates clean.",
       "supply_metrics": {
         "note": "pool_dispatch_2026-08-19"
-      }
+      },
+      "archived": false
     },
     {
       "batch_id": "batch-2026-08-20",
@@ -46,7 +47,8 @@
       "note": "LIVE 2026-08-19 (business day). Pool-dispatch + deep-enriched: 13/13 email + verified credits, IG web-verified w/ real followers (2 documented email-only exceptions), multi-DM. Dropped Rainbow Lobster (LA/not-productora), Roken (parked domain) & M&M (hijacked domain). Geo ES4/MX3/AR2/CO2/PA1/CL1. Gates clean (0 HIGH, 0 dead links).",
       "supply_metrics": {
         "note": "pool_dispatch_2026-08-19"
-      }
+      },
+      "archived": true
     },
     {
       "batch_id": "batch-2026-08-18",
@@ -1573,7 +1575,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-08-19",
+  "active_batch_id": "batch-2026-08-21",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-20T18:12:13.213Z"
+  "last_updated": "2026-08-21T16:56:23.504634Z"
 }
