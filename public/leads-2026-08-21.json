@@ -6,7 +6,7 @@
   "instagramHandle": "trilce.cinema",
   "instagramFollowers": 1026,
   "contactName": "Alejandro Rey",
-  "contactTitle": "Director General / Co-Founder",
+  "contactTitle": "Fundador y Director General",
   "contactEmail": "trilce_del_rey@yahoo.com.mx",
   "companyEmail": "",
   "unabaseScore": 8.6,
@@ -25,7 +25,7 @@
    "Como un atardecer de sábado — feature film by Alejandro Rey (in production)",
    "Un espacio para ser libres — documentary feature, executive producer, 2005"
   ],
-  "_igStatus": "farm-web-verified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -36,7 +36,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Alejandro, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Trilce Cinema y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Contraplano",
@@ -45,7 +45,7 @@
   "instagramHandle": "contraplanoproductora",
   "instagramFollowers": 2531,
   "contactName": "Agustín Hoyos Arango",
-  "contactTitle": "Content Creator / Contributor (credited creator on Contraplano's Instagram and lead blog writer on contraplano.co)",
+  "contactTitle": "Founder / Director",
   "contactEmail": "info@contraplano.co",
   "companyEmail": "",
   "unabaseScore": 8.6,
@@ -68,7 +68,7 @@
    "EPM corporate video 'El valor de tu factura de acueducto' (Nov 2022)",
    "Monterojo Sabores commercial / #ObvioSí campaign (Sep 2022)"
   ],
-  "_igStatus": "farm-web-verified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -79,7 +79,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Agustín, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Contraplano y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Pigmalion Animation Studio",
@@ -108,7 +108,7 @@
    "CGSociety CG Award winner",
    "Felipe Fierro nominated Best VFX Director, Premios Macondo (Colombian Academy of Motion Picture Arts and Sciences)"
   ],
-  "_igStatus": "farm-web-verified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -119,7 +119,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Felipe, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Pigmalion Animation Studio y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "La Productora CR",
@@ -128,16 +128,27 @@
   "instagramHandle": "",
   "instagramFollowers": null,
   "contactName": "Christian Bulgarelli",
-  "contactTitle": "Owner (Propietario)",
+  "contactTitle": "Socio-fundador / Productor Ejecutivo",
   "contactEmail": "christian@laproductoracr.com",
   "companyEmail": "",
   "unabaseScore": 8.6,
-  "companyBrief": "La Productora is an audiovisual content-creation studio based in Los Yoses, San Pedro, San José, Costa Rica. For over 15 years it has produced commercial, educational and entertainment video/animation content for clients across Latin America and the U.S., including a 2015 campaign for retailer Gollo via McCann Erickson Costa Rica. Owner: Christian Bulgarelli.",
-  "additionalContacts": [],
+  "companyBrief": "San José (Los Yoses), Costa Rica audiovisual studio, 15+ years; commercial brand Nocaut (RMC La Productora S.A.). Produces commercials, animation and branded content across 15+ countries for LatAm/US. Clients: Grupo ICE, Teletica, BAC, American Express, Procomer, JPS, Gollo. Team: socio-fundador/Productor Ejecutivo Christian Bulgarelli (25 yrs), directors Jeffrey U. Salas and Sasha Zuwolinsky.",
+  "additionalContacts": [
+   {
+    "name": "Jeffrey U. Salas",
+    "title": "Director",
+    "email": null
+   },
+   {
+    "name": "Sasha Zuwolinsky",
+    "title": "Directora",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Gollo campaign (client work via McCann Erickson Costa Rica, 2015)"
   ],
-  "_igStatus": "email-only",
+  "_igStatus": "email-only-exception: No dedicated Instagram; public presence is Facebook/Vimeo/LinkedIn only (commercial brand 'Nocaut')",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -148,20 +159,20 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Christian, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en La Productora CR y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Alcalá Media Studio",
   "country": "Mexico",
   "website": "https://angelalcala.com/MediaEstudio/en/",
-  "instagramHandle": "",
-  "instagramFollowers": null,
+  "instagramHandle": "angel_alcala_photo",
+  "instagramFollowers": 15900,
   "contactName": "Ángel Alcalá",
-  "contactTitle": "Founder / Executive Producer",
+  "contactTitle": "Director / Fundador",
   "contactEmail": "angel@alcala.net",
   "companyEmail": "",
   "unabaseScore": 8.6,
-  "companyBrief": "Alcalá Media Studio is an audiovisual production house based in Mexico City (CDMX) with 30 years of experience and reach across 31 countries. It produces automotive advertising campaigns, architecture/lifestyle content, TV commercials and entertainment coverage for clients including Porsche, Audi, Volkswagen and Bentley, plus Big Apple Circus. Led by founder/executive producer Ángel Alcalá, who has directed visual productions for three decades.",
+  "companyBrief": "Mexico City-based commercial photo-video studio led by director-founder Ángel Alcalá (30+ yrs), operating across 31 countries. Specializes in automotive catalog and broadcast-ready campaigns plus fashion, architectural and editorial work. Clients: Porsche México, Audi México, Bentley, Volkswagen Group, Ford, Kia, Sony Entertainment, Fashion-TV, Liverpool, Desigual, Levi's, Flip Circus.",
   "additionalContacts": [],
   "_verifiedCredits": [
    "Porsche México – automotive catalog photography/campaigns (per company site)",
@@ -170,7 +181,7 @@
    "Bentley – catalog/advertising photography (per company site)",
    "Big Apple Circus / Flip Circus USA – event/entertainment production coverage (per company site)"
   ],
-  "_igStatus": "email-only",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -181,7 +192,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Ángel, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Alcalá Media Studio y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Timeless Studios",
@@ -194,12 +205,12 @@
   "contactEmail": "hola@timeless.mx",
   "companyEmail": "",
   "unabaseScore": 8.6,
-  "companyBrief": "Timeless Studios is an audiovisual production studio based in Guadalajara/Zapopan, Mexico, making documentaries, institutional video and branded content for companies and institutions. Their own feature documentary 'Faraway Land' won awards and screened at festivals in Europe and the Americas, and the team has also produced behind-the-scenes content for a major global tech brand.",
+  "companyBrief": "Zapopan/Guadalajara, Mexico production studio (founded 2016), motto 'oficio de cine, no solo de video.' Produces documentaries plus brand, institutional, corporate and industrial films. Feature doc 'A Faraway Land' took Best National Feature and Best Photography at Festival de Cine de Madrid 2018, Best Documentary at Iguana Dorada (Guayaquil) and a Gaudí nomination. Clients: The Macallan, IPADE, Tequila Partida, Dulces de la Rosa, Universidad Panamericana, ITESO.",
   "additionalContacts": [],
   "_verifiedCredits": [
    "Faraway Land — feature documentary, awarded and officially selected at festivals in Spain, Argentina, Dominican Republic, Italy and the United States (per timeless.mx)"
   ],
-  "_igStatus": "email-only",
+  "_igStatus": "email-only-exception: No verified Instagram for this Guadalajara/Zapopan studio (homepage exposes email only; no name-matched production IG found)",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -210,7 +221,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Timeless Studios y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Panda Rojo Media",
@@ -219,11 +230,11 @@
   "instagramHandle": "pandarojomedia",
   "instagramFollowers": 478,
   "contactName": "Alex Camargo",
-  "contactTitle": "Founder & Producer / Production Manager",
+  "contactTitle": "Director & Producer",
   "contactEmail": "contacto@pandarojomedia.com",
   "companyEmail": "",
   "unabaseScore": 8.6,
-  "companyBrief": "Querétaro, Mexico-based video & digital cinema production company making narrative film, branded content, and commercial/industrial video. Credits include feature film 'Todos los caminos llevan adiós' (national theatrical release, 2016, 6.8M+ YouTube views) and work for Endurance México/Purina México. Co-founded and led by producer Alex Camargo.",
+  "companyBrief": "Querétaro (Mexico) video and digital-cinema production house working across commercial, narrative and content. Named brand credits include Purina, Renault (Duster), BMW (Active Tourer), American Eagle, Endurance México and SEDESU/Gobierno del Estado de Querétaro, plus music-video work (Carma, Salazar Elefunk, CNVS). Co-founded and led by producer Alex Camargo.",
   "additionalContacts": [
    {
     "name": "A. Mac Gregor R.",
@@ -241,7 +252,7 @@
    "Branded content produced for Endurance México through Purina México",
    "Full Speed – recurring YouTube automotive review show (e.g. BMW Active Tourer, Renault Duster 2016) hosted by Alex Camargo & David Fonseca"
   ],
-  "_igStatus": "farm-web-verified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -252,7 +263,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Alex, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Panda Rojo Media y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Tunche Films",
@@ -261,11 +272,11 @@
   "instagramHandle": "tunchefilms",
   "instagramFollowers": 3772,
   "contactName": "Sergio Zelada",
-  "contactTitle": "Co-Founder / Partner (Organization Manager)",
+  "contactTitle": "Co-founder / Producer",
   "contactEmail": "produccion@tunchefilms.com",
   "companyEmail": "",
   "unabaseScore": 8.6,
-  "companyBrief": "Lima, Peru-based animation, VFX and commercial production studio founded in 2003 by brothers Sergio, César and Jose Zelada. Produced the Platino Award-winning animated film 'Ainbo' (2022) and 'Kayara' (2025), and co-produced Goya/Platino winner 'Mariposas Negras' (2025). Key contact: Sergio Zelada.",
+  "companyBrief": "Lima, Perú. Productora de animación, VFX y publicidad fundada en 2003 por los hermanos Sergio, César y Jose Zelada, líderes de VFX en LATAM. Realizó 'Ainbo: la guerrera del Amazonas' (2022), primer Premio Platino peruano, y 'Kayara' (2025, dirigida por César Zelada), además de 'Mariposas Negras'. Clientes: PromPerú, Inka Chips, Panetón Gloria. En 2013 fundó EPIC, primera escuela de cine, animación y VFX del Perú; oficinas en Lima, Bogotá, Puerto Rico y EE.UU.",
   "additionalContacts": [
    {
     "name": "César Zelada",
@@ -284,7 +295,7 @@
    "Mariposas Negras (2024) – co-production, Goya Award & Premio Platino Best Animated Film, 2025",
    "EPIC – first film/animation school in Peru, founded by Tunche Films in 2013"
   ],
-  "_igStatus": "farm-web-verified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -295,7 +306,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Sergio, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Tunche Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Zain Films",
@@ -304,11 +315,11 @@
   "instagramHandle": "zain_films",
   "instagramFollowers": 460,
   "contactName": "Jorge Andrés Togra Villavicencio",
-  "contactTitle": "CEO / Director-Producer",
+  "contactTitle": "CEO",
   "contactEmail": "info@zainfilms.com",
   "companyEmail": "",
   "unabaseScore": 8.6,
-  "companyBrief": "Zain Films is a Cuenca, Ecuador film/audiovisual production company operating since 2004, producing corporate videos, ad spots, documentaries, and short/feature films. Verified work includes the film 'Cumbe' (screened in Colombia and France), a Hyundai promotional spot filmed in Cuenca, and the 'Herlin Brito: Tributo a Sandro' concert film. Led by CEO Jorge Andrés Togra Villavicencio.",
+  "companyBrief": "Cuenca (Ecuador) audiovisual production company (since 2008) spanning advertising, TV and cinema, with sound and lighting specialization plus AI-generated video. Named automotive credits include Chery (Tiggo 2 Pro), JAC Motors, Jetour and Hyundai; won a 2025 DesignRush award for Best Video Production Design and multiple documentary awards (2015, 2016, 2020). Led by CEO Jorge Andrés Togra Villavicencio.",
   "additionalContacts": [
    {
     "name": "Juan Daniel Peña",
@@ -321,7 +332,7 @@
    "Hyundai promotional/spot - filmed in Cuenca (Instagram reel)",
    "Concierto Herlin Brito - Tributo a Sandro (concert film, directed by Jorge Andrés Togra Villavicencio)"
   ],
-  "_igStatus": "farm-web-verified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -332,7 +343,7 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Jorge, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Zain Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "KEAF",
@@ -345,8 +356,13 @@
   "contactEmail": "proyectos@keafsas.com",
   "companyEmail": "",
   "unabaseScore": 8.6,
-  "companyBrief": "KEAF is a film/advertising/VFX production company based in Guayaquil and Quito, Ecuador, founded in 2022 to make independent Latin American cinema. It co-produced the Galápagos documentary 'Lions of the Sea' (with Paracas Independent Films, Amaxona Studios, Cinema Libre, Sunyata Films, Mescalito Films). Key contact: filmmaker Luis Felipe Fernández-Salvador.",
+  "companyBrief": "Guayaquil & Quito, Ecuador independent film production house founded 2022 to reinvent Latin American cinema across creation, pre/pro/post and VFX. Flagship 'Lions of the Sea', a Galápagos sea-lion feature doc directed by founder Luis Felipe Fernández-Salvador y Campodónico (aka JAMAICANOPROBLEM), with EP Adam Leipzig, DP Guillermo Navarro and composer Gustavo Santaolalla; repped by Goodfellas, screened at Berlinale. Contact: proyectos@keafsas.com.",
   "additionalContacts": [
+   {
+    "name": "Luis Felipe Fernández-Salvador y Campodónico",
+    "title": "Fundador / Director",
+    "email": null
+   },
    {
     "name": "Luis Felipe Fernández-Salvador y Campodonico",
     "title": "Filmmaker / Director (known professionally as \"Jamaicanoproblem\"), key producer behind KEAF Production",
@@ -359,7 +375,7 @@
    "El Cazador (2013) — short film directed by Fernández-Salvador",
    "Waorani Omede Beye Ante Nee Adani — documentary about an uncontacted Amazonian tribe, directed by Fernández-Salvador, qualified for 2024 Oscar consideration"
   ],
-  "_igStatus": "email-only",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -370,20 +386,20 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en KEAF y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Lanza Verde",
   "country": "Chile",
   "website": "https://lanzaverde.cl/",
   "instagramHandle": "lanzaverdecine",
-  "instagramFollowers": 2332,
-  "contactName": "",
-  "contactTitle": "",
+  "instagramFollowers": 2789,
+  "contactName": "Claudia Huaiquimilla",
+  "contactTitle": "Co-founder / Director & Screenwriter",
   "contactEmail": "lanzaverdecine@gmail.com",
   "companyEmail": "",
   "unabaseScore": 8.6,
-  "companyBrief": "Lanza Verde is a Chilean audiovisual production company (Santiago) founded in 2015 by Claudia Huaiquimilla and Pablo Greene, producing author-driven coming-of-age and social-critique films. Credits include Mala Junta (2016, 40 awards, 2 Premios Platino noms), My Brothers Dream Awake (Locarno 2021; Best Picture Guadalajara/Toulouse), and The True Story of People in the Dragon (BancoEstado Distribution Award 2024). Decision-maker: Claudia Huaiquimilla.",
+  "companyBrief": "Santiago, Chile fiction production company ('Hacemos películas') founded by Mapuche director-screenwriter Claudia Huaiquimilla and producer Pablo Greene. Credits: 'Mala Junta' (2016, ~40 awards, 2 Platino noms), 'Mis hermanos sueñan despiertos' (2021, Best Picture at Guadalajara & Toulouse) and the Netflix series '42 días en la oscuridad'. Decision-makers: Huaiquimilla (creative) and Greene (production).",
   "additionalContacts": [
    {
     "name": "Claudia Huaiquimilla",
@@ -402,7 +418,7 @@
    "Mis hermanos sueñan despiertos / My Brothers Dream Awake (2021) – World Premiere Locarno 74; Best Picture FICGuadalajara 36 & Toulouse 34; Premios Ariel nomination",
    "Los People In The Dragon (The True Story of People in the Dragon) – winner, Premio BancoEstado a la Distribución 2024"
   ],
-  "_igStatus": "farm-web-verified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -412,34 +428,33 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Lanza Verde y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "nightly-farm"
+  "pitchEmailES": "Hola Claudia, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Lanza Verde y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Baleuko",
   "country": "Spain",
   "website": "https://baleuko.com",
   "instagramHandle": "baleuko",
-  "instagramFollowers": null,
-  "contactName": "",
-  "contactTitle": "",
-  "contactEmail": "baleuko@baleuko.com",
+  "instagramFollowers": 1667,
+  "contactName": "Nekane Berasaluze",
+  "contactTitle": "Productora",
+  "contactEmail": "nekaneberasaluze@baleuko.eus",
   "companyEmail": "baleuko@baleuko.com",
   "unabaseScore": 8.5,
-  "companyBrief": "Estudio vasco de Durango (Bizkaia), fundado en 1993. Veterana casa de animacion y ficcion. Produjo el largometraje de animacion Elcano y Magallanes: La primera vuelta al mundo (estreno en salas) y el premiado Gartxot, ademas de documentales y TV. Casa hermana de Dibulitoon Studio.",
+  "companyBrief": "Durango (Bizkaia), País Vasco, España. Productora audiovisual fundada en 1993, ~70 personas, especializada en cine de animación además de ficción, documentales y programas de TV. Primera productora europea en hacer un largometraje 3D CGI y ganadora de un Goya de animación; coproduce con Francia, Italia, Argentina e India. Créditos: Megasonikoak, Blackie & Kanuto, Black to the Moon, Momonsters, Iratxoak. Contacto: la productora Nekane Berasaluze.",
   "additionalContacts": [
    {
     "name": "Carlos Juarez",
     "title": "Productor",
     "email": null
-   },
-   "Tel. +34 94 466 86 10"
+   }
   ],
   "_verifiedCredits": [
    "Elcano y Magallanes: La primera vuelta al mundo (2019, largometraje de animacion)",
    "Gartxot, Kondaira bat (2011, largometraje de animacion)"
   ],
-  "_igStatus": "verified (handle linked on official site)",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -449,21 +464,21 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Baleuko y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "pitchEmailES": "Hola Nekane, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Baleuko y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Set Magic Audiovisual",
   "country": "Spain",
   "website": "https://setmagic.com",
   "instagramHandle": "setmagic_",
-  "instagramFollowers": 1293,
+  "instagramFollowers": 1171,
   "contactName": "Oriol Marcos",
-  "contactTitle": "Fundador y Productor",
+  "contactTitle": "Founder & Producer",
   "contactEmail": "oriol@setmagic.com",
   "companyEmail": "info@setmagic.com",
   "unabaseScore": 8.5,
-  "companyBrief": "Set Magic Audiovisual es una productora independiente de Barcelona creada en 2007 por Oriol Marcos, con experiencia previa como line producer para Woody Allen y Manuel Huerga. Especializada en cine y television basados en hechos reales y personajes singulares, con obra premiada internacionalmente (San Sebastian, Quirino, nominacion International Emmy).",
+  "companyBrief": "Barcelona (Spain) film and TV production company (since 2007) producing feature films and series for Netflix, Prime Video, RTVE, Atresmedia, Movistar, EITB, AMC and Filmin. Credits include 'Gente hablando' (International Emmy nomination), 'Black is beltza' (Quirino Award) and 'Dieciocho'; founder Oriol Marcos previously line-produced for Woody Allen, Carlos Saura and Manuel Huerga.",
   "additionalContacts": [
    {
     "name": "Tiffany Ruoz",
@@ -479,7 +494,7 @@
    "Black is Beltza (2018) - dir. Fermin Muguruza, estreno San Sebastian, premio Quirino de animacion",
    "Gente hablando (serie) - nominada a los International Emmy Awards"
   ],
-  "_igStatus": "verified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -490,24 +505,39 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Oriol, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Set Magic Audiovisual y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "TOTEM Marketing Urbano",
   "country": "Mexico",
   "website": "https://totem.mx",
   "instagramHandle": "totemx_",
-  "instagramFollowers": null,
-  "contactName": "",
-  "contactTitle": "",
+  "instagramFollowers": 1689,
+  "contactName": "Alex",
+  "contactTitle": "Founder & CEO",
   "contactEmail": "alex@totem.mx",
   "companyEmail": "",
   "unabaseScore": 8.5,
-  "companyBrief": "CDMX experiential shop, 40+ staff w/ dedicated Production Manager + Producer. Builds activaciones, stands, pop-ups, displays y festival footprints para Adidas, Xiaomi, Shein, Patron Tequila, Vans, Suzuki y Cazadores, cada uno una produccion costeada de crew/staging/vendor.",
+  "companyBrief": "Ciudad de México (CDMX) experiential-marketing y live-entertainment agency, ~15 años y 40+ personas. Core: activaciones de marca, lanzamientos, pop-ups, stands, convenciones, influencer y trade marketing, con producción audiovisual como servicio interno. Clientes: Suzuki, Xiaomi, adidas, Shein, Tequila Patrón, Vans. Dirigen el fundador/CEO Alex, la creative director Caro, el head of art Neto y el head of 3D Omar.",
   "additionalContacts": [
    {
     "name": "Alejandro Alva",
     "title": "Founder & CEO",
+    "email": null
+   },
+   {
+    "name": "Caro",
+    "title": "Creative Director",
+    "email": null
+   },
+   {
+    "name": "Neto",
+    "title": "Head of Art",
+    "email": null
+   },
+   {
+    "name": "Omar",
+    "title": "Head of 3D",
     "email": null
    }
   ],
@@ -515,7 +545,7 @@
    "Adidas activations & stands",
    "Patron Tequila / Shein / Xiaomi brand builds"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "frontera",
@@ -525,27 +555,39 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en TOTEM Marketing Urbano y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "pitchEmailES": "Hola Alex, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en TOTEM Marketing Urbano y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichRound": "web-deep-2026-08-21",
+  "_icpNote": "off-ICP: experiential-marketing/live-entertainment/trade-marketing; audiovisual is one line-item service"
  },
  {
   "companyName": "Marcactiva",
   "country": "Chile",
   "website": "https://www.marcactiva.cl",
   "instagramHandle": "agencia_marcactiva",
-  "instagramFollowers": null,
+  "instagramFollowers": 6149,
   "contactName": "Jorge González Marino",
-  "contactTitle": "Director Comercial (partner)",
-  "contactEmail": "contacto@marcactiva.cl",
+  "contactTitle": "Director Comercial",
+  "contactEmail": "jorge@marcactiva.cl",
   "companyEmail": "",
   "unabaseScore": 8.4,
-  "companyBrief": "13-yr Santiago brand-experience firm with its OWN workshop, disena, fabrica y produce stands, launches y activations. Clients: Mastercard, Unilever, Renault, KLM, Danone, KIA, Mitsubishi, General Electric, Casillero del Diablo, NH Hotels, Sennheiser. Fabrication + crew = per-project budgets.",
-  "additionalContacts": [],
+  "companyBrief": "Agencia de brand experience / BTL en Santiago, Chile (15 años). Su core son eventos y lanzamientos corporativos, elementos POP y diseño de punto de venta, arquitectura/diseño de retail y stands modulares sustentables (marca TuStand). Genera contenido de marca para activaciones, pero es esencialmente un fabricante de stands/eventos. Clientes: Mastercard, Unilever, Renault, KIA, Danone, Casillero del Diablo. DMs: Jorge González Marino (Director Comercial), Pablo González (Dir. Proyectos), Pablo Marino (Productor).",
+  "additionalContacts": [
+   {
+    "name": "Pablo González",
+    "title": "Director de Proyectos / Arquitecto",
+    "email": null
+   },
+   {
+    "name": "Pablo Marino Morales",
+    "title": "Coordinador / Productor",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "Mastercard / Unilever brand experiences",
    "Casillero del Diablo & KLM stands"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "frontera",
@@ -556,26 +598,27 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Jorge, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Marcactiva y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-21",
+  "_icpNote": "off-ICP: brand-experience/BTL/stand-fabrication, not audiovisual"
  },
  {
   "companyName": "APU Productions",
   "country": "Peru",
   "website": "https://filmingperu.com/",
   "instagramHandle": "apuprod",
-  "instagramFollowers": null,
+  "instagramFollowers": 1295,
   "contactName": "Bruno Canale",
-  "contactTitle": "Founder / Executive Producer",
+  "contactTitle": "Fundador / Productor Ejecutivo",
   "contactEmail": "info@apuprod.com",
   "companyEmail": "",
   "unabaseScore": 8.4,
-  "companyBrief": "Leading Peruvian production-services company, 20+ yrs, servicing intl TVCs, features, docs and fashion shoots nationwide. Builds per-shoot budgets: location scouting, permits, crew, equipment, casting, logistics across Peru coast/Andes/Amazon. Founder Bruno Canale.",
+  "companyBrief": "Empresa líder de servicios de producción (line production / fixer) en Perú — Lima, Cusco y Amazonía — con +25 años. Da soporte a largometrajes, comerciales, documentales y fotografía internacional. Créditos: 'Transformers: Rise of the Beasts', 'Paddington in Peru' (Studiocanal), 'Inés del Alma Mía', 'Dora and the Lost Temple of Gold', 'Ancient Apocalypse' (Netflix), National Geographic, Discovery, Belmond y Campari. DM: Bruno Canale, fundador y productor ejecutivo (fundó APU en 2001).",
   "additionalContacts": [],
   "_verifiedCredits": [
    "International TV commercials",
    "Feature films & fashion shoots"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "frontera",
@@ -586,20 +629,20 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Bruno, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en APU Productions y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Spaziale Studio",
   "country": "Spain",
   "website": "https://www.spaziale.tv/",
   "instagramHandle": "spaziale.tv",
-  "instagramFollowers": null,
-  "contactName": "",
-  "contactTitle": "",
-  "contactEmail": "mad@spaziale.tv",
+  "instagramFollowers": 1394,
+  "contactName": "Enrique Martín",
+  "contactTitle": "Creative Director & CEO / Founder",
+  "contactEmail": "enrique.martin@spaziale.tv",
   "companyEmail": "mad@spaziale.tv",
   "unabaseScore": 8.5,
-  "companyBrief": "Creative house / productora audiovisual en Madrid (desde 2020) para marcas premium: commercial films, brand films, fashion/fragrance films, branded content, direccion creativa, CGI, VFX y postproduccion. Clientes: Bvlgari, Hyundai, Lexus, OPPO, Lenovo/ThinkPad, Sony Music, Comunidad de Madrid. DM: Enrique Martin (fundador/director-productor). IG @spaziale.tv.",
+  "companyBrief": "Madrid, Spain creative house at the intersection of advertising, film and visual culture, producing luxury brand, fashion, beauty and fragrance films plus CGI/VFX and post. Clients include Bvlgari, Hyatt (Thompson Madrid), OPPO, Hyundai, Lenovo, Sony Music, Lexus, Nishane and Naturae Cosmetic. Led by founder Enrique Martín, Creative Director & CEO.",
   "additionalContacts": [
    {
     "name": "Enrique Martin",
@@ -617,7 +660,7 @@
    "Comunidad de Madrid",
    "Nishane 'Hundred Silent Ways' (fragrance film)"
   ],
-  "_igStatus": "active",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "adjacent-creative",
@@ -627,26 +670,42 @@
   "approved": true,
   "readyToSend": true,
   "_operatorVerified": false,
-  "pitchEmailES": "Hola, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Spaziale Studio y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "pitchEmailES": "Hola Enrique, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Spaziale Studio y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
+  "_enrichRound": "web-deep-2026-08-21"
  },
  {
   "companyName": "Muy al Sur Films",
   "country": "Spain",
-  "website": "https://muyalsurfilms.com/",
+  "website": "https://muyalsur.com",
   "instagramHandle": "muyalsurfilms_",
-  "instagramFollowers": null,
+  "instagramFollowers": 795,
   "contactName": "Adrián Ordóñez",
   "contactTitle": "Director / CEO",
   "contactEmail": "info@muyalsurfilms.com",
   "companyEmail": "",
   "unabaseScore": 8.5,
-  "companyBrief": "Malaga (Andalucia) cinematic fiction+documentary productora led by Adrian Ordonez. 20+ awards and ~100 official selections; El Amoragaor won Best Documentary Short at Festival de Sax 2024.",
-  "additionalContacts": [],
+  "companyBrief": "Productora audiovisual en Málaga, Andalucía (España). Produce cortos de ficción, documentales, publicidad y videoclips con sello cinematográfico. Créditos: 'Todo va bien' (2023, nominado Premios Carmen), 'El Amoragaor' (2024, candidato a los Goya y nominado a Premios Carmen mejor corto documental), 'Inquilinos' (2026, Festival de Málaga) y el largo documental 'Pacheco Forever'. Equipo: Adrián Ordóñez (director/CEO), productores Jaime Lucas y Ana Cózar, guionista Sergio Rubio.",
+  "additionalContacts": [
+   {
+    "name": "Jaime Lucas",
+    "title": "Productor",
+    "email": null
+   },
+   {
+    "name": "Ana Cózar",
+    "title": "Productora",
+    "email": null
+   },
+   {
+    "name": "Sergio Rubio",
+    "title": "Guionista",
+    "email": null
+   }
+  ],
   "_verifiedCredits": [
    "El Amoragaor - Best Doc Short Sax 2024"
   ],
-  "_igStatus": "unverified",
+  "_igStatus": "web-verified-2026-08-21",
   "_creditsVerified": true,
   "_enriched": true,
   "_lane": "core",
@@ -657,6 +716,6 @@
   "readyToSend": true,
   "_operatorVerified": false,
   "pitchEmailES": "Hola Adrián, ¿Cómo estás? Soy Scarlett del equipo de UnaBase.\n\nEstábamos viendo el trabajo que hacen en Muy al Sur Films y conectamos.\n\nTe hago una pregunta rápida.\n¿Cómo están organizando hoy los presupuestos cuando tienen varios proyectos corriendo al mismo tiempo?\n\nLo pregunto porque muchas productoras terminan manejándolo en Excel, notas sueltas o mil versiones distintas, y se vuelve difícil tener claridad real.\n\nUnaBase es un sistema justamente para eso, ordenar y visualizar presupuestos de producción sin fricción.\n\nSi te hace sentido, te muestro en 10 min cómo lo están usando otras productoras.\n\nSaludos,\nScarlett Lillo",
-  "_enrichRound": "pool"
+  "_enrichRound": "web-deep-2026-08-21"
  }
 ]
