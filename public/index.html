@@ -928,10 +928,22 @@ async function sbLogStatus(leadId,status){
 async function sbAll(table, apply){
   let out=[], from=0;
   for(;;){
-    let qb=sb.from(table).select('*').eq('client_id',CLIENT_ID).range(from, from+999);
-    if(apply)qb=apply(qb);
-    const {data,error}=await qb;
-    if(error){console.error('[sbAll]',table,'page',from,error.message);break;}
+    // Retry each page a few times before giving up — mobile networks drop
+    // requests, and a single failed page used to silently truncate the whole
+    // load (or, for page 0, return nothing → the render treated it as "no
+    // data" and re-proposed already-done touches). On PERSISTENT failure we
+    // THROW so the caller preserves existing local data instead of wiping it.
+    let data,error,tries=0;
+    for(;;){
+      let qb=sb.from(table).select('*').eq('client_id',CLIENT_ID).range(from, from+999);
+      if(apply)qb=apply(qb);
+      ({data,error}=await qb);
+      if(!error)break;
+      tries++;
+      console.warn('[sbAll]',table,'page',from,'attempt',tries,error.message);
+      if(tries>=3)throw new Error('sbAll '+table+' page '+from+' failed after '+tries+' tries: '+error.message);
+      await new Promise(r=>setTimeout(r,400*tries));
+    }
     if(!data||!data.length)break;
     out=out.concat(data);
     if(data.length<1000)break;
@@ -988,19 +1000,40 @@ async function sbLoadAll(){
           sbMsgsByLead[m.lead_id].push({ch:m.channel,tx:m.message_text,ts:m.sent_at});
         }
       });
-      // Replace local msgs with authoritative Supabase data — including
-      // EMPTY arrays when Supabase has zero messages for a lead. Previously
-      // only iterated leads with messages in Supabase, leaving local stale
-      // msgs in place after server-side deletes (broke the freshOnly filter
-      // in Hoy when recovery patches deleted msgs but localStorage retained
-      // them).
+      // MERGE (not blind replace) — Supabase is authoritative for anything it
+      // knows about, BUT a mark saved seconds ago may not be in THIS read yet
+      // (write-lag, partial read, slow mobile fetch). A blind replace would
+      // overwrite the fresh local mark with the older server set, the touch
+      // would look un-done, and the cycle would re-propose it on refresh —
+      // THIS is the "I mark it, refresh, it's back" bug (avantipictures had 7
+      // duplicate emails from re-saving across sessions). Fix: keep any LOCAL
+      // msg that (a) the server read doesn't have yet AND (b) is recent
+      // (< RECENT_MS) — i.e. an unsynced fresh mark. Older local-only msgs are
+      // still dropped so genuine server-side deletes propagate (the freshOnly
+      // reason the replace existed in the first place).
+      const RECENT_MS=48*3600000;
+      const nowT=Date.now();
       Object.keys(D).forEach(id=>{
-        D[id].msgs=sbMsgsByLead[id]||[];
+        const sb=sbMsgsByLead[id]||[];
+        const sbTs=new Set(sb.map(m=>m.ts));
+        const local=Array.isArray(D[id].msgs)?D[id].msgs:[];
+        const freshLocal=local.filter(m=>{
+          if(!m||!m.ts||sbTs.has(m.ts))return false;      // already in server set → server wins
+          const t=new Date(m.ts).getTime();
+          return !isNaN(t)&&(nowT-t)<RECENT_MS;             // keep only recent unsynced marks
+        });
+        D[id].msgs=sb.concat(freshLocal);
       });
     }
     // Load notes — filtered by client_id
     const nts=await sbAll('notes');
     if(nts)nts.forEach(n=>{if(D[n.lead_id])D[n.lead_id].notes=n.note_text||''});
+    // COMMIT core hydration NOW — leads + actions + messages + notes are the
+    // truth the render depends on. Everything below (self-heal, anchor,
+    // outbox replay) is repair/best-effort; if any of it throws, the outer
+    // catch must NOT be able to discard the data we already loaded. Previously
+    // the ONLY sdb() was at the very end, so one throw wiped the whole load.
+    try{sdb(D);}catch(e){console.warn('[sbLoadAll] early commit failed',e.message);}
     // SELF-HEAL (forward): if a lead has a message for channel X but no
     // matching action row, add the action. Protects against sM()/tA() drift.
     const healed=[];
