@@ -1,6 +1,31 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-08-24",
+      "file": "leads-2026-08-24.json",
+      "source_date": "2026-08-24",
+      "scheduled": true,
+      "archived": false,
+      "lead_count": 18,
+      "status": "active",
+      "note": "Fresh-mine (cloud farm was down). 18 premium net-new productoras — deep LATAM mine across 11+ agents (priority markets found mined-out, so sourced via under-covered pools: secondary-city MX branded/animation, ES regional, Caribbean/Central America, emerging 2021+ houses). MX-plurality + wide LATAM spread. All 3 gates clean.",
+      "supply_metrics": {
+        "net_new_mined": 18,
+        "pool_dispatched": 0,
+        "geo": {
+          "Mexico": 6,
+          "Colombia": 4,
+          "Spain": 2,
+          "Argentina": 1,
+          "Chile": 1,
+          "Peru": 1,
+          "Venezuela": 1,
+          "Dominican Republic": 1,
+          "Ecuador": 1
+        }
+      }
+    },
+    {
       "batch_id": "batch-2026-08-21",
       "source_date": "2026-08-21",
       "file": "leads-2026-08-21.json",
@@ -15,7 +40,7 @@
       "supply_metrics": {
         "note": "pool_dispatch_2026-08-19"
       },
-      "archived": false
+      "archived": true
     },
     {
       "batch_id": "batch-2026-08-20",
@@ -1575,7 +1600,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-08-21",
+  "active_batch_id": "batch-2026-08-24",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-21T17:07:49.823635Z"
+  "last_updated": "2026-08-24T15:42:57.119562Z"
 }
