@@ -1,6 +1,28 @@
 {
   "batches": [
     {
+      "batch_id": "batch-2026-08-25",
+      "file": "leads-2026-08-25.json",
+      "source_date": "2026-08-25",
+      "scheduled": true,
+      "archived": false,
+      "lead_count": 18,
+      "status": "queued",
+      "note": "Queued (auto-activates 08-25 Tue). 18 net-new branded/commercial productoras from the deep 08-24 mine reserve. MX/ES-plurality + LATAM spread.",
+      "supply_metrics": {
+        "net_new_mined": 18,
+        "geo": {
+          "Mexico": 3,
+          "Spain": 4,
+          "Argentina": 3,
+          "Chile": 3,
+          "Peru": 2,
+          "Colombia": 2,
+          "Costa Rica": 1
+        }
+      }
+    },
+    {
       "batch_id": "batch-2026-08-24",
       "file": "leads-2026-08-24.json",
       "source_date": "2026-08-24",
@@ -1602,5 +1624,5 @@
   ],
   "active_batch_id": "batch-2026-08-24",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-24T15:42:57.119562Z"
+  "last_updated": "2026-08-24T16:09:54.762021Z"
 }
