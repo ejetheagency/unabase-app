@@ -8,7 +8,7 @@
       "archived": false,
       "lead_count": 18,
       "status": "queued",
-      "note": "Queued (auto-activates 08-25 Tue). 18 net-new branded/commercial productoras from the deep 08-24 mine reserve. MX/ES-plurality + LATAM spread.",
+      "note": "18 net-new branded/commercial productoras (from 08-24 deep-mine). Fully enriched: 18/18 IG follower counts, briefs 300+. MX/ES-plurality + LATAM spread. All gates clean.",
       "supply_metrics": {
         "net_new_mined": 18,
         "geo": {
@@ -27,7 +27,7 @@
       "file": "leads-2026-08-24.json",
       "source_date": "2026-08-24",
       "scheduled": true,
-      "archived": false,
+      "archived": true,
       "lead_count": 18,
       "status": "active",
       "note": "Fresh-mine (cloud farm was down). 18 premium net-new productoras — deep LATAM mine across 11+ agents (priority markets found mined-out, so sourced via under-covered pools: secondary-city MX branded/animation, ES regional, Caribbean/Central America, emerging 2021+ houses). MX-plurality + wide LATAM spread. All 3 gates clean.",
@@ -1622,7 +1622,7 @@
       "archived_at": "2026-06-24T21:56:59.063Z"
     }
   ],
-  "active_batch_id": "batch-2026-08-24",
+  "active_batch_id": "batch-2026-08-25",
   "timezone": "America/New_York",
-  "last_updated": "2026-08-24T16:09:54.762021Z"
+  "last_updated": "2026-08-25T15:24:25.020755Z"
 }
