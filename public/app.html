@@ -1125,12 +1125,15 @@
         }).catch(function(){ if(subEl) subEl.textContent='No se pudo cargar.'; });
         return;
       }
-      // local-first: paint cache instantly, then refresh in background
-      try{var c=localStorage.getItem('eje_dec_cache'); if(c){DATA=JSON.parse(c); render(); if(typeof renderHoy==='function') renderHoy();}}catch(e){}
+      // FRESH-FIRST: resolve today's active batch from the manifest BEFORE trusting the
+      // local cache. Only paint the cache if it's for the SAME batch — otherwise a stale
+      // cached report (e.g. yesterday's) would stick in Hoy even after a refresh (the bug
+      // Scarlett hit). If the cache is for a different/older batch, drop it.
       var cb='?v='+Date.now();
       fetch('./reports-manifest.json'+cb).then(function(r){return r.json();}).then(function(m){
         var active=ejeActiveBatch(m);   // date-scheduled active batch (today's report), not the literal active_batch_id
         if(!active) throw 0;
+        try{var c=localStorage.getItem('eje_dec_cache'); if(c){var cd=JSON.parse(c); if(cd&&cd.date===active.source_date){DATA=cd; render(); if(typeof renderHoy==='function') renderHoy();}else{localStorage.removeItem('eje_dec_cache');}}}catch(e){}
         return fetch('./'+active.file+cb).then(function(r){return r.json();}).then(function(leads){
           DATA={date:active.source_date,leads:leads};
           try{localStorage.setItem('eje_dec_cache',JSON.stringify(DATA));}catch(e){}
