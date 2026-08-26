@@ -1,6 +1,28 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-08-27",
+   "file": "leads-2026-08-27.json",
+   "source_date": "2026-08-27",
+   "scheduled": true,
+   "archived": false,
+   "lead_count": 12,
+   "status": "queued",
+   "note": "QUEUED for 2026-08-27. 13 premium net-new productoras (pool-dispatch, deep re-enriched). Scores 8.3-9.0, 100% deliverable email, 100% named DM. 12/13 IG-verified (1 documented no-IG: Color Monster, live website). Geo drift toward LATAM/ES as MX premium pool thins; MX plurality held. Dropped 11 off-ICP/thin in QC (events/VFX/fixers/nonprofits/no-owner).",
+   "supply_metrics": {
+    "net_new_dispatched": 12,
+    "geo": {
+     "Mexico": 3,
+     "Argentina": 1,
+     "Colombia": 2,
+     "Panama": 1,
+     "Bolivia": 2,
+     "Peru": 2,
+     "Spain": 2
+    }
+   }
+  },
+  {
    "batch_id": "batch-2026-08-26",
    "file": "leads-2026-08-26.json",
    "source_date": "2026-08-26",
@@ -1649,5 +1671,5 @@
  ],
  "active_batch_id": "batch-2026-08-26",
  "timezone": "America/New_York",
- "last_updated": "2026-08-26T13:30:00.000Z"
+ "last_updated": "2026-08-26T15:00:00.000Z"
 }
