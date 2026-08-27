@@ -1,24 +1,46 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-08-28",
+   "file": "leads-2026-08-28.json",
+   "source_date": "2026-08-28",
+   "scheduled": true,
+   "archived": false,
+   "lead_count": 11,
+   "status": "queued",
+   "note": "QUEUED for 2026-08-28 (Fri). 11 premium net-new productoras (fresh mine: co-pro/fund rosters + branded/animation houses). Scores 8.5-9.2, 100% deliverable email, 100% named DM, 10/11 IG-verified. Geo ES/AR-led (MX pool mined out — geo drift OK per quality doctrine). All 3 gates clean. Reserve available to top toward 18.",
+   "supply_metrics": {
+    "net_new_dispatched": 11,
+    "geo": {
+     "Argentina": 3,
+     "Uruguay": 1,
+     "Spain": 4,
+     "Mexico": 1,
+     "Chile": 1,
+     "Ecuador": 1
+    }
+   }
+  },
+  {
    "batch_id": "batch-2026-08-27",
    "file": "leads-2026-08-27.json",
    "source_date": "2026-08-27",
    "scheduled": true,
    "archived": false,
-   "lead_count": 12,
+   "lead_count": 18,
    "status": "queued",
-   "note": "QUEUED for 2026-08-27. 13 premium net-new productoras (pool-dispatch, deep re-enriched). Scores 8.3-9.0, 100% deliverable email, 100% named DM. 12/13 IG-verified (1 documented no-IG: Color Monster, live website). Geo drift toward LATAM/ES as MX premium pool thins; MX plurality held. Dropped 11 off-ICP/thin in QC (events/VFX/fixers/nonprofits/no-owner).",
+   "note": "18 premium net-new productoras (pool-dispatch + fresh-mine top-up). All score>=8.5, 100% deliverable email, 100% named DM, IG-verified. MX plurality. All 3 gates clean.",
    "supply_metrics": {
-    "net_new_dispatched": 12,
+    "net_new_dispatched": 18,
     "geo": {
-     "Mexico": 3,
-     "Argentina": 1,
-     "Colombia": 2,
+     "Mexico": 4,
+     "Argentina": 2,
+     "Colombia": 3,
      "Panama": 1,
-     "Bolivia": 2,
-     "Peru": 2,
-     "Spain": 2
+     "Bolivia": 1,
+     "Peru": 3,
+     "Spain": 3,
+     "Uruguay": 1
     }
    }
   },
@@ -1671,5 +1693,5 @@
  ],
  "active_batch_id": "batch-2026-08-26",
  "timezone": "America/New_York",
- "last_updated": "2026-08-26T15:00:00.000Z"
+ "last_updated": "2026-08-26T22:00:00.000Z"
 }
