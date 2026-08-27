@@ -6,15 +6,15 @@
    "source_date": "2026-08-28",
    "scheduled": true,
    "archived": false,
-   "lead_count": 11,
+   "lead_count": 18,
    "status": "queued",
-   "note": "QUEUED for 2026-08-28 (Fri). 11 premium net-new productoras (fresh mine: co-pro/fund rosters + branded/animation houses). Scores 8.5-9.2, 100% deliverable email, 100% named DM, 10/11 IG-verified. Geo ES/AR-led (MX pool mined out — geo drift OK per quality doctrine). All 3 gates clean. Reserve available to top toward 18.",
+   "note": "18 premium net-new productoras (fresh mine + reserve). Scores 8.5-9.4, 100% deliverable email, 100% named DM, IG-verified. ES-heavy (priority market; MX pool web-mined out). All 3 gates clean.",
    "supply_metrics": {
-    "net_new_dispatched": 11,
+    "net_new_dispatched": 18,
     "geo": {
      "Argentina": 3,
      "Uruguay": 1,
-     "Spain": 4,
+     "Spain": 11,
      "Mexico": 1,
      "Chile": 1,
      "Ecuador": 1
