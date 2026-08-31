@@ -1,6 +1,30 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-08-31",
+   "file": "leads-2026-08-31.json",
+   "source_date": "2026-08-31",
+   "scheduled": true,
+   "archived": false,
+   "lead_count": 18,
+   "status": "active",
+   "note": "18 net-new LATAM productoras (pool dispatch). Scores 7.5-9.0 (2 lower-tier fillers, pool thinning). 100% deliverable email, 100% named decision-maker DM, ICP-clean. MX plurality (5). All 3 gates clean (liveness/audit/dedup). Refill needed for 09-01+.",
+   "supply_metrics": {
+    "net_new_dispatched": 18,
+    "geo": {
+     "Peru": 2,
+     "Mexico": 5,
+     "Dominican Republic": 1,
+     "Argentina": 2,
+     "Spain": 4,
+     "Colombia": 1,
+     "Costa Rica": 1,
+     "Chile": 1,
+     "Uruguay": 1
+    }
+   }
+  },
+  {
    "batch_id": "batch-2026-08-28",
    "file": "leads-2026-08-28.json",
    "source_date": "2026-08-28",
@@ -98,7 +122,7 @@
    "scheduled": true,
    "archived": true,
    "lead_count": 18,
-   "status": "active",
+   "status": "archived",
    "note": "Fresh-mine (cloud farm was down). 18 premium net-new productoras — deep LATAM mine across 11+ agents (priority markets found mined-out, so sourced via under-covered pools: secondary-city MX branded/animation, ES regional, Caribbean/Central America, emerging 2021+ houses). MX-plurality + wide LATAM spread. All 3 gates clean.",
    "supply_metrics": {
     "net_new_mined": 18,
@@ -341,7 +365,7 @@
    "lead_count": 18,
    "approved": true,
    "approved_at": "2026-08-04T13:00:00.000Z",
-   "status": "active",
+   "status": "archived",
    "disable_carry_forward": false,
    "workspace": "pool_dispatch_a_tier",
    "note": "08-04 pool-dispatch (18 = locked composition 10 core + 5 adjacent-creative + 3 frontera). Core MX-plurality: Radiola/Grupo Expert/Corazón/Autonauta + Gema/Oh My Gómez + A La Deriva + Jaguar + Ringo/Massa dOr. Adjacent: Suricata/DeTuco/Draff/Dessignare/Punto8. Frontera: SOMOS DER/Fonktown/LaPizarra. Live enrichment pass: IG counts refreshed+verified, rosters harvested, Suricata DM corrected to founder Aída Argüelles, SOMOS DER URL fixed to somosder.ar. DROPPED Gusana Films (founder deceased 2023). 3 gates clean.",
@@ -352,7 +376,8 @@
     "frontera": 3,
     "priority": 12,
     "avg_score": 8.71
-   }
+   },
+   "archived": true
   },
   {
    "batch_id": "batch-2026-08-03",
@@ -1691,7 +1716,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-08-26",
+ "active_batch_id": "batch-2026-08-31",
  "timezone": "America/New_York",
- "last_updated": "2026-08-26T22:00:00.000Z"
+ "last_updated": "2026-08-31T13:00:00.000Z"
 }
