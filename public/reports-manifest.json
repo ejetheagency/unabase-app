@@ -1,13 +1,32 @@
 {
  "batches": [
   {
-   "batch_id": "batch-2026-09-01",
-   "file": "leads-2026-09-01.json",
-   "source_date": "2026-09-01",
+   "batch_id": "batch-2026-09-02",
+   "file": "leads-2026-09-02.json",
+   "source_date": "2026-09-02",
    "scheduled": true,
    "archived": false,
    "lead_count": 18,
    "status": "active",
+   "note": "18 premium net-new LATAM productoras (fresh-mine from structured rosters + full enrichment wave, MX-weighted top-up for plurality). Scores 8.5-9.5, 100% deliverable email, 100% named decision-maker, MX plurality (7). All 3 gates clean.",
+   "supply_metrics": {
+    "net_new_dispatched": 18,
+    "geo": {
+     "Mexico": 8,
+     "Colombia": 6,
+     "Argentina": 3,
+     "Peru": 1
+    }
+   }
+  },
+  {
+   "batch_id": "batch-2026-09-01",
+   "file": "leads-2026-09-01.json",
+   "source_date": "2026-09-01",
+   "scheduled": true,
+   "archived": true,
+   "lead_count": 18,
+   "status": "archived",
    "note": "18 premium net-new LATAM productoras (fresh-mine + full enrichment wave on 70 structured-source companies; ~26%% survived). Scores 8.5-9.0, 100%% deliverable published email, 100%% named decision-maker, MX plurality (7). 13 IG-verified w/ counts + 4 live-handle + 1 email-only. All 3 gates clean.",
    "supply_metrics": {
     "net_new_dispatched": 18,
@@ -1734,7 +1753,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-09-01",
+ "active_batch_id": "batch-2026-09-02",
  "timezone": "America/New_York",
- "last_updated": "2026-09-01T13:00:00.000Z"
+ "last_updated": "2026-09-02T13:00:00.000Z"
 }
