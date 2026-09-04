@@ -1,6 +1,28 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-09-04",
+   "file": "leads-2026-09-04.json",
+   "source_date": "2026-09-04",
+   "scheduled": true,
+   "archived": false,
+   "lead_count": 12,
+   "status": "queued",
+   "note": "13 premium net-new productoras (fresh reverse-engineered sources; co-pro markets, animation rosters, fresh geos incl. Paraguay/Dominican). Scores 7.5-9.0, 100% clean published email, 100% named DM. Scheduled to auto-activate 2026-09-04. Pool premium supply capped here after 3 enrichment waves; fresh source mine needed for next.",
+   "supply_metrics": {
+    "net_new_dispatched": 12,
+    "geo": {
+     "Argentina": 2,
+     "Spain": 2,
+     "Mexico": 2,
+     "Colombia": 2,
+     "Chile": 1,
+     "Paraguay": 2,
+     "Dominican Republic": 1
+    }
+   }
+  },
+  {
    "batch_id": "batch-2026-09-03",
    "file": "leads-2026-09-03.json",
    "source_date": "2026-09-03",
