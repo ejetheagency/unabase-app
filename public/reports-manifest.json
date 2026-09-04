@@ -6,17 +6,17 @@
    "source_date": "2026-09-04",
    "scheduled": true,
    "archived": false,
-   "lead_count": 12,
+   "lead_count": 18,
    "status": "queued",
-   "note": "13 premium net-new productoras (fresh reverse-engineered sources; co-pro markets, animation rosters, fresh geos incl. Paraguay/Dominican). Scores 7.5-9.0, 100% clean published email, 100% named DM. Scheduled to auto-activate 2026-09-04. Pool premium supply capped here after 3 enrichment waves; fresh source mine needed for next.",
+   "note": "18 premium net-new productoras (new pools: animation-studio directories, producer guilds, commercial chambers, fresh geos). MX plurality (6). Scores 8.5-9.3, 100% clean email, 100% named DM, all 3 gates clean. Scheduled -> auto-activates 2026-09-04.",
    "supply_metrics": {
-    "net_new_dispatched": 12,
+    "net_new_dispatched": 18,
     "geo": {
-     "Argentina": 2,
+     "Argentina": 3,
      "Spain": 2,
-     "Mexico": 2,
+     "Mexico": 6,
      "Colombia": 2,
-     "Chile": 1,
+     "Chile": 2,
      "Paraguay": 2,
      "Dominican Republic": 1
     }
