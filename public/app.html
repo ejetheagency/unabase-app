@@ -813,7 +813,16 @@
     // A batch flagged scheduled:true becomes the active report automatically once its source_date
     // has arrived (America/New_York). Newest due wins. Fallback: the manual active_batch_id. Without
     // this, Hoy loaded the literal active_batch_id (a past batch) and showed nothing for today.
-    function ejeTodayET(){ try{ return new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'})).toISOString().slice(0,10); }catch(e){ return new Date().toISOString().slice(0,10); } }
+    // Report rolls over at 08:00 America/Santiago (Chile): a batch whose source_date is D becomes the
+    // active "today" report at 8 AM Chile on day D (before 8 AM Chile, "today" is still D-1). Keeps the
+    // name ejeTodayET for its call sites, but the boundary is now 8 AM Chile, not ET midnight.
+    function ejeTodayET(){ try{
+      var s=new Date().toLocaleString('en-CA',{timeZone:'America/Santiago',hour12:false,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit'});
+      var mm=s.match(/(\d{4})-(\d{2})-(\d{2})\D+(\d{2})/); if(!mm) throw 0;
+      var y=+mm[1],mo=+mm[2],d=+mm[3],h=+mm[4];
+      if(h<8){ var dt=new Date(Date.UTC(y,mo-1,d)); dt.setUTCDate(dt.getUTCDate()-1); return dt.toISOString().slice(0,10); }
+      return mm[1]+'-'+mm[2]+'-'+mm[3];
+    }catch(e){ return new Date().toISOString().slice(0,10); } }
     function ejeActiveBatch(m){
       var today=ejeTodayET();
       var due=(m.batches||[]).filter(function(b){return b.scheduled&&b.file&&b.source_date&&b.source_date<=today;}).sort(function(a,b){return a.source_date<b.source_date?1:(a.source_date>b.source_date?-1:0);});
