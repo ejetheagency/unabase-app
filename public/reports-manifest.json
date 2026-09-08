@@ -6,17 +6,20 @@
    "source_date": "2026-09-08",
    "scheduled": true,
    "archived": false,
-   "lead_count": 18,
+   "lead_count": 98,
    "status": "queued",
-   "note": "18 premium net-new productoras (new pools: animation/film-commission/guild directories with live sites). Scores 8.0-9.0, 100% clean email, 100% named DM. Scheduled -> auto-activates 08:00 America/Santiago (Chile) on 2026-09-08.",
+   "note": "CATCH-UP: all 99 unattended leads from last week + this week, consolidated into Hoy so the client can work the backlog (they had paused thinking the subscription lapsed). Scores 7.5-9.5, all gates clean. Auto-active 8 AM Chile.",
    "supply_metrics": {
-    "net_new_dispatched": 18,
+    "net_new_dispatched": 98,
     "geo": {
-     "Spain": 10,
-     "Argentina": 2,
-     "Mexico": 3,
-     "Colombia": 2,
-     "Chile": 1
+     "Colombia": 23,
+     "Argentina": 15,
+     "Chile": 13,
+     "Mexico": 27,
+     "Spain": 16,
+     "Paraguay": 2,
+     "Peru": 1,
+     "Dominican Republic": 1
     }
    }
   },
