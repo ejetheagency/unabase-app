@@ -1,6 +1,29 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-09-09",
+   "file": "leads-2026-09-09.json",
+   "source_date": "2026-09-09",
+   "scheduled": true,
+   "archived": false,
+   "lead_count": 116,
+   "status": "queued",
+   "note": "18 fresh net-new productoras + 98 carry-forward unattended = 116 actionable in Hoy. Fresh from new website-rich pools, all gates clean. Carry-forward preserved so the client backlog stays visible. Auto-active 8 AM Chile.",
+   "supply_metrics": {
+    "net_new_dispatched": 18,
+    "geo": {
+     "Spain": 31,
+     "Mexico": 29,
+     "Colombia": 24,
+     "Argentina": 15,
+     "Chile": 13,
+     "Paraguay": 2,
+     "Peru": 1,
+     "Dominican Republic": 1
+    }
+   }
+  },
+  {
    "batch_id": "batch-2026-09-08",
    "file": "leads-2026-09-08.json",
    "source_date": "2026-09-08",
