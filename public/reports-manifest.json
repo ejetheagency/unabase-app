@@ -1,6 +1,30 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-09-10",
+   "file": "leads-2026-09-10.json",
+   "source_date": "2026-09-10",
+   "scheduled": true,
+   "archived": false,
+   "lead_count": 125,
+   "status": "queued",
+   "note": "9 fresh LATAM net-new (MX/CL/AR/PE/PA, zero Spain - rebalanced) + 116 carry-forward unattended = 125 in Hoy. All gates clean. NOTE: client has worked 0 of the backlog; bottleneck is client engagement, not lead supply.",
+   "supply_metrics": {
+    "net_new_dispatched": 9,
+    "geo": {
+     "Chile": 15,
+     "Argentina": 17,
+     "Peru": 2,
+     "Mexico": 32,
+     "Panama": 1,
+     "Spain": 31,
+     "Colombia": 24,
+     "Paraguay": 2,
+     "Dominican Republic": 1
+    }
+   }
+  },
+  {
    "batch_id": "batch-2026-09-09",
    "file": "leads-2026-09-09.json",
    "source_date": "2026-09-09",
