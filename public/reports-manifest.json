@@ -1,6 +1,30 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-09-11",
+   "file": "leads-2026-09-11.json",
+   "source_date": "2026-09-11",
+   "scheduled": true,
+   "archived": false,
+   "lead_count": 143,
+   "status": "queued",
+   "note": "18 fresh net-new (MX/CO-weighted, ES buffer) + carry-forward = 143. READY TO SHIP: auto-activates 8 AM Chile 2026-09-11. All gates clean.",
+   "supply_metrics": {
+    "net_new_dispatched": 18,
+    "geo": {
+     "Spain": 42,
+     "Chile": 16,
+     "Argentina": 18,
+     "Colombia": 26,
+     "Mexico": 35,
+     "Peru": 2,
+     "Panama": 1,
+     "Paraguay": 2,
+     "Dominican Republic": 1
+    }
+   }
+  },
+  {
    "batch_id": "batch-2026-09-10",
    "file": "leads-2026-09-10.json",
    "source_date": "2026-09-10",
