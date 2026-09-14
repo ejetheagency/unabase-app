@@ -736,7 +736,7 @@
     function chLabel(ch){ return ch==='ig'?'IG':ch==='wa'?'WA':'Email'; }
     function nextTxt(ch,l){ return ch==='ig'?('DM por Instagram'+(l&&l.instagramHandle?' @'+l.instagramHandle:'')):ch==='wa'?'Enviar WhatsApp':'Enviar email de seguimiento'; }
     function chChip(ch){ return ch==='ig'?'ig':ch==='wa'?'green':''; }
-    function resolveCh(ch,l){ if(ch==='ig'&&!l.instagramHandle&&!ISEJE) return 'email'; if(ch==='wa'&&!(l.contactPhone||l.apolloCompanyPhone)) return 'email'; return ch; }
+    function resolveCh(ch,l){ if(ch==='ig'&&!l.instagramHandle) return 'email'; if(ch==='wa'&&!(l.contactPhone||l.apolloCompanyPhone)) return 'email'; return ch; }
     function cadOf(l){
       var d=l._key||decDom(l.website); var st=(d&&STATUS[d])||l.status||'none';
       var ts=(MSGS[d]||[]).slice().sort(function(a,b){return a-b;});
