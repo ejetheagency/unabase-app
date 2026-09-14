@@ -1,11 +1,32 @@
 {
  "batches": [
   {
+   "batch_id": "batch-2026-09-14",
+   "file": "leads-2026-09-14.json",
+   "source_date": "2026-09-14",
+   "scheduled": true,
+   "archived": false,
+   "lead_count": 150,
+   "status": "scheduled",
+   "note": "7 net-new premium + 143 carry-forward uncontacted (09-08..09-11). Dedup vs 1157 shipped.",
+   "supply_metrics": {
+    "fresh": 7,
+    "carry_forward": 143,
+    "total": 150,
+    "geo": {
+     "MX": 4,
+     "ES": 4,
+     "CO": 2,
+     "CL": 1
+    }
+   }
+  },
+  {
    "batch_id": "batch-2026-09-11",
    "file": "leads-2026-09-11.json",
    "source_date": "2026-09-11",
    "scheduled": true,
-   "archived": false,
+   "archived": true,
    "lead_count": 143,
    "status": "queued",
    "note": "18 fresh net-new (MX/CO-weighted, ES buffer) + carry-forward = 143. READY TO SHIP: auto-activates 8 AM Chile 2026-09-11. All gates clean.",
@@ -1907,7 +1928,7 @@
    "archived_at": "2026-06-24T21:56:59.063Z"
   }
  ],
- "active_batch_id": "batch-2026-09-03",
+ "active_batch_id": "batch-2026-09-14",
  "timezone": "America/New_York",
  "last_updated": "2026-09-03T13:00:00.000Z"
 }
