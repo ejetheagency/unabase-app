@@ -6,16 +6,16 @@
    "source_date": "2026-09-14",
    "scheduled": true,
    "archived": false,
-   "lead_count": 150,
+   "lead_count": 161,
    "status": "scheduled",
-   "note": "7 net-new premium + 143 carry-forward uncontacted (09-08..09-11). Dedup vs 1157 shipped.",
+   "note": "18 net-new premium (MX8/ES7/CO2/CL1) + 143 carry-forward uncontacted (09-08..09-11). Dedup vs shipped history.",
    "supply_metrics": {
-    "fresh": 7,
+    "fresh": 18,
     "carry_forward": 143,
-    "total": 150,
+    "total": 161,
     "geo": {
-     "MX": 4,
-     "ES": 4,
+     "MX": 8,
+     "ES": 7,
      "CO": 2,
      "CL": 1
     }
