@@ -425,6 +425,7 @@
         <div class="ws-sep">Cuentas de cliente</div>
         <button class="ws-opt" data-ws="UnaBase" data-client="unabase_default" data-acct="#c6902a" data-kind="Scarlett"><span class="d" style="background:#c6902a"></span><span class="n">UnaBase</span><span class="k">Scarlett</span></button>
         <div class="ws-sep">Interno</div>
+        <button class="ws-opt" data-ws="EJE Outreach" data-client="eje" data-acct="#2da2bb" data-kind="Emiliano"><span class="d" style="background:#2da2bb"></span><span class="n">EJE Outreach</span><span class="k">Emiliano</span></button>
         <button class="ws-opt" data-ws="EJE Websites" data-client="eje_web" data-acct="#3f8cff" data-kind="Emiliano"><span class="d" style="background:#3f8cff"></span><span class="n">EJE Websites</span><span class="k">Emiliano</span></button>
       </div>
     </div>
@@ -569,14 +570,14 @@
   (function(){
     var btn=document.getElementById('wsBtn'), menu=document.getElementById('wsMenu');
     function activeClient(){try{return localStorage.getItem('eje_ws')||'unabase_default';}catch(e){return 'unabase_default';}}
-    // EJE Websites workspace is private to Emiliano's accounts — hide it from everyone else.
+    // EJE Outreach + EJE Websites workspaces are private to Emiliano's accounts — hide them from everyone else.
     var EJE_OWNERS=['ejofreeyzaguirre@gmail.com','contact@ejetheagency.com'];
+    var EJE_PRIVATE=['eje_web','eje'];
     window.__ejeApplyWsGate=function(){
-      var opt=document.querySelector('.ws-opt[data-client="eje_web"]'); if(!opt) return;
       var email=(window.__ejeEmail||'').toLowerCase(), owner=EJE_OWNERS.indexOf(email)>=0;
-      opt.style.display=owner?'':'none';
-      // once we KNOW the email (post-auth) and it's NOT an owner, boot any stray session out of eje_web
-      if(email && !owner && activeClient()==='eje_web'){ try{localStorage.setItem('eje_ws','unabase_default');}catch(e){} location.reload(); }
+      EJE_PRIVATE.forEach(function(c){ var opt=document.querySelector('.ws-opt[data-client="'+c+'"]'); if(opt) opt.style.display=owner?'':'none'; });
+      // once we KNOW the email (post-auth) and it's NOT an owner, boot any stray session out of a private workspace
+      if(email && !owner && EJE_PRIVATE.indexOf(activeClient())>=0){ try{localStorage.setItem('eje_ws','unabase_default');}catch(e){} location.reload(); }
     };
     window.__ejeApplyWsGate();
     btn.addEventListener('click',function(e){e.stopPropagation();var open=menu.classList.toggle('open');btn.setAttribute('aria-expanded',open);});
