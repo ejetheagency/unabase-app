@@ -721,6 +721,7 @@
     // Email-only follow-up cadence — alt-channel (IG/WhatsApp, Plan C) is on hold.
     // Anchored on real messages_sent timestamps. Stops on replied/meeting/closed/skip.
     var DAY=864e5;
+    var ISEJE=(EJE_CLIENT==='eje'); // EJE Outreach workspace: cadence is IG DM then a 2nd email, then stop (no WhatsApp/monthly).
     var DORMANT_MS=30*DAY; // last touch older than this -> revival bucket, NOT "urgente"
     var MSGS={}, UNIVERSE=[], BYKEY={};
     // Real cadence (doctrine): T1 email -> T2 Instagram DM (+2d) -> T3 email #2 (+5d)
@@ -735,7 +736,7 @@
     function chLabel(ch){ return ch==='ig'?'IG':ch==='wa'?'WA':'Email'; }
     function nextTxt(ch,l){ return ch==='ig'?('DM por Instagram'+(l&&l.instagramHandle?' @'+l.instagramHandle:'')):ch==='wa'?'Enviar WhatsApp':'Enviar email de seguimiento'; }
     function chChip(ch){ return ch==='ig'?'ig':ch==='wa'?'green':''; }
-    function resolveCh(ch,l){ if(ch==='ig'&&!l.instagramHandle) return 'email'; if(ch==='wa'&&!(l.contactPhone||l.apolloCompanyPhone)) return 'email'; return ch; }
+    function resolveCh(ch,l){ if(ch==='ig'&&!l.instagramHandle&&!ISEJE) return 'email'; if(ch==='wa'&&!(l.contactPhone||l.apolloCompanyPhone)) return 'email'; return ch; }
     function cadOf(l){
       var d=l._key||decDom(l.website); var st=(d&&STATUS[d])||l.status||'none';
       var ts=(MSGS[d]||[]).slice().sort(function(a,b){return a-b;});
@@ -744,6 +745,7 @@
       if(st==='meeting') return {kind:'meeting'};
       if(st==='closed'||st==='skip') return {kind:'stop'};
       if(touches===0) return {kind:'first',touch:1,stageLabel:'1er toque',chip:'1er · Email',channel:'email',next:'Enviar primer email',dueMs:now,overdue:0,stageClass:''};
+      if(ISEJE && touches>=3) return {kind:'stop'}; // EJE: 1er email + IG DM + 2º email done -> sequence complete
       var last=ts[touches-1], nx=cadNext(touches+1), ch=resolveCh(nx.channel,l), dueMs=last+nx.iv, overdue=now-dueMs;
       var kind=overdue>=0?'due':(dueMs-now<=DAY?'soon':'upcoming');
       var dormant=overdue>=0 && (now-last)>DORMANT_MS;
@@ -890,6 +892,7 @@
       Object.keys(MSGS).forEach(function(d){MSGS[d].forEach(function(t){if(t>=todayMs)doneToday++;});});
       var todos=firsts.concat(urgent,soon).sort(function(a,b){var pa={alta:0,media:1,baja:2}[priOf(a.c)],pb={alta:0,media:1,baja:2}[priOf(b.c)];return pa-pb||(b.c.overdue-a.c.overdue);});
       var sub=document.getElementById('tareas-sub'); if(sub) sub.textContent='Gestiona tus seguimientos y próximos pasos · '+items.length+' decisores en ciclo';
+      var _tct=document.querySelector('.nav-item[data-view="tareas"] .ct'); if(_tct) _tct.textContent=todos.length;
       var html=''
         +'<div class="ac-cards">'
         +statCard('u','alert','Urgentes (&gt;2h)',urgent.length,'decisores esperando')
@@ -899,7 +902,9 @@
         +'</div>'
         +'<div class="ac-sech">Por etapa del ciclo</div>'
         +'<div class="ac-cards">'
-        +stageCard('instagram','2º · Instagram',s2)+stageCard('mail','3er · Email',s3)+stageCard('wa','4º · Alterno',s4,true)+stageCard('refresh','Ciclo mensual',sm)
+        +(ISEJE
+          ? stageCard('instagram','2º · Instagram DM',s2)+stageCard('mail','3º · 2º email',s3)
+          : stageCard('instagram','2º · Instagram',s2)+stageCard('mail','3er · Email',s3)+stageCard('wa','4º · Alterno',s4,true)+stageCard('refresh','Ciclo mensual',sm))
         +'</div>';
       if(replied.length){ html+='<div class="ac-panel" id="ac-replied"><div class="ac-panel-h blue">💬 Respondieron — ofrecé la llamada <span class="cnt">'+replied.length+'</span></div>'+acHead()+replied.map(acRow).join('')+'</div>'; }
       html+='<div class="ac-panel" id="ac-urgent"><div class="ac-panel-h">🔴 Urgentes: más de 2 horas esperando <span class="cnt">'+urgent.length+'</span></div>'
@@ -1131,6 +1136,10 @@
       if(EJE_CLIENT!=='unabase_default'){
         loadStatus().then(function(){ return loadUniverse(); }).then(function(){
           DATA={date:new Date().toISOString().slice(0,10),leads:(UNIVERSE||[]).slice()};
+          var _n=(UNIVERSE||[]).length;
+          var gs=document.getElementById('greetSub'); if(gs) gs.textContent=(ISEJE?'EJE Outreach · ':'')+_n+' decisores en seguimiento';
+          if(ISEJE){ var ap=document.querySelector('.autopilot'); if(ap) ap.style.display='none'; }
+          var dct=document.querySelector('.nav-item[data-view="decisores"] .ct'); if(dct) dct.textContent=_n;
           render(); if(typeof renderAccion==='function') renderAccion(); if(typeof renderHoy==='function') renderHoy();
         }).catch(function(){ if(subEl) subEl.textContent='No se pudo cargar.'; });
         return;
