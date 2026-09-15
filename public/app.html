@@ -232,6 +232,7 @@
   .st-none{color:var(--ink-3);background:var(--sunken)}
   .st-contacted{color:var(--info);background:color-mix(in srgb,var(--info) 13%,transparent)}
   .st-replied,.st-meeting{color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,transparent)}
+  .st-loom{color:var(--info);background:color-mix(in srgb,var(--info) 14%,transparent)}
   .st-closed,.st-skip{color:var(--ink-3);background:var(--sunken)}
   .dec-av,.c-av{position:relative;overflow:hidden}
   .av-logo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:3px}
@@ -645,8 +646,8 @@
     function flag(c){return FLAGS[c]||'🌎';}
     function decDom(w){try{return new URL(w).hostname.replace(/^www\./,'').toLowerCase()}catch(e){return null}}
     var STATUS={};
-    var STLABEL={none:'Nuevo',contacted:'Contactado',partial:'En proceso',replied:'Respondió',meeting:'Reunión',closed:'Cerrado',skip:'Omitido'};
-    var STCLASS={none:'st-none',contacted:'st-contacted',partial:'st-contacted',replied:'st-replied',meeting:'st-meeting',closed:'st-closed',skip:'st-skip'};
+    var STLABEL={none:'Nuevo',contacted:'Contactado',partial:'En proceso',replied:'Respondió',loom_sent:'Loom enviado',meeting:'Reunión',closed:'Cerrado',skip:'Omitido'};
+    var STCLASS={none:'st-none',contacted:'st-contacted',partial:'st-contacted',replied:'st-replied',loom_sent:'st-loom',meeting:'st-meeting',closed:'st-closed',skip:'st-skip'};
     function statusOf(l){var d=decDom(l.website);return (d&&STATUS[d])||l.status||'none';}
     function statusChip(l){var s=statusOf(l);return '<span class="dec-status '+(STCLASS[s]||'st-none')+'">'+(STLABEL[s]||'Nuevo')+'</span>';}
     // Company logos via unavatar.io (aggregates real logos; ?fallback=false => 404 for
@@ -676,7 +677,7 @@
     }
     function markSent(l,ch){ ch=ch||'email';
       var d=decDom(l.website); if(!d){ toast('Lead sin dominio, no se puede registrar'); return; }
-      var prev=STATUS[d]||'none'; var wasTerminal=['replied','meeting','closed','skip'].indexOf(prev)>=0;
+      var prev=STATUS[d]||'none'; var wasTerminal=['replied','loom_sent','meeting','closed','skip'].indexOf(prev)>=0;
       if(!wasTerminal) STATUS[d]='contacted'; (MSGS[d]=MSGS[d]||[]).push(Date.now());
       toast('Enviado marcado'+(canWrite()?'':' · demo (local)'));
       reRender();
@@ -742,6 +743,7 @@
       var ts=(MSGS[d]||[]).slice().sort(function(a,b){return a-b;});
       var touches=ts.length, now=Date.now();
       if(st==='replied') return {kind:'replied',stageLabel:'Respondió',chip:'Respondió',channel:'call',next:'Ofrecé consultoría / llamada',dueMs:now,overdue:0,stageClass:'green'};
+      if(st==='loom_sent') return {kind:'loom',stageLabel:'Loom enviado',chip:'Loom enviado',channel:'call',next:'Seguí para agendar la llamada',dueMs:now,overdue:0,stageClass:'green'};
       if(st==='meeting') return {kind:'meeting'};
       if(st==='closed'||st==='skip') return {kind:'stop'};
       if(touches===0) return {kind:'first',touch:1,stageLabel:'1er toque',chip:'1er · Email',channel:'email',next:'Enviar primer email',dueMs:now,overdue:0,stageClass:''};
@@ -753,7 +755,7 @@
       return {kind:kind,touch:nx.touch,stageLabel:nx.label,chip:chip,channel:ch,next:nextTxt(ch,l),dueMs:dueMs,overdue:overdue,stageClass:(nx.label==='Mensual'?'green':chChip(ch)),lastMs:last,dormant:dormant};
     }
     function priOf(c){
-      if(c.kind==='replied') return 'alta';
+      if(c.kind==='replied'||c.kind==='loom') return 'alta';
       if(c.overdue<0) return 'baja';
       if((c.touch&&c.touch<=2) || c.overdue>=2*DAY) return 'alta';
       return 'media';
@@ -773,9 +775,12 @@
       return '¡Hola, '+n+'! ¿Cómo va todo?\n\nSolo quería saber si pudiste ver mi correo anterior y si te parece bien agendar la llamada que te comentaba. Me encantaría contarte más sobre UnaBase porque creo que a '+e+' le vendría muy bien. La diseñamos específicamente para la industria creativa y ordena muchísimo los presupuestos cuando hay varios proyectos a la vez.\n\n¿Te parece si coordinamos una reunión corta por Meet, sin ningún compromiso, para resolver cualquier duda? Contame cómo lo ves.\n\nSaludos,\nScarlett Lillo'; }
     function repliedCopy(l){ var n=firstName(l)||'', e=l.companyName||'tu productora';
       return 'Hola '+n+', qué bueno tener tu respuesta. Con gusto te cuento en más detalle cómo funciona UnaBase y en qué se diferencia. Y si te sirve, coordinamos una reunión corta con nuestro equipo, sin ningún compromiso, para que veas cómo trabajamos y resuelvas cualquier duda con calma. Vos preguntás lo que quieras y te mostramos cómo lo aplicaríamos a '+e+'. ¿Te viene bien una llamada de 20 minutos esta semana? Me decís qué día y lo agendamos.\n\nScarlett'; }
+    function loomNudgeCopy(l){ var n=firstName(l)||'', e=l.companyName||'tu equipo';
+      return 'Hola '+n+', ¿pudiste ver el video? Si te hace sentido, coordinamos una llamada corta de 15 min, sin compromiso, y lo vemos aplicado a '+e+'. Te dejo un par de horarios: [día/hora] o [día/hora]. ¿Cuál te acomoda? Si prefieres, escríbeme por WhatsApp: https://wa.me/17867846899\n\nEmiliano'; }
     function draftFor(l,c){
       c=c||cadOf(l);
       if(c.kind==='replied') return {text:repliedCopy(l),label:'Respondió · ofrecé consultoría gratis',mark:' · plantilla fijada'};
+      if(c.kind==='loom') return {text:loomNudgeCopy(l),label:'Loom enviado · seguí para agendar la llamada',mark:' · editable'};
       if(c.kind==='first'||c.touch===1) return {text:l.pitchEmailES||'(sin borrador)',label:'Email de primer toque',mark:''};
       return {text:followupCopy(l),label:c.stageLabel+' · email de seguimiento',mark:' · borrador editable'};
     }
@@ -861,7 +866,7 @@
       return '<div class="ac-avs">'+a+(list.length>4?'<span class="more">+'+(list.length-4)+'</span>':'')+'</div>'; }
     function acRow(x){ var l=x.l,c=x.c,d=l._key||decDom(l.website),pri=c.dormant?'baja':priOf(c);
       var waitCls=c.dormant?'mut':(c.overdue>=0?'red':(c.kind==='soon'?'amber':'mut'));
-      var waitTxt=c.kind==='replied'?'ahora':(c.kind==='first'?'nuevo':fmtDur(c.overdue));
+      var waitTxt=(c.kind==='replied'||c.kind==='loom')?'ahora':(c.kind==='first'?'nuevo':fmtDur(c.overdue));
       var priLbl=c.dormant?'Dormido':(pri==='alta'?'Alta':pri==='media'?'Media':'Baja');
       return '<div class="ac-tr" data-key="'+esc(d)+'">'
         +'<div class="ac-dec"><span class="av">'+esc(initials(l.companyName))+avImg(l)+'</span><span class="nm">'+esc(l.contactName||l.companyName)+'</span></div>'
@@ -878,13 +883,14 @@
       var body=document.getElementById('tareas-body'); if(!body) return;
       var uni=(UNIVERSE&&UNIVERSE.length)?UNIVERSE:((DATA&&DATA.leads)?DATA.leads.map(function(l){return Object.assign({_key:decDom(l.website)},l);}):[]);
       if(!uni.length){ body.innerHTML='<div class="tq-empty">Cargando cola…</div>'; return; }
-      var allItems=uni.map(function(l){return {l:l,c:cadOf(l)};}).filter(function(x){return x.c&&['first','due','soon','upcoming','replied'].indexOf(x.c.kind)>=0;});
+      var allItems=uni.map(function(l){return {l:l,c:cadOf(l)};}).filter(function(x){return x.c&&['first','due','soon','upcoming','replied','loom'].indexOf(x.c.kind)>=0;});
       var dormant=allItems.filter(function(x){return x.c.dormant;}).sort(function(a,b){return (b.l.unabaseScore||0)-(a.l.unabaseScore||0);});
       var items=allItems.filter(function(x){return !x.c.dormant;});
       var urgent=items.filter(function(x){return x.c.kind==='due'&&x.c.overdue>2*36e5;}).sort(function(a,b){return b.c.overdue-a.c.overdue;});
       var soon=items.filter(function(x){return x.c.kind==='soon'||(x.c.kind==='due'&&x.c.overdue<=2*36e5);});
       var firsts=items.filter(function(x){return x.c.kind==='first';});
       var replied=items.filter(function(x){return x.c.kind==='replied';});
+      var loom=items.filter(function(x){return x.c.kind==='loom';});
       var inflight=items.filter(function(x){return ['due','soon','upcoming'].indexOf(x.c.kind)>=0;});
       function stg(lbl){return inflight.filter(function(x){return x.c.stageLabel===lbl;}).sort(function(a,b){return b.c.overdue-a.c.overdue;});}
       var s2=stg('2º toque'),s3=stg('3er toque'),s4=stg('4º toque'),sm=stg('Mensual');
@@ -907,6 +913,7 @@
           : stageCard('instagram','2º · Instagram',s2)+stageCard('mail','3er · Email',s3)+stageCard('wa','4º · Alterno',s4,true)+stageCard('refresh','Ciclo mensual',sm))
         +'</div>';
       if(replied.length){ html+='<div class="ac-panel" id="ac-replied"><div class="ac-panel-h blue">💬 Respondieron — ofrecé la llamada <span class="cnt">'+replied.length+'</span></div>'+acHead()+replied.map(acRow).join('')+'</div>'; }
+      if(loom.length){ html+='<div class="ac-panel" id="ac-loom"><div class="ac-panel-h blue">🎬 Loom enviado — seguí para agendar la llamada <span class="cnt">'+loom.length+'</span></div>'+acHead()+loom.map(acRow).join('')+'</div>'; }
       html+='<div class="ac-panel" id="ac-urgent"><div class="ac-panel-h">🔴 Urgentes: más de 2 horas esperando <span class="cnt">'+urgent.length+'</span></div>'
         + (urgent.length?acHead()+urgent.slice(0,6).map(acRow).join('')+(urgent.length>6?'<div class="ac-more-row" data-exp="urgent">Ver todos los urgentes ('+urgent.length+') ⌄</div>':''):'<div class="tq-empty" style="padding:14px 18px">Nada urgente ahora mismo. 🎉</div>')
         +'</div>';
@@ -999,6 +1006,7 @@
         +'<div class="tab-panel" data-panel="otros" style="display:none">'+(addl.length?addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join(''):'<div class="seam-note">Sin otros decisores registrados.</div>')+'</div>'
         +'<div class="c-actions">'+(l.website?'<a class="btn site" href="'+esc(l.website)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;vertical-align:-2px;margin-right:5px"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Ver sitio actual ↗</a>':'')+'<button class="btn pri act-sent">Copiar y marcar enviado</button>'
         +'<button class="btn win act-replied">Respondió</button>'
+        +(ISEJE?'<button class="btn act-loom">Loom enviado</button>':'')
         +'<button class="btn win act-rejected">Rechazó</button>'
         +'<button class="btn act-meeting">Reunión</button></div>'
         +'<div class="seam-note">Datos reales del lote activo. Las acciones persisten en Supabase al iniciar sesión; en modo demo quedan locales.</div>'
@@ -1011,6 +1019,8 @@
       if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.draft||'');}catch(e){} bSent.textContent='Enviado ✓'; bSent.classList.add('done'); markSent(l,_cad.channel);});
       var bRep=cardWrap.querySelector('.act-replied');
       if(bRep) bRep.addEventListener('click',function(){bRep.classList.add('done'); markStatus(l,'replied','Marcado: Respondió');});
+      var bLoom=cardWrap.querySelector('.act-loom');
+      if(bLoom) bLoom.addEventListener('click',function(){bLoom.classList.add('done'); markStatus(l,'loom_sent','Marcado: Loom enviado');});
       var bRej=cardWrap.querySelector('.act-rejected');
       if(bRej) bRej.addEventListener('click',function(){var m=prompt('Motivo del rechazo (queda registrado):','')||''; bRej.classList.add('done'); markStatus(l,'replied','Marcado: Rechazó — señal accionable', m?('Rechazó: '+m):'Rechazó');});
       var bMeet=cardWrap.querySelector('.act-meeting');
@@ -1033,7 +1043,7 @@
     function histDetail(file, el){
       batchLeads(file).then(function(arr){
         var resp=[], rest=0;
-        arr.forEach(function(l){ var st=statusOf(l); if(st==='replied'||st==='meeting') resp.push({l:l,st:st}); else if(st!=='none') rest++; });
+        arr.forEach(function(l){ var st=statusOf(l); if(st==='replied'||st==='loom_sent'||st==='meeting') resp.push({l:l,st:st}); else if(st!=='none') rest++; });
         resp.sort(function(a,b){ return (a.st==='meeting'?0:1)-(b.st==='meeting'?0:1); });
         var h='';
         if(resp.length){
@@ -1058,7 +1068,7 @@
     // Day-by-day report history for non-UnaBase workspaces (eje_web) — grouped from Supabase leads.
     function ejeHistDetail(items, el){
       var resp=[], sent=0;
-      items.forEach(function(l){ var s=statusOf(l); if(s==='replied'||s==='meeting') resp.push({l:l,st:s}); if(s!=='none') sent++; });
+      items.forEach(function(l){ var s=statusOf(l); if(s==='replied'||s==='loom_sent'||s==='meeting') resp.push({l:l,st:s}); if(s!=='none') sent++; });
       var h='';
       if(resp.length){ h+='<div class="hist-d-hd">Respondieron ('+resp.length+')</div>';
         h+=resp.map(function(x){ var l=x.l, co=l.companyName||l._key||'—', dm=l.contactName||(l.instagramHandle?('@'+l.instagramHandle):'—');
@@ -1083,7 +1093,7 @@
         body.innerHTML=dates.map(function(d){
           var items=byDate[d];
           var sent=items.filter(function(l){return statusOf(l)!=='none';}).length;
-          var resp=items.filter(function(l){var s=statusOf(l);return s==='replied'||s==='meeting';}).length;
+          var resp=items.filter(function(l){var s=statusOf(l);return s==='replied'||s==='loom_sent'||s==='meeting';}).length;
           var out=resp?('<span style="color:var(--ok);font-weight:700">✓ '+resp+' respondió</span>'):(sent?(sent+' contactados'):'sin enviar');
           return '<div class="hist-item"><div class="hist-row" data-date="'+esc(d)+'"><span class="hist-caret">▸</span><span class="hist-date">'+esc(d)+'</span>'
             +'<span class="hist-n">'+items.length+' leads</span>'
@@ -1192,7 +1202,7 @@
         sbPageAll('status_history','status,created_at')
       ]).then(function(res){
         var msgs=(res[0]||[]).map(function(m){return new Date(m.sent_at);}).filter(function(d){return !isNaN(d);});
-        var sh=(res[1]||[]).filter(function(r){return r.status==='replied'||r.status==='meeting';}).map(function(r){return new Date(r.created_at);}).filter(function(d){return !isNaN(d);});
+        var sh=(res[1]||[]).filter(function(r){return r.status==='replied'||r.status==='loom_sent'||r.status==='meeting';}).map(function(r){return new Date(r.created_at);}).filter(function(d){return !isNaN(d);});
         var now=new Date(), tw=wkStart(now), lw=new Date(tw.getTime()-7*864e5);
         var envTW=msgs.filter(function(d){return d>=tw;}).length, envLW=msgs.filter(function(d){return d>=lw&&d<tw;}).length;
         var convTW=sh.filter(function(d){return d>=tw;}).length, convLW=sh.filter(function(d){return d>=lw&&d<tw;}).length;
