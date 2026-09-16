@@ -734,10 +734,13 @@
       if(n===4) return {touch:4,label:'4º toque',channel:'wa',iv:7*DAY};
       return {touch:n,label:'Mensual',channel:'email',iv:30*DAY};
     }
-    function chLabel(ch){ return ch==='ig'?'IG':ch==='wa'?'WA':'Email'; }
-    function nextTxt(ch,l){ return ch==='ig'?('DM por Instagram'+(l&&l.instagramHandle?' @'+l.instagramHandle:'')):ch==='wa'?'Enviar WhatsApp':'Enviar email de seguimiento'; }
-    function chChip(ch){ return ch==='ig'?'ig':ch==='wa'?'green':''; }
-    function resolveCh(ch,l){ if(ch==='ig'&&!l.instagramHandle&&!ISEJE) return 'email'; if(ch==='wa'&&!(l.contactPhone||l.apolloCompanyPhone)) return 'email'; return ch; }
+    function chLabel(ch){ return ch==='ig'?'IG':ch==='wa'?'WA':ch==='li'?'LinkedIn':'Email'; }
+    function nextTxt(ch,l){ return ch==='ig'?('DM por Instagram'+(l&&l.instagramHandle?' @'+l.instagramHandle:'')):ch==='li'?'Mensaje por LinkedIn':ch==='wa'?'Enviar WhatsApp':'Enviar email de seguimiento'; }
+    function chChip(ch){ return ch==='ig'?'ig':ch==='li'?'li':ch==='wa'?'green':''; }
+    function resolveCh(ch,l){ var li=l.contactLinkedIn||l.linkedin;
+      if(ch==='ig'&&!l.instagramHandle) return li?'li':'email';   // no IG -> LinkedIn if we have it, else email
+      if(ch==='li'&&!li) return 'email';
+      if(ch==='wa'&&!(l.contactPhone||l.apolloCompanyPhone)) return 'email'; return ch; }
     function cadOf(l){
       var d=l._key||decDom(l.website); var st=(d&&STATUS[d])||l.status||'none';
       var ts=(MSGS[d]||[]).slice().sort(function(a,b){return a-b;});
@@ -786,11 +789,17 @@
     }
     // Locked IG DM copy (plural voice, references prior email) — ported from classic cockpit.
     function igDM(l){ return 'Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde UnaBase y queríamos asegurarnos de que no se perdiera 🙌\nSi les hace sentido, se los contamos por acá y coordinamos una llamada corta.\nScarlett'; }
+    // EJE workspace: 2nd-touch opener for IG/LinkedIn, references the first email, no pitch.
+    function ejeFollowDM(l){ var n=firstName(l)||''; return 'Hola '+n+', te escribí un correo hace unos días desde EJE. Trabajo con UnaBase ayudando a founders a llenar su calendario con reuniones calificadas, sin perseguir a nadie. ¿Te hace sentido que te muestre en 2 min cómo se vería para '+(l.companyName||'tu equipo')+'? Un saludo, Emiliano'; }
     // Per-touch PLAYBOOK — the step-by-step "how" (IG protocol from enrichment/ai-content.js).
     function playbookFor(l,c){ c=c||cadOf(l); var ch=c.channel||'email';
       if(ch==='ig'){ var h=l.instagramHandle||''; return {ch:'ig',title:'Playbook · Instagram DM',target:h?('@'+h):'(sin handle)',link:h?('https://instagram.com/'+h):'',
         steps:['Abrí @'+h+' y mirá sus historias y últimos posts.','Reaccioná / dale me gusta a sus últimos 2-3 posts.','Dejá un comentario genuino y específico en un post reciente (no genérico).','Seguí la cuenta.','Recién ahí enviá el DM (abajo). Casual, sin nombrar el producto de entrada.'],
-        draft:l.instagramDM||igDM(l)}; }
+        draft:ISEJE?ejeFollowDM(l):(l.instagramDM||igDM(l))}; }
+      if(ch==='li'){ var lu=l.contactLinkedIn||l.linkedin||'';
+        return {ch:'li',title:'Playbook · LinkedIn',target:l.contactName||'(perfil)',link:lu,
+        steps:['Abrí el perfil'+(lu?'':' (buscá su nombre en LinkedIn)')+' y revisá su actividad reciente.','Enviá solicitud de conexión CON nota, o mensaje directo si ya están conectados.','Breve, sin pitch. Referí el correo previo (borrador abajo).'],
+        draft:ejeFollowDM(l)}; }
       if(ch==='wa'){ var ph=l.contactPhone||l.apolloCompanyPhone||''; return {ch:'wa',title:'Playbook · WhatsApp',target:ph||'(sin teléfono)',link:ph?('https://wa.me/'+String(ph).replace(/[^0-9]/g,'')):'',
         steps:['Guardá el contacto y abrí WhatsApp.','Enviá el mensaje (abajo) en horario laboral local.','Si no responde en 48h, pasá al toque mensual.'],
         draft:l.whatsappMessage||igDM(l)}; }
@@ -807,7 +816,7 @@
         (res[1]||[]).forEach(function(m){var d=String(m.lead_id||'').toLowerCase();var t=new Date(m.sent_at).getTime();if(d&&!isNaN(t)){(MSGS[d]=MSGS[d]||[]).push(t);}});
         var map={};
         (res[0]||[]).forEach(function(r){var d=String(r.id||'').toLowerCase();if(!d)return;var ld=r.lead_data||{};
-          map[d]={_key:d,companyName:r.company||ld.companyName||d,contactName:r.contact_name||ld.contactName||'',contactEmail:r.contact_email||ld.contactEmail||'',country:ld.country||'',unabaseScore:r.score||ld.unabaseScore||'',instagramHandle:ld.instagramHandle||'',instagramFollowers:ld.instagramFollowers||0,website:ld.website||('https://'+d),pitchEmailES:ld.pitchEmailES||ld.emailCercana||'',_verifiedCredits:ld._verifiedCredits||ld.verifiedCredits||[],additionalContacts:ld.additionalContacts||[],companyEmail:ld.companyEmail||null,contactTitle:ld.contactTitle||'',status:r.status||'none'};
+          map[d]={_key:d,companyName:r.company||ld.companyName||d,contactName:r.contact_name||ld.contactName||'',contactEmail:r.contact_email||ld.contactEmail||'',country:ld.country||'',unabaseScore:r.score||ld.unabaseScore||'',instagramHandle:ld.instagramHandle||'',instagramFollowers:ld.instagramFollowers||0,contactLinkedIn:ld.contactLinkedIn||ld.linkedin||'',website:ld.website||('https://'+d),pitchEmailES:ld.pitchEmailES||ld.emailCercana||'',_verifiedCredits:ld._verifiedCredits||ld.verifiedCredits||[],additionalContacts:ld.additionalContacts||[],companyEmail:ld.companyEmail||null,contactTitle:ld.contactTitle||'',status:r.status||'none'};
         });
         if(DATA&&DATA.leads){DATA.leads.forEach(function(l){var d=decDom(l.website);if(!d)return;map[d]=Object.assign({},map[d]||{},l,{_key:d,_today:true});});}
         BYKEY=map; UNIVERSE=Object.keys(map).map(function(k){return map[k];});
@@ -909,7 +918,7 @@
         +'<div class="ac-sech">Por etapa del ciclo</div>'
         +'<div class="ac-cards">'
         +(ISEJE
-          ? stageCard('instagram','2º · Instagram DM',s2)+stageCard('mail','3º · 2º email',s3)
+          ? stageCard('instagram','2º · IG / LinkedIn',s2)+stageCard('mail','3º · 2º email',s3)
           : stageCard('instagram','2º · Instagram',s2)+stageCard('mail','3er · Email',s3)+stageCard('wa','4º · Alterno',s4,true)+stageCard('refresh','Ciclo mensual',sm))
         +'</div>';
       if(replied.length){ html+='<div class="ac-panel" id="ac-replied"><div class="ac-panel-h blue">💬 Respondieron — ofrecé la llamada <span class="cnt">'+replied.length+'</span></div>'+acHead()+replied.map(acRow).join('')+'</div>'; }
