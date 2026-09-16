@@ -734,7 +734,7 @@
       if(n===4) return {touch:4,label:'4º toque',channel:'wa',iv:7*DAY};
       return {touch:n,label:'Mensual',channel:'email',iv:30*DAY};
     }
-    function chLabel(ch){ return ch==='ig'?'IG':ch==='wa'?'WA':ch==='li'?'LinkedIn':'Email'; }
+    function chLabel(ch){ return ch==='ig'?'IG':ch==='wa'?'WA':ch==='li'?'LinkedIn':ch==='call'?'Llamada':'Email'; }
     function nextTxt(ch,l){ return ch==='ig'?('DM por Instagram'+(l&&l.instagramHandle?' @'+l.instagramHandle:'')):ch==='li'?'Mensaje por LinkedIn':ch==='wa'?'Enviar WhatsApp':'Enviar email de seguimiento'; }
     function chChip(ch){ return ch==='ig'?'ig':ch==='li'?'li':ch==='wa'?'green':''; }
     function resolveCh(ch,l){ var li=l.contactLinkedIn||l.linkedin;
@@ -946,18 +946,22 @@
     function renderHoy(){
       var body=document.getElementById('hoy-list'); if(!body) return;
       if(!DATA||!DATA.leads){ body.innerHTML='<div class="tq-empty">Cargando reporte…</div>'; return; }
-      var leads=DATA.leads, sent=leads.filter(function(l){return statusOf(l)!=='none';}).length;
-      var sub=document.getElementById('hoy-sub'); if(sub) sub.textContent='Reporte del '+esc(DATA.date)+' · '+leads.length+' decisores · '+sent+'/'+leads.length+' contactados';
-      var ct=document.getElementById('hoy-ct'); if(ct) ct.textContent=leads.length;
-      body.innerHTML=leads.map(function(l,i){var ch=l.website?'sitio':(l.instagramHandle?'IG':'email');
+      // EJE: Hoy is a DAILY REPORT (leads whose send date is today), highest priority first. Older days live in Historial.
+      var rep=DATA.leads.slice(), dstr=DATA.date;
+      if(ISEJE){ var td=ejeTodayET(); rep=rep.filter(function(l){return (l.source_date||'')===td;}); dstr=td; }
+      rep.sort(function(a,b){return (b.unabaseScore||0)-(a.unabaseScore||0);});
+      var sent=rep.filter(function(l){return statusOf(l)!=='none';}).length;
+      var sub=document.getElementById('hoy-sub'); if(sub) sub.textContent=(ISEJE?'Reporte de hoy · '+esc(dstr):'Reporte del '+esc(dstr))+' · '+rep.length+' decisores · '+sent+'/'+rep.length+' contactados';
+      var ct=document.getElementById('hoy-ct'); if(ct) ct.textContent=rep.length;
+      body.innerHTML=rep.map(function(l,i){var ch=ISEJE?chLabel((cadOf(l)||{}).channel||'email'):(l.website?'sitio':(l.instagramHandle?'IG':'email'));
         return '<button class="dec-row" data-hi="'+i+'">'
           +'<span class="dec-av">'+esc(initials(l.companyName))+avImg(l)+'</span>'
           +'<span class="dec-main"><span class="dec-co">'+esc(l.companyName)+'</span>'
           +'<span class="dec-meta">'+flag(l.country)+' '+esc(l.contactName||'—')+'</span></span>'
           +'<span class="dec-ch">'+ch+'</span>'+(l.website?'<span class="dec-ext" data-url="'+esc(l.website)+'" title="Abrir sitio actual">↗</span>':'')+statusChip(l)
           +'<span class="dec-score">'+esc(l.unabaseScore||'')+'</span></button>';
-      }).join('')||'<div class="tq-empty">Sin reporte hoy.</div>';
-      body.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openFromTareas(DATA.leads[+r.dataset.hi]);});});
+      }).join('')||'<div class="tq-empty">Sin reporte para hoy. Los leads de días anteriores están en Historial.</div>';
+      body.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openFromTareas(rep[+r.dataset.hi]);});});
       body.querySelectorAll('.dec-ext').forEach(function(x){x.addEventListener('click',function(e){e.stopPropagation();window.open(x.dataset.url,'_blank','noopener');});});
     }
     function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},1800);}
@@ -972,7 +976,7 @@
       pairs.sort(function(a,b){return (b.unabaseScore||0)-(a.unabaseScore||0);});
       subEl.textContent=(q?pairs.length+' de '+src.length:src.length+' decisores')+(DATA?' · lote '+esc(DATA.date):'');
       listEl.innerHTML=pairs.map(function(l){var d=l._key||decDom(l.website);
-        var ch=l.website?'sitio':(l.instagramHandle?'IG':'email');
+        var ch=ISEJE?chLabel((cadOf(l)||{}).channel||'email'):(l.website?'sitio':(l.instagramHandle?'IG':'email'));
         return '<button class="dec-row" data-key="'+esc(d)+'">'
           +'<span class="dec-av">'+esc(initials(l.companyName))+avImg(l)+'</span>'
           +'<span class="dec-main"><span class="dec-co">'+esc(l.companyName)+'</span>'
