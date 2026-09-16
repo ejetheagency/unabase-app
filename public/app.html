@@ -822,7 +822,7 @@
         (res[1]||[]).forEach(function(m){var d=String(m.lead_id||'').toLowerCase();var t=new Date(m.sent_at).getTime();if(d&&!isNaN(t)){(MSGS[d]=MSGS[d]||[]).push(t);}});
         var map={};
         (res[0]||[]).forEach(function(r){var d=String(r.id||'').toLowerCase();if(!d)return;var ld=r.lead_data||{};
-          map[d]={_key:d,companyName:r.company||ld.companyName||d,contactName:r.contact_name||ld.contactName||'',contactEmail:r.contact_email||ld.contactEmail||'',country:ld.country||'',unabaseScore:r.score||ld.unabaseScore||'',instagramHandle:ld.instagramHandle||'',instagramFollowers:ld.instagramFollowers||0,contactLinkedIn:ld.contactLinkedIn||ld.linkedin||'',website:ld.website||('https://'+d),pitchEmailES:ld.pitchEmailES||ld.emailCercana||'',_verifiedCredits:ld._verifiedCredits||ld.verifiedCredits||[],additionalContacts:ld.additionalContacts||[],companyEmail:ld.companyEmail||null,contactTitle:ld.contactTitle||'',status:r.status||'none'};
+          map[d]={_key:d,companyName:r.company||ld.companyName||d,contactName:r.contact_name||ld.contactName||'',contactEmail:r.contact_email||ld.contactEmail||'',country:ld.country||'',unabaseScore:r.score||ld.unabaseScore||'',instagramHandle:ld.instagramHandle||'',instagramFollowers:ld.instagramFollowers||0,contactLinkedIn:ld.contactLinkedIn||ld.linkedin||'',website:ld.website||('https://'+d),pitchEmailES:ld.pitchEmailES||ld.emailCercana||'',companyBrief:ld.companyBrief||'',whyICP:ld.whyICP||'',_emailVerify:ld._emailVerify||'',instagramKind:ld.instagramKind||'',contactLinkedIn:ld.contactLinkedIn||ld.linkedin||'',_verifiedCredits:ld._verifiedCredits||ld.verifiedCredits||[],additionalContacts:ld.additionalContacts||[],companyEmail:ld.companyEmail||null,contactTitle:ld.contactTitle||'',status:r.status||'none'};
         });
         if(DATA&&DATA.leads){DATA.leads.forEach(function(l){var d=decDom(l.website);if(!d)return;map[d]=Object.assign({},map[d]||{},l,{_key:d,_today:true});});}
         BYKEY=map; UNIVERSE=Object.keys(map).map(function(k){return map[k];});
@@ -999,7 +999,7 @@
       var _dueLbl=_cad.kind==='replied'?'responder ahora':(_cad.kind==='first'?'listo para enviar':(_cad.overdue>=0?('vence hace '+fmtDur(_cad.overdue)):('vence en '+fmtDur(_cad.overdue))));
       var _dots=''; for(var _k=1;_k<=Math.max(4,_done+1);_k++){_dots+='<i class="'+(_k<=_done?'on':(_k===_done+1?'now':''))+'"></i>';}
       var _strip='<div class="cad-strip"><span class="cs-badge stage-chip '+(_cad.stageClass||'')+'">'+esc(_cad.chip||_cad.stageLabel||'—')+'</span><span class="cs-due">Próxima acción: <b>'+esc(_cad.next||'—')+'</b> · '+_dueLbl+'</span><div class="cad-dots">'+_dots+'</div></div>';
-      var _pbHtml='<div class="pb"><div class="pb-h"><span>'+esc(_pb.title)+'</span>'+(_pb.link?'<a class="pb-open" href="'+esc(_pb.link)+'" target="_blank" rel="noopener">'+esc(_pb.target)+' ↗</a>':'<span class="pb-tgt">'+esc(_pb.target)+'</span>')+'</div><ol class="pb-steps">'+_pb.steps.map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol><div class="draft"><div class="draft-h">Mensaje'+esc(_draft.mark||'')+'</div><pre class="draft-b">'+esc(_pb.draft)+'</pre></div>'+(_pb.altDraft?'<div class="draft" style="margin-top:8px"><div class="draft-h">'+esc(_pb.altLabel||'Alternativa')+'</div><pre class="draft-b">'+esc(_pb.altDraft)+'</pre><div style="padding:2px 14px 12px"><button type="button" class="btn copy-alt">Copiar nota de conexión</button></div></div>':'')+'</div>';
+      var _pbHtml='<div class="pb"><div class="pb-h"><span>'+esc(_pb.title)+'</span>'+(_pb.link?'<a class="pb-open" href="'+esc(_pb.link)+'" target="_blank" rel="noopener">'+esc(_pb.target)+' ↗</a>':'<span class="pb-tgt">'+esc(_pb.target)+'</span>')+'</div><ol class="pb-steps">'+_pb.steps.map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol><div class="draft"><div class="draft-h">Mensaje'+esc(_draft.mark||'')+'</div><pre class="draft-b">'+esc(_pb.draft)+'</pre></div>'+(_pb.altDraft?'<div class="draft" style="margin-top:8px"><div class="draft-h">'+esc(_pb.altLabel||'Alternativa')+'</div><pre class="draft-b">'+esc(_pb.altDraft)+'</pre><div style="padding:2px 14px 12px"><button type="button" class="btn copy-alt">Copiar nota de conexión</button></div></div>':'')+((ISEJE&&_pb.ch==='ig')?'<div style="padding:0 14px 12px"><button type="button" class="btn bad-ig" style="background:transparent;border:1px solid var(--line);color:var(--ink-3);font-size:12px">Marcar IG incorrecto ✕</button></div>':'')+'</div>';
       var _slot=(_cad.channel==='email')?sendSlot(l.country):null;
       var _slotHtml=_slot?('<div class="sendslot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg><span>Programá el envío a las <b>'+esc(_slot.chile)+'</b> (hora Chile) para que llegue ~8 AM en '+esc(l.country||'destino')+(_slot.same?' · misma zona horaria':'')+'</span></div>'):'';
       var credits=(l._verifiedCredits||l.verifiedCredits||[]);
@@ -1038,6 +1038,14 @@
       if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.draft||'');}catch(e){} bSent.textContent='Enviado ✓'; bSent.classList.add('done'); markSent(l,_cad.channel);});
       var bAlt=cardWrap.querySelector('.copy-alt');
       if(bAlt) bAlt.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.altDraft||'');}catch(e){} bAlt.textContent='Copiado ✓'; bAlt.classList.add('done');});
+      var bBad=cardWrap.querySelector('.bad-ig');
+      if(bBad) bBad.addEventListener('click',function(){
+        l.instagramHandle=''; l.instagramKind=''; l.igBad=true;
+        var d=l._key||decDom(l.website); if(d&&BYKEY[d]){BYKEY[d].instagramHandle='';BYKEY[d].instagramKind='';BYKEY[d].igBad=true;}
+        toast('IG marcado incorrecto · 2º toque pasa a '+((l.contactLinkedIn||l.linkedin)?'LinkedIn':'email'));
+        if(canWrite()&&d) sbUpsertLead(d,l).catch(function(){});
+        openCard(l);
+      });
       var bRep=cardWrap.querySelector('.act-replied');
       if(bRep) bRep.addEventListener('click',function(){bRep.classList.add('done'); markStatus(l,'replied','Marcado: Respondió');});
       var bLoom=cardWrap.querySelector('.act-loom');
