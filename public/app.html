@@ -776,6 +776,9 @@
     // Follow-up copy (ported verbatim from checkpoint/03-email-copy/WINNING-COPY.md)
     function followupCopy(l){ var n=firstName(l)||'equipo', e=l.companyName||'tu productora';
       return '¡Hola, '+n+'! ¿Cómo va todo?\n\nSolo quería saber si pudiste ver mi correo anterior y si te parece bien agendar la llamada que te comentaba. Me encantaría contarte más sobre UnaBase porque creo que a '+e+' le vendría muy bien. La diseñamos específicamente para la industria creativa y ordena muchísimo los presupuestos cuando hay varios proyectos a la vez.\n\n¿Te parece si coordinamos una reunión corta por Meet, sin ningún compromiso, para resolver cualquier duda? Contame cómo lo ves.\n\nSaludos,\nScarlett Lillo'; }
+    // EJE 2nd-touch EMAIL (operator copy 2026-09-16). Short nudge referencing the first email.
+    function ejeFollowEmail(l){ var n=firstName(l)||''; return 'Hola '+n+', aquí Emiliano de EJE. Quedé esperando tu mensaje. ¿Qué pensaste de la propuesta que te envié? Cualquier cosa, te puedo reenviar un resumen por WhatsApp o por aquí mismo.\n\nUn saludo,\nEmiliano'; }
+    function ejeFollowEmailSubject(l){ var n=firstName(l)||''; return n+', no recibí tu feedback'; }
     function repliedCopy(l){ var n=firstName(l)||'', e=l.companyName||'tu productora';
       return 'Hola '+n+', qué bueno tener tu respuesta. Con gusto te cuento en más detalle cómo funciona UnaBase y en qué se diferencia. Y si te sirve, coordinamos una reunión corta con nuestro equipo, sin ningún compromiso, para que veas cómo trabajamos y resuelvas cualquier duda con calma. Vos preguntás lo que quieras y te mostramos cómo lo aplicaríamos a '+e+'. ¿Te viene bien una llamada de 20 minutos esta semana? Me decís qué día y lo agendamos.\n\nScarlett'; }
     function loomNudgeCopy(l){ var n=firstName(l)||'', e=l.companyName||'tu equipo';
@@ -785,7 +788,7 @@
       if(c.kind==='replied') return {text:repliedCopy(l),label:'Respondió · ofrecé consultoría gratis',mark:' · plantilla fijada'};
       if(c.kind==='loom') return {text:loomNudgeCopy(l),label:'Loom enviado · seguí para agendar la llamada',mark:' · editable'};
       if(c.kind==='first'||c.touch===1) return {text:l.pitchEmailES||'(sin borrador)',label:'Email de primer toque',mark:''};
-      return {text:followupCopy(l),label:c.stageLabel+' · email de seguimiento',mark:' · borrador editable'};
+      return {text:ISEJE?ejeFollowEmail(l):followupCopy(l),label:c.stageLabel+' · email de seguimiento',mark:' · borrador editable'};
     }
     // Locked IG DM copy (plural voice, references prior email) — ported from classic cockpit.
     function igDM(l){ return 'Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde UnaBase y queríamos asegurarnos de que no se perdiera 🙌\nSi les hace sentido, se los contamos por acá y coordinamos una llamada corta.\nScarlett'; }
@@ -809,7 +812,10 @@
       if(ch==='wa'){ var ph=l.contactPhone||l.apolloCompanyPhone||''; return {ch:'wa',title:'Playbook · WhatsApp',target:ph||'(sin teléfono)',link:ph?('https://wa.me/'+String(ph).replace(/[^0-9]/g,'')):'',
         steps:['Guardá el contacto y abrí WhatsApp.','Enviá el mensaje (abajo) en horario laboral local.','Si no responde en 48h, pasá al toque mensual.'],
         draft:l.whatsappMessage||igDM(l)}; }
-      var dd=draftFor(l,c); return {ch:'email',title:'Playbook · Email',target:l.contactEmail||'—',link:l.contactEmail?('mailto:'+l.contactEmail):'',
+      var dd=draftFor(l,c);
+      var _subj=ISEJE?((c.kind==='first')?((l.companyName||'')+' x EJE'):ejeFollowEmailSubject(l)):'';
+      var _mt=l.contactEmail?('mailto:'+l.contactEmail+(ISEJE?('?subject='+encodeURIComponent(_subj)+'&body='+encodeURIComponent(dd.text)):'')):'';
+      return {ch:'email',title:'Playbook · Email',target:l.contactEmail||'—',link:_mt,
         steps:['Redactá a '+(l.contactEmail||'—')+(l.companyEmail?(' (CC '+l.companyEmail+')'):'')+'.','Pegá el borrador de abajo, revisá nombre y empresa.',(c.kind==='first'?'Enviá el primer email.':'Enviá el seguimiento — tono corto, un solo ask: la llamada.')],
         draft:dd.text}; }
     function loadUniverse(){
