@@ -794,6 +794,9 @@
     // LinkedIn 2nd touch = fuller version WITH the Loom (fewer/scarcer touches, put value up front). Operator copy, 2026-09-16.
     function ejeLinkedInDM(l){ var n=firstName(l)||'', e=l.companyName||'tu equipo';
       return 'Hola '+n+', te escribí un correo hace unos días desde EJE. Trabajo con UnaBase ayudando a founders a llegar a su prospecto ideal con un paso a paso accionable y contactos verificados. Te dejo un video que explica brevemente la dinámica. Si te interesa, nos juntamos un momento a revisar cómo se vería para '+e+'.\nUn saludo,\nEmiliano\n\nhttps://www.loom.com/share/3ba0a1be7a6846cdb151d6e37c5e0205'; }
+    // Short LinkedIn CONNECTION-REQUEST note (free, ~300-char cap). Use for lower-priority leads; save InMail for top faith.
+    function ejeLinkedInConnectNote(l){ var n=firstName(l)||'', e=l.companyName||'tu equipo';
+      return 'Hola '+n+', te escribí un correo hace unos días desde EJE. Ayudo a founders a llegar a su prospecto ideal con contactos verificados. Te dejo un video corto; si te interesa, vemos cómo se vería para '+e+': https://www.loom.com/share/3ba0a1be7a6846cdb151d6e37c5e0205'; }
     // Per-touch PLAYBOOK — the step-by-step "how" (IG protocol from enrichment/ai-content.js).
     function playbookFor(l,c){ c=c||cadOf(l); var ch=c.channel||'email';
       if(ch==='ig'){ var h=l.instagramHandle||''; return {ch:'ig',title:'Playbook · Instagram DM',target:h?('@'+h):'(sin handle)',link:h?('https://instagram.com/'+h):'',
@@ -801,8 +804,8 @@
         draft:ISEJE?ejeFollowDM(l):(l.instagramDM||igDM(l))}; }
       if(ch==='li'){ var lu=l.contactLinkedIn||l.linkedin||'';
         return {ch:'li',title:'Playbook · LinkedIn',target:l.contactName||'(perfil)',link:lu,
-        steps:['Abrí el perfil'+(lu?'':' (buscá su nombre en LinkedIn)')+' y revisá su actividad reciente.','MEJOR: enviá solicitud de conexión con nota corta (gratis). Guardá los InMails (30/mes) para los de mayor prioridad.','Cuando conecten (o por InMail si es prioridad), enviá el mensaje de abajo con el video.'],
-        draft:ejeLinkedInDM(l)}; }
+        steps:['Abrí el perfil'+(lu?'':' (buscá su nombre en LinkedIn)')+' y revisá su actividad reciente.','MEJOR: enviá solicitud de conexión con la nota corta (gratis, abajo). Guardá los InMails (30/mes) para los de mayor prioridad.','Cuando conecten (o por InMail si es prioridad), enviá el mensaje completo con el video.'],
+        draft:ejeLinkedInDM(l),altDraft:ejeLinkedInConnectNote(l),altLabel:'Nota de conexión · gratis, ≤300 caracteres'}; }
       if(ch==='wa'){ var ph=l.contactPhone||l.apolloCompanyPhone||''; return {ch:'wa',title:'Playbook · WhatsApp',target:ph||'(sin teléfono)',link:ph?('https://wa.me/'+String(ph).replace(/[^0-9]/g,'')):'',
         steps:['Guardá el contacto y abrí WhatsApp.','Enviá el mensaje (abajo) en horario laboral local.','Si no responde en 48h, pasá al toque mensual.'],
         draft:l.whatsappMessage||igDM(l)}; }
@@ -996,7 +999,7 @@
       var _dueLbl=_cad.kind==='replied'?'responder ahora':(_cad.kind==='first'?'listo para enviar':(_cad.overdue>=0?('vence hace '+fmtDur(_cad.overdue)):('vence en '+fmtDur(_cad.overdue))));
       var _dots=''; for(var _k=1;_k<=Math.max(4,_done+1);_k++){_dots+='<i class="'+(_k<=_done?'on':(_k===_done+1?'now':''))+'"></i>';}
       var _strip='<div class="cad-strip"><span class="cs-badge stage-chip '+(_cad.stageClass||'')+'">'+esc(_cad.chip||_cad.stageLabel||'—')+'</span><span class="cs-due">Próxima acción: <b>'+esc(_cad.next||'—')+'</b> · '+_dueLbl+'</span><div class="cad-dots">'+_dots+'</div></div>';
-      var _pbHtml='<div class="pb"><div class="pb-h"><span>'+esc(_pb.title)+'</span>'+(_pb.link?'<a class="pb-open" href="'+esc(_pb.link)+'" target="_blank" rel="noopener">'+esc(_pb.target)+' ↗</a>':'<span class="pb-tgt">'+esc(_pb.target)+'</span>')+'</div><ol class="pb-steps">'+_pb.steps.map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol><div class="draft"><div class="draft-h">Mensaje'+esc(_draft.mark||'')+'</div><pre class="draft-b">'+esc(_pb.draft)+'</pre></div></div>';
+      var _pbHtml='<div class="pb"><div class="pb-h"><span>'+esc(_pb.title)+'</span>'+(_pb.link?'<a class="pb-open" href="'+esc(_pb.link)+'" target="_blank" rel="noopener">'+esc(_pb.target)+' ↗</a>':'<span class="pb-tgt">'+esc(_pb.target)+'</span>')+'</div><ol class="pb-steps">'+_pb.steps.map(function(s){return '<li>'+esc(s)+'</li>';}).join('')+'</ol><div class="draft"><div class="draft-h">Mensaje'+esc(_draft.mark||'')+'</div><pre class="draft-b">'+esc(_pb.draft)+'</pre></div>'+(_pb.altDraft?'<div class="draft" style="margin-top:8px"><div class="draft-h">'+esc(_pb.altLabel||'Alternativa')+'</div><pre class="draft-b">'+esc(_pb.altDraft)+'</pre><div style="padding:2px 14px 12px"><button type="button" class="btn copy-alt">Copiar nota de conexión</button></div></div>':'')+'</div>';
       var _slot=(_cad.channel==='email')?sendSlot(l.country):null;
       var _slotHtml=_slot?('<div class="sendslot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg><span>Programá el envío a las <b>'+esc(_slot.chile)+'</b> (hora Chile) para que llegue ~8 AM en '+esc(l.country||'destino')+(_slot.same?' · misma zona horaria':'')+'</span></div>'):'';
       var credits=(l._verifiedCredits||l.verifiedCredits||[]);
@@ -1033,6 +1036,8 @@
       cardWrap.querySelector('.dc-back').addEventListener('click',closeCard);
       var bSent=cardWrap.querySelector('.act-sent');
       if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.draft||'');}catch(e){} bSent.textContent='Enviado ✓'; bSent.classList.add('done'); markSent(l,_cad.channel);});
+      var bAlt=cardWrap.querySelector('.copy-alt');
+      if(bAlt) bAlt.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.altDraft||'');}catch(e){} bAlt.textContent='Copiado ✓'; bAlt.classList.add('done');});
       var bRep=cardWrap.querySelector('.act-replied');
       if(bRep) bRep.addEventListener('click',function(){bRep.classList.add('done'); markStatus(l,'replied','Marcado: Respondió');});
       var bLoom=cardWrap.querySelector('.act-loom');
