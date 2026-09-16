@@ -1023,7 +1023,7 @@
         +'<div class="tabs"><button class="tab on" data-p="borrador">Borrador</button><button class="tab" data-p="otros">Otros decisores'+(addl.length?' ('+addl.length+')':'')+'</button></div>'
         +'<div class="tab-panel" data-panel="borrador">'+_pbHtml+'</div>'
         +'<div class="tab-panel" data-panel="otros" style="display:none">'+(addl.length?addl.map(function(c){return '<div class="row"><div class="k">'+esc(c.title||'Contacto')+'</div><div class="v">'+esc(c.name||'—')+(c.email?' · <span class="link">'+esc(c.email)+'</span>':'')+'</div></div>';}).join(''):'<div class="seam-note">Sin otros decisores registrados.</div>')+'</div>'
-        +'<div class="c-actions">'+(l.website?'<a class="btn site" href="'+esc(l.website)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;vertical-align:-2px;margin-right:5px"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Ver sitio actual ↗</a>':'')+'<button class="btn pri act-sent">Copiar y marcar enviado</button>'
+        +'<div class="c-actions">'+(l.website?'<a class="btn site" href="'+esc(l.website)+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;vertical-align:-2px;margin-right:5px"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>Ver sitio actual ↗</a>':'')+'<button class="btn pri act-sent">Copiar, abrir '+esc(chLabel(_cad.channel))+' y marcar ✓</button>'
         +'<button class="btn win act-replied">Respondió</button>'
         +(ISEJE?'<button class="btn act-loom">Loom enviado</button>':'')
         +'<button class="btn win act-rejected">Rechazó</button>'
@@ -1035,9 +1035,9 @@
       window.scrollTo({top:0,behavior:'smooth'});
       cardWrap.querySelector('.dc-back').addEventListener('click',closeCard);
       var bSent=cardWrap.querySelector('.act-sent');
-      if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.draft||'');}catch(e){} bSent.textContent='Enviado ✓'; bSent.classList.add('done'); markSent(l,_cad.channel);});
+      if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.draft||'');}catch(e){} if(_pb.link) window.open(_pb.link,'_blank','noopener'); bSent.textContent='Copiado y abierto ✓'; bSent.classList.add('done'); markSent(l,_cad.channel);});
       var bAlt=cardWrap.querySelector('.copy-alt');
-      if(bAlt) bAlt.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.altDraft||'');}catch(e){} bAlt.textContent='Copiado ✓'; bAlt.classList.add('done');});
+      if(bAlt) bAlt.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.altDraft||'');}catch(e){} if(_pb.link) window.open(_pb.link,'_blank','noopener'); bAlt.textContent='Copiado y abierto ✓'; bAlt.classList.add('done');});
       var bBad=cardWrap.querySelector('.bad-ig');
       if(bBad) bBad.addEventListener('click',function(){
         l.instagramHandle=''; l.instagramKind=''; l.igBad=true;
