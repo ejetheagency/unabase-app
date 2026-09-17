@@ -791,7 +791,7 @@
     // Locked IG DM copy (plural voice, references prior email) — ported from classic cockpit.
     function igDM(l){ return 'Hola, ¿cómo están?\nLes escribimos un mail hace unos días desde UnaBase y queríamos asegurarnos de que no se perdiera 🙌\nSi les hace sentido, se los contamos por acá y coordinamos una llamada corta.\nScarlett'; }
     // EJE workspace. IG 2nd touch = soft opener, no link (better IG engagement).
-    function ejeFollowDM(l){ var n=firstName(l)||''; return 'Hola '+n+', te escribí un correo hace unos días desde EJE. Trabajo con UnaBase ayudando a founders a llegar a su prospecto ideal con un paso a paso accionable y contactos verificados. ¿Te hace sentido que te mande un video corto explicando la dinámica, a ver si calza para '+(l.companyName||'tu equipo')+'? Un saludo, Emiliano'; }
+    function ejeFollowDM(l){ var n=firstName(l)||''; return 'Hola '+n+'! Te escribí un correo hace unos días desde EJE. Quedé esperando tu respuesta. ¿Quieres que te haga un resumen por aquí?'; }
     // LinkedIn 2nd touch = fuller version WITH the Loom (fewer/scarcer touches, put value up front). Operator copy, 2026-09-16.
     function ejeLinkedInDM(l){ var n=firstName(l)||'', e=l.companyName||'tu equipo';
       return 'Hola '+n+', te escribí un correo hace unos días desde EJE. Trabajo con UnaBase ayudando a founders a llegar a su prospecto ideal con un paso a paso accionable y contactos verificados. Te dejo un video que explica brevemente la dinámica. Si te interesa, nos juntamos un momento a revisar cómo se vería para '+e+'.\nUn saludo,\nEmiliano\n\nhttps://www.loom.com/share/3ba0a1be7a6846cdb151d6e37c5e0205'; }
