@@ -902,7 +902,8 @@
       var body=document.getElementById('tareas-body'); if(!body) return;
       var uni=(UNIVERSE&&UNIVERSE.length)?UNIVERSE:((DATA&&DATA.leads)?DATA.leads.map(function(l){return Object.assign({_key:decDom(l.website)},l);}):[]);
       if(!uni.length){ body.innerHTML='<div class="tq-empty">Cargando cola…</div>'; return; }
-      var allItems=uni.map(function(l){return {l:l,c:cadOf(l)};}).filter(function(x){return x.c&&['first','due','soon','upcoming','replied','loom'].indexOf(x.c.kind)>=0;});
+      // EJE: Tareas is ONLY follow-ups for already-contacted leads. First touches live in Hoy (their send day), never here.
+      var allItems=uni.map(function(l){return {l:l,c:cadOf(l)};}).filter(function(x){return x.c&&['first','due','soon','upcoming','replied','loom'].indexOf(x.c.kind)>=0 && !(ISEJE&&x.c.kind==='first');});
       var dormant=allItems.filter(function(x){return x.c.dormant;}).sort(function(a,b){return (b.l.unabaseScore||0)-(a.l.unabaseScore||0);});
       var items=allItems.filter(function(x){return !x.c.dormant;});
       var urgent=items.filter(function(x){return x.c.kind==='due'&&x.c.overdue>2*36e5;}).sort(function(a,b){return b.c.overdue-a.c.overdue;});
