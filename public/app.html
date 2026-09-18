@@ -735,10 +735,12 @@
     function chLabel(ch){ return ch==='ig'?'IG':ch==='wa'?'WA':ch==='li'?'LinkedIn':ch==='call'?'Llamada':'Email'; }
     function nextTxt(ch,l){ return ch==='ig'?('DM por Instagram'+(l&&l.instagramHandle?' @'+l.instagramHandle:'')):ch==='li'?'Mensaje por LinkedIn':ch==='wa'?'Enviar WhatsApp':'Enviar email de seguimiento'; }
     function chChip(ch){ return ch==='ig'?'ig':ch==='li'?'li':ch==='wa'?'green':''; }
-    function resolveCh(ch,l){ var li=l.contactLinkedIn||l.linkedin;
-      if(ch==='ig'&&!l.instagramHandle) return li?'li':'email';   // no IG -> LinkedIn if we have it, else email
-      if(ch==='li'&&!li) return 'email';
-      if(ch==='wa'&&!(l.contactPhone||l.apolloCompanyPhone)) return 'email'; return ch; }
+    function resolveCh(ch,l){ var li=l.contactLinkedIn||l.linkedin; var wa=l.contactPhone||l.whatsapp||l.apolloCompanyPhone;
+      // EJE rule: 2nd touch is IG or LinkedIn, NEVER email. Fallback chain IG -> LinkedIn -> WhatsApp (sanctioned
+      // exception) -> email only as true last resort. Scoped to ISEJE so Scarlett's UnaBase cadence is untouched.
+      if(ch==='ig'&&!l.instagramHandle) return li?'li':((ISEJE&&wa)?'wa':'email');   // no IG -> LinkedIn, else (EJE) WhatsApp, else email
+      if(ch==='li'&&!li) return (ISEJE&&wa)?'wa':'email';
+      if(ch==='wa'&&!wa) return 'email'; return ch; }
     function cadOf(l){
       var d=l._key||decDom(l.website); var st=(d&&STATUS[d])||l.status||'none';
       var ts=(MSGS[d]||[]).slice().sort(function(a,b){return a-b;});
