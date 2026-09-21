@@ -814,12 +814,10 @@
         draft:l.whatsappMessage||igDM(l)}; }
       var dd=draftFor(l,c);
       var _subj=ISEJE?((c.kind==='first')?((l.companyName||'')+' x EJE'):ejeFollowEmailSubject(l)):'';
-      // EJE opens the compose in the PROFESSIONAL account (contact@ejetheagency.com) via Gmail's authuser,
-      // not a generic mailto (the browser hands mailto to the default/personal Gmail). Needs contact@ signed
-      // into this Chrome profile. UnaBase keeps a plain mailto (Scarlett's own default account).
-      var _mt=!l.contactEmail?'':(ISEJE
-        ?('https://mail.google.com/mail/?authuser='+encodeURIComponent('contact@ejetheagency.com')+'&view=cm&fs=1&tf=1&to='+encodeURIComponent(l.contactEmail)+'&su='+encodeURIComponent(_subj)+'&body='+encodeURIComponent(dd.text))
-        :('mailto:'+l.contactEmail));
+      // Plain mailto: opens the browser's default mail handler (Gmail on the agency profile) INSTANTLY with the
+      // message ready, using whatever account that browser is logged into. No full Gmail page load. Prefilled
+      // subject+body for EJE. Fast path chosen deliberately (2026-09-21): operate from the right browser profile.
+      var _mt=l.contactEmail?('mailto:'+l.contactEmail+(ISEJE?('?subject='+encodeURIComponent(_subj)+'&body='+encodeURIComponent(dd.text)):'')):'';
       return {ch:'email',title:'Playbook · Email',target:l.contactEmail||'—',link:_mt,
         steps:['Redactá a '+(l.contactEmail||'—')+(l.companyEmail?(' (CC '+l.companyEmail+')'):'')+'.','Pegá el borrador de abajo, revisá nombre y empresa.',(c.kind==='first'?'Enviá el primer email.':'Enviá el seguimiento — tono corto, un solo ask: la llamada.')],
         draft:dd.text}; }
