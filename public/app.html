@@ -951,7 +951,12 @@
         +'<div style="padding:2px 18px 11px;color:var(--ink-3);font-size:12px">Contactados hace +30 días sin seguimiento — no urgentes. Retomá los de mejor score como campaña de reactivación (protocolo LAZARUS / Plan A).</div>'
         +acHead()+dormant.slice(0,8).map(acRow).join('')+(dormant.length>8?'<div class="ac-more-row" style="color:var(--warn)" data-exp="dormant">Ver todos los dormidos ('+dormant.length+') ⌄</div>':'')+'</div>'; }
       body.innerHTML=html;
-      function bindRows(scope){ (scope||body).querySelectorAll('.ac-tr:not(.head)').forEach(function(r){ if(r._b)return; r._b=1; r.addEventListener('click',function(){var l=BYKEY[r.dataset.key]||uni.filter(function(x){return (x._key||decDom(x.website))===r.dataset.key;})[0];if(l)openFromTareas(l);}); }); }
+      function bindRows(scope){ (scope||body).querySelectorAll('.ac-tr:not(.head)').forEach(function(r){ if(r._b)return; r._b=1; r.addEventListener('click',function(){
+        var rows=[].slice.call(body.querySelectorAll('.ac-tr:not(.head)')),seen={},q=[];
+        rows.forEach(function(x){var k=x.dataset.key;if(k&&!seen[k]){seen[k]=1;var ll=BYKEY[k]||uni.filter(function(y){return (y._key||decDom(y.website))===k;})[0];if(ll)q.push(ll);}});
+        var l=BYKEY[r.dataset.key]||uni.filter(function(x){return (x._key||decDom(x.website))===r.dataset.key;})[0];
+        if(l)openCardNav(l,q,q.indexOf(l),'tareas');
+      }); }); }
       bindRows();
       body.querySelectorAll('.ac-card[data-scroll]').forEach(function(c){c.addEventListener('click',function(){var t=document.getElementById(c.dataset.scroll);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});});});
       body.querySelectorAll('.ac-more-row[data-exp]').forEach(function(exp){exp.addEventListener('click',function(){var which=exp.dataset.exp;var list=which==='dormant'?dormant:urgent;var shown=which==='dormant'?8:6;var p=exp.closest('.ac-panel');exp.remove();p.insertAdjacentHTML('beforeend',list.slice(shown).map(acRow).join(''));bindRows(p);});});
@@ -976,7 +981,7 @@
           +'<span class="dec-ch">'+ch+'</span>'+(l.website?'<span class="dec-ext" data-url="'+esc(l.website)+'" title="Abrir sitio actual">↗</span>':'')+statusChip(l)
           +'<span class="dec-score">'+esc(l.unabaseScore||'')+'</span></button>';
       }).join('')||'<div class="tq-empty">Sin reporte para hoy. Los leads de días anteriores están en Historial.</div>';
-      body.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){openFromTareas(rep[+r.dataset.hi]);});});
+      body.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){var i=+r.dataset.hi;openCardNav(rep[i],rep,i,'hoy');});});
       body.querySelectorAll('.dec-ext').forEach(function(x){x.addEventListener('click',function(e){e.stopPropagation();window.open(x.dataset.url,'_blank','noopener');});});
     }
     function toast(m){var t=document.getElementById('toast');if(!t)return;t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(function(){t.classList.remove('show');},1800);}
@@ -1000,10 +1005,20 @@
           +statusChip(l)
           +'<span class="dec-score">'+esc(l.unabaseScore||'')+'</span></button>';
       }).join('')||'<div class="tq-empty">Sin resultados.</div>';
-      listEl.querySelectorAll('.dec-row').forEach(function(r){r.addEventListener('click',function(){var l=BYKEY[r.dataset.key]||src.filter(function(x){return (x._key||decDom(x.website))===r.dataset.key;})[0];if(l)openCard(l);});});
+      listEl.querySelectorAll('.dec-row').forEach(function(r,i){r.addEventListener('click',function(){var l=BYKEY[r.dataset.key]||pairs[i];if(l)openCardNav(l,pairs,i,'decisores');});});
       listEl.querySelectorAll('.dec-ext').forEach(function(x){x.addEventListener('click',function(e){e.stopPropagation();window.open(x.dataset.url,'_blank','noopener');});});
     }
     function rrow(k,v){return '<div class="row"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>';}
+    // ── Card navigation state: remembers the source list (queue) + index + which view to
+    // return to, so tasks can be swiped/next-ed without bouncing back to Decisores. See docs/ARCHITECTURE.md §Seguimiento. ──
+    var _navQ=[], _navI=-1, _navBack='decisores';
+    function openCardNav(l,queue,idx,backView){
+      _navQ=queue||[]; _navI=(idx==null?-1:idx); _navBack=backView||'decisores';
+      if(cardWrap.style.display!=='block' && backView && backView!=='decisores'){
+        var nv=document.querySelector('.nav-item[data-view="decisores"]')||document.querySelector('.mob-item[data-view="decisores"]'); if(nv) nv.click();
+      }
+      openCard(l);
+    }
     function openCard(ref){
       var l=(ref&&typeof ref==='object')?ref:(DATA&&DATA.leads[ref]); if(!l)return;
       var _cad=cadOf(l); var _draft=draftFor(l,_cad); var _pb=playbookFor(l,_cad);
@@ -1046,6 +1061,26 @@
       listWrap.style.display='none'; cardWrap.style.display='block';
       window.scrollTo({top:0,behavior:'smooth'});
       cardWrap.querySelector('.dc-back').addEventListener('click',closeCard);
+      // ── swipe / next-prev through the source list (Tareas, Hoy, Decisores) ──
+      if(_navQ&&_navQ.length>1&&_navI>=0){
+        var _hasP=_navI>0,_hasN=_navI<_navQ.length-1;
+        var _nb='flex:1;padding:9px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink);font-size:13px;cursor:pointer';
+        var _navHtml='<div style="display:flex;align-items:center;gap:8px;margin:6px 0 2px">'
+          +'<button class="cn-prev" style="'+_nb+(_hasP?'':';opacity:.35;pointer-events:none')+'">‹ Anterior</button>'
+          +'<span style="font-size:12px;color:var(--ink-3);min-width:52px;text-align:center;font-variant-numeric:tabular-nums">'+(_navI+1)+' / '+_navQ.length+'</span>'
+          +'<button class="cn-next" style="'+_nb+(_hasN?'':';opacity:.35;pointer-events:none')+'">Siguiente ›</button></div>';
+        cardWrap.querySelector('.dc-back').insertAdjacentHTML('afterend',_navHtml);
+        var _go=function(ni){ if(ni<0||ni>=_navQ.length)return; openCardNav(_navQ[ni],_navQ,ni,_navBack); };
+        var _cp=cardWrap.querySelector('.cn-prev'),_cn=cardWrap.querySelector('.cn-next');
+        if(_cp&&_hasP)_cp.addEventListener('click',function(){_go(_navI-1);});
+        if(_cn&&_hasN)_cn.addEventListener('click',function(){_go(_navI+1);});
+        if(cardWrap._sw){cardWrap.removeEventListener('touchstart',cardWrap._sw.s);cardWrap.removeEventListener('touchend',cardWrap._sw.e);}
+        cardWrap._sw={s:function(e){cardWrap._tx=e.changedTouches[0].clientX;cardWrap._ty=e.changedTouches[0].clientY;},
+          e:function(e){var dx=e.changedTouches[0].clientX-(cardWrap._tx||0),dy=e.changedTouches[0].clientY-(cardWrap._ty||0);if(Math.abs(dx)<60||Math.abs(dx)<Math.abs(dy)*1.5)return;if(dx<0&&_navI<_navQ.length-1)_go(_navI+1);else if(dx>0&&_navI>0)_go(_navI-1);}};
+        cardWrap.addEventListener('touchstart',cardWrap._sw.s,{passive:true});
+        cardWrap.addEventListener('touchend',cardWrap._sw.e,{passive:true});
+        if(!window._cardKeyBound){window._cardKeyBound=1;document.addEventListener('keydown',function(e){if(cardWrap.style.display!=='block'||!_navQ||_navQ.length<2||_navI<0)return;if(e.key==='ArrowRight'&&_navI<_navQ.length-1)openCardNav(_navQ[_navI+1],_navQ,_navI+1,_navBack);else if(e.key==='ArrowLeft'&&_navI>0)openCardNav(_navQ[_navI-1],_navQ,_navI-1,_navBack);});}
+      }
       var bSent=cardWrap.querySelector('.act-sent');
       if(bSent) bSent.addEventListener('click',function(){try{navigator.clipboard.writeText(_pb.draft||'');}catch(e){} if(_pb.link) window.open(_pb.link,'_blank','noopener'); bSent.textContent='Copiado y abierto ✓'; bSent.classList.add('done'); markSent(l,_cad.channel);});
       var bAlt=cardWrap.querySelector('.copy-alt');
@@ -1071,7 +1106,9 @@
         cardWrap.querySelectorAll('.tab-panel').forEach(function(p){p.style.display=(p.dataset.panel===t.dataset.p)?'':'none';});
       });});
     }
-    function closeCard(){cardWrap.style.display='none';listWrap.style.display='block';}
+    function closeCard(){cardWrap.style.display='none';listWrap.style.display='block';
+      if(_navBack&&_navBack!=='decisores'){var nv=document.querySelector('.nav-item[data-view="'+_navBack+'"]')||document.querySelector('.mob-item[data-view="'+_navBack+'"]');if(nv)nv.click();}
+      _navQ=[];_navI=-1;_navBack='decisores';}
     function openFromTareas(l){
       var nav=document.querySelector('.nav-item[data-view="decisores"]')||document.querySelector('.mob-item[data-view="decisores"]');
       if(nav) nav.click();
