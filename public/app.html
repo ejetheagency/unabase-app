@@ -1405,6 +1405,7 @@
           if(ISEJE){ var ap=document.querySelector('.autopilot'); if(ap) ap.style.display='none'; }
           var dct=document.querySelector('.nav-item[data-view="decisores"] .ct'); if(dct) dct.textContent=_n;
           render(); if(typeof renderAccion==='function') renderAccion(); if(typeof renderHoy==='function') renderHoy();
+          if(typeof renderSeguimiento==='function'){var _sv=document.getElementById('view-seguimiento'); if(_sv&&_sv.classList.contains('on')) renderSeguimiento();}
         }).catch(function(){ if(subEl) subEl.textContent='No se pudo cargar.'; });
         return;
       }
