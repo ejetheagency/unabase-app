@@ -351,6 +351,43 @@
   .cad-dots i{width:9px;height:9px;border-radius:50%;background:var(--line-3);display:block}
   .cad-dots i.on{background:var(--ok)} .cad-dots i.now{background:var(--info);box-shadow:0 0 0 3px color-mix(in srgb,var(--info) 20%,transparent)}
   .stage-chip.ig{background:color-mix(in srgb,#c13584 15%,transparent);color:#c13584}
+  /* ── Seguimiento (manual tracker) ── */
+  .seg-sec-h{font-size:11.5px;font-weight:700;color:var(--ink-2);text-transform:uppercase;letter-spacing:.05em;margin:20px 2px 10px;display:flex;align-items:center;gap:8px}
+  .seg-sec-h .n{font-size:11px;font-weight:700;color:var(--ink-3);background:var(--sunken);border-radius:20px;padding:1px 8px}
+  .seg-sec-h.warn{color:var(--warn)} .seg-sec-h.warn .n{color:var(--warn);background:color-mix(in srgb,var(--warn) 13%,transparent)}
+  .seg-card{position:relative;display:block;width:100%;text-align:left;background:var(--canvas);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px;cursor:pointer;color:var(--ink);box-shadow:var(--sh-sm);transition:border-color .12s,transform .06s}
+  .seg-card:hover{border-color:var(--line-3)} .seg-card:active{transform:scale(.995)}
+  .seg-card.att{border-left:3px solid var(--warn)}
+  .seg-top{display:flex;align-items:center;gap:9px}
+  .seg-co{font-size:15px;font-weight:700;letter-spacing:-.01em}
+  .seg-dm{font-size:12px;color:var(--ink-3);font-weight:500}
+  .seg-meta{display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--ink-3);margin-top:6px}
+  .seg-meta .dot{width:3px;height:3px;border-radius:50%;background:var(--ink-3);opacity:.6}
+  .seg-meta .warn{color:var(--warn);font-weight:650}
+  .seg-note-prev{margin-top:9px;font-size:12.5px;color:var(--ink-2);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .seg-pill{font-size:11px;font-weight:650;border-radius:7px;padding:3px 10px;white-space:nowrap;margin-left:auto}
+  .seg-s-nuevo,.seg-s-contactado{background:color-mix(in srgb,var(--info) 12%,transparent);color:var(--info)}
+  .seg-s-respondio,.seg-s-conversacion,.seg-s-propuesta{background:color-mix(in srgb,var(--cool) 15%,transparent);color:var(--cool)}
+  .seg-s-reunion,.seg-s-ganado{background:color-mix(in srgb,var(--ok) 15%,transparent);color:var(--ok)}
+  .seg-s-perdido{background:color-mix(in srgb,var(--crit) 12%,transparent);color:var(--crit)}
+  .seg-s-pausa{background:var(--sunken);color:var(--ink-3)}
+  .seg-stage{padding:7px 13px;border:1px solid var(--line-2);border-radius:20px;background:var(--canvas);color:var(--ink-2);font-size:12.5px;cursor:pointer;transition:.12s}
+  .seg-stage.on{background:var(--cool);border-color:var(--cool);color:#fff;font-weight:600}
+  .seg-stage:hover:not(.on){border-color:var(--line-3);color:var(--ink)}
+  .seg-tl{position:relative;padding-left:19px;margin-top:4px}
+  .seg-tl:before{content:'';position:absolute;left:4px;top:5px;bottom:6px;width:2px;background:var(--line-2)}
+  .seg-tl-item{position:relative;padding:0 0 15px}
+  .seg-tl-item:before{content:'';position:absolute;left:-19px;top:3px;width:9px;height:9px;border-radius:50%;background:var(--cool);border:2px solid var(--canvas);box-shadow:0 0 0 1px var(--line-2)}
+  .seg-tl-item.sys:before{background:var(--ink-3)}
+  .seg-tl-note{font-size:13px;color:var(--ink);line-height:1.45}
+  .seg-tl-note.sys{color:var(--ink-2);font-size:12px}
+  .seg-tl-meta{font-size:10.5px;color:var(--ink-3);margin-top:3px;text-transform:uppercase;letter-spacing:.03em}
+  .seg-fld{display:block;margin-bottom:11px}
+  .seg-fld>span{display:block;font-size:11px;color:var(--ink-3);margin-bottom:4px;font-weight:600}
+  .seg-fld input,.seg-fld select,.seg-fld textarea,.seg-ta{width:100%;padding:10px;border:1px solid var(--line-2);border-radius:10px;background:var(--canvas);color:var(--ink);font-size:13px;box-sizing:border-box;font-family:inherit}
+  .seg-fld input:focus,.seg-fld select:focus,.seg-fld textarea:focus,.seg-ta:focus{outline:none;border-color:var(--cool)}
+  .seg-block{padding:14px 0;border-top:1px solid var(--line)}
+  .seg-block-h{font-size:11px;color:var(--ink-3);margin-bottom:8px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
   .pb{border:1px solid var(--line);border-radius:12px;background:var(--sunken);padding:13px 15px}
   .pb-h{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12.5px;font-weight:700;margin-bottom:10px}
   .pb-open{font-size:12px;font-weight:650;color:var(--info);text-decoration:none;white-space:nowrap}
@@ -1017,26 +1054,29 @@
       body.innerHTML='<div class="tq-empty" style="padding:14px 4px">Cargando…</div>';
       segLoad().then(function(){
         var ls=SEG.leads.slice();
-        ls.sort(function(a,b){var aa=segStale(a),ba=segStale(b); if(aa!==ba)return aa?-1:1; return new Date(b.updated_at)-new Date(a.updated_at);});
-        var att=ls.filter(segStale).length;
-        var ct=document.getElementById('seg-ct'); if(ct) ct.textContent=att||'';
-        var sub=document.getElementById('seg-sub'); if(sub) sub.textContent=ls.length+' decisores · '+att+' necesitan seguimiento';
-        if(!ls.length){ body.innerHTML='<div class="tq-empty" style="padding:14px 4px">Sin decisores todavía. Agregá el primero con “+ Añadir decisor”.</div>'; return; }
-        body.innerHTML=ls.map(segRow).join('');
+        ls.sort(function(a,b){return new Date(b.updated_at)-new Date(a.updated_at);});
+        var attList=ls.filter(segStale), rest=ls.filter(function(l){return !segStale(l);});
+        var ct=document.getElementById('seg-ct'); if(ct) ct.textContent=attList.length||'';
+        var sub=document.getElementById('seg-sub'); if(sub) sub.textContent=ls.length+' decisores · '+attList.length+' necesitan seguimiento';
+        if(!ls.length){ body.innerHTML='<div class="tq-empty" style="padding:20px 4px;color:var(--ink-3)">Sin decisores todavía. Agregá el primero con “+ Añadir decisor”.</div>'; return; }
+        var html='';
+        if(attList.length) html+='<div class="seg-sec-h warn">Necesitan seguimiento <span class="n">'+attList.length+'</span></div>'+attList.map(segRow).join('');
+        if(rest.length) html+='<div class="seg-sec-h">En curso <span class="n">'+rest.length+'</span></div>'+rest.map(segRow).join('');
+        body.innerHTML=html;
         body.querySelectorAll('.seg-card').forEach(function(c){c.addEventListener('click',function(){segOpen(c.dataset.id);});});
       });
     }
-    function segRow(l){ var last=(SEG.notes[l.id]||[])[0]; var att=segStale(l);
-      return '<button class="seg-card" data-id="'+esc(l.id)+'" style="display:block;width:100%;text-align:left;background:var(--card);border:1px solid '+(att?'var(--warn)':'var(--line)')+';border-radius:12px;padding:12px 14px;margin-bottom:9px;cursor:pointer;color:var(--ink)">'
-       +'<div style="display:flex;align-items:center;gap:8px"><b style="font-size:14px">'+esc(l.company)+'</b><span style="font-size:11px;color:var(--ink-3)">'+esc(l.decisor_name||'(sin nombre)')+'</span><span style="margin-left:auto;font-size:11px;padding:2px 9px;border-radius:20px;background:var(--sunken);color:var(--ink-2)">'+esc(segLbl(SEG_STAGES,l.stage))+'</span></div>'
-       +'<div style="display:flex;align-items:center;gap:7px;margin-top:6px;font-size:11.5px;color:var(--ink-3)"><span>'+esc(segLbl(SEG_SOURCES,l.source))+'</span><span>·</span><span>hace '+segDays(l)+'d</span>'+(att?'<span style="color:var(--warn);font-weight:600">· seguimiento pendiente</span>':'')+'</div>'
-       +(last?'<div style="margin-top:6px;font-size:12px;color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">“'+esc(last.note_text)+'”</div>':'')+'</button>';
+    function segStageCls(s){return 'seg-pill seg-s-'+(s||'nuevo');}
+    function segRow(l){ var last=(SEG.notes[l.id]||[])[0]; var att=segStale(l); var days=segDays(l);
+      return '<button class="seg-card'+(att?' att':'')+'" data-id="'+esc(l.id)+'">'
+       +'<div class="seg-top"><span class="seg-co">'+esc(l.company)+'</span>'+(l.decisor_name?'<span class="seg-dm">'+esc(l.decisor_name)+'</span>':'')+'<span class="'+segStageCls(l.stage)+'">'+esc(segLbl(SEG_STAGES,l.stage))+'</span></div>'
+       +'<div class="seg-meta"><span>'+esc(segLbl(SEG_SOURCES,l.source))+'</span><span class="dot"></span><span>'+(days===0?'hoy':'hace '+days+' d')+'</span>'+(att?'<span class="dot"></span><span class="warn">seguimiento pendiente</span>':'')+'</div>'
+       +(last?'<div class="seg-note-prev">'+esc(last.note_text)+'</div>':'')+'</button>';
     }
     function segInput(id,label,ph,tag){ tag=tag||'input';
-      return '<label style="display:block;margin-bottom:9px"><span style="display:block;font-size:11px;color:var(--ink-3);margin-bottom:3px">'+label+'</span>'
-       +(tag==='textarea'?'<textarea id="'+id+'" rows="3"':'<input id="'+id+'"')+' placeholder="'+esc(ph||'')+'" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink);font-size:13px;box-sizing:border-box">'+(tag==='textarea'?'</textarea>':'')+'</label>';
+      return '<label class="seg-fld"><span>'+label+'</span>'+(tag==='textarea'?'<textarea id="'+id+'" rows="3"':'<input id="'+id+'"')+' placeholder="'+esc(ph||'')+'">'+(tag==='textarea'?'</textarea>':'')+'</label>';
     }
-    function segSelect(id,label,map){ return '<label style="display:block;margin-bottom:9px"><span style="display:block;font-size:11px;color:var(--ink-3);margin-bottom:3px">'+label+'</span><select id="'+id+'" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink);font-size:13px">'+map.map(function(s){return '<option value="'+s[0]+'">'+s[1]+'</option>';}).join('')+'</select></label>'; }
+    function segSelect(id,label,map){ return '<label class="seg-fld"><span>'+label+'</span><select id="'+id+'">'+map.map(function(s){return '<option value="'+s[0]+'">'+s[1]+'</option>';}).join('')+'</select></label>'; }
     function segShowForm(){
       var w=document.getElementById('seg-detail-wrap'); document.getElementById('seg-list-wrap').style.display='none'; w.style.display='block';
       w.innerHTML='<button class="dc-back" id="seg-cancel">&larr; Seguimiento</button>'
@@ -1070,17 +1110,22 @@
     function segOpen(id){
       var l=SEG.leads.filter(function(x){return x.id===id;})[0]; if(!l)return;
       var w=document.getElementById('seg-detail-wrap'); document.getElementById('seg-list-wrap').style.display='none'; w.style.display='block';
-      var notes=SEG.notes[id]||[];
-      var stageBtns=SEG_STAGES.map(function(s){var on=l.stage===s[0];return '<button class="seg-stage" data-s="'+s[0]+'" style="padding:6px 11px;border:1px solid '+(on?'var(--cool)':'var(--line)')+';border-radius:20px;background:'+(on?'var(--cool)':'var(--card)')+';color:'+(on?'#fff':'var(--ink)')+';font-size:12px;cursor:pointer">'+s[1]+'</button>';}).join('');
+      var notes=SEG.notes[id]||[]; var att=segStale(l); var days=segDays(l);
+      var stageBtns=SEG_STAGES.map(function(s){return '<button class="seg-stage'+(l.stage===s[0]?' on':'')+'" data-s="'+s[0]+'">'+s[1]+'</button>';}).join('');
+      var contact='';
+      if(l.contact_email) contact+=rrow('Email','<a class="link" href="mailto:'+esc(l.contact_email)+'">'+esc(l.contact_email)+'</a>');
+      if(l.instagram) contact+=rrow('Instagram','<a class="link ext" href="https://instagram.com/'+esc(l.instagram)+'" target="_blank" rel="noopener">@'+esc(l.instagram)+' ↗</a>');
+      if(l.linkedin) contact+=rrow('LinkedIn','<a class="link ext" href="'+esc(l.linkedin)+'" target="_blank" rel="noopener">perfil ↗</a>');
+      var tl=notes.length?('<div class="seg-tl">'+notes.map(function(n){var sys=/^Etapa →/.test(n.note_text||'');return '<div class="seg-tl-item'+(sys?' sys':'')+'"><div class="seg-tl-note'+(sys?' sys':'')+'">'+esc(n.note_text)+'</div><div class="seg-tl-meta">'+esc(segLbl(SEG_STAGES,n.stage_at_time||''))+' · '+esc(String(n.created_at).slice(0,10))+'</div></div>';}).join('')+'</div>'):'<div class="seam-note">Sin notas todavía.</div>';
       w.innerHTML='<button class="dc-back" id="seg-back">&larr; Seguimiento</button>'
-       +'<div class="card"><div class="c-head"><div class="c-av">'+esc(initials(l.company))+'</div><div><div class="c-name">'+esc(l.company)+'</div><div class="c-sub">'+esc(l.decisor_name||'(sin nombre)')+' · '+esc(segLbl(SEG_SOURCES,l.source))+'</div></div></div>'
-       +'<div class="c-body" style="display:block"><div style="padding:0 0 10px"><div style="font-size:11px;color:var(--ink-3);margin-bottom:7px">Etapa</div><div style="display:flex;flex-wrap:wrap;gap:6px">'+stageBtns+'</div></div>'
-       +(l.contact_email?rrow('Email','<a class="link" href="mailto:'+esc(l.contact_email)+'">'+esc(l.contact_email)+'</a>'):'')
-       +(l.instagram?rrow('Instagram','<a class="link ext" href="https://instagram.com/'+esc(l.instagram)+'" target="_blank" rel="noopener">@'+esc(l.instagram)+' ↗</a>'):'')
-       +(l.linkedin?rrow('LinkedIn','<a class="link ext" href="'+esc(l.linkedin)+'" target="_blank" rel="noopener">perfil ↗</a>'):'')
-       +'<div style="margin-top:12px"><div style="font-size:11px;color:var(--ink-3);margin-bottom:6px">Nueva nota</div><textarea id="seg-note-in" rows="2" placeholder="Actualización…" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink);font-size:13px;box-sizing:border-box"></textarea><button class="btn pri" id="seg-note-add" style="margin-top:6px">Agregar nota</button></div>'
-       +'<div style="margin-top:14px"><div style="font-size:11px;color:var(--ink-3);margin-bottom:6px">Historial ('+notes.length+')</div>'
-       +(notes.length?notes.map(function(n){return '<div style="border-left:2px solid var(--line);padding:1px 0 8px 10px;margin-bottom:3px"><div style="font-size:12px;color:var(--ink)">'+esc(n.note_text)+'</div><div style="font-size:10.5px;color:var(--ink-3);margin-top:2px">'+esc(segLbl(SEG_STAGES,n.stage_at_time||''))+' · '+esc(String(n.created_at).slice(0,10))+'</div></div>';}).join(''):'<div class="seam-note">Sin notas.</div>')+'</div>'
+       +'<div class="card"><div class="c-head"><div class="c-av">'+esc(initials(l.company))+'</div>'
+       +'<div><div class="c-name">'+esc(l.company)+' <span class="'+segStageCls(l.stage)+'" style="margin-left:2px">'+esc(segLbl(SEG_STAGES,l.stage))+'</span></div>'
+       +'<div class="c-sub">'+esc(l.decisor_name||'(sin nombre)')+' · '+esc(segLbl(SEG_SOURCES,l.source))+' · '+(days===0?'hoy':'hace '+days+' d')+(att?' · <span style="color:var(--warn);font-weight:600">seguimiento pendiente</span>':'')+'</div></div></div>'
+       +'<div class="c-body" style="display:block">'
+       +'<div class="seg-block" style="border-top:none;padding-top:6px"><div class="seg-block-h">Etapa</div><div style="display:flex;flex-wrap:wrap;gap:7px">'+stageBtns+'</div></div>'
+       +(contact?'<div class="seg-block"><div class="seg-block-h">Contacto</div>'+contact+'</div>':'')
+       +'<div class="seg-block"><div class="seg-block-h">Nueva nota</div><textarea id="seg-note-in" class="seg-ta" rows="2" placeholder="¿Qué pasó? ¿Cuál es el próximo paso?"></textarea><button class="btn pri" id="seg-note-add" style="margin-top:8px">Agregar nota</button></div>'
+       +'<div class="seg-block"><div class="seg-block-h">Historial · '+notes.length+'</div>'+tl+'</div>'
        +'</div></div>';
       document.getElementById('seg-back').addEventListener('click',renderSeguimiento);
       w.querySelectorAll('.seg-stage').forEach(function(b){b.addEventListener('click',function(){segSetStage(l,b.dataset.s);});});
