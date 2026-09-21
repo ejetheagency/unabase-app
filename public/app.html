@@ -814,7 +814,12 @@
         draft:l.whatsappMessage||igDM(l)}; }
       var dd=draftFor(l,c);
       var _subj=ISEJE?((c.kind==='first')?((l.companyName||'')+' x EJE'):ejeFollowEmailSubject(l)):'';
-      var _mt=l.contactEmail?('mailto:'+l.contactEmail+(ISEJE?('?subject='+encodeURIComponent(_subj)+'&body='+encodeURIComponent(dd.text)):'')):'';
+      // EJE opens the compose in the PROFESSIONAL account (contact@ejetheagency.com) via Gmail's authuser,
+      // not a generic mailto (the browser hands mailto to the default/personal Gmail). Needs contact@ signed
+      // into this Chrome profile. UnaBase keeps a plain mailto (Scarlett's own default account).
+      var _mt=!l.contactEmail?'':(ISEJE
+        ?('https://mail.google.com/mail/?authuser='+encodeURIComponent('contact@ejetheagency.com')+'&view=cm&fs=1&tf=1&to='+encodeURIComponent(l.contactEmail)+'&su='+encodeURIComponent(_subj)+'&body='+encodeURIComponent(dd.text))
+        :('mailto:'+l.contactEmail));
       return {ch:'email',title:'Playbook · Email',target:l.contactEmail||'—',link:_mt,
         steps:['Redactá a '+(l.contactEmail||'—')+(l.companyEmail?(' (CC '+l.companyEmail+')'):'')+'.','Pegá el borrador de abajo, revisá nombre y empresa.',(c.kind==='first'?'Enviá el primer email.':'Enviá el seguimiento — tono corto, un solo ask: la llamada.')],
         draft:dd.text}; }
