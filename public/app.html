@@ -869,12 +869,9 @@
         draft:l.whatsappMessage||igDM(l)}; }
       var dd=draftFor(l,c);
       var _subj=ISEJE?((c.kind==='first')?((l.companyName||'')+' x EJE'):ejeFollowEmailSubject(l)):'';
-      // EJE: open Gmail compose DIRECTLY in the browser (not a mailto, which the OS routes to Apple Mail with no
-      // signature). authuser=contact@ lands it in the agency account, and Gmail's web compose applies the EJE
-      // signature. UnaBase keeps a plain mailto. (Operator chose this over mailto on 2026-09-23 to keep the signature.)
-      var _mt=!l.contactEmail?'':(ISEJE
-        ?('https://mail.google.com/mail/?authuser='+encodeURIComponent('contact@ejetheagency.com')+'&view=cm&fs=1&tf=1&to='+encodeURIComponent(l.contactEmail)+'&su='+encodeURIComponent(_subj)+'&body='+encodeURIComponent(dd.text))
-        :('mailto:'+l.contactEmail));
+      // Plain mailto: fast, opens the browser's default mail handler with the message ready. To get the small
+      // Gmail compose popup (WITH signature) instead of Apple Mail, set Chrome/Gmail as the OS default mail handler.
+      var _mt=l.contactEmail?('mailto:'+l.contactEmail+(ISEJE?('?subject='+encodeURIComponent(_subj)+'&body='+encodeURIComponent(dd.text)):'')):'';
       return {ch:'email',title:'Playbook · Email',target:l.contactEmail||'—',link:_mt,
         steps:['Redactá a '+(l.contactEmail||'—')+(l.companyEmail?(' (CC '+l.companyEmail+')'):'')+'.','Pegá el borrador de abajo, revisá nombre y empresa.',(c.kind==='first'?'Enviá el primer email.':'Enviá el seguimiento — tono corto, un solo ask: la llamada.')],
         draft:dd.text}; }
